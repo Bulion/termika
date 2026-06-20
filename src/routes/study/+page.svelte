@@ -72,7 +72,7 @@
 
 <svelte:head><title>{m.study_title()} · {m.app_name()}</title></svelte:head>
 
-<main class="study">
+<main class="study fade-in">
 	<header>
 		<h1>{m.study_title()}</h1>
 		<nav class="modes" aria-label={m.study_title()}>

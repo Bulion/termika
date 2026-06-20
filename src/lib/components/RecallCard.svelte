@@ -184,6 +184,13 @@
 		transition: transform 0.1s ease;
 	}
 
+	@media (hover: hover) {
+		.reveal:hover,
+		.grade:hover {
+			transform: translateY(-2px);
+		}
+	}
+
 	.reveal:active,
 	.grade:active {
 		transform: translate(4px, 4px);

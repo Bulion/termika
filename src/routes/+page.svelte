@@ -11,7 +11,7 @@
 
 <svelte:head><title>{m.app_name()}</title></svelte:head>
 
-<main class="home">
+<main class="home fade-in">
 	<section class="hero">
 		<div class="copy">
 			<span class="eyebrow">{m.hero_eyebrow()}</span>
@@ -145,6 +145,12 @@
 		border-radius: var(--radius-pill);
 		box-shadow: var(--shadow-card);
 		transition: transform 0.1s ease;
+	}
+
+	@media (hover: hover) {
+		.btn:hover {
+			transform: translateY(-2px);
+		}
 	}
 
 	.btn:active {

@@ -40,7 +40,7 @@
 
 <svelte:head><title>{m.drills_title()} · {m.app_name()}</title></svelte:head>
 
-<main class="drills">
+<main class="drills fade-in">
 	<header>
 		<h1>{m.drills_title()}</h1>
 		<nav class="sets" aria-label={m.drills_title()}>

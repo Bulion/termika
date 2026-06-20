@@ -8,83 +8,114 @@
 	} = $props();
 
 	const clamped = $derived(Math.min(Math.max(pct, 0), 100));
-	const radius = 52;
-	const circumference = 2 * Math.PI * radius;
-	const dashOffset = $derived(circumference * (1 - clamped / 100));
+	// Map 0..100% to a -90deg..+90deg needle sweep; starts at -90 then animates to target.
+	const target = $derived(-90 + (clamped / 100) * 180);
+	// Intentionally not a writable $derived: the needle renders at -90 first, then the
+	// effect drives it to the target so the CSS transition sweeps the dial on load.
+	// eslint-disable-next-line svelte/prefer-writable-derived
+	let rotation = $state(-90);
+
+	$effect(() => {
+		rotation = target;
+	});
 </script>
 
-<figure class="gauge">
+<figure class="vario">
 	<div class="dial" role="img" aria-label={`${label}: ${clamped}%`}>
-		<svg viewBox="0 0 120 120" width="180" height="180">
-			<circle
-				class="track"
-				cx="60"
-				cy="60"
-				r={radius}
-				fill="none"
-				stroke="var(--color-track)"
-				stroke-width="14"
-			/>
-			<circle
-				class="value"
-				cx="60"
-				cy="60"
-				r={radius}
-				fill="none"
-				stroke="var(--color-lift)"
-				stroke-width="14"
-				stroke-linecap="round"
-				stroke-dasharray={circumference}
-				stroke-dashoffset={dashOffset}
-				transform="rotate(-90 60 60)"
-			/>
-		</svg>
-		<div class="readout">
-			<span class="value-text">{clamped}%</span>
+		<div class="ticks" aria-hidden="true"></div>
+		<div class="placard">
+			<span class="placard-label">{label}</span>
+			<span class="placard-value">{clamped}%</span>
 		</div>
+		<div class="needle variometer-needle" style:transform={`rotate(${rotation}deg)`}></div>
+		<div class="pin"></div>
+		<div class="pin-cap"></div>
 	</div>
-	<figcaption>{label}</figcaption>
 </figure>
 
 <style>
-	.gauge {
+	.vario {
 		display: flex;
-		flex-direction: column;
-		gap: var(--space-3);
-		align-items: center;
+		justify-content: center;
 		margin: 0;
 	}
 
 	.dial {
 		position: relative;
+		width: min(16rem, 72vw);
+		aspect-ratio: 1;
 		display: grid;
 		place-items: center;
+		background: var(--color-surface-2);
+		border: 6px solid var(--color-outline);
+		border-radius: 50%;
+		box-shadow: inset 0 4px 12px rgb(0 0 0 / 12%);
 	}
 
-	.value {
-		transition: stroke-dashoffset 700ms ease;
-	}
-
-	.readout {
+	.ticks {
 		position: absolute;
-		inset: 0;
-		display: grid;
-		place-items: center;
+		inset: 0.5rem;
+		border: 12px dashed var(--color-outline);
+		border-radius: 50%;
+		opacity: 0.2;
 	}
 
-	.value-text {
+	.placard {
+		z-index: 10;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.1rem;
+		padding: var(--space-2) var(--space-3);
+		background: var(--color-surface);
+		border: var(--border-width-sm) solid var(--color-outline);
+		border-radius: var(--radius-md);
+		box-shadow: var(--shadow-card-sm);
+	}
+
+	.placard-label {
+		font-family: var(--font-mono);
+		font-size: 0.6rem;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: var(--color-ink-soft);
+	}
+
+	.placard-value {
 		font-family: var(--font-display);
 		font-weight: 800;
-		font-size: 2.5rem;
-		color: var(--color-ink);
+		font-size: 2rem;
+		color: var(--color-primary);
 	}
 
-	figcaption {
-		font-family: var(--font-mono);
-		font-size: 0.85rem;
-		text-transform: uppercase;
-		letter-spacing: 0.05em;
-		color: var(--color-ink-soft);
-		text-align: center;
+	.needle {
+		position: absolute;
+		bottom: 50%;
+		left: 50%;
+		width: 0.6rem;
+		height: 38%;
+		margin-left: -0.3rem;
+		background: var(--color-sink);
+		border: var(--border-width-sm) solid var(--color-outline);
+		border-radius: 0.3rem 0.3rem 0 0;
+	}
+
+	.pin {
+		position: absolute;
+		z-index: 20;
+		width: 1.5rem;
+		height: 1.5rem;
+		background: var(--color-outline);
+		border-radius: 50%;
+	}
+
+	.pin-cap {
+		position: absolute;
+		z-index: 30;
+		width: 0.75rem;
+		height: 0.75rem;
+		background: var(--color-sun);
+		border: var(--border-width-sm) solid var(--color-outline);
+		border-radius: 50%;
 	}
 </style>

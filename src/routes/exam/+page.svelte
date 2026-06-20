@@ -99,7 +99,7 @@
 
 <svelte:head><title>{m.exam_title()} · {m.app_name()}</title></svelte:head>
 
-<main class="exam">
+<main class="exam fade-in">
 	<h1>{m.exam_title()}</h1>
 
 	{#if phase === 'select'}
@@ -247,6 +247,12 @@
 		border-radius: var(--radius-pill);
 		box-shadow: var(--shadow-card);
 		transition: transform 0.1s ease;
+	}
+
+	@media (hover: hover) {
+		.primary:hover {
+			transform: translateY(-2px);
+		}
 	}
 
 	.primary:active {

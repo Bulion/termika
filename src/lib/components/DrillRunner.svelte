@@ -159,6 +159,12 @@
 		transition: transform 0.1s ease;
 	}
 
+	@media (hover: hover) {
+		.action:hover {
+			transform: translateY(-2px);
+		}
+	}
+
 	.action:active {
 		transform: translate(4px, 4px);
 		box-shadow: none;
