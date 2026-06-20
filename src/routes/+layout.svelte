@@ -11,10 +11,19 @@
 	import { theme } from '$lib/theme.svelte';
 
 	let { children } = $props();
+	let headerEl: HTMLElement;
 
 	onMount(() => {
 		theme.init();
 		document.documentElement.lang = getLocale();
+
+		const syncHeaderHeight = () => {
+			document.documentElement.style.setProperty('--header-height', `${headerEl.offsetHeight}px`);
+		};
+		syncHeaderHeight();
+		const observer = new ResizeObserver(syncHeaderHeight);
+		observer.observe(headerEl);
+		return () => observer.disconnect();
 	});
 
 	const links = [
@@ -29,7 +38,7 @@
 
 <a class="skip-link" href="#main">{m.nav_home()}</a>
 
-<header class="app-header">
+<header class="app-header" bind:this={headerEl}>
 	<a class="brand" href={resolve('/')}>
 		{m.app_name()}
 		<span class="badge">SPL</span>

@@ -317,13 +317,15 @@
 
 	.bar {
 		position: sticky;
-		top: 0;
-		z-index: 5;
+		top: var(--header-height, 4rem);
+		z-index: 20;
 		display: flex;
 		flex-direction: column;
 		gap: var(--space-2);
-		padding: var(--space-3) 0;
+		padding: var(--space-3) var(--space-4);
+		margin: 0 calc(-1 * var(--space-4));
 		background: var(--color-bg);
+		border-bottom: var(--border-width-sm) solid var(--color-outline);
 	}
 
 	.bar-top {
