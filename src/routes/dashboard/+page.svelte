@@ -299,9 +299,7 @@
 	}
 
 	.chip {
-		position: absolute;
-		top: var(--space-4);
-		left: var(--space-4);
+		align-self: flex-start;
 		padding: var(--space-1) var(--space-3);
 		font-family: var(--font-mono);
 		font-size: 0.7rem;
