@@ -15,6 +15,7 @@
 		scoreExam,
 		type ExamResult
 	} from '$lib/exam/exam';
+	import { EXAM_SOURCES, INTERNAL_SOURCE_ID, loadExternalMcqs } from '$lib/exam/sources';
 	import { m } from '$lib/paraglide/messages.js';
 	import { getLocale } from '$lib/paraglide/runtime';
 
@@ -33,6 +34,13 @@
 	let secondsLeft = $state(0);
 	let result = $state<ExamResult | null>(null);
 	let timer: ReturnType<typeof setInterval> | undefined;
+
+	let sourceId = $state(INTERNAL_SOURCE_ID);
+	let loadingExternal = $state(false);
+	let sourceError = $state(false);
+	let activeExternal = false;
+	let activePassPct = 75;
+	const activeSource = $derived(EXAM_SOURCES.find((s) => s.id === sourceId) ?? EXAM_SOURCES[0]);
 
 	onMount(async () => {
 		const content = await loadContent();
@@ -59,19 +67,24 @@
 		return `${mm}:${ss}`;
 	}
 
-	function start(subjectId: string) {
-		const config = blueprint.find((s) => s.subjectId === subjectId);
-		if (!config) return;
-		const pool = mcqItemsForSubject(items, 'SPL', subjectId, loSubject);
+	function begin(
+		qs: Mcq[],
+		passPct: number,
+		timeLimitMin: number,
+		subjectId: string,
+		external: boolean
+	) {
+		questions = qs;
+		answers = Object.fromEntries(qs.map((q) => [q.id, null]));
 		activeSubjectId = subjectId;
-		questions = pickQuestions(pool, config.questionCount);
-		answers = Object.fromEntries(questions.map((q) => [q.id, null]));
+		activeExternal = external;
+		activePassPct = passPct;
 		result = null;
-		if (questions.length === 0) {
+		if (qs.length === 0) {
 			phase = 'result';
 			return;
 		}
-		secondsLeft = config.timeLimitMin * 60;
+		secondsLeft = timeLimitMin * 60;
 		phase = 'running';
 		clearInterval(timer);
 		timer = setInterval(() => {
@@ -80,21 +93,58 @@
 		}, 1000);
 	}
 
+	function start(subjectId: string) {
+		const config = blueprint.find((s) => s.subjectId === subjectId);
+		if (!config) return;
+		const pool = mcqItemsForSubject(items, 'SPL', subjectId, loSubject);
+		begin(
+			pickQuestions(pool, config.questionCount),
+			config.passPct,
+			config.timeLimitMin,
+			subjectId,
+			false
+		);
+	}
+
+	async function startExternal() {
+		sourceError = false;
+		loadingExternal = true;
+		try {
+			const pool = await loadExternalMcqs(sourceId);
+			begin(
+				pickQuestions(pool, activeSource.questionCount),
+				activeSource.passPct,
+				activeSource.timeLimitMin,
+				sourceId,
+				true
+			);
+		} catch {
+			sourceError = true;
+		} finally {
+			loadingExternal = false;
+		}
+	}
+
+	const activeLabel = $derived(
+		activeExternal ? resolveText(activeSource.label, locale()) : subjectName(activeSubjectId)
+	);
+
 	async function submit() {
 		clearInterval(timer);
-		const config = blueprint.find((s) => s.subjectId === activeSubjectId);
-		const scored = scoreExam(questions, new Map(Object.entries(answers)), config?.passPct ?? 75);
+		const scored = scoreExam(questions, new Map(Object.entries(answers)), activePassPct);
 		result = scored;
 		phase = 'result';
 		await db.mockResults.add({
-			licenseId: 'SPL',
+			licenseId: activeExternal ? 'PPL_A' : 'SPL',
 			subjectId: activeSubjectId,
 			scorePct: scored.scorePct,
 			passed: scored.passed,
 			finishedAt: new Date()
 		});
-		for (const itemId of scored.wrongItemIds) {
-			await recordReview(db, scheduler, itemId, 'again', new Date());
+		if (!activeExternal) {
+			for (const itemId of scored.wrongItemIds) {
+				await recordReview(db, scheduler, itemId, 'again', new Date());
+			}
 		}
 	}
 </script>
@@ -105,23 +155,46 @@
 	<h1>{m.exam_title()}</h1>
 
 	{#if phase === 'select'}
-		<p>{m.exam_pick_subject()}</p>
-		<ul class="subjects">
-			{#each blueprint as subject (subject.subjectId)}
-				<li>
-					<button type="button" class="subject" onclick={() => start(subject.subjectId)}>
-						{subjectName(subject.subjectId)}
-						<span class="meta"
-							>{subject.questionCount} · {subject.timeLimitMin}′ · {subject.passPct}%</span
-						>
-					</button>
-				</li>
+		<div class="sources" role="group" aria-label={m.exam_source()}>
+			{#each EXAM_SOURCES as src (src.id)}
+				<button
+					type="button"
+					class="src"
+					aria-pressed={sourceId === src.id}
+					onclick={() => {
+						sourceId = src.id;
+						sourceError = false;
+					}}
+				>
+					{resolveText(src.label, locale())}
+				</button>
 			{/each}
-		</ul>
+		</div>
+
+		{#if activeSource.external}
+			<button type="button" class="primary lift" onclick={startExternal} disabled={loadingExternal}>
+				{loadingExternal ? m.exam_loading() : m.exam_start()}
+			</button>
+			{#if sourceError}<p class="error" role="alert">{m.exam_source_error()}</p>{/if}
+		{:else}
+			<p>{m.exam_pick_subject()}</p>
+			<ul class="subjects">
+				{#each blueprint as subject (subject.subjectId)}
+					<li>
+						<button type="button" class="subject" onclick={() => start(subject.subjectId)}>
+							{subjectName(subject.subjectId)}
+							<span class="meta"
+								>{subject.questionCount} · {subject.timeLimitMin}′ · {subject.passPct}%</span
+							>
+						</button>
+					</li>
+				{/each}
+			</ul>
+		{/if}
 	{:else if phase === 'running'}
 		<div class="bar">
 			<div class="bar-top">
-				<strong>{subjectName(activeSubjectId)}</strong>
+				<strong>{activeLabel}</strong>
 				<span class="timer" class:low={secondsLeft <= 30} aria-live="off">
 					⏱ {formatTime(secondsLeft)}
 				</span>
@@ -185,6 +258,33 @@
 		display: flex;
 		flex-direction: column;
 		gap: var(--space-4);
+	}
+
+	.sources {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-2);
+	}
+
+	.src {
+		padding: var(--space-2) var(--space-4);
+		font-weight: 700;
+		color: var(--color-ink);
+		background: var(--color-surface);
+		border: var(--border-width-sm) solid var(--color-outline);
+		border-radius: var(--radius-pill);
+		box-shadow: var(--shadow-card-sm);
+		transition: transform 0.1s ease;
+	}
+
+	.src:active {
+		transform: translate(2px, 2px);
+		box-shadow: none;
+	}
+
+	.src[aria-pressed='true'] {
+		color: var(--color-on-accent);
+		background: var(--color-sky);
 	}
 
 	.subjects {
