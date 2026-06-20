@@ -33,9 +33,13 @@ test suite. CI mirrors these gates.
 ## Content sources and licensing
 
 The app is **GPL-3.0-or-later**. Content is normalized into a common item schema by per-source
-adapters. The `fifly/PPL-A` set is GPL-3.0 and reused under those terms. Questions derived from
-copyrighted catalogs (e.g. ECQB / commercial banks) are **not** redistributed in this repository;
-adapters for such sources are intended for local, private study only.
+adapters implementing `SourceAdapter`. The `fifly/PPL-A` set is GPL-3.0 and reused under those
+terms: `npm run ingest:fifly` pulls the questions straight from the source and writes a
+normalized deck into the git-ignored `content-generated/` directory (skipped malformed blocks
+are reported, never silently dropped). A ULC-PDF adapter is a planned follow-up using the same
+`SourceAdapter` contract. Questions derived from copyrighted catalogs (e.g. ECQB / commercial
+banks) are **not** redistributed in this repository; adapters for such sources are intended for
+local, private study only.
 
 ## License
 

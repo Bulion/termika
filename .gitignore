@@ -27,3 +27,5 @@ playwright-report
 # Paraglide
 src/lib/paraglide
 project.inlang/cache/
+# Generated content from source adapters (ingested locally)
+content-generated
