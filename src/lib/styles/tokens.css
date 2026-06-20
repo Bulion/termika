@@ -36,16 +36,18 @@
 }
 
 [data-theme='dark'] {
-	--color-sky: #5cc2f0;
+	--color-sky: #6cc6f2;
 	--color-sun: #ffd24d;
-	--color-lift: #3fd98a;
-	--color-sink: #ff7c70;
-	--color-surface: #1b2740;
-	--color-bg: #121a2b;
-	--color-ink: #e7eef7;
-	--color-ink-soft: #aebccd;
-	--color-outline: #0a0f18;
+	--color-lift: #46e09a;
+	--color-sink: #ff8a7e;
+	--color-surface: #20305a;
+	--color-bg: #0e1730;
+	--color-ink: #f1f6fc;
+	--color-ink-soft: #c4d2e8;
 
-	--shadow-card: 0 4px 0 0 var(--color-outline);
+	/* A light, visible stroke - dark themes need the cartoon outline to read against the page. */
+	--color-outline: #8ea6cc;
+
+	--shadow-card: 0 4px 0 0 #060c1c;
 	--focus-ring: 0 0 0 3px var(--color-sun);
 }
