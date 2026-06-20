@@ -1,10 +1,22 @@
 import { base } from '$app/paths';
 import { FiflyPplAdapter } from '../content/adapters/fifly';
+import { ulcSubjectName } from '../content/adapters/ulc-subjects';
 import type { LocalizedText, Mcq } from '../content/schema';
 
 export interface ExamCategory {
-	id: number;
+	id: string;
 	name: string;
+}
+
+/** Builds the category list from the `cat-<id>` tags present on a question pool. */
+function categoriesFromTags(questions: Mcq[], nameOf: (id: string) => string): ExamCategory[] {
+	const ids: string[] = [];
+	for (const q of questions) {
+		const tag = q.tags.find((t) => t.startsWith('cat-'));
+		const id = tag?.slice(4);
+		if (id && !ids.includes(id)) ids.push(id);
+	}
+	return ids.map((id) => ({ id, name: nameOf(id) }));
 }
 
 export interface ExamSource {
@@ -41,7 +53,7 @@ export const EXAM_SOURCES: ExamSource[] = [
 		id: 'fifly',
 		label: { pl: 'fifly PPL(A)', en: 'fifly PPL(A)' },
 		external: true,
-		hasCategories: false,
+		hasCategories: true,
 		questionCount: 20,
 		timeLimitMin: 30,
 		passPct: 75
@@ -76,13 +88,20 @@ async function loadPool(sourceId: string): Promise<ExternalPool> {
 		const questions = decks
 			.flatMap((deck) => deck.items)
 			.filter((item): item is Mcq => item.type === 'mcq');
-		pool = { categories: [], questions };
+		pool = { categories: categoriesFromTags(questions, ulcSubjectName), questions };
 	} else if (sourceId === 'pplka') {
 		// pplka.pl blocks cross-origin requests, so read the pool ingested into the build
 		// (npm run ingest:pplka -> static/external/pplka-spl.json).
 		const response = await fetch(`${base}/external/pplka-spl.json`);
 		if (!response.ok) throw new Error(`pplka pool not available: ${response.status}`);
-		pool = (await response.json()) as ExternalPool;
+		const raw = (await response.json()) as {
+			categories: { id: number | string; name: string }[];
+			questions: Mcq[];
+		};
+		pool = {
+			categories: raw.categories.map((c) => ({ id: String(c.id), name: c.name })),
+			questions: raw.questions
+		};
 	} else {
 		throw new Error(`Unknown external source: ${sourceId}`);
 	}
@@ -97,7 +116,7 @@ export async function loadExternalCategories(sourceId: string): Promise<ExamCate
 }
 
 /** MCQ pool for an external source, optionally filtered to a single category. */
-export async function loadExternalMcqs(sourceId: string, categoryId?: number): Promise<Mcq[]> {
+export async function loadExternalMcqs(sourceId: string, categoryId?: string): Promise<Mcq[]> {
 	const { questions } = await loadPool(sourceId);
 	if (categoryId === undefined) return questions;
 	return questions.filter((q) => q.tags.includes(`cat-${categoryId}`));

@@ -1,5 +1,6 @@
 import type { SourceAdapter } from '../adapter';
 import { deckSchema, type Deck, type License, type LocalizedText, type Mcq } from '../schema';
+import { subjectForCode } from './ulc-subjects';
 
 export const FIFLY_RAW_URL = 'https://raw.githubusercontent.com/fifly/PPL-A/master/pytania.md';
 
@@ -108,13 +109,14 @@ export function parseFiflyMarkdown(markdown: string, options: FiflyParseOptions)
 			text: { pl: choice.text }
 		}));
 		const answer = choices[block.choices.findIndex((c) => c.correct)].id;
+		const subject = subjectForCode(block.code);
 		items.push({
 			id: `fifly-${block.code}`,
 			type: 'mcq',
 			microSkill: 'regulation',
 			loIds: [options.loId],
 			licenses: [license],
-			tags: ['fifly', block.code],
+			tags: ['fifly', block.code, ...(subject ? [`cat-${subject.id}`] : [])],
 			stem: { pl: block.stem },
 			choices,
 			answer,
