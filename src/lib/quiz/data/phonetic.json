@@ -3,12 +3,12 @@
 	"id": "phonetic-alphabet",
 	"title": { "pl": "Alfabet fonetyczny", "en": "Phonetic alphabet" },
 	"description": {
-		"pl": "Alfabet ICAO/NATO i wymowa cyfr w obie strony: znak ↔ słowo.",
-		"en": "The ICAO/NATO alphabet and number words both ways: character ↔ word."
+		"pl": "Alfabet ICAO/NATO i wymowa cyfr: podaj słowo dla znaku.",
+		"en": "The ICAO/NATO alphabet and number words: give the word for each character."
 	},
 	"labelA": { "pl": "Znak", "en": "Character" },
 	"labelB": { "pl": "Słowo ICAO", "en": "ICAO word" },
-	"directions": ["a-to-b", "b-to-a"],
+	"directions": ["a-to-b"],
 	"timeLimitSec": 12,
 	"pairs": [
 		{ "id": "ph-a", "a": { "pl": "A" }, "b": { "pl": "Alfa" }, "acceptB": ["Alpha"] },
