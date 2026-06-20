@@ -6,7 +6,6 @@ const routes = [
 	'./study/session?mode=all',
 	'./study/session?mode=scenario',
 	'./drills',
-	'./drills/e6b',
 	'./drills/run?set=nav-rules',
 	'./drills/run?set=magnetic-headings',
 	'./drills/run?set=e6b-wind',
@@ -48,6 +47,9 @@ function findOcclusions(): Occlusion[] {
 		const top = document.elementFromPoint(cx, cy);
 		if (!top || el.contains(top) || top.contains(el)) continue;
 		if (el.closest('.face--back') || top.closest('.face--back')) continue;
+		// The E6B instrument is a deliberately dense SVG and the launcher floats over content.
+		if (el.closest('.e6b-root') || top.closest('.e6b-root')) continue;
+		if (el.closest('.fab') || top.closest('.fab')) continue;
 
 		out.push({
 			text: ownText.slice(0, 50),

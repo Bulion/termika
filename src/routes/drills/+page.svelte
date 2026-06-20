@@ -6,6 +6,7 @@
 	import type { DrillSet } from '$lib/drills/schema';
 	import { loadQuizSets } from '$lib/quiz/index';
 	import type { QuizSet } from '$lib/quiz/schema';
+	import { openE6b } from '$lib/e6b/state.svelte';
 	import { m } from '$lib/paraglide/messages.js';
 	import { getLocale } from '$lib/paraglide/runtime';
 
@@ -24,11 +25,11 @@
 
 	<ul class="cards">
 		<li>
-			<a class="card lift card--tool" href={resolve('/drills/e6b')}>
+			<button type="button" class="card lift card--tool" onclick={openE6b}>
 				<span class="card-title">{m.e6b_card_title()}</span>
 				<span class="card-desc">{m.e6b_card_desc()}</span>
 				<span class="go" aria-hidden="true">→</span>
-			</a>
+			</button>
 		</li>
 		{#each sets as set (set.id)}
 			<li>
@@ -98,6 +99,10 @@
 	}
 
 	.card--tool {
+		width: 100%;
+		font: inherit;
+		text-align: left;
+		cursor: pointer;
 		background: var(--color-surface-2);
 		border-style: dashed;
 	}
