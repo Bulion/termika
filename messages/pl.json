@@ -24,5 +24,19 @@
 	"drill_correct": "Dobrze!",
 	"drill_wrong": "Poprawnie: {expected}",
 	"drill_graduated": "Opanowane",
-	"drill_accuracy": "Skuteczność: {pct}%"
+	"drill_accuracy": "Skuteczność: {pct}%",
+	"nav_exam": "Egzamin",
+	"exam_title": "Symulacja egzaminu",
+	"exam_pick_subject": "Wybierz przedmiot",
+	"exam_start": "Rozpocznij egzamin",
+	"exam_submit": "Zakończ i sprawdź",
+	"exam_time_left": "Pozostały czas: {time}",
+	"exam_question": "Pytanie {n} z {total}",
+	"exam_score": "Wynik: {pct}%",
+	"exam_passed": "Zaliczone",
+	"exam_failed": "Niezaliczone",
+	"exam_retry": "Spróbuj ponownie",
+	"exam_no_questions": "Brak pytań dla tego przedmiotu.",
+	"exam_your_answer": "Twoja odpowiedź",
+	"exam_correct_answer": "Poprawna odpowiedź"
 }

@@ -33,6 +33,57 @@
 				"pl": "15 °C, 1013,25 hPa, ~2 °C/1000 ft",
 				"en": "15 °C, 1013.25 hPa, ~2 °C/1000 ft"
 			}
+		},
+		{
+			"id": "spl-met-isa-mcq",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["MET.ISA"],
+			"licenses": ["SPL"],
+			"tags": ["isa"],
+			"stem": {
+				"pl": "Standardowe ciśnienie atmosfery wzorcowej (ISA) na poziomie morza?",
+				"en": "Standard ISA pressure at mean sea level?"
+			},
+			"choices": [
+				{ "id": "a", "text": { "pl": "1013,25 hPa", "en": "1013.25 hPa" } },
+				{ "id": "b", "text": { "pl": "1000 hPa", "en": "1000 hPa" } },
+				{ "id": "c", "text": { "pl": "1025 hPa", "en": "1025 hPa" } }
+			],
+			"answer": "a"
+		},
+		{
+			"id": "spl-met-cavok-mcq",
+			"type": "mcq",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.METAR"],
+			"licenses": ["SPL"],
+			"tags": ["metar"],
+			"stem": {
+				"pl": "Co oznacza CAVOK w depeszy METAR?",
+				"en": "What does CAVOK mean in a METAR?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Widzialność ≥10 km, brak istotnych chmur i zjawisk",
+						"en": "Visibility ≥10 km, no significant cloud or weather"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Mgła i widzialność poniżej 1 km",
+						"en": "Fog with visibility below 1 km"
+					}
+				},
+				{
+					"id": "c",
+					"text": { "pl": "Burze w rejonie lotniska", "en": "Thunderstorms in the aerodrome area" }
+				}
+			],
+			"answer": "a"
 		}
 	]
 }

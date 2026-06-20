@@ -71,6 +71,24 @@
 				"pl": "SERA.5001, tabela S5-1: opcja dla niskiego poziomu i małej prędkości.",
 				"en": "SERA.5001 Table S5-1: the low-level, low-speed option."
 			}
+		},
+		{
+			"id": "spl-airlaw-qfe-mcq",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["AIRLAW.ALTIMETRY"],
+			"licenses": ["SPL"],
+			"tags": ["altimetry"],
+			"stem": {
+				"pl": "Wysokościomierz nastawiony na QFE na pasie startowym wskazuje:",
+				"en": "With QFE set, the altimeter on the runway reads:"
+			},
+			"choices": [
+				{ "id": "a", "text": { "pl": "0", "en": "0" } },
+				{ "id": "b", "text": { "pl": "Elewację lotniska", "en": "Aerodrome elevation" } },
+				{ "id": "c", "text": { "pl": "Wysokość nad poziomem morza", "en": "Altitude above MSL" } }
+			],
+			"answer": "a"
 		}
 	]
 }

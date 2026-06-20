@@ -24,5 +24,19 @@
 	"drill_correct": "Correct!",
 	"drill_wrong": "Correct answer: {expected}",
 	"drill_graduated": "Mastered",
-	"drill_accuracy": "Accuracy: {pct}%"
+	"drill_accuracy": "Accuracy: {pct}%",
+	"nav_exam": "Exam",
+	"exam_title": "Exam simulation",
+	"exam_pick_subject": "Choose a subject",
+	"exam_start": "Start exam",
+	"exam_submit": "Finish and score",
+	"exam_time_left": "Time left: {time}",
+	"exam_question": "Question {n} of {total}",
+	"exam_score": "Score: {pct}%",
+	"exam_passed": "Passed",
+	"exam_failed": "Not passed",
+	"exam_retry": "Try again",
+	"exam_no_questions": "No questions for this subject yet.",
+	"exam_your_answer": "Your answer",
+	"exam_correct_answer": "Correct answer"
 }
