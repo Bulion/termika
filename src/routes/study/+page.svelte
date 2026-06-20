@@ -1,6 +1,11 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
+	import { resolveText, type ContentLocale } from '$lib/content/schema';
+	import { EXAM_SOURCES } from '$lib/exam/sources';
 	import { m } from '$lib/paraglide/messages.js';
+	import { getLocale } from '$lib/paraglide/runtime';
+
+	const locale = (): ContentLocale => (getLocale() === 'pl' ? 'pl' : 'en');
 
 	const exercises = [
 		{ mode: 'all', title: m.mode_all, desc: m.mode_all_desc },
@@ -8,6 +13,8 @@
 		{ mode: 'concept_number', title: m.mode_numbers, desc: m.mode_numbers_desc },
 		{ mode: 'scenario', title: m.mode_scenarios, desc: m.mode_scenarios_desc }
 	];
+
+	const externalSources = EXAM_SOURCES.filter((s) => s.external);
 </script>
 
 <svelte:head><title>{m.study_title()} · {m.app_name()}</title></svelte:head>
@@ -30,6 +37,23 @@
 			</li>
 		{/each}
 	</ul>
+
+	<section class="external">
+		<h2>{m.study_external_heading()}</h2>
+		<p class="lead">{m.study_external_desc()}</p>
+		<ul class="cards">
+			{#each externalSources as src (src.id)}
+				<li>
+					<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+					<a class="card lift" href={`${resolve('/study/external')}?source=${src.id}`}>
+						<span class="card-title">{resolveText(src.label, locale())}</span>
+						<span class="card-desc">{m.study_external_card_desc()}</span>
+						<span class="go" aria-hidden="true">→</span>
+					</a>
+				</li>
+			{/each}
+		</ul>
+	</section>
 </main>
 
 <style>
@@ -46,6 +70,21 @@
 		font-family: var(--font-mono);
 		color: var(--color-ink-soft);
 		margin: var(--space-2) 0 0;
+	}
+
+	.external {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-4);
+		border-top: var(--border-width-sm) solid var(--color-outline);
+		padding-top: var(--space-6);
+	}
+
+	.external h2 {
+		font-family: var(--font-display);
+		font-weight: 800;
+		font-size: 1.5rem;
+		margin: 0;
 	}
 
 	.cards {
