@@ -33,9 +33,17 @@
 		align-items: center;
 		padding: var(--space-2) var(--space-3);
 		font-size: 0.9rem;
-		color: var(--color-ink);
+		font-weight: 700;
+		color: var(--color-primary);
 		background: var(--color-surface);
-		border: var(--border-width) solid var(--color-outline);
-		border-radius: var(--radius-md);
+		border: var(--border-width-sm) solid var(--color-outline);
+		border-radius: var(--radius-pill);
+		box-shadow: var(--shadow-card-sm);
+		transition: transform 0.1s ease;
+	}
+
+	.theme-toggle:active {
+		transform: translate(2px, 2px);
+		box-shadow: none;
 	}
 </style>

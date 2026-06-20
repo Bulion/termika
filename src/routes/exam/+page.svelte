@@ -239,12 +239,18 @@
 
 	.primary {
 		align-self: flex-start;
-		padding: var(--space-3) var(--space-6);
+		padding: var(--space-3) var(--space-8);
 		font-size: 1rem;
 		color: var(--color-on-accent);
-		background: var(--color-sun);
+		background: var(--color-sky);
 		border: var(--border-width) solid var(--color-outline);
-		border-radius: var(--radius-md);
+		border-radius: var(--radius-pill);
 		box-shadow: var(--shadow-card);
+		transition: transform 0.1s ease;
+	}
+
+	.primary:active {
+		transform: translate(4px, 4px);
+		box-shadow: none;
 	}
 </style>

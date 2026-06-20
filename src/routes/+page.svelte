@@ -1,92 +1,97 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import { m } from '$lib/paraglide/messages.js';
+
+	const features = [
+		{ key: 'met', title: m.feat_met, desc: m.feat_met_desc, accent: false },
+		{ key: 'aero', title: m.feat_aero, desc: m.feat_aero_desc, accent: true },
+		{ key: 'nav', title: m.feat_nav, desc: m.feat_nav_desc, accent: false }
+	];
 </script>
 
 <svelte:head><title>{m.app_name()}</title></svelte:head>
 
 <main class="home">
 	<section class="hero">
-		<div class="sky" aria-hidden="true">
-			<div class="cloud cloud-1"></div>
-			<div class="cloud cloud-2"></div>
-			<div class="cloud cloud-3"></div>
-			<svg class="glider" viewBox="0 0 96 48" width="120" height="60">
-				<path
-					d="M6 30 L86 20 L54 34 L26 34 Z M44 26 L50 44 L40 44 Z"
-					fill="var(--color-surface)"
+		<div class="copy">
+			<span class="eyebrow">{m.hero_eyebrow()}</span>
+			<h1>{m.hero_title()} <span class="accent">{m.app_name()}</span></h1>
+			<p class="tagline">{m.tagline()}</p>
+			<div class="actions">
+				<a class="btn btn--primary" href={resolve('/study')}>{m.hero_cta_primary()}</a>
+				<a class="btn btn--ghost" href={resolve('/drills')}>{m.hero_cta_secondary()}</a>
+			</div>
+		</div>
+
+		<div class="art" aria-hidden="true">
+			<svg viewBox="0 0 200 200" width="100%" height="100%">
+				<defs>
+					<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+						<stop offset="0" stop-color="var(--color-sky)" />
+						<stop offset="1" stop-color="var(--color-surface)" />
+					</linearGradient>
+				</defs>
+				<rect x="2" y="2" width="196" height="196" rx="20" fill="url(#sky)" />
+				<g fill="var(--color-surface)" stroke="var(--color-outline)" stroke-width="3">
+					<ellipse cx="55" cy="150" rx="44" ry="22" />
+					<ellipse cx="135" cy="165" rx="38" ry="20" />
+				</g>
+				<circle
+					cx="158"
+					cy="44"
+					r="20"
+					fill="var(--color-sun)"
 					stroke="var(--color-outline)"
 					stroke-width="3"
-					stroke-linejoin="round"
 				/>
+				<g
+					fill="var(--color-surface)"
+					stroke="var(--color-outline)"
+					stroke-width="4"
+					stroke-linejoin="round"
+				>
+					<path d="M40 96 L150 78 L96 104 L70 104 Z" />
+					<path d="M88 100 L96 132 L80 132 Z" />
+				</g>
 			</svg>
 		</div>
-		<div class="copy">
-			<h1>{m.app_name()}</h1>
-			<p class="tagline">{m.tagline()}</p>
-			<a class="cta" href={resolve('/study')}>{m.nav_study()}</a>
+	</section>
+
+	<section class="learn">
+		<h2>{m.learn_heading()}</h2>
+		<div class="cards">
+			{#each features as feature (feature.key)}
+				<article class="feature" class:feature--accent={feature.accent}>
+					<span class="badge" aria-hidden="true"></span>
+					<h3>{feature.title()}</h3>
+					<p>{feature.desc()}</p>
+				</article>
+			{/each}
 		</div>
 	</section>
 </main>
 
 <style>
 	.home {
-		max-width: 60rem;
+		max-width: 64rem;
 		margin: 0 auto;
-		padding: var(--space-6) var(--space-4);
+		padding: var(--space-8) var(--space-4);
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-8);
 	}
 
 	.hero {
 		display: grid;
 		gap: var(--space-6);
+		align-items: center;
 	}
 
-	.sky {
-		position: relative;
-		height: 16rem;
-		overflow: hidden;
-		background: linear-gradient(to bottom, var(--color-sky), var(--color-bg));
-		border: var(--border-width) solid var(--color-outline);
-		border-radius: var(--radius-lg);
-	}
-
-	.cloud {
-		position: absolute;
-		width: 7rem;
-		height: 2.5rem;
-		background: var(--color-surface);
-		border: var(--border-width) solid var(--color-outline);
-		border-radius: 999px;
-		opacity: 0.95;
-		animation: drift 28s linear infinite;
-	}
-
-	.cloud-1 {
-		top: 18%;
-		animation-duration: 32s;
-	}
-
-	.cloud-2 {
-		top: 46%;
-		width: 5rem;
-		height: 2rem;
-		animation-duration: 24s;
-		animation-delay: -8s;
-	}
-
-	.cloud-3 {
-		top: 70%;
-		width: 9rem;
-		animation-duration: 40s;
-		animation-delay: -16s;
-	}
-
-	.glider {
-		position: absolute;
-		left: 50%;
-		top: 38%;
-		translate: -50% 0;
-		animation: soar 6s ease-in-out infinite;
+	@media (width >= 48rem) {
+		.hero {
+			grid-template-columns: 1.1fr 0.9fr;
+			gap: var(--space-8);
+		}
 	}
 
 	.copy {
@@ -96,55 +101,140 @@
 		align-items: flex-start;
 	}
 
+	.eyebrow {
+		padding: var(--space-1) var(--space-3);
+		font-family: var(--font-mono);
+		font-size: 0.8rem;
+		font-weight: 700;
+		color: var(--color-primary);
+		background: var(--color-surface);
+		border: var(--border-width-sm) solid var(--color-outline);
+		border-radius: var(--radius-pill);
+	}
+
 	h1 {
-		font-size: clamp(2.5rem, 9vw, 4.5rem);
+		font-size: clamp(2.25rem, 7vw, 3.75rem);
 		margin: 0;
+	}
+
+	.accent {
+		color: var(--color-primary);
 	}
 
 	.tagline {
-		font-size: clamp(1.1rem, 3vw, 1.5rem);
+		font-size: clamp(1.05rem, 2.5vw, 1.35rem);
 		color: var(--color-ink-soft);
 		margin: 0;
-		max-width: 32rem;
+		max-width: 30rem;
 	}
 
-	.cta {
-		padding: var(--space-3) var(--space-8);
+	.actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-3);
+		margin-top: var(--space-2);
+	}
+
+	.btn {
+		padding: var(--space-3) var(--space-6);
 		font-family: var(--font-display);
-		font-size: 1.25rem;
+		font-weight: 700;
+		font-size: 1.05rem;
 		text-decoration: none;
-		color: var(--color-on-accent);
-		background: var(--color-sun);
 		border: var(--border-width) solid var(--color-outline);
-		border-radius: var(--radius-md);
+		border-radius: var(--radius-pill);
+		box-shadow: var(--shadow-card);
+		transition: transform 0.1s ease;
+	}
+
+	.btn:active {
+		transform: translate(4px, 4px);
+		box-shadow: none;
+	}
+
+	.btn--primary {
+		color: var(--color-on-accent);
+		background: var(--color-sky);
+	}
+
+	.btn--ghost {
+		color: var(--color-ink);
+		background: var(--color-surface);
+	}
+
+	.art {
+		aspect-ratio: 1;
+		border: var(--border-width) solid var(--color-outline);
+		border-radius: var(--radius-lg);
+		box-shadow: var(--shadow-card);
+		overflow: hidden;
+	}
+
+	.art svg {
+		display: block;
+	}
+
+	.learn {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-6);
+		align-items: center;
+		text-align: center;
+	}
+
+	.cards {
+		display: grid;
+		gap: var(--space-4);
+		width: 100%;
+		grid-template-columns: 1fr;
+	}
+
+	@media (width >= 48rem) {
+		.cards {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
+	.feature {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-2);
+		text-align: left;
+		padding: var(--space-6);
+		background: var(--color-surface);
+		border: var(--border-width) solid var(--color-outline);
+		border-radius: var(--radius-lg);
 		box-shadow: var(--shadow-card);
 	}
 
-	@keyframes drift {
-		from {
-			transform: translateX(-12rem);
-		}
-
-		to {
-			transform: translateX(64rem);
-		}
+	.feature--accent {
+		background: var(--color-sun);
+		color: var(--color-on-accent);
 	}
 
-	@keyframes soar {
-		0%,
-		100% {
-			transform: translateY(0) rotate(-3deg);
-		}
-
-		50% {
-			transform: translateY(-10px) rotate(2deg);
-		}
+	.feature--accent p {
+		color: var(--color-on-accent);
 	}
 
-	@media (prefers-reduced-motion: reduce) {
-		.cloud,
-		.glider {
-			animation: none;
-		}
+	.badge {
+		width: 3rem;
+		height: 3rem;
+		background: var(--color-sky);
+		border: var(--border-width-sm) solid var(--color-outline);
+		border-radius: var(--radius-md);
+	}
+
+	.feature--accent .badge {
+		background: var(--color-surface);
+	}
+
+	.feature h3 {
+		margin: var(--space-2) 0 0;
+		font-size: 1.25rem;
+	}
+
+	.feature p {
+		margin: 0;
+		color: var(--color-ink-soft);
 	}
 </style>

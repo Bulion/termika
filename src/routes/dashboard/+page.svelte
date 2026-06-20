@@ -91,7 +91,7 @@
 						>
 					</div>
 					<div class="bar">
-						<div class="bar-fill" style:width={`${subject.readinessPct}%`}></div>
+						<div class="bar-fill wind-streak" style:width={`${subject.readinessPct}%`}></div>
 					</div>
 				</li>
 			{/each}
@@ -159,6 +159,11 @@
 		display: flex;
 		justify-content: space-between;
 		gap: var(--space-4);
+		padding: var(--space-3) var(--space-4);
+		background: var(--color-surface);
+		border: var(--border-width-sm) solid var(--color-outline);
+		border-radius: var(--radius-md);
+		box-shadow: var(--shadow-card-sm);
 	}
 
 	.meta {
@@ -169,16 +174,17 @@
 
 	.bar {
 		margin-top: var(--space-2);
-		height: 0.75rem;
-		background: var(--color-surface);
-		border: var(--border-width) solid var(--color-outline);
-		border-radius: var(--radius-sm);
+		height: 0.875rem;
+		background: var(--color-track);
+		border: var(--border-width-sm) solid var(--color-outline);
+		border-radius: var(--radius-pill);
 		overflow: hidden;
 	}
 
 	.bar-fill {
 		height: 100%;
-		background: var(--color-lift);
+		background: var(--color-sky);
+		border-right: var(--border-width-sm) solid var(--color-outline);
 		transition: width 500ms ease;
 	}
 
@@ -198,12 +204,18 @@
 	}
 
 	.action {
-		padding: var(--space-3) var(--space-4);
+		padding: var(--space-3) var(--space-6);
 		color: var(--color-on-accent);
 		background: var(--color-sky);
 		border: var(--border-width) solid var(--color-outline);
-		border-radius: var(--radius-md);
+		border-radius: var(--radius-pill);
 		box-shadow: var(--shadow-card);
+		transition: transform 0.1s ease;
+	}
+
+	.action:active {
+		transform: translate(4px, 4px);
+		box-shadow: none;
 	}
 
 	.error {

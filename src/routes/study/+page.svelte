@@ -84,6 +84,12 @@
 	{:else if queue.length === 0}
 		<p class="status">{m.session_empty()}</p>
 	{:else if current}
+		<div class="progress" aria-hidden="true">
+			<div
+				class="progress-fill wind-streak"
+				style:width={`${queue.length ? (index / queue.length) * 100 : 0}%`}
+			></div>
+		</div>
 		<p class="status">{m.cards_left({ count: remaining })}</p>
 		{#key current.id}
 			<RecallCard item={current} locale={locale()} onGrade={grade} />
@@ -113,15 +119,39 @@
 
 	.mode {
 		padding: var(--space-2) var(--space-4);
+		font-weight: 700;
 		background: var(--color-surface);
 		color: var(--color-ink);
-		border: var(--border-width) solid var(--color-outline);
-		border-radius: var(--radius-md);
+		border: var(--border-width-sm) solid var(--color-outline);
+		border-radius: var(--radius-pill);
+		box-shadow: var(--shadow-card-sm);
+		transition: transform 0.1s ease;
+	}
+
+	.mode:active {
+		transform: translate(2px, 2px);
+		box-shadow: none;
 	}
 
 	.mode[aria-pressed='true'] {
 		color: var(--color-on-accent);
 		background: var(--color-sky);
+	}
+
+	.progress {
+		width: 100%;
+		height: 1.5rem;
+		background: var(--color-track);
+		border: var(--border-width-sm) solid var(--color-outline);
+		border-radius: var(--radius-pill);
+		overflow: hidden;
+	}
+
+	.progress-fill {
+		height: 100%;
+		background: var(--color-sky);
+		border-right: var(--border-width-sm) solid var(--color-outline);
+		transition: width 0.5s ease;
 	}
 
 	.status {

@@ -17,10 +17,18 @@
 	.lang-toggle {
 		padding: var(--space-2) var(--space-3);
 		font-family: var(--font-mono);
+		font-weight: 700;
 		font-size: 0.9rem;
-		color: var(--color-ink);
+		color: var(--color-primary);
 		background: var(--color-surface);
-		border: var(--border-width) solid var(--color-outline);
-		border-radius: var(--radius-md);
+		border: var(--border-width-sm) solid var(--color-outline);
+		border-radius: var(--radius-pill);
+		box-shadow: var(--shadow-card-sm);
+		transition: transform 0.1s ease;
+	}
+
+	.lang-toggle:active {
+		transform: translate(2px, 2px);
+		box-shadow: none;
 	}
 </style>

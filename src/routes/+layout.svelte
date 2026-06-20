@@ -65,20 +65,24 @@
 	}
 
 	.app-header {
+		position: sticky;
+		top: 0;
+		z-index: 50;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		gap: var(--space-3) var(--space-4);
 		padding: var(--space-3) var(--space-4);
-		border-bottom: var(--border-width) solid var(--color-outline);
+		border-bottom: 4px solid var(--color-outline);
 		background: var(--color-surface);
 	}
 
 	.brand {
 		font-family: var(--font-display);
-		font-size: 1.25rem;
-		font-weight: 600;
-		color: var(--color-ink);
+		font-size: 1.5rem;
+		font-weight: 800;
+		letter-spacing: -0.02em;
+		color: var(--color-primary);
 		text-decoration: none;
 	}
 
@@ -91,14 +95,18 @@
 
 	.nav a {
 		color: var(--color-ink-soft);
+		font-family: var(--font-display);
+		font-weight: 700;
 		text-decoration: none;
-		padding: var(--space-1) var(--space-2);
-		border-radius: var(--radius-sm);
+		padding: var(--space-1) var(--space-3);
+		border: var(--border-width-sm) solid transparent;
+		border-radius: var(--radius-pill);
 	}
 
 	.nav a[aria-current='page'] {
-		color: var(--color-ink);
-		background: color-mix(in srgb, var(--color-sky) 25%, transparent);
+		color: var(--color-on-accent);
+		background: var(--color-sky);
+		border-color: var(--color-outline);
 	}
 
 	.controls {

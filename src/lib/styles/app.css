@@ -1,9 +1,10 @@
 @import url('./tokens.css');
-@import url('@fontsource/fredoka/400.css');
-@import url('@fontsource/fredoka/600.css');
-@import url('@fontsource/atkinson-hyperlegible/400.css');
-@import url('@fontsource/atkinson-hyperlegible/700.css');
+@import url('@fontsource/plus-jakarta-sans/700.css');
+@import url('@fontsource/plus-jakarta-sans/800.css');
+@import url('@fontsource/atkinson-hyperlegible-next/400.css');
+@import url('@fontsource/atkinson-hyperlegible-next/700.css');
 @import url('@fontsource/space-mono/400.css');
+@import url('@fontsource/space-mono/700.css');
 
 *,
 *::before,
@@ -29,12 +30,15 @@ h1,
 h2,
 h3 {
 	font-family: var(--font-display);
+	font-weight: 800;
 	line-height: 1.15;
+	letter-spacing: -0.02em;
 	margin: 0 0 var(--space-4);
 }
 
 button {
 	font-family: var(--font-display);
+	font-weight: 700;
 	cursor: pointer;
 }
 
@@ -42,6 +46,17 @@ button {
 	outline: none;
 	box-shadow: var(--focus-ring);
 	border-radius: var(--radius-sm);
+}
+
+/* Diagonal "wind-streak" stripes for progress fills, suggesting motion. */
+.wind-streak {
+	background-image: repeating-linear-gradient(
+		-45deg,
+		rgb(255 255 255 / 25%),
+		rgb(255 255 255 / 25%) 10px,
+		transparent 10px,
+		transparent 20px
+	);
 }
 
 @media (prefers-reduced-motion: reduce) {

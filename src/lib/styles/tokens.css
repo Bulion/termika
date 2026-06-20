@@ -1,10 +1,11 @@
 /*
- * Single source of truth for visual style. Components reference these tokens only,
- * never raw values. The dark theme overrides the same tokens under [data-theme='dark'].
+ * Single source of truth for visual style, matching the "Termika" Stitch design system:
+ * cartoon flight-manual look - bold navy outlines, hard offset shadows, pill buttons,
+ * hyper-rounded cards. Components reference these tokens only, never raw values.
  */
 :root {
-	--font-display: 'Fredoka', 'Baloo 2', system-ui, sans-serif;
-	--font-body: 'Atkinson Hyperlegible', system-ui, -apple-system, sans-serif;
+	--font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+	--font-body: 'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', system-ui, sans-serif;
 	--font-mono: 'Space Mono', ui-monospace, 'SFMono-Regular', monospace;
 
 	--space-1: 0.25rem;
@@ -14,44 +15,62 @@
 	--space-6: 1.5rem;
 	--space-8: 2rem;
 
-	--radius-sm: 0.5rem;
-	--radius-md: 0.875rem;
-	--radius-lg: 1.25rem;
+	--radius-sm: 0.75rem;
+	--radius-md: 1.5rem;
+	--radius-lg: 2rem;
+	--radius-pill: 9999px;
 
-	--border-width: 2px;
+	--border-width: 3px;
+	--border-width-sm: 2px;
 
-	/* Light theme: daytime sky */
-	--color-sky: #4fb6e8;
-	--color-sun: #ffc93c;
-	--color-lift: #34c77b;
-	--color-sink: #ff6b5e;
+	/* Light theme: cockpit-view sky */
+	--color-bg: #f6fafe;
 	--color-surface: #fff;
-	--color-bg: #eaf6ff;
-	--color-ink: #1e2a3a;
-	--color-ink-soft: #4a5a6a;
-	--color-outline: #1e2a3a;
+	--color-surface-2: #eaeef2;
+	--color-track: #dfe3e7;
+	--color-ink: #171c1f;
+	--color-ink-soft: #3e4850;
+	--color-outline: #171c1f;
+	--color-primary: #00658d;
+	--color-sky: #00aeef;
+	--color-sun: #fcd400;
+	--color-lift: #2ec27e;
+	--color-sink: #d92d20;
+	--color-sink-bg: #ffdad6;
+	--color-on-sink: #93000a;
+	--color-answer: #c6e7ff;
 
-	/* Text on the light accent fills (sun/sky/lift/sink); dark in both themes since the
-	   accents stay light. Verified >= 4.5:1 against every accent in light and dark. */
+	/* Dark text on the light sky/sun/lift fills; verified >= 4.5:1 against each. */
 	--color-on-accent: #13213b;
 
-	--shadow-card: 0 4px 0 0 var(--color-outline);
+	--shadow-card: 4px 4px 0 0 var(--color-outline);
+	--shadow-card-sm: 2px 2px 0 0 var(--color-outline);
+	--shadow-blue: 4px 4px 0 0 #00658d;
+	--shadow-yellow: 4px 4px 0 0 #705d00;
 	--focus-ring: 0 0 0 3px var(--color-sun);
 }
 
+/* "Termika Midnight" - deep charcoal night-flight palette with light Neubrutalist outlines. */
 [data-theme='dark'] {
-	--color-sky: #6cc6f2;
-	--color-sun: #ffd24d;
-	--color-lift: #46e09a;
-	--color-sink: #ff8a7e;
-	--color-surface: #20305a;
-	--color-bg: #0e1730;
-	--color-ink: #f1f6fc;
-	--color-ink-soft: #c4d2e8;
+	--color-bg: #101415;
+	--color-surface: #1d2022;
+	--color-surface-2: #272a2c;
+	--color-track: #323537;
+	--color-ink: #e0e3e5;
+	--color-ink-soft: #bdc8d1;
+	--color-outline: #87929b;
+	--color-primary: #82cfff;
+	--color-sky: #00aeef;
+	--color-sun: #e3aa00;
+	--color-lift: #10b981;
+	--color-sink: #ffb4ab;
+	--color-sink-bg: #93000a;
+	--color-on-sink: #ffdad6;
+	--color-answer: #15303f;
 
-	/* A light, visible stroke - dark themes need the cartoon outline to read against the page. */
-	--color-outline: #8ea6cc;
-
-	--shadow-card: 0 4px 0 0 #060c1c;
+	--shadow-card: 4px 4px 0 0 #05080c;
+	--shadow-card-sm: 2px 2px 0 0 #05080c;
+	--shadow-blue: 4px 4px 0 0 #003e58;
+	--shadow-yellow: 4px 4px 0 0 #5a4100;
 	--focus-ring: 0 0 0 3px var(--color-sun);
 }
