@@ -1,6 +1,16 @@
+/** Whitelisted unary functions; trigonometric arguments are in degrees. */
+const FUNCTIONS: Record<string, (x: number) => number> = {
+	sqrt: Math.sqrt,
+	abs: Math.abs,
+	sin: (x) => Math.sin((x * Math.PI) / 180),
+	cos: (x) => Math.cos((x * Math.PI) / 180),
+	tan: (x) => Math.tan((x * Math.PI) / 180)
+};
+
 /**
  * A tiny safe arithmetic evaluator for multi-input drill formulas (e.g. "distance / speed * 60").
- * Supports numbers, named variables, + - * / %, parentheses and unary +/-. No JS eval, no globals.
+ * Supports numbers, named variables, + - * / %, parentheses, unary +/- and the whitelisted
+ * functions sqrt/abs/sin/cos/tan (degrees). No JS eval, no globals.
  */
 export function evaluateExpr(expr: string, scope: Record<string, number>): number {
 	let pos = 0;
@@ -58,9 +68,21 @@ export function evaluateExpr(expr: string, scope: Record<string, number>): numbe
 		}
 		const idMatch = /^[A-Za-z_][A-Za-z0-9_]*/.exec(expr.slice(pos));
 		if (idMatch) {
-			pos += idMatch[0].length;
-			const value = scope[idMatch[0]];
-			if (value === undefined) throw new Error(`unknown variable "${idMatch[0]}"`);
+			const name = idMatch[0];
+			pos += name.length;
+			skip();
+			if (expr[pos] === '(') {
+				pos += 1;
+				const arg = parseExpression();
+				skip();
+				if (expr[pos] !== ')') throw new Error(`expected ")" at ${pos} in "${expr}"`);
+				pos += 1;
+				const fn = FUNCTIONS[name];
+				if (!fn) throw new Error(`unknown function "${name}"`);
+				return fn(arg);
+			}
+			const value = scope[name];
+			if (value === undefined) throw new Error(`unknown variable "${name}"`);
 			return value;
 		}
 		throw new Error(`unexpected token at ${pos} in "${expr}"`);

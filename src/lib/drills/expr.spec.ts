@@ -22,6 +22,16 @@ describe('evaluateExpr', () => {
 		expect(evaluateExpr('(357 + 8) % 360', {})).toBe(5);
 	});
 
+	it('evaluates whitelisted functions (trig in degrees)', () => {
+		expect(evaluateExpr('sqrt(16)', {})).toBe(4);
+		expect(evaluateExpr('1 / cos(60)', {})).toBeCloseTo(2, 6);
+		expect(evaluateExpr('vs / sqrt(cos(bank))', { vs: 70, bank: 60 })).toBeCloseTo(98.99, 1);
+	});
+
+	it('throws on an unknown function (negative case)', () => {
+		expect(() => evaluateExpr('foo(2)', {})).toThrow(/unknown function/);
+	});
+
 	it('throws on an unknown variable (negative case)', () => {
 		expect(() => evaluateExpr('a + b', { a: 1 })).toThrow(/unknown variable/);
 	});

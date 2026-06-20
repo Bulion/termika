@@ -1,0 +1,239 @@
+{
+	"schemaVersion": 1,
+	"id": "facts-agk",
+	"title": {
+		"pl": "Budowa szybowca - kluczowe fakty",
+		"en": "Aircraft knowledge - key facts"
+	},
+	"description": {
+		"pl": "Aktywne przypominanie najczęstszych wartości i definicji z egzaminu SPL.",
+		"en": "Active recall of the most common SPL exam values and definitions."
+	},
+	"labelA": {
+		"pl": "Zagadnienie",
+		"en": "Topic"
+	},
+	"labelB": {
+		"pl": "Odpowiedź",
+		"en": "Answer"
+	},
+	"directions": ["a-to-b"],
+	"timeLimitSec": 30,
+	"pairs": [
+		{
+			"id": "agk-1",
+			"a": {
+				"pl": "Do czego służy wariometr?",
+				"en": "What does a variometer measure?"
+			},
+			"b": {
+				"pl": "Prędkość pionowa (wznoszenie/opadanie)",
+				"en": "Vertical speed (climb/sink rate)"
+			},
+			"acceptB": ["prędkość pionową", "vario", "climb rate", "sink rate", "wznoszenie i opadanie"]
+		},
+		{
+			"id": "agk-2",
+			"a": {
+				"pl": "Jaki element pomiarowy ma mechaniczny wysokościomierz?",
+				"en": "What is the sensing element of a mechanical altimeter?"
+			},
+			"b": {
+				"pl": "Puszka aneroidowa",
+				"en": "Aneroid capsule"
+			},
+			"acceptB": ["puszka aneroidowa", "aneroid capsule", "puszka próżniowa", "aneroid"]
+		},
+		{
+			"id": "agk-3",
+			"a": {
+				"pl": "Jakie ciśnienia są doprowadzone do prędkościomierza?",
+				"en": "Which pressures are connected to the airspeed indicator?"
+			},
+			"b": {
+				"pl": "Statyczne i całkowite",
+				"en": "Static and total (pitot)"
+			},
+			"acceptB": [
+				"statyczne i całkowite",
+				"static and total",
+				"total and static",
+				"całkowite i statyczne"
+			]
+		},
+		{
+			"id": "agk-4",
+			"a": {
+				"pl": "Jakie ciśnienie doprowadzone jest do wysokościomierza?",
+				"en": "Which pressure is connected to the altimeter?"
+			},
+			"b": {
+				"pl": "Statyczne",
+				"en": "Static"
+			},
+			"acceptB": ["statyczne", "static", "ciśnienie statyczne"]
+		},
+		{
+			"id": "agk-5",
+			"a": {
+				"pl": "Co mierzy prędkościomierz lotniczy (jaki rodzaj prędkości wskazuje)?",
+				"en": "What does the aircraft airspeed indicator measure?"
+			},
+			"b": {
+				"pl": "Prędkość przyrządowa (IAS) - na podstawie ciśnienia dynamicznego (różnicy ciśnienia całkowitego i statycznego)",
+				"en": "Indicated airspeed (IAS) - from dynamic pressure (total minus static)"
+			},
+			"acceptB": ["IAS", "prędkość wskazywana", "prędkość przyrządowa", "indicated airspeed"]
+		},
+		{
+			"id": "agk-6",
+			"a": {
+				"pl": "Z czego składa się kadłub konstrukcji półskorupowej?",
+				"en": "What are the main structural members of a semi-monocoque fuselage?"
+			},
+			"b": {
+				"pl": "Wręgi, podłużnice, pokrycie",
+				"en": "Frames (bulkheads), stringers, skin"
+			},
+			"acceptB": [
+				"wręgi podłużnice pokrycie",
+				"frames stringers skin",
+				"wręgi, podłużnice, pokrycie"
+			]
+		},
+		{
+			"id": "agk-7",
+			"a": {
+				"pl": "Jaki jest główny element siłowy kadłuba o konstrukcji skorupowej (monocoque)?",
+				"en": "What carries the load in a monocoque fuselage?"
+			},
+			"b": {
+				"pl": "Pokrycie, wzmocnione wręgami",
+				"en": "Skin, reinforced by frames"
+			},
+			"acceptB": ["pokrycie", "skin", "laminat", "obciążone pokrycie"]
+		},
+		{
+			"id": "agk-8",
+			"a": {
+				"pl": "Do czego służy hamulec aerodynamiczny w szybowcu?",
+				"en": "What is the purpose of an airbrake (spoiler) in a glider?"
+			},
+			"b": {
+				"pl": "Zwiększenie oporu i opadania (zmniejszenie doskonałości), sterowany przez pilota",
+				"en": "Increase drag and sink rate (reduce glide ratio), pilot-controlled"
+			},
+			"acceptB": [
+				"zwiększenie oporu",
+				"zwiększenie opadania",
+				"zmniejszenie doskonałości",
+				"increase drag",
+				"increase sink"
+			]
+		},
+		{
+			"id": "agk-9",
+			"a": {
+				"pl": "Do czego służą lotki?",
+				"en": "What do ailerons control?"
+			},
+			"b": {
+				"pl": "Sterowanie przechyleniami (obrót względem osi podłużnej)",
+				"en": "Roll control (rotation about longitudinal axis)"
+			},
+			"acceptB": ["przechylenia", "roll", "oś podłużna", "longitudinal axis"]
+		},
+		{
+			"id": "agk-10",
+			"a": {
+				"pl": "Do czego służy trymer (klapka wyważająca)?",
+				"en": "What is the purpose of a trim tab?"
+			},
+			"b": {
+				"pl": "Zmniejszenie sił w układzie sterowania (wyważenie aerodynamiczne)",
+				"en": "Reduce control forces (aerodynamic trim)"
+			},
+			"acceptB": [
+				"zmniejszenie sił",
+				"reduce control forces",
+				"wyważenie",
+				"trim",
+				"aerodynamic trim"
+			]
+		},
+		{
+			"id": "agk-11",
+			"a": {
+				"pl": "Jaką rolę pełni usterzenie ogonowe?",
+				"en": "What does the tail unit (empennage) provide?"
+			},
+			"b": {
+				"pl": "Stateczność i sterowność podłużna oraz kierunkowa",
+				"en": "Longitudinal and directional stability and control"
+			},
+			"acceptB": [
+				"stateczność podłużna i kierunkowa",
+				"longitudinal and directional stability",
+				"sterowność podłużna"
+			]
+		},
+		{
+			"id": "agk-12",
+			"a": {
+				"pl": "Czym charakteryzuje się usterzenie motylkowe (V-tail)?",
+				"en": "What characterises a butterfly (V-tail) empennage?"
+			},
+			"b": {
+				"pl": "Dwie połówki ustawione pod znacznym wzniosem, pełnią rolę usterzenia poziomego i pionowego jednocześnie",
+				"en": "Two halves set at a large dihedral angle, acting as both horizontal and vertical stabiliser"
+			},
+			"acceptB": ["dwie połówki", "two halves", "motylkowe", "V-tail", "wznios"]
+		},
+		{
+			"id": "agk-13",
+			"a": {
+				"pl": "Na czym polega wychylenie różnicowe lotek?",
+				"en": "What is differential aileron deflection?"
+			},
+			"b": {
+				"pl": "Lotka wychylana do góry wychyla się o większy kąt niż lotka wychylana do dołu",
+				"en": "The up-going aileron deflects through a larger angle than the down-going aileron"
+			},
+			"acceptB": ["większy kąt do góry", "up more than down", "różnicowe", "differential"]
+		},
+		{
+			"id": "agk-14",
+			"a": {
+				"pl": "Do czego służy dźwigar skrzydłowy?",
+				"en": "What is the primary function of a wing spar?"
+			},
+			"b": {
+				"pl": "Główny element przenoszący obciążenia w skrzydle",
+				"en": "Main load-carrying structural element in the wing"
+			},
+			"acceptB": [
+				"przenoszenie obciążeń",
+				"load-carrying",
+				"główny element nośny",
+				"main structural element"
+			]
+		},
+		{
+			"id": "agk-15",
+			"a": {
+				"pl": "Czym jest współczynnik bezpieczeństwa konstrukcji lotniczej?",
+				"en": "What is the structural safety factor in aviation?"
+			},
+			"b": {
+				"pl": "Stosunek obciążenia niszczącego do obciążenia dopuszczalnego; wartość większa od 1",
+				"en": "Ratio of ultimate load to limit (allowable) load; value greater than 1"
+			},
+			"acceptB": [
+				"stosunek wytrzymałości doraźnej do dopuszczalnej",
+				"ratio of ultimate to limit strength",
+				">1",
+				"większy od 1"
+			]
+		}
+	]
+}

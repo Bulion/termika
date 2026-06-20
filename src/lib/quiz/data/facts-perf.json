@@ -1,0 +1,188 @@
+{
+	"schemaVersion": 1,
+	"id": "facts-perf",
+	"title": {
+		"pl": "Osiągi i planowanie - kluczowe fakty",
+		"en": "Performance - key facts"
+	},
+	"description": {
+		"pl": "Aktywne przypominanie najczęstszych wartości i definicji z egzaminu SPL.",
+		"en": "Active recall of the most common SPL exam values and definitions."
+	},
+	"labelA": {
+		"pl": "Zagadnienie",
+		"en": "Topic"
+	},
+	"labelB": {
+		"pl": "Odpowiedź",
+		"en": "Answer"
+	},
+	"directions": ["a-to-b"],
+	"timeLimitSec": 30,
+	"pairs": [
+		{
+			"id": "perf-1",
+			"a": {
+				"pl": "Temperatura na poziomie morza wg ISA",
+				"en": "ISA sea-level temperature"
+			},
+			"b": {
+				"pl": "15 °C",
+				"en": "15 °C"
+			},
+			"acceptB": ["15°C", "15 stopni", "15 degrees Celsius"]
+		},
+		{
+			"id": "perf-2",
+			"a": {
+				"pl": "Ciśnienie na poziomie morza wg ISA",
+				"en": "ISA sea-level pressure"
+			},
+			"b": {
+				"pl": "1013,25 hPa",
+				"en": "1013.25 hPa"
+			},
+			"acceptB": ["1013.25 hPa", "1013,25 hPa", "1013 hPa"]
+		},
+		{
+			"id": "perf-3",
+			"a": {
+				"pl": "Gęstość powietrza na poziomie morza wg ISA",
+				"en": "ISA sea-level air density"
+			},
+			"b": {
+				"pl": "1,225 kg/m³",
+				"en": "1.225 kg/m³"
+			},
+			"acceptB": ["1.225 kg/m3", "1,225 kg/m³", "1.225"]
+		},
+		{
+			"id": "perf-4",
+			"a": {
+				"pl": "Gradient temperatury wg ISA (na 1000 m)",
+				"en": "ISA temperature lapse rate per 1000 m"
+			},
+			"b": {
+				"pl": "-6,5 °C / 1000 m",
+				"en": "-6.5 °C / 1000 m"
+			},
+			"acceptB": ["-6.5°C/1000m", "-6,5 stopnia na 1000 m", "6.5 °C/km"]
+		},
+		{
+			"id": "perf-5",
+			"a": {
+				"pl": "Wzór na moment siły",
+				"en": "Moment of force formula"
+			},
+			"b": {
+				"pl": "Moment = siła × ramię",
+				"en": "Moment = force × arm"
+			},
+			"acceptB": ["M = F * r", "M = ciężar × ramię", "moment = force times arm"]
+		},
+		{
+			"id": "perf-6",
+			"a": {
+				"pl": "Jednostka wyrażenia położenia środka ciężkości jako procent",
+				"en": "CG position unit as percentage"
+			},
+			"b": {
+				"pl": "% MAC (procent średniej cięciwy aerodynamicznej)",
+				"en": "% MAC (percent mean aerodynamic chord)"
+			},
+			"acceptB": ["% MAC", "procent MAC", "percent mean aerodynamic chord"]
+		},
+		{
+			"id": "perf-7",
+			"a": {
+				"pl": "Jak ustala się wysokość ciśnieniową lotniska",
+				"en": "How to determine pressure altitude of an aerodrome"
+			},
+			"b": {
+				"pl": "Odczyt wysokościomierza nastawionego na 1013,25 hPa",
+				"en": "Altimeter reading set to 1013.25 hPa"
+			},
+			"acceptB": ["1013.25 hPa", "1013 hPa", "odczyt przy standardowym ciśnieniu"]
+		},
+		{
+			"id": "perf-8",
+			"a": {
+				"pl": "Wpływ przedniego skrajnego położenia CG na prędkość przeciągnięcia",
+				"en": "Effect of forward CG limit on stall speed"
+			},
+			"b": {
+				"pl": "Wyższa prędkość przeciągnięcia",
+				"en": "Higher stall speed"
+			},
+			"acceptB": [
+				"większa prędkość przeciągnięcia",
+				"wzrost prędkości przeciągnięcia",
+				"higher stall speed"
+			]
+		},
+		{
+			"id": "perf-9",
+			"a": {
+				"pl": "Wzrost prędkości przeciągnięcia podczas zakrętu 60°",
+				"en": "Stall speed increase in a 60° banked turn"
+			},
+			"b": {
+				"pl": "około 40%",
+				"en": "approximately 40%"
+			},
+			"acceptB": ["40%", "ok. 40%", "~40%", "about 40 percent"]
+		},
+		{
+			"id": "perf-10",
+			"a": {
+				"pl": "Wpływ tylnego CG na stateczność podłużną",
+				"en": "Effect of rearward CG on longitudinal stability"
+			},
+			"b": {
+				"pl": "Zmniejsza stateczność podłużną",
+				"en": "Decreases longitudinal stability"
+			},
+			"acceptB": ["zmniejszona stateczność", "mniejsza stateczność podłużna", "decreases stability"]
+		},
+		{
+			"id": "perf-11",
+			"a": {
+				"pl": "Wpływ przedniego CG na osiągi wznoszenia",
+				"en": "Effect of forward CG on climb performance"
+			},
+			"b": {
+				"pl": "Zmniejszenie prędkości wznoszenia",
+				"en": "Reduced climb rate"
+			},
+			"acceptB": ["zmniejszenie wznoszenia", "mniejsza prędkość wznoszenia", "reduced climb"]
+		},
+		{
+			"id": "perf-12",
+			"a": {
+				"pl": "Błąd barometryczny wysokościomierza - kiedy występuje",
+				"en": "Barometric altimeter error - when it occurs"
+			},
+			"b": {
+				"pl": "Gdy ciśnienie MSL różni się od 1013,25 hPa",
+				"en": "When MSL pressure differs from 1013.25 hPa"
+			},
+			"acceptB": ["ciśnienie inne niż 1013", "MSL ≠ 1013.25 hPa", "różne od standardowego"]
+		},
+		{
+			"id": "perf-13",
+			"a": {
+				"pl": "Błąd temperaturowy wysokościomierza - kiedy występuje",
+				"en": "Temperature altimeter error - when it occurs"
+			},
+			"b": {
+				"pl": "Gdy gradient temperatury różni się od standardowego (ISA)",
+				"en": "When temperature lapse rate differs from ISA standard"
+			},
+			"acceptB": [
+				"różny gradient temperatury",
+				"warunki inne niż ISA",
+				"non-ISA temperature gradient"
+			]
+		}
+	]
+}

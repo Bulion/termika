@@ -1,0 +1,180 @@
+{
+	"schemaVersion": 1,
+	"id": "facts-airlaw",
+	"title": {
+		"pl": "Prawo lotnicze - kluczowe fakty",
+		"en": "Air law - key facts"
+	},
+	"description": {
+		"pl": "Aktywne przypominanie najczęstszych wartości i definicji z egzaminu SPL.",
+		"en": "Active recall of the most common SPL exam values and definitions."
+	},
+	"labelA": {
+		"pl": "Zagadnienie",
+		"en": "Topic"
+	},
+	"labelB": {
+		"pl": "Odpowiedź",
+		"en": "Answer"
+	},
+	"directions": ["a-to-b"],
+	"timeLimitSec": 30,
+	"pairs": [
+		{
+			"id": "airlaw-1",
+			"a": {
+				"pl": "Promień strefy, w której mierzy się najwyższą przeszkodę przy locie VFR nad zabudową",
+				"en": "Radius within which the highest obstacle is measured for VFR flight over built-up areas"
+			},
+			"b": {
+				"pl": "600 m",
+				"en": "600 m"
+			},
+			"acceptB": ["600m", "600 metrów"]
+		},
+		{
+			"id": "airlaw-2",
+			"a": {
+				"pl": "ADIZ - rozwinięcie skrótu",
+				"en": "ADIZ - full name"
+			},
+			"b": {
+				"pl": "Strefa identyfikacji obrony powietrznej",
+				"en": "Air Defence Identification Zone"
+			},
+			"acceptB": ["strefa identyfikacji obrony powietrznej", "Air Defence Identification Zone"]
+		},
+		{
+			"id": "airlaw-3",
+			"a": {
+				"pl": "ATZ - rozwinięcie skrótu",
+				"en": "ATZ - full name"
+			},
+			"b": {
+				"pl": "Strefa ruchu lotniskowego",
+				"en": "Aerodrome Traffic Zone"
+			},
+			"acceptB": ["strefa ruchu lotniskowego", "Aerodrome Traffic Zone"]
+		},
+		{
+			"id": "airlaw-4",
+			"a": {
+				"pl": "CTR - rozwinięcie skrótu",
+				"en": "CTR - full name"
+			},
+			"b": {
+				"pl": "Strefa kontrolowana lotniska",
+				"en": "Control Zone"
+			},
+			"acceptB": ["strefa kontrolowana lotniska", "Control Zone"]
+		},
+		{
+			"id": "airlaw-5",
+			"a": {
+				"pl": "CTA - rozwinięcie skrótu",
+				"en": "CTA - full name"
+			},
+			"b": {
+				"pl": "Obszar kontrolowany",
+				"en": "Control Area"
+			},
+			"acceptB": ["obszar kontrolowany", "Control Area"]
+		},
+		{
+			"id": "airlaw-6",
+			"a": {
+				"pl": "ARP - rozwinięcie skrótu (wg ICAO)",
+				"en": "ARP - full name (per ICAO)"
+			},
+			"b": {
+				"pl": "Punkt odniesienia lotniska",
+				"en": "Aerodrome Reference Point"
+			},
+			"acceptB": ["punkt odniesienia lotniska", "Aerodrome Reference Point"]
+		},
+		{
+			"id": "airlaw-7",
+			"a": {
+				"pl": "AMC - rozwinięcie skrótu",
+				"en": "AMC - full name"
+			},
+			"b": {
+				"pl": "Ośrodek Zarządzania Przestrzenią Powietrzną",
+				"en": "Airspace Management Cell"
+			},
+			"acceptB": ["ośrodek zarządzania przestrzenią powietrzną", "Airspace Management Cell"]
+		},
+		{
+			"id": "airlaw-8",
+			"a": {
+				"pl": "ATM - rozwinięcie skrótu",
+				"en": "ATM - full name"
+			},
+			"b": {
+				"pl": "Zarządzanie ruchem lotniczym",
+				"en": "Air Traffic Management"
+			},
+			"acceptB": ["zarządzanie ruchem lotniczym", "Air Traffic Management"]
+		},
+		{
+			"id": "airlaw-9",
+			"a": {
+				"pl": "AUP - rozwinięcie skrótu",
+				"en": "AUP - full name"
+			},
+			"b": {
+				"pl": "Plan użytkowania przestrzeni powietrznej",
+				"en": "Airspace Use Plan"
+			},
+			"acceptB": ["plan użytkowania przestrzeni powietrznej", "Airspace Use Plan"]
+		},
+		{
+			"id": "airlaw-10",
+			"a": {
+				"pl": "Termin powiadomienia PKBWL o zdarzeniu lotniczym przez użytkownika / organ ATS / zarządzającego lotniskiem",
+				"en": "Deadline for notifying PKBWL of an aviation occurrence (operator / ATS / aerodrome manager)"
+			},
+			"b": {
+				"pl": "72 godziny",
+				"en": "72 hours"
+			},
+			"acceptB": ["72h", "72 godziny", "72 godz"]
+		},
+		{
+			"id": "airlaw-11",
+			"a": {
+				"pl": "Klasa przestrzeni powietrznej, w której wszystkie loty wymagają zapewnienia służb ATC i ciągłej łączności fonicznej powietrze-ziemia",
+				"en": "Airspace class where all flights require ATC service and continuous air-ground voice communication"
+			},
+			"b": {
+				"pl": "Klasa C",
+				"en": "Class C"
+			},
+			"acceptB": ["C", "klasa C", "Class C"]
+		},
+		{
+			"id": "airlaw-12",
+			"a": {
+				"pl": "Organ badający wypadki i incydenty lotnicze w polskim lotnictwie cywilnym (skrót)",
+				"en": "Body investigating aviation accidents and incidents in Polish civil aviation (abbreviation)"
+			},
+			"b": {
+				"pl": "PKBWL",
+				"en": "PKBWL"
+			},
+			"acceptB": ["PKBWL", "Państwowa Komisja Badania Wypadków Lotniczych"]
+		},
+		{
+			"id": "airlaw-13",
+			"a": {
+				"pl": "Aneks Konwencji Chicagowskiej dotyczący badania wypadków i incydentów lotniczych",
+				"en": "Annex to the Chicago Convention covering investigation of accidents and incidents"
+			},
+			"b": {
+				"pl": "Aneks 13",
+				"en": "Annex 13"
+			},
+			"acceptB": ["13", "aneks 13", "Annex 13"]
+		}
+	]
+}

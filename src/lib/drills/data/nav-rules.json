@@ -68,6 +68,20 @@
 			"tolerancePct": 8,
 			"timeLimitSec": 15,
 			"tags": ["track"]
+		},
+		{
+			"id": "map-distance-500k",
+			"microSkill": "unit_conversion",
+			"prompt": {
+				"pl": "{cm} cm na mapie 1:500 000 → odległość w terenie (km)?",
+				"en": "{cm} cm on a 1:500 000 chart → real distance (km)?"
+			},
+			"inputs": [{ "name": "cm", "min": 1, "max": 30, "step": 1 }],
+			"op": { "kind": "formula", "expr": "cm * 5" },
+			"rule": { "pl": "1 cm = 5 km (skala 1:500 000)", "en": "1 cm = 5 km (1:500 000 scale)" },
+			"toleranceAbs": 0.5,
+			"timeLimitSec": 12,
+			"tags": ["charts"]
 		}
 	]
 }

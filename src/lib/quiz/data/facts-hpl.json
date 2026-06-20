@@ -1,0 +1,219 @@
+{
+	"schemaVersion": 1,
+	"id": "facts-hpl",
+	"title": {
+		"pl": "Człowiek - kluczowe fakty",
+		"en": "Human performance - key facts"
+	},
+	"description": {
+		"pl": "Aktywne przypominanie najczęstszych wartości i definicji z egzaminu SPL.",
+		"en": "Active recall of the most common SPL exam values and definitions."
+	},
+	"labelA": {
+		"pl": "Zagadnienie",
+		"en": "Topic"
+	},
+	"labelB": {
+		"pl": "Odpowiedź",
+		"en": "Answer"
+	},
+	"directions": ["a-to-b"],
+	"timeLimitSec": 30,
+	"pairs": [
+		{
+			"id": "hpl-1",
+			"a": {
+				"pl": "Narząd zmysłu wykrywający obrót głowy - mechanizm działania kanałów półkolistych",
+				"en": "Semicircular canals - sensing mechanism"
+			},
+			"b": {
+				"pl": "bezwładnościowy ruch endolimfy odchylający rzęski",
+				"en": "inertial movement of endolymph deflecting hair cells"
+			},
+			"acceptB": ["endolimfa", "ruch endolimfy", "odchylenie rzęsek", "endolymph"]
+		},
+		{
+			"id": "hpl-2",
+			"a": {
+				"pl": "Czynnik nieistotny dla ryzyka choroby dekompresyjnej",
+				"en": "Factor not affecting decompression sickness risk"
+			},
+			"b": {
+				"pl": "płeć",
+				"en": "sex / gender"
+			},
+			"acceptB": ["płeć", "sex", "gender"]
+		},
+		{
+			"id": "hpl-3",
+			"a": {
+				"pl": "Choroba dekompresyjna - inna nazwa",
+				"en": "Decompression sickness - alternative name"
+			},
+			"b": {
+				"pl": "choroba kesonowa",
+				"en": "caisson disease"
+			},
+			"acceptB": ["choroba kesonowa", "caisson disease", "kesonowa"]
+		},
+		{
+			"id": "hpl-4",
+			"a": {
+				"pl": "Choroba dekompresyjna - mechanizm powstawania",
+				"en": "Decompression sickness - mechanism"
+			},
+			"b": {
+				"pl": "formowanie pęcherzyków gazu we krwi i tkankach przy nagłym spadku ciśnienia",
+				"en": "gas bubble formation in blood and tissues due to rapid pressure drop"
+			},
+			"acceptB": ["pęcherzyki gazu", "gas bubbles", "obniżenie ciśnienia", "dekompresja"]
+		},
+		{
+			"id": "hpl-5",
+			"a": {
+				"pl": "Przyczyna bólu ucha przy obniżaniu wysokości",
+				"en": "Cause of ear pain during descent"
+			},
+			"b": {
+				"pl": "niedrożność trąbki słuchowej",
+				"en": "blocked Eustachian tube"
+			},
+			"acceptB": [
+				"niedrożność trąbki słuchowej",
+				"trąbka Eustachiusza",
+				"Eustachian tube",
+				"trąbka słuchowa"
+			]
+		},
+		{
+			"id": "hpl-6",
+			"a": {
+				"pl": "Kiedy ból zatok obocznych nosa jest częstszy - przy wzroście czy spadku wysokości?",
+				"en": "Sinus barotrauma - more common during ascent or descent?"
+			},
+			"b": {
+				"pl": "podczas zmniejszania wysokości (zstępowania)",
+				"en": "during descent"
+			},
+			"acceptB": ["zmniejszanie wysokości", "descent", "opadanie", "zstępowanie"]
+		},
+		{
+			"id": "hpl-7",
+			"a": {
+				"pl": "Mechanizm uszkodzenia termicznego oka w lotach wysokościowych",
+				"en": "Thermal eye injury mechanism in high-altitude flight"
+			},
+			"b": {
+				"pl": "absorpcja energii świetlnej przez siatkówkę i wyzwolenie energii cieplnej",
+				"en": "absorption of light energy by retina releasing heat"
+			},
+			"acceptB": ["siatkówka", "absorpcja energii świetlnej", "retina", "energia cieplna"]
+		},
+		{
+			"id": "hpl-8",
+			"a": {
+				"pl": "Definicja adaptacji oka",
+				"en": "Definition of eye adaptation"
+			},
+			"b": {
+				"pl": "zdolność przystosowania się oka do danego oświetlenia",
+				"en": "ability of the eye to adjust to a given illumination level"
+			},
+			"acceptB": ["przystosowanie do oświetlenia", "adaptation to illumination", "adaptacja wzroku"]
+		},
+		{
+			"id": "hpl-9",
+			"a": {
+				"pl": "Akomodacja oka - mechanizm",
+				"en": "Eye accommodation - mechanism"
+			},
+			"b": {
+				"pl": "zmiana kształtu soczewki",
+				"en": "change in lens shape"
+			},
+			"acceptB": ["zmiana kształtu soczewki", "soczewka", "lens shape", "soczewki"]
+		},
+		{
+			"id": "hpl-10",
+			"a": {
+				"pl": "Alkohol a tłusty posiłek - czy tłusty posiłek przyspiesza wydalanie alkoholu?",
+				"en": "Does a fatty meal speed up alcohol elimination?"
+			},
+			"b": {
+				"pl": "nie - jedynie spowalnia wchłanianie",
+				"en": "no - it only slows absorption"
+			},
+			"acceptB": ["nie", "no", "spowalnia wchłanianie", "slows absorption"]
+		},
+		{
+			"id": "hpl-11",
+			"a": {
+				"pl": "Alkohol - wpływ na zużycie tlenu przez komórki mózgu",
+				"en": "Alcohol - effect on brain cell oxygen utilisation"
+			},
+			"b": {
+				"pl": "obniża zdolność wykorzystania tlenu przez komórki mózgu",
+				"en": "reduces brain cells' ability to utilise oxygen"
+			},
+			"acceptB": ["obniża", "reduces", "zmniejsza", "upośledzenie wykorzystania tlenu"]
+		},
+		{
+			"id": "hpl-12",
+			"a": {
+				"pl": "Centralny układ nerwowy - składowe",
+				"en": "Central nervous system - components"
+			},
+			"b": {
+				"pl": "mózgowie i rdzeń kręgowy",
+				"en": "brain and spinal cord"
+			},
+			"acceptB": ["mózgowie i rdzeń kręgowy", "brain and spinal cord", "mózg i rdzeń"]
+		},
+		{
+			"id": "hpl-13",
+			"a": {
+				"pl": "Automatyzm czynności - definicja",
+				"en": "Skill automaticity - definition"
+			},
+			"b": {
+				"pl": "wyćwiczone czynności poznawcze i ruchowe wykonywane bez aktywnego udziału świadomej uwagi",
+				"en": "well-practised cognitive and motor actions performed without active conscious attention"
+			},
+			"acceptB": ["bez udziału uwagi", "without conscious attention", "automatyzm", "automaticity"]
+		},
+		{
+			"id": "hpl-14",
+			"a": {
+				"pl": "Błąd orientacji pilota - definicja",
+				"en": "Pilot spatial disorientation / orientation error - definition"
+			},
+			"b": {
+				"pl": "niewłaściwy, niepełny lub zdeformowany odbiór informacji o warunkach przebiegu lotu",
+				"en": "incorrect, incomplete or distorted perception of flight condition information"
+			},
+			"acceptB": [
+				"błędny odbiór informacji",
+				"spatial disorientation",
+				"dezorientacja przestrzenna",
+				"zdeformowany odbiór"
+			]
+		},
+		{
+			"id": "hpl-15",
+			"a": {
+				"pl": "Aklimatyzacja do zimna - cel fizjologiczny",
+				"en": "Cold acclimatisation - physiological goal"
+			},
+			"b": {
+				"pl": "utrzymanie stałej temperatury wewnętrznej nawet przy wielokrotnym wzroście utraty ciepła",
+				"en": "maintaining constant core temperature despite greatly increased heat loss"
+			},
+			"acceptB": [
+				"stała temperatura wewnętrzna",
+				"constant core temperature",
+				"homeotermia",
+				"termoregulacja"
+			]
+		}
+	]
+}

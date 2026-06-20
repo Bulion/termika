@@ -1,0 +1,120 @@
+{
+	"schemaVersion": 1,
+	"id": "facts-ops",
+	"title": {
+		"pl": "Procedury operacyjne - kluczowe fakty",
+		"en": "Operations - key facts"
+	},
+	"description": {
+		"pl": "Aktywne przypominanie najczęstszych wartości i definicji z egzaminu SPL.",
+		"en": "Active recall of the most common SPL exam values and definitions."
+	},
+	"labelA": {
+		"pl": "Zagadnienie",
+		"en": "Topic"
+	},
+	"labelB": {
+		"pl": "Odpowiedź",
+		"en": "Answer"
+	},
+	"directions": ["a-to-b"],
+	"timeLimitSec": 30,
+	"pairs": [
+		{
+			"id": "ops-1",
+			"a": {
+				"pl": "Organ odpowiedzialny za bezpieczeństwo lotów cywilnych w Polsce",
+				"en": "Authority responsible for civil aviation safety in Poland"
+			},
+			"b": {
+				"pl": "Prezes ULC",
+				"en": "President of ULC (Civil Aviation Authority)"
+			},
+			"acceptB": ["Prezes ULC", "ULC", "Urząd Lotnictwa Cywilnego", "President of ULC"]
+		},
+		{
+			"id": "ops-2",
+			"a": {
+				"pl": "Organ prowadzący badania wypadków i incydentów w lotnictwie cywilnym w Polsce",
+				"en": "Body conducting accident and incident investigations in Polish civil aviation"
+			},
+			"b": {
+				"pl": "PKBWL",
+				"en": "PKBWL (State Commission for Aircraft Accident Investigation)"
+			},
+			"acceptB": ["PKBWL", "Państwowa Komisja Badania Wypadków Lotniczych"]
+		},
+		{
+			"id": "ops-3",
+			"a": {
+				"pl": "Aneks Konwencji Chicagowskiej dotyczący badania wypadków i incydentów",
+				"en": "ICAO Chicago Convention Annex covering accident and incident investigation"
+			},
+			"b": {
+				"pl": "Aneks 13",
+				"en": "Annex 13"
+			},
+			"acceptB": ["Aneks 13", "Annex 13", "13"]
+		},
+		{
+			"id": "ops-4",
+			"a": {
+				"pl": "Oznakowanie statku powietrznego służby poszukiwania i ratownictwa",
+				"en": "Marking of search and rescue aircraft"
+			},
+			"b": {
+				"pl": "SAR",
+				"en": "SAR"
+			},
+			"acceptB": ["SAR", "napis SAR"]
+		},
+		{
+			"id": "ops-5",
+			"a": {
+				"pl": "Czy zderzenie z ptakiem jest incydentem lotniczym",
+				"en": "Is a bird strike classified as an aviation incident"
+			},
+			"b": {
+				"pl": "Tak, bez względu na konsekwencje",
+				"en": "Yes, regardless of consequences"
+			},
+			"acceptB": ["Tak", "Yes", "tak bez względu na konsekwencje", "zawsze tak"]
+		},
+		{
+			"id": "ops-6",
+			"a": {
+				"pl": "Pierwsza czynność po lądowaniu awaryjnym w terenie przygodnym",
+				"en": "First action after an emergency off-field landing"
+			},
+			"b": {
+				"pl": "Ratowanie życia załogi i pasażerów",
+				"en": "Saving the lives of crew and passengers"
+			},
+			"acceptB": ["ratowanie życia", "saving lives", "ewakuacja"]
+		},
+		{
+			"id": "ops-7",
+			"a": {
+				"pl": "Czy w sytuacji zagrożenia bezpieczeństwa można naruszyć przepisy lotnicze",
+				"en": "May aviation regulations be violated to deal with a safety emergency"
+			},
+			"b": {
+				"pl": "Tak",
+				"en": "Yes"
+			},
+			"acceptB": ["Tak", "Yes", "można"]
+		},
+		{
+			"id": "ops-8",
+			"a": {
+				"pl": "Podstawa prawna obowiązku bezpiecznej eksploatacji statku powietrznego",
+				"en": "Legal basis for the obligation of safe aircraft operation"
+			},
+			"b": {
+				"pl": "Prawo lotnicze",
+				"en": "Aviation Law (Prawo lotnicze)"
+			},
+			"acceptB": ["Prawo lotnicze", "Aviation Law", "ustawa prawo lotnicze"]
+		}
+	]
+}

@@ -1,0 +1,227 @@
+{
+	"schemaVersion": 1,
+	"id": "facts-pof",
+	"title": {
+		"pl": "Zasady lotu - kluczowe fakty",
+		"en": "Principles of flight - key facts"
+	},
+	"description": {
+		"pl": "Aktywne przypominanie najczęstszych wartości i definicji z egzaminu SPL.",
+		"en": "Active recall of the most common SPL exam values and definitions."
+	},
+	"labelA": {
+		"pl": "Zagadnienie",
+		"en": "Topic"
+	},
+	"labelB": {
+		"pl": "Odpowiedź",
+		"en": "Answer"
+	},
+	"directions": ["a-to-b"],
+	"timeLimitSec": 30,
+	"pairs": [
+		{
+			"id": "pof-1",
+			"a": {
+				"pl": "Gęstość powietrza w ISA na poziomie morza",
+				"en": "ISA air density at mean sea level"
+			},
+			"b": {
+				"pl": "1,225 kg/m³",
+				"en": "1.225 kg/m³"
+			},
+			"acceptB": ["1.225 kg/m3", "1,225 kg/m3", "1.225", "1,225"]
+		},
+		{
+			"id": "pof-2",
+			"a": {
+				"pl": "Temperatura w ISA na poziomie morza",
+				"en": "ISA temperature at mean sea level"
+			},
+			"b": {
+				"pl": "15 °C",
+				"en": "15 °C"
+			},
+			"acceptB": ["15°C", "15 C", "15 stopni"]
+		},
+		{
+			"id": "pof-3",
+			"a": {
+				"pl": "Ciśnienie w ISA na poziomie morza",
+				"en": "ISA pressure at mean sea level"
+			},
+			"b": {
+				"pl": "1013,25 hPa",
+				"en": "1013.25 hPa"
+			},
+			"acceptB": ["1013.25 hPa", "1013,25 hPa", "1013 hPa", "1013.25"]
+		},
+		{
+			"id": "pof-4",
+			"a": {
+				"pl": "Gradient temperatury w ISA (zmiana na 1000 m)",
+				"en": "ISA temperature lapse rate per 1000 m"
+			},
+			"b": {
+				"pl": "-6,5 °C / 1000 m",
+				"en": "-6.5 °C / 1000 m"
+			},
+			"acceptB": ["-6.5°C/1000m", "-6,5°C/1000m", "6.5 stopni na km", "-6.5"]
+		},
+		{
+			"id": "pof-5",
+			"a": {
+				"pl": "Zmiana ciśnienia atmosferycznego na 8 m zmiany wysokości w warstwie przyziemnej",
+				"en": "Pressure change per 8 m altitude change near surface"
+			},
+			"b": {
+				"pl": "1 hPa",
+				"en": "1 hPa"
+			},
+			"acceptB": ["1hPa", "1 hektopaskal"]
+		},
+		{
+			"id": "pof-6",
+			"a": {
+				"pl": "Stateczność statyczna - definicja",
+				"en": "Static stability - definition"
+			},
+			"b": {
+				"pl": "Tendencja do powrotu do równowagi po wytrąceniu z niej",
+				"en": "Tendency to return to equilibrium after disturbance"
+			},
+			"acceptB": ["powrót do równowagi", "return to equilibrium", "tendencja powrotna"]
+		},
+		{
+			"id": "pof-7",
+			"a": {
+				"pl": "Środek parcia profilu - definicja",
+				"en": "Center of pressure - definition"
+			},
+			"b": {
+				"pl": "Punkt na cięciwie profilu, w którym działa wypadkowa sił aerodynamicznych",
+				"en": "Point on the chord where the resultant aerodynamic force acts"
+			},
+			"acceptB": [
+				"punkt działania wypadkowej sił aerodynamicznych",
+				"resultant aerodynamic force point"
+			]
+		},
+		{
+			"id": "pof-8",
+			"a": {
+				"pl": "Wydłużenie skrzydła - definicja (wzór słowny)",
+				"en": "Wing aspect ratio - definition"
+			},
+			"b": {
+				"pl": "Rozpiętość / średnia cięciwa geometryczna",
+				"en": "Span / mean geometric chord"
+			},
+			"acceptB": ["rozpiętość podzielona przez cięciwę", "b/c", "span over chord"]
+		},
+		{
+			"id": "pof-9",
+			"a": {
+				"pl": "Warunek autorotacji skrzydła (korkociąg) - warunek aerodynamiczny",
+				"en": "Wing autorotation condition (spin entry)"
+			},
+			"b": {
+				"pl": "Oba skrzydła opływane pod różnym kątem natarcia, co najmniej jedno pod kątem nadkrytycznym",
+				"en": "Both wings at different angles of attack, at least one beyond the critical angle"
+			},
+			"acceptB": [
+				"kąt nadkrytyczny",
+				"przeciągnięcie asymetryczne",
+				"critical angle of attack exceeded"
+			]
+		},
+		{
+			"id": "pof-10",
+			"a": {
+				"pl": "Bezpośrednia przyczyna flatteru lotkowego",
+				"en": "Direct cause of aileron flutter"
+			},
+			"b": {
+				"pl": "Brak wyważenia masowego lotek",
+				"en": "Lack of mass balance on ailerons"
+			},
+			"acceptB": ["brak wyważenia masowego", "no mass balance", "mass imbalance"]
+		},
+		{
+			"id": "pof-11",
+			"a": {
+				"pl": "Profile laminarne vs. klasyczne - wrażliwość na zabrudzenia",
+				"en": "Laminar vs. conventional profiles - contamination sensitivity"
+			},
+			"b": {
+				"pl": "Profile laminarne są bardziej wrażliwe na zabrudzenia",
+				"en": "Laminar profiles are more sensitive to surface contamination"
+			},
+			"acceptB": ["laminarne bardziej wrażliwe", "laminar more sensitive", "nie profile klasyczne"]
+		},
+		{
+			"id": "pof-12",
+			"a": {
+				"pl": "Jak zmienia się przyspieszenie dośrodkowe gdy prędkość wzrośnie dwukrotnie?",
+				"en": "Centripetal acceleration change when speed doubles"
+			},
+			"b": {
+				"pl": "Rośnie czterokrotnie (ar = v²/R)",
+				"en": "Increases fourfold (ar = v²/R)"
+			},
+			"acceptB": ["4 razy", "czterokrotnie", "fourfold", "x4"]
+		},
+		{
+			"id": "pof-13",
+			"a": {
+				"pl": "Kierunek wektora przyspieszenia przy ruchu po okręgu",
+				"en": "Direction of acceleration vector in circular motion"
+			},
+			"b": {
+				"pl": "W stronę środka okręgu (dośrodkowe)",
+				"en": "Toward the center of the circle (centripetal)"
+			},
+			"acceptB": ["do środka", "dośrodkowe", "centripetal", "toward center"]
+		},
+		{
+			"id": "pof-14",
+			"a": {
+				"pl": "Sposób zapobiegania odwrotnemu działaniu lotek",
+				"en": "Prevention of aileron reversal"
+			},
+			"b": {
+				"pl": "Zwiększenie sztywności skrętnej skrzydła",
+				"en": "Increase wing torsional stiffness"
+			},
+			"acceptB": ["sztywność skrętna", "torsional stiffness", "zwiększyć sztywność skrętną"]
+		},
+		{
+			"id": "pof-15",
+			"a": {
+				"pl": "Opływ laminarny - definicja",
+				"en": "Laminar flow - definition"
+			},
+			"b": {
+				"pl": "Niezaburzony opływ od krawędzi natarcia do punktu przejściowego",
+				"en": "Undisturbed flow from leading edge to transition point"
+			},
+			"acceptB": [
+				"niezaburzony opływ",
+				"undisturbed flow",
+				"bez turbulencji do punktu przejściowego"
+			]
+		},
+		{
+			"id": "pof-16",
+			"a": {
+				"pl": "Warstwa przyścienna - definicja",
+				"en": "Boundary layer - definition"
+			},
+			"b": {
+				"pl": "Warstwa powietrza, w której prędkość zmienia się od zera do prędkości opływu",
+				"en": "Air layer where velocity changes from zero to free-stream velocity"
+			},
+			"acceptB": ["od zera do prędkości opływu", "zero to freestream", "przy powierzchni płata"]
+		}
+	]
+}

@@ -1,0 +1,243 @@
+{
+	"schemaVersion": 1,
+	"id": "facts-nav",
+	"title": {
+		"pl": "Nawigacja - kluczowe fakty",
+		"en": "Navigation - key facts"
+	},
+	"description": {
+		"pl": "Aktywne przypominanie najczęstszych wartości i definicji z egzaminu SPL.",
+		"en": "Active recall of the most common SPL exam values and definitions."
+	},
+	"labelA": {
+		"pl": "Zagadnienie",
+		"en": "Topic"
+	},
+	"labelB": {
+		"pl": "Odpowiedź",
+		"en": "Answer"
+	},
+	"directions": ["a-to-b"],
+	"timeLimitSec": 30,
+	"pairs": [
+		{
+			"id": "nav-1",
+			"a": {
+				"pl": "Ile metrów wynosi 1 mila morska (NM)?",
+				"en": "Length of 1 nautical mile in metres"
+			},
+			"b": {
+				"pl": "1852 m",
+				"en": "1852 m"
+			},
+			"acceptB": ["1852", "1852 m", "1852 metrów", "1852 meters"]
+		},
+		{
+			"id": "nav-2",
+			"a": {
+				"pl": "Ile minut łuku koła wielkiego Ziemi odpowiada 1 NM?",
+				"en": "Arc minutes of great circle corresponding to 1 NM"
+			},
+			"b": {
+				"pl": "1 minuta",
+				"en": "1 minute"
+			},
+			"acceptB": ["1", "1 minuta", "1 minute", "1'"]
+		},
+		{
+			"id": "nav-3",
+			"a": {
+				"pl": "Ile NM odpowiada 1 stopień łuku koła wielkiego?",
+				"en": "Nautical miles per 1 degree of great circle arc"
+			},
+			"b": {
+				"pl": "60 NM",
+				"en": "60 NM"
+			},
+			"acceptB": ["60", "60 NM"]
+		},
+		{
+			"id": "nav-4",
+			"a": {
+				"pl": "762 metry to ile stóp?",
+				"en": "762 metres converted to feet"
+			},
+			"b": {
+				"pl": "2500 ft",
+				"en": "2500 ft"
+			},
+			"acceptB": ["2500", "2500 ft", "2500 stóp", "2500 feet"]
+		},
+		{
+			"id": "nav-5",
+			"a": {
+				"pl": "Ciśnienie ustawiane na wysokościomierzu gdy ma wskazywać wysokość bezwzględną (AMSL)",
+				"en": "Altimeter pressure setting for altitude above mean sea level"
+			},
+			"b": {
+				"pl": "QNH",
+				"en": "QNH"
+			},
+			"acceptB": ["QNH", "qnh"]
+		},
+		{
+			"id": "nav-6",
+			"a": {
+				"pl": "Ciśnienie na progu drogi startowej - oznaczenie",
+				"en": "Pressure at runway threshold designation"
+			},
+			"b": {
+				"pl": "QFE",
+				"en": "QFE"
+			},
+			"acceptB": ["QFE", "qfe"]
+		},
+		{
+			"id": "nav-7",
+			"a": {
+				"pl": "Kierunek NE w stopniach",
+				"en": "NE bearing in degrees"
+			},
+			"b": {
+				"pl": "045°",
+				"en": "045°"
+			},
+			"acceptB": ["45", "045", "45°", "045°"]
+		},
+		{
+			"id": "nav-8",
+			"a": {
+				"pl": "Kierunek SE w stopniach",
+				"en": "SE bearing in degrees"
+			},
+			"b": {
+				"pl": "135°",
+				"en": "135°"
+			},
+			"acceptB": ["135", "135°"]
+		},
+		{
+			"id": "nav-9",
+			"a": {
+				"pl": "Kierunek SW w stopniach",
+				"en": "SW bearing in degrees"
+			},
+			"b": {
+				"pl": "225°",
+				"en": "225°"
+			},
+			"acceptB": ["225", "225°"]
+		},
+		{
+			"id": "nav-10",
+			"a": {
+				"pl": "Kierunek NW w stopniach",
+				"en": "NW bearing in degrees"
+			},
+			"b": {
+				"pl": "315°",
+				"en": "315°"
+			},
+			"acceptB": ["315", "315°"]
+		},
+		{
+			"id": "nav-11",
+			"a": {
+				"pl": "Różnica czasu UTC a czas lokalny w Polsce latem (CEST)",
+				"en": "UTC offset for Poland in summer (CEST)"
+			},
+			"b": {
+				"pl": "+2 h",
+				"en": "+2 h"
+			},
+			"acceptB": ["2", "+2", "UTC+2", "2 godziny", "2 hours"]
+		},
+		{
+			"id": "nav-12",
+			"a": {
+				"pl": "Różnica czasu UTC a czas lokalny w Polsce zimą (CET)",
+				"en": "UTC offset for Poland in winter (CET)"
+			},
+			"b": {
+				"pl": "+1 h",
+				"en": "+1 h"
+			},
+			"acceptB": ["1", "+1", "UTC+1", "1 godzina", "1 hour"]
+		},
+		{
+			"id": "nav-13",
+			"a": {
+				"pl": "Wartość inklinacji magnetycznej na Północnym Biegunie Magnetycznym",
+				"en": "Magnetic inclination at the Magnetic North Pole"
+			},
+			"b": {
+				"pl": "90°",
+				"en": "90°"
+			},
+			"acceptB": ["90", "90°", "+90", "+90°"]
+		},
+		{
+			"id": "nav-14",
+			"a": {
+				"pl": "Wartość inklinacji magnetycznej na Południowym Biegunie Magnetycznym",
+				"en": "Magnetic inclination at the Magnetic South Pole"
+			},
+			"b": {
+				"pl": "-90°",
+				"en": "-90°"
+			},
+			"acceptB": ["-90", "-90°"]
+		},
+		{
+			"id": "nav-15",
+			"a": {
+				"pl": "Skala mapy lotniczej ICAO dla Polski - ile cm na mapie odpowiada 1 km w terenie?",
+				"en": "ICAO aeronautical chart scale 1:500 000 - cm per km"
+			},
+			"b": {
+				"pl": "0,2 cm / km (1 cm = 5 km)",
+				"en": "0.2 cm / km (1 cm = 5 km)"
+			},
+			"acceptB": ["0.2", "0,2", "1:500000", "1 cm = 5 km", "5 km"]
+		},
+		{
+			"id": "nav-16",
+			"a": {
+				"pl": "Linia łącząca punkty o jednakowej deklinacji magnetycznej",
+				"en": "Line connecting points of equal magnetic declination"
+			},
+			"b": {
+				"pl": "izogona",
+				"en": "isogone"
+			},
+			"acceptB": ["izogona", "isogone", "izogony"]
+		},
+		{
+			"id": "nav-17",
+			"a": {
+				"pl": "Deklinacja magnetyczna - definicja kąta",
+				"en": "Magnetic declination - angle definition"
+			},
+			"b": {
+				"pl": "Kąt między północą geograficzną a północą magnetyczną",
+				"en": "Angle between geographic north and magnetic north"
+			},
+			"acceptB": [
+				"kąt między północą geograficzną a magnetyczną",
+				"angle between geographic and magnetic north"
+			]
+		},
+		{
+			"id": "nav-18",
+			"a": {
+				"pl": "Gdy deklinacja i dewiacja są dodatnie, kurs busoli jest ... od kursu rzeczywistego",
+				"en": "When declination and deviation are both positive, compass course vs true course"
+			},
+			"b": {
+				"pl": "mniejszy",
+				"en": "smaller / less"
+			},
+			"acceptB": ["mniejszy", "smaller", "less", "mniejszy od rzeczywistego"]
+		}
+	]
+}

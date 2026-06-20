@@ -1,0 +1,65 @@
+{
+	"schemaVersion": 1,
+	"id": "glider-calcs",
+	"title": { "pl": "Obliczenia szybowcowe", "en": "Glider calculations" },
+	"description": {
+		"pl": "Wydłużenie skrzydła, współczynnik obciążenia i prędkość przeciągnięcia w zakręcie.",
+		"en": "Wing aspect ratio, load factor and stall speed in a turn."
+	},
+	"drills": [
+		{
+			"id": "aspect-ratio",
+			"microSkill": "general",
+			"prompt": {
+				"pl": "Rozpiętość {b} m, powierzchnia {s} m² → wydłużenie skrzydła?",
+				"en": "Span {b} m, wing area {s} m² → aspect ratio?"
+			},
+			"inputs": [
+				{ "name": "b", "min": 12, "max": 24, "step": 1 },
+				{ "name": "s", "min": 8, "max": 18, "step": 1 }
+			],
+			"op": { "kind": "formula", "expr": "b * b / s" },
+			"rule": { "pl": "AR = rozpiętość² ÷ powierzchnia", "en": "AR = span² ÷ area" },
+			"toleranceAbs": 0.6,
+			"timeLimitSec": 25,
+			"round": 1,
+			"tags": ["airframe"]
+		},
+		{
+			"id": "load-factor-turn",
+			"microSkill": "general",
+			"prompt": {
+				"pl": "Zakręt z przechyleniem {bank}° (lot poziomy) → współczynnik obciążenia n?",
+				"en": "Level turn at {bank}° bank → load factor n?"
+			},
+			"inputs": [{ "name": "bank", "min": 0, "max": 70, "step": 5 }],
+			"op": { "kind": "formula", "expr": "1 / cos(bank)" },
+			"rule": { "pl": "n = 1 ÷ cos(przechylenie)", "en": "n = 1 ÷ cos(bank)" },
+			"toleranceAbs": 0.1,
+			"timeLimitSec": 20,
+			"round": 2,
+			"tags": ["load-factor"]
+		},
+		{
+			"id": "stall-speed-turn",
+			"microSkill": "general",
+			"prompt": {
+				"pl": "Vs {vs} km/h w locie poziomym → Vs w zakręcie {bank}° (km/h)?",
+				"en": "Vs {vs} km/h level → stall speed in a {bank}° turn (km/h)?"
+			},
+			"inputs": [
+				{ "name": "vs", "min": 60, "max": 90, "step": 5 },
+				{ "name": "bank", "min": 0, "max": 60, "step": 10 }
+			],
+			"op": { "kind": "formula", "expr": "vs / sqrt(cos(bank))" },
+			"rule": {
+				"pl": "Vs(zakręt) = Vs × √n = Vs ÷ √cos(przechylenie)",
+				"en": "Vs(turn) = Vs × √n = Vs ÷ √cos(bank)"
+			},
+			"toleranceAbs": 3,
+			"timeLimitSec": 30,
+			"round": 0,
+			"tags": ["stall"]
+		}
+	]
+}

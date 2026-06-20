@@ -1,0 +1,242 @@
+{
+	"schemaVersion": 1,
+	"id": "facts-met",
+	"title": {
+		"pl": "Meteorologia - kluczowe fakty",
+		"en": "Meteorology - key facts"
+	},
+	"description": {
+		"pl": "Aktywne przypominanie najczęstszych wartości i definicji z egzaminu SPL.",
+		"en": "Active recall of the most common SPL exam values and definitions."
+	},
+	"labelA": {
+		"pl": "Zagadnienie",
+		"en": "Topic"
+	},
+	"labelB": {
+		"pl": "Odpowiedź",
+		"en": "Answer"
+	},
+	"directions": ["a-to-b"],
+	"timeLimitSec": 30,
+	"pairs": [
+		{
+			"id": "met-1",
+			"a": {
+				"pl": "Ciśnienie atmosferyczne na wysokości 1500 m n.p.m.",
+				"en": "Atmospheric pressure at 1500 m altitude"
+			},
+			"b": {
+				"pl": "850 hPa",
+				"en": "850 hPa"
+			},
+			"acceptB": ["850 hPa", "850hPa", "około 850 hPa", "~850 hPa"]
+		},
+		{
+			"id": "met-2",
+			"a": {
+				"pl": "Zmiana ciśnienia w warstwie przyziemnej na każde 8 m wysokości",
+				"en": "Pressure change in the surface layer per 8 m altitude"
+			},
+			"b": {
+				"pl": "1 hPa",
+				"en": "1 hPa"
+			},
+			"acceptB": ["1 hPa", "1hPa", "około 1 hPa"]
+		},
+		{
+			"id": "met-3",
+			"a": {
+				"pl": "Prędkość przemieszczania się frontu chłodnego (przyspieszonego)",
+				"en": "Speed of an accelerated cold front"
+			},
+			"b": {
+				"pl": "60-80 km/h",
+				"en": "60-80 km/h"
+			},
+			"acceptB": ["60-80 km/h", "60 do 80 km/h", "60–80 km/h"]
+		},
+		{
+			"id": "met-4",
+			"a": {
+				"pl": "Prędkość przemieszczania się frontu ciepłego",
+				"en": "Speed of a warm front"
+			},
+			"b": {
+				"pl": "20-40 km/h",
+				"en": "20-40 km/h"
+			},
+			"acceptB": ["20-40 km/h", "20 do 40 km/h", "20–40 km/h"]
+		},
+		{
+			"id": "met-5",
+			"a": {
+				"pl": "Zachowanie ciśnienia przed frontem ciepłym",
+				"en": "Pressure tendency ahead of a warm front"
+			},
+			"b": {
+				"pl": "Spada",
+				"en": "Falls"
+			},
+			"acceptB": ["spada", "obniża się", "falls", "decreasing"]
+		},
+		{
+			"id": "met-6",
+			"a": {
+				"pl": "Zachowanie ciśnienia za frontem chłodnym",
+				"en": "Pressure tendency behind a cold front"
+			},
+			"b": {
+				"pl": "Rośnie",
+				"en": "Rises"
+			},
+			"acceptB": ["rośnie", "wzrasta", "rises", "increasing"]
+		},
+		{
+			"id": "met-7",
+			"a": {
+				"pl": "Rodzaj frontu, z którym głównie związane są burze",
+				"en": "Type of front most associated with thunderstorms"
+			},
+			"b": {
+				"pl": "Front chłodny II rodzaju",
+				"en": "Cold front type II"
+			},
+			"acceptB": [
+				"front chłodny II rodzaju",
+				"chłodny II rodzaju",
+				"cold front type II",
+				"cold front type 2"
+			]
+		},
+		{
+			"id": "met-8",
+			"a": {
+				"pl": "Chmury zapowiadające zbliżanie się frontu ciepłego (wysokie, strzępiaste)",
+				"en": "High cloud type signalling approach of a warm front"
+			},
+			"b": {
+				"pl": "Ci unc (Cirrus uncinus)",
+				"en": "Ci unc (Cirrus uncinus)"
+			},
+			"acceptB": ["Ci unc", "cirrus uncinus", "Cirrus uncinus"]
+		},
+		{
+			"id": "met-9",
+			"a": {
+				"pl": "Chmury warstwy średniej (piętra średniego)",
+				"en": "Cloud types of the middle level"
+			},
+			"b": {
+				"pl": "Ac, As",
+				"en": "Ac, As"
+			},
+			"acceptB": ["Ac, As", "As, Ac", "Altocumulus, Altostratus", "Ac i As"]
+		},
+		{
+			"id": "met-10",
+			"a": {
+				"pl": "Typ chmury sygnalizujący popołudniowe burze (widziany rano)",
+				"en": "Cloud type seen in the morning that signals afternoon thunderstorms"
+			},
+			"b": {
+				"pl": "Ac lub Sc castellanus",
+				"en": "Ac or Sc castellanus"
+			},
+			"acceptB": ["Ac castellanus", "Sc castellanus", "Ac lub Sc castellanus", "castellanus"]
+		},
+		{
+			"id": "met-11",
+			"a": {
+				"pl": "Chmura oznaczająca piękną pogodę",
+				"en": "Cloud type associated with fair weather"
+			},
+			"b": {
+				"pl": "Cu hum (Cumulus humilis)",
+				"en": "Cu hum (Cumulus humilis)"
+			},
+			"acceptB": ["Cu hum", "Cumulus humilis", "Cu humilis"]
+		},
+		{
+			"id": "met-12",
+			"a": {
+				"pl": "Stan równowagi atmosferycznej oznaczany przez chmury Cu",
+				"en": "Atmospheric equilibrium state indicated by Cu clouds"
+			},
+			"b": {
+				"pl": "Chwiejna",
+				"en": "Unstable (labile)"
+			},
+			"acceptB": ["chwiejna", "niestabilna", "unstable", "labile"]
+		},
+		{
+			"id": "met-13",
+			"a": {
+				"pl": "Cyrkulacja powietrza w wyżu (antycyklonie) na półkuli północnej",
+				"en": "Air circulation in a high-pressure system on the Northern Hemisphere"
+			},
+			"b": {
+				"pl": "Zgodna z ruchem wskazówek zegara",
+				"en": "Clockwise"
+			},
+			"acceptB": ["zgodna z ruchem wskazówek zegara", "zgodnie z ruchem wskazówek", "clockwise"]
+		},
+		{
+			"id": "met-14",
+			"a": {
+				"pl": "Definicja deszczu przechłodzonego (temperatura kropelek)",
+				"en": "Temperature condition for supercooled rain"
+			},
+			"b": {
+				"pl": "Poniżej 0°C (woda ciekła)",
+				"en": "Below 0°C (still liquid)"
+			},
+			"acceptB": ["poniżej 0°C", "poniżej zera", "below 0°C", "below 0 degrees", "<0°C"]
+		},
+		{
+			"id": "met-15",
+			"a": {
+				"pl": "Jak powstaje front okluzji",
+				"en": "How an occlusion front forms"
+			},
+			"b": {
+				"pl": "Połączenie frontu chłodnego z ciepłym",
+				"en": "Merger of cold and warm front"
+			},
+			"acceptB": [
+				"połączenie frontu chłodnego z ciepłym",
+				"z połączenia frontu chłodnego z ciepłym",
+				"merger of cold and warm front"
+			]
+		},
+		{
+			"id": "met-16",
+			"a": {
+				"pl": "Co to jest studnia termiczna",
+				"en": "What is a thermal well (studnia termiczna)"
+			},
+			"b": {
+				"pl": "Prąd opadający obok prądu wstępującego",
+				"en": "Descending air current beside an updraft"
+			},
+			"acceptB": [
+				"prąd opadający",
+				"prąd opadający obok prądu wstępującego",
+				"downdraft beside updraft",
+				"descending current"
+			]
+		},
+		{
+			"id": "met-17",
+			"a": {
+				"pl": "Przy przechodzeniu jakich chmur następuje nagły wzrost prędkości wiatru",
+				"en": "Cloud type whose passage causes sudden wind gusts"
+			},
+			"b": {
+				"pl": "Cb (Cumulonimbus)",
+				"en": "Cb (Cumulonimbus)"
+			},
+			"acceptB": ["Cb", "Cumulonimbus", "cumulonimbus"]
+		}
+	]
+}

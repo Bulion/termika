@@ -1,0 +1,192 @@
+{
+	"schemaVersion": 1,
+	"id": "facts-com",
+	"title": {
+		"pl": "Łączność - kluczowe fakty",
+		"en": "Communications - key facts"
+	},
+	"description": {
+		"pl": "Aktywne przypominanie najczęstszych wartości i definicji z egzaminu SPL.",
+		"en": "Active recall of the most common SPL exam values and definitions."
+	},
+	"labelA": {
+		"pl": "Zagadnienie",
+		"en": "Topic"
+	},
+	"labelB": {
+		"pl": "Odpowiedź",
+		"en": "Answer"
+	},
+	"directions": ["a-to-b"],
+	"timeLimitSec": 30,
+	"pairs": [
+		{
+			"id": "com-1",
+			"a": {
+				"pl": "Międzynarodowa częstotliwość alarmowa (niebezpieczeństwo) w lotnictwie",
+				"en": "International aviation distress frequency"
+			},
+			"b": {
+				"pl": "121,500 MHz",
+				"en": "121.500 MHz"
+			},
+			"acceptB": ["121.5 MHz", "121,5 MHz", "121.500", "121,500"]
+		},
+		{
+			"id": "com-2",
+			"a": {
+				"pl": "Sygnał radiotelefoniczny oznaczający stan niebezpieczeństwa",
+				"en": "Radiotelephony distress signal"
+			},
+			"b": {
+				"pl": "MAYDAY",
+				"en": "MAYDAY"
+			},
+			"acceptB": ["mayday", "Mayday"]
+		},
+		{
+			"id": "com-3",
+			"a": {
+				"pl": "Ile razy powtarzamy słowo MAYDAY w wywołaniu alarmowym?",
+				"en": "How many times is MAYDAY repeated in a distress call?"
+			},
+			"b": {
+				"pl": "3 razy",
+				"en": "3 times"
+			},
+			"acceptB": ["trzy", "trzy razy", "3x"]
+		},
+		{
+			"id": "com-4",
+			"a": {
+				"pl": "System pracy sieci radiotelefonicznej stosowany w lotnictwie",
+				"en": "Radio network operating mode used in aviation"
+			},
+			"b": {
+				"pl": "Simplex",
+				"en": "Simplex"
+			},
+			"acceptB": ["system simplex"]
+		},
+		{
+			"id": "com-5",
+			"a": {
+				"pl": "Rodzaj emisji stosowany w lotniczej łączności VHF",
+				"en": "Emission type used in aviation VHF communications"
+			},
+			"b": {
+				"pl": "A3E",
+				"en": "A3E"
+			},
+			"acceptB": ["a3e"]
+		},
+		{
+			"id": "com-6",
+			"a": {
+				"pl": "Skala czytelności transmisji w lotnictwie (zakres)",
+				"en": "Readability scale range used in aviation"
+			},
+			"b": {
+				"pl": "1 do 5",
+				"en": "1 to 5"
+			},
+			"acceptB": ["1-5", "od 1 do 5"]
+		},
+		{
+			"id": "com-7",
+			"a": {
+				"pl": "Jak skraca się znak wywoławczy SP-AHN?",
+				"en": "How is the callsign SP-AHN abbreviated?"
+			},
+			"b": {
+				"pl": "SHN",
+				"en": "SHN"
+			},
+			"acceptB": ["S H N"]
+		},
+		{
+			"id": "com-8",
+			"a": {
+				"pl": "Kiedy stacja pokładowa może stosować skrócony znak wywoławczy?",
+				"en": "When may an airborne station use an abbreviated callsign?"
+			},
+			"b": {
+				"pl": "Po wywołaniu jej w ten sposób przez stację naziemną",
+				"en": "After being called that way by the ground station"
+			},
+			"acceptB": ["gdy stacja naziemna użyła skróconego znaku", "po wywołaniu przez ATC"]
+		},
+		{
+			"id": "com-9",
+			"a": {
+				"pl": "Alfabet fonetyczny ICAO - litera F",
+				"en": "ICAO phonetic alphabet - letter F"
+			},
+			"b": {
+				"pl": "Foxtrot",
+				"en": "Foxtrot"
+			},
+			"acceptB": ["foxtrot"]
+		},
+		{
+			"id": "com-10",
+			"a": {
+				"pl": "Alfabet fonetyczny ICAO - litera O",
+				"en": "ICAO phonetic alphabet - letter O"
+			},
+			"b": {
+				"pl": "Oscar",
+				"en": "Oscar"
+			},
+			"acceptB": ["oscar"]
+		},
+		{
+			"id": "com-11",
+			"a": {
+				"pl": "Alfabet fonetyczny ICAO - litera R",
+				"en": "ICAO phonetic alphabet - letter R"
+			},
+			"b": {
+				"pl": "Romeo",
+				"en": "Romeo"
+			},
+			"acceptB": ["romeo"]
+		},
+		{
+			"id": "com-12",
+			"a": {
+				"pl": "Jak wymawia się liczbę 1 w polskiej łączności lotniczej przy słabej słyszalności?",
+				"en": "How is digit 1 pronounced in Polish aviation radio when readability is poor?"
+			},
+			"b": {
+				"pl": "JEDYNKA",
+				"en": "JEDYNKA"
+			},
+			"acceptB": ["jedynka"]
+		},
+		{
+			"id": "com-13",
+			"a": {
+				"pl": "Na jakiej częstotliwości nadaje się wywołanie w niebezpieczeństwie jeśli niemożliwa jest komunikacja na bieżącej częstotliwości?",
+				"en": "Fallback distress call frequency when current frequency unavailable"
+			},
+			"b": {
+				"pl": "121,500 MHz",
+				"en": "121.500 MHz"
+			},
+			"acceptB": ["121.5", "121,5"]
+		},
+		{
+			"id": "com-14",
+			"a": {
+				"pl": "Treść zezwoleń i instrukcji od stacji naziemnej pilot potwierdza przez:",
+				"en": "How does a pilot confirm clearances and instructions from ground station?"
+			},
+			"b": {
+				"pl": "Powtórzenie całości korespondencji i podanie swojego znaku wywoławczego (readback)",
+				"en": "Full readback plus own callsign"
+			},
+			"acceptB": ["readback", "powtórzenie", "odczyt"]
+		}
+	]
+}

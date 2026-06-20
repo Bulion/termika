@@ -69,6 +69,24 @@
 			"timeLimitSec": 20,
 			"round": 0,
 			"tags": ["glide"]
+		},
+		{
+			"id": "isa-temperature",
+			"microSkill": "general",
+			"prompt": {
+				"pl": "Temperatura ISA na wysokości {h} m (n.p.m.)?",
+				"en": "ISA temperature at {h} m AMSL?"
+			},
+			"inputs": [{ "name": "h", "min": 0, "max": 6000, "step": 250 }],
+			"op": { "kind": "formula", "expr": "15 - 6.5 * (h / 1000)" },
+			"rule": {
+				"pl": "T = 15 °C − 6,5 °C na każdy 1000 m",
+				"en": "T = 15 °C − 6.5 °C per 1000 m"
+			},
+			"toleranceAbs": 1,
+			"timeLimitSec": 20,
+			"round": 1,
+			"tags": ["isa"]
 		}
 	]
 }
