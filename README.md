@@ -39,7 +39,9 @@ normalized deck into the git-ignored `content-generated/` directory (skipped mal
 are reported, never silently dropped). A ULC-PDF adapter is a planned follow-up using the same
 `SourceAdapter` contract. Questions derived from copyrighted catalogs (e.g. ECQB / commercial
 banks) are **not** redistributed in this repository; adapters for such sources are intended for
-local, private study only.
+local, private study only. `npm run ingest:pplka` scrapes the pplka.pl SPL bank (~1354
+questions) into the git-ignored `static/external/pplka-spl.json`; it is built into a local
+deployment and offered as the "pplka.pl" exam source, but is proprietary and never committed.
 
 ## License
 

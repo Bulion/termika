@@ -1,3 +1,4 @@
+import { base } from '$app/paths';
 import { FiflyPplAdapter } from '../content/adapters/fifly';
 import type { LocalizedText, Mcq } from '../content/schema';
 
@@ -30,6 +31,14 @@ export const EXAM_SOURCES: ExamSource[] = [
 		questionCount: 20,
 		timeLimitMin: 30,
 		passPct: 75
+	},
+	{
+		id: 'pplka',
+		label: { pl: 'pplka.pl (SPL)', en: 'pplka.pl (SPL)' },
+		external: true,
+		questionCount: 20,
+		timeLimitMin: 30,
+		passPct: 75
 	}
 ];
 
@@ -51,6 +60,12 @@ export async function loadExternalMcqs(sourceId: string): Promise<Mcq[]> {
 		});
 		const decks = await adapter.load();
 		mcqs = decks.flatMap((deck) => deck.items).filter((item): item is Mcq => item.type === 'mcq');
+	} else if (sourceId === 'pplka') {
+		// pplka.pl blocks cross-origin requests, so read the pool ingested into the build
+		// (npm run ingest:pplka -> static/external/pplka-spl.json).
+		const response = await fetch(`${base}/external/pplka-spl.json`);
+		if (!response.ok) throw new Error(`pplka pool not available: ${response.status}`);
+		mcqs = (await response.json()) as Mcq[];
 	} else {
 		throw new Error(`Unknown external source: ${sourceId}`);
 	}
