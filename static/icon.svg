@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Termika">
+	<rect width="512" height="512" rx="96" fill="#4FB6E8" />
+	<circle cx="384" cy="132" r="56" fill="#FFC93C" />
+	<g fill="#FFFFFF">
+		<ellipse cx="150" cy="360" rx="78" ry="42" />
+		<ellipse cx="232" cy="372" rx="58" ry="34" />
+		<ellipse cx="96" cy="372" rx="46" ry="28" />
+	</g>
+	<g
+		fill="#FFFFFF"
+		stroke="#1E2A3A"
+		stroke-width="14"
+		stroke-linejoin="round"
+		stroke-linecap="round"
+	>
+		<path d="M96 232 L416 192 L300 248 L196 252 Z" />
+		<path d="M256 226 L268 300 L244 300 Z" />
+	</g>
+</svg>
