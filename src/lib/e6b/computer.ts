@@ -428,10 +428,13 @@ function buildFront(strings: typeof E6B_STRINGS.pl): FrontRefs {
 
 interface BackRefs {
 	svg: SVGElement;
-	rotor: SVGElement;
+	ringGroup: SVGElement;
+	dotGroup: SVGElement;
+	slideGroup: SVGElement;
 	ring: SVGElement;
 	grid: SVGElement;
 	dot: SVGElement;
+	tasCircle: SVGElement;
 }
 
 function buildBack(strings: typeof E6B_STRINGS.pl): BackRefs {
@@ -474,7 +477,14 @@ function buildBack(strings: typeof E6B_STRINGS.pl): BackRefs {
 	);
 	svg.appendChild(txt(B_CX, B_CY - B_R - 48, 'TRUE INDEX', { size: 9, fill: '#efece2' }));
 
-	const rotor = el('g');
+	const defs = el('defs');
+	const clip = el('clipPath', { id: 'e6b-winclip' });
+	clip.appendChild(el('circle', { cx: B_CX, cy: B_CY, r: B_R - 29 }));
+	defs.appendChild(clip);
+	svg.appendChild(defs);
+
+	// Rotating azimuth bezel: turn it to set wind direction / true course under the index.
+	const ringGroup = el('g');
 	const ring = el('g', { class: 'e6b-grab' });
 	ring.appendChild(
 		el('circle', {
@@ -536,43 +546,12 @@ function buildBack(strings: typeof E6B_STRINGS.pl): BackRefs {
 			txt(pr[0], pr[1], label, { size: 17, fill: '#efece2', extra: { 'font-weight': 'bold' } })
 		);
 	});
-	rotor.appendChild(ring);
+	ringGroup.appendChild(ring);
+	svg.appendChild(ringGroup);
 
-	const railLen = B_R - 34;
-	const railG = el('g', { 'clip-path': 'url(#e6b-winclip)', opacity: '0.6' });
-	railG.appendChild(
-		el('line', {
-			x1: B_CX,
-			y1: B_CY - railLen,
-			x2: B_CX,
-			y2: B_CY + railLen,
-			stroke: '#1d6fb0',
-			'stroke-width': 1.2,
-			'stroke-dasharray': '2 5'
-		})
-	);
-	(
-		[
-			[-railLen, -1],
-			[railLen, 1]
-		] as const
-	).forEach(([off, dir]) => {
-		const y = B_CY + off;
-		railG.appendChild(
-			el('polygon', {
-				points: `${B_CX},${y + dir * 8} ${B_CX - 5},${y - dir * 2} ${B_CX + 5},${y - dir * 2}`,
-				fill: '#1d6fb0'
-			})
-		);
-	});
-
-	const defs = el('defs');
-	const clip = el('clipPath', { id: 'e6b-winclip' });
-	clip.appendChild(el('circle', { cx: B_CX, cy: B_CY, r: B_R - 29 }));
-	defs.appendChild(clip);
-	svg.appendChild(defs);
-
-	const slide = el('g', { 'clip-path': 'url(#e6b-winclip)' });
+	// Vertically sliding grid card (speed arcs + drift lines). Slides, never rotates.
+	const slideGroup = el('g');
+	const gridClip = el('g', { 'clip-path': 'url(#e6b-winclip)' });
 	const grid = el('g', { class: 'e6b-grab' });
 	grid.appendChild(
 		el('rect', {
@@ -625,34 +604,35 @@ function buildBack(strings: typeof E6B_STRINGS.pl): BackRefs {
 			grid.appendChild(txt(pr[0], pr[1], String(Math.abs(aa)), { size: 8, fill: '#2c4339' }));
 		});
 	}
+	// Highlighted TAS target circle - slide the grid until the wind dot lands on it.
+	const tasCircle = el('circle', {
+		cx: B_CX,
+		cy: B_CY,
+		r: 120 * PXPERKT,
+		fill: 'none',
+		stroke: '#1d6fb0',
+		'stroke-width': 1.8,
+		'stroke-dasharray': '5 4',
+		'data-tas-arc': '1'
+	});
+	grid.appendChild(tasCircle);
+	gridClip.appendChild(grid);
+	slideGroup.appendChild(gridClip);
+	svg.appendChild(slideGroup);
+
+	// Wind dot: marked on the transparent rotating disc, so the bezel turns it.
+	const dotGroup = el('g');
+	const dotClip = el('g', { 'clip-path': 'url(#e6b-winclip)' });
 	const dot = el('g', { class: 'e6b-grab' });
 	dot.appendChild(
-		el('circle', { cx: B_CX, cy: B_CY, r: 9, fill: 'none', stroke: '#a8281c', 'stroke-width': 2 })
+		el('circle', { cx: B_CX, cy: B_CY, r: 9, fill: 'none', stroke: '#a8281c', 'stroke-width': 2.5 })
 	);
 	dot.appendChild(el('circle', { cx: B_CX, cy: B_CY, r: 2.5, fill: '#a8281c' }));
-	grid.appendChild(dot);
-	slide.appendChild(grid);
-	rotor.appendChild(slide);
-	rotor.appendChild(railG);
-	svg.appendChild(rotor);
+	dotClip.appendChild(dot);
+	dotGroup.appendChild(dotClip);
+	svg.appendChild(dotGroup);
 
-	svg.appendChild(
-		el('circle', {
-			cx: B_CX,
-			cy: B_CY,
-			r: 120 * PXPERKT,
-			fill: 'none',
-			stroke: '#1d6fb0',
-			'stroke-width': 1.6,
-			'stroke-dasharray': '5 4',
-			'clip-path': 'url(#e6b-winclip)',
-			'data-tas-arc': '1'
-		})
-	);
-	svg.appendChild(
-		el('circle', { cx: B_CX, cy: B_CY, r: 6, fill: '#cfcfca', stroke: '#000', 'stroke-width': 1 })
-	);
-	svg.appendChild(el('circle', { cx: B_CX, cy: B_CY, r: 1.8, fill: '#000' }));
+	// Fixed overlay: centre line, grommet (does not move with bezel or slide).
 	svg.appendChild(
 		el('line', {
 			x1: B_CX,
@@ -664,7 +644,11 @@ function buildBack(strings: typeof E6B_STRINGS.pl): BackRefs {
 			opacity: '0.5'
 		})
 	);
-	return { svg, rotor, ring, grid, dot };
+	svg.appendChild(
+		el('circle', { cx: B_CX, cy: B_CY, r: 6, fill: '#cfcfca', stroke: '#000', 'stroke-width': 1 })
+	);
+	svg.appendChild(el('circle', { cx: B_CX, cy: B_CY, r: 1.8, fill: '#000' }));
+	return { svg, ringGroup, dotGroup, slideGroup, ring, grid, dot, tasCircle };
 }
 
 export interface E6bInstance {
@@ -686,7 +670,11 @@ export function createE6b(root: HTMLElement, options: { locale: E6bLocale }): E6
 			<label><input type="radio" name="e6b-solve" value="wind"> ${T.solveWind}</label>
 		</div>
 		<p class="e6b-sub">${T.subtitle}</p>
-		<div class="e6b-layout">
+		<div class="e6b-view-toggle">
+			<button type="button" data-view="computer" class="active">${T.viewComputer}</button>
+			<button type="button" data-view="results">${T.viewResults}</button>
+		</div>
+		<div class="e6b-layout" data-view="computer">
 			<div class="e6b-stage">
 				<div class="e6b-face" data-face="front"></div>
 				<div class="e6b-face show" data-face="back"></div>
@@ -752,11 +740,11 @@ export function createE6b(root: HTMLElement, options: { locale: E6bLocale }): E6
 	}
 
 	function updateTasArc(): void {
-		const arc = R.svg.querySelector('[data-tas-arc]');
-		if (arc) arc.setAttribute('r', String(tasTarget * PXPERKT));
+		R.tasCircle.setAttribute('r', String(tasTarget * PXPERKT));
 	}
 
-	function screenToCard(sx: number, sy: number): { x: number; y: number } {
+	// Undo the bezel rotation to express a screen point in rotating-disc coordinates.
+	function screenToDisc(sx: number, sy: number): { x: number; y: number } {
 		const dx = sx - B_CX,
 			dy = sy - B_CY;
 		const t = (-S.ringRot * Math.PI) / 180;
@@ -764,8 +752,10 @@ export function createE6b(root: HTMLElement, options: { locale: E6bLocale }): E6
 	}
 
 	function applyBack(): void {
-		R.rotor.setAttribute('transform', `rotate(${S.ringRot} ${B_CX} ${B_CY})`);
-		R.grid.setAttribute('transform', `translate(0 ${S.gridY})`);
+		const spin = `rotate(${S.ringRot} ${B_CX} ${B_CY})`;
+		R.ringGroup.setAttribute('transform', spin);
+		R.dotGroup.setAttribute('transform', spin);
+		R.slideGroup.setAttribute('transform', `translate(0 ${S.gridY})`);
 		R.dot.setAttribute('transform', `translate(${S.dotX} ${S.dotY})`);
 		updateTasArc();
 		compute();
@@ -789,13 +779,19 @@ export function createE6b(root: HTMLElement, options: { locale: E6bLocale }): E6
 	}
 
 	function compute(): void {
+		// Wind dot rides the rotating disc; the grid (and its centre) only slides vertically.
+		const rad = (S.ringRot * Math.PI) / 180;
+		const dotScreenX = B_CX + (S.dotX * Math.cos(rad) - S.dotY * Math.sin(rad));
+		const dotScreenY = B_CY + (S.dotX * Math.sin(rad) + S.dotY * Math.cos(rad));
+		const gridCx = B_CX;
+		const gridCy = B_CY + S.gridY;
 		const underIndex = (360 - S.ringRot) % 360;
-		const dotScreenY = S.dotY + S.gridY;
-		const distKt = Math.hypot(S.dotX, dotScreenY) / PXPERKT;
-		const wca = (Math.atan2(S.dotX, -dotScreenY) * 180) / Math.PI;
-		const gsUnder = -S.gridY / PXPERKT;
-		const onTas = Math.abs(distKt - tasTarget) <= 3;
-		renderPanel(underIndex, distKt, wca, gsUnder, onTas);
+		const windKt = Math.hypot(S.dotX, S.dotY) / PXPERKT;
+		const gsUnder = Math.abs(S.gridY) / PXPERKT;
+		const tasAtDot = Math.hypot(dotScreenX - gridCx, dotScreenY - gridCy) / PXPERKT;
+		const wca = (Math.atan2(dotScreenX - gridCx, -(dotScreenY - gridCy)) * 180) / Math.PI;
+		const onTas = Math.abs(tasAtDot - tasTarget) <= 3;
+		renderPanel(underIndex, windKt, wca, gsUnder, onTas, tasAtDot);
 	}
 
 	function row(label: string, value: string): string {
@@ -810,7 +806,8 @@ export function createE6b(root: HTMLElement, options: { locale: E6bLocale }): E6
 		distKt: number,
 		wca: number,
 		gsUnder: number,
-		onTas: boolean
+		onTas: boolean,
+		tasAtDot: number
 	): void {
 		if (currentFace() === 'front') {
 			renderFrontPanel();
@@ -832,6 +829,7 @@ export function createE6b(root: HTMLElement, options: { locale: E6bLocale }): E6
 			`<div class="e6b-card"><h3>${T.liveReadout}</h3><div class="e6b-results">` +
 			row(T.underIndex, `${underIndex.toFixed(0)}°`) +
 			row(T.gsUnderCentre, `${gsUnder.toFixed(0)} kt`) +
+			row(T.tasAtDot, `${tasAtDot.toFixed(0)} kt`) +
 			row(T.dotFromCentre, `${distKt.toFixed(0)} kt`) +
 			row(T.dotAngle, wcaTxt) +
 			`</div></div>` +
@@ -988,32 +986,28 @@ export function createE6b(root: HTMLElement, options: { locale: E6bLocale }): E6
 	drag(
 		R.grid,
 		(() => {
-			let start = { x: 0, y: 0 },
+			let startY = 0,
 				base = 0;
 			return {
-				shouldStart: (ev) => !(ev.target as Element).closest('.e6b-grab[data-dot]'),
 				start: (ev) => {
-					const p = svgPt(R.svg, ev);
-					start = screenToCard(p.x, p.y);
+					startY = svgPt(R.svg, ev).y;
 					base = S.gridY;
 				},
 				move: (ev) => {
-					const p = svgPt(R.svg, ev);
-					const cur = screenToCard(p.x, p.y);
-					S.gridY = Math.max(-300, Math.min(300, base + (cur.y - start.y)));
+					const y = svgPt(R.svg, ev).y;
+					S.gridY = Math.max(-340, Math.min(340, base + (y - startY)));
 					applyBack();
 				}
 			};
 		})()
 	);
-	R.dot.setAttribute('data-dot', '1');
 	drag(R.dot, {
 		start: () => {},
 		move: (ev) => {
 			const p = svgPt(R.svg, ev);
-			const c = screenToCard(p.x, p.y);
+			const c = screenToDisc(p.x, p.y);
 			S.dotX = c.x;
-			S.dotY = c.y - S.gridY;
+			S.dotY = c.y;
 			applyBack();
 		}
 	});
@@ -1119,6 +1113,20 @@ export function createE6b(root: HTMLElement, options: { locale: E6bLocale }): E6
 		r.addEventListener('change', onSolve);
 		teardowns.push(() => r.removeEventListener('change', onSolve));
 	});
+
+	const layout = q<HTMLElement>('.e6b-layout')!;
+	const viewToggle = q<HTMLElement>('.e6b-view-toggle')!;
+	const onView = (ev: Event): void => {
+		const btn = (ev.target as HTMLElement).closest('button');
+		const view = btn?.dataset.view;
+		if (!view) return;
+		layout.dataset.view = view;
+		viewToggle
+			.querySelectorAll('button')
+			.forEach((b) => b.classList.toggle('active', b.dataset.view === view));
+	};
+	viewToggle.addEventListener('click', onView);
+	teardowns.push(() => viewToggle.removeEventListener('click', onView));
 
 	applyBack();
 	applyFront();

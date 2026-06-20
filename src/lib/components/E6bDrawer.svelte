@@ -170,6 +170,31 @@
 		color: var(--color-ink-soft);
 	}
 
+	.e6b-root :global(.e6b-view-toggle) {
+		display: flex;
+		gap: var(--space-2);
+		justify-content: center;
+		margin-bottom: var(--space-4);
+	}
+
+	.e6b-root :global(.e6b-view-toggle button) {
+		min-height: 44px;
+		padding: var(--space-2) var(--space-5);
+		font-family: var(--font-display);
+		font-weight: 700;
+		font-size: 0.85rem;
+		color: var(--color-ink);
+		background: var(--color-surface-2);
+		border: var(--border-width-sm) solid var(--color-outline);
+		border-radius: var(--radius-pill);
+	}
+
+	.e6b-root :global(.e6b-view-toggle button.active) {
+		color: var(--color-on-accent);
+		background: var(--color-sky);
+		border-color: var(--color-sky);
+	}
+
 	.e6b-root :global(.e6b-layout) {
 		display: flex;
 		gap: var(--space-5);
@@ -181,7 +206,8 @@
 	.e6b-root :global(.e6b-stage) {
 		position: relative;
 		width: 100%;
-		max-width: 460px;
+		max-width: 560px;
+		margin: 0 auto;
 		aspect-ratio: 520 / 760;
 		flex: 1 1 320px;
 		touch-action: none;
@@ -320,7 +346,37 @@
 		line-height: 1.6;
 	}
 
-	@media (orientation: landscape) and (width >= 760px) {
+	/* Narrow screens: one pane at a time, switched by the toggle. */
+	@media (width < 1000px) {
+		.e6b-root :global(.e6b-layout[data-view='computer'] .e6b-panel) {
+			display: none;
+		}
+
+		.e6b-root :global(.e6b-layout[data-view='results'] .e6b-stage) {
+			display: none;
+		}
+
+		.e6b-root :global(.e6b-layout[data-view='results'] .e6b-panel) {
+			flex: 1 1 100%;
+			max-width: 460px;
+		}
+	}
+
+	/* Landscape with one pane: size the instrument to the height so it fits without scrolling. */
+	@media (width < 1000px) and (orientation: landscape) {
+		.e6b-root :global(.e6b-layout[data-view='computer'] .e6b-stage) {
+			width: auto;
+			max-width: none;
+			height: min(82dvh, 720px);
+		}
+	}
+
+	/* Wide screens: show both panes side by side; the toggle is unnecessary. */
+	@media (width >= 1000px) {
+		.e6b-root :global(.e6b-view-toggle) {
+			display: none;
+		}
+
 		.e6b-root :global(.e6b-layout) {
 			flex-wrap: nowrap;
 			align-items: flex-start;
@@ -330,7 +386,7 @@
 			flex: 0 0 auto;
 			width: auto;
 			max-width: none;
-			height: min(78dvh, 760px);
+			height: min(82dvh, 760px);
 		}
 	}
 </style>

@@ -4,6 +4,9 @@ export interface E6bStrings {
 	front: string;
 	back: string;
 	reset: string;
+	viewComputer: string;
+	viewResults: string;
+	tasAtDot: string;
 	solveFind: string;
 	solveWind: string;
 	subtitle: string;
@@ -60,6 +63,9 @@ const pl: E6bStrings = {
 	front: 'Przód - przelicznik',
 	back: 'Tył - wiatr',
 	reset: 'Wyzeruj',
+	viewComputer: 'Komputer',
+	viewResults: 'Wyniki',
+	tasAtDot: 'TAS pod kropką',
 	solveFind: 'Szukam GS i WCA (znam wiatr)',
 	solveWind: 'Szukam wiatru (znam GS i znos)',
 	subtitle: 'Interaktywna replika - przeciągaj tarcze, kursor i kropkę wiatru',
@@ -138,6 +144,9 @@ const en: E6bStrings = {
 	front: 'Front - slide rule',
 	back: 'Back - wind',
 	reset: 'Reset',
+	viewComputer: 'Computer',
+	viewResults: 'Results',
+	tasAtDot: 'TAS at the dot',
 	solveFind: 'Find GS and WCA (wind known)',
 	solveWind: 'Find the wind (GS and drift known)',
 	subtitle: 'Interactive replica - drag the dials, cursor and wind dot',

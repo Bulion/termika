@@ -10,12 +10,17 @@ test.describe('E6B computer drawer', () => {
 
 		const root = page.locator('.e6b-root');
 		await expect(root).toBeVisible();
-		// Two instrument faces are built; the wind side shows first.
+		// The instrument (wind side) shows first.
+		await expect(root.locator('.e6b-stage')).toBeVisible();
 		await expect(root.locator('.e6b-face[data-face="back"] svg')).toBeVisible();
 
 		// Switch to the front (slide-rule) side.
 		await root.getByRole('button', { name: /przelicznik|slide rule/i }).click();
 		await expect(root.locator('.e6b-face[data-face="front"]')).toHaveClass(/show/);
+
+		// On narrow screens the results live behind a toggle; switch to them.
+		const resultsBtn = root.getByRole('button', { name: /^Wyniki$|^Results$/ });
+		if (await resultsBtn.isVisible()) await resultsBtn.click();
 		await expect(root.locator('.e6b-panel')).toBeVisible();
 
 		expect(errors, errors.join('\n')).toEqual([]);
