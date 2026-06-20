@@ -28,8 +28,6 @@
 			<span class="placard-value">{clamped}%</span>
 		</div>
 		<div class="needle variometer-needle" style:transform={`rotate(${rotation}deg)`}></div>
-		<div class="pin"></div>
-		<div class="pin-cap"></div>
 	</div>
 </figure>
 
@@ -92,30 +90,12 @@
 		position: absolute;
 		bottom: 50%;
 		left: 50%;
+		z-index: 1;
 		width: 0.6rem;
 		height: 38%;
 		margin-left: -0.3rem;
 		background: var(--color-sink);
 		border: var(--border-width-sm) solid var(--color-outline);
 		border-radius: 0.3rem 0.3rem 0 0;
-	}
-
-	.pin {
-		position: absolute;
-		z-index: 20;
-		width: 1.5rem;
-		height: 1.5rem;
-		background: var(--color-outline);
-		border-radius: 50%;
-	}
-
-	.pin-cap {
-		position: absolute;
-		z-index: 30;
-		width: 0.75rem;
-		height: 0.75rem;
-		background: var(--color-sun);
-		border: var(--border-width-sm) solid var(--color-outline);
-		border-radius: 50%;
 	}
 </style>

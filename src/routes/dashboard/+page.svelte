@@ -27,6 +27,7 @@
 	let reviewsCount = $state(0);
 	let examsCount = $state(0);
 	let importError = $state(false);
+	let revealBars = $state(false);
 	let fileInput: HTMLInputElement;
 
 	const encouragement = $derived(
@@ -38,6 +39,7 @@
 	);
 
 	async function refresh() {
+		revealBars = false;
 		const content = await loadContent();
 		subjects = content.subjects;
 		const rows = await db.cardState.bulkGet(content.items.map((i) => i.id));
@@ -48,6 +50,10 @@
 		exams = (await db.mockResults.orderBy('finishedAt').reverse().toArray()).slice(0, 10);
 		reviewsCount = await db.reviewLogs.count();
 		examsCount = await db.mockResults.count();
+		// Render bars at 0 first, then grow them to their value so the fill animates in.
+		setTimeout(() => {
+			revealBars = true;
+		}, 80);
 	}
 
 	onMount(refresh);
@@ -154,7 +160,10 @@
 								<span class="meta">{subject.readinessPct}%</span>
 							</div>
 							<div class="bar">
-								<div class="bar-fill wind-streak" style:width={`${subject.readinessPct}%`}></div>
+								<div
+									class="bar-fill wind-streak"
+									style:width={`${revealBars ? subject.readinessPct : 0}%`}
+								></div>
 							</div>
 							<span class="meta sub-meta">
 								{m.dashboard_mastered({ mastered: subject.mastered, total: subject.total })}
