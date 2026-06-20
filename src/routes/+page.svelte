@@ -10,6 +10,7 @@
 		<a class="cta" href={resolve('/study')}>{m.nav_study()}</a>
 		<a class="cta cta--alt" href={resolve('/drills')}>{m.nav_drills()}</a>
 		<a class="cta cta--alt" href={resolve('/exam')}>{m.nav_exam()}</a>
+		<a class="cta cta--alt" href={resolve('/dashboard')}>{m.nav_dashboard()}</a>
 	</nav>
 </main>
 

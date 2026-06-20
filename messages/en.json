@@ -38,5 +38,15 @@
 	"exam_retry": "Try again",
 	"exam_no_questions": "No questions for this subject yet.",
 	"exam_your_answer": "Your answer",
-	"exam_correct_answer": "Correct answer"
+	"exam_correct_answer": "Correct answer",
+	"nav_dashboard": "Progress",
+	"dashboard_title": "Your progress",
+	"dashboard_readiness": "Exam readiness",
+	"dashboard_subjects": "Subjects",
+	"dashboard_mastered": "{mastered}/{total} mastered",
+	"dashboard_export": "Export progress",
+	"dashboard_import": "Import progress",
+	"dashboard_import_error": "Could not read the backup file.",
+	"dashboard_exam_history": "Exam history",
+	"dashboard_no_exams": "No completed exams yet."
 }

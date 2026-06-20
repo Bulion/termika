@@ -38,5 +38,15 @@
 	"exam_retry": "Spróbuj ponownie",
 	"exam_no_questions": "Brak pytań dla tego przedmiotu.",
 	"exam_your_answer": "Twoja odpowiedź",
-	"exam_correct_answer": "Poprawna odpowiedź"
+	"exam_correct_answer": "Poprawna odpowiedź",
+	"nav_dashboard": "Postępy",
+	"dashboard_title": "Twoje postępy",
+	"dashboard_readiness": "Gotowość do egzaminu",
+	"dashboard_subjects": "Przedmioty",
+	"dashboard_mastered": "{mastered}/{total} opanowane",
+	"dashboard_export": "Eksportuj postępy",
+	"dashboard_import": "Importuj postępy",
+	"dashboard_import_error": "Nie udało się wczytać pliku kopii.",
+	"dashboard_exam_history": "Historia egzaminów",
+	"dashboard_no_exams": "Brak ukończonych egzaminów."
 }
