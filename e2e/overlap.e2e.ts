@@ -9,8 +9,10 @@ const routes = [
 	'./drills/run?set=nav-rules',
 	'./drills/run?set=magnetic-headings',
 	'./drills/run?set=e6b-wind',
+	'./drills/run?set=performance',
 	'./drills/quiz?set=phonetic-alphabet',
 	'./drills/quiz?set=abbreviations',
+	'./drills/quiz?set=metar-codes',
 	'./exam',
 	'./dashboard'
 ];

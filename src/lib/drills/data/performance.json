@@ -1,0 +1,74 @@
+{
+	"schemaVersion": 1,
+	"id": "performance",
+	"title": { "pl": "Osiągi i wysokości", "en": "Performance and altitudes" },
+	"description": {
+		"pl": "Wysokość ciśnieniowa i gęstościowa oraz zasięg ślizgu - obliczenia regułami kciuka.",
+		"en": "Pressure and density altitude and glide range - rule-of-thumb calculations."
+	},
+	"drills": [
+		{
+			"id": "pressure-altitude",
+			"microSkill": "general",
+			"prompt": {
+				"pl": "Wysokość lotniska {elev} ft, QNH {qnh} hPa → wysokość ciśnieniowa (ft)?",
+				"en": "Field elevation {elev} ft, QNH {qnh} hPa → pressure altitude (ft)?"
+			},
+			"inputs": [
+				{ "name": "elev", "min": 0, "max": 3000, "step": 100 },
+				{ "name": "qnh", "min": 985, "max": 1035, "step": 1 }
+			],
+			"op": { "kind": "formula", "expr": "elev + (1013 - qnh) * 27" },
+			"rule": {
+				"pl": "PA = elewacja + (1013 − QNH) × 27 ft/hPa",
+				"en": "PA = elevation + (1013 − QNH) × 27 ft/hPa"
+			},
+			"toleranceAbs": 80,
+			"timeLimitSec": 25,
+			"round": 0,
+			"tags": ["altimetry"]
+		},
+		{
+			"id": "density-altitude",
+			"microSkill": "general",
+			"prompt": {
+				"pl": "Wysokość ciśnieniowa {pa} ft, temperatura {oat} °C → wysokość gęstościowa (ft)?",
+				"en": "Pressure altitude {pa} ft, temperature {oat} °C → density altitude (ft)?"
+			},
+			"inputs": [
+				{ "name": "pa", "min": 0, "max": 8000, "step": 500 },
+				{ "name": "oat", "min": -15, "max": 35, "step": 5 }
+			],
+			"op": { "kind": "formula", "expr": "pa + 120 * (oat - (15 - pa / 1000 * 2))" },
+			"rule": {
+				"pl": "DA = PA + 120 × (OAT − temperatura ISA); ISA = 15 − 2 × PA/1000",
+				"en": "DA = PA + 120 × (OAT − ISA temp); ISA = 15 − 2 × PA/1000"
+			},
+			"toleranceAbs": 150,
+			"timeLimitSec": 35,
+			"round": 0,
+			"tags": ["performance"]
+		},
+		{
+			"id": "glide-range",
+			"microSkill": "nav_rule",
+			"prompt": {
+				"pl": "Wysokość {height} m, doskonałość {ld}:1 (w bezwietrznie) → zasięg ślizgu (km)?",
+				"en": "Height {height} m, glide ratio {ld}:1 (still air) → glide range (km)?"
+			},
+			"inputs": [
+				{ "name": "height", "min": 300, "max": 2000, "step": 100 },
+				{ "name": "ld", "min": 20, "max": 50, "step": 1 }
+			],
+			"op": { "kind": "formula", "expr": "height * ld / 1000" },
+			"rule": {
+				"pl": "zasięg [km] = wysokość [m] × doskonałość ÷ 1000",
+				"en": "range [km] = height [m] × glide ratio ÷ 1000"
+			},
+			"toleranceAbs": 1.5,
+			"timeLimitSec": 20,
+			"round": 0,
+			"tags": ["glide"]
+		}
+	]
+}

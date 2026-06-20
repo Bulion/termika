@@ -1,0 +1,141 @@
+{
+	"schemaVersion": 1,
+	"id": "metar-codes",
+	"title": { "pl": "Kody METAR / TAF", "en": "METAR / TAF codes" },
+	"description": {
+		"pl": "Rozszyfruj skróty z depesz pogodowych w obie strony: kod ↔ znaczenie.",
+		"en": "Decode weather-report abbreviations both ways: code ↔ meaning."
+	},
+	"labelA": { "pl": "Kod", "en": "Code" },
+	"labelB": { "pl": "Znaczenie", "en": "Meaning" },
+	"directions": ["a-to-b", "b-to-a"],
+	"timeLimitSec": 20,
+	"pairs": [
+		{
+			"id": "mc-cavok",
+			"a": { "pl": "CAVOK" },
+			"b": { "pl": "widzialność i pułap OK", "en": "ceiling and visibility OK" },
+			"hint": {
+				"pl": "widzialność ≥10 km, brak chmur poniżej 1500 m i CB, brak zjawisk",
+				"en": "vis ≥10 km, no cloud below 5000 ft or CB, no significant weather"
+			}
+		},
+		{
+			"id": "mc-few",
+			"a": { "pl": "FEW" },
+			"b": { "pl": "zachmurzenie małe 1-2/8", "en": "few 1-2/8" }
+		},
+		{
+			"id": "mc-sct",
+			"a": { "pl": "SCT" },
+			"b": { "pl": "zachmurzenie rozproszone 3-4/8", "en": "scattered 3-4/8" }
+		},
+		{
+			"id": "mc-bkn",
+			"a": { "pl": "BKN" },
+			"b": { "pl": "zachmurzenie duże 5-7/8", "en": "broken 5-7/8" }
+		},
+		{
+			"id": "mc-ovc",
+			"a": { "pl": "OVC" },
+			"b": { "pl": "zachmurzenie całkowite 8/8", "en": "overcast 8/8" }
+		},
+		{
+			"id": "mc-nsc",
+			"a": { "pl": "NSC" },
+			"b": { "pl": "brak istotnych chmur", "en": "no significant cloud" }
+		},
+		{
+			"id": "mc-skc",
+			"a": { "pl": "SKC" },
+			"b": { "pl": "niebo bezchmurne", "en": "sky clear" }
+		},
+		{
+			"id": "mc-vv",
+			"a": { "pl": "VV" },
+			"b": { "pl": "widzialność pionowa", "en": "vertical visibility" }
+		},
+		{
+			"id": "mc-ra",
+			"a": { "pl": "RA" },
+			"b": { "pl": "deszcz", "en": "rain" }
+		},
+		{
+			"id": "mc-sn",
+			"a": { "pl": "SN" },
+			"b": { "pl": "śnieg", "en": "snow" }
+		},
+		{
+			"id": "mc-dz",
+			"a": { "pl": "DZ" },
+			"b": { "pl": "mżawka", "en": "drizzle" }
+		},
+		{
+			"id": "mc-br",
+			"a": { "pl": "BR" },
+			"b": { "pl": "zamglenie", "en": "mist" },
+			"hint": { "pl": "widzialność 1-5 km", "en": "visibility 1-5 km" }
+		},
+		{
+			"id": "mc-fg",
+			"a": { "pl": "FG" },
+			"b": { "pl": "mgła", "en": "fog" },
+			"hint": { "pl": "widzialność poniżej 1 km", "en": "visibility below 1 km" }
+		},
+		{
+			"id": "mc-hz",
+			"a": { "pl": "HZ" },
+			"b": { "pl": "zmętnienie", "en": "haze" }
+		},
+		{
+			"id": "mc-ts",
+			"a": { "pl": "TS" },
+			"b": { "pl": "burza", "en": "thunderstorm" }
+		},
+		{
+			"id": "mc-sh",
+			"a": { "pl": "SH" },
+			"b": { "pl": "opad przelotny", "en": "shower" }
+		},
+		{
+			"id": "mc-fzra",
+			"a": { "pl": "FZRA" },
+			"b": { "pl": "marznący deszcz", "en": "freezing rain" }
+		},
+		{
+			"id": "mc-vrb",
+			"a": { "pl": "VRB" },
+			"b": { "pl": "wiatr zmienny", "en": "variable wind" }
+		},
+		{
+			"id": "mc-gust",
+			"a": { "pl": "G" },
+			"b": { "pl": "poryw wiatru", "en": "wind gust" }
+		},
+		{
+			"id": "mc-tempo",
+			"a": { "pl": "TEMPO" },
+			"b": { "pl": "okresowo (krótkotrwałe zmiany)", "en": "temporarily" }
+		},
+		{
+			"id": "mc-becmg",
+			"a": { "pl": "BECMG" },
+			"b": { "pl": "zmiana stopniowa", "en": "becoming" }
+		},
+		{
+			"id": "mc-nosig",
+			"a": { "pl": "NOSIG" },
+			"b": { "pl": "bez istotnych zmian", "en": "no significant change" }
+		},
+		{
+			"id": "mc-prob30",
+			"a": { "pl": "PROB30" },
+			"b": { "pl": "prawdopodobieństwo 30%", "en": "30% probability" }
+		},
+		{
+			"id": "mc-vc",
+			"a": { "pl": "VC" },
+			"b": { "pl": "w pobliżu lotniska", "en": "in the vicinity" }
+		}
+	]
+}
