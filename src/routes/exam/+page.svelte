@@ -44,6 +44,8 @@
 
 	onDestroy(() => clearInterval(timer));
 
+	const answeredCount = $derived(Object.values(answers).filter((value) => value !== null).length);
+
 	function subjectName(subjectId: string): string {
 		const subject = subjects.find((s) => s.id === subjectId);
 		return subject ? resolveText(subject.name, locale()) : subjectId;
@@ -118,10 +120,19 @@
 		</ul>
 	{:else if phase === 'running'}
 		<div class="bar">
-			<strong>{subjectName(activeSubjectId)}</strong>
-			<span class="timer" aria-live="off"
-				>{m.exam_time_left({ time: formatTime(secondsLeft) })}</span
-			>
+			<div class="bar-top">
+				<strong>{subjectName(activeSubjectId)}</strong>
+				<span class="timer" class:low={secondsLeft <= 30} aria-live="off">
+					⏱ {formatTime(secondsLeft)}
+				</span>
+			</div>
+			<div class="progress" aria-hidden="true">
+				<div
+					class="progress-fill wind-streak"
+					style:width={`${questions.length ? (answeredCount / questions.length) * 100 : 0}%`}
+				></div>
+			</div>
+			<span class="count">{answeredCount} / {questions.length}</span>
 		</div>
 		<form
 			class="questions"
@@ -207,17 +218,62 @@
 	.bar {
 		position: sticky;
 		top: 0;
+		z-index: 5;
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-2);
+		padding: var(--space-3) 0;
+		background: var(--color-bg);
+	}
+
+	.bar-top {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		gap: var(--space-4);
-		padding: var(--space-3);
-		background: var(--color-bg);
-		border-bottom: var(--border-width) solid var(--color-outline);
+		font-family: var(--font-display);
+		font-weight: 700;
 	}
 
 	.timer {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--space-1);
+		padding: var(--space-1) var(--space-3);
 		font-family: var(--font-mono);
+		font-weight: 700;
+		color: var(--color-ink);
+		background: var(--color-surface);
+		border: var(--border-width-sm) solid var(--color-outline);
+		border-radius: var(--radius-pill);
+	}
+
+	.timer.low {
+		color: var(--color-on-sink);
+		background: var(--color-sink-bg);
+	}
+
+	.progress {
+		width: 100%;
+		height: 1rem;
+		background: var(--color-track);
+		border: var(--border-width-sm) solid var(--color-outline);
+		border-radius: var(--radius-pill);
+		overflow: hidden;
+	}
+
+	.progress-fill {
+		height: 100%;
+		background-color: var(--color-sky);
+		border-right: var(--border-width-sm) solid var(--color-outline);
+		transition: width 0.3s ease;
+	}
+
+	.count {
+		font-family: var(--font-mono);
+		font-size: 0.85rem;
+		color: var(--color-ink-soft);
+		align-self: flex-end;
 	}
 
 	.questions {

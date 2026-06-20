@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onDestroy, onMount } from 'svelte';
 	import type { ContentLocale } from '$lib/content/schema';
 	import { generateProblem, isWithinTolerance, type DrillProblem } from '$lib/drills/generator';
 	import type { Attempt } from '$lib/drills/fluency';
@@ -25,10 +25,40 @@
 	let phase = $state<'answering' | 'feedback'>('answering');
 	let lastCorrect = $state(false);
 	let startedAt = 0;
+	let remaining = $state(0);
+	let ticker: ReturnType<typeof setInterval> | undefined;
+
+	function startTimer() {
+		clearInterval(ticker);
+		remaining = problem.timeLimitSec ?? 0;
+		if (!problem.timeLimitSec) return;
+		ticker = setInterval(() => {
+			remaining -= 1;
+			if (remaining <= 0) {
+				remaining = 0;
+				clearInterval(ticker);
+				timeUp();
+			}
+		}, 1000);
+	}
+
+	function timeUp() {
+		if (phase !== 'answering') return;
+		lastCorrect = false;
+		phase = 'feedback';
+		onAttempt?.({
+			drillId: problem.drillId,
+			correct: false,
+			latencyMs: (problem.timeLimitSec ?? 0) * 1000
+		});
+	}
 
 	onMount(() => {
 		startedAt = now();
+		startTimer();
 	});
+
+	onDestroy(() => clearInterval(ticker));
 
 	function nextProblem(): DrillProblem {
 		const drill: Drill = drills[Math.floor(pick() * drills.length)] ?? drills[0];
@@ -40,10 +70,12 @@
 		answer = '';
 		phase = 'answering';
 		startedAt = now();
+		startTimer();
 	}
 
 	function submit() {
 		if (phase !== 'answering' || answer.trim() === '') return;
+		clearInterval(ticker);
 		const value = Number.parseFloat(answer.replace(',', '.'));
 		lastCorrect = isWithinTolerance(problem.expected, value, problem.tolerancePct);
 		phase = 'feedback';
@@ -51,6 +83,9 @@
 	}
 
 	const expectedLabel = $derived(problem.expected.toFixed(problem.round));
+	const timeLabel = $derived(
+		`${Math.floor(remaining / 60)}:${String(remaining % 60).padStart(2, '0')}`
+	);
 </script>
 
 <form
@@ -61,6 +96,15 @@
 		else advance();
 	}}
 >
+	{#if problem.timeLimitSec}
+		<div class="timer" class:low={remaining <= 3}>
+			<span class="timer-value">{timeLabel}</span>
+		</div>
+		<div class="time-bar" aria-hidden="true">
+			<div class="time-fill" style:width={`${(remaining / problem.timeLimitSec) * 100}%`}></div>
+		</div>
+	{/if}
+
 	<p class="prompt">{problem.prompt}</p>
 	{#if problem.rule}
 		<p class="rule">{problem.rule}</p>
@@ -100,6 +144,41 @@
 		border: var(--border-width) solid var(--color-outline);
 		border-radius: var(--radius-lg);
 		box-shadow: var(--shadow-blue);
+	}
+
+	.timer {
+		display: grid;
+		place-items: center;
+		width: 4.5rem;
+		height: 4.5rem;
+		font-family: var(--font-mono);
+		font-weight: 700;
+		font-size: 1.25rem;
+		color: var(--color-ink);
+		background: var(--color-surface-2);
+		border: var(--border-width) solid var(--color-outline);
+		border-radius: 50%;
+		box-shadow: var(--shadow-card-sm);
+	}
+
+	.timer.low {
+		color: var(--color-on-sink);
+		background: var(--color-sink-bg);
+	}
+
+	.time-bar {
+		width: 100%;
+		height: 0.6rem;
+		background: var(--color-track);
+		border: var(--border-width-sm) solid var(--color-outline);
+		border-radius: var(--radius-pill);
+		overflow: hidden;
+	}
+
+	.time-fill {
+		height: 100%;
+		background: var(--color-lift);
+		transition: width 1s linear;
 	}
 
 	.prompt {
