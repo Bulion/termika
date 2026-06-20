@@ -1,7 +1,13 @@
 import { expect, test } from '@playwright/test';
 
-test('drill runner checks an answer and advances', async ({ page }) => {
+test('drills hub opens a set and the runner checks an answer', async ({ page }) => {
 	await page.goto('./drills');
+	await expect(
+		page.getByRole('link', { name: /Przeliczenia jednostek|Unit conversions/ })
+	).toBeVisible();
+
+	await page.getByRole('link', { name: /Reguły nawigacyjne|Navigation rules/ }).click();
+	await expect(page).toHaveURL(/\/drills\/run\?set=nav-rules/);
 
 	const input = page.getByRole('textbox');
 	await expect(input).toBeVisible();

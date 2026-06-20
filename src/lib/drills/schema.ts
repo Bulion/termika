@@ -48,6 +48,7 @@ export const drillSetSchema = z.object({
 	schemaVersion: z.literal(SCHEMA_VERSION),
 	id: z.string().min(1),
 	title: localizedTextSchema,
+	description: localizedTextSchema.optional(),
 	drills: z.array(drillSchema).min(1)
 });
 export type DrillSet = z.infer<typeof drillSetSchema>;

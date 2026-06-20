@@ -1,105 +1,101 @@
 <script lang="ts">
-	import DrillRunner from '$lib/components/DrillRunner.svelte';
+	import { resolve } from '$app/paths';
 	import type { ContentLocale } from '$lib/content/schema';
 	import { resolveText } from '$lib/content/schema';
-	import type { Attempt } from '$lib/drills/fluency';
 	import { loadDrillSets } from '$lib/drills/index';
-	import { recordDrillAttempt } from '$lib/drills/progress';
 	import type { DrillSet } from '$lib/drills/schema';
-	import { db } from '$lib/engine/db';
 	import { m } from '$lib/paraglide/messages.js';
 	import { getLocale } from '$lib/paraglide/runtime';
 
 	const locale = (): ContentLocale => (getLocale() === 'pl' ? 'pl' : 'en');
 	const sets: DrillSet[] = loadDrillSets();
-
-	let activeId = $state(sets[0]?.id ?? '');
-	const active = $derived(sets.find((s) => s.id === activeId) ?? sets[0]);
-
-	let sessionTotal = $state(0);
-	let sessionCorrect = $state(0);
-	const accuracyPct = $derived(
-		sessionTotal === 0 ? 0 : Math.round((sessionCorrect / sessionTotal) * 100)
-	);
-
-	async function handleAttempt(attempt: Attempt & { drillId: string }) {
-		sessionTotal += 1;
-		if (attempt.correct) sessionCorrect += 1;
-		await recordDrillAttempt(db, attempt.drillId, {
-			correct: attempt.correct,
-			latencyMs: attempt.latencyMs
-		});
-	}
-
-	function selectSet(id: string) {
-		activeId = id;
-		sessionTotal = 0;
-		sessionCorrect = 0;
-	}
 </script>
 
 <svelte:head><title>{m.drills_title()} · {m.app_name()}</title></svelte:head>
 
-<main class="drills fade-in">
+<main class="hub fade-in">
 	<header>
 		<h1>{m.drills_title()}</h1>
-		<nav class="sets" aria-label={m.drills_title()}>
-			{#each sets as set (set.id)}
-				<button
-					type="button"
-					class="set"
-					aria-pressed={activeId === set.id}
-					onclick={() => selectSet(set.id)}
-				>
-					{resolveText(set.title, locale())}
-				</button>
-			{/each}
-		</nav>
+		<p class="lead">{m.exercise_choose()}</p>
 	</header>
 
-	{#if active}
-		{#key active.id}
-			<DrillRunner drills={active.drills} locale={locale()} onAttempt={handleAttempt} />
-		{/key}
-		{#if sessionTotal > 0}
-			<p class="score">{m.drill_accuracy({ pct: accuracyPct })}</p>
-		{/if}
-	{/if}
+	<ul class="cards">
+		{#each sets as set (set.id)}
+			<li>
+				<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+				<a class="card lift" href={`${resolve('/drills/run')}?set=${set.id}`}>
+					<span class="card-title">{resolveText(set.title, locale())}</span>
+					{#if set.description}
+						<span class="card-desc">{resolveText(set.description, locale())}</span>
+					{/if}
+					<span class="count">{m.exercises_count({ count: set.drills.length })}</span>
+					<span class="go" aria-hidden="true">→</span>
+				</a>
+			</li>
+		{/each}
+	</ul>
 </main>
 
 <style>
-	.drills {
-		max-width: 40rem;
+	.hub {
+		max-width: 48rem;
 		margin: 0 auto;
 		padding: var(--space-6) var(--space-4);
 		display: flex;
 		flex-direction: column;
 		gap: var(--space-6);
-		align-items: flex-start;
 	}
 
-	.sets {
-		display: flex;
-		flex-wrap: wrap;
-		gap: var(--space-2);
-	}
-
-	.set {
-		padding: var(--space-2) var(--space-4);
-		background: var(--color-surface);
-		color: var(--color-ink);
-		border: var(--border-width) solid var(--color-outline);
-		border-radius: var(--radius-md);
-	}
-
-	.set[aria-pressed='true'] {
-		color: var(--color-on-accent);
-		background: var(--color-sky);
-	}
-
-	.score {
+	.lead {
 		font-family: var(--font-mono);
 		color: var(--color-ink-soft);
+		margin: var(--space-2) 0 0;
+	}
+
+	.cards {
+		list-style: none;
 		margin: 0;
+		padding: 0;
+		display: grid;
+		gap: var(--space-4);
+	}
+
+	.card {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-2);
+		padding: var(--space-6);
+		text-decoration: none;
+		color: var(--color-ink);
+		background: var(--color-surface);
+		border: var(--border-width) solid var(--color-outline);
+		border-radius: var(--radius-lg);
+		box-shadow: var(--shadow-card);
+	}
+
+	.card-title {
+		font-family: var(--font-display);
+		font-weight: 800;
+		font-size: 1.35rem;
+	}
+
+	.card-desc {
+		color: var(--color-ink-soft);
+		max-width: 36rem;
+	}
+
+	.count {
+		font-family: var(--font-mono);
+		font-size: 0.8rem;
+		color: var(--color-ink-soft);
+	}
+
+	.go {
+		position: absolute;
+		top: var(--space-6);
+		right: var(--space-6);
+		font-size: 1.5rem;
+		color: var(--color-primary);
 	}
 </style>

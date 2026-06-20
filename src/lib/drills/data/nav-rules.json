@@ -2,6 +2,10 @@
 	"schemaVersion": 1,
 	"id": "nav-rules",
 	"title": { "pl": "Reguły nawigacyjne", "en": "Navigation rules of thumb" },
+	"description": {
+		"pl": "Mentalne reguły kciuka: prędkość opadania i odległość rozpoczęcia zniżania.",
+		"en": "Mental rules of thumb: rate of descent and top-of-descent distance."
+	},
 	"drills": [
 		{
 			"id": "rod-3deg",

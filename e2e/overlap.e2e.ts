@@ -1,6 +1,14 @@
 import { expect, test } from '@playwright/test';
 
-const routes = ['./', './study', './drills', './exam', './dashboard'];
+const routes = [
+	'./',
+	'./study',
+	'./study/session?mode=all',
+	'./drills',
+	'./drills/run?set=nav-rules',
+	'./exam',
+	'./dashboard'
+];
 
 interface Occlusion {
 	text: string;

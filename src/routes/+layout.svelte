@@ -32,6 +32,11 @@
 		{ href: resolve('/exam'), label: m.nav_exam },
 		{ href: resolve('/dashboard'), label: m.nav_dashboard }
 	];
+
+	function isActive(href: string): boolean {
+		const path = page.url.pathname;
+		return path === href || path.startsWith(`${href}/`);
+	}
 </script>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
@@ -45,7 +50,7 @@
 	</a>
 	<nav class="nav" aria-label={m.app_name()}>
 		{#each links as link (link.href)}
-			<a href={link.href} aria-current={page.url.pathname === link.href ? 'page' : undefined}>
+			<a href={link.href} aria-current={isActive(link.href) ? 'page' : undefined}>
 				{link.label()}
 			</a>
 		{/each}
