@@ -8,6 +8,10 @@ const PXPERKT = 2.0;
 const B_CX = 260;
 const B_CY = 430;
 const B_R = 205;
+/** Radius of the transparent wind window inside the azimuth bezel. */
+const WIN_R = B_R - 50;
+/** Span (deg either side of straight up) of the one-sided wind-grid arcs and fan. */
+const FAN = 58;
 
 type Attrs = Record<string, string | number>;
 interface TextOpts {
@@ -44,6 +48,16 @@ function txt(x: number, y: number, value: string, opts: TextOpts = {}): SVGEleme
 function polar(cx: number, cy: number, r: number, deg: number): [number, number] {
 	const a = ((deg - 90) * Math.PI) / 180;
 	return [cx + r * Math.cos(a), cy + r * Math.sin(a)];
+}
+
+/** One-sided wind-grid arc (centred on the grid origin, fanning upward). */
+function windArcPath(r: number): string {
+	let d = '';
+	for (let b = -FAN; b <= FAN; b += 4) {
+		const [x, y] = polar(B_CX, B_CY, r, b);
+		d += `${d ? 'L' : 'M'} ${Math.round(x * 100) / 100} ${Math.round(y * 100) / 100} `;
+	}
+	return d.trim();
 }
 
 /** Appends the children of a standalone SVG asset (the static decorations) into `target`. */
@@ -423,28 +437,32 @@ function buildBack(strings: typeof E6B_STRINGS.pl): BackRefs {
 
 	const defs = el('defs');
 	const clip = el('clipPath', { id: 'e6b-winclip' });
-	clip.appendChild(el('circle', { cx: B_CX, cy: B_CY, r: B_R - 29 }));
+	clip.appendChild(el('circle', { cx: B_CX, cy: B_CY, r: WIN_R }));
 	defs.appendChild(clip);
 	svg.appendChild(defs);
 
-	// Rotating azimuth bezel: turn it to set wind direction / true course under the index.
+	// Rotating azimuth bezel (drawn LATER, on top of the grid). Transparent centre window:
+	// only the rose band is opaque, so the sliding grid shows through.
 	const ringGroup = el('g');
 	const ring = el('g', { class: 'e6b-grab' });
 	ring.appendChild(
 		el('circle', {
 			cx: B_CX,
 			cy: B_CY,
-			r: B_R,
-			fill: '#16160f',
-			stroke: '#efece2',
-			'stroke-width': 1
+			r: (B_R + WIN_R) / 2,
+			fill: 'none',
+			stroke: '#16160f',
+			'stroke-width': B_R - WIN_R
 		})
+	);
+	ring.appendChild(
+		el('circle', { cx: B_CX, cy: B_CY, r: B_R, fill: 'none', stroke: '#efece2', 'stroke-width': 1 })
 	);
 	ring.appendChild(
 		el('circle', {
 			cx: B_CX,
 			cy: B_CY,
-			r: B_R - 26,
+			r: WIN_R,
 			fill: 'none',
 			stroke: '#5a5a52',
 			'stroke-width': 0.5
@@ -468,10 +486,10 @@ function buildBack(strings: typeof E6B_STRINGS.pl): BackRefs {
 		);
 	}
 	for (let d = 0; d < 360; d += 10) {
-		const pr = polar(B_CX, B_CY, B_R - 22, d);
+		const pr = polar(B_CX, B_CY, B_R - 24, d);
 		ring.appendChild(
 			txt(pr[0], pr[1], String(d === 0 ? 360 : d), {
-				size: 9,
+				size: 8,
 				fill: '#efece2',
 				rot: `rotate(${d} ${pr[0]} ${pr[1]})`
 			})
@@ -493,7 +511,7 @@ function buildBack(strings: typeof E6B_STRINGS.pl): BackRefs {
 			['NNW', 337.5]
 		] as const
 	).forEach(([label, d]) => {
-		const pr = polar(B_CX, B_CY, B_R - 42, d);
+		const pr = polar(B_CX, B_CY, B_R - 37, d);
 		ring.appendChild(
 			txt(pr[0], pr[1], label, {
 				size: 7,
@@ -510,60 +528,27 @@ function buildBack(strings: typeof E6B_STRINGS.pl): BackRefs {
 			['W', 270]
 		] as const
 	).forEach(([label, d]) => {
-		const pr = polar(B_CX, B_CY, B_R - 44, d);
+		const pr = polar(B_CX, B_CY, B_R - 46, d);
 		ring.appendChild(
-			txt(pr[0], pr[1], label, { size: 17, fill: '#efece2', extra: { 'font-weight': 'bold' } })
+			txt(pr[0], pr[1], label, { size: 14, fill: '#efece2', extra: { 'font-weight': 'bold' } })
 		);
 	});
 	ringGroup.appendChild(ring);
-	svg.appendChild(ringGroup);
 
-	// Vertically sliding grid card (speed arcs + drift lines). Slides, never rotates.
+	// Sliding grid card: concentric speed arcs and drift lines fan UPWARD from one origin
+	// (the grid centre). It only slides vertically and is drawn BELOW the bezel, so the
+	// rotating disc shows it through the window. Values increase outward - never mirrored.
+	const slideClip = el('g', { 'clip-path': 'url(#e6b-winclip)' });
 	const slideGroup = el('g');
-	const gridClip = el('g', { 'clip-path': 'url(#e6b-winclip)' });
 	const grid = el('g', { class: 'e6b-grab' });
 	grid.appendChild(
-		el('rect', {
-			x: B_CX - 220,
-			y: B_CY - 340,
-			width: 440,
-			height: 680,
-			fill: '#dfe4df',
-			opacity: '0.92'
-		})
+		el('rect', { x: B_CX - 260, y: B_CY - 560, width: 520, height: 900, fill: '#dfe4df' })
 	);
-	// Faint graph-paper texture behind the arcs, like the Jeppesen wind grid.
-	for (let gx = B_CX - 220; gx <= B_CX + 220; gx += 20) {
-		grid.appendChild(
-			el('line', {
-				x1: gx,
-				y1: B_CY - 340,
-				x2: gx,
-				y2: B_CY + 340,
-				stroke: '#b6c7bc',
-				'stroke-width': 0.3
-			})
-		);
-	}
-	for (let gy = B_CY - 340; gy <= B_CY + 340; gy += 20) {
-		grid.appendChild(
-			el('line', {
-				x1: B_CX - 220,
-				y1: gy,
-				x2: B_CX + 220,
-				y2: gy,
-				stroke: '#b6c7bc',
-				'stroke-width': 0.3
-			})
-		);
-	}
-	for (let kt = 10; kt <= 160; kt += 10) {
+	for (let kt = 10; kt <= 280; kt += 10) {
 		const r = kt * PXPERKT;
 		grid.appendChild(
-			el('circle', {
-				cx: B_CX,
-				cy: B_CY,
-				r,
+			el('path', {
+				d: windArcPath(r),
 				fill: 'none',
 				stroke: '#6f8f82',
 				'stroke-width': kt % 20 === 0 ? 0.9 : 0.45
@@ -571,38 +556,34 @@ function buildBack(strings: typeof E6B_STRINGS.pl): BackRefs {
 		);
 		if (kt % 20 === 0) {
 			grid.appendChild(
-				txt(B_CX + 5, B_CY - r, String(kt), { size: 8, fill: '#2c4339', anchor: 'start' })
-			);
-			grid.appendChild(
-				txt(B_CX + 5, B_CY + r, String(kt), { size: 8, fill: '#2c4339', anchor: 'start' })
+				txt(B_CX + 7, B_CY - r, String(kt), { size: 8, fill: '#2c4339', anchor: 'start' })
 			);
 		}
 	}
-	for (let a = -45; a <= 45; a += 5) {
-		const top = polar(B_CX, B_CY, 340, a),
-			bot = polar(B_CX, B_CY, 340, a + 180);
+	for (let a = -FAN; a <= FAN; a += 5) {
+		const tip = polar(B_CX, B_CY, 280 * PXPERKT, a);
 		grid.appendChild(
 			el('line', {
-				x1: bot[0],
-				y1: bot[1],
-				x2: top[0],
-				y2: top[1],
+				x1: B_CX,
+				y1: B_CY,
+				x2: tip[0],
+				y2: tip[1],
 				stroke: a === 0 ? '#2c4339' : '#6f8f82',
 				'stroke-width': a === 0 ? 1.1 : 0.45
 			})
 		);
 	}
-	for (let a = 10; a <= 40; a += 10) {
+	for (let a = 10; a <= 45; a += 5) {
 		[a, -a].forEach((aa) => {
-			const pr = polar(B_CX, B_CY, 150, aa);
-			grid.appendChild(txt(pr[0], pr[1], String(Math.abs(aa)), { size: 8, fill: '#2c4339' }));
+			[110, 200].forEach((rr) => {
+				const pr = polar(B_CX, B_CY, rr, aa);
+				grid.appendChild(txt(pr[0], pr[1], String(Math.abs(aa)), { size: 7, fill: '#2c4339' }));
+			});
 		});
 	}
-	// Highlighted TAS target circle - slide the grid until the wind dot lands on it.
-	const tasCircle = el('circle', {
-		cx: B_CX,
-		cy: B_CY,
-		r: 120 * PXPERKT,
+	// Highlighted TAS target arc - slide the grid until the wind dot lands on it.
+	const tasCircle = el('path', {
+		d: windArcPath(120 * PXPERKT),
 		fill: 'none',
 		stroke: '#1d6fb0',
 		'stroke-width': 1.8,
@@ -610,9 +591,10 @@ function buildBack(strings: typeof E6B_STRINGS.pl): BackRefs {
 		'data-tas-arc': '1'
 	});
 	grid.appendChild(tasCircle);
-	gridClip.appendChild(grid);
-	slideGroup.appendChild(gridClip);
-	svg.appendChild(slideGroup);
+	slideGroup.appendChild(grid);
+	slideClip.appendChild(slideGroup);
+	svg.appendChild(slideClip);
+	svg.appendChild(ringGroup);
 
 	// Wind dot: marked on the transparent rotating disc, so the bezel turns it.
 	const dotGroup = el('g');
@@ -630,9 +612,9 @@ function buildBack(strings: typeof E6B_STRINGS.pl): BackRefs {
 	svg.appendChild(
 		el('line', {
 			x1: B_CX,
-			y1: B_CY - B_R + 29,
+			y1: B_CY - WIN_R,
 			x2: B_CX,
-			y2: B_CY + B_R - 29,
+			y2: B_CY + WIN_R,
 			stroke: '#a8281c',
 			'stroke-width': 0.7,
 			opacity: '0.5'
@@ -686,7 +668,7 @@ export function createE6b(root: HTMLElement, options: { locale: E6bLocale }): E6
 	faceFront.appendChild(F.svg);
 	faceBack.appendChild(R.svg);
 
-	const S = { ringRot: 0, gridY: 0, dotX: 0, dotY: -40 };
+	const S = { ringRot: 0, gridY: 200, dotX: 0, dotY: -40 };
 	const FS = { discRot: 0, curRot: 0, cwAngle: 30, cwKt: 20, tempC: 15 };
 	let solveMode: 'find' | 'wind' = 'find';
 	let tasTarget = 120;
@@ -734,7 +716,7 @@ export function createE6b(root: HTMLElement, options: { locale: E6bLocale }): E6
 	}
 
 	function updateTasArc(): void {
-		R.tasCircle.setAttribute('r', String(tasTarget * PXPERKT));
+		R.tasCircle.setAttribute('d', windArcPath(tasTarget * PXPERKT));
 	}
 
 	// Undo the bezel rotation to express a screen point in rotating-disc coordinates.
@@ -989,7 +971,7 @@ export function createE6b(root: HTMLElement, options: { locale: E6bLocale }): E6
 				},
 				move: (ev) => {
 					const y = svgPt(R.svg, ev).y;
-					S.gridY = Math.max(-340, Math.min(340, base + (y - startY)));
+					S.gridY = Math.max(40, Math.min(440, base + (y - startY)));
 					applyBack();
 				}
 			};
@@ -1088,7 +1070,7 @@ export function createE6b(root: HTMLElement, options: { locale: E6bLocale }): E6
 				applyFront();
 			} else {
 				S.ringRot = 0;
-				S.gridY = 0;
+				S.gridY = 200;
 				S.dotX = 0;
 				S.dotY = -40;
 				applyBack();
