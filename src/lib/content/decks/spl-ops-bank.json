@@ -1,0 +1,5579 @@
+{
+	"schemaVersion": 1,
+	"id": "spl-ops-bank",
+	"title": {
+		"pl": "Procedury operacyjne - bank pytań",
+		"en": "Operational Procedures - question bank"
+	},
+	"subjectId": "OPS",
+	"items": [
+		{
+			"id": "gen-ops-1",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["aerotow", "signals", "launch"],
+			"stem": {
+				"pl": "Jaki sygnał podaje pilot szybowca gotowego do startu na holu za samolotem?",
+				"en": "What signal does a glider pilot give when ready for aerotow launch?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Wychyla ster kierunku w lewo i w prawo",
+						"en": "Deflects the rudder left and right"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Unosi rękę ponad kabinę",
+						"en": "Raises a hand above the cockpit"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Porusza lotkami - kołysze skrzydłami",
+						"en": "Moves the ailerons - rocks the wings"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Otwiera i zamyka hamulce aerodynamiczne",
+						"en": "Opens and closes the airbrakes"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Standardowym sygnałem gotowości szybowca do startu na holu jest kołysanie skrzydłami (wychylenie lotek).",
+				"en": "The standard glider-ready signal for aerotow is rocking the wings by deflecting the ailerons."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-2",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["winch", "stall", "takeoff"],
+			"stem": {
+				"pl": "W jakiej fazie startu na wyciągarce szybowiec jest najbardziej narażony na utratę prędkości i przeciągnięcie?",
+				"en": "During which phase of a winch launch is a glider most at risk of stall?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Podczas strojenia kabla tuż przed odrywaniem",
+						"en": "While the cable is being tensioned just before lift-off"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Po zerwaniu kabla na dużej wysokości przy przejściu do lotu poziomego",
+						"en": "After cable release at high altitude when transitioning to level flight"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Bezpośrednio po odrywaniu, gdy pilot zbyt mocno wychyla ster wysokości",
+						"en": "Immediately after lift-off when the pilot over-pulls the elevator"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "W fazie pełnego wznoszenia przy maksymalnym kącie wznoszenia",
+						"en": "During full-climb phase at maximum climb angle"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Zbyt gwałtowne wychylenie steru wysokości tuż po odrywaniu grozi przeciągnięciem przy małej prędkości i braku zapasu wysokości.",
+				"en": "Over-pulling the elevator just after lift-off risks a stall at low speed with no height margin for recovery."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-3",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["winch", "emergency", "cable break", "low altitude"],
+			"stem": {
+				"pl": "Co powinien zrobić pilot szybowca, gdy kabel wyciągarki zerwie się na wysokości poniżej 100 m?",
+				"en": "What should a glider pilot do if the winch cable breaks below 100 m altitude?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Natychmiast skręcić o 180° i lądować na pasie startowym",
+						"en": "Immediately turn 180° and land on the runway"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Obniżyć nos, utrzymać prędkość i lądować przed sobą lub z małym skrętem",
+						"en": "Lower the nose, maintain speed and land ahead or with a small turn"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zwiększyć kąt wznoszenia, by jak najszybciej uzyskać wysokość",
+						"en": "Increase climb angle to gain altitude as quickly as possible"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Otworzyć hamulce aerodynamiczne i utrzymać dotychczasowy kurs",
+						"en": "Open airbrakes and maintain the current heading"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Poniżej 100 m nie ma zapasu wysokości na bezpieczny nawrót; należy obniżyć nos, utrzymać prędkość i lądować zasadniczo przed sobą.",
+				"en": "Below 100 m there is no height margin for a safe 180° turn; the pilot must lower the nose, maintain speed and land approximately straight ahead."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-4",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["aerotow", "emergency", "release failure"],
+			"stem": {
+				"pl": "W przypadku awarii mechanizmu odczepiania podczas holu za samolotem, jaki sygnał powinien dać pilot szybowca pilotowi holownika?",
+				"en": "In case of release mechanism failure during aerotow, what signal should the glider pilot give to the tow pilot?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Natychmiast lądować niezależnie od pozycji",
+						"en": "Land immediately regardless of position"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Kołysanie skrzydłami przekazujące holownikowi gotowość do odczepienia",
+						"en": "Rocking the wings to signal readiness for release"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Wychylanie szybowca w bok (jazda wężem) jako sygnał, że szybowiec nie może się odczepić",
+						"en": "Yawing the glider sideways (snaking) to signal the glider cannot release"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zwiększyć prędkość, by wysunąć się do przodu i napiąć hak",
+						"en": "Increase speed to move forward and tension the hook"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Gdy szybowiec nie może się odczepić, daje umówiony sygnał pilotowi holownika (jazda wężem na boki), aby ten zwolnił linę po swojej stronie; holownik wówczas ląduje z szybowcem na holu według uzgodnionej procedury.",
+				"en": "If the glider cannot release, it gives the agreed signal to the tow pilot (yawing/snaking) so the tug releases its end; the combination then lands per the briefed procedure."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-5",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["aerotow", "signals", "release"],
+			"stem": {
+				"pl": "Co oznacza kołysanie skrzydłami przez pilota samolotu holującego podczas holu?",
+				"en": "What does wing-rocking by the tow pilot mean during an aerotow?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Pilot holownika jest gotowy do zwiększenia prędkości",
+						"en": "The tow pilot is ready to increase speed"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Szybownik powinien zwolnić hak - sygnał do odczepiania",
+						"en": "The glider pilot should release the hook - signal to release"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Holownik prosi o zmianę pozycji holu z niskiej na wysoką",
+						"en": "The tow plane requests a position change from low to high tow"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Kabel holowniczy nie jest prawidłowo podpięty",
+						"en": "The tow cable is not properly attached"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Kołysanie skrzydłami przez pilota holownika jest standardowym sygnałem do odczepienia się szybowca.",
+				"en": "Wing-rocking by the tow pilot is the standard signal for the glider pilot to release."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-6",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["winch", "climb angle"],
+			"stem": {
+				"pl": "Na jakim kącie wznoszenia powinien być prowadzony start na wyciągarce w normalnych warunkach?",
+				"en": "At what climb angle should a winch launch be conducted under normal conditions?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Jak największym, by jak najszybciej opuścić strefę przyziemną",
+						"en": "As steep as possible to leave the ground zone quickly"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Około 45°, a pod koniec holu stopniowo zmniejszanym do 30°",
+						"en": "About 45°, gradually reduced to 30° toward the end of the launch"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Stałym kątem 30° przez cały czas trwania holu",
+						"en": "A constant 30° throughout the entire launch"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Jak najmniejszym, by nie przekroczyć prędkości holowania",
+						"en": "As shallow as possible to avoid exceeding tow speed"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Typowy profil startu wyciągarkowego obejmuje fazę wznoszenia około 45°, który pod koniec holu jest redukowany, by płynnie przejść do lotu poziomego.",
+				"en": "A typical winch launch profile includes a ~45° climb that is progressively reduced toward the end to transition smoothly to level flight."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-7",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["aerotow", "emergency"],
+			"stem": {
+				"pl": "Jak powinien zachować się pilot szybowca, gdy podczas startu na holu za samolotem holownik nagle silnie obniży nos?",
+				"en": "What should a glider pilot do if the tow plane suddenly pitches nose-down during aerotow?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Natychmiast odczepić się, by nie wciągnąć holownika w ziemię",
+						"en": "Release immediately to avoid pulling the tow plane into the ground"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Utrzymać pozycję holu i zaczekać na sygnał pilota holownika",
+						"en": "Hold the tow position and wait for the tow pilot's signal"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Przejść w pozycję wysoką, by zmniejszyć siłę naporu kabla",
+						"en": "Transition to high tow to reduce cable pull force"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zwiększyć prędkość, by nie napiąć kabla",
+						"en": "Increase speed to avoid tensioning the cable"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Nagłe nurkowanie holownika może świadczyć o sytuacji awaryjnej; natychmiastowe odczepienie zapobiega dociąganiu holownika do ziemi.",
+				"en": "A sudden nose-down by the tow plane may indicate an emergency; immediate release prevents pulling the tow plane into the ground."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-8",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["aerotow", "release", "speed"],
+			"stem": {
+				"pl": "Jaką prędkość należy utrzymywać podczas holu za samolotem, gdy holownik poda sygnał do odczepiania?",
+				"en": "What speed should be maintained when the tow pilot signals to release during an aerotow?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Prędkość odczepiania określoną w instrukcji użytkowania szybowca",
+						"en": "The release speed specified in the glider's flight manual"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Prędkość holowania (bez zmian)",
+						"en": "The tow speed (unchanged)"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Prędkość minimalna (tuż nad prędkością przeciągnięcia)",
+						"en": "Minimum speed (just above stall speed)"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "VNE (prędkość nigdy nie przekraczana)",
+						"en": "VNE (never-exceed speed)"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "W momencie odczepiania pilot utrzymuje prędkość holu, co zapewnia właściwy efekt aerodynamiczny odczepienia i bezpieczny lot po zwolnieniu.",
+				"en": "At the moment of release the pilot maintains tow speed, which ensures proper aerodynamic separation and safe flight after release."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-9",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["winch", "speed", "safety margin"],
+			"stem": {
+				"pl": "Jaką minimalną prędkość bezpieczną (jako wielokrotność prędkości przeciągnięcia VS) należy przyjąć podczas wznoszenia na wyciągarce?",
+				"en": "What minimum airspeed (as a multiple of stall speed VS) is acceptable during the winch launch climb?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "1,1 VS",
+						"en": "1.1 VS"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "1,3 VS",
+						"en": "1.3 VS"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "1,5 VS",
+						"en": "1.5 VS"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "2,0 VS",
+						"en": "2.0 VS"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Podczas startu wyciągarkowego zalecane jest utrzymywanie prędkości co najmniej 1,3 VS, co zapewnia odpowiedni margines ponad prędkością przeciągnięcia.",
+				"en": "During a winch launch a minimum of 1.3 VS is recommended, providing adequate margin above stall speed."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-10",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["winch", "emergency", "cable break"],
+			"stem": {
+				"pl": "Jaka jest kolejność działań pilota szybowca w przypadku zerwania kabla wyciągarki na wysokości 200-300 m AGL?",
+				"en": "What is the glider pilot's action sequence when the winch cable breaks at 200-300 m AGL?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Obniżenie nosa → utrzymanie prędkości → nawrót o 180° → lądowanie z wiatrem",
+						"en": "Lower nose → maintain speed → 180° turn → downwind landing"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Obniżenie nosa → utrzymanie prędkości → ocena wysokości → decyzja o kręgu lub lądowaniu wprost",
+						"en": "Lower nose → maintain speed → assess altitude → decide to circuit or land straight"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Natychmiastowy nawrót o 180° → podejście standardowe → lądowanie pod wiatr",
+						"en": "Immediate 180° turn → standard approach → headwind landing"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zwiększenie prędkości → otwarcie hamulców → lądowanie wprost",
+						"en": "Increase speed → open airbrakes → straight-ahead landing"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Na tej wysokości pilot ma już pewien wybór; najpierw obniża nos i utrzymuje prędkość, następnie ocenia dostępną wysokość i wybiera lądowanie wprost lub z ograniczonym okrążeniem.",
+				"en": "At this height the pilot has some options; first lower the nose and maintain speed, then assess altitude and choose a straight landing or a limited circuit."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-11",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["winch", "emergency", "ground roll"],
+			"stem": {
+				"pl": "Który z poniższych stanów jest uznawany za sytuację awaryjną podczas startu wyciągarkowego?",
+				"en": "Which of the following conditions is considered an emergency during a winch launch?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Prędkość wznoszenia wynosi 4 m/s zamiast oczekiwanych 5 m/s",
+						"en": "Climb rate is 4 m/s instead of the expected 5 m/s"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Szybowiec obraca się niekontrolowanie wokół osi podłużnej (rolowanie) podczas biegu po ziemi",
+						"en": "The glider rolls uncontrollably around its longitudinal axis during the ground run"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Wiatr boczny jest mniejszy niż 5 kt",
+						"en": "Crosswind is less than 5 kt"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Wyciągarka pracuje przy 80% mocy zamiast pełnej mocy",
+						"en": "Winch operates at 80% power instead of full power"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Niekontrolowane rolowanie szybowca podczas rozbiegu (np. z powodu prędkości kabla lub wiatru bocznego) jest sytuacją awaryjną wymagającą natychmiastowego przerwania startu.",
+				"en": "Uncontrolled roll during the ground run (e.g. due to cable tension or crosswind) is an emergency requiring immediate abort."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-12",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["aerotow", "separation", "release"],
+			"stem": {
+				"pl": "W jakim kierunku należy skręcić po odczepieniu od holownika, by uniknąć kolizji z samolotem holującym?",
+				"en": "Which direction should the glider turn after releasing from the tow plane to avoid collision?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "W lewo, niezależnie od sytuacji",
+						"en": "To the left, regardless of the situation"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "W prawo, niezależnie od sytuacji",
+						"en": "To the right, regardless of the situation"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "W prawo - jest to ogólna konwencja, jeśli nie uzgodniono inaczej",
+						"en": "To the right - this is the general convention unless otherwise agreed"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Prosto przez 5 sekund, a następnie skręt w stronę pola termicznego",
+						"en": "Straight for 5 seconds and then turn toward the thermal area"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Powszechna konwencja nakazuje szybowcowi skręt w prawo po odczepieniu, by oddalić się od holownika, który zwykle skręca w lewo.",
+				"en": "The common convention has the glider turn right after release to diverge from the tow plane, which typically turns left."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-13",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["winch", "safety mechanism"],
+			"stem": {
+				"pl": "Kiedy kabel wyciągarki powinien zostać automatycznie zwolniony przez wyciągarkę (bezpiecznik)?",
+				"en": "When should the winch cable be automatically released by the winch (safety mechanism)?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Gdy prędkość kabla przekroczy 120 km/h",
+						"en": "When cable speed exceeds 120 km/h"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Gdy naprężenie w kablu przekroczy bezpieczną wartość graniczną (przeciążenie kabla)",
+						"en": "When cable tension exceeds the safe limit value (cable overload)"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Gdy szybowiec osiągnie maksymalną wysokość wyciągarkową",
+						"en": "When the glider reaches the maximum winch height"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Gdy szybowiec zmieni kurs o więcej niż 30°",
+						"en": "When the glider changes heading by more than 30°"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Wyciągarka wyposażona jest w bezpiecznik ograniczający naprężenie, który automatycznie zwalnia kabel po przekroczeniu maksymalnej dopuszczalnej siły, chroniąc szybowiec.",
+				"en": "The winch is equipped with a tension limiter that automatically releases the cable when maximum permissible force is exceeded, protecting the glider."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-14",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["winch", "checklist", "pre-flight"],
+			"stem": {
+				"pl": "Jaka jest prawidłowa kolejność sprawdzania gotowości do startu na wyciągarce (uproszczona lista kontrolna)?",
+				"en": "What is the correct order of the pre-winch-launch checks (simplified checklist)?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Ster → pasy → przyrządy → hamulce aerodynamiczne zamknięte → wiatrochron zamknięty → sygnał gotowości",
+						"en": "Controls → harness → instruments → airbrakes closed → canopy closed → ready signal"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Wiatrochron → pasy → hamulce aerodynamiczne otwarte → ster → sygnał gotowości",
+						"en": "Canopy → harness → airbrakes open → controls → ready signal"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Hak → ster → pasy → hamulce aerodynamiczne otwarte → wiatrochron → sygnał",
+						"en": "Hook → controls → harness → airbrakes open → canopy → signal"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Sygnał gotowości → pasy → wiatrochron → przyrządy → ster → hak zamknięty",
+						"en": "Ready signal → harness → canopy → instruments → controls → hook closed"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Standardowa lista kontrolna przed startem wyciągarkowym obejmuje sprawdzenie sterów, pasów, przyrządów, zamknięcie hamulców i wiatrochronu, a dopiero potem sygnał gotowości.",
+				"en": "The standard pre-winch checklist covers controls, harness, instruments, airbrakes closed, canopy closed, and only then the ready signal."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-15",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["aerotow", "overshoot", "tow position"],
+			"stem": {
+				"pl": "Jakie jest właściwe działanie pilota szybowca, gdy podczas holu za samolotem zaczyna się niekontrolowanie wznosić powyżej pozycji holownika (overshoot wysokości)?",
+				"en": "What is the correct glider pilot action when unintentionally climbing above the tow plane during aerotow (height overshoot)?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Gwałtownie wypchnąć ster wysokości do przodu i wejść w nurkowanie",
+						"en": "Push the elevator hard forward and enter a dive"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Odczepić się natychmiast od holownika",
+						"en": "Release from the tow plane immediately"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Delikatnie obniżać nos z użyciem steru wysokości, zachowując prędkość i nie tracąc holownika z pola widzenia",
+						"en": "Gently lower the nose with elevator, maintaining speed and keeping the tow plane in sight"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zastosować pełne hamulce aerodynamiczne i utrzymać pozycję",
+						"en": "Apply full airbrakes and hold position"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Łagodne obniżanie nosa pozwala wrócić do prawidłowej pozycji holu bez gwałtownych manewrów, które mogłyby destabilizować holownik.",
+				"en": "A gentle nose-down correction returns the glider to the correct tow position without abrupt manoeuvres that could destabilise the tow plane."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-16",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["aerotow", "speed limits", "AFM"],
+			"stem": {
+				"pl": "Na jakim parametrze technicznym opiera się zwykle maksymalna dopuszczalna prędkość holowania (VTOW) szybowca na holu?",
+				"en": "On what technical parameter is the maximum permitted tow speed (VTOW) for a glider on aerotow typically based?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "VNE podzielone przez 2",
+						"en": "VNE divided by 2"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Prędkość podana w instrukcji użytkowania szybowca (AFM/POH) jako VT lub VTOW",
+						"en": "Speed given in the glider flight manual (AFM/POH) as VT or VTOW"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Prędkość minimalna sterowności + 50 km/h",
+						"en": "Minimum control speed + 50 km/h"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Prędkość holowania zawsze wynosi 100 km/h niezależnie od typu szybowca",
+						"en": "Tow speed is always 100 km/h regardless of glider type"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Maksymalna prędkość holu jest określona przez producenta w instrukcji użytkowania szybowca jako VT lub VTOW i nie może być przekraczana.",
+				"en": "Maximum tow speed is defined by the manufacturer in the glider's flight manual as VT or VTOW and must not be exceeded."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-17",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["landing T", "signals square", "SPL"],
+			"stem": {
+				"pl": "Co oznacza litera T (biała lub żółta) wyłożona na polu sygnałowym?",
+				"en": "What does the letter T (white or yellow) laid on the signals square indicate?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Lądowania i starty w kierunku ogona litery T",
+						"en": "Landings and take-offs in the direction of the tail of the T"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Lądowania i starty w kierunku poprzeczki litery T",
+						"en": "Landings and take-offs in the direction of the crossbar of the T"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Lotnisko jest tymczasowo zamknięte",
+						"en": "Aerodrome is temporarily closed"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Obowiązuje procedura precyzyjnego podejścia",
+						"en": "Precision approach procedure in force"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Lądowania i starty odbywają się w kierunku poprzeczki litery T, czyli w stronę wierzchołka tej litery.",
+				"en": "Landings and take-offs are performed in the direction of the crossbar of the T, i.e. towards the top of the letter."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-18",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["ground signals", "hazard", "SPL"],
+			"stem": {
+				"pl": "Czerwony kwadrat z żółtą przekątną wyłożony na polu sygnałowym oznacza, że:",
+				"en": "A red square with a yellow diagonal on the signals square means that:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Lądowania są dozwolone wyłącznie na drodze startowej",
+						"en": "Landings are permitted on the runway only"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Należy zachować szczególną ostrożność z uwagi na zły stan lotniska lub inne zagrożenia",
+						"en": "Special precautions are required due to poor aerodrome condition or other hazards"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Ruch szybowcowy jest zawieszony",
+						"en": "Glider traffic is suspended"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Piloci powinni kołować do płyty postoju",
+						"en": "Pilots should taxi to the apron"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Czerwony kwadrat z jedną żółtą przekątną nakazuje zachowanie szczególnej ostrożności ze względu na zły stan lotniska lub inne zagrożenia.",
+				"en": "A red square with a single yellow diagonal requires special precautions due to poor aerodrome condition or other hazards."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-19",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["windsock", "wind speed", "SPL"],
+			"stem": {
+				"pl": "Rękaw wiatrowy (wiatrowskaz) pokazuje informacje o wietrze. Kiedy rękaw wiatrowy jest w pełni wyprostowany poziomo, oznacza to, że prędkość wiatru wynosi co najmniej:",
+				"en": "A wind sleeve (windsock) displays wind information. When the windsock is fully extended horizontally, it indicates that wind speed is at least:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "7 kt",
+						"en": "7 kt"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "15 kt",
+						"en": "15 kt"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "25 kt",
+						"en": "25 kt"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "10 kt",
+						"en": "10 kt"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Rękaw wiatrowy w standardowym rozmiarze jest w pełni wyprostowany przy prędkości wiatru wynoszącej co najmniej 15 kt.",
+				"en": "A standard-size windsock is fully extended at wind speeds of at least 15 kt."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-20",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["windsock", "wind estimation", "SPL"],
+			"stem": {
+				"pl": "Pilot szybowca widzi z powietrza rękaw wiatrowy ustawiony pod kątem ok. 45 stopni do poziomu. Jak należy interpretować tę informację?",
+				"en": "A glider pilot sees a windsock extended at approximately 45 degrees from horizontal. How should this be interpreted?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Wiatr słaby, poniżej 5 kt",
+						"en": "Light wind, below 5 kt"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Wiatr umiarkowany, ok. 7-8 kt",
+						"en": "Moderate wind, approx. 7-8 kt"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Wiatr silny, powyżej 15 kt",
+						"en": "Strong wind, above 15 kt"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Wiatr porywisty, niebezpieczny dla szybowców",
+						"en": "Gusty wind, dangerous for gliders"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Rękaw wiatrowy pod kątem około 45 stopni do poziomu wskazuje umiarkowaną prędkość wiatru w zakresie około 7-8 kt.",
+				"en": "A windsock at approximately 45 degrees from horizontal indicates moderate wind speed of approximately 7-8 kt."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-21",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["aerotow signals", "emergency", "SPL"],
+			"stem": {
+				"pl": "Pilot holownika wykonuje gwałtowne kiwanie skrzydłami podczas holowania szybowca. Co ten sygnał oznacza?",
+				"en": "The tug pilot rocks the wings vigorously during glider tow. What does this signal mean?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Holownik ma problem i prosi o natychmiastowy odczep",
+						"en": "The tug has a problem and requests immediate release"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Holownik osiągnął żądaną wysokość odczepu",
+						"en": "The tug has reached the requested release altitude"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Holownik prosi o zwiększenie prędkości",
+						"en": "The tug requests increased speed"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Holownik zmienia kurs",
+						"en": "The tug is changing heading"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Gwałtowne kiwanie skrzydłami przez holownika jest sygnałem informującym pilota szybowca o konieczności natychmiastowego odczepu.",
+				"en": "Vigorous wing rocking by the tug pilot is a signal telling the glider pilot to release immediately."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-22",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["launch signals", "abort", "SPL"],
+			"stem": {
+				"pl": "Co oznacza sygnał pomocnika naziemnego polegający na skrzyżowaniu obu rąk nad głową?",
+				"en": "What does the ground helper signal of crossing both arms above the head mean?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Start",
+						"en": "Launch"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Zatrzymaj się, nie startuj",
+						"en": "Stop, do not launch"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zwolnij hamulce",
+						"en": "Release brakes"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Sprawdź wyposażenie",
+						"en": "Check equipment"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Skrzyżowanie rąk nad głową jest sygnałem naziemnym oznaczającym zatrzymanie lub przerwanie procedury startowej.",
+				"en": "Crossing arms above the head is a ground signal meaning stop or abort the launch procedure."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-23",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["landing direction", "signals square", "SPL"],
+			"stem": {
+				"pl": "Skąd pilot szybowca w powietrzu może zidentyfikować preferowany kierunek lądowania na lotnisku?",
+				"en": "How can an airborne glider pilot identify the preferred landing direction at an aerodrome?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Wyłącznie z radiotelefonu",
+						"en": "From radio only"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Z położenia litery T lub rękawa wiatrowego na polu sygnałowym",
+						"en": "From the position of the landing T or the windsock at the signals square"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Z koloru pola sygnałowego",
+						"en": "From the colour of the signals square"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Z pozycji innych szybowców na ziemi",
+						"en": "From the position of other gliders on the ground"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Litera T lub rękaw wiatrowy przy polu sygnałowym wskazuje pilotowi aktualny preferowany kierunek lądowania.",
+				"en": "The landing T or windsock at the signals square indicates to the pilot the current preferred landing direction."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-24",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["uncontrolled aerodrome", "signals", "SPL"],
+			"stem": {
+				"pl": "Pilot szybowca ląduje na lotnisku bez kontroli (np. AFIS). Jakie wzrokowe wskazówki powinien obserwować, aby ustalić kierunek lądowania?",
+				"en": "A glider pilot lands at an uncontrolled aerodrome (e.g. AFIS). What visual cues should be observed to determine the landing direction?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Wyłącznie światła podejścia do lądowania",
+						"en": "Approach lighting only"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Sygnały naziemne na polu sygnałowym oraz rękaw wiatrowy",
+						"en": "Ground signals on the signals square and the windsock"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Kolor nawierzchni drogi startowej",
+						"en": "Colour of the runway surface"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Numery namalowane na progu pasa",
+						"en": "Numbers painted on the runway threshold"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Na lotnisku bez kontroli pilot powinien sprawdzić sygnały naziemne na polu sygnałowym oraz rękaw wiatrowy w celu ustalenia kierunku lądowania.",
+				"en": "At an uncontrolled aerodrome the pilot should check the signals square and windsock to determine the landing direction."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-25",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["aerotow", "release", "in-flight signals", "SPL"],
+			"stem": {
+				"pl": "Jak pilot szybowca sygnalizuje pilotowi holownika w powietrzu, że dokonał odczepu?",
+				"en": "How does a glider pilot complete the release from the tug in flight?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Wyciąga rękę przez okno kabiny",
+						"en": "Extends a hand out of the cockpit window"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Zwalnia uchwyt odczepu i odlatuje na prawą stronę",
+						"en": "Releases the release knob and turns away to the right"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Przechodzi w lot nurkowy",
+						"en": "Enters a dive"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Kiwa skrzydłami gwałtownie trzy razy",
+						"en": "Rocks the wings vigorously three times"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Pilot szybowca zwalnia odczep i odlatuje na prawą stronę, co jest standardową procedurą odczepu w locie holowanym (holownik odchodzi w lewo).",
+				"en": "The glider pilot releases the tow and turns away to the right, the standard aero-tow release procedure (the tug breaks away to the left)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-26",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["winch launch", "launch signals", "not ready", "SPL"],
+			"stem": {
+				"pl": "Podczas operacji wyciągarkowych pomocnik trzymający skrzydło opuszcza je do ziemi. Co ten sygnał oznacza?",
+				"en": "During winch launch operations, the wing holder lowers the wing to the ground. What does this signal mean?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Start gotowy, wyciągarka może działać z pełną mocą",
+						"en": "Ready to launch, winch may apply full power"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Przerwa techniczna, wyciągarka powinna wyłączyć silnik",
+						"en": "Technical pause, winch should shut down the engine"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Szybowiec nie jest jeszcze gotowy do startu",
+						"en": "Glider is not yet ready for launch"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Kurs szybowca jest ustawiony poza osią pasa",
+						"en": "Glider heading is set off the runway axis"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Opuszczenie skrzydła do ziemi przez pomocnika sygnalizuje, że szybowiec nie jest gotowy i obsługa wyciągarki powinna czekać.",
+				"en": "Lowering the wing to the ground by the helper signals that the glider is not yet ready and the winch crew should wait."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-27",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["krąg nadlotniskowy", "kierunek kręgu", "SERA"],
+			"stem": {
+				"pl": "W którym kierunku standardowo wykonuje się krąg nadlotniskowy?",
+				"en": "In which direction is the standard aerodrome traffic circuit normally flown?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "W prawo (zgodnie z ruchem wskazówek zegara)",
+						"en": "To the right (clockwise)"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "W lewo (przeciwnie do ruchu wskazówek zegara)",
+						"en": "To the left (counter-clockwise)"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zależnie od kierunku wiatru",
+						"en": "Depending on wind direction"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zależnie od pory dnia",
+						"en": "Depending on the time of day"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Standardowy krąg nadlotniskowy jest lewostronny (ICAO Doc 4444, SERA), chyba że odpowiednie władze wyznaczyły krąg prawostronny.",
+				"en": "The standard aerodrome traffic circuit is left-hand (ICAO Doc 4444, SERA) unless the competent authority has designated a right-hand circuit."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-28",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["pierwszeństwo", "awaria", "distress"],
+			"stem": {
+				"pl": "Które z poniższych statków powietrznych ma bezwzględne pierwszeństwo lądowania?",
+				"en": "Which of the following aircraft has the absolute right of way to land?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Szybowiec lecący jako pierwszy w kręgu",
+						"en": "Glider flying first in the circuit"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Statek powietrzny sygnalizujący awarię (distress)",
+						"en": "Aircraft signalling an emergency (distress)"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Samolot silnikowy podchodzący do lądowania z prostej",
+						"en": "Powered aircraft on final approach"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Najcięższy statek powietrzny w kręgu",
+						"en": "Heaviest aircraft in the circuit"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Statek powietrzny będący w sytuacji zagrożenia (distress) ma bezwzględne pierwszeństwo przed wszystkimi innymi statkami powietrznymi.",
+				"en": "An aircraft in a distress situation has absolute priority over all other aircraft."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-29",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["pierwszeństwo", "szybowiec", "SERA.3210"],
+			"stem": {
+				"pl": "Szybowiec i samolot jednocześnie podchodzą do lądowania na tym samym lotnisku. Komu przysługuje pierwszeństwo zgodnie z przepisami?",
+				"en": "A glider and a powered aircraft are simultaneously approaching to land at the same aerodrome. Who has right of way according to regulations?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Samolotowi, ponieważ jest cięższy",
+						"en": "The powered aircraft, because it is heavier"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Szybowcowi, ponieważ jest statkiem powietrznym bez napędu silnikowego",
+						"en": "The glider, because it is a non-powered aircraft"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Temu, kto pierwszy wszedł w krąg",
+						"en": "Whoever entered the circuit first"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Temu, kto leci po lewej stronie względem drugiego",
+						"en": "The one flying on the left side relative to the other"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Zgodnie z SERA.3210, szybowiec (statek powietrzny bez napędu silnikowego) ma pierwszeństwo przed statkiem powietrznym z napędem silnikowym.",
+				"en": "According to SERA.3210, a glider (non-power-driven aircraft) has right of way over a power-driven aircraft."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-30",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["pierwszeństwo", "zbieżność", "reguła prawej strony"],
+			"stem": {
+				"pl": "Dwa szybowce lecą po kręgu i zbliżają się na tym samym poziomie z różnych kierunków (zbieżnie). Który ma pierwszeństwo?",
+				"en": "Two gliders in the circuit are converging at the same level from different directions. Which one has right of way?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Ten, który jest wyżej",
+						"en": "The one that is higher"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Ten, który ma drugiego po swojej prawej stronie",
+						"en": "The one that has the other on its right side"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Ten, który jest bliżej pasa startowego",
+						"en": "The one closer to the runway"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Ten, który ma drugiego po swojej lewej stronie",
+						"en": "The one that has the other on its left side"
+					}
+				}
+			],
+			"answer": "d",
+			"explanation": {
+				"pl": "Gdy dwa statki powietrzne zbliżają się zbieżnie na tym samym poziomie, ten, który ma drugiego po prawej stronie, ustępuje pierwszeństwa; w efekcie ten, który ma drugiego po lewej stronie, ma pierwszeństwo (SERA.3210).",
+				"en": "When two aircraft are converging at the same level, the aircraft which has the other on its right shall give way; consequently the aircraft which has the other on its left has right of way (SERA.3210)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-31",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["krąg nadlotniskowy", "struktura kręgu"],
+			"stem": {
+				"pl": "Który z poniższych elementów NIE jest standardową częścią kręgu nadlotniskowego?",
+				"en": "Which of the following is NOT a standard leg of the aerodrome traffic circuit?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Odcinek wiatru tylnego (downwind leg)",
+						"en": "Downwind leg"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Odcinek poprzeczny (crosswind leg)",
+						"en": "Crosswind leg"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Odcinek spiralny zniżający (descending spiral leg)",
+						"en": "Descending spiral leg"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Odcinek finałowy (final leg)",
+						"en": "Final leg"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Standardowy krąg nadlotniskowy składa się z odcinka startowego, poprzecznego, wiatru tylnego, bazowego i finałowego; spirala zniżająca nie jest standardową częścią kręgu.",
+				"en": "The standard circuit consists of the upwind, crosswind, downwind, base, and final legs; a descending spiral is not a standard circuit leg."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-32",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["pierwszeństwo", "pas startowy", "lądowanie a start"],
+			"stem": {
+				"pl": "Szybowiec jest na podejściu do lądowania (final). Pilot innego szybowca chce wjechać na pas startowy w celu startu. Jak powinien postąpić?",
+				"en": "A glider is on final approach. The pilot of another glider wants to enter the runway for take-off. What should they do?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Może wjechać na pas, bo szybowce startują zawsze przed lądującymi",
+						"en": "May enter the runway, as gliders always take off before landers"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Musi zaczekać, aż szybowiec lądujący opuści pas startowy",
+						"en": "Must wait until the landing glider has cleared the runway"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Może wjechać na pas, jeśli odległość lądującego jest większa niż 500 m",
+						"en": "May enter the runway if the landing aircraft is more than 500 m away"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Informuje AFIS i wchodzi na pas bez oczekiwania",
+						"en": "Informs AFIS and enters the runway without waiting"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Statek powietrzny lądujący (w tym na finalnym) ma pierwszeństwo przed startującym; startujący musi poczekać na opuszczenie pasa przez lądujący.",
+				"en": "A landing aircraft (including on final) has right of way over one taking off; the departing aircraft must wait until the runway is clear."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-33",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["pole sygnałowe", "sygnały wzrokowe", "strzałka"],
+			"stem": {
+				"pl": "Co oznacza zielona strzałka na polu sygnałowym lotniska?",
+				"en": "What does a green arrow on the aerodrome signal square indicate?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Lądowania są dozwolone na trawniku, a nie na pasie utwardzonym",
+						"en": "Landings are permitted on the grass, not on the paved runway"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Używaj pasa wskazanego przez strzałkę",
+						"en": "Use the runway indicated by the arrow"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Odloty i lądowania wykonuj w kierunku wskazanym przez strzałkę",
+						"en": "Take-offs and landings are to be made in the direction indicated by the arrow"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Pas startowy jest zamknięty",
+						"en": "The runway is closed"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Zgodnie z Załącznikiem 2 ICAO, zielona strzałka na polu sygnałowym oznacza, że starty i lądowania należy wykonywać w kierunku wskazanym przez strzałkę.",
+				"en": "According to ICAO Annex 2, a green arrow on the signal square indicates that take-offs and landings are to be made in the direction indicated by the arrow."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-34",
+			"type": "mcq",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["krąg nadlotniskowy", "wlot w krąg", "downwind"],
+			"stem": {
+				"pl": "Pilot szybowca chce wlecieć w krąg nadlotniskowy. Gdzie powinien to zrobić?",
+				"en": "A glider pilot wants to join the aerodrome traffic circuit. Where should they join?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Bezpośrednio na final, aby skrócić czas podejścia",
+						"en": "Directly on final to shorten the approach time"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Na odcinku wiatru tylnego (downwind) po stronie kręgu, pod kątem 45° do osi pasa",
+						"en": "On the downwind leg on the circuit side, at 45° to the runway axis"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Na odcinku startowym (upwind), tuż po progu pasa",
+						"en": "On the upwind leg, just past the runway threshold"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Na odcinku bazowym (base leg), prostopadle do osi pasa",
+						"en": "On the base leg, perpendicular to the runway axis"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Zalecanym sposobem wlotu w krąg jest dołączenie do odcinka wiatru tylnego pod kątem 45°, co umożliwia obserwację ruchu w kręgu przed dołączeniem.",
+				"en": "The recommended circuit join is at a 45° angle to the downwind leg, allowing the pilot to observe circuit traffic before joining."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-35",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["sygnały wzrokowe", "biały krzyż", "pas zamknięty"],
+			"stem": {
+				"pl": "Co oznacza biały krzyż wyłożony na progu pasa startowego?",
+				"en": "What does a white cross displayed at the runway threshold mean?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Pas jest mokry, zachować ostrożność",
+						"en": "Runway is wet, use caution"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Pas jest zamknięty dla wszystkich operacji",
+						"en": "Runway is closed to all operations"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Pas jest zarezerwowany wyłącznie dla śmigłowców",
+						"en": "Runway is reserved for helicopters only"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Obowiązuje krąg prawostronny",
+						"en": "Right-hand circuit is in use"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Zgodnie z ICAO Załącznik 2, biały krzyż na progu pasa lub na polu sygnałowym oznacza, że teren jest nieprzydatny do lądowania i startów.",
+				"en": "According to ICAO Annex 2, a white cross at the runway threshold or on the signal square indicates that the area is unfit for aircraft movements."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-36",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["pierwszeństwo", "podejście do lądowania", "final"],
+			"stem": {
+				"pl": "Dwa szybowce są na podejściu końcowym do tego samego pasa. Jeden jest wyżej od drugiego. Który ma pierwszeństwo lądowania?",
+				"en": "Two gliders are on final approach to the same runway. One is higher than the other. Which has priority to land?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Ten, który jest wyżej",
+						"en": "The higher one"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Ten, który jest niżej",
+						"en": "The lower one"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Ten, który jest bliżej progu pasa",
+						"en": "The one closer to the runway threshold"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Ten, który pierwszy wszedł na final",
+						"en": "The one that entered the final first"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Zgodnie z przepisami, gdy dwa statki powietrzne podchodzą do lądowania, ten lecący niżej ma pierwszeństwo, jednak nie może on wykorzystać tej zasady do niebezpiecznego podcinania innego statku.",
+				"en": "When two aircraft are on approach, the lower one has right of way, but this rule must not be exploited by cutting dangerously in front of the other."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-37",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["sygnały świetlne", "wieża kontroli", "czerwone"],
+			"stem": {
+				"pl": "Co powinien zrobić pilot szybowca w locie, gdy wieża kontroli podaje sygnał świetlny stałe czerwone?",
+				"en": "What should a glider pilot in flight do when the control tower gives a steady red light signal?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Natychmiast wylądować i jak najszybciej zwolnić pas",
+						"en": "Land immediately and vacate the runway as quickly as possible"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Ustąpić pierwszeństwa innym statkom powietrznym i kontynuować krążenie",
+						"en": "Give way to other aircraft and continue circling"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Przejść na lotnisko zapasowe",
+						"en": "Divert to an alternate aerodrome"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zawrócić i opuścić strefę lotniska",
+						"en": "Turn back and leave the aerodrome zone"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Stałe czerwone dla statku powietrznego w locie oznacza: ustąpić pierwszeństwa innym statkom i kontynuować krążenie (nie lądować).",
+				"en": "A steady red light for an aircraft in flight means: give way to other aircraft and continue circling (do not land)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-38",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["sygnały świetlne", "zielone błyskające", "wieża kontroli"],
+			"stem": {
+				"pl": "Co oznacza sygnał świetlny zielone błyskające skierowany do szybowca w powietrzu?",
+				"en": "What does a flashing green light signal directed at a glider in the air mean?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zezwolenie na lądowanie",
+						"en": "Cleared to land"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Wróć na lotnisko i ląduj",
+						"en": "Return to the aerodrome and land"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Lotnisko niebezpieczne, nie ląduj",
+						"en": "Aerodrome unsafe, do not land"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zezwolenie na lądowanie tylko dla szybowców",
+						"en": "Cleared to land for gliders only"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Zielone błyskające dla statku powietrznego w locie oznacza: wróć na lotnisko i oczekuj na zezwolenie na lądowanie (return for landing).",
+				"en": "Flashing green for an aircraft in flight means: return to the aerodrome for landing (await landing clearance)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-39",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["pierwszeństwo", "szybowiec", "motoszybowiec", "SERA.3210"],
+			"stem": {
+				"pl": "Szybowiec wykonuje krąg nadlotniskowy. Motoszybowiec z pracującym silnikiem dokonuje podejścia do lądowania. Kto ma pierwszeństwo?",
+				"en": "A glider is in the circuit. A motor glider with engine running is approaching to land. Who has right of way?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Motoszybowiec, ponieważ ma napęd silnikowy",
+						"en": "The motor glider, because it has an engine"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Szybowiec, ponieważ jest statkiem powietrznym bez napędu silnikowego",
+						"en": "The glider, because it is a non-powered aircraft"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Ten, kto jest bliżej progu pasa",
+						"en": "The one closer to the runway threshold"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Obaj mają równe pierwszeństwo",
+						"en": "Both have equal right of way"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Szybowiec (bez napędu silnikowego) ma pierwszeństwo przed motoszybowcem korzystającym z napędu silnikowego, zgodnie z hierarchią SERA.3210.",
+				"en": "The glider (non-power-driven) has right of way over a motor glider using its engine (power-driven), under the SERA.3210 hierarchy."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-40",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["lądowanie przygodne", "krąg", "ocena terenu"],
+			"stem": {
+				"pl": "Co pilot szybowca powinien zrobić, gdy nie może w bezpieczny sposób dolecieć do macierzystego lotniska i musi wykonać lądowanie na terenie przygodnym?",
+				"en": "What should a glider pilot do when unable to safely reach the home aerodrome and must land out?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Wybrać najkrótszą drogę lądowania, ignorując przeszkody terenowe",
+						"en": "Choose the shortest landing path, ignoring terrain obstacles"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Ocenić teren, wyznaczyć umowny próg pasa i wykonać krąg z bezpiecznej wysokości",
+						"en": "Assess the field, set a notional threshold, and fly a circuit from a safe height"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Lądować bez kręgu, aby zaoszczędzić wysokość",
+						"en": "Land without a circuit to conserve altitude"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zawsze szukać lotniska zapasowego, lądowanie przygodne jest zabronione",
+						"en": "Always seek an alternate aerodrome; field landings are prohibited"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Przy lądowaniu przygodnym pilot powinien ocenić teren, wyznaczyć umowny próg i wykonać możliwie pełny krąg, zachowując odpowiednią wysokość dla bezpiecznego podejścia.",
+				"en": "For an out-landing, the pilot should assess the field, set a notional threshold, and fly as full a circuit as altitude permits to ensure a safe approach."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-41",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["pierwszeństwo", "lądowanie", "brak ATC"],
+			"stem": {
+				"pl": "Na lotnisku bez ATC pracuje jednocześnie kilka szybowców. Który szybowiec ma pierwszeństwo do lądowania?",
+				"en": "Several gliders are operating at an aerodrome without ATC. Which glider has priority to land?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Ten, który jest najszybszy",
+						"en": "The fastest one"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Ten, który jest najniżej na podejściu końcowym (finalnym)",
+						"en": "The one lowest on final approach"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Ten, który jako pierwszy zgłosił zamiar lądowania na radiostacji",
+						"en": "The one that first announced the intention to land on radio"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Ten, który ma największą rozpiętość skrzydeł",
+						"en": "The one with the largest wingspan"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Gdy kilka statków powietrznych podchodzi do lądowania, ten na najniższej pozycji finałowej ma pierwszeństwo, ponieważ jest najbliżej ziemi i ma najmniej możliwości uniknięcia kolizji.",
+				"en": "When several aircraft are approaching, the one on the lowest final approach has priority as it is closest to the ground with the fewest avoidance options."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-42",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["go-around", "pas zajęty", "bezpieczeństwo"],
+			"stem": {
+				"pl": "Pilot szybowca zauważa inny szybowiec lądujący wprost przed nim na pasie. Jakie jest właściwe działanie?",
+				"en": "A glider pilot sees another glider landing directly ahead on the runway. What is the correct action?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Kontynuować lądowanie, bo ma pierwszeństwo jako będący niżej",
+						"en": "Continue landing as the lower aircraft has right of way"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Odejść na drugi krąg i poczekać na zwolnienie pasa",
+						"en": "Perform a go-around and wait for the runway to clear"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Wyhamować i zatrzymać się przed progiem pasa",
+						"en": "Decelerate and stop before the runway threshold"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Lądować obok lądującego, na skraju pasa trawiastego",
+						"en": "Land alongside the other glider on the grass edge"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Gdy pas jest zajęty przez lądujący statek powietrzny, bezpiecznym i właściwym działaniem jest odejście na drugi krąg (go-around) i ponowne podejście.",
+				"en": "When the runway is occupied by a landing aircraft, the safe and correct action is to perform a go-around and attempt a second approach."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-43",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["pierwszeństwo", "hierarchia", "SERA.3210"],
+			"stem": {
+				"pl": "Jaka jest kolejność pierwszeństwa statków powietrznych zbliżających się do lotniska, od najwyższego do najniższego priorytetu?",
+				"en": "What is the order of right of way for aircraft approaching an aerodrome, from highest to lowest priority?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Balony, szybowce, samoloty, śmigłowce",
+						"en": "Balloons, gliders, aeroplanes, helicopters"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Statki w sytuacji zagrożenia (distress), szybowce i balony, statki bez napędu, statki z napędem silnikowym",
+						"en": "Distress aircraft, gliders and balloons, unpowered aircraft, powered aircraft"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Samoloty pasażerskie, szybowce, balony, śmigłowce",
+						"en": "Passenger aircraft, gliders, balloons, helicopters"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Statki w sytuacji zagrożenia (distress), samoloty, śmigłowce, szybowce",
+						"en": "Distress aircraft, aeroplanes, helicopters, gliders"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Statek w sytuacji zagrożenia ma bezwzględne pierwszeństwo. Następnie, zgodnie z SERA.3210, statki z napędem silnikowym ustępują szybowcom i balonom (statkom bez napędu); w obrębie grup uwzględnia się manewrowość.",
+				"en": "A distress aircraft has absolute priority. Then, per SERA.3210, power-driven aircraft give way to gliders and balloons (non-powered aircraft); within groups, manoeuvrability is considered."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-44",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["nieznane lotnisko", "kierunek lądowania", "rękaw wiatru", "pole sygnałowe"],
+			"stem": {
+				"pl": "Pilot szybowca zbliża się do nieznanego lotniska trawiastego bez wieży i bez radia. Jak powinien określić kierunek lądowania?",
+				"en": "A glider pilot approaches an unknown grass aerodrome with no tower and no radio. How should the landing direction be determined?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zawsze lądować na kurs 360 stopni (północny)",
+						"en": "Always land on heading 360 (north)"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Obserwować pole sygnałowe, rękaw wiatru, ruch innych statków powietrznych i kierunek wiatru",
+						"en": "Observe the signal square, windsock, other aircraft movements, and wind direction"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Lądować w kierunku, z którego się przyleciało, aby skrócić podejście",
+						"en": "Land in the direction of arrival to shorten the approach"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Wykonać dwa pełne okrążenia lotniska na małej wysokości, a następnie lądować",
+						"en": "Make two full low passes over the aerodrome, then land"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Na nieznanym lotnisku należy zebrać wszystkie dostępne informacje: pole sygnałowe (strzałka), rękaw wiatru, ruch innych statków powietrznych oraz własne obserwacje kierunku wiatru.",
+				"en": "At an unknown aerodrome, the pilot should gather all available information: signal square (arrow), windsock, traffic movements, and personal wind observations."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-45",
+			"type": "mcq",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["rope_break", "low_altitude", "emergency"],
+			"stem": {
+				"pl": "Jakie jest pierwsze działanie pilota szybowca bezpośrednio po zerwaniu liny holowniczej na małej wysokości (poniżej 150 m AGL)?",
+				"en": "What is the glider pilot's first action immediately after a tow rope break at low altitude (below 150 m AGL)?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Nacisnąć przycisk nadawania i zgłosić zdarzenie kontroli lotniska",
+						"en": "Press the transmit button and report the event to airfield control"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Utrzymać prędkość bezpieczną i wylądować w polu przed sobą lub wykonać zakręt 180° tylko jeśli wysokość pozwala",
+						"en": "Maintain safe speed and land in the field ahead, or turn 180° only if altitude permits"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Natychmiast wykonać zakręt 360° w celu oceny dostępnego terenu",
+						"en": "Immediately perform a 360° turn to assess available terrain"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Wystrzelić rakietę sygnałową i szukać najbliższego lotniska",
+						"en": "Fire a flare and search for the nearest airfield"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Po zerwaniu liny na małej wysokości najważniejsze jest zachowanie prędkości bezpiecznej i lądowanie przed sobą; zakręt 180° dopuszczalny jest jedynie przy wystarczającej wysokości (zazwyczaj powyżej 150 m).",
+				"en": "After a rope break at low altitude the priority is to maintain safe airspeed and land ahead; a 180° turn is only safe if sufficient height exists (typically above 150 m)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-46",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["rope_break", "minimum_height", "turn_back"],
+			"stem": {
+				"pl": "Minimalna wysokość AGL, przy której pilot szybowca może rozważyć zakręt z powrotem na lotnisko po zerwaniu liny (zakręt 180°), wynosi orientacyjnie:",
+				"en": "The approximate minimum AGL height at which a glider pilot may consider turning back to the airfield after a tow rope break (180° turn) is:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "50 m AGL",
+						"en": "50 m AGL"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "100 m AGL",
+						"en": "100 m AGL"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "150 m AGL",
+						"en": "150 m AGL"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "300 m AGL",
+						"en": "300 m AGL"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Ogólnie przyjęta granica to około 150 m AGL; poniżej tej wysokości zakręt 180° jest zbyt ryzykowny ze względu na możliwość przeciągnięcia w zakręcie.",
+				"en": "The widely accepted threshold is approximately 150 m AGL; below this height a 180° turn risks stall in the turn."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-47",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["off_field_landing", "field_selection", "emergency"],
+			"stem": {
+				"pl": "Wybierając teren przygodny do lądowania awaryjnego, pilot szybowca powinien w PIERWSZEJ kolejności ocenić:",
+				"en": "When selecting an off-field landing area in an emergency, the glider pilot should FIRST assess:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Bliskość drogi publicznej umożliwiającej odbiór szybowca",
+						"en": "Proximity to a public road for glider retrieval"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Długość, nachylenie, stan nawierzchni i przeszkody w podejściu do wybranego pola",
+						"en": "Length, slope, surface condition and approach obstacles of the selected field"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Kierunek wiatru odczytany z najbliższego METAR-u przed lotem",
+						"en": "Wind direction read from the nearest METAR before flight"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Obecność ludzi i zwierząt na polu",
+						"en": "Presence of people and animals in the field"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Ocena długości, nachylenia, nawierzchni i przeszkód to kryteria priorytetowe; dopiero po ich sprawdzeniu uwzględnia się czynniki drugorzędne.",
+				"en": "Assessing length, slope, surface and obstacles are the primary criteria; secondary factors are considered afterwards."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-48",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["wind_indicators", "off_field_landing"],
+			"stem": {
+				"pl": "Wskaźnikiem bieżącego kierunku wiatru w terenie przygodnym może być:",
+				"en": "An indicator of current wind direction at an off-field landing site can be:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Kolor i wilgotność gleby",
+						"en": "Colour and moisture of the soil"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Dym z kominów, fale na wodzie, ruch traw i zbóż",
+						"en": "Chimney smoke, water ripples, movement of grass and crops"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Kierunek biegu rzeki",
+						"en": "Direction of river flow"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Cień rzucany przez szybowiec",
+						"en": "Shadow cast by the glider"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Dym, fale na wodzie i ruch roślinności są wiarygodnymi wskaźnikami lokalnego kierunku i siły wiatru przy braku rękawa wiatrowego.",
+				"en": "Smoke, water ripples and vegetation movement are reliable local wind indicators when no windsock is available."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-49",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["off_field_landing", "go_around_decision", "emergency"],
+			"stem": {
+				"pl": "Pilot szybowca zbliża się do lądowania w terenie przygodnym i widzi, że wybrane pole jest za krótkie. Prawidłowe działanie to:",
+				"en": "A glider pilot approaching an off-field landing realizes the selected field is too short. The correct action is:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Wybrać inne pole i wykonać nowe podejście zachowując wystarczającą wysokość do manewru",
+						"en": "Select another field and fly a new approach while retaining sufficient height to manoeuvre"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Otworzyć hamulce aerodynamiczne do maksimum i trafić w pole za wszelką cenę",
+						"en": "Open full airbrakes and reach the field at any cost"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Przyspieszyć do VNE i skrócić podejście",
+						"en": "Accelerate to VNE to shorten the approach"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zamknąć hamulce aerodynamiczne i wylądować za polem na drodze",
+						"en": "Close airbrakes and land on the road beyond the field"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Jeśli pozostaje wystarczająca wysokość, należy zmienić wybór pola; kontynuowanie podejścia do zbyt krótkiego pola grozi wypadkiem.",
+				"en": "If sufficient height remains the pilot should change field; continuing the approach to a too-short field risks an accident."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-50",
+			"type": "mcq",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["approach_speed", "off_field_landing", "safety_margin"],
+			"stem": {
+				"pl": "Podczas lotu termicznego szybowiec traci wysokość i pilot musi lądować w terenie. Jaką prędkość należy utrzymywać w podejściu końcowym na nieznane pole?",
+				"en": "During thermal flight a glider loses height and the pilot must land in a field. What speed should be maintained on final approach to an unknown field?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Minimalną prędkość przeciągnięcia (VS)",
+						"en": "Minimum stall speed (VS)"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Prędkość najlepszej doskonałości (VL/D max)",
+						"en": "Best glide speed (VL/D max)"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Prędkość bezpiecznego podejścia (zazwyczaj 1,3 VS + naddatek na podmuch wiatru)",
+						"en": "Safe approach speed (typically 1.3 VS plus a gust allowance)"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "VNE podzielone przez 2",
+						"en": "VNE divided by 2"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Prędkość podejścia 1,3 VS z naddatkiem na podmuch zapewnia margines bezpieczeństwa przed przeciągnięciem na nieznanym terenie.",
+				"en": "An approach speed of 1.3 VS plus a gust allowance provides a safety margin against stall on an unfamiliar field."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-51",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["radio_call", "off_field_landing", "emergency_procedures"],
+			"stem": {
+				"pl": "Pilot szybowca nie może dolecieć do lotniska i musi lądować w terenie przygodnym. Kiedy powinien zawiadomić służby o przymusowym lądowaniu (jeśli ma radio)?",
+				"en": "A glider pilot cannot reach the airfield and must make an off-field landing. When should the pilot notify services by radio (if equipped)?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Dopiero po lądowaniu, gdy zna dokładną pozycję",
+						"en": "Only after landing, when the exact position is known"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Jak najwcześniej, gdy sytuacja jest jeszcze pod kontrolą, podając pozycję i zamiary",
+						"en": "As early as possible while the situation is still under control, giving position and intentions"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Tylko jeśli lądowanie będzie na polu uprawnym, aby ostrzec właściciela",
+						"en": "Only if landing on a cultivated field to warn the owner"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Nie ma obowiązku informowania służb w przypadku lądowania szybowcowego",
+						"en": "There is no requirement to notify services for a glider landing"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Wczesne zgłoszenie radiowe pozwala służbom przygotować ewentualną akcję poszukiwawczą i zapewnia pomoc w razie wypadku.",
+				"en": "Early radio notification allows services to prepare a possible search-and-rescue response and ensures assistance in case of an accident."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-52",
+			"type": "mcq",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["sloped_terrain", "off_field_landing", "crosswind"],
+			"stem": {
+				"pl": "Przy lądowaniu w terenie przygodnym na zboczu pilot powinien lądować:",
+				"en": "When landing on a sloped off-field terrain, the pilot should land:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Wzdłuż zbocza, lecz pod wiatr niezależnie od nachylenia",
+						"en": "Along the slope but into the wind regardless of gradient"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Pod wiatr, a jeśli jest to niemożliwe - w górę zbocza, nawet jeśli oznacza to lądowanie z wiatrem",
+						"en": "Into wind, or if impossible - uphill, even if this means landing downwind"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zawsze z wiatrem, aby skrócić dobieg",
+						"en": "Always downwind to shorten the ground roll"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Prostopadle do zbocza, aby uniknąć przechylenia szybowca",
+						"en": "Perpendicular to the slope to avoid banking the glider"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Lądowanie w górę zbocza skraca dobieg i zmniejsza ryzyko kapotażu; preferowane jest lądowanie pod wiatr, ale przy stromym zboczu nachylenie terenu jest czynnikiem nadrzędnym.",
+				"en": "Landing uphill shortens the ground roll and reduces the risk of nose-over; landing into wind is preferred but on a steep slope the terrain gradient takes precedence."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-53",
+			"type": "mcq",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["strong_sink", "best_glide", "emergency"],
+			"stem": {
+				"pl": "Szybowiec wpada w silne opadanie nad terenem uniemożliwiającym lądowanie (las, skały). Pilot powinien:",
+				"en": "A glider encounters strong sink over terrain unsuitable for landing (forest, rocks). The pilot should:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Natychmiast zmniejszyć prędkość do VS w celu minimalizacji opadania",
+						"en": "Immediately reduce speed to VS to minimise sink rate"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Lecieć z prędkością najlepszej doskonałości (VL/D max) lub dostosowaną do masy i warunków, kierując się ku bezpiecznemu obszarowi lądowania",
+						"en": "Fly at best glide speed (VL/D max) adjusted for weight and conditions, heading toward a safe landing area"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Wykonać pełny zakręt 360° szukając termiki",
+						"en": "Perform a full 360° turn searching for thermals"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Otworzyć hamulce aerodynamiczne aby szybciej zejść poniżej strefy opadania",
+						"en": "Open airbrakes to descend below the sink zone faster"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "W silnym opadaniu nad złym terenem należy lecieć z prędkością najlepszej doskonałości, kierując szybowiec ku bezpiecznemu polu lądowania.",
+				"en": "In strong sink over unsuitable terrain the pilot should fly at best glide speed, directing the glider toward a safe landing area."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-54",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["unusual_situation", "definition", "emergency"],
+			"stem": {
+				"pl": "Co oznacza pojęcie 'sytuacja szczególna' w lotnictwie szybowcowym?",
+				"en": "What does the term 'unusual situation' mean in glider aviation?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Każdy lot poza granicami CTR",
+						"en": "Any flight outside CTR boundaries"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Sytuacja wymagająca odejścia od standardowych procedur, w której szybowiec lub pilot jest w niebezpieczeństwie",
+						"en": "A situation requiring departure from standard procedures in which the glider or pilot is in danger"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Lot w warunkach IMC powyżej FL100",
+						"en": "Flight in IMC conditions above FL100"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Start bez aktualnego briefingu meteorologicznego",
+						"en": "Take-off without a current meteorological briefing"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Sytuacja szczególna to każde zdarzenie zmuszające do odejścia od procedur standardowych i stwarzające zagrożenie dla bezpieczeństwa.",
+				"en": "An unusual situation is any event forcing departure from standard procedures and posing a safety threat."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-55",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["thunderstorm", "weather_emergency", "decision_making"],
+			"stem": {
+				"pl": "Szybowiec zostaje zaskoczony przez burzę podczas lotu. Pierwszą czynnością pilota powinno być:",
+				"en": "A glider is caught by a thunderstorm during flight. The pilot's first action should be:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Wejście w chmurę burzową i skorzystanie z silnego wznoszenia",
+						"en": "Enter the storm cloud and use the strong updraught"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Niezwłoczne opuszczenie strefy zagrożenia przez lądowanie w pobliskim terenie przygodnym lub na lotnisku",
+						"en": "Immediately vacate the danger zone by landing at a nearby off-field site or airfield"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Utrzymanie aktualnego kursu i czekanie na przejście burzy",
+						"en": "Maintain current heading and wait for the storm to pass"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Wzrost prędkości do VNE i przelot przez burzę na drugą stronę frontu",
+						"en": "Increase speed to VNE and fly through the storm to the other side of the front"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Burza stanowi śmiertelne zagrożenie dla szybowca; jedyną bezpieczną reakcją jest natychmiastowe lądowanie poza strefą zagrożenia.",
+				"en": "A thunderstorm is a fatal hazard for a glider; the only safe response is to land immediately outside the danger zone."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-56",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["control_failure", "elevator", "emergency_procedures"],
+			"stem": {
+				"pl": "Szybowiec traci ster wysokości w locie. Pilot powinien przede wszystkim:",
+				"en": "A glider loses elevator control in flight. The pilot should primarily:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Spróbować regulować nachylenie toru lotu za pomocą trymera i hamulców aerodynamicznych",
+						"en": "Try to control the flight path angle using the trim and airbrakes"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Wypuścić podwozie i otworzyć pełne hamulce aerodynamiczne",
+						"en": "Deploy the undercarriage and open full airbrakes"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Skręcić gwałtownie, aby sterować pochyleniem przez przechylenie",
+						"en": "Turn sharply to control pitch through bank"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Natychmiast opuścić szybowiec na spadochronie",
+						"en": "Immediately abandon the glider by parachute"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Trymer i hamulce aerodynamiczne pozwalają zachować pewną kontrolę nad torem lotu przy utracie steru wysokości, co daje szansę na bezpieczne lądowanie.",
+				"en": "Trim and airbrakes allow some control over the flight path when the elevator is lost, giving a chance for a safe landing."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-57",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["after_off_field_landing", "post_landing_procedures"],
+			"stem": {
+				"pl": "Po lądowaniu w terenie przygodnym pilot szybowca powinien przede wszystkim:",
+				"en": "After landing in an off-field area the glider pilot should first:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Natychmiast rozmontować szybowiec i ukryć go przed zniszczeniem",
+						"en": "Immediately disassemble the glider and hide it from damage"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Upewnić się o własnym bezpieczeństwie, oznaczyć szybowiec i powiadomić macierzyste lotnisko oraz służby",
+						"en": "Ensure personal safety, mark the glider and notify the home airfield and services"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Wznowić lot jeśli pole jest wystarczająco długie",
+						"en": "Resume flight if the field is long enough"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zaczekać na właściciela pola i zapytać o pozwolenie na parking",
+						"en": "Wait for the field owner and ask for parking permission"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Priorytetem po lądowaniu w terenie jest bezpieczeństwo pilota, zabezpieczenie szybowca i zawiadomienie lotniska w celu zorganizowania odbioru.",
+				"en": "After an off-field landing the priority is pilot safety, securing the glider, and notifying the airfield to organise retrieval."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-58",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["prohibited_area", "airspace_violation", "ATC"],
+			"stem": {
+				"pl": "Pilot szybowca wchodzi nieświadomie w strefę zakazaną (P). Jak powinien postąpić?",
+				"en": "A glider pilot inadvertently enters a prohibited area (P). What should the pilot do?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Kontynuować lot i poinformować o zdarzeniu po lądowaniu",
+						"en": "Continue the flight and report the event after landing"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Niezwłocznie opuścić strefę najkrótszą drogą i poinformować właściwy organ ATC na odpowiedniej częstotliwości",
+						"en": "Immediately leave the area by the shortest route and inform the appropriate ATC unit on the correct frequency"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Wznieść się powyżej górnej granicy strefy i kontynuować lot",
+						"en": "Climb above the upper limit of the area and continue the flight"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zawrócić do punktu wejścia i powtórzyć lot",
+						"en": "Return to the entry point and repeat the flight"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Natychmiastowe opuszczenie strefy zakazanej i powiadomienie ATC minimalizuje ryzyko naruszenia przepisów i konsekwencje prawne.",
+				"en": "Immediately leaving the prohibited area and notifying ATC minimises regulatory violation risk and legal consequences."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-59",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["towing_position", "high_tow_danger", "towing"],
+			"stem": {
+				"pl": "Podczas holowania szybowiec zajmuje pozycję zbyt wysoko za holownikiem. Grozi to przede wszystkim:",
+				"en": "During tow the glider takes a position too high behind the tow aircraft. This primarily risks:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zwiększeniem prędkości holowania",
+						"en": "Increasing the tow speed"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Uniesieniem ogona holownika i utratą przez niego kontroli nad sterem wysokości",
+						"en": "Lifting the tow aircraft's tail and causing the tow pilot to lose elevator control"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zmniejszeniem kąta wznoszenia zestawu",
+						"en": "Reducing the climb angle of the combination"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zerwaniem liny wskutek zbyt dużego naprężenia poprzecznego",
+						"en": "Rope break due to excessive lateral tension"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Zbyt wysoka pozycja szybowca za holownikiem unosi ogon samolotu holującego i może pozbawić pilota holownika kontroli nad sterem wysokości.",
+				"en": "A too-high glider position lifts the tow aircraft's tail and can deprive the tow pilot of elevator control."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-60",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["mountain_flying", "IMC", "disorientation", "VFR"],
+			"stem": {
+				"pl": "Szybowiec wykonuje lot w górach i pilot traci orientację wskutek nagłego zachmurzenia. Prawidłowe działanie to:",
+				"en": "A glider is flying in mountainous terrain and the pilot becomes disoriented due to sudden cloud cover. The correct action is:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Wejść w chmurę i lecieć dalej według przyrządów do granicy chmur",
+						"en": "Enter the cloud and continue by instruments until clear of cloud"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Natychmiast wykonać zakręt o 180° poza chmurą i wylecieć na bezpieczny teren z widocznością VMC",
+						"en": "Immediately turn 180° while still clear of cloud and fly to safe terrain in VMC conditions"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Obniżyć się jak najszybciej do doliny",
+						"en": "Descend as fast as possible to the valley"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zadzwonić do PANSA i czekać na wektory naprowadzania",
+						"en": "Call PANSA and wait for radar vectors"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Szybowiec jest statkiem powietrznym VFR; należy natychmiast zawrócić, zanim wleci się w chmurę, i pozostać na bezpiecznym terenie z widocznością VMC.",
+				"en": "A glider is a VFR aircraft; the pilot must immediately turn back before entering cloud and remain over safe terrain in VMC."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-61",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["structural_damage", "airworthiness", "emergency"],
+			"stem": {
+				"pl": "Pilot szybowca zauważa pęknięcie w powłoce skrzydła podczas lotu. Powinien:",
+				"en": "A glider pilot notices a crack in the wing surface during flight. The pilot should:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Kontynuować lot, monitorując pęknięcie i lądować po zakończeniu zadania",
+						"en": "Continue the flight monitoring the crack and land after completing the task"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Niezwłocznie przerwać lot, wylądować i poddać szybowiec inspekcji technicznej",
+						"en": "Immediately cut the flight short, land and submit the glider for technical inspection"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zmniejszyć prędkość do VS i kontynuować lot termiczny do lotniska",
+						"en": "Reduce speed to VS and continue thermal flight back to the airfield"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zwiększyć prędkość, aby jak najszybciej wrócić na lotnisko bez zbędnych zakrętów",
+						"en": "Increase speed to return to the airfield as quickly as possible without unnecessary turns"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Każde uszkodzenie strukturalne wymaga natychmiastowego lądowania i inspekcji technicznej przed kolejnym lotem.",
+				"en": "Any structural damage requires immediate landing and a technical inspection before the next flight."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-62",
+			"type": "mcq",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["rope_break", "above_150m", "decision_sequence"],
+			"stem": {
+				"pl": "Jaka jest właściwa kolejność działań pilota przy zerwaniu liny na wysokości powyżej 150 m AGL w fazie wznoszenia?",
+				"en": "What is the correct sequence of actions for a pilot after a rope break above 150 m AGL during the climb phase?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "1. Utrzymaj prędkość, 2. Oceń możliwości, 3. Zdecyduj: powrót na lotnisko lub lądowanie w terenie, 4. Wykonaj standardowe podejście",
+						"en": "1. Maintain speed, 2. Assess options, 3. Decide: return to airfield or off-field landing, 4. Fly a standard approach"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "1. Nadaj MAYDAY, 2. Opuść szybowiec na spadochronie, 3. Powiadom inspekcję lotniczą",
+						"en": "1. Transmit MAYDAY, 2. Abandon by parachute, 3. Notify aviation authority"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "1. Ląduj natychmiast przed sobą bez oceny terenu, 2. Wyślij SMS",
+						"en": "1. Land immediately ahead without terrain assessment, 2. Send an SMS"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "1. Otwórz hamulce aerodynamiczne do maksimum, 2. Zawróć na lotnisko, 3. Ląduj bez podejścia standardowego",
+						"en": "1. Open full airbrakes, 2. Return to airfield, 3. Land without a standard approach"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Powyżej 150 m AGL pilot ma czas na ocenę sytuacji i wybór pomiędzy powrotem na lotnisko a lądowaniem w terenie przy zachowaniu standardowej procedury podejścia.",
+				"en": "Above 150 m AGL the pilot has time to assess options and choose between returning to the airfield or an off-field landing using a standard approach."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-63",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["wake_turbulence", "vortices", "aerodynamics"],
+			"stem": {
+				"pl": "Co jest głównym źródłem turbulencji w śladzie aerodynamicznym samolotu?",
+				"en": "What is the primary source of wake turbulence behind an aircraft?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Silnik odrzutowy wytwarzający strumień spalin",
+						"en": "Jet engine producing exhaust gases"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Wiry brzegowe skrzydeł powstające na skutek różnicy ciśnień",
+						"en": "Wingtip vortices generated by pressure differential"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Tarcie powietrza o poszycie kadłuba",
+						"en": "Skin friction between air and fuselage"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Drgania usterzenia ogonowego podczas lotu",
+						"en": "Tail surface vibrations during flight"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Wiry brzegowe powstają na skutek przepływu powietrza z obszaru wysokiego ciśnienia pod skrzydłem do obszaru niskiego ciśnienia nad skrzydłem, tworząc silne wiry rotujące za końcówkami skrzydeł.",
+				"en": "Wingtip vortices form as high-pressure air beneath the wing flows around the tip toward the low-pressure region above, creating powerful rotating vortices trailing behind the wingtips."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-64",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["wake_turbulence", "flight_phase", "intensity"],
+			"stem": {
+				"pl": "W którym momencie lotu samolotu intensywność generowanych wirów brzegowych jest największa?",
+				"en": "During which phase of flight are the wingtip vortices generated by an aircraft most intense?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Podczas lotu poziomego z dużą prędkością na dużej wysokości",
+						"en": "During level high-speed flight at high altitude"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Podczas kołowania po drodze startowej",
+						"en": "During taxiing on the runway"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Podczas startu i lądowania przy dużym kącie natarcia i małej prędkości",
+						"en": "During take-off and landing at high angle of attack and low speed"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Podczas nurkowania z pełnym wyważeniem",
+						"en": "During a dive with full trim"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Siła wirów jest proporcjonalna do masy samolotu i kąta natarcia, a odwrotnie proporcjonalna do prędkości lotu, dlatego są najsilniejsze przy powolnym locie z dużym obciążeniem skrzydeł, czyli podczas startu i lądowania.",
+				"en": "Vortex strength is proportional to aircraft weight and angle of attack, and inversely proportional to airspeed, making vortices most intense during slow, high-lift flight phases such as take-off and landing."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-65",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["vortex_behavior", "descent_rate", "calm_conditions"],
+			"stem": {
+				"pl": "Jak zachowują się wiry brzegowe w spokojnych warunkach atmosferycznych po wygenerowaniu przez samolot?",
+				"en": "How do wingtip vortices behave in calm atmospheric conditions after being generated by an aircraft?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Unoszą się ku górze i szybko zanikają w ciągu kilku sekund",
+						"en": "Rise upward and dissipate quickly within seconds"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Opadają w dół z prędkością około 150-200 stóp na minutę i przemieszczają się na boki",
+						"en": "Descend at approximately 150-200 ft/min and drift apart laterally"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Pozostają w miejscu wytworzenia przez co najmniej 10 minut",
+						"en": "Remain stationary at the point of generation for at least 10 minutes"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Przemieszczają się z prędkością wiatru wyłącznie poziomo",
+						"en": "Move purely horizontally at wind speed"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Wiry brzegowe opadają typowo z prędkością 150-200 stóp na minutę i rozchodzą się bocznie na odległość do około 900 m od toru lotu samolotu.",
+				"en": "Wingtip vortices typically sink at 150-200 ft/min and drift laterally up to approximately 900 m each side of the generating aircraft's flight path."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-66",
+			"type": "mcq",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["crosswind", "vortex_behavior", "runway"],
+			"stem": {
+				"pl": "Jak boczny wiatr o prędkości około 3-5 węzłów wpływa na zachowanie wirów brzegowych na podejściu do lądowania?",
+				"en": "How does a crosswind of approximately 3-5 knots affect the behaviour of wake turbulence vortices on approach?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Przyspiesza rozpraszanie obu wirów równomiernie po obu stronach",
+						"en": "Accelerates the dissipation of both vortices equally on both sides"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Unosi jeden wir ponad drogę startową, podczas gdy drugi pozostaje nad nią",
+						"en": "Lifts one vortex above the runway while the other remains over it"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Może utrzymać jeden wir nad drogą startową, natomiast drugi odepchnąć poza jej obrys",
+						"en": "May hold one vortex over the runway while drifting the other beyond its edge"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Nie ma żadnego wpływu na wiry przy tak małej prędkości",
+						"en": "Has no effect on the vortices at such low speed"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Słaby boczny wiatr może zrównoważyć naturalne boczne przemieszczanie jednego wiru, zatrzymując go nad pasem startowym, co jest szczególnie niebezpieczne dla małych statków powietrznych.",
+				"en": "A light crosswind can counteract the natural lateral drift of one vortex, holding it stationary over the runway, a particularly hazardous scenario for small aircraft."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-67",
+			"type": "mcq",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["avoidance", "approach", "glider_operations"],
+			"stem": {
+				"pl": "Szybowiec podchodzi do lądowania za ciężkim samolotem transportowym. Gdzie względem toru lotu samolotu powinien znajdować się szybowiec, aby uniknąć turbulencji w śladzie aerodynamicznym?",
+				"en": "A glider is approaching to land behind a heavy transport aircraft. Where relative to the aircraft's flight path should the glider fly to avoid wake turbulence?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Bezpośrednio za samolotem w jego osi podejścia",
+						"en": "Directly behind the aircraft along its approach axis"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Powyżej i z nawietrznej strony toru lotu samolotu",
+						"en": "Above and upwind of the aircraft's flight path"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Poniżej toru lotu samolotu, aby uniknąć stref turbulencji",
+						"en": "Below the aircraft's flight path to avoid turbulence zones"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "W odległości bocznej 500 m niezależnie od kierunku wiatru",
+						"en": "500 m laterally, regardless of wind direction"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Wiry opadają i przemieszczają się z wiatrem, dlatego szybowiec powinien lecieć powyżej toru lotu generatora i z nawietrznej strony, aby uniknąć opadających wirów.",
+				"en": "Vortices sink and drift downwind, so the glider must remain above and upwind of the generating aircraft's flight path to avoid the descending vortices."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-68",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["persistence", "calm_conditions", "hazard_duration"],
+			"stem": {
+				"pl": "Przez jak długo wiry brzegowe po samolocie ciężkim mogą stanowić zagrożenie w spokojnych warunkach atmosferycznych?",
+				"en": "For how long can wake vortices from a heavy aircraft remain hazardous in calm atmospheric conditions?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Do 30 sekund",
+						"en": "Up to 30 seconds"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Do 1 minuty",
+						"en": "Up to 1 minute"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Do 3 minut lub dłużej",
+						"en": "Up to 3 minutes or more"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Do 10 minut",
+						"en": "Up to 10 minutes"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "W spokojnych warunkach i przy braku turbulencji atmosferycznych wiry brzegowe po ciężkich samolotach mogą utrzymywać się przez 3 minuty lub dłużej, dlatego kontrola ruchu lotniczego stosuje odpowiednie separacje czasowe.",
+				"en": "In calm, low-turbulence conditions, wake vortices from heavy aircraft can persist for 3 minutes or more, which is why ATC applies specific time-based separation minima."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-69",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["MTOW", "wake_category", "classification"],
+			"stem": {
+				"pl": "Kategoryzacja statków powietrznych ze względu na turbulencję w śladzie aerodynamicznym (wake turbulence categories) opiera się przede wszystkim na:",
+				"en": "The aircraft categorisation used for wake turbulence separation is primarily based on:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Maksymalnej prędkości przelotowej statku powietrznego",
+						"en": "Maximum cruise speed of the aircraft"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Maksymalnej certyfikowanej masie startowej (MTOW)",
+						"en": "Maximum certified take-off mass (MTOW)"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Rodzaju napędu (śmigłowy, odrzutowy, szybowiec)",
+						"en": "Type of propulsion (piston, jet, glider)"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Rozpiętości skrzydeł statku powietrznego",
+						"en": "Wingspan of the aircraft"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Kategorie turbulencji w śladzie (Light, Medium, Heavy, Super) wynikają z maksymalnej certyfikowanej masy startowej, ponieważ masa jest kluczowym czynnikiem decydującym o sile generowanych wirów.",
+				"en": "Wake turbulence categories (Light, Medium, Heavy, Super) are based on MTOW because aircraft mass is the primary determinant of vortex strength."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-70",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["separation", "departure", "ICAO", "heavy_aircraft"],
+			"stem": {
+				"pl": "Szybowiec startuje z lotniska, na którym wcześniej lądował samolot kategorii Heavy. Kiedy szybowiec może bezpiecznie startować z tego samego progu drogi startowej?",
+				"en": "A glider is about to take off from an airfield where a Heavy category aircraft has just landed. When may the glider safely depart from the same runway threshold?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Natychmiast po zjechaniu samolotu z drogi startowej",
+						"en": "Immediately after the heavy aircraft vacates the runway"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Po upływie co najmniej 2 minut od przelotu samolotu nad progiem drogi startowej",
+						"en": "After at least 2 minutes since the heavy aircraft crossed the runway threshold"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Po upływie co najmniej 3 minut od przelotu samolotu nad progiem drogi startowej",
+						"en": "After at least 3 minutes since the heavy aircraft crossed the runway threshold"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Po upływie co najmniej 5 minut od przelotu samolotu nad progiem drogi startowej",
+						"en": "After at least 5 minutes since the heavy aircraft crossed the runway threshold"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Procedury ICAO zalecają co najmniej 3-minutową separację dla lekkich statków powietrznych startujących za samolotem ciężkim z tego samego progu drogi startowej.",
+				"en": "ICAO procedures recommend a minimum 3-minute separation for light aircraft departing after a heavy aircraft from the same runway threshold."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-71",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["rolling_moment", "hazard", "glider_safety"],
+			"stem": {
+				"pl": "Wiry brzegowe są szczególnie niebezpieczne dla szybowców, ponieważ mogą:",
+				"en": "Wake vortices are particularly dangerous for gliders because they can:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Spowodować nadmierne przyspieszenie szybowca w locie",
+						"en": "Cause the glider to accelerate excessively in flight"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Wywołać nagły przechył i obrót, któremu pilot może nie zdążyć przeciwdziałać",
+						"en": "Induce a sudden bank and roll that the pilot may be unable to counter"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zablokować stery szybowca wskutek zmian temperatury powietrza",
+						"en": "Jam the glider controls due to air temperature changes"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Spowodować oblodzenie skrzydeł szybowca",
+						"en": "Cause ice formation on the glider wings"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Silne wiry o poziomej osi obrotu mogą narzucić szybowcowi gwałtowny obrót wokół osi podłużnej przekraczający możliwości sterów, co jest szczególnie groźne przy małych wysokościach.",
+				"en": "The powerful rotating vortices can impose a rolling moment on the glider exceeding full aileron authority, which is especially dangerous at low altitude."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-72",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["dissipation", "wind", "turbulence", "atmospheric_conditions"],
+			"stem": {
+				"pl": "Który z poniższych czynników atmosferycznych sprzyja szybkiemu rozpraszaniu wirów brzegowych?",
+				"en": "Which of the following atmospheric factors promotes the rapid dissipation of wake turbulence vortices?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Inwersja temperatury na małej wysokości",
+						"en": "Temperature inversion at low altitude"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Silna turbulencja termiczna i wiatr",
+						"en": "Strong thermal turbulence and wind"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Wysoka wilgotność względna powietrza",
+						"en": "High relative humidity"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Niskie ciśnienie atmosferyczne",
+						"en": "Low atmospheric pressure"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Turbulencja atmosferyczna i wiatr rozbijają strukturę wirów i przyspieszają ich zanikanie, natomiast spokojne, stabilne powietrze sprzyja ich długiemu utrzymywaniu się.",
+				"en": "Atmospheric turbulence and wind break down vortex structure and accelerate their decay, while calm, stable air allows vortices to persist much longer."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-73",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["aerotow", "tow_hazard", "upset"],
+			"stem": {
+				"pl": "Szybowiec holowany przez samolot napędowy przelatuje przez ślad aerodynamiczny innego samolotu. Jakie jest główne zagrożenie dla szybowca w tej sytuacji?",
+				"en": "A glider being towed by a tug flies through the wake of another aircraft. What is the primary hazard for the glider in this situation?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Lina holownicza może zostać zerwana przez turbulencję",
+						"en": "The tow rope may be severed by the turbulence"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Szybowiec może doznać gwałtownego przechyłu lub utraty kontroli trudnej do opanowania przez pilota",
+						"en": "The glider may experience a sudden bank or upset that is difficult for the pilot to control"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Silnik samolotu holującego może się przegrzać w turbulencji",
+						"en": "The tug's engine may overheat in the turbulence"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Lotki szybowca mogą zostać uszkodzone mechanicznie przez wiry",
+						"en": "The glider's ailerons may be mechanically damaged by the vortices"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Podczas holowania szybowiec leci z małą prędkością i ma ograniczone możliwości manewrowe, przez co nagłe turbulencje wirowe mogą prowadzić do utraty kontroli trudnej do opanowania przez pilota.",
+				"en": "During towing, the glider flies slowly with limited manoeuvrability, so a sudden vortex encounter can lead to loss of control that is difficult for the pilot to counter."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-74",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["vortex_strength", "weight", "lift"],
+			"stem": {
+				"pl": "Jak zmienia się intensywność wirów brzegowych samolotu przy wzroście jego masy (przy stałej prędkości)?",
+				"en": "How does the intensity of an aircraft's wingtip vortices change as its weight increases (at constant speed)?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Intensywność maleje, bo cięższy samolot leci bardziej stabilnie",
+						"en": "Intensity decreases because a heavier aircraft flies more stably"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Intensywność pozostaje bez zmian, gdyż zależy wyłącznie od prędkości",
+						"en": "Intensity remains unchanged as it depends only on speed"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Intensywność wzrasta, gdyż potrzebna jest większa siła nośna",
+						"en": "Intensity increases because greater lift must be generated"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Intensywność zmienia się, ale tylko przy prędkościach poniżej prędkości minimalnej",
+						"en": "Intensity changes only at speeds below minimum speed"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Siła wiru jest wprost proporcjonalna do ciężaru samolotu: im cięższa maszyna, tym większa siła nośna i tym silniejsze wiry brzegowe generowane przez różnicę ciśnień.",
+				"en": "Vortex strength is directly proportional to aircraft weight: heavier aircraft must generate more lift, creating a larger pressure differential and therefore stronger vortices."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-75",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["small_aircraft", "risk_assessment", "glider_susceptibility"],
+			"stem": {
+				"pl": "Pilot szybowca planuje start z krótszego lotniska trawiastego, z którego przed chwilą startował mały samolot śmigłowy. Czy musi zachować separację ze względu na turbulencję w śladzie aerodynamicznym?",
+				"en": "A glider pilot plans to take off from a short grass airfield from which a small piston aircraft has just departed. Does the pilot need to apply wake turbulence separation?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Nie, turbulencja w śladzie aerodynamicznym dotyczy wyłącznie samolotów odrzutowych",
+						"en": "No, wake turbulence only applies to jet aircraft"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Tak, zawsze należy zachować 3 minuty separacji niezależnie od masy samolotu poprzedzającego",
+						"en": "Yes, always apply 3 minutes separation regardless of the preceding aircraft mass"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Tak; choć wiry po małym samolocie są słabsze, szybowiec jest lekki i podatny; należy ocenić ryzyko i w razie potrzeby zachować ostrożność",
+						"en": "Yes; although vortices from a small aircraft are weaker, the glider is light and susceptible; the pilot should assess the risk and exercise caution as needed"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Nie, obowiązek separacji spoczywa wyłącznie na kontrolerach ATC, nie na pilotach w niekontrolowanej przestrzeni",
+						"en": "No, separation responsibility lies solely with ATC controllers, not pilots in uncontrolled airspace"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Każdy statek powietrzny generuje wiry; szybowiec jako lekki i manewrowy jest szczególnie podatny na ich działanie, dlatego pilot zawsze powinien ocenić ryzyko i zachować ostrożność.",
+				"en": "All aircraft generate vortices; as a light and manoeuvrable aircraft the glider is especially susceptible, so the pilot must always assess risk and exercise appropriate caution."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-76",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["final_approach", "low_altitude", "vulnerability"],
+			"stem": {
+				"pl": "Na którym etapie lądowania szybowiec jest najbardziej narażony na skutki turbulencji w śladzie aerodynamicznym?",
+				"en": "At which stage of landing is a glider most vulnerable to the effects of wake turbulence?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Na wysokości przelotowej podczas zbliżania do lotniska (powyżej 1000 ft AGL)",
+						"en": "At cruise altitude during the initial approach (above 1000 ft AGL)"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Na finalu przy małej prędkości i niskiej wysokości",
+						"en": "On final approach at low airspeed and low altitude"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Po dotknięciu kół do drogi startowej",
+						"en": "After the wheels touch the runway surface"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Podczas kręgu nadlotniskowego na trzecim zakręcie",
+						"en": "In the circuit at the third turn"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Na finalu szybowiec leci powoli, ma ograniczone możliwości wykonania manewru ucieczki i jest nisko nad ziemią, co sprawia, że spotkanie z wirem może mieć katastrofalne skutki.",
+				"en": "On final approach the glider is slow, has limited escape options, and is close to the ground, making a vortex encounter potentially fatal."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-77",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["false_statement", "glider_vortices", "misconception"],
+			"stem": {
+				"pl": "Które z poniższych stwierdzeń dotyczących turbulencji w śladzie aerodynamicznym jest FAŁSZYWE?",
+				"en": "Which of the following statements about wake turbulence is FALSE?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Wiry brzegowe są generowane od momentu oderwania kół od ziemi do momentu przyziemienia",
+						"en": "Wingtip vortices are generated from the moment the wheels leave the ground until touchdown"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Szybowiec bezsilnikowy nie generuje wirów brzegowych, bo nie ma napędu",
+						"en": "An unpowered glider does not generate wingtip vortices because it has no engine"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Turbulencja w śladzie może być niewidoczna gołym okiem w normalnych warunkach",
+						"en": "Wake turbulence may be invisible to the naked eye in normal conditions"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Wiry brzegowe przemieszczają się wraz z wiatrem",
+						"en": "Wingtip vortices drift with the wind"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Każdy statek powietrzny ze skrzydłami wytwarzający siłę nośną, w tym szybowiec bezsilnikowy, generuje wiry brzegowe; źródłem wirów jest siła nośna, a nie napęd.",
+				"en": "Any winged aircraft generating lift, including an unpowered glider, produces wingtip vortices; the source of vortices is the generation of lift, not the propulsion system."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-78",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["sink_rate", "performance_degradation", "vortex_descent"],
+			"stem": {
+				"pl": "W jaki sposób turbulencja w śladzie aerodynamicznym wpływa na osiągi szybowca znajdującego się w zstępującym powietrzu wiru brzegowego?",
+				"en": "How does wake turbulence affect a glider flying in the descending air portion of a wingtip vortex?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Poprawia osiągi, gdyż zwiększa prędkość względną powietrza przepływającego przez skrzydła",
+						"en": "Improves performance by increasing the relative airflow over the wings"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Nie wpływa na osiągi, gdyż szybowiec dostosowuje się automatycznie",
+						"en": "Does not affect performance as the glider adapts automatically"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Pogarsza osiągi i może wymusić opadanie silniejsze, niż maksymalna siła nośna szybowca jest w stanie skompensować",
+						"en": "Degrades performance and may force a sink rate stronger than the glider can counteract with maximum lift"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zwiększa prędkość opadania o stały współczynnik 10% niezależnie od warunków",
+						"en": "Increases sink rate by a constant factor of 10% regardless of conditions"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Opadające powietrze w zewnętrznej części wiru może osiągać kilkaset stóp na minutę, więcej niż szybowiec jest w stanie skompensować siłą nośną, co prowadzi do niekontrolowanego opadania, szczególnie groźnego przy małej wysokości.",
+				"en": "The descending air on the outer side of the vortex can exceed several hundred feet per minute, more than the glider can counteract with maximum lift, resulting in uncontrolled descent, especially dangerous at low altitude."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-79",
+			"type": "mcq",
+			"microSkill": "abbreviation",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["TEM", "human factors", "safety"],
+			"stem": {
+				"pl": "Co oznacza skrot TEM w lotnictwie?",
+				"en": "What does the abbreviation TEM stand for in aviation?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zarzadzanie zagrozeniami i bledami (Threat and Error Management)",
+						"en": "Threat and Error Management"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Szkolenie i ocena manewrow (Training and Evaluation of Manoeuvres)",
+						"en": "Training and Evaluation of Manoeuvres"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Planowanie trasy i ocena pogody (Track and Environment Monitoring)",
+						"en": "Track and Environment Monitoring"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Techniczne zarzadzanie sprzetem (Technical Equipment Management)",
+						"en": "Technical Equipment Management"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "TEM (Threat and Error Management) to model zarzadzania zagrozeniami i bledami stosowany w lotnictwie w celu zwiekszenia bezpieczenstwa operacji.",
+				"en": "TEM (Threat and Error Management) is a safety model used in aviation to proactively manage threats and errors during flight operations."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-80",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["TEM", "threat", "external"],
+			"stem": {
+				"pl": "Ktore z ponizszych jest przykladem zagrozenia zewnetrznego (threat) w modelu TEM?",
+				"en": "Which of the following is an example of an external threat in the TEM model?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Nieprawidlowe nastawienie wysokosciomierza przez pilota",
+						"en": "Pilot setting an incorrect altimeter subscale"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Blad w obliczeniu zapasu paliwa",
+						"en": "Error in fuel endurance calculation"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Niekorzystne warunki meteorologiczne na trasie",
+						"en": "Adverse weather conditions along the route"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Nieprzestrzeganie listy kontrolnej",
+						"en": "Non-compliance with a checklist"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Zagrozenia zewnetrzne to czynniki niezalezne od pilota, takie jak warunki atmosferyczne, ktore wymagaja aktywnego zarzadzania.",
+				"en": "External threats are factors outside the pilot's control, such as adverse weather, which require active management to prevent errors."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-81",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["human factors", "error", "violation"],
+			"stem": {
+				"pl": "Czym rozni sie blad (error) od naruszenia (violation) w kontekscie czynnikow ludzkich?",
+				"en": "How does an error differ from a violation in the context of human factors?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Blad jest celowym odejsciem od procedury, naruszenie jest przypadkowe",
+						"en": "An error is an intentional deviation from a procedure, a violation is unintentional"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Blad jest niezamierzonym dzialaniem niezgodnym z intencja, naruszenie jest swiadomym odejsciem od regul",
+						"en": "An error is an unintentional action inconsistent with intent, a violation is a deliberate deviation from rules"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Blad i naruszenie sa synonimami w lotnictwie",
+						"en": "Error and violation are synonyms in aviation"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Naruszenie dotyczy wylacznie awarii sprzetu, blad dotyczy decyzji pilota",
+						"en": "A violation relates solely to equipment failure, an error relates to pilot decisions"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Blad jest dzialaniem niezamierzonym, natomiast naruszenie to swiadome odejscie od ustalonych procedur lub przepisow.",
+				"en": "An error is an unintentional action that deviates from what was intended, while a violation is a deliberate departure from established rules or procedures."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-82",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["workload", "human factors", "landing"],
+			"stem": {
+				"pl": "Ktora faza lotu jest najczesciej wymieniana jako krytyczna w kontekscie zarzadzania obciazeniem praca (workload)?",
+				"en": "Which phase of flight is most commonly identified as critical in the context of workload management?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Lot na trasie w warunkach VMC",
+						"en": "En-route flight in VMC conditions"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Podejscie do ladowania i ladowanie",
+						"en": "Approach and landing"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Kolowanie na plycie lotniska",
+						"en": "Taxiing on the apron"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Start ze spokojnych terenow nizinnych",
+						"en": "Take-off from calm lowland terrain"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Podejscie do ladowania i ladowanie cechuje sie najwyzszym obciazeniem praca i najwieksza liczba wypadkow w lotnictwie ogolnym.",
+				"en": "Approach and landing phase involves the highest workload and accounts for the majority of accidents in general aviation."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-83",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["checklist", "procedure", "safety"],
+			"stem": {
+				"pl": "Jaki jest glowny cel stosowania list kontrolnych (checklists) w lotnictwie?",
+				"en": "What is the primary purpose of using checklists in aviation?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Skrocenie czasu przygotowania do lotu",
+						"en": "Reducing the time needed for pre-flight preparation"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Zastapienie koniecznosci szkolenia pilota",
+						"en": "Replacing the need for pilot training"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zapewnienie kompletnosci i spojnosci wykonywania procedur, niezaleznie od pamieci pilota",
+						"en": "Ensuring completeness and consistency of procedure execution, independent of pilot memory"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Dokumentowanie przebiegu lotu dla celow ubezpieczeniowych",
+						"en": "Documenting the flight for insurance purposes"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Listy kontrolne eliminuja ryzyko pominiecia czynnosci wynikajace z przeciazenia lub zmeczenia pilota, zapewniajac powtarzalnosc procedur.",
+				"en": "Checklists eliminate the risk of omitting actions due to pilot overload or fatigue, ensuring consistent and repeatable procedures."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-84",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["human factors", "attention", "tunnel vision"],
+			"stem": {
+				"pl": "Czym jest \"efekt tunelowy\" (tunnel vision) jako czynnik ludzki?",
+				"en": "What is 'tunnel vision' as a human factor?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Fizyczne zwezenie pola widzenia spowodowane hipoksja",
+						"en": "Physical narrowing of the visual field caused by hypoxia"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Zjawisko polegajace na koncentracji uwagi na jednym czynniku przy ignorowaniu innych waznych informacji",
+						"en": "A phenomenon of focusing attention on one factor while ignoring other important information"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zaburzenie orientacji przestrzennej wywolane lotem w chmurach",
+						"en": "Spatial disorientation caused by flight in clouds"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Blad percepcji glebokosci podczas ladowania w terenie",
+						"en": "Depth perception error during off-field landing"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Efekt tunelowy polega na zawezeniu pola uwagi do jednego zagadnienia, co prowadzi do ignorowania innych krytycznych sygnalow w kokpicie.",
+				"en": "Tunnel vision is the narrowing of attention to a single issue, causing the pilot to ignore other critical cues in the cockpit."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-85",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["Swiss cheese model", "accident", "defences"],
+			"stem": {
+				"pl": "Model \"sera szwajcarskiego\" Jamesa Reasona (swiss cheese model) opisuje wypadki lotnicze jako:",
+				"en": "James Reason's 'Swiss Cheese Model' describes aviation accidents as:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Wynik pojedynczego, katastrofalnego bledu pilota",
+						"en": "The result of a single, catastrophic pilot error"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Wynik zbieznosci wielu zagrozen i bledow przebijajacych sie przez kolejne warstwy zabezpieczen",
+						"en": "The result of multiple threats and errors aligning through successive layers of defences"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zawsze wynik naruszenia przepisow przez pilota",
+						"en": "Always the result of pilot rule violation"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zdarzenia losowe niemozliwe do przewidzenia",
+						"en": "Random events that cannot be predicted"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Model sera szwajcarskiego pokazuje, ze wypadek nastepuje, gdy dziury w kolejnych warstwach zabezpieczen (procedury, szkolenie, sprzet) zbiegna sie w jednej linii.",
+				"en": "The Swiss Cheese Model shows that an accident occurs when holes in successive defensive layers (procedures, training, equipment) align simultaneously."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-86",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["hazardous attitudes", "macho", "human factors"],
+			"stem": {
+				"pl": "Ktora z ponizszych postaw pilota jest przykladem hazardzisty (macho) jako niebezpiecznej postawy opisanej przez FAA?",
+				"en": "Which of the following pilot attitudes is an example of the 'macho' hazardous attitude described by FAA?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "\"Nie ma to jak sprobowac - i tak mi sie uda\"",
+						"en": "\"I'll give it a go - I can pull it off\""
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "\"To nie moj problem, niech kontroler sie tym zajmie\"",
+						"en": "\"That's not my problem, let the controller deal with it\""
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "\"Nic zlego nigdy mi sie nie przydarzy\"",
+						"en": "\"Nothing bad will ever happen to me\""
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "\"Powinienem to zrobic tak jak mi kazano\"",
+						"en": "\"I should do it the way I was told\""
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Postawa macho charakteryzuje sie nadmierna pewnoscia siebie i checia udowodnienia swoich mozliwosci kosztem bezpieczenstwa.",
+				"en": "The macho attitude is characterised by overconfidence and the desire to prove one's abilities at the expense of safety."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-87",
+			"type": "mcq",
+			"microSkill": "abbreviation",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["CRM", "resource management", "safety"],
+			"stem": {
+				"pl": "Czym jest CRM (Crew Resource Management) w kontekscie lotnictwa ogolnego pilotow szybowcowych?",
+				"en": "What is CRM (Crew Resource Management) in the context of general aviation glider pilots?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Technika komunikacji radiowej obowiazujaca wylacznie na lotniskach kontrolowanych",
+						"en": "A radio communication technique applicable only at controlled aerodromes"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Zarzadzanie wszystkimi dostepnymi zasobami (informacje, sprzet, ludzie) w celu zapewnienia bezpiecznego i efektywnego lotu",
+						"en": "Management of all available resources (information, equipment, people) to ensure safe and efficient flight"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Obowiazkowy kurs dla pilotow komercyjnych powyzej 1000 godzin nalotu",
+						"en": "A mandatory course for commercial pilots with more than 1000 flight hours"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "System rezerwacji szybowcow w aeroklubie",
+						"en": "A club glider booking system"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "CRM odnosi sie do optymalnego wykorzystania wszystkich dostepnych zasobow - w tym wiedzy naziemnej, briefingow meteorologicznych i wsparcia innych pilotow - w celu bezpiecznego wykonania lotu.",
+				"en": "CRM refers to the optimal use of all available resources - including ground briefings, weather information and support from other pilots - to conduct a safe flight."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-88",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["checklist", "do-verify", "procedure"],
+			"stem": {
+				"pl": "Pilot wykonuje procedure \"Do-Verify\" (wykonaj, nastepnie sprawdz). Kiedy ta metoda korzystania z listy kontrolnej jest stosowana?",
+				"en": "A pilot uses the 'Do-Verify' checklist method. When is this method applied?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Podczas procedur awaryjnych wymagajacych natychmiastowego dzialania",
+						"en": "During emergency procedures requiring immediate action"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "W fazie rutynowych czynnosci, gdzie pilot wykonuje czynnosci z pamieci, a nastepnie weryfikuje lista",
+						"en": "During routine phases where the pilot performs actions from memory and then verifies with the list"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Wylacznie podczas kontroli przed lotem na ziemi",
+						"en": "Exclusively during pre-flight checks on the ground"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Tylko wtedy, gdy nie ma dostepu do listy kontrolnej",
+						"en": "Only when no checklist is available"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Metoda Do-Verify jest stosowana przy rutynowych sekwencjach czynnosci, gdzie pilot dziala z pamieci, a liste kontrolna uzywa do potwierdzenia poprawnosci wykonania.",
+				"en": "The Do-Verify method is used for routine action sequences where the pilot acts from memory and uses the checklist to confirm correct completion."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-89",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["checklist", "read-do", "emergency"],
+			"stem": {
+				"pl": "Metoda \"Read-Do\" (czytaj i wykonuj) korzystania z listy kontrolnej jest szczegolnie zalecana:",
+				"en": "The 'Read-Do' checklist method is particularly recommended:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Podczas czynnosci nierutynowych lub awarii, gdy dokladnosc jest wazniejsza niz szybkosc",
+						"en": "During non-routine operations or emergencies, when accuracy is more important than speed"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Tylko podczas lotow szkolnych z instruktorem na pokladzie",
+						"en": "Only during training flights with an instructor on board"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Przy kolowaniu, gdyz pilot ma wiecej czasu",
+						"en": "During taxiing, as the pilot has more time"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Wylacznie w lotach wyczynowych zawodow szybowcowych",
+						"en": "Exclusively in competitive glider racing"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Read-Do zapewnia sekwencyjne i dokladne wykonanie kazdej pozycji listy, co jest kluczowe przy procedurach niestandardowych i awaryjnych.",
+				"en": "Read-Do ensures sequential and accurate completion of each checklist item, which is critical during non-standard and emergency procedures."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-90",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["continuation bias", "decision making", "human factors"],
+			"stem": {
+				"pl": "Ktore z ponizszych jest przykladem \"pulapki kontynuacji\" (continuation bias)?",
+				"en": "Which of the following is an example of 'continuation bias'?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Pilot przerywa lot po wykryciu usterki technicznej",
+						"en": "A pilot discontinues the flight after detecting a technical fault"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Pilot kontynuuje lot w pogarszajace sie warunki atmosferyczne, poniewaz juz tak daleko dolecial",
+						"en": "A pilot continues into deteriorating weather because they have already flown so far"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Pilot zawraca po przekroczeniu polowy trasy przelotowej",
+						"en": "A pilot turns back after passing the halfway point of a cross-country flight"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Pilot decyduje sie wyladowac na lotnisku zapasowym pomimo malego zapasu czasu",
+						"en": "A pilot decides to land at an alternate aerodrome despite a small time margin"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Pulapka kontynuacji (continuation bias) polega na irracjonalnej sklonnosci do podtrzymywania pierwotnego planu, nawet gdy okolicznosci wyraznie wskazuja na koniecznosc jego zmiany.",
+				"en": "Continuation bias is the irrational tendency to maintain the original plan even when circumstances clearly indicate the need to change it."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-91",
+			"type": "mcq",
+			"microSkill": "abbreviation",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["IMSAFE", "self-assessment", "fitness to fly"],
+			"stem": {
+				"pl": "Co oznacza skrot IMSAFE stosowany przy samoocenie pilota przed lotem?",
+				"en": "What does the IMSAFE acronym stand for, used in pilot self-assessment before flight?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Illness, Medication, Stress, Alcohol, Fatigue, Emotion",
+						"en": "Illness, Medication, Stress, Alcohol, Fatigue, Emotion"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Instrument, Map, Speed, Altitude, Fuel, Equipment",
+						"en": "Instrument, Map, Speed, Altitude, Fuel, Equipment"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Inspection, Meteorology, Situation, Airspace, Flight plan, Emergency",
+						"en": "Inspection, Meteorology, Situation, Airspace, Flight plan, Emergency"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Information, Management, Safety, Avoidance, Flight, Evaluation",
+						"en": "Information, Management, Safety, Avoidance, Flight, Evaluation"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "IMSAFE to mnemotechnika do samodzielnej oceny gotowosci do lotu pod wzgledem zdrowotnym i psychofizycznym: choroba, leki, stres, alkohol, zmeczenie, emocje.",
+				"en": "IMSAFE is a mnemonic for pilot self-assessment of fitness to fly: Illness, Medication, Stress, Alcohol, Fatigue, Emotion."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-92",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["TEM", "error trapping", "error management"],
+			"stem": {
+				"pl": "Pilot zmeczony popelnia blad podczas obliczenia punktu decyzyjnego. Jakie dzialanie w modelu TEM opisuje sytuacje, gdy pilot sam wykrywa i koryguje ten blad?",
+				"en": "A fatigued pilot makes an error calculating a decision point. What TEM action describes the situation where the pilot detects and corrects the error themselves?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zarzadzanie zagrozeniem (threat management)",
+						"en": "Threat management"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Unikanie bledu (error avoidance)",
+						"en": "Error avoidance"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Wychwycenie bledu (error trapping)",
+						"en": "Error trapping"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Stan niepozadany samolotu (undesired aircraft state)",
+						"en": "Undesired aircraft state"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Wychwycenie bledu (error trapping) ma miejsce, gdy pilot wykryje i skoryguje swoj wlasny blad, zanim doprowadzi on do niepozadanego stanu lotu.",
+				"en": "Error trapping occurs when the pilot detects and corrects their own error before it leads to an undesired aircraft state."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-93",
+			"type": "mcq",
+			"microSkill": "abbreviation",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["TEM", "UAS", "undesired aircraft state"],
+			"stem": {
+				"pl": "Czym jest \"niepozadany stan samolotu\" (Undesired Aircraft State - UAS) w modelu TEM?",
+				"en": "What is an 'Undesired Aircraft State' (UAS) in the TEM model?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Awaria systemu mechanicznego szybowca",
+						"en": "A mechanical system failure of the glider"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Sytuacja, w ktorej samolot znalazl sie w niepozadanej pozycji lub konfiguracji bedacej wynikiem zagrozen lub bledow",
+						"en": "A situation where the aircraft is in an unintended position or configuration resulting from threats or errors"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Lot poza zatwierdzona przestrzenia powietrzna",
+						"en": "Flight outside approved airspace"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Stan zmeczenia pilota uniemozliwiajacy dalszy lot",
+						"en": "Pilot fatigue preventing further flight"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "UAS to sytuacja, w ktorej pozycja lub konfiguracja samolotu nie jest zamierzona przez pilota i jest wynikiem nieprawidlowego zarzadzania zagrozeniami lub bledami.",
+				"en": "UAS is a situation in which the aircraft's position or configuration is unintended by the pilot, resulting from inadequate management of threats or errors."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-94",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["situational awareness", "decision making", "human factors"],
+			"stem": {
+				"pl": "Ktore z ponizszych najlepiej opisuje koncepcje \"swiadomosci sytuacyjnej\" (situational awareness)?",
+				"en": "Which of the following best describes the concept of 'situational awareness'?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Umiejetnosc szybkiego czytania przyrzadow lotniczych",
+						"en": "The ability to read aircraft instruments quickly"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Percepcja elementow srodowiska, rozumienie ich znaczenia i prognozowanie przyszlego stanu sytuacji",
+						"en": "Perception of environmental elements, understanding their significance, and projection of their future state"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Procedura sprawdzania pogody przed lotem",
+						"en": "A procedure for checking weather before flight"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Znajomosc przepisow ruchu lotniczego",
+						"en": "Knowledge of air traffic regulations"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Swiadomosc sytuacyjna (wg Endsley) obejmuje trzy poziomy: percepcje elementow, zrozumienie ich znaczenia oraz projekcje przyszlego stanu - jest fundamentem bezpiecznego podejmowania decyzji.",
+				"en": "Situational awareness (per Endsley) comprises three levels: perception of elements, comprehension of their meaning, and projection of future state - it is the foundation of safe decision-making."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-95",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["get-there-itis", "continuation bias", "decision making"],
+			"stem": {
+				"pl": "Pilot leci nad obszarem gorskim przy malejacych podstawach chmur. Odczuwa narastajacy dyskomfort, ale kontynuuje lot. Ktory czynnik ludzki najlepiej to opisuje?",
+				"en": "A pilot flies over mountainous terrain with lowering cloud bases. They feel increasing discomfort but continue the flight. Which human factor best describes this?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Dezorientacja przestrzenna",
+						"en": "Spatial disorientation"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Zmeczenie operacyjne",
+						"en": "Operational fatigue"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Pulapka kontynuacji polaczona z syndromem celu (get-there-itis)",
+						"en": "Continuation bias combined with get-there-itis"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Hipoksja wysokosciowa",
+						"en": "Altitude hypoxia"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Get-there-itis to silna motywacja do dotarcia do celu, ktora w polaczeniu z pulapka kontynuacji sklania pilota do ignorowania narastajacych zagrozen i kontynuowania lotu pomimo sygnalow ostrzegawczych.",
+				"en": "Get-there-itis is a strong motivation to reach a destination which, combined with continuation bias, leads the pilot to ignore accumulating threats and continue despite warning signs."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-96",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["TEM", "threat management", "proactive"],
+			"stem": {
+				"pl": "Ktore stwierdzenie dotyczace zarzadzania zagrozeniami w modelu TEM jest PRAWDZIWE?",
+				"en": "Which statement about threat management in the TEM model is TRUE?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zagrozenia zewnetrzne sa zawsze wynikiem bledow pilota",
+						"en": "External threats are always the result of pilot error"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Celem zarzadzania zagrozeniami jest wyeliminowanie wszystkich bledow pilota",
+						"en": "The goal of threat management is the complete elimination of all pilot errors"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Proaktywne zarzadzanie zagrozeniami polega na ich rozpoznaniu i ograniczeniu wplywu, zanim doprowadza do bledu",
+						"en": "Proactive threat management involves recognising threats and limiting their impact before they lead to an error"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "TEM stosuje sie wylacznie do operacji wieloosobowej zalogi",
+						"en": "TEM applies exclusively to multi-crew operations"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Proaktywne zarzadzanie zagrozeniami polega na ich wczesnym rozpoznaniu i podjeciu dzialan zmniejszajacych ich wplyw, co ogranicza prawdopodobienstwo popelnienia bledu.",
+				"en": "Proactive threat management involves early recognition of threats and taking actions to reduce their impact, thereby lowering the probability of error."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-97",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["5P", "decision making", "situational awareness"],
+			"stem": {
+				"pl": "Pilot uzywajacy metody 5P (Plan, Plane, Pilot, Passengers, Programming) przeprowadza regularne oceny sytuacji podczas lotu. Czemu sluzy ta technika?",
+				"en": "A pilot using the 5P method (Plan, Plane, Pilot, Passengers, Programming) conducts regular in-flight situation assessments. What purpose does this technique serve?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Wylacznie planowaniu trasy przed odlotem",
+						"en": "Exclusively pre-departure route planning"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Systematycznemu utrzymaniu swiadomosci sytuacyjnej i podejmowaniu decyzji w trakcie lotu",
+						"en": "Systematic maintenance of situational awareness and in-flight decision-making"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Weryfikacji rejestrow lotow i dokumentacji szybowca",
+						"en": "Verifying flight logs and glider documentation"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Komunikacji z organami kontroli ruchu lotniczego",
+						"en": "Communicating with air traffic control units"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Metoda 5P to ustrukturyzowane narzedzie do regularnej oceny kluczowych obszarow lotu, wspierajace utrzymanie swiadomosci sytuacyjnej i wczesne wykrycie problemow.",
+				"en": "The 5P method is a structured tool for regularly evaluating key flight domains, supporting the maintenance of situational awareness and early problem detection."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-98",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["situational awareness", "loss of SA", "gliding"],
+			"stem": {
+				"pl": "Ktory z ponizszych scenariuszy ilustruje utrate swiadomosci sytuacyjnej w locie szybowcowym?",
+				"en": "Which of the following scenarios illustrates a loss of situational awareness in glider flight?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Pilot sprawdza mape i porownuje pozycje z widocznymi punktami orientacyjnymi",
+						"en": "A pilot checks the map and compares position against visible landmarks"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Pilot nie wie, ile czasu zajmie mu dolot do lotniska zapasowego przy aktualnym wietrze",
+						"en": "A pilot is unaware of how long it will take to reach an alternate aerodrome in the current wind"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Pilot regularnie sprawdza wysokosc nad terenem i zapas termiczny",
+						"en": "A pilot regularly checks height above terrain and thermal reserve"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Pilot informuje klub o planowanym punkcie zwrotnym przed odlotem",
+						"en": "A pilot informs the club of the planned turnpoint before departure"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Nieznajomosc czasu dolotu do lotniska zapasowego przy aktualnych warunkach to przyklad utraty projekcji - trzeciego poziomu swiadomosci sytuacyjnej wedlug modelu Endsley.",
+				"en": "Not knowing the time to reach an alternate in current conditions is an example of losing projection - the third level of situational awareness in Endsley's model."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-99",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["noise abatement", "environment", "aerodrome"],
+			"stem": {
+				"pl": "Jakie jest główne uzasadnienie operacyjne dla procedur ograniczania hałasu wokół lotnisk?",
+				"en": "What is the primary operational justification for noise abatement procedures around aerodromes?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zmniejszenie zużycia paliwa podczas podejścia do lądowania",
+						"en": "Reducing fuel consumption during approach to landing"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Ochrona lokalnych społeczności przed nadmiernym hałasem lotniczym",
+						"en": "Protecting local communities from excessive aviation noise"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Poprawa widoczności dla pilota przez ograniczenie turbulencji termicznych",
+						"en": "Improving pilot visibility by limiting thermal turbulence"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Skrócenie czasu kołowania na lotnisku",
+						"en": "Reducing taxiing time at the aerodrome"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Procedury ograniczania hałasu (NADP) mają na celu przede wszystkim ochronę mieszkańców terenów przylotniskowych przed uciążliwym hałasem generowanym przez statki powietrzne.",
+				"en": "Noise Abatement Departure Procedures (NADP) are primarily designed to protect residents in the vicinity of aerodromes from aircraft noise."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-100",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["EASA", "regulation", "noise"],
+			"stem": {
+				"pl": "Która instytucja na szczeblu europejskim wydaje regulacje dotyczące zarządzania hałasem lotniczym w lotnictwie cywilnym?",
+				"en": "Which European body issues civil aviation noise management regulations?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "EUROCONTROL",
+						"en": "EUROCONTROL"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "ICAO",
+						"en": "ICAO"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "EASA",
+						"en": "EASA"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Europejska Agencja Środowiska (EEA)",
+						"en": "European Environment Agency (EEA)"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "EASA (Agencja Unii Europejskiej ds. Bezpieczeństwa Lotniczego) jest właściwą instytucją europejską odpowiedzialną za przepisy dotyczące hałasu w lotnictwie cywilnym.",
+				"en": "EASA (European Union Aviation Safety Agency) is the competent European body responsible for civil aviation noise regulations."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-101",
+			"type": "mcq",
+			"microSkill": "abbreviation",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["NADP", "abbreviation", "departure"],
+			"stem": {
+				"pl": "Co oznacza skrót NADP w kontekście procedur ograniczania hałasu?",
+				"en": "What does the abbreviation NADP stand for in the context of noise abatement procedures?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Noise Abatement Departure Procedure",
+						"en": "Noise Abatement Departure Procedure"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "National Aerodrome Design Protocol",
+						"en": "National Aerodrome Design Protocol"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Night Air Defence Perimeter",
+						"en": "Night Air Defence Perimeter"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Non-Aerodrome Designated Point",
+						"en": "Non-Aerodrome Designated Point"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "NADP to skrót od Noise Abatement Departure Procedure, czyli procedury startu ograniczającej hałas, opisanej w dokumentach ICAO i stosowanej na wielu lotniskach.",
+				"en": "NADP stands for Noise Abatement Departure Procedure, as defined in ICAO documentation and applied at many aerodromes."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-102",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["SERA", "altitude", "populated area"],
+			"stem": {
+				"pl": "Jakie minimalne ograniczenie wysokości obowiązuje statek powietrzny nad obszarami gęsto zaludnionymi zgodnie z przepisami SERA (poza startem i lądowaniem)?",
+				"en": "What minimum altitude restriction applies to an aircraft over congested areas according to SERA rules (other than take-off and landing)?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "150 ft (45 m) AGL",
+						"en": "150 ft (45 m) AGL"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "500 ft (150 m) AGL",
+						"en": "500 ft (150 m) AGL"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "300 ft (90 m) AGL",
+						"en": "300 ft (90 m) AGL"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "1000 ft (300 m) nad najwyższą przeszkodą w promieniu 600 m",
+						"en": "1000 ft (300 m) above the highest obstacle within a radius of 600 m"
+					}
+				}
+			],
+			"answer": "d",
+			"explanation": {
+				"pl": "Przepisy SERA wymagają, aby nad obszarami gęsto zaludnionymi statek powietrzny leciał na wysokości co najmniej 1000 ft ponad najwyższą przeszkodą w promieniu 600 m, co jednocześnie ogranicza uciążliwość hałasu.",
+				"en": "SERA rules require that over congested areas an aircraft shall fly at least 1000 ft above the highest obstacle within a 600 m radius, which also limits noise nuisance."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-103",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["glider", "noise", "residential", "height"],
+			"stem": {
+				"pl": "Jakie działanie pilota szybowca w największym stopniu zmniejsza hałas aerodynamiczny słyszalny na ziemi podczas lotu żaglowego nad osiedlem mieszkaniowym?",
+				"en": "Which glider pilot action most effectively reduces aerodynamic noise heard on the ground during soaring flight over a residential area?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Otwarcie hamulców aerodynamicznych w celu zwiększenia siły nośnej",
+						"en": "Opening airbrakes to increase lift"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Utrzymywanie możliwie dużej wysokości nad terenem zabudowanym",
+						"en": "Maintaining as much height as possible above the built-up area"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zwiększenie prędkości do prędkości maksymalnej VNE",
+						"en": "Increasing speed to maximum speed VNE"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Wykonywanie ciasnych kręgów w spirali, aby opuścić obszar",
+						"en": "Performing tight spiral circles to leave the area"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Większa wysokość nad terenem zabudowanym powoduje, że hałas aerodynamiczny szybowca dociera do mieszkańców na niższym poziomie ciśnienia akustycznego.",
+				"en": "Greater height above built-up terrain means aerodynamic glider noise reaches residents at a lower sound pressure level."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-104",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["noise sensitive area", "aerodrome", "procedure"],
+			"stem": {
+				"pl": "Czym jest strefa wrażliwa na hałas (Noise Sensitive Area) wokół lotniska?",
+				"en": "What is a Noise Sensitive Area around an aerodrome?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Obszar, gdzie zakazane są wszystkie loty VFR",
+						"en": "An area where all VFR flights are prohibited"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Wyznaczony obszar, w którym należy unikać lotów na małej wysokości lub stosować procedury ograniczania hałasu",
+						"en": "A designated area where low flight should be avoided or noise abatement procedures applied"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Strefa, w której wymagane jest zezwolenie wojskowe",
+						"en": "A zone where military permission is required"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Obszar, gdzie obowiązuje zakaz operacji nocnych wyłącznie dla samolotów odrzutowych",
+						"en": "An area where night operations are prohibited only for jet aircraft"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Strefa wrażliwa na hałas to wyznaczony obszar wokół lotniska, nad którym piloci powinni unikać zbędnie niskich przelotów lub stosować zatwierdzone procedury ograniczania hałasu.",
+				"en": "A Noise Sensitive Area is a designated zone around an aerodrome over which pilots should avoid unnecessarily low flight or apply approved noise abatement procedures."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-105",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["aerodrome operator", "AIP", "noise procedure"],
+			"stem": {
+				"pl": "Kto jest odpowiedzialny za opracowanie i publikację procedur ograniczania hałasu dla danego lotniska?",
+				"en": "Who is responsible for developing and publishing noise abatement procedures for a given aerodrome?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Producent szybowca",
+						"en": "The glider manufacturer"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Operator lotniska (zarządzający lotniskiem)",
+						"en": "The aerodrome operator (aerodrome manager)"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Krajowy urząd meteorologiczny",
+						"en": "The national meteorological office"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Międzynarodowe Stowarzyszenie Transportu Lotniczego (IATA)",
+						"en": "International Air Transport Association (IATA)"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Operator lotniska jest odpowiedzialny za opracowanie i publikację miejscowych procedur ograniczania hałasu, zamieszczanych w AIP lub informacjach lotniskowych.",
+				"en": "The aerodrome operator is responsible for developing and publishing local noise abatement procedures, published in the AIP or aerodrome information."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-106",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["AIP", "information source", "noise procedure"],
+			"stem": {
+				"pl": "Gdzie pilot szybowca może znaleźć informacje o lokalnych procedurach ograniczania hałasu obowiązujących na lotnisku?",
+				"en": "Where can a glider pilot find information about local noise abatement procedures applicable at an aerodrome?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "W instrukcji użytkowania szybowca (AFM)",
+						"en": "In the glider Flight Manual (AFM)"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "W AIP (Zbiorze Informacji Lotniczych) lub instrukcji operacyjnej lotniska",
+						"en": "In the AIP (Aeronautical Information Publication) or aerodrome operating manual"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "W meteorologicznym komunikacie SIGMET",
+						"en": "In the meteorological SIGMET message"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "W ogólnych przepisach ruchu lotniczego SERA",
+						"en": "In the general SERA air traffic rules"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Informacje o lokalnych procedurach ograniczania hałasu są publikowane w AIP (sekcja AD dla danego lotniska) lub w instrukcji operacyjnej lotniska.",
+				"en": "Local noise abatement procedure information is published in the AIP (AD section for the relevant aerodrome) or in the aerodrome operating manual."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-107",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["noise propagation", "altitude", "ground impact"],
+			"stem": {
+				"pl": "Który z poniższych czynników ma NAJWIĘKSZY wpływ na poziom hałasu szybowca docierający do ziemi?",
+				"en": "Which of the following factors has the GREATEST influence on the glider noise level reaching the ground?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Kolor powłoki szybowca",
+						"en": "The colour of the glider's paintwork"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Wysokość przelotu nad terenem",
+						"en": "The altitude of flight above the terrain"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Typ systemu nawigacji pokładowej",
+						"en": "The type of onboard navigation system"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Masa startowa szybowca",
+						"en": "The take-off mass of the glider"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Hałas maleje wraz z odległością od źródła; im wyżej szybowiec leci nad terenem, tym mniejszy jest poziom hałasu docierający do mieszkańców.",
+				"en": "Noise diminishes with distance from the source; the higher the glider flies above the terrain, the lower the noise level reaching residents."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-108",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["aerotow", "noise", "populated area"],
+			"stem": {
+				"pl": "Jakie postępowanie jest zalecane podczas holowania szybowca nad terenami zabudowanymi w celu ograniczenia hałasu?",
+				"en": "What practice is recommended when towing a glider over populated areas to reduce noise?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Stosowanie maksymalnej mocy silnika samolotu holującego przez cały czas",
+						"en": "Using full engine power of the towing aircraft throughout"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Utrzymywanie jak największej wysokości i unikanie zbędnych przelotów na małych wysokościach nad zabudowaniami",
+						"en": "Maintaining as much altitude as possible and avoiding unnecessary low passes over buildings"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Holowanie szybowca z zamkniętą owiewką w celu zmniejszenia oporu",
+						"en": "Towing the glider with closed canopy to reduce drag"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Stosowanie skrętów o przechyleniu powyżej 45° dla skrócenia trasy nad zabudowaniami",
+						"en": "Using bank angles above 45° to shorten the route over buildings"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Utrzymywanie dużej wysokości i unikanie przelotów na małej wysokości nad budynkami to podstawowa praktyka ograniczająca uciążliwość hałasu podczas holowania.",
+				"en": "Maintaining altitude and avoiding low passes over buildings is the fundamental practice for reducing noise nuisance during aerotow."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-109",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["preferred runway", "noise", "runway selection"],
+			"stem": {
+				"pl": "Co oznacza pojęcie \"preferowana droga startowa\" w kontekście ograniczania hałasu?",
+				"en": "What does the term 'preferred runway' mean in the context of noise abatement?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Pas o najlepszej nawierzchni dostępny na lotnisku",
+						"en": "The runway with the best surface available at the aerodrome"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Pas, którego użycie powoduje najmniejszy hałas nad obszarami wrażliwymi",
+						"en": "The runway whose use causes the least noise over noise-sensitive areas"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Pas przeznaczony wyłącznie dla lotnictwa wojskowego",
+						"en": "The runway designated exclusively for military aviation"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Pas startowy, z którego korzystają wyłącznie szybowce",
+						"en": "The runway used exclusively by gliders"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Preferowana droga startowa jest dobierana tak, aby odloty i lądowania odbywały się w kierunkach minimalnie oddziałujących hałasem na obszary zabudowane lub wrażliwe.",
+				"en": "A preferred runway is selected so that departures and arrivals occur in directions that minimise noise impact on built-up or noise-sensitive areas."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-110",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["curfew", "quiet hours", "night operations"],
+			"stem": {
+				"pl": "Co oznaczają na lotnisku godziny ciszy / cisza nocna (Quiet Hours / Curfew)?",
+				"en": "What do 'Quiet Hours / Curfew' designations mean at an aerodrome?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zakaz wszelkiej komunikacji radiowej w wyznaczonych godzinach",
+						"en": "A ban on all radio communication during designated hours"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Wyznaczone godziny, w których operacje lotnicze są zakazane lub ograniczone ze względu na hałas",
+						"en": "Designated hours during which flight operations are prohibited or restricted due to noise"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Czas przeznaczony na odpoczynek personelu naziemnego",
+						"en": "Time reserved for ground crew rest"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Godziny, w których radar przechodzi w tryb oszczędzania energii",
+						"en": "Hours during which the radar enters energy-saving mode"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Ciszę nocną (curfew) wprowadza się w celu ochrony okolicznych mieszkańców przed hałasem lotniczym w godzinach nocnych lub wczesnoporannych.",
+				"en": "Curfew (quiet hours) is introduced to protect nearby residents from aircraft noise during night or early morning hours."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-111",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["soaring", "thermal", "engine noise", "environment"],
+			"stem": {
+				"pl": "W jaki sposób lot żaglowy z wykorzystaniem termiki wpływa na ograniczenie hałasu szybowca wobec środowiska?",
+				"en": "How does soaring flight using thermals contribute to reducing a glider's environmental noise impact?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Termika zwiększa opór aerodynamiczny, obniżając prędkość i hałas",
+						"en": "Thermals increase aerodynamic drag, reducing speed and noise"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Szybowiec w locie żaglowym nie emituje hałasu silnikowego, co jest korzystne dla środowiska",
+						"en": "A glider in soaring flight emits no engine noise, which is environmentally beneficial"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Spiralne okrążenia w termice powodują rozproszenie hałasu aerodynamicznego",
+						"en": "Spiral circles in thermals cause dispersion of aerodynamic noise"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Lot w termice wymaga otwartych hamulców aerodynamicznych, co pochłania hałas",
+						"en": "Thermal flight requires open airbrakes, which absorb noise"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Szybowiec korzystający z nośności termicznej nie wymaga pracy silnika, dzięki czemu brak hałasu silnikowego czyni go jednym z najbardziej ekologicznych środków transportu lotniczego.",
+				"en": "A glider using thermal lift needs no engine, so the absence of engine noise makes it one of the most environmentally friendly forms of aviation."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-112",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["auxiliary engine", "TMG", "noise", "populated area"],
+			"stem": {
+				"pl": "Jakie działanie powinien podjąć pilot szybowca, gdy konieczne jest użycie silnika pomocniczego nad obszarem zabudowanym?",
+				"en": "What should a glider pilot do when it is necessary to operate the auxiliary engine over a populated area?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Uruchomić silnik na maksymalnych obrotach, aby jak najszybciej opuścić obszar",
+						"en": "Start the engine at maximum RPM to leave the area as quickly as possible"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Unikać lotu z pracującym silnikiem nad obszarami zabudowanymi, jeśli to możliwe; gdy konieczne - utrzymywać jak największą wysokość",
+						"en": "Avoid flying over populated areas with the engine running if possible; when necessary - maintain as much altitude as possible"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Wyłączyć silnik i szybować, aby ograniczyć hałas, niezależnie od bezpieczeństwa",
+						"en": "Switch off the engine and glide to reduce noise, regardless of safety"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Otworzyć owiewkę kokpitu, aby zmniejszyć hałas odbijany do kabiny",
+						"en": "Open the cockpit canopy to reduce noise reflected into the cabin"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Dobrą praktyką jest unikanie pracy silnika pomocniczego nad terenami zabudowanymi; gdy jest to niezbędne, należy utrzymywać możliwie największą wysokość, by zminimalizować hałas.",
+				"en": "Best practice is to avoid running the auxiliary engine over populated areas; when unavoidable, maintaining maximum possible altitude minimises noise impact."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-113",
+			"type": "mcq",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["wind direction", "runway selection", "safety", "noise abatement"],
+			"stem": {
+				"pl": "Jaką rolę odgrywa kierunek wiatru w wyborze drogi startowej pod kątem ograniczania hałasu?",
+				"en": "What role does wind direction play in runway selection from a noise abatement perspective?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Kierunek wiatru nie ma żadnego znaczenia dla wyboru drogi startowej",
+						"en": "Wind direction has no significance for runway selection"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Preferowana droga startowa jest zawsze wybierana pod wiatr, nawet jeśli zwiększa to hałas nad zabudową",
+						"en": "The preferred runway is always selected into wind, even if it increases noise over built-up areas"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Bezpieczeństwo (start pod wiatr) jest priorytetem, lecz tam gdzie warunki pozwalają, wybiera się kierunek ograniczający hałas nad zabudowaniami",
+						"en": "Safety (taking off into wind) is the priority, but where conditions allow, a direction minimising noise over built-up areas is chosen"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Start z wiatrem tylnym jest preferowany w procedurach ograniczania hałasu ze względu na krótszy rozbieg",
+						"en": "Tailwind take-off is preferred in noise abatement procedures due to a shorter ground roll"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Bezpieczeństwo zawsze ma pierwszeństwo, więc start odbywa się pod wiatr, jednak jeśli warunki na to pozwalają, wybiera się kierunek minimalizujący hałas nad terenami zabudowanymi.",
+				"en": "Safety always takes precedence, so take-off is into wind; however, where conditions permit, a direction is chosen that minimises noise over populated areas."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-114",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["low altitude", "residential", "safety", "procedure"],
+			"stem": {
+				"pl": "Co powinien zrobić pilot szybowca, gdy nieoczekiwanie znajdzie się na małej wysokości nad osiedlem mieszkaniowym?",
+				"en": "What should a glider pilot do when unexpectedly finding themselves at low altitude over a residential area?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Natychmiast wylądować na najbliższym trawniku, aby nie hałasować",
+						"en": "Immediately land on the nearest lawn to avoid making noise"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Jak najszybciej, bezpiecznie wznieść się i opuścić teren zabudowany, stosując możliwie najcichszy lot",
+						"en": "Safely gain altitude as quickly as possible and leave the built-up area, flying as quietly as possible"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Otworzyć hamulce aerodynamiczne, aby zmniejszyć hałas aerodynamiczny",
+						"en": "Open airbrakes to reduce aerodynamic noise"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Wykonać pełne okrążenie nad terenem zabudowanym w celu orientacji terenowej",
+						"en": "Perform a full orbit over the built-up area for terrain orientation"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Priorytetem jest bezpieczeństwo - pilot powinien opuścić teren zabudowany tak sprawnie jak to możliwe, minimalizując przy tym hałas i nie podejmując działań ryzykownych.",
+				"en": "Safety is the priority - the pilot should leave the built-up area as efficiently as possible, minimising noise without taking risky actions."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-115",
+			"type": "mcq",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["approach", "glide angle", "noise", "landing"],
+			"stem": {
+				"pl": "Które z poniższych stwierdzeń dotyczących podejść do lądowania w kontekście ograniczania hałasu jest PRAWIDŁOWE?",
+				"en": "Which of the following statements about approaches in the context of noise abatement is CORRECT?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Strome podejście zwiększa hałas na ziemi, dlatego zalecane są zawsze płaskie podejścia",
+						"en": "Steep approaches increase ground noise, so flat approaches are always recommended"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Podejście z dużą prędkością zmniejsza czas ekspozycji na hałas i jest zawsze preferowane",
+						"en": "High-speed approaches reduce noise exposure time and are always preferred"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Stromsze podejście tam, gdzie jest dozwolone, może zmniejszać hałas nad terenami pod ścieżką podejścia",
+						"en": "A steeper approach, where permitted, can reduce noise over areas beneath the approach path"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zamknięcie klap i hamulców aerodynamicznych podczas podejścia eliminuje hałas aerodynamiczny",
+						"en": "Closing flaps and airbrakes during approach eliminates aerodynamic noise"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Stromsze podejście powoduje, że statek powietrzny przelatuje nad terenami zabudowanymi na większej wysokości, co zmniejsza poziom hałasu docierający do mieszkańców.",
+				"en": "A steeper approach means the aircraft overflies populated areas at greater height, reducing the noise level reaching residents."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-ops-116",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["aero club", "aerodrome operator", "noise procedure", "environment"],
+			"stem": {
+				"pl": "Jakie działanie aeroklubu jako operatora lotniska szybowcowego jest przykładem proaktywnej ochrony środowiska akustycznego?",
+				"en": "Which action by an aero club as the operator of a glider aerodrome is an example of proactive acoustic environmental protection?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zakaz informowania pilotów o procedurach ograniczania hałasu w celu uproszczenia operacji",
+						"en": "Prohibiting informing pilots about noise abatement procedures to simplify operations"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Opracowanie i wdrożenie lokalnych procedur ograniczania hałasu oraz informowanie pilotów o obszarach wrażliwych",
+						"en": "Developing and implementing local noise abatement procedures and informing pilots about noise-sensitive areas"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Ograniczenie wszystkich operacji wyłącznie do godzin nocnych",
+						"en": "Restricting all operations exclusively to night hours"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Wydawanie pozwoleń na loty wyłącznie szybowcom klasy Standard",
+						"en": "Issuing flight permits exclusively to Standard class gliders"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Opracowanie lokalnych procedur ograniczania hałasu oraz informowanie pilotów o strefach wrażliwych to standardowe proaktywne działanie operatora lotniska na rzecz ochrony środowiska akustycznego.",
+				"en": "Developing local noise abatement procedures and informing pilots about sensitive areas is the standard proactive action of an aerodrome operator to protect the acoustic environment."
+			},
+			"source": "authored:spl"
+		}
+	]
+}

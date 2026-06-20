@@ -1,0 +1,6299 @@
+{
+	"schemaVersion": 1,
+	"id": "spl-com-bank",
+	"title": {
+		"pl": "Łączność (VFR RTF) - bank pytań",
+		"en": "Communications (VFR RTF) - question bank"
+	},
+	"subjectId": "COM",
+	"items": [
+		{
+			"id": "gen-com-1",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["ICAO phonetic alphabet", "alphabet", "SPL"],
+			"stem": {
+				"pl": "Które słowo fonetyczne ICAO odpowiada literze 'N'?",
+				"en": "Which ICAO phonetic word corresponds to the letter 'N'?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Norway",
+						"en": "Norway"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "November",
+						"en": "November"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Nancy",
+						"en": "Nancy"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Novak",
+						"en": "Novak"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Litera 'N' w alfabecie fonetycznym ICAO jest reprezentowana słowem 'November'.",
+				"en": "The letter 'N' in the ICAO phonetic alphabet is represented by the word 'November'."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-2",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["ICAO pronunciation", "numbers", "SPL"],
+			"stem": {
+				"pl": "Jak w standardowej frazeologii lotniczej nadaje się cyfrę '5'?",
+				"en": "How is the digit '5' transmitted in standard aviation phraseology?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Five",
+						"en": "Five"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Fife",
+						"en": "Fife"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Fife-er",
+						"en": "Fife-er"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Fifth",
+						"en": "Fifth"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Cyfra 5 w lotniczej radiotelefonii ICAO wymawiana jest jako 'FIFE', aby uniknąć pomylenia z 'NINE' (9).",
+				"en": "The digit 5 in ICAO aviation radiotelephony is pronounced 'FIFE' to avoid confusion with 'NINE' (9)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-3",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["ICAO phonetic alphabet", "alphabet", "SPL"],
+			"stem": {
+				"pl": "Które słowo fonetyczne ICAO odpowiada literze 'M'?",
+				"en": "Which ICAO phonetic word corresponds to the letter 'M'?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Metro",
+						"en": "Metro"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Mary",
+						"en": "Mary"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Mike",
+						"en": "Mike"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Malta",
+						"en": "Malta"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Litera 'M' w alfabecie fonetycznym ICAO jest reprezentowana słowem 'Mike'.",
+				"en": "The letter 'M' in the ICAO phonetic alphabet is represented by the word 'Mike'."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-4",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["ICAO phonetic alphabet", "alphabet", "SPL"],
+			"stem": {
+				"pl": "Jakie słowo fonetyczne ICAO reprezentuje literę 'R'?",
+				"en": "Which ICAO phonetic word represents the letter 'R'?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Romeo",
+						"en": "Romeo"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Roger",
+						"en": "Roger"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Robert",
+						"en": "Robert"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Radio",
+						"en": "Radio"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Litera 'R' w alfabecie fonetycznym ICAO jest reprezentowana słowem 'Romeo'.",
+				"en": "The letter 'R' in the ICAO phonetic alphabet is represented by the word 'Romeo'."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-5",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["ICAO pronunciation", "numbers", "SPL"],
+			"stem": {
+				"pl": "Jak w standardowej frazeologii lotniczej ICAO wymawia się cyfrę '9'?",
+				"en": "How is the digit '9' pronounced in ICAO standard aviation phraseology?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Nine",
+						"en": "Nine"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Niner",
+						"en": "Niner"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Neine",
+						"en": "Neine"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Nova",
+						"en": "Nova"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Cyfra 9 w ICAO wymawiana jest jako 'NINER', co odróżnia ją od słowa 'nine', które w niektórych językach brzmi podobnie do 'nein' (nie).",
+				"en": "Digit 9 in ICAO is pronounced 'NINER' to distinguish it from 'nine', which sounds similar to 'nein' (no) in German."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-6",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["phraseology", "readback", "SPL"],
+			"stem": {
+				"pl": "Co oznacza słowo 'WILCO' używane w łączności lotniczej?",
+				"en": "What does the word 'WILCO' mean in aviation communications?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zrozumiałem wszystkie słowa tej transmisji",
+						"en": "I have received all of your last transmission"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Zrozumiałem i wykonam instrukcję",
+						"en": "I understand and will comply"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Powtórz całą transmisję",
+						"en": "Repeat all your last transmission"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Oczekuję dalszych instrukcji",
+						"en": "I am waiting for further instructions"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "'WILCO' pochodzi od 'Will Comply' i oznacza, że pilot otrzymał instrukcję i zastosuje się do niej.",
+				"en": "'WILCO' derives from 'Will Comply' and means the pilot has received the instruction and will comply with it."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-7",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["ICAO phonetic alphabet", "alphabet", "SPL"],
+			"stem": {
+				"pl": "Które słowo fonetyczne ICAO odpowiada literze 'K'?",
+				"en": "Which ICAO phonetic word corresponds to the letter 'K'?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "King",
+						"en": "King"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Kilo",
+						"en": "Kilo"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Kappa",
+						"en": "Kappa"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Korea",
+						"en": "Korea"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Litera 'K' w alfabecie fonetycznym ICAO jest reprezentowana słowem 'Kilo'.",
+				"en": "The letter 'K' in the ICAO phonetic alphabet is represented by the word 'Kilo'."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-8",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["phraseology", "readback", "SPL"],
+			"stem": {
+				"pl": "Co oznacza słowo 'ROGER' w korespondencji radiotelefonicznej?",
+				"en": "What does the word 'ROGER' mean in radiotelephony communication?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zrozumiałem i wykonam polecenie",
+						"en": "I understand and will comply"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Potwierdź odbiór mojej transmisji",
+						"en": "Acknowledge receipt of my transmission"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Otrzymałem wszystkie słowa Twojej ostatniej transmisji",
+						"en": "I have received all words of your last transmission"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Oczekuję zgody na lądowanie",
+						"en": "I am awaiting landing clearance"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "'ROGER' oznacza jedynie potwierdzenie odbioru transmisji - nie oznacza zgody ani zamiaru wykonania polecenia.",
+				"en": "'ROGER' confirms receipt of the transmission only - it does not imply compliance or agreement."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-9",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["ICAO phonetic alphabet", "alphabet", "SPL"],
+			"stem": {
+				"pl": "Jakie słowo fonetyczne ICAO reprezentuje literę 'W'?",
+				"en": "Which ICAO phonetic word represents the letter 'W'?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Whiskey",
+						"en": "Whiskey"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "William",
+						"en": "William"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Warsaw",
+						"en": "Warsaw"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Wilco",
+						"en": "Wilco"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Litera 'W' w alfabecie fonetycznym ICAO jest reprezentowana słowem 'Whiskey'.",
+				"en": "The letter 'W' in the ICAO phonetic alphabet is represented by the word 'Whiskey'."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-10",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["phraseology", "runway", "numbers", "SPL"],
+			"stem": {
+				"pl": "Jak poprawnie nadaje się numer drogi startowej '27' w korespondencji lotniczej?",
+				"en": "How is runway number '27' correctly transmitted in aviation communications?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Two Seven",
+						"en": "Two Seven"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Twenty Seven",
+						"en": "Twenty Seven"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Runway Two-Seven",
+						"en": "Runway Two-Seven"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Two-Niner",
+						"en": "Two-Niner"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Numery dróg startowych podaje się cyfra po cyfrze: '27' to 'Two Seven', bez słowa 'runway' w treści samego numeru.",
+				"en": "Runway numbers are transmitted digit by digit: '27' is 'Two Seven', without the word 'runway' as part of the number itself."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-11",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["ICAO phonetic alphabet", "alphabet", "SPL"],
+			"stem": {
+				"pl": "Które słowo fonetyczne ICAO odpowiada literze 'Q'?",
+				"en": "Which ICAO phonetic word corresponds to the letter 'Q'?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Quebec",
+						"en": "Quebec"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Queen",
+						"en": "Queen"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Quick",
+						"en": "Quick"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Quota",
+						"en": "Quota"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Litera 'Q' w alfabecie fonetycznym ICAO jest reprezentowana słowem 'Quebec' (wymawiane KE-BEK).",
+				"en": "The letter 'Q' in the ICAO phonetic alphabet is represented by the word 'Quebec' (pronounced KE-BEK)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-12",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["phraseology", "readback", "SPL"],
+			"stem": {
+				"pl": "Co oznacza frazeologia 'SAY AGAIN' w korespondencji lotniczej?",
+				"en": "What does the phrase 'SAY AGAIN' mean in aviation communications?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Potwierdź odbiór",
+						"en": "Confirm receipt"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Powtórz całą lub wskazaną część transmisji",
+						"en": "Repeat all or the indicated part of your last transmission"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zmień częstotliwość",
+						"en": "Change frequency"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Oczekuję zezwolenia",
+						"en": "I am awaiting clearance"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "'SAY AGAIN' jest standardową frazą lotniczą proszącą o powtórzenie całości lub części poprzedniej transmisji.",
+				"en": "'SAY AGAIN' is the standard aviation phrase requesting repetition of all or part of the previous transmission."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-13",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["ICAO phonetic alphabet", "alphabet", "SPL"],
+			"stem": {
+				"pl": "Jak w alfabecie fonetycznym ICAO wymawia się literę 'X'?",
+				"en": "How is the letter 'X' pronounced in the ICAO phonetic alphabet?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "X-Ray",
+						"en": "X-Ray"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Xavier",
+						"en": "Xavier"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Extra",
+						"en": "Extra"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Xero",
+						"en": "Xero"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Litera 'X' w alfabecie fonetycznym ICAO jest reprezentowana słowem 'X-Ray'.",
+				"en": "The letter 'X' in the ICAO phonetic alphabet is represented by the word 'X-Ray'."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-14",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["phraseology", "altitude", "numbers", "SPL"],
+			"stem": {
+				"pl": "Jak w standardowej frazeologii ICAO nadaje się wysokość '1500 stóp'?",
+				"en": "How is the altitude '1500 feet' transmitted in ICAO standard phraseology?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "One thousand five hundred",
+						"en": "One thousand five hundred"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Fifteen hundred",
+						"en": "Fifteen hundred"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "One five zero zero",
+						"en": "One five zero zero"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "One-five hundred",
+						"en": "One-five hundred"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Wysokości do 9999 stóp podaje się pełnymi słowami: 'one thousand five hundred', a nie cyfra po cyfrze.",
+				"en": "Altitudes up to 9999 feet are transmitted as full words: 'one thousand five hundred', not digit by digit."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-15",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["ICAO phonetic alphabet", "alphabet", "SPL"],
+			"stem": {
+				"pl": "Które słowo fonetyczne ICAO odpowiada literze 'J'?",
+				"en": "Which ICAO phonetic word corresponds to the letter 'J'?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Juliett",
+						"en": "Juliett"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Jupiter",
+						"en": "Jupiter"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Jack",
+						"en": "Jack"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Juliet",
+						"en": "Juliet"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Litera 'J' w alfabecie fonetycznym ICAO jest reprezentowana słowem 'Juliett' (pisane z podwójnym 't').",
+				"en": "The letter 'J' in the ICAO phonetic alphabet is represented by the word 'Juliett' (spelled with a double 't')."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-16",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["phraseology", "emergency", "distress", "SPL"],
+			"stem": {
+				"pl": "Co oznacza słowo 'MAYDAY' wypowiedziane trzykrotnie na początku korespondencji?",
+				"en": "What does the word 'MAYDAY' spoken three times at the beginning of a transmission mean?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Pilna wiadomość dotycząca bezpieczeństwa statku powietrznego lub innego pojazdu",
+						"en": "Urgent message concerning the safety of an aircraft or other vehicle"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Sygnał niebezpieczeństwa - zagrożenie poważnym i bezpośrednim niebezpieczeństwem wymagającym natychmiastowej pomocy",
+						"en": "Distress signal - grave and imminent danger requiring immediate assistance"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Prośba o priorytetowe podejście do lądowania ze względu na ograniczone paliwo",
+						"en": "Request for priority approach due to low fuel"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Informacja o uszkodzeniu wyposażenia nawigacyjnego",
+						"en": "Information about navigation equipment failure"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "'MAYDAY MAYDAY MAYDAY' to sygnał niebezpieczeństwa oznaczający bezpośrednie zagrożenie życia wymagające natychmiastowej pomocy.",
+				"en": "'MAYDAY MAYDAY MAYDAY' is the distress signal indicating grave and imminent danger to life requiring immediate assistance."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-17",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["ICAO phonetic alphabet", "alphabet", "SPL"],
+			"stem": {
+				"pl": "Jak w alfabecie fonetycznym ICAO wymawia się literę 'G'?",
+				"en": "How is the letter 'G' pronounced in the ICAO phonetic alphabet?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Golf",
+						"en": "Golf"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "George",
+						"en": "George"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Germany",
+						"en": "Germany"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Gamma",
+						"en": "Gamma"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Litera 'G' w alfabecie fonetycznym ICAO jest reprezentowana słowem 'Golf'.",
+				"en": "The letter 'G' in the ICAO phonetic alphabet is represented by the word 'Golf'."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-18",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["phraseology", "frequency", "numbers", "SPL"],
+			"stem": {
+				"pl": "W jaki sposób w standardowej frazeologii ICAO nadaje się częstotliwość '121,5 MHz'?",
+				"en": "How is the frequency '121.5 MHz' transmitted in ICAO standard phraseology?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "One two one decimal five",
+						"en": "One two one decimal five"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "One two one point five",
+						"en": "One two one point five"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "One hundred twenty one and a half",
+						"en": "One hundred twenty one and a half"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "One-two-one-five",
+						"en": "One-two-one-five"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Częstotliwości radiowe podaje się cyfra po cyfrze, używając słowa 'DECIMAL' jako separatora dziesiętnego: 'one two one decimal five'. Słowo 'point' nie jest standardem ICAO.",
+				"en": "Radio frequencies are transmitted digit by digit using the word 'DECIMAL' for the decimal separator: 'one two one decimal five'. 'Point' is not the ICAO standard term."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-19",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["ICAO phonetic alphabet", "alphabet", "SPL"],
+			"stem": {
+				"pl": "Które słowo fonetyczne ICAO odpowiada literze 'Y'?",
+				"en": "Which ICAO phonetic word corresponds to the letter 'Y'?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Yankee",
+						"en": "Yankee"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Yellow",
+						"en": "Yellow"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Yoga",
+						"en": "Yoga"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "York",
+						"en": "York"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Litera 'Y' w alfabecie fonetycznym ICAO jest reprezentowana słowem 'Yankee'.",
+				"en": "The letter 'Y' in the ICAO phonetic alphabet is represented by the word 'Yankee'."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-20",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["readback", "take-off clearance", "SERA"],
+			"stem": {
+				"pl": "Które z poniższych zezwoleń ATC pilot MUSI bezwzględnie powtórzyć (readback)?",
+				"en": "Which of the following ATC clearances MUST a pilot always read back?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Informację o aktualnej pogodzie na lotnisku (ATIS)",
+						"en": "Current aerodrome weather information (ATIS)"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Zezwolenie na start",
+						"en": "Take-off clearance"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Informację o ciśnieniu QNH przekazaną jako element raportu pogodowego",
+						"en": "QNH information given as part of a weather report"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Ogólną informację o ruchu lotniczym w rejonie",
+						"en": "General traffic information in the area"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Zezwolenia na start i lądowanie, instrukcje dotyczące pasa startowego oraz nakazane zwolnienie drogi startowej należą do elementów wymagających obowiązkowego readback zgodnie z ICAO Doc 4444 / SERA.",
+				"en": "Take-off and landing clearances, runway-in-use instructions, and mandatory runway vacating instructions are among the items requiring a mandatory read-back per ICAO Doc 4444 / SERA."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-21",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["readback", "runway clearance", "SERA.8015"],
+			"stem": {
+				"pl": "Które elementy komunikatu ATC pilot jest ZOBOWIĄZANY powtórzyć słowo w słowo?",
+				"en": "Which elements of an ATC message is a pilot REQUIRED to read back verbatim?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zezwolenia na lądowanie, start i wejście na drogę startową",
+						"en": "Landing, take-off and runway entry clearances"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Informacje meteorologiczne i raporty PIREP",
+						"en": "Meteorological information and PIREP reports"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Informacje o aktywności obszarów restrykcyjnych przekazywane informacyjnie",
+						"en": "Information on active restricted areas given as advisory"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Ogłoszenia dotyczące zmiany służby kontroli na lotnisku",
+						"en": "Announcements of change of ATC service at the aerodrome"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Zezwolenia dotyczące drogi startowej (lądowanie, start, wjazd, przekraczanie) są wymienione wprost jako elementy wymagające readback w przepisach SERA.8015.",
+				"en": "Runway-related clearances (landing, take-off, entry, crossing) are explicitly listed as mandatory read-back items under SERA.8015."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-22",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["readback", "altitude", "heading"],
+			"stem": {
+				"pl": "Pilot otrzymuje od kontrolera polecenie: \"Utrzymaj 2500 ft QNH, kurs 270.\" Co musi zawierać obowiązkowy readback?",
+				"en": "A pilot receives the instruction: \"Maintain 2500 ft QNH, heading 270.\" What must the mandatory read-back contain?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Wyłącznie znak wywoławczy statku powietrznego",
+						"en": "Only the aircraft call sign"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Nakazaną wysokość i kurs oraz znak wywoławczy",
+						"en": "The assigned altitude and heading, plus the call sign"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Potwierdzenie słowem \"Wilco\" i znak wywoławczy",
+						"en": "Confirmation with \"Wilco\" and the call sign"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Powtórzenie jedynie nakazanego kursu, bo wysokość jest informacyjna",
+						"en": "Repetition of the assigned heading only, as the altitude is advisory"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Nakazane poziomy lotu i kursy należą do elementów wymagających pełnego powtórzenia, zatem pilot musi powtórzyć zarówno wysokość, kurs, jak i swój znak wywoławczy.",
+				"en": "Assigned levels and headings are mandatory read-back items, so the pilot must repeat both the altitude and heading together with the aircraft call sign."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-23",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["readback", "communication loop", "ATC"],
+			"stem": {
+				"pl": "Jaki jest główny cel procedury readback w łączności ATC?",
+				"en": "What is the primary purpose of the read-back procedure in ATC communications?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Umożliwienie nagrania rozmowy na taśmie kontrolera",
+						"en": "Enabling the controller to record the conversation on tape"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Zapewnienie, że pilot zrozumiał i prawidłowo odebrał zezwolenie lub instrukcję",
+						"en": "Ensuring the pilot correctly understood and received the clearance or instruction"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Potwierdzenie, że częstotliwość radiowa jest wolna od zakłóceń",
+						"en": "Confirming that the radio frequency is free from interference"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Spełnienie wymogu formalnego dokumentacji lotu",
+						"en": "Meeting the formal requirement for flight documentation"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Readback służy jako zamknięcie pętli komunikacyjnej, potwierdzające, że pilot odebrał i właściwie zrozumiał instrukcję lub zezwolenie ATC.",
+				"en": "The read-back closes the communication loop, confirming that the pilot has received and correctly understood the ATC instruction or clearance."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-24",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["readback", "controller duty", "error correction"],
+			"stem": {
+				"pl": "Pilot powtórzył zezwolenie ATC z błędem. Co powinien zrobić kontroler?",
+				"en": "A pilot read back an ATC clearance with an error. What should the controller do?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zignorować błąd, jeśli jest drobny i nie wpływa na bezpieczeństwo",
+						"en": "Ignore the error if it is minor and does not affect safety"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Natychmiast skorygować błąd i wymagać ponownego, poprawnego readback",
+						"en": "Immediately correct the error and require a correct read-back again"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Poinformować o błędzie po zakończeniu lotu, zapisując zdarzenie",
+						"en": "Inform about the error after the flight by recording the event"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Oczekiwać, że pilot sam zauważy błąd i poprawi readback",
+						"en": "Wait for the pilot to notice the error and correct the read-back"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Zgodnie z ICAO Doc 4444 kontroler musi natychmiast poprawić każdy błąd w readback i upewnić się, że pilot potwierdził poprawną wersję.",
+				"en": "Per ICAO Doc 4444, the controller must immediately correct any error in the read-back and ensure the pilot confirms the correct version."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-25",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["readback", "advisory information", "SERA"],
+			"stem": {
+				"pl": "Które z wymienionych instrukcji NIE wymaga obowiązkowego readback?",
+				"en": "Which of the following instructions does NOT require a mandatory read-back?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Nakazany poziom lotu",
+						"en": "Assigned flight level"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Zezwolenie na przekroczenie drogi startowej",
+						"en": "Clearance to cross a runway"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Nakazany kurs wektora radarowego",
+						"en": "Assigned radar vector heading"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Informacja o godzinie zachodu słońca podana przez kontrolera",
+						"en": "Sunset time information provided by the controller"
+					}
+				}
+			],
+			"answer": "d",
+			"explanation": {
+				"pl": "Informacje ogólne i doradcze, takie jak godzina zachodu słońca, nie są wymienione wśród elementów wymagających readback w przepisach SERA/ICAO.",
+				"en": "General advisory information such as sunset time is not among the items requiring a mandatory read-back under SERA/ICAO rules."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-26",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["readback", "radar vector", "heading"],
+			"stem": {
+				"pl": "Kontroler wydaje wektory radarowe i nakazuje: \"Skręć w lewo na kurs 180.\" Pilot powinien:",
+				"en": "The controller issues radar vectors and instructs: \"Turn left heading 180.\" The pilot should:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Odpowiedzieć \"Roger\" i wykonać skręt",
+						"en": "Reply \"Roger\" and execute the turn"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Powtórzyć nakazany kurs i znak wywoławczy, a następnie wykonać skręt",
+						"en": "Read back the assigned heading and call sign, then execute the turn"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zapytać o powód zmiany kursu przed wykonaniem manewru",
+						"en": "Ask for the reason of heading change before executing the manoeuvre"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Odpowiedzieć \"Wilco\" bez podania kursu",
+						"en": "Reply \"Wilco\" without stating the heading"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Nakazane kursy (wektory radarowe) są elementami wymagającymi readback, dlatego pilot musi powtórzyć kurs i swój znak wywoławczy.",
+				"en": "Assigned headings (radar vectors) are mandatory read-back items, so the pilot must repeat the heading and their call sign."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-27",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["readback", "landing clearance", "phraseology"],
+			"stem": {
+				"pl": "Które z poniższych zwrotów jest POPRAWNYM readback zezwolenia na lądowanie dla szybowca SP-1234?",
+				"en": "Which of the following phrases is the CORRECT read-back of a landing clearance for glider SP-1234?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "\"Roger, lądujemy, SP-1234\"",
+						"en": "\"Roger, landing, SP-1234\""
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "\"Zezwolenie na lądowanie pas 27, SP-1234\"",
+						"en": "\"Cleared to land runway 27, SP-1234\""
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "\"Wilco, SP-1234\"",
+						"en": "\"Wilco, SP-1234\""
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "\"Zrozumiałem, podchodzimy do lądowania\"",
+						"en": "\"Understood, on approach\""
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Readback zezwolenia na lądowanie powinien zawierać powtórzenie treści zezwolenia (wraz z numerem pasa) oraz znak wywoławczy statku powietrznego.",
+				"en": "The read-back of a landing clearance should include repetition of the clearance content (including runway number) and the aircraft call sign."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-28",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["readback", "transponder", "SSR", "SERA.8015"],
+			"stem": {
+				"pl": "Pilot otrzymuje SSR kod transpondera: \"Squawk 2347.\" Czy wymagany jest readback?",
+				"en": "The pilot receives a transponder SSR code: \"Squawk 2347.\" Is a read-back required?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Nie, kod transpondera nie wymaga readback",
+						"en": "No, a transponder code does not require a read-back"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Tak, kod transpondera jest elementem wymagającym obowiązkowego readback",
+						"en": "Yes, a transponder code is a mandatory read-back item"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Tak, ale tylko jeśli pilot nie jest pewny kodu",
+						"en": "Yes, but only if the pilot is unsure of the code"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Nie, wystarczy nastawić kod i potwierdzić słowem \"Roger\"",
+						"en": "No, it is sufficient to set the code and confirm with \"Roger\""
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Kody SSR transpondera są wprost wymienione w wykazie elementów wymagających obowiązkowego readback w przepisach SERA.8015.",
+				"en": "SSR transponder codes are explicitly listed among mandatory read-back items under SERA.8015."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-29",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["readback", "QNH", "altimeter setting"],
+			"stem": {
+				"pl": "Kontroler wydaje nastawę wysokościomierza: \"QNH 1013.\" Co powinien zrobić pilot?",
+				"en": "The controller issues an altimeter setting: \"QNH 1013.\" What should the pilot do?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Nastawić ciśnienie i potwierdzić słowem \"Wilco\"",
+						"en": "Set the pressure and confirm with \"Wilco\""
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Powtórzyć wartość QNH i swój znak wywoławczy",
+						"en": "Read back the QNH value and the aircraft call sign"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Przyjąć do wiadomości słowem \"Roger\" bez powtarzania wartości",
+						"en": "Acknowledge with \"Roger\" without repeating the value"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zapytać, czy QNH jest nastawiony na poziomie morza czy lotniska",
+						"en": "Ask whether QNH is referenced to sea level or aerodrome level"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Nastawa wysokościomierza (QNH) jest elementem wymagającym readback, dlatego pilot musi powtórzyć wartość ciśnienia wraz ze swoim znakiem wywoławczym.",
+				"en": "Altimeter settings (QNH) are mandatory read-back items, so the pilot must repeat the pressure value together with the call sign."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-30",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["readback", "airspace clearance", "class D"],
+			"stem": {
+				"pl": "Pilot otrzymuje zezwolenie na wejście do przestrzeni powietrznej klasy D. Czy wymagany jest readback granic i warunków zezwolenia?",
+				"en": "A pilot receives a clearance to enter class D airspace. Is a read-back of the clearance limits and conditions required?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Nie, zezwolenia na wejście do przestrzeni nie wymagają readback",
+						"en": "No, airspace entry clearances do not require a read-back"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Tak, zezwolenia kontroli ruchu lotniczego wymagają readback",
+						"en": "Yes, air traffic control clearances require a read-back"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Tak, ale tylko po zachodzie słońca",
+						"en": "Yes, but only after sunset"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Nie, wystarczy potwierdzenie słowem \"Affirm\"",
+						"en": "No, confirmation with \"Affirm\" is sufficient"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Zezwolenia ATC (w tym na wejście do kontrolowanej przestrzeni powietrznej) wymagają readback potwierdzającego, że pilot odebrał i zrozumiał warunki zezwolenia.",
+				"en": "ATC clearances (including those to enter controlled airspace) require a read-back confirming the pilot received and understood the clearance conditions."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-31",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["readback", "line up and wait", "runway"],
+			"stem": {
+				"pl": "Które ze zwrotów jest BŁĘDNĄ formą readback polecenia \"Runway 09, line up and wait\"?",
+				"en": "Which phrase is an INCORRECT form of read-back for the instruction \"Runway 09, line up and wait\"?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "\"Runway 09, line up and wait, SP-1234\"",
+						"en": "\"Runway 09, line up and wait, SP-1234\""
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "\"Lining up runway 09, SP-1234\"",
+						"en": "\"Lining up runway 09, SP-1234\""
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "\"Roger, SP-1234\"",
+						"en": "\"Roger, SP-1234\""
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "\"Runway 09, ustawiamy się i oczekujemy, SP-1234\"",
+						"en": "\"Runway 09, lining up and waiting, SP-1234\""
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Samo \"Roger\" nie jest readback - nie zawiera treści instrukcji; zezwolenie na wjazd na pas startowy wymaga pełnego powtórzenia z numerem pasa.",
+				"en": "\"Roger\" alone is not a read-back - it does not repeat the instruction content; runway entry clearances require full repetition including the runway designator."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-32",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["readback", "elements", "call sign"],
+			"stem": {
+				"pl": "Co NIE jest wymaganym elementem readback zezwolenia ATC?",
+				"en": "What is NOT a required element of an ATC clearance read-back?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Znak wywoławczy statku powietrznego",
+						"en": "Aircraft call sign"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Treść zezwolenia lub instrukcji",
+						"en": "Content of the clearance or instruction"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Imię i nazwisko kontrolera wydającego zezwolenie",
+						"en": "Name of the controller issuing the clearance"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Nakazane poziomy lotu, kursy lub kody transpondera",
+						"en": "Assigned flight levels, headings or transponder codes"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Readback musi zawierać treść zezwolenia i znak wywoławczy pilota; imię kontrolera nie jest elementem wymaganym przez żadną procedurę RTF.",
+				"en": "A read-back must include the clearance content and the pilot's call sign; the controller's name is not required by any RTF procedure."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-33",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["readback", "multiple elements", "frequency"],
+			"stem": {
+				"pl": "Pilot otrzymuje instrukcję: \"Wznoszenie do 3000 ft QNH, po osiągnięciu skręt w lewo na kurs 090, kontakt z Warszawa Radar 128.725.\" Które elementy wymagają readback?",
+				"en": "A pilot receives: \"Climb to 3000 ft QNH, after reaching turn left heading 090, contact Warsaw Radar 128.725.\" Which elements require a read-back?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Tylko częstotliwość, bo jest najważniejsza",
+						"en": "Only the frequency, as it is the most important"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Wysokość, kurs i częstotliwość - wszystkie trzy",
+						"en": "Altitude, heading and frequency - all three"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Tylko wysokość i kurs; częstotliwości nie trzeba powtarzać",
+						"en": "Altitude and heading only; frequency does not need to be repeated"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Żaden z elementów, wystarczy \"Roger, SP-1234\"",
+						"en": "None of them; \"Roger, SP-1234\" is sufficient"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Nakazane poziomy lotu, kursy i częstotliwości do nastawienia należą do elementów wymagających readback, więc pilot musi powtórzyć wszystkie trzy.",
+				"en": "Assigned levels, headings and frequencies to be set are all mandatory read-back items, so the pilot must repeat all three."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-34",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["readback", "Wilco", "phraseology"],
+			"stem": {
+				"pl": "Dlaczego sam zwrot \"Wilco\" (Will comply) NIE zastępuje readback?",
+				"en": "Why does the phrase \"Wilco\" (Will comply) alone NOT substitute for a read-back?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Bo \"Wilco\" jest zarezerwowane wyłącznie dla komunikacji wojskowej",
+						"en": "Because \"Wilco\" is reserved exclusively for military communications"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Bo \"Wilco\" potwierdza jedynie intencję wykonania, nie dowodzi, że treść zezwolenia została poprawnie odebrana",
+						"en": "Because \"Wilco\" only confirms intention to comply, not that the clearance content was correctly received"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Bo \"Wilco\" wolno używać tylko wtedy, gdy pilot nie zrozumiał komunikatu",
+						"en": "Because \"Wilco\" may only be used when the pilot did not understand the message"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Bo \"Wilco\" oznacza odmowę wykonania polecenia w cywilnym lotnictwie",
+						"en": "Because \"Wilco\" means refusal to comply in civil aviation"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Readback wymaga powtórzenia treści, aby kontroler mógł wykryć ewentualne błędy odbioru; \"Wilco\" nie dostarcza tej weryfikacji.",
+				"en": "A read-back requires repeating the content so the controller can detect any reception errors; \"Wilco\" does not provide that verification."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-35",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["readback", "runway crossing", "phraseology"],
+			"stem": {
+				"pl": "Pilot otrzymuje zezwolenie na przekroczenie czynnej drogi startowej 27L. Który readback jest prawidłowy?",
+				"en": "A pilot receives clearance to cross active runway 27L. Which read-back is correct?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "\"Przekraczamy 27L, SP-1234\"",
+						"en": "\"Crossing 27L, SP-1234\""
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "\"Roger\"",
+						"en": "\"Roger\""
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "\"Potwierdzam zezwolenie, SP-1234\"",
+						"en": "\"Confirming clearance, SP-1234\""
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "\"Wilco, rozumiemy, SP-1234\"",
+						"en": "\"Wilco, understood, SP-1234\""
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Readback zezwolenia na przekroczenie drogi startowej musi zawierać numer pasa (27L) oraz znak wywoławczy statku powietrznego.",
+				"en": "A read-back of a runway crossing clearance must include the runway designator (27L) and the aircraft call sign."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-36",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["readback", "frequency change", "phraseology"],
+			"stem": {
+				"pl": "Kontroler podaje zmianę częstotliwości: \"Skontaktuj się z Kraków Informacja 128.55.\" Co jest właściwym readback?",
+				"en": "The controller gives a frequency change: \"Contact Krakow Information 128.55.\" What is the correct read-back?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "\"128.55, Kraków Informacja, SP-1234\"",
+						"en": "\"128.55, Krakow Information, SP-1234\""
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "\"Roger, zmieniam częstotliwość\"",
+						"en": "\"Roger, changing frequency\""
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "\"Wilco, SP-1234\"",
+						"en": "\"Wilco, SP-1234\""
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "\"Kraków Informacja, SP-1234\"",
+						"en": "\"Krakow Information, SP-1234\""
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Nakazane częstotliwości wymagają readback zawierającego powtórzenie częstotliwości oraz znaku wywoławczego pilota.",
+				"en": "Assigned frequencies require a read-back including repetition of the frequency, plus the pilot's call sign."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-37",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["readback", "take-off clearance", "glider", "QNH"],
+			"stem": {
+				"pl": "Szybowiec otrzymuje zezwolenie: \"Cleared for take-off, runway 27, QNH 1018.\" Jakie elementy powinien pilot powtórzyć?",
+				"en": "A glider receives the clearance: \"Cleared for take-off, runway 27, QNH 1018.\" Which elements should the pilot read back?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Tylko numer pasa startowego",
+						"en": "Runway number only"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Treść zezwolenia na start, QNH oraz znak wywoławczy szybowca",
+						"en": "The take-off clearance, QNH and glider call sign"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Tylko rodzaj operacji i znak wywoławczy",
+						"en": "Type of operation and call sign only"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Readback nie jest wymagany dla zezwoleń na start",
+						"en": "Read-back is not required for take-off clearances"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Zezwolenie na start oraz nastawa QNH są elementami wymagającymi readback, więc pilot powtarza oba wraz ze znakiem wywoławczym.",
+				"en": "A take-off clearance and QNH setting are both mandatory read-back items, so the pilot repeats both with the call sign."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-38",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["readback", "controller action", "missing readback"],
+			"stem": {
+				"pl": "Kontroler zauważył, że pilot nie powtórzył nakazanego poziomu lotu. Jakie działanie powinien podjąć?",
+				"en": "The controller noticed that the pilot did not read back the assigned flight level. What action should the controller take?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Odnotować incydent w dzienniku i kontynuować pracę bez interwencji",
+						"en": "Record the incident in the log and continue without intervention"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Zażądać readback brakującego elementu: \"Confirm level\"",
+						"en": "Request a read-back of the missing element: \"Confirm level\""
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Natychmiast wydać polecenie wznoszenia do zapasowego poziomu lotu",
+						"en": "Immediately issue a climb instruction to an alternate flight level"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Przekazać ruch innemu kontrolerowi, by uniknąć nieporozumień",
+						"en": "Transfer the traffic to another controller to avoid misunderstanding"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Jeżeli pilot pominie element wymagający readback, kontroler powinien zażądać jego potwierdzenia, np. \"Confirm level\", zgodnie z procedurami ICAO.",
+				"en": "If the pilot omits a mandatory read-back item, the controller should request its confirmation, e.g. \"Confirm level\", in accordance with ICAO procedures."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-39",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["call-sign", "full", "registration"],
+			"stem": {
+				"pl": "Jak brzmi pełny znak wywoławczy statku powietrznego zarejestrowanego jako SP-1234?",
+				"en": "What is the full radiotelephony call sign of an aircraft registered as SP-1234?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Sierra Papa jeden dwa trzy cztery",
+						"en": "Sierra Papa one two three four"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "SP tysiąc dwieście trzydzieści cztery",
+						"en": "SP one thousand two hundred thirty four"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Sierra Papa dwanaście trzydzieści cztery",
+						"en": "Sierra Papa twelve thirty four"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "SP jeden dwa trzy cztery",
+						"en": "SP one two three four"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Zgodnie z ICAO Doc 9432 znaki rejestracyjne w łączności fonicznej wymawia się literami alfabetu fonetycznego ICAO, a cyfry osobno jako pojedyncze cyfry.",
+				"en": "According to ICAO Doc 9432, registration marks in radiotelephony are spoken using the ICAO phonetic alphabet and digits are spoken individually."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-40",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["call-sign", "abbreviated", "ATC-initiation"],
+			"stem": {
+				"pl": "W jakich okolicznościach pilot może zastosować skrócony znak wywoławczy?",
+				"en": "Under what circumstances may a pilot use an abbreviated call sign?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zawsze, gdy pilotowi jest wygodniej go używać",
+						"en": "Whenever the pilot finds it more convenient"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Dopiero po tym, jak organ ATC skróci znak wywoławczy statku powietrznego",
+						"en": "Only after the ATC unit has abbreviated the aircraft's call sign"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Po wykonaniu pierwszego raportu pozycji",
+						"en": "After making the first position report"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Gdy bieżąca łączność trwa ponad 10 minut",
+						"en": "When the current communication has lasted more than 10 minutes"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Skrócony znak wywoławczy może być stosowany przez pilota dopiero wtedy, gdy organ ATC jako pierwszy zastosuje skróconą formę znaku wywoławczego danego statku.",
+				"en": "The abbreviated call sign may only be used by the pilot after the ATC unit has first initiated the use of the abbreviated form."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-41",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["call-sign", "abbreviated", "formation"],
+			"stem": {
+				"pl": "Które z poniższych jest poprawnym skróconym znakiem wywoławczym dla samolotu SP-XYZ?",
+				"en": "Which of the following is the correct abbreviated call sign for aircraft SP-XYZ?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "X-Ray Yankee Zulu",
+						"en": "X-Ray Yankee Zulu"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Sierra X-Ray Yankee Zulu",
+						"en": "Sierra X-Ray Yankee Zulu"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Sierra Yankee Zulu",
+						"en": "Sierra Yankee Zulu"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Papa Yankee Zulu",
+						"en": "Papa Yankee Zulu"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Skrócony znak wywoławczy tworzy się z pierwszego znaku znaku rejestracyjnego (S = Sierra) oraz co najmniej dwóch ostatnich znaków (YZ = Yankee Zulu).",
+				"en": "The abbreviated call sign is formed from the first character of the registration (S = Sierra) and at least the last two characters (YZ = Yankee Zulu)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-42",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["initial-call", "establishing-contact", "procedure"],
+			"stem": {
+				"pl": "Pilot nawiązuje łączność z kontrolą zbliżania. Jak powinna brzmieć jego pierwsza transmisja (fraza wywoławcza)?",
+				"en": "A pilot is establishing contact with approach control. What should his first transmission (call) consist of?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Nazwa stacji wywoływanej, następnie własny znak wywoławczy i prośba o pozwolenie",
+						"en": "Name of the called station, then own call sign and a request for clearance"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Wyłącznie własny znak wywoławczy",
+						"en": "Own call sign only"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Nazwa stacji wywoływanej, następnie własny znak wywoławczy",
+						"en": "Name of the called station, then own call sign"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Własny znak wywoławczy, następnie nazwa stacji wywoływanej",
+						"en": "Own call sign, then name of the called station"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Przy ustanawianiu łączności nadaje się najpierw nazwę wywoływanej stacji, a następnie własny znak wywoławczy, bez dodatkowych elementów w pierwszym wywołaniu.",
+				"en": "When establishing contact, the called station's name is transmitted first, followed by own call sign, with no additional elements in the initial call."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-43",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["frequency-change", "readback", "procedure"],
+			"stem": {
+				"pl": "Organ ATC nadaje: 'SP-ATC, Warszawa Zbliżanie, nawiąż na 119,300'. Jakie informacje potwierdzasz w odpowiedzi?",
+				"en": "ATC transmits: 'SP-ATC, Warsaw Approach, contact on 119.300'. What information do you confirm in your reply?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Wyłącznie nową częstotliwość",
+						"en": "The new frequency only"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Nową częstotliwość i własny znak wywoławczy",
+						"en": "New frequency and own call sign"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Nazwę organu ATC i własny znak wywoławczy",
+						"en": "Name of the ATC unit and own call sign"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Wyłącznie własny znak wywoławczy",
+						"en": "Own call sign only"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Przy zmianie częstotliwości pilot potwierdza nową częstotliwość i własny znak wywoławczy, aby organ ATC miał pewność, że polecenie zostało właściwie odebrane.",
+				"en": "When changing frequency the pilot reads back the new frequency and own call sign to confirm the instruction was correctly received by ATC."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-44",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["phraseology", "go-ahead", "meaning"],
+			"stem": {
+				"pl": "Co oznacza zwrot 'Go ahead' użyty przez organ ATC?",
+				"en": "What does the phrase 'Go ahead' used by ATC mean?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zezwolenie na wykonanie manewru",
+						"en": "Clearance to perform a manoeuvre"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Zachęta do kontynuowania jazdy po drodze kołowania",
+						"en": "Invitation to continue taxiing on the taxiway"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zaproszenie nadawcy do kontynuowania transmisji",
+						"en": "Invitation for the caller to continue their transmission"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Potwierdzenie odbioru poprzedniej transmisji",
+						"en": "Acknowledgement of the previous transmission"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Frazologia ICAO: 'Go ahead' oznacza zaproszenie rozmówcy do kontynuowania przerwanej lub oczekującej transmisji.",
+				"en": "ICAO phraseology: 'Go ahead' is an invitation for the caller to proceed with their interrupted or pending transmission."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-45",
+			"type": "mcq",
+			"microSkill": "abbreviation",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["WILCO", "phraseology", "compliance"],
+			"stem": {
+				"pl": "Jakie jest znaczenie słowa kodowego 'WILCO' w lotniczej łączności radiowej?",
+				"en": "What is the meaning of the codeword 'WILCO' in aviation radiotelephony?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Odebrałem i potwierdzam",
+						"en": "Received and confirmed"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Rozumiem i zastosuję się do polecenia",
+						"en": "I understand and will comply with the instruction"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Powtórz swoją transmisję",
+						"en": "Repeat your transmission"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zrozumiałem",
+						"en": "I understand"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "WILCO (Will Comply) oznacza, że pilot odebrał, zrozumiał i zastosuje się do wydanego polecenia, łącząc w sobie 'ROGER' i deklarację wykonania.",
+				"en": "WILCO (Will Comply) means the pilot has received, understood, and will comply with the instruction; it combines 'ROGER' with a declaration of compliance."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-46",
+			"type": "mcq",
+			"microSkill": "abbreviation",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["ROGER", "phraseology", "receipt"],
+			"stem": {
+				"pl": "Co oznacza frazologia 'ROGER' w łączności radiowej?",
+				"en": "What does 'ROGER' mean in radiotelephony?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Odebrałem ostatnią transmisję i stosuję się do niej",
+						"en": "I have received your last transmission and will comply"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Odebrałem ostatnią transmisję (bez gwarancji zastosowania się)",
+						"en": "I have received your last transmission (no implication of compliance)"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zgadzam się z treścią transmisji",
+						"en": "I agree with the content of the transmission"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Moja transmisja jest zakończona",
+						"en": "My transmission is complete"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "ROGER potwierdza jedynie odbiór ostatniej transmisji i nie zawiera zobowiązania do zastosowania się do polecenia, w przeciwieństwie do WILCO.",
+				"en": "ROGER confirms only receipt of the last transmission and does not imply compliance, unlike WILCO."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-47",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["initial-call", "tower", "sequence"],
+			"stem": {
+				"pl": "Które sformułowanie jest poprawne przy pierwszym nawiązaniu łączności z wieżą kontroli lotniska przez szybowiec SP-9ABC?",
+				"en": "Which phrasing is correct when a glider SP-9ABC makes first contact with the aerodrome control tower?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Sierra Papa 9 Alpha Bravo Charlie, proszę o odpowiedź",
+						"en": "Sierra Papa 9 Alpha Bravo Charlie, please respond"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Wieża, Sierra Papa 9 Alpha Bravo Charlie",
+						"en": "Tower, Sierra Papa 9 Alpha Bravo Charlie"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Sierra Papa 9 Alpha Bravo Charlie, Wieża",
+						"en": "Sierra Papa 9 Alpha Bravo Charlie, Tower"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Wieża Wieża, Sierra Papa 9 Alpha Bravo Charlie, nawiązuję łączność",
+						"en": "Tower Tower, Sierra Papa 9 Alpha Bravo Charlie, establishing contact"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Standardowa kolejność pierwszego wywołania to nazwa wywoływanej stacji, a następnie własny znak wywoławczy, bez dodatkowych zwrotów.",
+				"en": "The standard sequence for an initial call is the name of the called station followed by own call sign, without additional phrases."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-48",
+			"type": "mcq",
+			"microSkill": "abbreviation",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["ATC", "abbreviation", "ICAO"],
+			"stem": {
+				"pl": "Co oznacza skrót 'ATC' w lotnictwie?",
+				"en": "What does the abbreviation 'ATC' stand for in aviation?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Air Traffic Control",
+						"en": "Air Traffic Control"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Air Traffic Communication",
+						"en": "Air Traffic Communication"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Aerodrome Traffic Circuit",
+						"en": "Aerodrome Traffic Circuit"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Automatic Terminal Control",
+						"en": "Automatic Terminal Control"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "ATC to standardowy skrót ICAO oznaczający Air Traffic Control, czyli służbę kontroli ruchu lotniczego.",
+				"en": "ATC is the standard ICAO abbreviation for Air Traffic Control, the service responsible for managing aircraft movements."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-49",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["STANDBY", "phraseology", "waiting"],
+			"stem": {
+				"pl": "Jakie jest znaczenie zwrotu 'STANDBY' w łączności lotniczej?",
+				"en": "What does 'STANDBY' mean in aviation communications?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Twoja transmisja jest niewyraźna, powtórz",
+						"en": "Your transmission is unclear, repeat"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Czekaj, skontaktuję się z tobą",
+						"en": "Wait, I will call you"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zatrzymaj się natychmiast",
+						"en": "Stop immediately"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Twój wniosek jest odrzucony",
+						"en": "Your request is denied"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "STANDBY instruuje stację wzywającą, aby poczekała na nawiązanie łączności przez wywoływaną stację i nie wymaga potwierdzenia.",
+				"en": "STANDBY instructs the calling station to wait and that the called station will initiate contact; no reply is required."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-50",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["call-sign", "abbreviated", "switching"],
+			"stem": {
+				"pl": "W którym momencie pilot szybowca może zrezygnować z używania pełnego znaku wywoławczego i przejść na skrócony?",
+				"en": "At what point may a glider pilot stop using the full call sign and switch to the abbreviated version?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Po pierwszym udanym wywołaniu stacji",
+						"en": "After the first successful call to the station"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Gdy tylko zostanie nawiązana dwustronna łączność",
+						"en": "As soon as two-way communication is established"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Gdy organ ATC po raz pierwszy użyje skróconego znaku wywoławczego pilota",
+						"en": "When the ATC unit first uses the pilot's abbreviated call sign"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Wyłącznie za wyraźnym zezwoleniem organu ATC",
+						"en": "Only with explicit permission from the ATC unit"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Przejście na skrócony znak wywoławczy jest dozwolone dla pilota dopiero od momentu, gdy sam organ ATC po raz pierwszy użyje tej skróconej formy w korespondencji.",
+				"en": "The pilot may switch to the abbreviated call sign only from the moment the ATC unit itself first uses that abbreviated form in correspondence."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-51",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["readback", "clearance", "acknowledgement"],
+			"stem": {
+				"pl": "Jak pilot powinien potwierdzić odebranie zezwolenia (clearance) od kontrolera?",
+				"en": "How should a pilot acknowledge receipt of a clearance from a controller?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Wymawiając jedynie 'ROGER'",
+						"en": "By saying 'ROGER' only"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Powtarzając treść zezwolenia (readback) i kończąc własnym znakiem wywoławczym",
+						"en": "By reading back the clearance content and ending with own call sign"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Wymawiając 'WILCO' i swój znak wywoławczy",
+						"en": "By saying 'WILCO' and own call sign"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Wymawiając jedynie 'Potwierdzam'",
+						"en": "By saying 'Confirmed' only"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Zezwolenia kontroli ruchu lotniczego wymagają odczytania zwrotnego (readback): pilot powtarza kluczowe elementy zezwolenia i kończy własnym znakiem wywoławczym.",
+				"en": "ATC clearances require a readback; the pilot repeats the key elements of the clearance and ends with own call sign."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-52",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["STANDBY", "ground-station", "procedure"],
+			"stem": {
+				"pl": "Co powinna nadać stacja naziemna, gdy nie może natychmiast odpowiedzieć na wywołanie statku powietrznego?",
+				"en": "What should a ground station transmit when it cannot immediately respond to an aircraft's call?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Nic - cisza radiowa jest sygnałem oczekiwania",
+						"en": "Nothing - radio silence is the waiting signal"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Znak wywoławczy statku powietrznego i słowo STANDBY",
+						"en": "The aircraft call sign and the word STANDBY"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Słowo WAIT i czas oczekiwania w minutach",
+						"en": "The word WAIT and the waiting time in minutes"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Własny znak wywoławczy i słowo WAIT",
+						"en": "Own call sign and the word WAIT"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Gdy stacja nie może natychmiast odpowiedzieć, powinna nadać znak wywoławczy wzywającego statku i słowo STANDBY, dając znać, że wywołanie zostało odebrane.",
+				"en": "When a station cannot immediately respond, it should transmit the calling aircraft's call sign and the word STANDBY to indicate the call has been received."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-53",
+			"type": "mcq",
+			"microSkill": "abbreviation",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["phonetic-alphabet", "ICAO", "letter-C"],
+			"stem": {
+				"pl": "Jak w alfabecie fonetycznym ICAO wymawia się literę 'C'?",
+				"en": "How is the letter 'C' pronounced in the ICAO phonetic alphabet?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Charlie",
+						"en": "Charlie"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Coca",
+						"en": "Coca"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Chicago",
+						"en": "Chicago"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Cuba",
+						"en": "Cuba"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "W alfabecie fonetycznym ICAO litera C to 'Charlie'; jest to standardowe oznaczenie obowiązujące w całym lotnictwie cywilnym.",
+				"en": "In the ICAO phonetic alphabet the letter C is 'Charlie'; this is the standard designation used throughout civil aviation."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-54",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["frequency-change", "readback", "format"],
+			"stem": {
+				"pl": "Organ ATC nadaje: 'SP-ABC, zmień na 123,45'. Pilot powinien odpowiedzieć:",
+				"en": "ATC transmits: 'SP-ABC, change to 123.45'. The pilot should reply:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "123,45, SP-ABC",
+						"en": "123.45, SP-ABC"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Zmieniam na 123,45",
+						"en": "Changing to 123.45"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "ROGER SP-ABC",
+						"en": "ROGER SP-ABC"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "123,45, ROGER",
+						"en": "123.45, ROGER"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Przy zmianie częstotliwości wymagany jest readback nowej częstotliwości zakończony własnym znakiem wywoławczym.",
+				"en": "When changing frequency a readback of the new frequency is required, ended with own call sign."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-55",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["SAY AGAIN", "phraseology", "clarification"],
+			"stem": {
+				"pl": "Którego z poniższych zwrotów pilot powinien użyć, gdy nie rozumie transmisji organu ATC?",
+				"en": "Which of the following phrases should a pilot use when he does not understand an ATC transmission?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "SAY AGAIN",
+						"en": "SAY AGAIN"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "REPEAT",
+						"en": "REPEAT"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "AGAIN PLEASE",
+						"en": "AGAIN PLEASE"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "PLEASE REPEAT",
+						"en": "PLEASE REPEAT"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "W frazologii ICAO żądanie powtórzenia transmisji lub jej części wyraża się zwrotem 'SAY AGAIN'; słowo 'REPEAT' jest unikane w lotnictwie.",
+				"en": "In ICAO phraseology a request to repeat a transmission or part of it is expressed as 'SAY AGAIN'; the word 'REPEAT' is avoided in aviation."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-56",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["call-sign", "abbreviated", "numeric-registration"],
+			"stem": {
+				"pl": "Szybowiec ma znaki rejestracyjne SP-3456. Jak brzmi jego skrócony znak wywoławczy?",
+				"en": "A glider has the registration SP-3456. What is its abbreviated call sign?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Sierra Papa trzy cztery pięć sześć",
+						"en": "Sierra Papa three four five six"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Papa pięć sześć",
+						"en": "Papa five six"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Sierra pięć sześć",
+						"en": "Sierra five six"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "SP pięć sześć",
+						"en": "SP five six"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Skrócony znak wywoławczy dla SP-3456 to pierwszy znak rejestracji (S = Sierra) oraz dwa ostatnie znaki (56 = pięć sześć), czyli Sierra pięć sześć.",
+				"en": "The abbreviated call sign for SP-3456 is the first character of the registration (S = Sierra) plus the last two characters (56 = five six), giving Sierra five six."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-57",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["VHF", "frequency_range", "SPL"],
+			"stem": {
+				"pl": "Jaki jest zakres częstotliwości pasma VHF używanego w lotniczej łączności radiowej?",
+				"en": "What is the frequency range of the VHF band used in aeronautical radio communication?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "108–137 MHz",
+						"en": "108–137 MHz"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "118–137 MHz",
+						"en": "118–137 MHz"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "108–118 MHz",
+						"en": "108–118 MHz"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "136–174 MHz",
+						"en": "136–174 MHz"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Lotnicza łączność radiowa VHF jest prowadzona w zakresie 118–137 MHz (podpasmo ruchome lotnicze).",
+				"en": "Aeronautical VHF communication is conducted in the range 118–137 MHz (aeronautical mobile sub-band)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-58",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["distress_frequency", "121.5", "SPL"],
+			"stem": {
+				"pl": "Jaka jest lotnicza częstotliwość niebezpieczeństwa i alarmowa dla łączności głosowej VHF?",
+				"en": "What is the aeronautical VHF distress and emergency frequency for voice communication?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "121,5 MHz",
+						"en": "121.5 MHz"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "123,45 MHz",
+						"en": "123.45 MHz"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "126,9 MHz",
+						"en": "126.9 MHz"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "122,8 MHz",
+						"en": "122.8 MHz"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Częstotliwość 121,5 MHz jest międzynarodową częstotliwością niebezpieczeństwa i alarmową w lotnictwie cywilnym.",
+				"en": "121.5 MHz is the international aeronautical distress and emergency frequency for civil aviation."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-59",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["SSR", "transponder", "7500", "hijack"],
+			"stem": {
+				"pl": "Jaki kod transpondera (SSR) pilot powinien nastawić w przypadku bezprawnej ingerencji w lot (np. porwanie)?",
+				"en": "Which SSR transponder code should a pilot set in case of unlawful interference (e.g. hijacking)?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "7500",
+						"en": "7500"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "7600",
+						"en": "7600"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "7700",
+						"en": "7700"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "7000",
+						"en": "7000"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Kod 7500 oznacza bezprawną ingerencję w lot i jest rozpoznawany przez służby kontroli ruchu lotniczego jako sygnał porwania.",
+				"en": "Code 7500 indicates unlawful interference and is recognized by ATC as a hijack signal."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-60",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["SSR", "transponder", "7600", "NORDO"],
+			"stem": {
+				"pl": "Jaki kod transpondera (SSR) pilot powinien nastawić w przypadku utraty łączności radiowej?",
+				"en": "Which SSR transponder code should a pilot set in case of radio communication failure?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "7500",
+						"en": "7500"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "7600",
+						"en": "7600"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "7700",
+						"en": "7700"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "2000",
+						"en": "2000"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Kod 7600 sygnalizuje utratę łączności radiowej (NORDO) i informuje ATC o braku kontaktu głosowego z pilotem.",
+				"en": "Code 7600 signals radio communication failure (NORDO), informing ATC that voice contact with the pilot has been lost."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-61",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["SSR", "transponder", "7700", "emergency"],
+			"stem": {
+				"pl": "Jaki kod transpondera (SSR) pilot powinien nastawić w przypadku ogólnego stanu niebezpieczeństwa (np. pożar na pokładzie)?",
+				"en": "Which SSR transponder code should a pilot set in case of a general emergency (e.g. fire on board)?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "7500",
+						"en": "7500"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "7600",
+						"en": "7600"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "7700",
+						"en": "7700"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "7000",
+						"en": "7000"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Kod 7700 oznacza stan niebezpieczeństwa (emergency) i nakazuje ATC priorytetowe traktowanie tego statku powietrznego.",
+				"en": "Code 7700 indicates an emergency and instructs ATC to give that aircraft priority handling."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-62",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["SSR", "transponder", "7000", "VFR"],
+			"stem": {
+				"pl": "Jaki kod transpondera (SSR) stosuje się domyślnie podczas lotu VFR w przestrzeni niekontrolowanej, gdy nie przydzielono innego kodu?",
+				"en": "Which SSR transponder code is used by default during VFR flight in uncontrolled airspace when no other code has been assigned?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "1200",
+						"en": "1200"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "2000",
+						"en": "2000"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "7000",
+						"en": "7000"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "0000",
+						"en": "0000"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "W europejskiej przestrzeni lotniczej kod 7000 jest standardowym kodem VFR używanym, gdy ATC nie przydzieliło indywidualnego kodu.",
+				"en": "In European airspace, code 7000 is the standard VFR code used when ATC has not assigned an individual code."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-63",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["SSR", "IDENT", "transponder", "ATC"],
+			"stem": {
+				"pl": "Co oznacza polecenie „SQUAWK IDENT” wydane przez kontrolera ruchu lotniczego?",
+				"en": "What does the instruction 'SQUAWK IDENT' issued by an air traffic controller mean?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Nastaw wskazany kod na transponderze",
+						"en": "Set the indicated code on the transponder"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Naciśnij przycisk SPI na transponderze w celu identyfikacji statku powietrznego",
+						"en": "Press the SPI button on the transponder to identify the aircraft"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Wyłącz transponder",
+						"en": "Switch off the transponder"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Potwierdź głosowo swój kod transpondera",
+						"en": "Verbally confirm your transponder code"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "SQUAWK IDENT nakazuje pilotowi naciśnięcie przycisku identyfikacji (SPI), co powoduje wyróżnienie echa na ekranie radarowym kontrolera.",
+				"en": "SQUAWK IDENT instructs the pilot to press the SPI (Special Position Identification) button, causing the radar return to flash on the controller's screen."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-64",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["SSR", "STANDBY", "transponder"],
+			"stem": {
+				"pl": "Co oznacza polecenie „SQUAWK STANDBY” wydane przez kontrolera ruchu lotniczego?",
+				"en": "What does the instruction 'SQUAWK STANDBY' issued by an air traffic controller mean?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Nastaw kod 7000 na transponderze",
+						"en": "Set code 7000 on the transponder"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Włącz transponder w tryb gotowości (nie nadaje odpowiedzi)",
+						"en": "Switch the transponder to standby mode (no replies transmitted)"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Wyłącz transponder całkowicie",
+						"en": "Switch off the transponder completely"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Nastaw transponder na tryb ALT",
+						"en": "Set the transponder to ALT mode"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "SQUAWK STANDBY oznacza przełączenie transpondera w stan gotowości, w którym nie wysyła on odpowiedzi na zapytania radaru wtórnego.",
+				"en": "SQUAWK STANDBY means switching the transponder to standby mode, in which it does not transmit replies to secondary radar interrogations."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-65",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["VHF", "channel_spacing", "8.33kHz", "Europe"],
+			"stem": {
+				"pl": "Jaka jest separacja między kanałami (odstęp siatki częstotliwości) w lotniczym paśmie VHF stosowanym w Europie?",
+				"en": "What is the channel spacing (frequency grid spacing) in the aeronautical VHF band used in Europe?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "50 kHz",
+						"en": "50 kHz"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "25 kHz",
+						"en": "25 kHz"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "8,33 kHz",
+						"en": "8.33 kHz"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "12,5 kHz",
+						"en": "12.5 kHz"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "W europejskiej przestrzeni lotniczej obowiązuje siatka 8,33 kHz wprowadzona w celu zwiększenia liczby dostępnych kanałów VHF.",
+				"en": "In European airspace, a channel spacing of 8.33 kHz is mandatory, introduced to increase the number of available VHF channels."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-66",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["SSR", "Mode_C", "altitude", "transponder"],
+			"stem": {
+				"pl": "Transponder trybu C (Mode C) dostarcza kontrolerowi radarowemu informacji o:",
+				"en": "A Mode C transponder provides the radar controller with information about:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Identyfikacji statku powietrznego i jego kursie",
+						"en": "Aircraft identification and its heading"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Kodzie SSR i wysokości barometrycznej (ciśnieniowej)",
+						"en": "SSR code and barometric (pressure) altitude"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Prędkości statku powietrznego i kodzie SSR",
+						"en": "Aircraft speed and SSR code"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Wyłącznie kursie magnetycznym statku powietrznego",
+						"en": "Aircraft magnetic heading only"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Transponder trybu C nadaje czterocyfrowy kod SSR oraz wysokość barometryczną zakodowaną systemem Gilhama.",
+				"en": "A Mode C transponder transmits a four-digit SSR code and barometric altitude encoded in the Gillham code."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-67",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["VHF", "frequency_band", "RTF"],
+			"stem": {
+				"pl": "Które pasmo elektromagnetyczne jest używane w lotniczej łączności radiotelefonicznej VHF (RTF)?",
+				"en": "Which electromagnetic band is used in aeronautical VHF radiotelephony (RTF)?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "HF (3–30 MHz)",
+						"en": "HF (3–30 MHz)"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "UHF (300 MHz–3 GHz)",
+						"en": "UHF (300 MHz–3 GHz)"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "VHF (30–300 MHz)",
+						"en": "VHF (30–300 MHz)"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "SHF (3–30 GHz)",
+						"en": "SHF (3–30 GHz)"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "VHF (Very High Frequency) obejmuje zakres 30–300 MHz; łączność lotnicza RTF jest prowadzona w podpaśmie 118–137 MHz tego zakresu.",
+				"en": "VHF (Very High Frequency) covers 30–300 MHz; aeronautical RTF communication is conducted in the 118–137 MHz sub-band of this range."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-68",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["SSR", "Mode_A", "transponder"],
+			"stem": {
+				"pl": "Jak nazywa się tryb pracy transpondera, w którym pilot może nastawić indywidualny czterocyfrowy kod identyfikacyjny?",
+				"en": "What is the name of the transponder operating mode in which the pilot can set an individual four-digit identification code?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Tryb A (Mode A)",
+						"en": "Mode A"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Tryb C (Mode C)",
+						"en": "Mode C"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Tryb S (Mode S)",
+						"en": "Mode S"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Tryb ALT",
+						"en": "Mode ALT"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Tryb A umożliwia nadawanie czterocyfrowego kodu ósemkowego (0000–7777) identyfikującego statek powietrzny na radarze wtórnym.",
+				"en": "Mode A enables transmission of a four-digit octal code (0000–7777) identifying the aircraft on secondary radar."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-69",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["VHF", "range", "radio_horizon", "propagation"],
+			"stem": {
+				"pl": "Które stwierdzenie dotyczące zasięgu łączności VHF jest poprawne?",
+				"en": "Which statement about VHF communication range is correct?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "VHF umożliwia łączność globalną niezależnie od wysokości",
+						"en": "VHF enables global communication regardless of altitude"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Zasięg VHF jest ograniczony do horyzontu radiowego i wzrasta z wysokością",
+						"en": "VHF range is limited to the radio horizon and increases with altitude"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "VHF propaguje się wzdłuż jonosfery, co wydłuża zasięg nocą",
+						"en": "VHF propagates along the ionosphere, increasing range at night"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zasięg VHF nie zależy od wysokości lotu",
+						"en": "VHF range does not depend on flight altitude"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Łączność VHF jest ograniczona do zasięgu wzrokowego (line-of-sight); wraz ze wzrostem wysokości horyzont radiowy się oddala i zasięg rośnie.",
+				"en": "VHF communication is limited to line-of-sight range; as altitude increases, the radio horizon extends and range grows."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-70",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["air_to_air", "123.45", "VHF", "general_aviation"],
+			"stem": {
+				"pl": "Która z wymienionych częstotliwości jest używana jako lotnicza częstotliwość powietrze-powietrze (air-to-air) dla lotnictwa ogólnego w Europie?",
+				"en": "Which of the listed frequencies is used as an air-to-air frequency for general aviation in Europe?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "121,5 MHz",
+						"en": "121.5 MHz"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "123,45 MHz",
+						"en": "123.45 MHz"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "118,0 MHz",
+						"en": "118.0 MHz"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "122,0 MHz",
+						"en": "122.0 MHz"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Częstotliwość 123,45 MHz jest przyjętą w Europie częstotliwością powietrze-powietrze dla lotnictwa ogólnego (GA).",
+				"en": "123.45 MHz is the agreed European air-to-air frequency for general aviation (GA)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-71",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["Mode_S", "SSR", "ICAO_address", "ADS-B"],
+			"stem": {
+				"pl": "Transponder Mode S różni się od Mode A/C przede wszystkim tym, że:",
+				"en": "A Mode S transponder differs from Mode A/C primarily in that it:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Nadaje wyłącznie kod identyfikacyjny bez wysokości",
+						"en": "Transmits only the identification code without altitude"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Posiada unikalny 24-bitowy adres ICAO statku powietrznego i umożliwia selektywne odpytywanie",
+						"en": "Has a unique 24-bit ICAO aircraft address and enables selective interrogation"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Działa wyłącznie w paśmie UHF na częstotliwości 1090 MHz",
+						"en": "Operates exclusively in the UHF band at 1090 MHz"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zastępuje całkowicie radar pierwotny (PSR)",
+						"en": "Completely replaces the primary surveillance radar (PSR)"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Mode S przypisuje każdemu statkowi powietrznemu unikalny adres 24-bitowy ICAO, co pozwala na selektywne odpytywanie i przesyłanie danych (np. ADS-B).",
+				"en": "Mode S assigns each aircraft a unique 24-bit ICAO address, enabling selective interrogation and data link capability (e.g. ADS-B)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-72",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["SSR", "2000", "IFR", "transponder"],
+			"stem": {
+				"pl": "Który kod transpondera SSR stosuje lot IFR wlatujący w przestrzeń kontrolowaną bez przydzielonego kodu indywidualnego (w Europie)?",
+				"en": "Which SSR transponder code is used by an IFR flight entering controlled airspace without an assigned individual code (in Europe)?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "7000",
+						"en": "7000"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "2000",
+						"en": "2000"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "0000",
+						"en": "0000"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "1200",
+						"en": "1200"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "W Europie kod 2000 jest stosowany przez loty IFR wlatujące w przestrzeń kontrolowaną FIR, gdy ATC nie przydzieliło jeszcze kodu indywidualnego.",
+				"en": "In Europe, code 2000 is used by IFR flights entering controlled FIR airspace when ATC has not yet assigned an individual code."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-73",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["NORDO", "7600", "transponder", "radio_failure", "glider"],
+			"stem": {
+				"pl": "Co powinien zrobić pilot szybowca wyposażonego w transponder po utracie łączności radiowej z ATC?",
+				"en": "What should a glider pilot equipped with a transponder do after losing radio contact with ATC?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Nastawić kod 7700 i kontynuować lot",
+						"en": "Set code 7700 and continue the flight"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Nastawić kod 7600 i stosować przepisy NORDO",
+						"en": "Set code 7600 and apply NORDO procedures"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Nastawić kod 7500 i lądować niezwłocznie",
+						"en": "Set code 7500 and land immediately"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Nastawić kod 7000 i kontynuować lot bez zmian",
+						"en": "Set code 7000 and continue the flight unchanged"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Utrata łączności wymaga nastawienia kodu 7600 oraz postępowania zgodnie z procedurami NORDO (loty bez łączności radiowej).",
+				"en": "Loss of communications requires setting code 7600 and following NORDO (no radio) procedures."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-74",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["ELT", "406MHz", "121.5MHz", "emergency", "SAR"],
+			"stem": {
+				"pl": "Na jakiej częstotliwości nadają awaryjne radiolatarnie lokalizacyjne (ELT) nowej generacji?",
+				"en": "On which frequency do new-generation emergency locator transmitters (ELT) transmit?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "121,5 MHz i 243,0 MHz",
+						"en": "121.5 MHz and 243.0 MHz"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "406 MHz (z sygnałem pomocniczym 121,5 MHz)",
+						"en": "406 MHz (with auxiliary signal on 121.5 MHz)"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "118,0 MHz",
+						"en": "118.0 MHz"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "123,45 MHz",
+						"en": "123.45 MHz"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Nowoczesne ELT nadają na 406 MHz (przetwarzanej przez satelity COSPAS-SARSAT) oraz wysyłają sygnał pomocniczy na 121,5 MHz ułatwiający naprowadzanie ratowników.",
+				"en": "Modern ELTs transmit on 406 MHz (processed by COSPAS-SARSAT satellites) and emit an auxiliary signal on 121.5 MHz to assist rescuers in homing."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-75",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["MAYDAY", "distress", "signal"],
+			"stem": {
+				"pl": "Jaki jest prawidłowy sygnał wezwania niebezpieczeństwa w łączności radiotelefonicznej?",
+				"en": "What is the correct distress signal in radiotelephony communications?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "MAYDAY MAYDAY MAYDAY",
+						"en": "MAYDAY MAYDAY MAYDAY"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "PAN PAN PAN",
+						"en": "PAN PAN PAN"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "URGENCY URGENCY URGENCY",
+						"en": "URGENCY URGENCY URGENCY"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "DISTRESS DISTRESS DISTRESS",
+						"en": "DISTRESS DISTRESS DISTRESS"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Sygnał MAYDAY wymawiany trzykrotnie jest standardowym sygnałem niebezpieczeństwa (distress) w lotniczej radiotelefonii zgodnie z przepisami ICAO.",
+				"en": "The word MAYDAY spoken three times is the standard distress signal in aeronautical radiotelephony per ICAO procedures."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-76",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["PAN PAN", "urgency", "distress"],
+			"stem": {
+				"pl": "Sygnał PAN PAN stosowany jest w przypadku:",
+				"en": "The PAN PAN signal is used in the case of:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zagrożenia życia lub utraty statku powietrznego",
+						"en": "Threat to life or loss of the aircraft"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Pilnej sytuacji dotyczącej bezpieczeństwa statku powietrznego lub osoby na pokładzie",
+						"en": "An urgent situation concerning the safety of the aircraft or a person on board"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Utraty łączności radiowej",
+						"en": "Loss of radio communication"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Każdego problemu technicznego na pokładzie",
+						"en": "Any technical problem on board"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "PAN PAN jest sygnałem naglącym (urgency) stosowanym gdy istnieje pilna potrzeba udzielenia pomocy, ale sytuacja nie jest jeszcze bezpośrednim zagrożeniem życia.",
+				"en": "PAN PAN is the urgency signal used when there is an urgent need for assistance but the situation is not an immediate threat to life."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-77",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["MAYDAY", "procedure", "repetition"],
+			"stem": {
+				"pl": "Ile razy należy wypowiedzieć słowo MAYDAY na początku wezwania niebezpieczeństwa?",
+				"en": "How many times should the word MAYDAY be spoken at the beginning of a distress call?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Raz",
+						"en": "Once"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Dwa razy",
+						"en": "Twice"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Trzy razy",
+						"en": "Three times"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Cztery razy",
+						"en": "Four times"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Zgodnie z procedurami ICAO sygnał MAYDAY wypowiada się trzykrotnie, co jednoznacznie identyfikuje wezwanie jako komunikat o niebezpieczeństwie.",
+				"en": "According to ICAO procedures, the word MAYDAY is spoken three times to unambiguously identify the call as a distress message."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-78",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["121.5 MHz", "emergency frequency", "MAYDAY"],
+			"stem": {
+				"pl": "Na jakiej częstotliwości należy nadawać w pierwszej kolejności wezwanie MAYDAY, jeśli pilot nie ma wyznaczonej częstotliwości kontroli ruchu lotniczego?",
+				"en": "On which frequency should a MAYDAY call first be transmitted if the pilot has no assigned ATC frequency?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "121,5 MHz",
+						"en": "121.5 MHz"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "123,45 MHz",
+						"en": "123.45 MHz"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "118,0 MHz",
+						"en": "118.0 MHz"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "130,0 MHz",
+						"en": "130.0 MHz"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Częstotliwość alarmowa lotnictwa cywilnego wynosi 121,5 MHz i jest monitorowana przez służby ratownicze oraz wiele stacji naziemnych.",
+				"en": "The civil aviation emergency frequency is 121.5 MHz, monitored by rescue services and many ground stations."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-79",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["MAYDAY", "content", "procedure"],
+			"stem": {
+				"pl": "Która z poniższych informacji NIE wchodzi w skład standardowego wezwania niebezpieczeństwa MAYDAY?",
+				"en": "Which of the following is NOT part of a standard MAYDAY distress call?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Pozycja statku powietrznego",
+						"en": "Position of the aircraft"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Charakter niebezpieczeństwa",
+						"en": "Nature of the distress"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Numer ubezpieczenia pilota",
+						"en": "Pilot's insurance number"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Liczba osób na pokładzie",
+						"en": "Number of persons on board"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Standardowe wezwanie MAYDAY zawiera identyfikację, pozycję, charakter niebezpieczeństwa, zamiary pilota oraz liczbę osób na pokładzie - nie zawiera numeru ubezpieczenia.",
+				"en": "A standard MAYDAY call includes identification, position, nature of distress, pilot's intentions, and number of persons on board - it does not include insurance numbers."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-80",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["MAYDAY", "order", "procedure"],
+			"stem": {
+				"pl": "W jakiej kolejności podawane są elementy wezwania niebezpieczeństwa? Wybierz prawidłową sekwencję.",
+				"en": "In what order are the elements of a distress call transmitted? Choose the correct sequence."
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Sygnał niebezpieczeństwa - pozycja - zamierzenia - identyfikacja - charakter niebezpieczeństwa",
+						"en": "Distress signal - position - intentions - identification - nature of distress"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Sygnał niebezpieczeństwa - identyfikacja - pozycja - charakter niebezpieczeństwa - zamierzenia",
+						"en": "Distress signal - identification - position - nature of distress - intentions"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Identyfikacja - sygnał niebezpieczeństwa - pozycja - zamierzenia",
+						"en": "Identification - distress signal - position - intentions"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Pozycja - identyfikacja - sygnał niebezpieczeństwa - charakter niebezpieczeństwa",
+						"en": "Position - identification - distress signal - nature of distress"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Standardowa kolejność elementów wezwania MAYDAY to: sygnał, identyfikacja, charakter niebezpieczeństwa, zamierzenia pilota oraz pozycja, poziom i kurs. Spośród podanych wariantów poprawna sekwencja rozpoczyna się od sygnału i identyfikacji.",
+				"en": "The standard order of MAYDAY call elements begins with the signal, identification, nature of distress, and intentions, including position, level and heading. Among the given options the correct sequence starts with signal and identification."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-81",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["PAN PAN", "decision", "glider"],
+			"stem": {
+				"pl": "Pilot szybowca traci orientację i ma niski zapas wysokości. Który sygnał powinien nadać?",
+				"en": "A glider pilot loses orientation and has a low altitude margin. Which signal should be transmitted?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "MAYDAY, ponieważ sytuacja zagraża życiu",
+						"en": "MAYDAY, because the situation is life-threatening"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "PAN PAN, ponieważ jest to sytuacja nagląca, ale nie bezpośrednie zagrożenie życia",
+						"en": "PAN PAN, because it is an urgent situation but not an immediate threat to life"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Żadnego sygnału alarmowego, wystarczy zmienić częstotliwość na 121,5 MHz",
+						"en": "No alarm signal, just switch to 121.5 MHz"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "SECURITE, ponieważ dotyczy bezpieczeństwa nawigacji",
+						"en": "SECURITE, because it concerns navigation safety"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Utrata orientacji z niskim zapasem wysokości to sytuacja nagląca (urgency) - pilot potrzebuje pomocy, ale nie jest jeszcze w bezpośrednim niebezpieczeństwie, co kwalifikuje sygnał PAN PAN.",
+				"en": "Loss of orientation with low altitude is an urgent situation - the pilot needs assistance but is not in immediate danger, which qualifies as PAN PAN."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-82",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["MAYDAY", "no response", "procedure"],
+			"stem": {
+				"pl": "Co pilot powinien zrobić po nadaniu wezwania MAYDAY i braku odpowiedzi?",
+				"en": "What should a pilot do after transmitting a MAYDAY call and receiving no response?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zaprzestać nadawania i skoncentrować się na lataniu",
+						"en": "Stop transmitting and concentrate on flying"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Powtórzyć wezwanie na tej samej lub innej częstotliwości",
+						"en": "Repeat the call on the same or a different frequency"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Przełączyć transponder na kod 7600",
+						"en": "Switch transponder to code 7600"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Przełączyć transponder na kod 7500",
+						"en": "Switch transponder to code 7500"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Jeśli wezwanie MAYDAY pozostaje bez odpowiedzi, pilot powinien powtórzyć je na tej samej częstotliwości lub spróbować innej dostępnej częstotliwości.",
+				"en": "If the MAYDAY call receives no response, the pilot should repeat it on the same frequency or try another available frequency."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-83",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["transponder", "7700", "emergency"],
+			"stem": {
+				"pl": "Kod transpondera 7700 jest ustawiany w przypadku:",
+				"en": "Transponder code 7700 is set in the case of:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Utraty łączności radiowej",
+						"en": "Loss of radio communication"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Bezprawnej ingerencji (porwania)",
+						"en": "Unlawful interference (hijacking)"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Sytuacji alarmowej (niebezpieczeństwo)",
+						"en": "Emergency situation (distress)"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Lotu VFR w kontrolowanej przestrzeni",
+						"en": "VFR flight in controlled airspace"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Kod transpondera 7700 jest kodem alarmowym ustawianym w sytuacji niebezpieczeństwa (emergency), co odpowiada sytuacji wymagającej sygnału MAYDAY. Kod 7600 oznacza utratę łączności, a 7500 bezprawną ingerencję.",
+				"en": "Transponder code 7700 is the emergency code set in a distress situation, corresponding to a situation requiring a MAYDAY signal. Code 7600 indicates radio failure and 7500 unlawful interference."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-84",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["MAYDAY", "acknowledgement", "ground station"],
+			"stem": {
+				"pl": "Stacja naziemna odbierająca wezwanie MAYDAY powinna:",
+				"en": "A ground station receiving a MAYDAY call should:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Poczekać na potwierdzenie od innej stacji przed udzieleniem odpowiedzi",
+						"en": "Wait for confirmation from another station before responding"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Niezwłocznie potwierdzić odbiór i udzielić pomocy",
+						"en": "Immediately acknowledge reception and provide assistance"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Przekazać informację na częstotliwość 123,45 MHz",
+						"en": "Pass the information to frequency 123.45 MHz"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Nakazać pilotowi przejście na częstotliwość alarmową 121,5 MHz",
+						"en": "Instruct the pilot to switch to emergency frequency 121.5 MHz"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Każda stacja odbierająca wezwanie MAYDAY powinna niezwłocznie potwierdzić jego odbiór i podjąć wszelkie możliwe działania w celu udzielenia pomocy.",
+				"en": "Any station receiving a MAYDAY call should immediately acknowledge it and take all possible steps to provide assistance."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-85",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["PAN PAN", "medical", "urgency"],
+			"stem": {
+				"pl": "Pilot szybowca doznał urazu i potrzebuje pomocy medycznej po lądowaniu. Który sygnał jest właściwy przed lądowaniem?",
+				"en": "A glider pilot sustained an injury and needs medical assistance after landing. Which signal is appropriate before landing?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "MAYDAY, gdyż uraz zagraża życiu",
+						"en": "MAYDAY, as the injury threatens life"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "PAN PAN, gdyż wymagana jest pilna pomoc medyczna",
+						"en": "PAN PAN, as urgent medical assistance is required"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "SECURITE, gdyż pilot informuje o zagrożeniu dla innych",
+						"en": "SECURITE, as the pilot informs about a hazard to others"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Żadnego sygnału alarmowego, pilot powinien wylądować i wezwać pomoc na ziemi",
+						"en": "No alarm signal, the pilot should land and call for help on the ground"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Potrzeba pilnej pomocy medycznej kwalifikuje sygnał PAN PAN - sytuacja jest nagląca i wymaga koordynacji służb, ale nie stanowi bezpośredniego zagrożenia życia w locie.",
+				"en": "The need for urgent medical assistance qualifies as PAN PAN - the situation is urgent and requires coordination of services, but does not constitute an immediate threat to life in flight."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-86",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["MAYDAY", "SILENCE MAYDAY", "frequency control"],
+			"stem": {
+				"pl": "Wezwanie niebezpieczeństwa MAYDAY ma priorytet nad wszystkimi innymi łącznościami. Który z poniższych terminów jest stosowany do nakazania ciszy radiowej na częstotliwości alarmowej?",
+				"en": "The MAYDAY distress call has priority over all other communications. Which of the following terms is used to impose radio silence on the distress frequency?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "STOP ALL TRAFFIC",
+						"en": "STOP ALL TRAFFIC"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "SILENCE MAYDAY",
+						"en": "SILENCE MAYDAY"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "CLEAR FREQUENCY",
+						"en": "CLEAR FREQUENCY"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "MAYDAY HOLD",
+						"en": "MAYDAY HOLD"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Wyrażenie SILENCE MAYDAY (lub SILENCE DISTRESS) służy do nakazania milczenia wszystkim stacjom na częstotliwości alarmowej, poza stacją prowadzącą akcję ratowniczą.",
+				"en": "The phrase SILENCE MAYDAY (or SILENCE DISTRESS) is used to impose silence on all stations on the distress frequency except those involved in the rescue operation."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-87",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["PAN PAN", "repetition", "procedure"],
+			"stem": {
+				"pl": "Sygnał PAN PAN powtarzany jest na początku wezwania:",
+				"en": "The PAN PAN signal is repeated at the beginning of the call:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Raz",
+						"en": "Once"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Dwa razy",
+						"en": "Twice"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Trzy razy",
+						"en": "Three times"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Tyle razy, ile uzna pilot",
+						"en": "As many times as the pilot decides"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Podobnie jak sygnał MAYDAY, sygnał PAN PAN wypowiada się trzykrotnie na początku wezwania naglącego.",
+				"en": "Like the MAYDAY signal, PAN PAN is spoken three times at the beginning of the urgency call."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-88",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["MAYDAY", "PAN PAN", "decision making"],
+			"stem": {
+				"pl": "Która z poniższych sytuacji kwalifikuje się do nadania sygnału MAYDAY (niebezpieczeństwo), a nie PAN PAN (naglące)?",
+				"en": "Which of the following situations qualifies for a MAYDAY (distress) signal rather than PAN PAN (urgency)?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Pilot jest lekko chory i wymaga pomocy medycznej po lądowaniu",
+						"en": "The pilot is mildly ill and requires medical assistance after landing"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Szybowiec ma problem z otwarciem kabiny po lądowaniu",
+						"en": "The glider has a problem opening the canopy after landing"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Szybowiec traci możliwość utrzymania lotu i pilotowi grozi zderzenie z terenem",
+						"en": "The glider is losing the ability to maintain flight and the pilot faces collision with terrain"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Pilot utracił orientację nad obszarem zabudowanym",
+						"en": "The pilot lost orientation over a built-up area"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "MAYDAY stosuje się gdy istnieje bezpośrednie zagrożenie życia - groźba zderzenia z terenem z powodu utraty możliwości utrzymania lotu jest takim zagrożeniem.",
+				"en": "MAYDAY is used when there is an immediate threat to life - an imminent terrain collision due to loss of flying ability is such a threat."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-89",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["MAYDAY", "relay", "retransmission"],
+			"stem": {
+				"pl": "Stacja pośrednicząca retransmituje wezwanie MAYDAY, gdy:",
+				"en": "A relay station retransmits a MAYDAY call when:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zawsze, gdy odbierze wezwanie MAYDAY",
+						"en": "Always when it receives a MAYDAY call"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Odbiera wezwanie, ale właściwa stacja ATC nie potwierdza jego odbioru",
+						"en": "It receives the call but the appropriate ATC station does not acknowledge it"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Tylko po uzyskaniu zgody pilota nadającego wezwanie",
+						"en": "Only after obtaining permission from the pilot transmitting the call"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Wyłącznie na polecenie organów ATC",
+						"en": "Only on instruction from ATC"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Stacja pośrednicząca powinna retransmitować wezwanie MAYDAY, jeśli właściwa stacja ATC nie potwierdza jego odbioru, aby zapewnić dotarcie informacji do służb ratowniczych.",
+				"en": "A relay station should retransmit the MAYDAY call if the appropriate ATC station does not acknowledge it, to ensure the information reaches rescue services."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-90",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["MAYDAY", "etymology", "history"],
+			"stem": {
+				"pl": "Słowo MAYDAY pochodzi z języka:",
+				"en": "The word MAYDAY originates from:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Angielskiego (May Day - dzień maja)",
+						"en": "English (May Day - first of May)"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Francuskiego (m'aidez - pomóżcie mi)",
+						"en": "French (m'aidez - help me)"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Łacińskiego (mea data - moje dane)",
+						"en": "Latin (mea data - my data)"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Niemieckiego (Mai Tag - dzień majowy)",
+						"en": "German (Mai Tag - May Day)"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Słowo MAYDAY pochodzi z języka francuskiego od wyrażenia 'm'aidez' lub 'venez m'aider' (przyjdźcie mi pomóc) i zostało przyjęte jako międzynarodowy sygnał alarmowy.",
+				"en": "The word MAYDAY comes from the French expression 'm'aidez' or 'venez m'aider' (come help me) and was adopted as the international distress signal."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-91",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["PAN PAN", "content", "medical"],
+			"stem": {
+				"pl": "Wezwanie PAN PAN dotyczące osoby na pokładzie wymagającej pilnej pomocy medycznej powinno zawierać:",
+				"en": "A PAN PAN call concerning a person on board requiring urgent medical assistance should include:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Tylko sygnał PAN PAN i wywołanie stacji",
+						"en": "Only the PAN PAN signal and the station callsign"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Sygnał PAN PAN, identyfikację, pozycję, opis stanu osoby i żądaną pomoc",
+						"en": "PAN PAN signal, identification, position, description of the person's condition and assistance required"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Sygnał PAN PAN, identyfikację i prośbę o przełączenie na 121,5 MHz",
+						"en": "PAN PAN signal, identification and request to switch to 121.5 MHz"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Pełne dane medyczne osoby i jej historię choroby",
+						"en": "Full medical data of the person and their medical history"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Wezwanie PAN PAN powinno zawierać sygnał, identyfikację statku powietrznego, pozycję, opis charakteru sytuacji naglącej i rodzaj potrzebnej pomocy.",
+				"en": "A PAN PAN call should include the signal, aircraft identification, position, description of the urgency situation, and type of assistance required."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-92",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["MAYDAY", "PAN PAN", "definition", "comparison"],
+			"stem": {
+				"pl": "Która z par sygnałów jest poprawnie przyporządkowana do swoich definicji?",
+				"en": "Which pair of signals is correctly matched to their definitions?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "MAYDAY = sytuacja nagląca; PAN PAN = zagrożenie życia",
+						"en": "MAYDAY = urgent situation; PAN PAN = threat to life"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "MAYDAY = zagrożenie życia lub utrata statku; PAN PAN = pilna potrzeba pomocy bez bezpośredniego zagrożenia życia",
+						"en": "MAYDAY = threat to life or loss of aircraft; PAN PAN = urgent need for assistance without immediate threat to life"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "MAYDAY = utrata łączności; PAN PAN = zagrożenie życia",
+						"en": "MAYDAY = loss of communication; PAN PAN = threat to life"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "MAYDAY = ogólne ostrzeżenie nawigacyjne; PAN PAN = utrata łączności",
+						"en": "MAYDAY = general navigation warning; PAN PAN = loss of communication"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "MAYDAY oznacza stan niebezpieczeństwa (distress) z bezpośrednim zagrożeniem życia lub utraty statku, natomiast PAN PAN oznacza stan naglący (urgency) wymagający pomocy, lecz bez natychmiastowego zagrożenia życia.",
+				"en": "MAYDAY denotes distress with immediate threat to life or loss of aircraft, while PAN PAN denotes urgency requiring assistance but without an immediate threat to life."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-93",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["radio failure", "Class D", "initial action"],
+			"stem": {
+				"pl": "Jakie jest pierwsze działanie pilota szybowca po stwierdzeniu utraty łączności radiowej w kontrolowanej przestrzeni powietrznej klasy D?",
+				"en": "What is the first action a glider pilot should take after establishing radio failure in Class D controlled airspace?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Natychmiast lądować na najbliższym lotnisku",
+						"en": "Land immediately at the nearest aerodrome"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Sprawdzić sprawność radia: inne częstotliwości, głośność, podłączenie słuchawek",
+						"en": "Check radio serviceability: other frequencies, volume, headset connections"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Opuścić przestrzeń kontrolowaną z maksymalną prędkością",
+						"en": "Leave the controlled airspace at maximum speed"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Włączyć kod transpondera 7700",
+						"en": "Select transponder code 7700"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Przed podjęciem procedur awarii łączności pilot powinien upewnić się, że awaria rzeczywiście istnieje, sprawdzając ustawienia radia.",
+				"en": "Before initiating radio failure procedures, the pilot must verify that the failure is real by checking radio settings and connections."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-94",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["transponder", "7600", "radio failure"],
+			"stem": {
+				"pl": "Jaki kod transpondera należy ustawić w przypadku utraty łączności radiowej?",
+				"en": "Which transponder code should be selected in case of radio communication failure?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "7700",
+						"en": "7700"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "7600",
+						"en": "7600"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "7500",
+						"en": "7500"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "2000",
+						"en": "2000"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Kod 7600 jest zarezerwowany dla utraty łączności radiowej (RADIO FAILURE), 7700 oznacza stan zagrożenia, a 7500 - bezprawne przejęcie statku powietrznego.",
+				"en": "Code 7600 is reserved for radio communication failure; 7700 indicates general emergency and 7500 indicates unlawful interference."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-95",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["VMC", "VFR", "radio failure", "airspace"],
+			"stem": {
+				"pl": "Szybowiec traci łączność radiową w locie VFR poza przestrzenią kontrolowaną. Jakie warunki meteorologiczne musi utrzymywać pilot?",
+				"en": "A glider loses radio contact during a VFR flight outside controlled airspace. What meteorological conditions must the pilot maintain?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Warunki VMC zgodne z minimami dla danej klasy przestrzeni",
+						"en": "VMC conditions in accordance with the minima for the relevant airspace class"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Widoczność co najmniej 5 km i z dala od chmur",
+						"en": "Visibility of at least 5 km and clear of clouds"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Warunki IMC są dopuszczalne, jeśli pilot posiada uprawnienie IR",
+						"en": "IMC conditions are acceptable if the pilot holds an IR rating"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Widoczność co najmniej 1500 m w strefie CTR",
+						"en": "Visibility of at least 1500 m in CTR zone"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Pilot musi kontynuować lot VFR, utrzymując minima VMC właściwe dla danej klasy przestrzeni powietrznej, niezależnie od utraty łączności.",
+				"en": "The pilot must continue the VFR flight maintaining VMC minima applicable to the relevant airspace class regardless of radio failure."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-96",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["light signals", "controlled aerodrome", "radio failure"],
+			"stem": {
+				"pl": "Szybowiec bez sprawnego radia zbliża się do lotniska kontrolowanego. Jakim sygnałem świetlnym kontroler wieży informuje, że szybowiec może lądować?",
+				"en": "A glider with inoperative radio approaches a controlled aerodrome. Which light signal from the tower indicates that the glider may land?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Stałe zielone",
+						"en": "Steady green"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Migające zielone",
+						"en": "Flashing green"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Stałe czerwone",
+						"en": "Steady red"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Migające białe",
+						"en": "Flashing white"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Stałe zielone skierowane do statku powietrznego w locie oznacza zezwolenie na lądowanie.",
+				"en": "A steady green light directed at an aircraft in flight means cleared to land."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-97",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["light signals", "flashing green", "radio failure"],
+			"stem": {
+				"pl": "Co oznacza migające zielone światło sygnałowe wieży skierowane do statku powietrznego w locie?",
+				"en": "What does a flashing green light signal from the tower directed at an aircraft in flight mean?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zezwolenie na lądowanie",
+						"en": "Cleared to land"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Powróć na lądowanie (zezwolenie na lądowanie zostanie wydane)",
+						"en": "Return for landing (clearance to land will be given)"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Lotnisko niebezpieczne - nie lądować",
+						"en": "Aerodrome unsafe - do not land"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Daj pierwszeństwo innemu statkowi powietrznemu",
+						"en": "Give way to other aircraft"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Migające zielone do statku w locie oznacza: powróć do lądowania, zezwolenie na lądowanie zostanie wydane w stosownym czasie.",
+				"en": "Flashing green to an aircraft in flight means: return for landing, clearance to land will be given in due course."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-98",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["light signals", "flashing red", "radio failure"],
+			"stem": {
+				"pl": "Jakie światło sygnałowe wieży nakazuje statkowi powietrznemu w locie, aby nie lądował?",
+				"en": "Which tower light signal orders an aircraft in flight not to land?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Stałe czerwone",
+						"en": "Steady red"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Migające czerwone",
+						"en": "Flashing red"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Stałe zielone",
+						"en": "Steady green"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Naprzemienne czerwone i zielone",
+						"en": "Alternating red and green"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Migające czerwone skierowane do statku w locie oznacza: lotnisko niebezpieczne, nie lądować.",
+				"en": "Flashing red directed at an aircraft in flight means: aerodrome unsafe, do not land."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-99",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["light signals", "steady red", "radio failure"],
+			"stem": {
+				"pl": "Co oznacza stałe czerwone światło sygnałowe wieży skierowane do statku powietrznego w locie?",
+				"en": "What does a steady red light signal from the tower directed at an aircraft in flight mean?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zezwolenie na lądowanie przyznane",
+						"en": "Landing clearance granted"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Nie lądować, lotnisko niebezpieczne",
+						"en": "Do not land, aerodrome unsafe"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Daj pierwszeństwo i kontynuuj krążenie",
+						"en": "Give way and continue circling"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Wyląduj na wskazanym pasie",
+						"en": "Land on the indicated runway"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Stałe czerwone do statku w locie oznacza: daj pierwszeństwo innemu statkowi powietrznemu i kontynuuj krążenie.",
+				"en": "Steady red directed at an aircraft in flight means: give way to other aircraft and continue circling."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-100",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["light signals", "acknowledgement", "radio failure"],
+			"stem": {
+				"pl": "Jak pilot szybowca potwierdza zrozumienie sygnałów świetlnych wieży w ciągu dnia?",
+				"en": "How does a glider pilot acknowledge understanding of tower light signals during daytime?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Przez kiwanie skrzydłami",
+						"en": "By rocking the wings"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Przez zamknięcie i otwarcie klap",
+						"en": "By cycling the flaps"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Przez wykonanie pełnego obrotu o 360 stopni",
+						"en": "By completing a full 360-degree turn"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Nie jest wymagane żadne potwierdzenie",
+						"en": "No acknowledgement is required"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "W dzień pilot potwierdza odbiór sygnałów świetlnych przez kiwanie skrzydłami statku powietrznego.",
+				"en": "During daylight, the pilot acknowledges light signals by rocking the aircraft's wings."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-101",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["aerodrome traffic circuit", "radio failure", "controlled aerodrome"],
+			"stem": {
+				"pl": "Szybowiec utracił łączność i zamierza wylądować na lotnisku kontrolowanym. Gdzie powinien dołączyć do ruchu lotniskowego?",
+				"en": "A glider has lost radio contact and intends to land at a controlled aerodrome. Where should it join the aerodrome traffic?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Bezpośrednio do podejścia końcowego",
+						"en": "Directly to final approach"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Do standardowego kręgu nadlotniskowego zgodnie z obowiązującymi procedurami",
+						"en": "Into the standard aerodrome traffic circuit in accordance with applicable procedures"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Na długim podejściu z dużej odległości",
+						"en": "On long final from a great distance"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Pilot powinien lądować na pobliskim lotnisku niekontrolowanym",
+						"en": "The pilot should land at a nearby uncontrolled aerodrome instead"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Pilot powinien dołączyć do standardowego kręgu nadlotniskowego i stosować się do sygnałów świetlnych wydawanych przez wieżę kontrolną.",
+				"en": "The pilot should join the standard aerodrome traffic circuit and comply with light signals issued by the control tower."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-102",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["121.5 MHz", "emergency frequency", "radio failure"],
+			"stem": {
+				"pl": "Które z poniższych działań NIE jest zalecane przy próbie przywrócenia łączności radiowej po jej utracie?",
+				"en": "Which of the following actions is NOT recommended when trying to restore radio communication after its loss?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Próba nawiązania łączności na częstotliwości 121,5 MHz",
+						"en": "Attempting to establish contact on frequency 121.5 MHz"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Próba nawiązania łączności na ostatnio używanej częstotliwości",
+						"en": "Attempting to establish contact on the last used frequency"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Nadawanie pozycji i zamiarów w ciemno na częstotliwości 121,5 MHz",
+						"en": "Broadcasting position and intentions blind on 121.5 MHz"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Przełączenie na częstotliwość 156,8 MHz (kanał 16 VHF morski)",
+						"en": "Switching to 156.8 MHz (VHF marine channel 16)"
+					}
+				}
+			],
+			"answer": "d",
+			"explanation": {
+				"pl": "Kanał 16 VHF morski nie jest właściwą częstotliwością awaryjną dla lotnictwa; właściwą jest 121,5 MHz.",
+				"en": "VHF marine channel 16 is not the correct aviation emergency frequency; the correct one is 121.5 MHz."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-103",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["121.5 MHz", "emergency frequency", "radio failure"],
+			"stem": {
+				"pl": "Jaka jest lotnicza częstotliwość awaryjna VHF stosowana w przypadku utraty łączności radiowej lub stanu zagrożenia?",
+				"en": "What is the VHF aviation emergency frequency used in case of radio failure or distress?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "123,5 MHz",
+						"en": "123.5 MHz"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "118,0 MHz",
+						"en": "118.0 MHz"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "121,5 MHz",
+						"en": "121.5 MHz"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "130,0 MHz",
+						"en": "130.0 MHz"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Częstotliwość 121,5 MHz jest lotniczą częstotliwością alarmową/awaryjną monitorowaną przez służby ATS i ratownicze.",
+				"en": "121.5 MHz is the international aeronautical emergency frequency monitored by ATS units and rescue services."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-104",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["Class G", "radio failure", "ATC clearance"],
+			"stem": {
+				"pl": "Szybowiec wykonuje lot w przestrzeni powietrznej klasy G i traci łączność radiową. Jakie jest wymaganie dotyczące kontynuowania lotu?",
+				"en": "A glider is flying in Class G airspace and loses radio communication. What is the requirement for continuing the flight?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Lot musi być natychmiast przerwany",
+						"en": "The flight must be immediately terminated"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Lot może być kontynuowany, ponieważ w klasie G nie jest wymagane zezwolenie ATC",
+						"en": "The flight may continue as no ATC clearance is required in Class G"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Pilot musi uzyskać zezwolenie od najbliższego organu ATS przez inne środki łączności",
+						"en": "The pilot must obtain clearance from the nearest ATS unit by other means"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Radio jest obowiązkowe w klasie G, więc lot musi być natychmiast zakończony",
+						"en": "Radio is mandatory in Class G so the flight must be terminated immediately"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "W przestrzeni klasy G nie obowiązuje wymóg uzyskania zezwolenia ATC, dlatego lot może być kontynuowany.",
+				"en": "Class G airspace requires no ATC clearance, so the flight may continue."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-105",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["TX failure", "RX only", "PTT", "radio failure"],
+			"stem": {
+				"pl": "Podczas lotu w kontrolowanej przestrzeni powietrznej szybowiec traci możliwość nadawania (TX), ale może odbierać (RX). Jak powinien potwierdzać rozumienie instrukcji ATC?",
+				"en": "While flying in controlled airspace, a glider loses the ability to transmit (TX) but can still receive (RX). How should it acknowledge ATC instructions?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Kiwać skrzydłami widocznie dla ATC",
+						"en": "Rock wings visibly to ATC"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Dwukrotnie nadać kod 7600 na transponderze, potwierdzając odbiór",
+						"en": "Squawk 7600 twice to acknowledge receipt"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Kliknąć przyciskiem nadawania (PTT) określoną liczbę razy na polecenie ATC",
+						"en": "Click the PTT button a specified number of times as instructed by ATC"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Wyłączyć transponder jako sygnał potwierdzający",
+						"en": "Turn off the transponder as a confirmation signal"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "ATC może prosić pilota o potwierdzenie odbioru przez kliknięcia PTT (np. kliknij dwa razy jeśli rozumiesz), gdy pilot może odbierać, ale nie nadawać.",
+				"en": "ATC may ask the pilot to confirm reception by PTT clicks (e.g., click twice if you understand) when the pilot can receive but not transmit."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-106",
+			"type": "mcq",
+			"microSkill": "abbreviation",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["NORDO", "radio failure", "terminology"],
+			"stem": {
+				"pl": "Co oznacza określenie NORDO w kontekście lotniczym?",
+				"en": "What does the term NORDO mean in an aviation context?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Statek powietrzny bez wymaganego wyposażenia nawigacyjnego",
+						"en": "Aircraft without required navigation equipment"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Statek powietrzny bez sprawnego radia lub nienawiązujący łączności radiowej",
+						"en": "Aircraft without serviceable radio or not establishing radio contact"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Statek powietrzny lecący bez planu lotu",
+						"en": "Aircraft flying without a flight plan"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Statek powietrzny operujący nocą bez oświetlenia",
+						"en": "Aircraft operating at night without lighting"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "NORDO (No Radio) oznacza statek powietrzny nieposiadający sprawnego radia lub niemogący nawiązać łączności z ATC.",
+				"en": "NORDO (No Radio) denotes an aircraft without a serviceable radio or unable to establish communication with ATC."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-107",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["CTR", "radio failure", "transit"],
+			"stem": {
+				"pl": "Szybowiec utracił łączność w strefie kontrolowanej lotniska (CTR) w trakcie lotu do miejsca lądowania poza CTR. Co powinien zrobić pilot?",
+				"en": "A glider loses radio contact inside a CTR while transiting to a landing site outside the CTR. What should the pilot do?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Kontynuować trasę przez CTR i opuścić ją możliwie najszybciej z zachowaniem VMC",
+						"en": "Continue the route through the CTR and exit it as quickly as possible while maintaining VMC"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Natychmiast zawrócić i wrócić do lotniska w CTR",
+						"en": "Immediately turn back and return to the aerodrome within the CTR"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Wejść w krąg nadlotniskowy i oczekiwać na sygnały świetlne wieży",
+						"en": "Join the aerodrome traffic circuit and await tower light signals"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Lądować niezwłocznie w dowolnym miejscu poza CTR",
+						"en": "Land immediately at any available site outside the CTR"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Pilot powinien opuścić przestrzeń kontrolowaną najkrótszą trasą z zachowaniem warunków VMC, ustawiając kod 7600 na transponderze.",
+				"en": "The pilot should vacate the controlled airspace by the most direct route while maintaining VMC, with transponder set to 7600."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-108",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["light signals", "alternating", "caution", "radio failure"],
+			"stem": {
+				"pl": "Jakie naprzemienne sygnały świetlne wieży oznaczają, że pilot powinien zachować szczególną ostrożność?",
+				"en": "Which alternating light signals from the tower indicate that the pilot should exercise extreme caution?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Naprzemienne czerwone i białe",
+						"en": "Alternating red and white"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Naprzemienne zielone i białe",
+						"en": "Alternating green and white"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Naprzemienne czerwone i zielone",
+						"en": "Alternating red and green"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Naprzemienne żółte i białe",
+						"en": "Alternating yellow and white"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Naprzemienne czerwone i zielone skierowane do statku w locie oznaczają: zachowaj szczególną ostrożność.",
+				"en": "Alternating red and green directed at an aircraft in flight means: exercise extreme caution."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-109",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["orbiting", "radio failure", "aerodrome", "light signals"],
+			"stem": {
+				"pl": "Jak długo szybowiec powinien orbitować nad lotniskiem przed podejściem do lądowania po utracie łączności, jeśli nie jest w stanie nawiązać kontaktu wzrokowego z wieżą?",
+				"en": "How long should a glider orbit over the aerodrome before approaching to land after radio failure if it cannot establish visual contact with the tower?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Co najmniej 30 minut",
+						"en": "At least 30 minutes"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Przepisy nie określają stałego czasu - pilot ocenia sytuację i stosuje się do sygnałów świetlnych",
+						"en": "Regulations do not specify a fixed time - the pilot assesses the situation and complies with light signals"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Dokładnie 5 minut",
+						"en": "Exactly 5 minutes"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Dopóki nie uzyska radiowego zezwolenia na lądowanie",
+						"en": "Until radio landing clearance is obtained"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Przepisy nie narzucają stałego czasu orbity; pilot powinien ocenić ruch lotniskowy i stosować się do sygnałów świetlnych wieży.",
+				"en": "Regulations do not prescribe a fixed orbiting time; the pilot must assess circuit traffic and comply with tower light signals."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-110",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["flight plan", "radio failure", "Class D"],
+			"stem": {
+				"pl": "Pilot szybowca wykonuje lot VFR w przestrzeni klasy D i traci łączność. Jakie jest jego zachowanie w stosunku do planu lotu?",
+				"en": "A glider pilot is flying VFR in Class D airspace and loses radio contact. What is the expected action regarding the flight plan?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Plan lotu traci ważność automatycznie po utracie łączności",
+						"en": "The flight plan automatically becomes invalid upon radio failure"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Pilot powinien kontynuować lot zgodnie z zatwierdzonym planem lotu, o ile jest to możliwe i bezpieczne",
+						"en": "The pilot should continue the flight in accordance with the approved flight plan if practicable and safe"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Pilot musi natychmiast lądować i złożyć nowy plan lotu",
+						"en": "The pilot must land immediately and file a new flight plan"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Pilot powinien zawrócić do miejsca startu",
+						"en": "The pilot should return to the departure point"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Po utracie łączności w przestrzeni kontrolowanej pilot powinien kontynuować lot zgodnie z zatwierdzonym planem lotu, co umożliwia ATC przewidywanie jego zamiarów.",
+				"en": "After radio failure in controlled airspace, the pilot should continue in accordance with the approved flight plan so that ATC can anticipate intentions."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-111",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["controlled airspace", "radio failure", "clearance"],
+			"stem": {
+				"pl": "Które działanie pilot szybowca powinien podjąć, gdy z powodu usterki radia nie może uzyskać zezwolenia ATC na wejście do kontrolowanej przestrzeni powietrznej?",
+				"en": "What action should a glider pilot take when, due to radio failure, they cannot obtain ATC clearance to enter controlled airspace?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Wejść do przestrzeni kontrolowanej i poinformować ATC telefonicznie po lądowaniu",
+						"en": "Enter the controlled airspace and inform ATC by telephone after landing"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Pozostać poza przestrzenią kontrolowaną i lądować w odpowiednim miejscu poza tą przestrzenią",
+						"en": "Remain outside the controlled airspace and land at a suitable site outside it"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Wejść do przestrzeni kontrolowanej, ustawiając 7600 na transponderze",
+						"en": "Enter the controlled airspace squawking 7600"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Przelecieć nad górną granicą przestrzeni kontrolowanej",
+						"en": "Fly above the upper limit of the controlled airspace"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Bez zezwolenia ATC pilot nie może wejść do przestrzeni kontrolowanej; powinien pozostać poza nią i wylądować w bezpiecznym miejscu.",
+				"en": "Without ATC clearance the pilot may not enter controlled airspace and should remain outside and land at a safe site."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-112",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["post-landing", "ATS notification", "radio failure"],
+			"stem": {
+				"pl": "Po lądowaniu w związku z utratą łączności radiowej, jakie działanie powinien podjąć pilot szybowca?",
+				"en": "After landing due to radio communication failure, what action should the glider pilot take?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Brak działania jest wymagany, jeśli lot VFR zakończył się bezpiecznie",
+						"en": "No action is required if the VFR flight ended safely"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Powiadomić właściwy organ ATS o przebiegu lotu i okolicznościach utraty łączności",
+						"en": "Notify the appropriate ATS unit about the flight and the circumstances of the radio failure"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Złożyć raport do producenta radia",
+						"en": "Submit a report to the radio manufacturer"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Natychmiast naprawić radio przed kolejnym lotem, bez informowania ATS",
+						"en": "Repair the radio immediately before the next flight without informing ATS"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Po lądowaniu spowodowanym awarią łączności pilot powinien jak najszybciej poinformować właściwy organ ATS o okolicznościach zdarzenia.",
+				"en": "After landing caused by communication failure, the pilot should notify the appropriate ATS unit as soon as possible about the circumstances."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-113",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.GLIDER_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["aerotow", "uncontrolled aerodrome", "line-up"],
+			"stem": {
+				"pl": "Jakie jest standardowe wywołanie radiowe szybowca przy zajmowaniu pozycji na drodze startowej na lotnisku niekontrolowanym przed startem holowanym?",
+				"en": "What is the standard radio call when a glider lines up on the runway at an uncontrolled aerodrome before an aerotow?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "\"[znak], proszę o zezwolenie na start, droga startowa [numer]\"",
+						"en": "\"[callsign], request take-off clearance, runway [number]\""
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "\"[znak], zajmuję pozycję droga startowa [numer], start holowany\"",
+						"en": "\"[callsign], lining up runway [number], aerotow\""
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "\"[znak], gotowy, oczekuję na sygnał holownika\"",
+						"en": "\"[callsign], ready, awaiting tug signal\""
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "\"[znak], proszę o informacje o ruchu, start holowany\"",
+						"en": "\"[callsign], request traffic information, aerotow\""
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Na lotnisku niekontrolowanym pilot ogłasza pozycję i zamiary komunikatem rozgłoszeniowym (blind call), podając znak, czynność i numer drogi startowej. Zezwolenia (clearance) nie wydaje się poza przestrzenią kontrolowaną.",
+				"en": "At an uncontrolled aerodrome the pilot broadcasts position and intentions as a blind call stating callsign, action and runway designator. No clearance is issued outside controlled airspace."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-114",
+			"type": "mcq",
+			"microSkill": "abbreviation",
+			"loIds": ["COM.GLIDER_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["phraseology", "WILCO", "acknowledgement"],
+			"stem": {
+				"pl": "Co oznacza frazeologia lotnicza WILCO?",
+				"en": "What does the aviation phraseology WILCO mean?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Potwierdzam odbiór wiadomości",
+						"en": "I confirm receipt of the message"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Rozumiem i wykonam",
+						"en": "I understand and will comply"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Powtórz wiadomość",
+						"en": "Repeat the message"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Oczekuję na dalsze instrukcje",
+						"en": "Awaiting further instructions"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "WILCO (will comply) oznacza, że pilot zrozumiał wiadomość i zamierza ją wykonać; zawiera już znaczenie ROGER, dlatego nie łączy się tych słów.",
+				"en": "WILCO (will comply) means the pilot has understood and will execute the instruction; it already implies ROGER so the two words are not combined."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-115",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.GLIDER_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["aerotow", "rope release", "position report"],
+			"stem": {
+				"pl": "Co pilot szybowca powinien nadać po odczepieniu od liny holowniczej w locie?",
+				"en": "What should a glider pilot transmit immediately after releasing the aerotow rope in flight?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Informację o odczepieniu z podaniem wysokości i pozycji",
+						"en": "Release information with altitude and position"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Prośbę o wektorowanie do punktu lądowania",
+						"en": "Request for vectoring to the landing point"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Potwierdzenie gotowości do lądowania",
+						"en": "Confirmation of readiness to land"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Meldunek nie jest wymagany po odczepieniu",
+						"en": "No report is required after release"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Ogłoszenie odczepienia z podaniem wysokości i pozycji informuje holownik i inne statki powietrzne w kręgu o zakończeniu holowania i aktualnym miejscu szybowca.",
+				"en": "Announcing release with altitude and position informs the tug and other circuit traffic that the tow has ended and gives the glider's current location."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-116",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.GLIDER_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["circuit", "callsign", "mandatory elements"],
+			"stem": {
+				"pl": "Który element jest OBOWIĄZKOWY w standardowym meldunku w kręgu nadlotniskowym?",
+				"en": "Which element is MANDATORY in a standard aerodrome traffic circuit report?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Prędkość przyrządowa",
+						"en": "Indicated airspeed"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Numer SQUAWK",
+						"en": "Squawk code"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Znak wywoławczy",
+						"en": "Callsign"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Czas do lądowania",
+						"en": "Time to landing"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Znak wywoławczy identyfikuje nadającego i jest niezbędnym elementem każdego komunikatu radiowego zgodnie z przepisami ICAO.",
+				"en": "The callsign identifies the transmitting station and is a mandatory element of every radio transmission under ICAO procedures."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-117",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.GLIDER_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["circuit", "final", "landing call"],
+			"stem": {
+				"pl": "Pilot szybowca podchodzi do lądowania na lotnisku niekontrolowanym. W którym punkcie kręgu nadaje meldunek o zamiarze lądowania?",
+				"en": "A glider is on approach at an uncontrolled aerodrome. At which point in the circuit should the pilot broadcast intent to land?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Na początku prostej startowej (final)",
+						"en": "On turning final"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Na podstawie (base leg)",
+						"en": "On base leg"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Na trzecim zakręcie",
+						"en": "On third turn"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Na wietrze (downwind leg) przed czwartym zakrętem",
+						"en": "On downwind before fourth turn"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Meldunek o lądowaniu na prostej (final) ostrzega wszystkich uczestników ruchu lotniskowego o statku powietrznym bezpośrednio podchodzącym do lądowania.",
+				"en": "A final call warns all aerodrome traffic of an aircraft on straight-in approach and is the standard position report before landing."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-118",
+			"type": "mcq",
+			"microSkill": "abbreviation",
+			"loIds": ["COM.GLIDER_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["QNH", "altimeter", "Q-code"],
+			"stem": {
+				"pl": "Co oznacza skrót QNH w łączności radiowej?",
+				"en": "What does the abbreviation QNH mean in radio communications?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Nastawienie wysokościomierza dające wysokość bezwzględną nad poziomem morza w danym miejscu",
+						"en": "Altimeter setting that makes the altimeter read altitude above mean sea level for the location"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Wysokość bezwzględna nad poziomem morza odczytana z mapy",
+						"en": "Absolute altitude above sea level read from a chart"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Nastawienie wysokościomierza na 1013,25 hPa",
+						"en": "Altimeter setting to 1013.25 hPa"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Ciśnienie na progu drogi startowej",
+						"en": "Pressure at the runway threshold"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "QNH to kod Q oznaczający nastawienie wysokościomierza, przy którym na ziemi w danym miejscu pokazuje on wysokość bezwzględną nad poziomem morza (elewację).",
+				"en": "QNH is the Q-code for the pressure setting that makes the altimeter read altitude above mean sea level (elevation when on the ground)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-119",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.GLIDER_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["aerotow", "rope release", "tug communication"],
+			"stem": {
+				"pl": "Pilot holownika ogłasza przez radio: \"Lina odczepiona, wracam na lądowanie.\" Jakie działanie powinien podjąć pilot szybowca po odebraniu tej wiadomości?",
+				"en": "The tug pilot broadcasts: \"Rope released, returning to land.\" What should the glider pilot do after receiving this call?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Potwierdzić odbiór i podać własną pozycję",
+						"en": "Acknowledge and report own position"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Natychmiast wylądować na najbliższym polu",
+						"en": "Land immediately in the nearest field"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zażądać wektorowania od kontroli",
+						"en": "Request vectoring from ATC"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Nic; wiadomość holownika nie dotyczy szybowca",
+						"en": "Nothing; the tug's call does not concern the glider"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Potwierdzenie odbioru i podanie własnej pozycji zapewnia wzajemną świadomość sytuacyjną holownika i szybowca oraz innych uczestników ruchu.",
+				"en": "Acknowledging and reporting own position maintains mutual situational awareness between tug, glider and other traffic."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-120",
+			"type": "mcq",
+			"microSkill": "abbreviation",
+			"loIds": ["COM.GLIDER_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["phraseology", "SAY AGAIN", "repetition"],
+			"stem": {
+				"pl": "Jakie słowo ICAO stosuje się, gdy stacja prosi o powtórzenie całości lub części ostatniej wiadomości?",
+				"en": "Which ICAO word is used to request repetition of all or part of the last message?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "CONFIRM",
+						"en": "CONFIRM"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "READBACK",
+						"en": "READBACK"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "SAY AGAIN",
+						"en": "SAY AGAIN"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "WILCO",
+						"en": "WILCO"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "SAY AGAIN oznacza prośbę o powtórzenie całości lub wskazanej części ostatniej wiadomości. READBACK to nakaz odczytania zwrotnego, a nie prośba o powtórzenie kierowana do nadawcy.",
+				"en": "SAY AGAIN is the phrase requesting repetition of all or a specified part of the last message. READBACK is an instruction to read back, not a request for the sender to repeat."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-121",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.GLIDER_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["class C", "clearance", "airspace"],
+			"stem": {
+				"pl": "Pilot szybowca realizuje lot holowany i zbliża się do granicy przestrzeni kontrolowanej klasy C. Jakie działanie radiowe jest wymagane?",
+				"en": "A glider is on aerotow approaching the boundary of Class C controlled airspace. What radio action is required?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Uzyskanie zezwolenia ATC przed wlotem do przestrzeni klasy C",
+						"en": "Obtaining ATC clearance before entering Class C airspace"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Nadanie meldunku informacyjnego i kontynuowanie lotu",
+						"en": "Broadcasting an information call and continuing flight"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Nawiązanie kontaktu po przekroczeniu granicy przestrzeni",
+						"en": "Establishing contact after crossing the airspace boundary"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zezwolenie nie jest wymagane dla szybowców",
+						"en": "No clearance is required for gliders"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Przestrzeń klasy C wymaga dwukierunkowej łączności i uzyskania zezwolenia ATC przed wlotem przez każdy statek powietrzny, w tym szybowiec.",
+				"en": "Class C airspace requires two-way communication and an ATC clearance before entry by any aircraft including gliders."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-122",
+			"type": "mcq",
+			"microSkill": "abbreviation",
+			"loIds": ["COM.GLIDER_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["phraseology", "NEGATIVE", "ICAO"],
+			"stem": {
+				"pl": "Co oznacza komunikat \"NEGATIVE\" w standardowej frazeologii ICAO?",
+				"en": "What does the word \"NEGATIVE\" mean in standard ICAO phraseology?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Nie rozumiem wiadomości",
+						"en": "I do not understand the message"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Nie; lub zezwolenie nie jest udzielone; lub to nie jest poprawne",
+						"en": "No; or permission not granted; or that is not correct"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Przerwij nadawanie",
+						"en": "Stop transmitting"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Powtórz ostatnią wiadomość",
+						"en": "Repeat last message"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Zgodnie z dokumentem ICAO Doc 9432 NEGATIVE oznacza zaprzeczenie, odmowę zezwolenia lub wskazanie na niepoprawność informacji.",
+				"en": "Per ICAO Doc 9432, NEGATIVE means denial, refusal of permission, or indication that information is incorrect."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-123",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.GLIDER_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["AFIS", "frequency", "AIP"],
+			"stem": {
+				"pl": "Jaką częstotliwość należy monitorować na lotnisku niekontrolowanym z AFIS?",
+				"en": "Which frequency should be monitored at an uncontrolled aerodrome equipped with AFIS?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Częstotliwość AFIS podaną w AIP dla danego lotniska",
+						"en": "The AFIS frequency published in the AIP for that aerodrome"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Zawsze 121,5 MHz",
+						"en": "Always 121.5 MHz"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Częstotliwość regionalnego centrum kontroli obszaru (ACC)",
+						"en": "Regional Area Control Centre (ACC) frequency"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Dowolna częstotliwość wyznaczona przez pilota",
+						"en": "Any frequency chosen by the pilot"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Każde lotnisko z AFIS ma wyznaczoną częstotliwość opublikowaną w AIP danego państwa i to na niej prowadzona jest służba informacji lotniskowej.",
+				"en": "Each aerodrome with AFIS has a designated frequency published in the national AIP, on which the aerodrome flight information service operates."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-124",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.GLIDER_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["AFIS", "finals", "circuit"],
+			"stem": {
+				"pl": "Pilot szybowca zgłasza \"FINALS\" przed lądowaniem na lotnisku z AFIS. Jaką odpowiedź może oczekiwać od operatora AFIS?",
+				"en": "A glider pilot calls \"FINALS\" before landing at an AFIS aerodrome. What response can be expected from the AFIS operator?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zezwolenie na lądowanie",
+						"en": "Landing clearance"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Informację o ruchu lotniskowym i znane zagrożenia",
+						"en": "Traffic information and known hazards"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Instrukcję podejścia z kursem i wysokością",
+						"en": "Approach instruction with heading and altitude"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Potwierdzenie, że pas jest wolny (RUNWAY CLEAR)",
+						"en": "Confirmation that runway is clear (RUNWAY CLEAR)"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "AFIS nie wydaje zezwoleń; operator informuje pilota o znanych ruchach i zagrożeniach, ale decyzja o lądowaniu należy do pilota.",
+				"en": "AFIS does not issue clearances; the operator provides known traffic and hazard information, but the landing decision rests with the pilot."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-125",
+			"type": "mcq",
+			"microSkill": "abbreviation",
+			"loIds": ["COM.GLIDER_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["phonetic", "NINER", "digit pronunciation"],
+			"stem": {
+				"pl": "Którą liczbę fonetycznie wymawia się jako NINER w alfabecie fonetycznym ICAO?",
+				"en": "Which digit is pronounced NINER in the ICAO phonetic alphabet?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "7",
+						"en": "7"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "8",
+						"en": "8"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "9",
+						"en": "9"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "0",
+						"en": "0"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Cyfra 9 wymawiana jest jako NINER, aby uniknąć pomylenia z angielskim NINE oraz z niemieckim NEIN (nie).",
+				"en": "The digit 9 is spoken as NINER to avoid confusion with the German word NEIN (no), which sounds similar to NINE."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-126",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.GLIDER_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["aerotow", "radio failure", "visual signals"],
+			"stem": {
+				"pl": "Co powinien zrobić pilot szybowca, jeśli podczas lotu holowanego utraci łączność radiową z holownikiem?",
+				"en": "What should a glider pilot do if radio contact with the tug is lost during an aerotow?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Natychmiast odczepić linę i lądować",
+						"en": "Immediately release the rope and land"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Użyć umówionych sygnałów wizualnych i kontynuować lub zakończyć holowanie zgodnie z procedurą",
+						"en": "Use agreed visual signals and continue or terminate the tow per procedure"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Nadawać Mayday i wylądować na polanie",
+						"en": "Transmit Mayday and land in a clearing"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zwiększyć prędkość i wyprzedzić holownik sygnalizując awarię",
+						"en": "Accelerate and overtake the tug to signal the emergency"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Utrata łączności podczas holowania obsługiwana jest przez wcześniej uzgodnione sygnały wizualne (kiwanie skrzydłami, ruch sterów), co pozwala bezpiecznie zakończyć lub kontynuować holowanie.",
+				"en": "Loss of communication during aerotow is handled by pre-agreed visual signals (wing rocking, control movements) allowing the tow to be safely continued or terminated."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-127",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.GLIDER_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["readback", "landing clearance", "runway"],
+			"stem": {
+				"pl": "Jakie jest właściwe odczytanie zwrotne (readback) po odebraniu zezwolenia: \"Golf Sierra Tango, lądować droga startowa dwa siedem\"?",
+				"en": "What is the correct readback after receiving the clearance: \"Golf Sierra Tango, land runway two seven\"?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "\"Zrozumiałem, Golf Sierra Tango\"",
+						"en": "\"Understood, Golf Sierra Tango\""
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "\"Lądować droga startowa dwa siedem, Golf Sierra Tango\"",
+						"en": "\"Land runway two seven, Golf Sierra Tango\""
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "\"WILCO, Golf Sierra Tango\"",
+						"en": "\"WILCO, Golf Sierra Tango\""
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "\"ROGER, Golf Sierra Tango\"",
+						"en": "\"ROGER, Golf Sierra Tango\""
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Zezwolenia na lądowanie wymagają pełnego odczytania zwrotnego zawierającego numer drogi startowej i znak wywoławczy, aby potwierdzić poprawne zrozumienie.",
+				"en": "Landing clearances require a full readback including the runway designator and callsign to confirm correct understanding."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-128",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.GLIDER_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["circuit", "position report", "crosswind"],
+			"stem": {
+				"pl": "W jakim celu pilot szybowca nadaje meldunek \"CROSSWIND\" (wiatr poprzeczny) w kręgu nadlotniskowym na lotnisku niekontrolowanym?",
+				"en": "Why does a glider pilot broadcast a \"CROSSWIND\" call in the traffic circuit at an uncontrolled aerodrome?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Aby poinformować AFIS o zmianie kursu",
+						"en": "To inform AFIS of a heading change"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Aby ogłosić własną pozycję i zamiary innym uczestnikom ruchu",
+						"en": "To announce own position and intentions to other traffic"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Aby uzyskać zezwolenie na dalsze okrążenie",
+						"en": "To obtain clearance for the next circuit leg"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Aby zgłosić anomalię meteorologiczną",
+						"en": "To report a meteorological anomaly"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Na lotnisku niekontrolowanym meldunki pozycji w kręgu (crosswind, downwind, base, final) służą wyłącznie wzajemnemu informowaniu uczestników ruchu, nie wymagają zezwolenia.",
+				"en": "At uncontrolled aerodromes, circuit position calls (crosswind, downwind, base, final) serve solely to inform other traffic and do not require clearance."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-129",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.GLIDER_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["PAN PAN", "urgency", "emergency phraseology"],
+			"stem": {
+				"pl": "Co oznacza komunikat PAN PAN nadawany trzykrotnie na początku wiadomości?",
+				"en": "What does the prefix PAN PAN transmitted three times at the start of a message indicate?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Stan niebezpieczeństwa zagrażającego życiu (distress)",
+						"en": "Life-threatening distress condition"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Stan pilności - poważna sytuacja wymagająca pomocy, ale niezagrażająca bezpośrednio życiu",
+						"en": "Urgency condition - serious situation requiring assistance but not immediately life-threatening"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Prośbę o pierwszeństwo w lądowaniu",
+						"en": "Request for priority landing"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Informację o awarii sprzętu radiowego",
+						"en": "Report of radio equipment malfunction"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "PAN PAN to sygnał pilności (urgency) oznaczający poważną sytuację wymagającą pomocy, podczas gdy MAYDAY dotyczy bezpośredniego zagrożenia życia.",
+				"en": "PAN PAN is the urgency signal indicating a serious situation requiring assistance, whereas MAYDAY concerns an immediate threat to life."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-130",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.GLIDER_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["AFIS", "radio failure", "blind broadcast"],
+			"stem": {
+				"pl": "Pilot szybowca leci w kręgu i zauważa, że AFIS nie odpowiada na jego wywołania. Jakie działanie jest właściwe?",
+				"en": "A glider pilot in the circuit notices that AFIS does not respond to calls. What is the appropriate action?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Opuścić krąg i wylądować na innym lotnisku",
+						"en": "Leave the circuit and divert to another aerodrome"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Nadawać komunikaty rozgłoszeniowe i utrzymywać obserwację wzrokową",
+						"en": "Continue blind broadcasts and maintain visual lookout"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Natychmiast nadać sygnał MAYDAY",
+						"en": "Immediately transmit a MAYDAY signal"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Oczekiwać na sygnały z wieży i zaniechać dalszych wywołań",
+						"en": "Wait for tower signals and cease further calls"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Brak odpowiedzi AFIS nie uniemożliwia lotu; pilot kontynuuje nadawanie blind calls informując o pozycji i utrzymuje wzmożoną obserwację wzrokową.",
+				"en": "Absence of AFIS response does not prevent flight; the pilot continues blind position calls and maintains an enhanced visual lookout."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "gen-com-131",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["COM.GLIDER_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["VHF", "frequency band", "aeronautical"],
+			"stem": {
+				"pl": "Które częstotliwości VHF są przeznaczone do łączności lotniczej (pasmo lotnicze VHF)?",
+				"en": "Which VHF frequencies are allocated for aeronautical communications (aeronautical VHF band)?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "118,000 - 136,975 MHz",
+						"en": "118.000 - 136.975 MHz"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "108,000 - 117,975 MHz",
+						"en": "108.000 - 117.975 MHz"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "136,000 - 156,000 MHz",
+						"en": "136.000 - 156.000 MHz"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "100,000 - 118,000 MHz",
+						"en": "100.000 - 118.000 MHz"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Pasmo 118,000-136,975 MHz jest przeznaczone dla lotniczej ruchomej służby radiokomunikacyjnej (AM) używanej w łączności ATC i lotniskowej.",
+				"en": "The 118.000-136.975 MHz band is allocated to the aeronautical mobile radio service (AM) used for ATC and aerodrome communications."
+			},
+			"source": "authored:spl"
+		}
+	]
+}
