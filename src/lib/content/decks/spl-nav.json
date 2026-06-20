@@ -755,6 +755,37 @@
 				"en": "Drift correction means pointing the nose into the wind so the resulting track matches the planned one."
 			},
 			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-scenario-lost",
+			"type": "scenario",
+			"microSkill": "general",
+			"loIds": ["NAV.POSITION"],
+			"licenses": ["SPL"],
+			"tags": ["decision"],
+			"prompt": {
+				"pl": "Przelot. Po dłuższym krążeniu w termice nie rozpoznajesz terenu pod sobą i tracisz pewność co do pozycji. Jak odzyskujesz orientację?",
+				"en": "Cross-country. After a long thermal climb you no longer recognise the ground below and lose confidence in your position. How do you re-orient?"
+			},
+			"modelChecklist": [
+				{
+					"pl": "Najpierw lataj szybowcem - utrzymaj wysokość i prędkość, nie skupiaj się tylko na mapie.",
+					"en": "Fly the glider first - hold height and speed, do not fixate on the map."
+				},
+				{
+					"pl": "Oszacuj ostatnią pewną pozycję, kurs i czas, by wyznaczyć krąg prawdopodobnego położenia (martwy rachunek).",
+					"en": "Estimate last known position, heading and time to set a circle of probable position (dead reckoning)."
+				},
+				{
+					"pl": "Szukaj dużych, jednoznacznych punktów orientacyjnych: rzeki, drogi, linie kolejowe, miasta.",
+					"en": "Look for large, unambiguous features: rivers, roads, railways, towns."
+				},
+				{
+					"pl": "Jeśli nadal brak pewności, zachowaj wysokość, rozważ wezwanie pomocy i wybierz pole do lądowania w terenie.",
+					"en": "If still unsure, conserve height, consider calling for assistance and pick a field for an out-landing."
+				}
+			],
+			"source": "authored:spl"
 		}
 	]
 }

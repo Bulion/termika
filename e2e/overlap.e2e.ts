@@ -4,6 +4,7 @@ const routes = [
 	'./',
 	'./study',
 	'./study/session?mode=all',
+	'./study/session?mode=scenario',
 	'./drills',
 	'./drills/run?set=nav-rules',
 	'./drills/quiz?set=phonetic-alphabet',

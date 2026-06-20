@@ -3,8 +3,15 @@
 	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
 	import RecallCard from '$lib/components/RecallCard.svelte';
+	import ScenarioCard from '$lib/components/ScenarioCard.svelte';
 	import { loadContent } from '$lib/content';
-	import type { ContentLocale, Flashcard, MicroSkill } from '$lib/content/schema';
+	import type {
+		ContentLocale,
+		Flashcard,
+		MicroSkill,
+		ScenarioItem,
+		StudyItem
+	} from '$lib/content/schema';
 	import { db } from '$lib/engine/db';
 	import { recordReview } from '$lib/engine/progress';
 	import { createScheduler, type Grade } from '$lib/engine/scheduler';
@@ -12,7 +19,8 @@
 	import { m } from '$lib/paraglide/messages.js';
 	import { getLocale } from '$lib/paraglide/runtime';
 
-	type Mode = 'all' | 'abbreviation' | 'concept_number';
+	type Mode = 'all' | 'abbreviation' | 'concept_number' | 'scenario';
+	const MODES: Mode[] = ['all', 'abbreviation', 'concept_number', 'scenario'];
 
 	const scheduler = createScheduler();
 	const locale = (): ContentLocale => (getLocale() === 'pl' ? 'pl' : 'en');
@@ -20,14 +28,15 @@
 	const modeLabels: Record<Mode, () => string> = {
 		all: m.mode_all,
 		abbreviation: m.mode_abbreviations,
-		concept_number: m.mode_numbers
+		concept_number: m.mode_numbers,
+		scenario: m.mode_scenarios
 	};
 
 	const param = page.url.searchParams.get('mode');
-	const mode: Mode = param === 'abbreviation' || param === 'concept_number' ? param : 'all';
+	const mode: Mode = MODES.includes(param as Mode) ? (param as Mode) : 'all';
 
-	let allFlashcards: Flashcard[] = [];
-	let queue = $state<Flashcard[]>([]);
+	let allItems: StudyItem[] = [];
+	let queue = $state<StudyItem[]>([]);
 	let index = $state(0);
 	let loading = $state(true);
 	let tally = $state<Record<Grade, number>>({ again: 0, hard: 0, good: 0, easy: 0 });
@@ -40,17 +49,23 @@
 	];
 
 	async function rebuild() {
-		const microSkills: MicroSkill[] | undefined = mode === 'all' ? undefined : [mode];
-		const pool = selectItems(allFlashcards, { license: 'SPL', microSkills }) as Flashcard[];
+		const pool =
+			mode === 'scenario'
+				? selectItems(allItems, { license: 'SPL', types: ['scenario'] })
+				: selectItems(allItems, {
+						license: 'SPL',
+						types: ['flashcard'],
+						microSkills: mode === 'all' ? undefined : ([mode] as MicroSkill[])
+					});
 		const built = await buildStudyQueue(db, pool, new Date());
-		queue = built.all as Flashcard[];
+		queue = built.all;
 		index = 0;
 		tally = { again: 0, hard: 0, good: 0, easy: 0 };
 	}
 
 	onMount(async () => {
 		const content = await loadContent();
-		allFlashcards = content.items.filter((i): i is Flashcard => i.type === 'flashcard');
+		allItems = content.items.filter((i) => i.type === 'flashcard' || i.type === 'scenario');
 		await rebuild();
 		loading = false;
 	});
@@ -94,7 +109,11 @@
 		</div>
 		<p class="status">{m.cards_left({ count: remaining })}</p>
 		{#key current.id}
-			<RecallCard item={current} locale={locale()} onGrade={grade} />
+			{#if current.type === 'scenario'}
+				<ScenarioCard item={current as ScenarioItem} locale={locale()} onGrade={grade} />
+			{:else}
+				<RecallCard item={current as Flashcard} locale={locale()} onGrade={grade} />
+			{/if}
 		{/key}
 	{:else}
 		<div class="summary">

@@ -689,6 +689,68 @@
 				"en": "The tug rocking its wings is the 'release at once' signal - something is seriously wrong. 'Check airbrakes' is signalled by the rudder waggle/yaw."
 			},
 			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-scenario-cable-break",
+			"type": "scenario",
+			"microSkill": "general",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["decision"],
+			"prompt": {
+				"pl": "Start za wyciągarką. Na wysokości około 80 m, jeszcze w stromym wznoszeniu, lina urywa się z głośnym trzaskiem. Co robisz, krok po kroku?",
+				"en": "Winch launch. At roughly 80 m, still in the steep climb, the cable snaps with a loud bang. What do you do, step by step?"
+			},
+			"modelChecklist": [
+				{
+					"pl": "Natychmiast zmniejsz kąt natarcia - wypchnij drążek, by odzyskać bezpieczną prędkość.",
+					"en": "Lower the nose at once - push to recover a safe approach speed."
+				},
+				{
+					"pl": "Oceń pozostały pas przed sobą i zdecyduj: lądowanie na wprost.",
+					"en": "Assess the remaining ground ahead and decide: land straight ahead."
+				},
+				{
+					"pl": "Jeśli wysokość nie wystarcza na pełny krąg, nie próbuj zawracać na lotnisko.",
+					"en": "If height is insufficient for a full circuit, do not attempt to turn back to the field."
+				},
+				{
+					"pl": "Użyj hamulców aerodynamicznych do korekty przyziemienia, wykonaj lądowanie i zatrzymanie.",
+					"en": "Use the airbrakes to adjust the touchdown point, land and stop."
+				}
+			],
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-scenario-rope-slack",
+			"type": "scenario",
+			"microSkill": "general",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["decision"],
+			"prompt": {
+				"pl": "Holowanie za samolotem. Wpadasz w zawirowania i lina nagle zwisa luźno (slack rope), grożąc szarpnięciem. Jak reagujesz?",
+				"en": "Aerotow. You hit turbulence and the rope suddenly goes slack, threatening a snatch. How do you react?"
+			},
+			"modelChecklist": [
+				{
+					"pl": "Wyhamuj zbliżanie do samolotu - delikatnie wypuść hamulce lub odchyl tor, by napiąć linę stopniowo.",
+					"en": "Stop closing on the tug - gently ease the airbrakes or yaw slightly to take up the slack gradually."
+				},
+				{
+					"pl": "Unikaj gwałtownego napięcia liny, które mogłoby ją zerwać lub uszkodzić zaczep.",
+					"en": "Avoid a sharp snatch that could break the rope or damage the hook."
+				},
+				{
+					"pl": "Wróć do prawidłowej pozycji holowania (high lub low tow) i ustabilizuj lot.",
+					"en": "Return to the correct tow position (high or low tow) and stabilise."
+				},
+				{
+					"pl": "Jeśli nie da się odzyskać pozycji bezpiecznie, zwolnij linę i wykonaj samodzielne lądowanie.",
+					"en": "If a safe position cannot be regained, release and carry out an independent landing."
+				}
+			],
+			"source": "authored:spl"
 		}
 	]
 }

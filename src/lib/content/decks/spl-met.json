@@ -837,6 +837,37 @@
 				"en": "Ridge lift comes from mechanical forcing of wind up the windward slope; heating gives thermals and oscillation downwind gives wave."
 			},
 			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-scenario-cunim",
+			"type": "scenario",
+			"microSkill": "general",
+			"loIds": ["MET.HAZARDS"],
+			"licenses": ["SPL"],
+			"tags": ["decision"],
+			"prompt": {
+				"pl": "Przelot. Przed sobą, na trasie, rośnie potężna chmura Cumulonimbus z ciemną podstawą i smugami opadu. Jak planujesz dalszy lot?",
+				"en": "Cross-country. Ahead on track, a towering Cumulonimbus is building with a dark base and rain shafts. How do you plan to continue?"
+			},
+			"modelChecklist": [
+				{
+					"pl": "Nie wlatuj pod chmurę ani w strefę opadu - groźny silny prąd zstępujący, gradient wiatru i turbulencja.",
+					"en": "Do not fly under the cloud or into the precipitation - severe downdraught, wind shear and turbulence."
+				},
+				{
+					"pl": "Zachowaj bezpieczny odstęp i omijaj komórkę od strony nawietrznej, z dala od kierunku jej przemieszczania.",
+					"en": "Keep well clear and skirt the cell on the upwind side, away from its direction of travel."
+				},
+				{
+					"pl": "Monitoruj wysokość i możliwe pola lądowania; przygotuj plan awaryjnego lądowania w terenie.",
+					"en": "Monitor height and available fields; have an out-landing plan ready."
+				},
+				{
+					"pl": "Jeśli komórka blokuje trasę, zawróć lub zmień cel - nie forsuj przejścia.",
+					"en": "If the cell blocks the route, turn back or change goal - do not press on through it."
+				}
+			],
+			"source": "authored:spl"
 		}
 	]
 }

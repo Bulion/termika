@@ -5,7 +5,8 @@
 	const exercises = [
 		{ mode: 'all', title: m.mode_all, desc: m.mode_all_desc },
 		{ mode: 'abbreviation', title: m.mode_abbreviations, desc: m.mode_abbreviations_desc },
-		{ mode: 'concept_number', title: m.mode_numbers, desc: m.mode_numbers_desc }
+		{ mode: 'concept_number', title: m.mode_numbers, desc: m.mode_numbers_desc },
+		{ mode: 'scenario', title: m.mode_scenarios, desc: m.mode_scenarios_desc }
 	];
 </script>
 
