@@ -54,6 +54,9 @@
 		"vitest-browser-svelte": "^2.1.1"
 	},
 	"dependencies": {
+		"@fontsource/atkinson-hyperlegible": "^5.2.8",
+		"@fontsource/fredoka": "^5.2.10",
+		"@fontsource/space-mono": "^5.2.9",
 		"chart.js": "^4.5.1",
 		"convert-units": "^2.3.4",
 		"dexie": "^4.4.4",

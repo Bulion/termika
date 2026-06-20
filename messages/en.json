@@ -48,5 +48,11 @@
 	"dashboard_import": "Import progress",
 	"dashboard_import_error": "Could not read the backup file.",
 	"dashboard_exam_history": "Exam history",
-	"dashboard_no_exams": "No completed exams yet."
+	"dashboard_no_exams": "No completed exams yet.",
+	"nav_home": "Home",
+	"theme_label": "Theme",
+	"theme_system": "System",
+	"theme_light": "Light",
+	"theme_dark": "Dark",
+	"lang_label": "Language"
 }

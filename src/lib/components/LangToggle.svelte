@@ -1,0 +1,26 @@
+<script lang="ts">
+	import { m } from '$lib/paraglide/messages.js';
+	import { getLocale, setLocale } from '$lib/paraglide/runtime';
+
+	const next = getLocale() === 'pl' ? 'en' : 'pl';
+
+	function switchLanguage() {
+		setLocale(next);
+	}
+</script>
+
+<button type="button" class="lang-toggle" onclick={switchLanguage} aria-label={m.lang_label()}>
+	{next.toUpperCase()}
+</button>
+
+<style>
+	.lang-toggle {
+		padding: var(--space-2) var(--space-3);
+		font-family: var(--font-mono);
+		font-size: 0.9rem;
+		color: var(--color-ink);
+		background: var(--color-surface);
+		border: var(--border-width) solid var(--color-outline);
+		border-radius: var(--radius-md);
+	}
+</style>

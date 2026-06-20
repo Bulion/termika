@@ -48,5 +48,11 @@
 	"dashboard_import": "Importuj postępy",
 	"dashboard_import_error": "Nie udało się wczytać pliku kopii.",
 	"dashboard_exam_history": "Historia egzaminów",
-	"dashboard_no_exams": "Brak ukończonych egzaminów."
+	"dashboard_no_exams": "Brak ukończonych egzaminów.",
+	"nav_home": "Start",
+	"theme_label": "Motyw",
+	"theme_system": "Systemowy",
+	"theme_light": "Jasny",
+	"theme_dark": "Ciemny",
+	"lang_label": "Język"
 }

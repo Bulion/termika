@@ -1,4 +1,9 @@
 @import url('./tokens.css');
+@import url('@fontsource/fredoka/400.css');
+@import url('@fontsource/fredoka/600.css');
+@import url('@fontsource/atkinson-hyperlegible/400.css');
+@import url('@fontsource/atkinson-hyperlegible/700.css');
+@import url('@fontsource/space-mono/400.css');
 
 *,
 *::before,

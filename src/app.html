@@ -7,6 +7,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<meta name="text-scale" content="scale" />
+		<script>
+			try {
+				const pref = localStorage.getItem('termika-theme');
+				const dark =
+					pref === 'dark' ||
+					(pref !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+				if (dark) document.documentElement.dataset.theme = 'dark';
+			} catch (error) {
+				void error;
+			}
+		</script>
 		%sveltekit.head%
 	</head>
 
