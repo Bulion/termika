@@ -254,22 +254,23 @@ function buildFront(strings: typeof E6B_STRINGS.pl): FrontRefs {
 	svg.appendChild(cwMark);
 
 	svg.appendChild(
-		txt(260, 40, 'FLIGHT COMPUTER', {
-			size: 13,
-			extra: { 'font-weight': 'bold', 'letter-spacing': '2' }
+		txt(380, 38, 'FLIGHT COMPUTER', {
+			size: 12,
+			extra: { 'font-weight': 'bold', 'letter-spacing': '1.5' }
 		})
 	);
 	const cx = 260,
-		cy = 400,
+		cy = 410,
 		Rr = 232;
 	svg.appendChild(el('circle', { cx, cy, r: Rr, fill: '#16160f' }));
 	svg.appendChild(
 		el('circle', { cx, cy, r: Rr - 2, fill: 'none', stroke: '#efece2', 'stroke-width': 40 })
 	);
-	svg.appendChild(buildLogScale(cx, cy, Rr - 22, Rr - 12, false, true));
+	// Lighten the inner gap ring so the red conversion indices read clearly.
 	svg.appendChild(
-		txt(cx, cy - Rr + 6, 'A  (dystans / predkosc / paliwo)', { size: 8, fill: '#1a1a14' })
+		el('circle', { cx, cy, r: Rr - 33, fill: 'none', stroke: '#3b3b32', 'stroke-width': 22 })
 	);
+	svg.appendChild(buildLogScale(cx, cy, Rr - 22, Rr - 12, false, true));
 	(
 		[
 			['NAUT', 66],
@@ -278,11 +279,12 @@ function buildFront(strings: typeof E6B_STRINGS.pl): FrontRefs {
 		] as const
 	).forEach(([label, v]) => {
 		const ang = logAngle(v);
-		const pr = polar(cx, cy, Rr - 34, ang);
+		const pr = polar(cx, cy, Rr - 33, ang);
 		svg.appendChild(
 			txt(pr[0], pr[1], label, {
-				size: 6,
-				fill: '#a8281c',
+				size: 8,
+				fill: '#ff9a7d',
+				extra: { 'font-weight': 'bold' },
 				rot: `rotate(${ang} ${pr[0]} ${pr[1]})`
 			})
 		);
@@ -297,8 +299,6 @@ function buildFront(strings: typeof E6B_STRINGS.pl): FrontRefs {
 	disc.appendChild(
 		el('circle', { cx, cy, r: Rr - 128, fill: 'none', stroke: '#c9c6ba', 'stroke-width': 1 })
 	);
-	disc.appendChild(txt(cx, cy - Rr + 96, 'B (min)', { size: 8 }));
-	disc.appendChild(txt(cx, cy - Rr + 112, 'C (godz:min)', { size: 8, fill: '#1a4a7a' }));
 	const rA = logAngle(60),
 		rp = polar(cx, cy, Rr - 44, rA);
 	disc.appendChild(
