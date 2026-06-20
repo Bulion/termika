@@ -1,20 +1,36 @@
 <script lang="ts">
 	import E6bDrawer from '$lib/components/E6bDrawer.svelte';
-	import { openE6b } from '$lib/e6b/state.svelte';
+	import { e6b, openE6b } from '$lib/e6b/state.svelte';
 	import { m } from '$lib/paraglide/messages.js';
 
 	let { children } = $props();
 </script>
 
-{@render children()}
+<!-- On wide landscape the open computer docks on the right and pushes this content left;
+     on narrow screens the drawer slides over from the right instead. -->
+<div class="e6b-content" class:docked={e6b.open}>
+	{@render children()}
+</div>
 
-<button type="button" class="fab" onclick={openE6b} aria-label={m.e6b_card_title()}>
-	<span aria-hidden="true">E6B</span>
-</button>
+{#if !e6b.open}
+	<button type="button" class="fab" onclick={openE6b} aria-label={m.e6b_card_title()}>
+		<span aria-hidden="true">E6B</span>
+	</button>
+{/if}
 
 <E6bDrawer />
 
 <style>
+	.e6b-content {
+		transition: padding-right 0.22s ease;
+	}
+
+	@media (orientation: landscape) and (width >= 900px) {
+		.e6b-content.docked {
+			padding-right: 440px;
+		}
+	}
+
 	.fab {
 		position: fixed;
 		right: var(--space-4);

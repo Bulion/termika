@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { fly } from 'svelte/transition';
 	import { createE6b, type E6bInstance } from '$lib/e6b/computer';
 	import { e6b, closeE6b } from '$lib/e6b/state.svelte';
 	import { m } from '$lib/paraglide/messages.js';
@@ -11,11 +12,7 @@
 		const instance: E6bInstance = createE6b(container, {
 			locale: getLocale() === 'pl' ? 'pl' : 'en'
 		});
-		document.body.style.overflow = 'hidden';
-		return () => {
-			instance.destroy();
-			document.body.style.overflow = '';
-		};
+		return () => instance.destroy();
 	});
 
 	function onKey(event: KeyboardEvent) {
@@ -26,47 +23,52 @@
 <svelte:window onkeydown={onKey} />
 
 {#if e6b.open}
+	<!-- Scrim only matters on narrow screens (overlay); hidden when the drawer is docked. -->
+	<div class="scrim" role="presentation" onclick={closeE6b}></div>
 	<div
-		class="backdrop"
-		role="presentation"
-		onclick={(event) => {
-			if (event.target === event.currentTarget) closeE6b();
-		}}
+		class="drawer"
+		role="dialog"
+		aria-label={m.e6b_title()}
+		transition:fly={{ x: 460, duration: 220 }}
 	>
-		<div class="drawer" role="dialog" aria-modal="true" aria-label={m.e6b_title()}>
-			<header class="head">
-				<span class="title">{m.e6b_title()}</span>
-				<button type="button" class="close" onclick={closeE6b} aria-label={m.e6b_close()}>✕</button>
-			</header>
-			<div class="e6b-root" bind:this={container}></div>
-		</div>
+		<header class="head">
+			<span class="title">{m.e6b_title()}</span>
+			<button type="button" class="close" onclick={closeE6b} aria-label={m.e6b_close()}>✕</button>
+		</header>
+		<div class="e6b-root" bind:this={container}></div>
 	</div>
 {/if}
 
 <style>
-	.backdrop {
+	.scrim {
 		position: fixed;
 		inset: 0;
 		z-index: 100;
-		display: flex;
-		justify-content: center;
-		align-items: stretch;
-		padding: var(--space-3);
-		background: color-mix(in srgb, var(--color-ink) 55%, transparent);
-		backdrop-filter: blur(2px);
+		background: color-mix(in srgb, var(--color-ink) 45%, transparent);
 	}
 
 	.drawer {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 101;
 		display: flex;
 		flex-direction: column;
-		width: 100%;
-		max-width: 920px;
-		margin: 0 auto;
+		width: min(440px, 92vw);
 		background: var(--color-bg);
-		border: var(--border-width) solid var(--color-outline);
-		border-radius: var(--radius-lg);
-		box-shadow: var(--shadow-card);
-		overflow: hidden;
+		border-left: var(--border-width) solid var(--color-outline);
+		box-shadow: -10px 0 28px color-mix(in srgb, var(--color-ink) 30%, transparent);
+	}
+
+	@media (orientation: landscape) and (width >= 900px) {
+		.scrim {
+			display: none;
+		}
+
+		.drawer {
+			width: 440px;
+		}
 	}
 
 	.head {
@@ -346,47 +348,18 @@
 		line-height: 1.6;
 	}
 
-	/* Narrow screens: one pane at a time, switched by the toggle. */
-	@media (width < 1000px) {
-		.e6b-root :global(.e6b-layout[data-view='computer'] .e6b-panel) {
-			display: none;
-		}
-
-		.e6b-root :global(.e6b-layout[data-view='results'] .e6b-stage) {
-			display: none;
-		}
-
-		.e6b-root :global(.e6b-layout[data-view='results'] .e6b-panel) {
-			flex: 1 1 100%;
-			max-width: 460px;
-		}
+	/* The drawer is a narrow column, so the instrument always uses one pane at a time,
+	   switched by the Computer/Results toggle. */
+	.e6b-root :global(.e6b-layout[data-view='computer'] .e6b-panel) {
+		display: none;
 	}
 
-	/* Landscape with one pane: size the instrument to the height so it fits without scrolling. */
-	@media (width < 1000px) and (orientation: landscape) {
-		.e6b-root :global(.e6b-layout[data-view='computer'] .e6b-stage) {
-			width: auto;
-			max-width: none;
-			height: min(82dvh, 720px);
-		}
+	.e6b-root :global(.e6b-layout[data-view='results'] .e6b-stage) {
+		display: none;
 	}
 
-	/* Wide screens: show both panes side by side; the toggle is unnecessary. */
-	@media (width >= 1000px) {
-		.e6b-root :global(.e6b-view-toggle) {
-			display: none;
-		}
-
-		.e6b-root :global(.e6b-layout) {
-			flex-wrap: nowrap;
-			align-items: flex-start;
-		}
-
-		.e6b-root :global(.e6b-stage) {
-			flex: 0 0 auto;
-			width: auto;
-			max-width: none;
-			height: min(82dvh, 760px);
-		}
+	.e6b-root :global(.e6b-layout[data-view='results'] .e6b-panel) {
+		flex: 1 1 100%;
+		max-width: none;
 	}
 </style>

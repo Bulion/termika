@@ -34,20 +34,22 @@ test.describe('E6B computer drawer', () => {
 		await expect(page.locator('.e6b-root')).toHaveCount(0);
 	});
 
-	test('lays the stage and panel side by side in landscape', async ({ page }) => {
-		await page.setViewportSize({ width: 1024, height: 600 });
-		await page.goto('./drills/e6b');
+	test('docks on the right and pushes the questions left in wide landscape', async ({ page }) => {
+		await page.setViewportSize({ width: 1100, height: 660 });
+		await page.goto('./drills/run?set=e6b-wind');
+		await page.locator('.fab').click();
 
-		const stage = page.locator('.e6b-stage');
-		const panel = page.locator('.e6b-panel');
-		await expect(stage).toBeVisible();
-		await expect(panel).toBeVisible();
+		const drawer = page.getByRole('dialog');
+		await expect(drawer).toBeVisible();
+		const drawerBox = await drawer.boundingBox();
+		expect(drawerBox).not.toBeNull();
+		// Anchored to the right edge, ~440px wide - not a centred modal.
+		expect(drawerBox!.x + drawerBox!.width).toBeGreaterThan(1100 - 2);
+		expect(drawerBox!.width).toBeLessThan(480);
 
-		const stageBox = await stage.boundingBox();
-		const panelBox = await panel.boundingBox();
-		expect(stageBox).not.toBeNull();
-		expect(panelBox).not.toBeNull();
-		// Side by side: the panel starts to the right of the stage, not below it.
-		expect(panelBox!.x).toBeGreaterThan(stageBox!.x + stageBox!.width - 5);
+		// The question content sits to the left of the docked computer, not under it.
+		const mainBox = await page.locator('main').first().boundingBox();
+		expect(mainBox).not.toBeNull();
+		expect(mainBox!.x + mainBox!.width).toBeLessThanOrEqual(drawerBox!.x + 5);
 	});
 });
