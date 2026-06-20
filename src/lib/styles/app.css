@@ -48,15 +48,43 @@ button {
 	border-radius: var(--radius-sm);
 }
 
-/* Diagonal "wind-streak" stripes for progress fills, suggesting motion. */
+/* Diagonal "wind-streak" stripes for progress fills, animated to suggest motion. */
 .wind-streak {
 	background-image: repeating-linear-gradient(
 		-45deg,
-		rgb(255 255 255 / 25%),
-		rgb(255 255 255 / 25%) 10px,
+		transparent,
 		transparent 10px,
-		transparent 20px
+		rgb(255 255 255 / 25%) 10px,
+		rgb(255 255 255 / 25%) 20px
 	);
+	background-size: 28px 28px;
+	animation: move-streak 3s linear infinite;
+}
+
+@keyframes move-streak {
+	from {
+		background-position: 0 0;
+	}
+
+	to {
+		background-position: 28px 0;
+	}
+}
+
+/* Gentle bobbing loop, like a widget catching a thermal. */
+.bobbing {
+	animation: bob 3.5s ease-in-out infinite;
+}
+
+@keyframes bob {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-6px);
+	}
 }
 
 @media (prefers-reduced-motion: reduce) {

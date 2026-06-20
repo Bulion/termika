@@ -13,7 +13,7 @@
 		onGrade: (grade: Grade) => void;
 	} = $props();
 
-	let revealed = $state(false);
+	let flipped = $state(false);
 
 	const gradeLabel: Record<Grade, () => string> = {
 		again: m.grade_again,
@@ -23,17 +23,17 @@
 	};
 
 	function reveal() {
-		revealed = true;
+		flipped = true;
 	}
 
 	function handleKey(event: KeyboardEvent) {
 		if (event.target instanceof HTMLButtonElement) return;
-		if (!revealed && (event.key === ' ' || event.key === 'Enter')) {
+		if (!flipped && (event.key === ' ' || event.key === 'Enter')) {
 			event.preventDefault();
 			reveal();
 			return;
 		}
-		if (revealed && event.key >= '1' && event.key <= '4') {
+		if (flipped && event.key >= '1' && event.key <= '4') {
 			event.preventDefault();
 			onGrade(GRADES[Number(event.key) - 1]);
 		}
@@ -43,21 +43,23 @@
 <svelte:window onkeydown={handleKey} />
 
 <div class="stack">
-	<article class="recall-card" class:revealed aria-live="polite">
-		<span class="chip" class:chip--answer={revealed}>
-			{revealed ? m.chip_answer() : m.chip_question()}
-		</span>
-		<p class="prompt">{resolveText(item.front, locale)}</p>
+	<div class="scene">
+		<div class="card" class:flipped aria-live="polite">
+			<div class="face face--front">
+				<span class="chip chip--q">{m.chip_question()}</span>
+				<p class="prompt">{resolveText(item.front, locale)}</p>
+			</div>
+			<div class="face face--back">
+				<span class="chip chip--a">{m.chip_answer()}</span>
+				<p class="answer">{resolveText(item.back, locale)}</p>
+				{#if item.mnemonic}
+					<p class="mnemonic">{resolveText(item.mnemonic, locale)}</p>
+				{/if}
+			</div>
+		</div>
+	</div>
 
-		{#if revealed}
-			<p class="answer">{resolveText(item.back, locale)}</p>
-			{#if item.mnemonic}
-				<p class="mnemonic">{resolveText(item.mnemonic, locale)}</p>
-			{/if}
-		{/if}
-	</article>
-
-	{#if revealed}
+	{#if flipped}
 		<div class="grades" role="group" aria-label={m.study_title()}>
 			{#each GRADES as grade (grade)}
 				<button class="grade grade--{grade}" type="button" onclick={() => onGrade(grade)}>
@@ -76,27 +78,53 @@
 		flex-direction: column;
 		gap: var(--space-6);
 		width: 100%;
-		max-width: 36rem;
+		max-width: 38rem;
 		align-items: center;
 	}
 
-	.recall-card {
+	.scene {
+		width: 100%;
+		aspect-ratio: 16 / 10;
+		min-height: 16rem;
+		perspective: 1200px;
+	}
+
+	.card {
 		position: relative;
+		width: 100%;
+		height: 100%;
+		transform-style: preserve-3d;
+		transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.card.flipped {
+		transform: rotateY(180deg);
+	}
+
+	.face {
+		position: absolute;
+		inset: 0;
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		gap: var(--space-4);
-		width: 100%;
 		padding: var(--space-8) var(--space-6) var(--space-6);
 		text-align: center;
-		background: var(--color-surface);
+		backface-visibility: hidden;
 		border: var(--border-width) solid var(--color-outline);
 		border-radius: var(--radius-lg);
+	}
+
+	.face--front {
+		background: var(--color-surface);
 		box-shadow: var(--shadow-blue);
 	}
 
-	.recall-card.revealed {
+	.face--back {
 		background: var(--color-answer);
 		box-shadow: var(--shadow-yellow);
+		transform: rotateY(180deg);
 	}
 
 	.chip {
@@ -110,12 +138,15 @@
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
 		color: var(--color-on-accent);
-		background: var(--color-sun);
 		border: var(--border-width-sm) solid var(--color-outline);
 		border-radius: var(--radius-pill);
 	}
 
-	.chip--answer {
+	.chip--q {
+		background: var(--color-sun);
+	}
+
+	.chip--a {
 		background: var(--color-lift);
 	}
 
@@ -123,13 +154,15 @@
 		font-family: var(--font-display);
 		font-weight: 800;
 		font-size: clamp(1.5rem, 4vw, 2.25rem);
-		margin: var(--space-4) 0 0;
+		margin: 0;
 	}
 
 	.answer {
-		font-size: 1.125rem;
+		font-size: 1.05rem;
 		margin: 0;
 		padding: var(--space-4);
+		max-height: 80%;
+		overflow-y: auto;
 		background: var(--color-surface);
 		border: var(--border-width-sm) solid var(--color-outline);
 		border-radius: var(--radius-md);
@@ -202,5 +235,11 @@
 	.grade--easy {
 		color: var(--color-on-accent);
 		background: var(--color-sun);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.card {
+			transition: none;
+		}
 	}
 </style>

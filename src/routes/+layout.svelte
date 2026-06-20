@@ -30,7 +30,10 @@
 <a class="skip-link" href="#main">{m.nav_home()}</a>
 
 <header class="app-header">
-	<a class="brand" href={resolve('/')}>{m.app_name()}</a>
+	<a class="brand" href={resolve('/')}>
+		{m.app_name()}
+		<span class="badge">SPL</span>
+	</a>
 	<nav class="nav" aria-label={m.app_name()}>
 		{#each links as link (link.href)}
 			<a href={link.href} aria-current={page.url.pathname === link.href ? 'page' : undefined}>
@@ -78,12 +81,27 @@
 	}
 
 	.brand {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--space-2);
 		font-family: var(--font-display);
 		font-size: 1.5rem;
 		font-weight: 800;
 		letter-spacing: -0.02em;
 		color: var(--color-primary);
 		text-decoration: none;
+	}
+
+	.badge {
+		padding: 0.1rem var(--space-2);
+		font-family: var(--font-mono);
+		font-size: 0.65rem;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+		color: var(--color-on-accent);
+		background: var(--color-sun);
+		border: var(--border-width-sm) solid var(--color-outline);
+		border-radius: var(--radius-pill);
 	}
 
 	.nav {

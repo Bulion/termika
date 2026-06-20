@@ -4,10 +4,6 @@ import type { Flashcard } from '$lib/content/schema';
 import { setLocale } from '$lib/paraglide/runtime';
 import RecallCard from './RecallCard.svelte';
 
-beforeEach(() => {
-	setLocale('pl', { reload: false });
-});
-
 const item: Flashcard = {
 	id: 'spl-met-cavok',
 	type: 'flashcard',
@@ -20,14 +16,19 @@ const item: Flashcard = {
 	back: { pl: 'Ceiling and visibility OK' }
 };
 
+beforeEach(() => {
+	setLocale('pl', { reload: false });
+});
+
 describe('RecallCard', () => {
-	it('shows the prompt but hides the answer until revealed', async () => {
+	it('shows the prompt and a reveal button, with no grade buttons yet', async () => {
 		const screen = render(RecallCard, { item, locale: 'pl', onGrade: vi.fn() });
 		await expect.element(screen.getByText('CAVOK')).toBeVisible();
-		expect(screen.container.textContent).not.toContain('Ceiling and visibility OK');
+		await expect.element(screen.getByRole('button', { name: 'Pokaż odpowiedź' })).toBeVisible();
+		expect(screen.container.querySelector('.grade')).toBeNull();
 	});
 
-	it('reveals the answer and grade buttons on demand', async () => {
+	it('flips to reveal the answer and grade buttons on demand', async () => {
 		const screen = render(RecallCard, { item, locale: 'pl', onGrade: vi.fn() });
 		await screen.getByRole('button', { name: 'Pokaż odpowiedź' }).click();
 		await expect.element(screen.getByText('Ceiling and visibility OK')).toBeVisible();

@@ -20,6 +20,14 @@
 	let queue = $state<Flashcard[]>([]);
 	let index = $state(0);
 	let loading = $state(true);
+	let tally = $state<Record<Grade, number>>({ again: 0, hard: 0, good: 0, easy: 0 });
+
+	const tallyView: { grade: Grade; label: () => string }[] = [
+		{ grade: 'again', label: m.grade_again },
+		{ grade: 'hard', label: m.grade_hard },
+		{ grade: 'good', label: m.grade_good },
+		{ grade: 'easy', label: m.grade_easy }
+	];
 
 	const modes: { id: Mode; label: () => string }[] = [
 		{ id: 'all', label: m.mode_all },
@@ -33,6 +41,7 @@
 		const built = await buildStudyQueue(db, pool, new Date());
 		queue = built.all as Flashcard[];
 		index = 0;
+		tally = { again: 0, hard: 0, good: 0, easy: 0 };
 	}
 
 	onMount(async () => {
@@ -53,6 +62,7 @@
 		const item = queue[index];
 		if (!item) return;
 		await recordReview(db, scheduler, item.id, g, new Date());
+		tally[g] += 1;
 		index += 1;
 	}
 
@@ -95,8 +105,19 @@
 			<RecallCard item={current} locale={locale()} onGrade={grade} />
 		{/key}
 	{:else}
-		<p class="status">{m.session_done()}</p>
-		<button type="button" class="mode" onclick={() => setMode(mode)}>{m.start_again()}</button>
+		<div class="summary">
+			<span class="award bobbing" aria-hidden="true">🪂</span>
+			<h2>{m.session_done()}</h2>
+			<div class="tally">
+				{#each tallyView as row (row.grade)}
+					<div class="tally-cell tally--{row.grade}">
+						<span class="count">{tally[row.grade]}</span>
+						<span class="tally-label">{row.label()}</span>
+					</div>
+				{/each}
+			</div>
+			<button type="button" class="restart" onclick={() => setMode(mode)}>{m.start_again()}</button>
+		</div>
 	{/if}
 </main>
 
@@ -158,5 +179,102 @@
 		font-family: var(--font-mono);
 		color: var(--color-ink-soft);
 		margin: 0;
+	}
+
+	.summary {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: var(--space-4);
+		width: 100%;
+		max-width: 34rem;
+		margin: 0 auto;
+		padding: var(--space-8) var(--space-6);
+		text-align: center;
+		background: var(--color-surface);
+		border: var(--border-width) solid var(--color-outline);
+		border-radius: var(--radius-lg);
+		box-shadow: var(--shadow-card);
+	}
+
+	.award {
+		font-size: 3.5rem;
+		line-height: 1;
+	}
+
+	.tally {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--space-3);
+		width: 100%;
+	}
+
+	@media (width >= 30rem) {
+		.tally {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+	.tally-cell {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-1);
+		padding: var(--space-3);
+		border: var(--border-width-sm) solid var(--color-outline);
+		border-radius: var(--radius-md);
+	}
+
+	.count {
+		font-family: var(--font-display);
+		font-weight: 800;
+		font-size: 1.5rem;
+	}
+
+	.tally-label {
+		font-family: var(--font-mono);
+		font-size: 0.7rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		color: var(--color-ink-soft);
+	}
+
+	.tally--again {
+		color: var(--color-on-sink);
+		background: var(--color-sink-bg);
+	}
+
+	.tally--hard {
+		background: var(--color-surface-2);
+	}
+
+	.tally--good {
+		color: var(--color-on-accent);
+		background: var(--color-sky);
+	}
+
+	.tally--easy {
+		color: var(--color-on-accent);
+		background: var(--color-sun);
+	}
+
+	.tally--good .tally-label,
+	.tally--easy .tally-label {
+		color: var(--color-on-accent);
+	}
+
+	.restart {
+		padding: var(--space-3) var(--space-6);
+		font-weight: 700;
+		color: var(--color-on-accent);
+		background: var(--color-sky);
+		border: var(--border-width) solid var(--color-outline);
+		border-radius: var(--radius-pill);
+		box-shadow: var(--shadow-card);
+		transition: transform 0.1s ease;
+	}
+
+	.restart:active {
+		transform: translate(4px, 4px);
+		box-shadow: none;
 	}
 </style>
