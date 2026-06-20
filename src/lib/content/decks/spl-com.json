@@ -1,0 +1,24 @@
+{
+	"schemaVersion": 1,
+	"id": "spl-com",
+	"title": { "pl": "SPL: Łączność", "en": "SPL: Communications" },
+	"subjectId": "COM",
+	"items": [
+		{
+			"id": "spl-com-readback-landing",
+			"type": "scenario",
+			"microSkill": "rtf",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["readback"],
+			"prompt": {
+				"pl": "Wieża: „SP-AB, zezwalam na lądowanie pas 27, wiatr 250/12”. Podaj poprawne powtórzenie.",
+				"en": "Tower: 'SP-AB, cleared to land runway 27, wind 250/12.' Give the correct readback."
+			},
+			"modelChecklist": [
+				{ "pl": "Zezwolenie na lądowanie pas 27", "en": "Cleared to land runway 27" },
+				{ "pl": "Znak wywoławczy SP-AB", "en": "Callsign SP-AB" }
+			]
+		}
+	]
+}

@@ -1,0 +1,76 @@
+{
+	"schemaVersion": 1,
+	"id": "spl-airlaw",
+	"title": { "pl": "SPL: Prawo lotnicze", "en": "SPL: Air law" },
+	"subjectId": "AIRLAW",
+	"items": [
+		{
+			"id": "spl-airlaw-qnh",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["AIRLAW.ALTIMETRY"],
+			"licenses": ["SPL"],
+			"tags": ["altimetry", "code"],
+			"confusableWith": ["spl-airlaw-qfe"],
+			"front": { "pl": "QNH", "en": "QNH" },
+			"back": {
+				"pl": "Nastawa dająca wysokość nad poziomem morza; na lotnisku wskazuje jego elewację",
+				"en": "Setting giving altitude above mean sea level; reads field elevation on the ground"
+			}
+		},
+		{
+			"id": "spl-airlaw-qfe",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["AIRLAW.ALTIMETRY"],
+			"licenses": ["SPL"],
+			"tags": ["altimetry", "code"],
+			"confusableWith": ["spl-airlaw-qnh"],
+			"front": { "pl": "QFE", "en": "QFE" },
+			"back": {
+				"pl": "Nastawa dająca wysokość nad progiem/elewacją lotniska; na pasie wskazuje 0",
+				"en": "Setting giving height above the airfield datum; reads 0 on the runway"
+			}
+		},
+		{
+			"id": "spl-airlaw-vfr-g",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["AIRLAW.VFR_MINIMA"],
+			"licenses": ["SPL"],
+			"tags": ["vfr-minima"],
+			"stem": {
+				"pl": "Minima VFR w przestrzeni klasy G na/poniżej 3000 ft AMSL przy prędkości ≤140 kt?",
+				"en": "VFR minima in Class G at/below 3000 ft AMSL at ≤140 kt?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Widzialność 1500 m, z dala od chmur, z widocznością terenu",
+						"en": "1500 m visibility, clear of cloud, in sight of the surface"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Widzialność 5000 m, 1000 ft w pionie od chmur",
+						"en": "5000 m visibility, 1000 ft vertically from cloud"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Widzialność 8000 m, 1500 m poziomo od chmur",
+						"en": "8000 m visibility, 1500 m horizontally from cloud"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "SERA.5001, tabela S5-1: opcja dla niskiego poziomu i małej prędkości.",
+				"en": "SERA.5001 Table S5-1: the low-level, low-speed option."
+			}
+		}
+	]
+}

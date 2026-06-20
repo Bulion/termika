@@ -1,0 +1,77 @@
+{
+	"schemaVersion": 1,
+	"subjects": [
+		{
+			"id": "AIRLAW",
+			"name": { "pl": "Prawo lotnicze", "en": "Air law" },
+			"los": [
+				{
+					"id": "AIRLAW.VFR_MINIMA",
+					"text": {
+						"pl": "Minima VFR widzialności i odległości od chmur wg klasy przestrzeni",
+						"en": "VFR visibility and distance-from-cloud minima by airspace class"
+					},
+					"licenses": ["SPL", "BPL", "PPL_A"]
+				},
+				{
+					"id": "AIRLAW.ALTIMETRY",
+					"text": {
+						"pl": "Nastawy wysokościomierza: QNH, QFE, QNE i ich znaczenie",
+						"en": "Altimeter settings: QNH, QFE, QNE and their meaning"
+					},
+					"licenses": ["SPL", "BPL", "PPL_A"]
+				}
+			]
+		},
+		{
+			"id": "MET",
+			"name": { "pl": "Meteorologia", "en": "Meteorology" },
+			"los": [
+				{
+					"id": "MET.METAR",
+					"text": {
+						"pl": "Odczyt skrótów i kodów depesz METAR/TAF",
+						"en": "Reading METAR/TAF abbreviations and codes"
+					},
+					"licenses": ["SPL", "BPL", "PPL_A"]
+				},
+				{
+					"id": "MET.ISA",
+					"text": {
+						"pl": "Wartości atmosfery wzorcowej ISA",
+						"en": "International Standard Atmosphere (ISA) values"
+					},
+					"licenses": ["SPL", "BPL", "PPL_A"]
+				}
+			]
+		},
+		{
+			"id": "COM",
+			"name": { "pl": "Łączność", "en": "Communications" },
+			"los": [
+				{
+					"id": "COM.READBACK",
+					"text": {
+						"pl": "Obowiązkowe powtórzenia (readback) instrukcji ATC",
+						"en": "Mandatory readback of ATC instructions"
+					},
+					"licenses": ["SPL", "BPL", "PPL_A"]
+				}
+			]
+		},
+		{
+			"id": "NAV",
+			"name": { "pl": "Nawigacja", "en": "Navigation" },
+			"los": [
+				{
+					"id": "NAV.ROD",
+					"text": {
+						"pl": "Szacowanie prędkości opadania dla zniżania 3 stopni",
+						"en": "Estimating rate of descent for a 3-degree glidepath"
+					},
+					"licenses": ["SPL", "BPL", "PPL_A"]
+				}
+			]
+		}
+	]
+}
