@@ -1,0 +1,47 @@
+{
+	"schemaVersion": 1,
+	"id": "unit-conversions",
+	"title": { "pl": "Przeliczenia jednostek", "en": "Unit conversions" },
+	"drills": [
+		{
+			"id": "kt-kmh",
+			"microSkill": "unit_conversion",
+			"prompt": { "pl": "{value} kt → km/h?", "en": "{value} kt → km/h?" },
+			"generate": { "min": 60, "max": 320, "step": 5 },
+			"op": { "kind": "convert", "from": "knot", "to": "km/h" },
+			"tolerancePct": 3,
+			"timeLimitSec": 12,
+			"tags": ["speed"]
+		},
+		{
+			"id": "ft-m",
+			"microSkill": "unit_conversion",
+			"prompt": { "pl": "{value} ft → m?", "en": "{value} ft → m?" },
+			"generate": { "min": 1000, "max": 41000, "step": 500 },
+			"op": { "kind": "convert", "from": "ft", "to": "m" },
+			"tolerancePct": 2,
+			"timeLimitSec": 12,
+			"tags": ["altitude"]
+		},
+		{
+			"id": "nm-km",
+			"microSkill": "unit_conversion",
+			"prompt": { "pl": "{value} NM → km?", "en": "{value} NM → km?" },
+			"generate": { "min": 5, "max": 200, "step": 5 },
+			"op": { "kind": "linear", "factor": 1.852 },
+			"tolerancePct": 3,
+			"timeLimitSec": 12,
+			"tags": ["distance"]
+		},
+		{
+			"id": "inhg-hpa",
+			"microSkill": "unit_conversion",
+			"prompt": { "pl": "{value} inHg → hPa?", "en": "{value} inHg → hPa?" },
+			"generate": { "min": 28, "max": 31, "step": 0.1 },
+			"op": { "kind": "linear", "factor": 33.8639 },
+			"tolerancePct": 1,
+			"timeLimitSec": 15,
+			"tags": ["pressure"]
+		}
+	]
+}

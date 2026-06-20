@@ -11,6 +11,8 @@ const base: '' | `/${string}` = servedAtRoot
 	: ((process.env.BASE_PATH as `/${string}` | undefined) ?? '/licencjeLotnicze');
 
 export default defineConfig({
+	// convert-units is CommonJS and pulls in lodash, which expects a `global` binding.
+	define: { global: 'globalThis' },
 	plugins: [
 		sveltekit({
 			compilerOptions: {

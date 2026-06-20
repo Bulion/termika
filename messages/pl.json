@@ -15,5 +15,14 @@
 	"mode_all": "Wszystko",
 	"mode_abbreviations": "Skróty",
 	"mode_numbers": "Wartości",
-	"start_again": "Zacznij od nowa"
+	"start_again": "Zacznij od nowa",
+	"nav_drills": "Drile",
+	"drills_title": "Drile na czas",
+	"drill_answer": "Twoja odpowiedź",
+	"drill_check": "Sprawdź",
+	"drill_next": "Następne",
+	"drill_correct": "Dobrze!",
+	"drill_wrong": "Poprawnie: {expected}",
+	"drill_graduated": "Opanowane",
+	"drill_accuracy": "Skuteczność: {pct}%"
 }

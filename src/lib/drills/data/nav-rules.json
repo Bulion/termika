@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "nav-rules",
+	"title": { "pl": "Reguły nawigacyjne", "en": "Navigation rules of thumb" },
+	"drills": [
+		{
+			"id": "rod-3deg",
+			"microSkill": "nav_rule",
+			"prompt": {
+				"pl": "GS {value} kt, ścieżka 3° → ROD (ft/min)?",
+				"en": "GS {value} kt, 3° slope → ROD (ft/min)?"
+			},
+			"generate": { "min": 70, "max": 160, "step": 10 },
+			"op": { "kind": "linear", "factor": 5 },
+			"tolerancePct": 5,
+			"timeLimitSec": 10,
+			"tags": ["descent"]
+		},
+		{
+			"id": "tod-distance",
+			"microSkill": "nav_rule",
+			"prompt": {
+				"pl": "{value} tys. ft do zniżenia (3°) → odległość TOD (NM)?",
+				"en": "{value} thousand ft to lose (3°) → TOD distance (NM)?"
+			},
+			"generate": { "min": 2, "max": 12, "step": 1 },
+			"op": { "kind": "linear", "factor": 3 },
+			"tolerancePct": 5,
+			"timeLimitSec": 10,
+			"tags": ["descent"]
+		}
+	]
+}

@@ -1,5 +1,6 @@
 import Dexie, { type Table } from 'dexie';
 import type { Card, ReviewLog } from 'ts-fsrs';
+import type { FluencyState } from '../drills/fluency';
 import type { Grade } from './scheduler';
 
 export interface CardStateRow {
@@ -23,13 +24,7 @@ export interface SettingRow {
 	value: unknown;
 }
 
-export interface DrillFluencyRow {
-	drillId: string;
-	attempts: number;
-	correct: number;
-	medianLatencyMs: number;
-	graduated: boolean;
-}
+export type DrillFluencyRow = { drillId: string } & FluencyState;
 
 export interface MockResultRow {
 	id?: number;

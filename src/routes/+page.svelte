@@ -6,7 +6,10 @@
 <main class="home">
 	<h1>{m.app_name()}</h1>
 	<p class="tagline">{m.tagline()}</p>
-	<a class="cta" href={resolve('/study')}>{m.nav_study()}</a>
+	<nav class="links">
+		<a class="cta" href={resolve('/study')}>{m.nav_study()}</a>
+		<a class="cta cta--alt" href={resolve('/drills')}>{m.nav_drills()}</a>
+	</nav>
 </main>
 
 <style>
@@ -26,9 +29,15 @@
 		margin: 0;
 	}
 
+	.links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-3);
+		margin-top: var(--space-4);
+	}
+
 	.cta {
 		display: inline-block;
-		margin-top: var(--space-4);
 		padding: var(--space-3) var(--space-6);
 		font-family: var(--font-display);
 		font-size: 1.125rem;
@@ -38,5 +47,9 @@
 		border: var(--border-width) solid var(--color-outline);
 		border-radius: var(--radius-md);
 		box-shadow: var(--shadow-card);
+	}
+
+	.cta--alt {
+		background: var(--color-sky);
 	}
 </style>

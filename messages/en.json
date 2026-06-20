@@ -15,5 +15,14 @@
 	"mode_all": "All",
 	"mode_abbreviations": "Abbreviations",
 	"mode_numbers": "Values",
-	"start_again": "Start again"
+	"start_again": "Start again",
+	"nav_drills": "Drills",
+	"drills_title": "Timed drills",
+	"drill_answer": "Your answer",
+	"drill_check": "Check",
+	"drill_next": "Next",
+	"drill_correct": "Correct!",
+	"drill_wrong": "Correct answer: {expected}",
+	"drill_graduated": "Mastered",
+	"drill_accuracy": "Accuracy: {pct}%"
 }
