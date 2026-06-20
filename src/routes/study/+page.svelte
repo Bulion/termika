@@ -170,7 +170,7 @@
 
 	.progress-fill {
 		height: 100%;
-		background: var(--color-sky);
+		background-color: var(--color-sky);
 		border-right: var(--border-width-sm) solid var(--color-outline);
 		transition: width 0.5s ease;
 	}
