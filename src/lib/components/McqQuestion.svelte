@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { ContentLocale, Mcq } from '$lib/content/schema';
 	import { resolveText } from '$lib/content/schema';
+	import RichText from './RichText.svelte';
 
 	let {
 		question,
@@ -27,20 +28,23 @@
 </script>
 
 <fieldset class="question" disabled={reveal}>
-	<legend><span class="num">{index}.</span> {resolveText(question.stem, locale)}</legend>
+	<legend
+		><span class="num">{index}.</span>
+		<RichText text={resolveText(question.stem, locale)} /></legend
+	>
 
 	{#each question.choices as choice (choice.id)}
 		<label
 			class="choice choice--{choiceState(choice.id)}"
 			class:selected={!reveal && selected === choice.id}
 		>
-			<span class="choice-text">{resolveText(choice.text, locale)}</span>
+			<span class="choice-text"><RichText text={resolveText(choice.text, locale)} /></span>
 			<input type="radio" {name} value={choice.id} bind:group={selected} />
 		</label>
 	{/each}
 
 	{#if reveal && question.explanation}
-		<p class="explanation">{resolveText(question.explanation, locale)}</p>
+		<p class="explanation"><RichText text={resolveText(question.explanation, locale)} /></p>
 	{/if}
 </fieldset>
 

@@ -2,6 +2,7 @@
 	import { resolveText, type ContentLocale, type Flashcard } from '$lib/content/schema';
 	import { GRADES, type Grade } from '$lib/engine/scheduler';
 	import { m } from '$lib/paraglide/messages.js';
+	import RichText from './RichText.svelte';
 
 	let {
 		item,
@@ -47,13 +48,13 @@
 		<div class="card" class:flipped aria-live="polite">
 			<div class="face face--front">
 				<span class="chip chip--q">{m.chip_question()}</span>
-				<p class="prompt">{resolveText(item.front, locale)}</p>
+				<p class="prompt"><RichText text={resolveText(item.front, locale)} /></p>
 			</div>
 			<div class="face face--back">
 				<span class="chip chip--a">{m.chip_answer()}</span>
-				<p class="answer">{resolveText(item.back, locale)}</p>
+				<p class="answer"><RichText text={resolveText(item.back, locale)} /></p>
 				{#if item.mnemonic}
-					<p class="mnemonic">{resolveText(item.mnemonic, locale)}</p>
+					<p class="mnemonic"><RichText text={resolveText(item.mnemonic, locale)} /></p>
 				{/if}
 			</div>
 		</div>
