@@ -651,9 +651,12 @@ export function createE6b(root: HTMLElement, options: { locale: E6bLocale }): E6
 			<button type="button" data-view="results">${T.viewResults}</button>
 		</div>
 		<div class="e6b-layout" data-view="computer">
-			<div class="e6b-stage">
-				<div class="e6b-face" data-face="front"></div>
-				<div class="e6b-face show" data-face="back"></div>
+			<div class="e6b-computer-col">
+				<div class="e6b-stage">
+					<div class="e6b-face" data-face="front"></div>
+					<div class="e6b-face show" data-face="back"></div>
+				</div>
+				<div class="e6b-steps"></div>
 			</div>
 			<div class="e6b-panel"></div>
 		</div>`;
@@ -662,6 +665,7 @@ export function createE6b(root: HTMLElement, options: { locale: E6bLocale }): E6
 	const faceFront = q<HTMLElement>('[data-face="front"]')!;
 	const faceBack = q<HTMLElement>('[data-face="back"]')!;
 	const panel = q<HTMLElement>('.e6b-panel')!;
+	const stepsBox = q<HTMLElement>('.e6b-steps')!;
 
 	const F = buildFront(T);
 	const R = buildBack(T);
@@ -777,6 +781,18 @@ export function createE6b(root: HTMLElement, options: { locale: E6bLocale }): E6
 		return `<ol>${items.map((i) => `<li>${i}</li>`).join('')}</ol>`;
 	}
 
+	// Usage instructions live alongside the instrument (computer column), not the readout.
+	function renderSteps(): void {
+		if (currentFace() === 'front') {
+			stepsBox.innerHTML = `<div class="e6b-step"><b>${T.howItWorksTitle}</b>${list(T.howItWorks)}</div>`;
+		} else {
+			stepsBox.innerHTML =
+				solveMode === 'find'
+					? `<div class="e6b-step"><b>${T.stepsFindTitle}</b>${list(T.stepsFind)}</div>`
+					: `<div class="e6b-step"><b>${T.stepsWindTitle}</b>${list(T.stepsWind)}</div>`;
+		}
+	}
+
 	function renderPanel(
 		underIndex: number,
 		distKt: number,
@@ -794,10 +810,6 @@ export function createE6b(root: HTMLElement, options: { locale: E6bLocale }): E6
 		const hit = onTas
 			? `<span class="e6b-ok">${T.hitOk}</span>`
 			: `<span class="e6b-warn-text">${T.hitMiss}</span>`;
-		const steps =
-			solveMode === 'find'
-				? `<div class="e6b-step"><b>${T.stepsFindTitle}</b>${list(T.stepsFind)}</div>`
-				: `<div class="e6b-step"><b>${T.stepsWindTitle}</b>${list(T.stepsWind)}</div>`;
 		panel.innerHTML =
 			`<div class="e6b-card"><h3>${T.targetTas}</h3>` +
 			`<div class="e6b-inrow"><span>${T.tasArc}</span><input type="number" data-tas value="${tasTarget}"></div>` +
@@ -809,7 +821,6 @@ export function createE6b(root: HTMLElement, options: { locale: E6bLocale }): E6
 			row(T.dotFromCentre, `${distKt.toFixed(0)} kt`) +
 			row(T.dotAngle, wcaTxt) +
 			`</div></div>` +
-			steps +
 			`<div class="e6b-card"><h3>${T.mathCheck}</h3><div data-math class="e6b-mathout"></div></div>`;
 		attachMath();
 	}
@@ -899,8 +910,7 @@ export function createE6b(root: HTMLElement, options: { locale: E6bLocale }): E6
 			row(T.headwind, `${headComp} kt`) +
 			row(T.crosswind, `${sideComp} kt`) +
 			row(T.temperature, `${Math.round(FS.tempC)} °C = ${Math.round((FS.tempC * 9) / 5 + 32)} °F`) +
-			`</div><div class="e6b-auto">${T.markerHint}</div></div>` +
-			`<div class="e6b-step"><b>${T.howItWorksTitle}</b>${list(T.howItWorks)}</div>`;
+			`</div><div class="e6b-auto">${T.markerHint}</div></div>`;
 
 		q<HTMLSelectElement>('[data-f-task]')?.addEventListener('change', (e) => {
 			frontTask = (e.target as HTMLSelectElement).value as 'tsd' | 'fuel';
@@ -1055,6 +1065,7 @@ export function createE6b(root: HTMLElement, options: { locale: E6bLocale }): E6
 		});
 		const modebar = q<HTMLElement>('.e6b-modebar');
 		if (modebar) modebar.style.display = front ? 'none' : 'flex';
+		renderSteps();
 		if (front) renderFrontPanel();
 		else compute();
 	}
@@ -1083,6 +1094,7 @@ export function createE6b(root: HTMLElement, options: { locale: E6bLocale }): E6
 
 	const onSolve = (ev: Event): void => {
 		solveMode = (ev.target as HTMLInputElement).value as 'find' | 'wind';
+		renderSteps();
 		compute();
 	};
 	root.querySelectorAll('input[name="e6b-solve"]').forEach((r) => {

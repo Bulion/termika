@@ -34,22 +34,22 @@ test.describe('E6B computer drawer', () => {
 		await expect(page.locator('.e6b-root')).toHaveCount(0);
 	});
 
-	test('docks on the right and pushes the questions left in wide landscape', async ({ page }) => {
-		await page.setViewportSize({ width: 1100, height: 660 });
+	test('shares the row with the questions as a fluid pane in a wide window', async ({ page }) => {
+		await page.setViewportSize({ width: 1200, height: 700 });
 		await page.goto('./drills/run?set=e6b-wind');
 		await page.locator('.fab').click();
 
-		const drawer = page.getByRole('dialog');
-		await expect(drawer).toBeVisible();
-		const drawerBox = await drawer.boundingBox();
-		expect(drawerBox).not.toBeNull();
-		// Anchored to the right edge, ~440px wide - not a centred modal.
-		expect(drawerBox!.x + drawerBox!.width).toBeGreaterThan(1100 - 2);
-		expect(drawerBox!.width).toBeLessThan(480);
+		const content = page.locator('.content-pane');
+		const computer = page.locator('.computer-pane');
+		await expect(computer).toBeVisible();
 
-		// The question content sits to the left of the docked computer, not under it.
-		const mainBox = await page.locator('main').first().boundingBox();
-		expect(mainBox).not.toBeNull();
-		expect(mainBox!.x + mainBox!.width).toBeLessThanOrEqual(drawerBox!.x + 5);
+		const contentBox = await content.boundingBox();
+		const computerBox = await computer.boundingBox();
+		expect(contentBox).not.toBeNull();
+		expect(computerBox).not.toBeNull();
+		// Side by side: the computer begins where the content ends - not a fixed overlay.
+		expect(computerBox!.x).toBeGreaterThan(contentBox!.x + contentBox!.width - 4);
+		// Fluid: the computer takes roughly half of the 1200px window, not a fixed 440px.
+		expect(computerBox!.width).toBeGreaterThan(520);
 	});
 });

@@ -1,8 +1,6 @@
 <script lang="ts">
-	import { fly } from 'svelte/transition';
 	import { createE6b, type E6bInstance } from '$lib/e6b/computer';
-	import { e6b, closeE6b } from '$lib/e6b/state.svelte';
-	import { m } from '$lib/paraglide/messages.js';
+	import { e6b } from '$lib/e6b/state.svelte';
 	import { getLocale } from '$lib/paraglide/runtime';
 
 	let container = $state<HTMLElement | null>(null);
@@ -14,95 +12,17 @@
 		});
 		return () => instance.destroy();
 	});
-
-	function onKey(event: KeyboardEvent) {
-		if (event.key === 'Escape') closeE6b();
-	}
 </script>
 
-<svelte:window onkeydown={onKey} />
-
-{#if e6b.open}
-	<!-- Scrim only matters on narrow screens (overlay); hidden when the drawer is docked. -->
-	<div class="scrim" role="presentation" onclick={closeE6b}></div>
-	<div
-		class="drawer"
-		role="dialog"
-		aria-label={m.e6b_title()}
-		transition:fly={{ x: 460, duration: 220 }}
-	>
-		<header class="head">
-			<span class="title">{m.e6b_title()}</span>
-			<button type="button" class="close" onclick={closeE6b} aria-label={m.e6b_close()}>✕</button>
-		</header>
-		<div class="e6b-root" bind:this={container}></div>
-	</div>
-{/if}
+<div class="e6b-root" bind:this={container}></div>
 
 <style>
-	.scrim {
-		position: fixed;
-		inset: 0;
-		z-index: 100;
-		background: color-mix(in srgb, var(--color-ink) 45%, transparent);
-	}
-
-	.drawer {
-		position: fixed;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		z-index: 101;
-		display: flex;
-		flex-direction: column;
-		width: min(440px, 92vw);
-		background: var(--color-bg);
-		border-left: var(--border-width) solid var(--color-outline);
-		box-shadow: -10px 0 28px color-mix(in srgb, var(--color-ink) 30%, transparent);
-	}
-
-	@media (orientation: landscape) and (width >= 900px) {
-		.scrim {
-			display: none;
-		}
-
-		.drawer {
-			width: 440px;
-		}
-	}
-
-	.head {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		flex: none;
-		padding: var(--space-3) var(--space-4);
-		border-bottom: var(--border-width-sm) solid var(--color-outline);
-	}
-
-	.title {
-		font-family: var(--font-display);
-		font-weight: 800;
-		font-size: 1.1rem;
-	}
-
-	.close {
-		display: grid;
-		place-items: center;
-		width: 2.5rem;
-		height: 2.5rem;
-		font-size: 1.1rem;
-		color: var(--color-ink);
-		background: var(--color-surface-2);
-		border: var(--border-width-sm) solid var(--color-outline);
-		border-radius: var(--radius-pill);
-	}
-
 	.e6b-root {
 		flex: 1;
 		min-height: 0;
 		overflow: auto;
 		padding: var(--space-4);
+		container-type: inline-size;
 		-webkit-overflow-scrolling: touch;
 	}
 
@@ -205,13 +125,20 @@
 		align-items: flex-start;
 	}
 
+	.e6b-root :global(.e6b-computer-col) {
+		flex: 1 1 300px;
+		min-width: 0;
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-4);
+	}
+
 	.e6b-root :global(.e6b-stage) {
 		position: relative;
 		width: 100%;
-		max-width: 560px;
+		max-width: 540px;
 		margin: 0 auto;
 		aspect-ratio: 520 / 760;
-		flex: 1 1 320px;
 		touch-action: none;
 	}
 
@@ -238,7 +165,7 @@
 	.e6b-root :global(.e6b-panel) {
 		flex: 1 1 260px;
 		min-width: 240px;
-		max-width: 340px;
+		max-width: 360px;
 	}
 
 	.e6b-root :global(.e6b-card) {
@@ -348,18 +275,35 @@
 		line-height: 1.6;
 	}
 
-	/* The drawer is a narrow column, so the instrument always uses one pane at a time,
-	   switched by the Computer/Results toggle. */
-	.e6b-root :global(.e6b-layout[data-view='computer'] .e6b-panel) {
-		display: none;
+	/* Narrow pane: the Computer/Results toggle shows one column at a time. The instrument
+	   and its usage instructions live together in the computer column. */
+	@container (width < 600px) {
+		.e6b-root :global(.e6b-layout[data-view='computer'] .e6b-panel) {
+			display: none;
+		}
+
+		.e6b-root :global(.e6b-layout[data-view='results'] .e6b-computer-col) {
+			display: none;
+		}
+
+		.e6b-root :global(.e6b-layout[data-view='results'] .e6b-panel) {
+			flex: 1 1 100%;
+			max-width: none;
+		}
 	}
 
-	.e6b-root :global(.e6b-layout[data-view='results'] .e6b-stage) {
-		display: none;
-	}
+	/* Wide pane: instrument (with instructions) and the readout sit side by side. */
+	@container (width >= 600px) {
+		.e6b-root :global(.e6b-view-toggle) {
+			display: none;
+		}
 
-	.e6b-root :global(.e6b-layout[data-view='results'] .e6b-panel) {
-		flex: 1 1 100%;
-		max-width: none;
+		.e6b-root :global(.e6b-layout) {
+			flex-wrap: nowrap;
+		}
+
+		.e6b-root :global(.e6b-panel) {
+			flex: 1 1 240px;
+		}
 	}
 </style>
