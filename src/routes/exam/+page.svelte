@@ -15,7 +15,13 @@
 		scoreExam,
 		type ExamResult
 	} from '$lib/exam/exam';
-	import { EXAM_SOURCES, INTERNAL_SOURCE_ID, loadExternalMcqs } from '$lib/exam/sources';
+	import {
+		EXAM_SOURCES,
+		INTERNAL_SOURCE_ID,
+		loadExternalCategories,
+		loadExternalMcqs,
+		type ExamCategory
+	} from '$lib/exam/sources';
 	import { m } from '$lib/paraglide/messages.js';
 	import { getLocale } from '$lib/paraglide/runtime';
 
@@ -37,10 +43,30 @@
 
 	let sourceId = $state(INTERNAL_SOURCE_ID);
 	let loadingExternal = $state(false);
+	let loadingCats = $state(false);
 	let sourceError = $state(false);
+	let extCategories = $state<ExamCategory[]>([]);
 	let activeExternal = false;
 	let activePassPct = 75;
+	let activeExtLabel = $state('');
 	const activeSource = $derived(EXAM_SOURCES.find((s) => s.id === sourceId) ?? EXAM_SOURCES[0]);
+
+	async function selectSource(id: string) {
+		sourceId = id;
+		sourceError = false;
+		extCategories = [];
+		const source = EXAM_SOURCES.find((s) => s.id === id);
+		if (source?.external && source.hasCategories) {
+			loadingCats = true;
+			try {
+				extCategories = await loadExternalCategories(id);
+			} catch {
+				sourceError = true;
+			} finally {
+				loadingCats = false;
+			}
+		}
+	}
 
 	onMount(async () => {
 		const content = await loadContent();
@@ -106,16 +132,19 @@
 		);
 	}
 
-	async function startExternal() {
+	async function startExternal(category?: ExamCategory) {
 		sourceError = false;
 		loadingExternal = true;
 		try {
-			const pool = await loadExternalMcqs(sourceId);
+			const pool = await loadExternalMcqs(sourceId, category?.id);
+			activeExtLabel = category
+				? `${resolveText(activeSource.label, locale())} · ${category.name}`
+				: resolveText(activeSource.label, locale());
 			begin(
 				pickQuestions(pool, activeSource.questionCount),
 				activeSource.passPct,
 				activeSource.timeLimitMin,
-				sourceId,
+				category ? `${sourceId}:${category.id}` : sourceId,
 				true
 			);
 		} catch {
@@ -125,9 +154,7 @@
 		}
 	}
 
-	const activeLabel = $derived(
-		activeExternal ? resolveText(activeSource.label, locale()) : subjectName(activeSubjectId)
-	);
+	const activeLabel = $derived(activeExternal ? activeExtLabel : subjectName(activeSubjectId));
 
 	async function submit() {
 		clearInterval(timer);
@@ -161,18 +188,42 @@
 					type="button"
 					class="src"
 					aria-pressed={sourceId === src.id}
-					onclick={() => {
-						sourceId = src.id;
-						sourceError = false;
-					}}
+					onclick={() => selectSource(src.id)}
 				>
 					{resolveText(src.label, locale())}
 				</button>
 			{/each}
 		</div>
 
-		{#if activeSource.external}
-			<button type="button" class="primary lift" onclick={startExternal} disabled={loadingExternal}>
+		{#if activeSource.external && activeSource.hasCategories}
+			{#if loadingCats}
+				<p class="status">{m.exam_loading()}</p>
+			{:else if sourceError}
+				<p class="error" role="alert">{m.exam_source_error()}</p>
+			{:else}
+				<p>{m.exam_pick_category()}</p>
+				<ul class="subjects">
+					<li>
+						<button type="button" class="subject" onclick={() => startExternal()}>
+							{m.exam_all_categories()}
+						</button>
+					</li>
+					{#each extCategories as cat (cat.id)}
+						<li>
+							<button type="button" class="subject" onclick={() => startExternal(cat)}>
+								{cat.name}
+							</button>
+						</li>
+					{/each}
+				</ul>
+			{/if}
+		{:else if activeSource.external}
+			<button
+				type="button"
+				class="primary lift"
+				onclick={() => startExternal()}
+				disabled={loadingExternal}
+			>
 				{loadingExternal ? m.exam_loading() : m.exam_start()}
 			</button>
 			{#if sourceError}<p class="error" role="alert">{m.exam_source_error()}</p>{/if}

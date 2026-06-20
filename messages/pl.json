@@ -41,6 +41,8 @@
 	"nav_exam": "Egzamin",
 	"exam_title": "Symulacja egzaminu",
 	"exam_source": "Źródło pytań",
+	"exam_all_categories": "Wszystkie kategorie",
+	"exam_pick_category": "Wybierz kategorię",
 	"exam_loading": "Wczytywanie pytań…",
 	"exam_source_error": "Nie udało się wczytać źródła pytań.",
 	"exam_pick_subject": "Wybierz przedmiot",

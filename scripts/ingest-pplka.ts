@@ -7,14 +7,18 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { fetchPplkaQuestions, pplkaToMcqs } from '../src/lib/content/adapters/pplka.ts';
+import {
+	fetchPplkaCategories,
+	fetchPplkaQuestions,
+	pplkaToMcqs
+} from '../src/lib/content/adapters/pplka.ts';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const outFile = join(here, '..', 'static', 'external', 'pplka-spl.json');
 
-const raws = await fetchPplkaQuestions();
-const mcqs = pplkaToMcqs(raws);
+const [raws, categories] = await Promise.all([fetchPplkaQuestions(), fetchPplkaCategories()]);
+const questions = pplkaToMcqs(raws);
 
 await mkdir(dirname(outFile), { recursive: true });
-await writeFile(outFile, `${JSON.stringify(mcqs)}\n`);
-console.log(`Wrote ${mcqs.length} MCQs (from ${raws.length} fetched) to ${outFile}`);
+await writeFile(outFile, `${JSON.stringify({ categories, questions })}\n`);
+console.log(`Wrote ${questions.length} MCQs across ${categories.length} categories to ${outFile}`);

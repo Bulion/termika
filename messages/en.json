@@ -41,6 +41,8 @@
 	"nav_exam": "Exam",
 	"exam_title": "Exam simulation",
 	"exam_source": "Question source",
+	"exam_all_categories": "All categories",
+	"exam_pick_category": "Choose a category",
 	"exam_loading": "Loading questions…",
 	"exam_source_error": "Could not load the question source.",
 	"exam_pick_subject": "Choose a subject",

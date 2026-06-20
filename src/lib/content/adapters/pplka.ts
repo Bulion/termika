@@ -1,8 +1,14 @@
 import type { Mcq } from '../schema';
 
 export const PPLKA_TRPC = 'https://www.pplka.pl/api/trpc/questionDatabase.getQuestions';
+export const PPLKA_CATEGORIES_TRPC = 'https://www.pplka.pl/api/trpc/questionDatabase.getCategories';
 export const PPLKA_CATEGORY_IDS = [2, 6, 10, 14, 18, 22, 26, 30, 34];
 const PAGE_LIMIT = 100;
+
+export interface PplkaCategory {
+	id: number;
+	name: string;
+}
 
 export interface PplkaRaw {
 	question: {
@@ -147,4 +153,20 @@ export async function fetchPplkaQuestions(fetchImpl: typeof fetch = fetch): Prom
 
 export function pplkaToMcqs(raws: PplkaRaw[]): Mcq[] {
 	return raws.map(pplkaToMcq).filter((m): m is Mcq => m !== null);
+}
+
+/** Fetches the SPL category list (id -> name) used to split the bank into per-subject exams. */
+export async function fetchPplkaCategories(
+	fetchImpl: typeof fetch = fetch
+): Promise<PplkaCategory[]> {
+	const input = encodeURIComponent(JSON.stringify({ '0': { json: {} } }));
+	const response = await fetchImpl(`${PPLKA_CATEGORIES_TRPC}?batch=1&input=${input}`, {
+		headers: { accept: 'application/json' }
+	});
+	if (!response.ok) throw new Error(`pplka categories fetch failed: ${response.status}`);
+	const body = await response.json();
+	const all: PplkaCategory[] = body?.[0]?.result?.data?.json ?? [];
+	return all
+		.filter((c) => PPLKA_CATEGORY_IDS.includes(c.id))
+		.map((c) => ({ id: c.id, name: c.name }));
 }
