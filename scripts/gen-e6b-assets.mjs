@@ -27,6 +27,10 @@ function txt(x, y, s, o = {}) {
 	return `<text ${attrs(a)}>${s}</text>`;
 }
 const line = (m) => `<line ${attrs(m)} />`;
+const polar = (cx, cy, r, deg) => {
+	const a = ((deg - 90) * Math.PI) / 180;
+	return [cx + r * Math.cos(a), cy + r * Math.sin(a)];
+};
 const wrap = (children) =>
 	`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 760">\n${children.join('\n')}\n</svg>\n`;
 
@@ -143,6 +147,83 @@ function temperatureScale() {
 	return wrap(out);
 }
 
+// Central density-altitude / true-airspeed window of the slide-rule side (a fixed card).
+function densityWindow() {
+	const cx = 260,
+		cy = 410;
+	const ink = '#2c2c22';
+	const out = [];
+	out.push(
+		`<circle ${attrs({ cx, cy, r: 96, fill: '#f3f1e6', stroke: ink, 'stroke-width': 0.8 })} />`
+	);
+	out.push(
+		`<circle ${attrs({ cx, cy, r: 96, fill: 'none', stroke: '#c9c6ba', 'stroke-width': 4 })} />`
+	);
+
+	// Air-temperature arc across the top.
+	const rT = 82;
+	out.push(txt(cx, cy - 92, 'AIR TEMPERATURE °C', { size: 6, fill: ink }));
+	for (let t = -40; t <= 50; t += 5) {
+		const ang = -68 + ((t + 40) / 90) * 136;
+		const [x1, y1] = polar(cx, cy, rT, ang);
+		const [x2, y2] = polar(cx, cy, rT - (t % 10 === 0 ? 6 : 3.5), ang);
+		out.push(
+			line({
+				x1: round(x1),
+				y1: round(y1),
+				x2: round(x2),
+				y2: round(y2),
+				stroke: ink,
+				'stroke-width': t % 10 === 0 ? 0.7 : 0.4
+			})
+		);
+		if (t % 20 === 0) {
+			const [lx, ly] = polar(cx, cy, rT + 7, ang);
+			out.push(txt(lx, ly, String(t), { size: 5, fill: ink }));
+		}
+	}
+
+	// Pressure-altitude window scale (thousands of feet).
+	out.push(txt(cx, cy - 50, 'PRESSURE ALTITUDE', { size: 6, fill: ink }));
+	out.push(txt(cx, cy - 42, 'THOUSANDS OF FEET', { size: 5, fill: '#6a6a5e' }));
+	for (let k = 0; k <= 20; k += 2) {
+		const x = cx - 50 + (k / 20) * 100;
+		const big = k % 10 === 0;
+		out.push(
+			line({
+				x1: round(x),
+				y1: cy - 34,
+				x2: round(x),
+				y2: cy - 34 + (big ? 8 : 5),
+				stroke: ink,
+				'stroke-width': big ? 0.7 : 0.4
+			})
+		);
+		if (big) out.push(txt(x, cy - 38, String(k), { size: 5, fill: ink }));
+	}
+
+	out.push(
+		txt(cx, cy - 6, 'DENSITY ALTITUDE', { size: 8, fill: ink, extra: { 'font-weight': 'bold' } })
+	);
+
+	// Compact instruction blocks (as on the real card).
+	out.push(
+		txt(cx - 52, cy + 16, 'ALTITUDE: set air temp', { size: 4.5, fill: ink, anchor: 'start' })
+	);
+	out.push(
+		txt(cx - 52, cy + 23, 'over pressure altitude', { size: 4.5, fill: '#6a6a5e', anchor: 'start' })
+	);
+	out.push(txt(cx + 52, cy + 16, 'TAS: read over the', { size: 4.5, fill: ink, anchor: 'end' }));
+	out.push(
+		txt(cx + 52, cy + 23, 'calibrated A.S. scale', { size: 4.5, fill: '#6a6a5e', anchor: 'end' })
+	);
+	out.push(
+		txt(cx, cy + 44, 'FUEL · TIME · DISTANCE on the outer scales', { size: 4.5, fill: '#6a6a5e' })
+	);
+	return wrap(out);
+}
+
 writeFileSync(join(outDir, 'crosswind-grid.svg'), crosswindGrid());
 writeFileSync(join(outDir, 'temperature-scale.svg'), temperatureScale());
-console.log('Wrote crosswind-grid.svg and temperature-scale.svg');
+writeFileSync(join(outDir, 'density-window.svg'), densityWindow());
+console.log('Wrote crosswind-grid.svg, temperature-scale.svg and density-window.svg');

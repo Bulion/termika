@@ -1,6 +1,7 @@
 import { E6B_STRINGS, type E6bLocale } from './strings';
 import crosswindGridSvg from './assets/crosswind-grid.svg?raw';
 import temperatureScaleSvg from './assets/temperature-scale.svg?raw';
+import densityWindowSvg from './assets/density-window.svg?raw';
 
 const NS = 'http://www.w3.org/2000/svg';
 const PXPERKT = 2.0;
@@ -222,18 +223,34 @@ function buildFront(strings: typeof E6B_STRINGS.pl): FrontRefs {
 		el('circle', { cx, cy, r: Rr - 33, fill: 'none', stroke: '#3b3b32', 'stroke-width': 22 })
 	);
 	svg.appendChild(buildLogScale(cx, cy, Rr - 22, Rr - 12, false, true));
+	// Conversion indices on the stationary outer scale: distance, volume and weight.
+	// Volume/weight marks keep their real mutual ratios (anchored at US GAL = 9.5).
 	(
 		[
-			['NAUT', 66],
-			['STAT', 76],
-			['KM', 12.2]
+			['NAUT', 66, Rr - 29],
+			['STAT', 76, Rr - 29],
+			['KM', 12.2, Rr - 29],
+			['US GAL', 9.5, Rr - 41],
+			['IMP GAL', 7.91, Rr - 41],
+			['LITERS', 35.96, Rr - 41],
+			['FUEL LB', 57, Rr - 41],
+			['OIL LB', 71.25, Rr - 41]
 		] as const
-	).forEach(([label, v]) => {
+	).forEach(([label, v, r]) => {
 		const ang = logAngle(v);
-		const pr = polar(cx, cy, Rr - 33, ang);
+		const tick = polar(cx, cy, Rr - 22, ang);
+		const tip = polar(cx, cy, Rr - 14, ang);
+		svg.appendChild(
+			el('polygon', {
+				points: `${tip[0]},${tip[1]} ${tick[0] - 2.6},${tick[1]} ${tick[0] + 2.6},${tick[1]}`,
+				fill: '#ff9a7d',
+				transform: `rotate(${ang} ${tick[0]} ${tick[1]})`
+			})
+		);
+		const pr = polar(cx, cy, r, ang);
 		svg.appendChild(
 			txt(pr[0], pr[1], label, {
-				size: 8,
+				size: 7,
 				fill: '#ff9a7d',
 				extra: { 'font-weight': 'bold' },
 				rot: `rotate(${ang} ${pr[0]} ${pr[1]})`
@@ -272,6 +289,9 @@ function buildFront(strings: typeof E6B_STRINGS.pl): FrontRefs {
 	);
 	disc.appendChild(el('circle', { cx, cy, r: 3, fill: '#1a1a14' }));
 	svg.appendChild(disc);
+
+	// Fixed density-altitude / TAS reference window over the disc centre.
+	injectSvg(svg, densityWindowSvg);
 
 	const cursor = el('g', { class: 'e6b-grab' });
 	cursor.appendChild(
@@ -380,6 +400,26 @@ function buildBack(strings: typeof E6B_STRINGS.pl): BackRefs {
 		})
 	);
 	svg.appendChild(txt(B_CX, B_CY - B_R - 48, 'TRUE INDEX', { size: 9, fill: '#efece2' }));
+	// Fixed lubber fan around the index for reading wind correction / drift off the rose.
+	for (let d = -15; d <= 15; d += 1) {
+		const big = d % 5 === 0;
+		const p1 = polar(B_CX, B_CY, B_R + 2, d);
+		const p2 = polar(B_CX, B_CY, B_R + (big ? 11 : 6), d);
+		svg.appendChild(
+			el('line', {
+				x1: p1[0],
+				y1: p1[1],
+				x2: p2[0],
+				y2: p2[1],
+				stroke: '#efece2',
+				'stroke-width': big ? 1 : 0.5
+			})
+		);
+		if (big && d !== 0) {
+			const pr = polar(B_CX, B_CY, B_R + 18, d);
+			svg.appendChild(txt(pr[0], pr[1], String(Math.abs(d)), { size: 7, fill: '#c9c9c0' }));
+		}
+	}
 
 	const defs = el('defs');
 	const clip = el('clipPath', { id: 'e6b-winclip' });
@@ -439,6 +479,31 @@ function buildBack(strings: typeof E6B_STRINGS.pl): BackRefs {
 	}
 	(
 		[
+			['NNE', 22.5],
+			['NE', 45],
+			['ENE', 67.5],
+			['ESE', 112.5],
+			['SE', 135],
+			['SSE', 157.5],
+			['SSW', 202.5],
+			['SW', 225],
+			['WSW', 247.5],
+			['WNW', 292.5],
+			['NW', 315],
+			['NNW', 337.5]
+		] as const
+	).forEach(([label, d]) => {
+		const pr = polar(B_CX, B_CY, B_R - 42, d);
+		ring.appendChild(
+			txt(pr[0], pr[1], label, {
+				size: 7,
+				fill: '#c9c9c0',
+				rot: `rotate(${d} ${pr[0]} ${pr[1]})`
+			})
+		);
+	});
+	(
+		[
 			['N', 0],
 			['E', 90],
 			['S', 180],
@@ -467,6 +532,31 @@ function buildBack(strings: typeof E6B_STRINGS.pl): BackRefs {
 			opacity: '0.92'
 		})
 	);
+	// Faint graph-paper texture behind the arcs, like the Jeppesen wind grid.
+	for (let gx = B_CX - 220; gx <= B_CX + 220; gx += 20) {
+		grid.appendChild(
+			el('line', {
+				x1: gx,
+				y1: B_CY - 340,
+				x2: gx,
+				y2: B_CY + 340,
+				stroke: '#b6c7bc',
+				'stroke-width': 0.3
+			})
+		);
+	}
+	for (let gy = B_CY - 340; gy <= B_CY + 340; gy += 20) {
+		grid.appendChild(
+			el('line', {
+				x1: B_CX - 220,
+				y1: gy,
+				x2: B_CX + 220,
+				y2: gy,
+				stroke: '#b6c7bc',
+				'stroke-width': 0.3
+			})
+		);
+	}
 	for (let kt = 10; kt <= 160; kt += 10) {
 		const r = kt * PXPERKT;
 		grid.appendChild(

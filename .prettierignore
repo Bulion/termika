@@ -7,3 +7,6 @@ bun.lockb
 
 # Miscellaneous
 /static/
+
+# Generated E6B assets (source of truth is scripts/gen-e6b-assets.mjs)
+/src/lib/e6b/assets/
