@@ -1,0 +1,735 @@
+{
+	"schemaVersion": 1,
+	"id": "spl-hpl",
+	"title": {
+		"pl": "Człowiek - możliwości i ograniczenia",
+		"en": "Human Performance & Limitations"
+	},
+	"subjectId": "HPL",
+	"items": [
+		{
+			"id": "spl-hpl-hypoxia-def",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HYPOXIA"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Co to jest hipoksja (niedotlenienie) wysokościowa?",
+				"en": "What is altitude hypoxia?"
+			},
+			"back": {
+				"pl": "Niedobór tlenu w tkankach spowodowany spadkiem ciśnienia parcjalnego tlenu wraz ze wzrostem wysokości; pogarsza funkcje umysłowe i wzrok, często bez odczucia przez pilota.",
+				"en": "A deficiency of oxygen in the tissues caused by the fall in oxygen partial pressure with altitude; it degrades mental function and vision, often without the pilot noticing."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-hypoxia-symptoms",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HYPOXIA"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Wymień typowe objawy niedotlenienia.",
+				"en": "List typical symptoms of hypoxia."
+			},
+			"back": {
+				"pl": "Euforia, zaburzenia oceny sytuacji, sinica (zasinienie warg/paznokci), bóle głowy, zawroty, pogorszenie widzenia, spowolnienie reakcji; objawy są podstępne i indywidualne.",
+				"en": "Euphoria, impaired judgement, cyanosis (blue lips/nails), headache, dizziness, degraded vision and slowed reactions; symptoms are insidious and individual."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-oxygen-altitude",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["HPL.HYPOXIA"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Od jakiej wysokości w lotach bezciśnieniowych zaleca się/wymaga użycia tlenu?",
+				"en": "From what altitude is supplemental oxygen recommended/required in unpressurised flight?"
+			},
+			"back": {
+				"pl": "Tlen jest zalecany powyżej ok. 10 000 ft (ok. 3000 m), a w lotach przedłużonych praktycznie konieczny powyżej 12 000-13 000 ft i ciągle powyżej ok. 13 000 ft; w szybownictwie falowym (wysokogórskim) stosuje się instalacje tlenowe.",
+				"en": "Oxygen is recommended above about 10,000 ft (about 3000 m); for sustained flight it is effectively required above 12,000-13,000 ft and continuously above about 13,000 ft; mountain-wave gliding uses oxygen systems."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-toc",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["HPL.HYPOXIA"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Co oznacza TUC (Time of Useful Consciousness)?",
+				"en": "What does TUC (Time of Useful Consciousness) mean?"
+			},
+			"back": {
+				"pl": "Czas użytecznej świadomości - okres od odcięcia dopływu tlenu do utraty zdolności do skutecznego działania; maleje gwałtownie ze wzrostem wysokości.",
+				"en": "Time of Useful Consciousness - the interval from loss of oxygen supply to the point of being unable to act effectively; it shortens rapidly with altitude."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-hyperventilation",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HYPERVENTILATION"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Czym jest hiperwentylacja i jak się ją koryguje?",
+				"en": "What is hyperventilation and how is it corrected?"
+			},
+			"back": {
+				"pl": "Nadmiernie szybkie oddychanie powodujące spadek CO2 we krwi; objawy to zawroty, mrowienie, skurcze. Korekta: świadome spowolnienie i pogłębienie oddechu oraz mowa. Uwaga: objawy bywają nie do odróżnienia od niedotlenienia, więc na wysokości najpierw zastosuj tlen i zniżaj.",
+				"en": "Excessively rapid breathing that lowers blood CO2; symptoms include dizziness, tingling and cramps. Correction: consciously slow and steady the breathing and talk. Note: symptoms can be indistinguishable from hypoxia, so at altitude use oxygen and descend first."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-eye-blindspot",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.VISION"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Co to jest plamka ślepa (blind spot) oka?",
+				"en": "What is the eye's blind spot?"
+			},
+			"back": {
+				"pl": "Miejsce na siatkówce, gdzie nerw wzrokowy opuszcza gałkę oczną i brak jest fotoreceptorów; obiekt rzutowany w to miejsce nie jest widziany - dlatego skanowanie ruchem głowy/oczu jest konieczne.",
+				"en": "The point on the retina where the optic nerve exits and there are no photoreceptors; an object projected there is not seen, which is why an active scan is essential."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-scan",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.VISION"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Na czym polega prawidłowa technika obserwacji przestrzeni (lookout)?",
+				"en": "What is the correct lookout scan technique?"
+			},
+			"back": {
+				"pl": "Skanowanie sektorami: krótkie zatrzymania wzroku (ok. 10°) z ostrym widzeniem, zanim oko ruszy dalej; obiekt na kursie kolizyjnym pozostaje nieruchomy w polu widzenia (stała namiarowa).",
+				"en": "Scan in segments with short stops (about 10°) of sharp fixation before moving on; an aircraft on a collision course stays stationary in the windscreen (constant bearing)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-vestibular",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Jaka jest rola błędnika (układu przedsionkowego) w orientacji?",
+				"en": "What is the role of the vestibular system in orientation?"
+			},
+			"back": {
+				"pl": "Kanały półkoliste wykrywają przyspieszenia kątowe, a narządy otolitowe przyspieszenia liniowe i grawitację; w locie bez widoczności potrafią dawać fałszywe sygnały i prowadzić do dezorientacji.",
+				"en": "The semicircular canals sense angular acceleration and the otolith organs sense linear acceleration and gravity; without outside reference they can give false cues leading to disorientation."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-leans",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Co to jest iluzja \"the leans\"?",
+				"en": "What is the illusion known as 'the leans'?"
+			},
+			"back": {
+				"pl": "Fałszywe wrażenie przechylenia po powolnym, niezauważonym wejściu w zakręt i nagłym powrocie do lotu poziomego; pilot odczuwa przechylenie w przeciwną stronę mimo prawidłowego położenia.",
+				"en": "A false sensation of bank after a slow unnoticed entry into a turn and a sudden return to level; the pilot feels banked the opposite way despite being level."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-gforce",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.GFORCE"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Co dzieje się przy wysokim dodatnim przeciążeniu (+Gz) i czym jest GLOC?",
+				"en": "What happens under high positive G (+Gz) and what is GLOC?"
+			},
+			"back": {
+				"pl": "Krew odpływa od głowy do dolnej części ciała: kolejno szara zasłona (grey-out), czarna zasłona (black-out, utrata wzroku przy zachowanej świadomości), a następnie GLOC - utrata przytomności wywołana przeciążeniem.",
+				"en": "Blood pools toward the lower body: first grey-out, then black-out (loss of vision with consciousness retained), then GLOC - G-induced loss of consciousness."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-imsafe",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["HPL.HEALTH"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Co oznacza lista kontrolna IMSAFE?",
+				"en": "What does the IMSAFE checklist stand for?"
+			},
+			"back": {
+				"pl": "Illness (choroba), Medication (leki), Stress (stres), Alcohol (alkohol), Fatigue (zmęczenie), Eating/Emotion (odżywienie/emocje) - samoocena gotowości pilota do lotu.",
+				"en": "Illness, Medication, Stress, Alcohol, Fatigue, Eating/Emotion - a pilot self-assessment of fitness to fly."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-alcohol",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["HPL.HEALTH"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Jaka jest zasada dotycząca alkoholu przed lotem (\"bottle to throttle\")?",
+				"en": "What is the alcohol rule before flight ('bottle to throttle')?"
+			},
+			"back": {
+				"pl": "Nie wolno latać pod wpływem alkoholu; przyjmuje się minimum 8 godzin od ostatniego spożycia oraz zerową zawartość alkoholu we krwi - alkohol nasila też podatność na niedotlenienie.",
+				"en": "Flying under the influence is prohibited; a minimum of 8 hours from last drink and zero blood alcohol are applied, and alcohol also worsens susceptibility to hypoxia."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-hazardous",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DECISION"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Wymień pięć niebezpiecznych postaw (hazardous attitudes).",
+				"en": "Name the five hazardous attitudes."
+			},
+			"back": {
+				"pl": "Antyautorytaryzm, impulsywność, poczucie nietykalności (niezniszczalności), brawura (macho) oraz rezygnacja/bezradność; każda ma antidotum w postaci świadomej myśli korygującej.",
+				"en": "Anti-authority, impulsivity, invulnerability, macho and resignation; each has a corrective antidote thought."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-dehydration",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HEALTH"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Dlaczego odwodnienie jest groźne w długich lotach szybowcowych?",
+				"en": "Why is dehydration dangerous on long glider flights?"
+			},
+			"back": {
+				"pl": "Upał w kabinie, wysiłek i niska wilgotność na wysokości powodują utratę płynów; objawy to zmęczenie, ból głowy, spadek koncentracji i sprawności - dlatego należy zabierać wodę i pić regularnie.",
+				"en": "Cockpit heat, exertion and low humidity at altitude cause fluid loss; symptoms are fatigue, headache and reduced concentration and performance, so carry water and drink regularly."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-mcq-hypoxia-insidious",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["HPL.HYPOXIA"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"stem": {
+				"pl": "Dlaczego niedotlenienie wysokościowe jest szczególnie niebezpieczne dla pilota?",
+				"en": "Why is altitude hypoxia particularly dangerous for a pilot?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zawsze powoduje natychmiastowy silny ból, który zmusza do zniżania.",
+						"en": "It always causes immediate severe pain forcing a descent."
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Rozwija się podstępnie i często daje euforię oraz zaburza ocenę sytuacji, więc pilot nie rozpoznaje zagrożenia.",
+						"en": "It develops insidiously and often causes euphoria and impaired judgement, so the pilot does not recognise the threat."
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Występuje wyłącznie poniżej 1000 m AGL.",
+						"en": "It occurs only below 1000 m AGL."
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Można je całkowicie wyeliminować przez szybsze oddychanie.",
+						"en": "It can be fully eliminated by breathing faster."
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Hipoksja działa podstępnie: powoduje euforię i upośledza samokrytycyzm, dlatego pilot zwykle nie zauważa pogorszenia własnej sprawności.",
+				"en": "Hypoxia is insidious: it causes euphoria and impairs self-criticism, so the pilot usually fails to notice the loss of performance."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-mcq-tuc",
+			"type": "mcq",
+			"microSkill": "abbreviation",
+			"loIds": ["HPL.HYPOXIA"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"stem": {
+				"pl": "Skrót TUC odnosi się do:",
+				"en": "The abbreviation TUC refers to:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "czasu użytecznej świadomości po utracie dopływu tlenu.",
+						"en": "the time of useful consciousness after loss of oxygen supply."
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "maksymalnego dopuszczalnego pułapu szybowca.",
+						"en": "the maximum permitted ceiling of the glider."
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "czasu potrzebnego do napełnienia butli tlenowej.",
+						"en": "the time needed to refill the oxygen bottle."
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "TUC (Time of Useful Consciousness) to czas, w którym pilot zachowuje zdolność skutecznego działania po przerwaniu dopływu tlenu; maleje z wysokością.",
+				"en": "TUC (Time of Useful Consciousness) is the time a pilot can still act effectively after losing oxygen; it decreases with altitude."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-mcq-hyperventilation",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["HPL.HYPERVENTILATION"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"stem": {
+				"pl": "Hiperwentylacja prowadzi przede wszystkim do:",
+				"en": "Hyperventilation primarily leads to:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "wzrostu stężenia tlenu w mięśniach i poprawy wydolności.",
+						"en": "increased muscle oxygen and improved endurance."
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "nadmiernego usunięcia CO2 z krwi, dając zawroty głowy, mrowienie i skurcze.",
+						"en": "excessive removal of CO2 from the blood, causing dizziness, tingling and cramps."
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "trwałego uszkodzenia błędnika.",
+						"en": "permanent damage to the vestibular system."
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "natychmiastowej utraty wzroku bez innych objawów.",
+						"en": "immediate loss of vision with no other symptoms."
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Szybkie oddychanie obniża poziom CO2 we krwi, co wywołuje zawroty, mrowienie i skurcze; korektą jest świadome spowolnienie oddechu.",
+				"en": "Rapid breathing lowers blood CO2, producing dizziness, tingling and cramps; the cure is to consciously slow the breathing rate."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-mcq-collision",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["HPL.VISION"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"stem": {
+				"pl": "Inny statek powietrzny znajdujący się na kursie kolizyjnym w polu widzenia pilota:",
+				"en": "Another aircraft on a collision course in the pilot's field of view:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "szybko przemieszcza się w poprzek szyby.",
+						"en": "moves rapidly across the windscreen."
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "pozostaje praktycznie nieruchomy w stosunku do szyby (stała namiarowa), tylko rośnie.",
+						"en": "remains practically stationary against the windscreen (constant bearing), only growing larger."
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "zawsze miga i jest łatwy do zauważenia.",
+						"en": "always flashes and is easy to notice."
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Obiekt na kursie kolizyjnym ma stałą namiarową - nie przemieszcza się względem szyby, tylko powiększa, przez co jest trudny do wykrycia.",
+				"en": "A converging aircraft holds a constant relative bearing - it does not move against the canopy but only grows, making it hard to detect."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-mcq-blindspot",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["HPL.VISION"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"stem": {
+				"pl": "Plamka ślepa oka to obszar siatkówki, w którym:",
+				"en": "The eye's blind spot is the area of the retina where:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "skupia się największa liczba czopków zapewniających ostre widzenie.",
+						"en": "the greatest number of cones provides the sharpest vision."
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "nerw wzrokowy opuszcza gałkę oczną i nie ma fotoreceptorów.",
+						"en": "the optic nerve leaves the eye and there are no photoreceptors."
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "powstaje obraz nocny dzięki pręcikom.",
+						"en": "rod-based night vision is formed."
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "W miejscu wyjścia nerwu wzrokowego brak jest fotoreceptorów, więc obraz rzutowany w tę okolicę nie jest rejestrowany.",
+				"en": "At the optic nerve head there are no photoreceptors, so an image projected there is not perceived."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-mcq-gforce",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["HPL.GFORCE"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"stem": {
+				"pl": "Przy gwałtownym dodatnim przeciążeniu (+Gz) pierwszym typowym objawem jest:",
+				"en": "Under sudden positive G (+Gz) the first typical symptom is:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "czerwona zasłona (red-out).",
+						"en": "red-out."
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "szara zasłona (grey-out) - zawężenie i przygaszenie pola widzenia.",
+						"en": "grey-out - tunnelling and dimming of vision."
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "natychmiastowy GLOC bez objawów wzrokowych.",
+						"en": "immediate GLOC with no visual symptoms."
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "poprawa ostrości widzenia.",
+						"en": "improved visual acuity."
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Przy +Gz krew odpływa od głowy: najpierw pojawia się szara zasłona, potem czarna (black-out), a w skrajnym przypadku GLOC. Red-out dotyczy ujemnych przeciążeń.",
+				"en": "Under +Gz blood drains from the head: grey-out comes first, then black-out and finally GLOC. Red-out is associated with negative G."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-mcq-imsafe",
+			"type": "mcq",
+			"microSkill": "abbreviation",
+			"loIds": ["HPL.HEALTH"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"stem": {
+				"pl": "Litera \"M\" w liście kontrolnej IMSAFE oznacza:",
+				"en": "The letter 'M' in the IMSAFE checklist stands for:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Medication - leki, które mogą wpływać na sprawność.",
+						"en": "Medication - medicines that may affect performance."
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Motivation - motywację do lotu.",
+						"en": "Motivation to fly."
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Maintenance - obsługę techniczną szybowca.",
+						"en": "Maintenance of the glider."
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "IMSAFE: Illness, Medication, Stress, Alcohol, Fatigue, Eating/Emotion. \"M\" to Medication - leki mogące obniżać sprawność pilota.",
+				"en": "IMSAFE: Illness, Medication, Stress, Alcohol, Fatigue, Eating/Emotion. 'M' is Medication, which can impair the pilot."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-mcq-alcohol",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["HPL.HEALTH"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"stem": {
+				"pl": "Zgodnie z zasadą \"bottle to throttle\" minimalny odstęp od spożycia alkoholu do lotu wynosi:",
+				"en": "Under the 'bottle to throttle' rule the minimum interval from drinking to flying is:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "1 godzina.",
+						"en": "1 hour."
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "co najmniej 8 godzin oraz zerowa zawartość alkoholu we krwi.",
+						"en": "at least 8 hours, with zero blood alcohol."
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "30 minut, jeśli było to piwo.",
+						"en": "30 minutes if it was beer."
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Brak ograniczeń, jeśli pilot czuje się dobrze.",
+						"en": "No restriction if the pilot feels well."
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Przyjmuje się minimum 8 godzin od ostatniego spożycia i zerowy poziom alkoholu we krwi; alkohol dodatkowo nasila niedotlenienie.",
+				"en": "The accepted minimum is 8 hours from last drink and zero blood alcohol; alcohol also worsens hypoxia."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-mcq-leans",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"stem": {
+				"pl": "Iluzja \"the leans\" powstaje, gdy:",
+				"en": "The illusion known as 'the leans' arises when:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "pilot wykonuje gwałtowny zakręt i natychmiast go odczuwa.",
+						"en": "the pilot makes a sharp turn and feels it at once."
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "powolne wejście w przechylenie nie zostaje wyczute, a późniejszy szybki powrót do poziomu daje fałszywe wrażenie przechylenia.",
+						"en": "a slow roll into bank goes unsensed and a later rapid return to level gives a false sensation of bank."
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "pilot patrzy na sztuczny horyzont przez dłuższy czas.",
+						"en": "the pilot stares at the attitude indicator for a long time."
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Powolne przechylenie poniżej progu wykrywania błędnika nie jest wyczuwane; gwałtowne wyrównanie wywołuje wrażenie przechylenia w przeciwną stronę.",
+				"en": "A slow bank below the vestibular detection threshold is not sensed; the rapid level-off then feels like a bank the other way."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-mcq-macho",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["HPL.DECISION"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"stem": {
+				"pl": "Postawa \"macho\" (brawura) wśród niebezpiecznych postaw oznacza:",
+				"en": "The 'macho' hazardous attitude means:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "przekonanie, że zasady nie dotyczą danego pilota.",
+						"en": "the belief that rules do not apply to this pilot."
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "chęć udowodnienia, że jest się lepszym, i podejmowanie zbędnego ryzyka.",
+						"en": "wanting to prove one is better and taking unnecessary risks."
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "przekonanie, że pilot nie ma wpływu na rozwój sytuacji.",
+						"en": "the belief that the pilot cannot influence events."
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "podejmowanie decyzji zbyt pochopnie i bez namysłu.",
+						"en": "making decisions too hastily without thought."
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "\"Macho\" to brawura - chęć imponowania i podejmowanie ryzyka; antidotum: \"podejmowanie ryzyka to głupota\". Pozostałe opisy to inne postawy (poczucie nietykalności, rezygnacja, impulsywność).",
+				"en": "'Macho' is bravado - showing off and risk-taking; the antidote is 'taking chances is foolish'. The other descriptions are different attitudes (invulnerability, resignation, impulsivity)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-mcq-dehydration",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["HPL.HEALTH"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"stem": {
+				"pl": "Podczas długiego lotu termicznego w upalny dzień największym ryzykiem dla sprawności pilota jest:",
+				"en": "On a long thermal flight on a hot day the greatest risk to pilot performance is:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "odwodnienie i przegrzanie, obniżające koncentrację i powodujące zmęczenie.",
+						"en": "dehydration and overheating, lowering concentration and causing fatigue."
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "nadmiar tlenu we krwi.",
+						"en": "excess oxygen in the blood."
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "zbyt niskie tętno wywołane spokojem.",
+						"en": "an overly low heart rate caused by calmness."
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Upał, wysiłek i niska wilgotność prowadzą do odwodnienia, które obniża koncentrację i sprawność; należy zabierać wodę i regularnie pić.",
+				"en": "Heat, exertion and low humidity cause dehydration, reducing concentration and performance; carry water and drink regularly."
+			},
+			"source": "authored:spl"
+		}
+	]
+}

@@ -1,0 +1,694 @@
+{
+	"schemaVersion": 1,
+	"id": "spl-ops",
+	"title": {
+		"pl": "Procedury operacyjne",
+		"en": "Operational Procedures"
+	},
+	"subjectId": "OPS",
+	"items": [
+		{
+			"id": "spl-ops-winch-speed",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Co robisz, gdy podczas startu za wyciągarką prędkość jest zbyt duża?",
+				"en": "What do you do if airspeed is too high during a winch launch?"
+			},
+			"back": {
+				"pl": "Sygnalizujesz operatorowi wyciągarki (jojowanie szybowcem góra-dół lub przez radio), aby zmniejszył moc; przy przekroczeniu prędkości maksymalnej dla startu za wyciągarką zwolnij hak.",
+				"en": "Signal the winch operator (porpoising the glider up-down or radio) to reduce power; if the maximum winch-launch speed is exceeded, release the cable."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-cable-break-low",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Zerwanie liny na małej wysokości - jaka jest natychmiastowa reakcja?",
+				"en": "Cable break at low height - what is the immediate action?"
+			},
+			"back": {
+				"pl": "Natychmiast wypchnij drążek, aby odzyskać bezpieczną prędkość lotu, zwolnij hak (pociągnij dwukrotnie) i ląduj na wprost.",
+				"en": "Immediately push the stick forward to regain safe flying speed, release the cable (pull twice), and land straight ahead."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-cable-break-high",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Zerwanie liny na dużej wysokości z zapasem przestrzeni - co robisz?",
+				"en": "Cable break at high height with ample space - what do you do?"
+			},
+			"back": {
+				"pl": "Odzyskaj prędkość, zwolnij hak (pociągnij dwukrotnie), oceń pozostałą wysokość i wykonaj skrócony krąg lub ląduj zależnie od warunków.",
+				"en": "Regain speed, release the cable (pull twice), assess remaining height and fly an abbreviated circuit or land as conditions allow."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-glider-signals",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Co oznacza kołysanie szybowcem (skrzydłami) z boku na bok podczas holu?",
+				"en": "What does the glider rocking its wings during aerotow mean?"
+			},
+			"back": {
+				"pl": "Sygnał szybowca do samolotu holującego: 'nie mogę zwolnić liny' - prosi samolot o zwolnienie liny po swojej stronie.",
+				"en": "Glider-to-tug signal: 'I cannot release' - asks the tug to release the rope at its end."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-tug-rudder",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Co oznacza machanie sterem kierunku (wilanie ogonem) przez samolot holujący?",
+				"en": "What does the tug yawing (rudder waggle / fishtail) mean?"
+			},
+			"back": {
+				"pl": "Sygnał samolotu do szybowca: 'sprawdź hamulce aerodynamiczne' - najczęściej są przypadkowo otwarte.",
+				"en": "Tug-to-glider signal: 'check your airbrakes' - most often they are inadvertently open."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-tug-wingrock",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Co oznacza kołysanie skrzydłami (machanie lotkami) przez samolot holujący?",
+				"en": "What does the tug rocking its wings (rolling) mean?"
+			},
+			"back": {
+				"pl": "Sygnał samolotu do szybowca: 'zwolnij linę natychmiast' - coś jest poważnie nie tak.",
+				"en": "Tug-to-glider signal: 'release the cable at once' - something is seriously wrong."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-high-tow",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Jaka jest prawidłowa pozycja szybowca w holu (high tow) w Europie?",
+				"en": "What is the correct glider position in aerotow (high tow) in Europe?"
+			},
+			"back": {
+				"pl": "Szybowiec leci tuż nad śladem aerodynamicznym samolotu holującego (powyżej strumienia zaśmigłowego), z liną lekko napiętą.",
+				"en": "Glider flies just above the tug's wake (above the propwash), keeping the rope slightly taut."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-wake-avoid",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Gdzie tworzą się najsilniejsze wiry brzegowe i jak ich unikać przy lądowaniu za dużym samolotem?",
+				"en": "Where are wake vortices strongest and how to avoid them on landing behind a large aircraft?"
+			},
+			"back": {
+				"pl": "Powstają za końcówkami skrzydeł ciężkiego samolotu; przyziem za jego punktem przyziemienia i pozostań powyżej jego ścieżki podejścia.",
+				"en": "Generated at the wingtips of a heavy aircraft; touch down beyond its touchdown point and stay above its approach path."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-rightofway-ridge",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Pierwszeństwo na zboczu (lot żaglowy): który szybowiec ustępuje?",
+				"en": "Right of way on a ridge (slope soaring): which glider gives way?"
+			},
+			"back": {
+				"pl": "Szybowiec mający zbocze po prawej stronie ma pierwszeństwo; drugi (zbocze po lewej) odsuwa się od zbocza.",
+				"en": "The glider with the ridge on its right has priority; the other (ridge on its left) turns away from the slope."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-thermal-direction",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Jak ustala się kierunek krążenia w kominie termicznym, gdy są już inne szybowce?",
+				"en": "How is the turning direction in a thermal decided when other gliders are present?"
+			},
+			"back": {
+				"pl": "Pierwszy szybowiec w kominie wyznacza kierunek krążenia; dołączające muszą krążyć w tę samą stronę.",
+				"en": "The first glider in the thermal sets the turning direction; joining gliders must circle the same way."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-outlanding-checks",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Jakie kryteria oceny pola przy lądowaniu w terenie przygodnym?",
+				"en": "What criteria are used to assess a field for an off-field landing?"
+			},
+			"back": {
+				"pl": "Wielkość pola, powierzchnia i nachylenie, przeszkody, kierunek wiatru oraz czyste podejście.",
+				"en": "Field size, surface and slope, obstructions, wind direction, and a clear approach."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-tem",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Co oznacza skrót TEM w kontekście czynników ludzkich?",
+				"en": "What does the abbreviation TEM mean in human factors?"
+			},
+			"back": {
+				"pl": "Threat and Error Management - zarządzanie zagrożeniami i błędami; rozpoznawanie zagrożeń i wychwytywanie błędów, zanim doprowadzą do niepożądanego stanu.",
+				"en": "Threat and Error Management - anticipating threats and trapping errors before they cause an undesired state."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-prelaunch-check",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Co obejmuje przedstartowa lista kontrolna szybowca (CBSIFTCBE)?",
+				"en": "What does the glider pre-launch checklist (CBSIFTCBE) cover?"
+			},
+			"back": {
+				"pl": "Controls, Ballast, Straps, Instruments, Flaps, Trim, Canopy, Brakes, Eventualities - stery, balast, pasy, przyrządy, klapy, wyważenie, kabina, hamulce, sytuacje awaryjne.",
+				"en": "Controls, Ballast, Straps, Instruments, Flaps, Trim, Canopy, Brakes, Eventualities."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-noise-abatement",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"front": {
+				"pl": "Jak operacje szybowcowe przyczyniają się do ograniczenia hałasu wokół lotniska?",
+				"en": "How do glider operations contribute to noise abatement around the aerodrome?"
+			},
+			"back": {
+				"pl": "Unikanie przelotów nad terenami zabudowanymi, przestrzeganie wyznaczonych tras i ograniczeń wysokości; samolot holujący szybko nabiera wysokości nad lotniskiem.",
+				"en": "Avoiding overflight of built-up areas, following published routes and height limits; the tug climbs quickly over the aerodrome to reduce noise."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-mcq-cablebreak",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"stem": {
+				"pl": "Lina zrywa się na wysokości około 30 m podczas startu za wyciągarką. Jaka jest prawidłowa pierwsza czynność?",
+				"en": "The cable breaks at about 30 m during a winch launch. What is the correct first action?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Wypchnąć drążek, aby odzyskać bezpieczną prędkość lotu",
+						"en": "Push the stick forward to regain safe flying speed"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Natychmiast wykonać ciasny zakręt o 180 stopni z powrotem na pas",
+						"en": "Immediately make a tight 180 degree turn back to the runway"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Utrzymać kąt wznoszenia i czekać na ponowne napięcie liny",
+						"en": "Maintain the climb attitude and wait for the cable to tension again"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Otworzyć hamulce aerodynamiczne i doprowadzić do przeciągnięcia",
+						"en": "Open the airbrakes and stall the glider"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Po zerwaniu liny szybowiec ma duży kąt natarcia i niską prędkość; natychmiastowe wypchnięcie drążka odzyskuje prędkość i zapobiega przeciągnięciu.",
+				"en": "After a break the glider is at high pitch and low speed; pushing forward immediately recovers speed and prevents a stall."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-mcq-tugyaw",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"stem": {
+				"pl": "Podczas holu samolot holujący zaczyna machać sterem kierunku (wilanie ogonem). Co to oznacza dla pilota szybowca?",
+				"en": "During aerotow the tug starts yawing (waggling its rudder / fishtailing). What does this mean to the glider pilot?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Sprawdź hamulce aerodynamiczne - prawdopodobnie są otwarte",
+						"en": "Check your airbrakes - they are probably open"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Zwolnij linę natychmiast",
+						"en": "Release the cable immediately"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Skróć linę i zbliż się do samolotu",
+						"en": "Shorten the rope and close up on the tug"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Wilanie ogonem (machanie sterem kierunku) przez samolot holujący to sygnał 'sprawdź hamulce aerodynamiczne', najczęściej przypadkowo otwarte. Sygnałem 'zwolnij natychmiast' jest kołysanie skrzydłami.",
+				"en": "The tug yawing/rudder waggle is the 'check your airbrakes' signal, most often inadvertently open. 'Release at once' is signalled by the tug rocking its wings."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-mcq-thermaljoin",
+			"type": "mcq",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"stem": {
+				"pl": "Dołączasz do komina termicznego, w którym już krąży inny szybowiec. W którą stronę krążysz?",
+				"en": "You join a thermal where another glider is already circling. Which way do you turn?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "W tę samą stronę co szybowiec już krążący",
+						"en": "The same direction as the glider already circling"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Zawsze w lewo, niezależnie od innych",
+						"en": "Always to the left, regardless of others"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "W stronę przeciwną, aby zwiększyć separację",
+						"en": "The opposite direction to increase separation"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "W stronę zależną od kierunku wiatru",
+						"en": "Whichever direction the wind favours"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Dołączający szybowiec musi krążyć w tym samym kierunku co już obecny, co zapewnia bezpieczną, przewidywalną separację w kominie.",
+				"en": "A joining glider must circle the same way as the glider already in the thermal, ensuring predictable separation."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-mcq-ridge",
+			"type": "mcq",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"stem": {
+				"pl": "Dwa szybowce lecą wzdłuż tego samego zbocza w przeciwnych kierunkach. Który ma pierwszeństwo?",
+				"en": "Two gliders fly along the same ridge in opposite directions. Which has right of way?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Ten, który ma zbocze po swojej prawej stronie",
+						"en": "The one with the ridge on its right"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Ten, który ma zbocze po swojej lewej stronie",
+						"en": "The one with the ridge on its left"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Ten, który leci wyżej",
+						"en": "The one flying higher"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Szybowiec mający zbocze po prawej ma pierwszeństwo i nie może odejść w stronę zbocza; drugi musi odsunąć się od zbocza.",
+				"en": "The glider with the ridge on its right has priority and cannot turn into the slope; the other must turn away."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-mcq-wake",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"stem": {
+				"pl": "Lądujesz szybowcem za ciężkim samolotem. Jak najlepiej uniknąć jego turbulencji w śladzie?",
+				"en": "You are landing a glider behind a heavy aircraft. How best to avoid its wake turbulence?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Pozostać powyżej jego ścieżki i przyziemić za jego punktem przyziemienia",
+						"en": "Stay above its path and touch down beyond its touchdown point"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Podejść poniżej jego ścieżki i przyziemić przed jego punktem przyziemienia",
+						"en": "Approach below its path and touch down before its touchdown point"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Lądować dokładnie w jego punkcie przyziemienia",
+						"en": "Land exactly at its touchdown point"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zwiększyć prędkość i lądować z wiatrem",
+						"en": "Increase speed and land downwind"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Wiry opadają i rozchodzą się ku ziemi; pozostając powyżej ścieżki i lądując za punktem przyziemienia poprzednika unikasz najsilniejszej turbulencji.",
+				"en": "Vortices sink and spread; staying above the path and landing beyond the preceding aircraft's touchdown point avoids the strongest wake."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-mcq-cbsiftcbe",
+			"type": "mcq",
+			"microSkill": "abbreviation",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"stem": {
+				"pl": "W przedstartowej liście kontrolnej szybowca (CBSIFTCBE) końcowa litera 'B' odnosi się do:",
+				"en": "In the glider pre-launch checklist (CBSIFTCBE), the final letter 'B' refers to:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Hamulców aerodynamicznych (Brakes) - sprawdzone i zamknięte",
+						"en": "Brakes (airbrakes) - checked and closed"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Balastu (Ballast)",
+						"en": "Ballast"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Pasów (Belts/Straps)",
+						"en": "Belts/Straps"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Końcowe 'B' to Brakes - hamulce aerodynamiczne sprawdzone i zamknięte przed startem; Ballast i pasy są wcześniej w liście.",
+				"en": "The final 'B' is Brakes - airbrakes checked and closed before launch; Ballast and straps come earlier in the list."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-mcq-aerotowposition",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"stem": {
+				"pl": "Jaka jest prawidłowa pozycja szybowca w normalnym holu (high tow) stosowanym w Europie?",
+				"en": "What is the correct glider position in normal aerotow (high tow) as used in Europe?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Tuż nad śladem aerodynamicznym samolotu, z liną lekko napiętą",
+						"en": "Just above the tug's wake, with the rope slightly taut"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Bezpośrednio w strumieniu zaśmigłowym, na wysokości ogona samolotu",
+						"en": "Directly in the propwash, level with the tug's tail"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Znacznie poniżej śladu, z luźną liną",
+						"en": "Well below the wake, with a slack rope"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Z boku samolotu, w odległości pół rozpiętości",
+						"en": "Off to the side of the tug, half a wingspan away"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "W high tow szybowiec leci tuż nad strumieniem zaśmigłowym i śladem samolotu, utrzymując linę lekko napiętą i stabilną pozycję.",
+				"en": "In high tow the glider flies just above the propwash and wake, keeping the rope slightly taut and a stable position."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-mcq-outlanding",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"stem": {
+				"pl": "Podejmujesz decyzję o lądowaniu w terenie przygodnym. Co powinno mieć najwyższy priorytet?",
+				"en": "You decide to make an off-field landing. What should take top priority?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Wczesny wybór pola, z zapasem wysokości na ocenę i podejście",
+						"en": "Committing to a field early, with enough height to assess and set up an approach"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Szukanie idealnego pola aż do wysokości 50 m",
+						"en": "Searching for the perfect field down to 50 m"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Lądowanie zawsze pod wiatr, ignorując nachylenie i przeszkody",
+						"en": "Always landing into wind, ignoring slope and obstacles"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Kluczowa jest wczesna decyzja przy odpowiednim zapasie wysokości, by ocenić pole (wielkość, nachylenie, przeszkody, wiatr) i wykonać normalny krąg.",
+				"en": "Deciding early with adequate height is critical, allowing proper field assessment (size, slope, obstacles, wind) and a normal circuit."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-mcq-winchspeed",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"stem": {
+				"pl": "Podczas startu za wyciągarką zauważasz, że prędkość jest niebezpiecznie mała. Co robisz?",
+				"en": "During a winch launch you notice the airspeed is dangerously low. What do you do?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Obniżyć nos (zmniejszyć kąt wznoszenia) i zwolnić linę, jeśli prędkość nadal spada",
+						"en": "Lower the nose (reduce climb angle) and release if speed continues to fall"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Zwiększyć kąt wznoszenia, aby wyciągarka dodała mocy",
+						"en": "Increase the climb angle so the winch adds power"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Otworzyć hamulce aerodynamiczne",
+						"en": "Open the airbrakes"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Zbyt mała prędkość na wyciągarce grozi przeciągnięciem; należy obniżyć nos, a jeśli prędkość nie wraca, zwolnić linę.",
+				"en": "Low speed on the winch risks a stall; lower the nose, and release the cable if speed does not recover."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-mcq-tugwingrock",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": [],
+			"stem": {
+				"pl": "Samolot holujący wyraźnie kołysze skrzydłami (macha lotkami) podczas holu. Co powinien zrobić pilot szybowca?",
+				"en": "The tug clearly rocks its wings (rolling) during tow. What should the glider pilot do?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zwolnić linę natychmiast",
+						"en": "Release the cable immediately"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Sprawdzić, czy hamulce aerodynamiczne nie są otwarte",
+						"en": "Check whether the airbrakes are open"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Skrócić linę i zbliżyć się do samolotu",
+						"en": "Shorten the rope and close up on the tug"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zwiększyć prędkość lotu",
+						"en": "Increase the airspeed"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Kołysanie skrzydłami przez samolot holujący to sygnał 'zwolnij natychmiast' - coś jest poważnie nie tak. Sygnałem 'sprawdź hamulce' jest wilanie ogonem (ster kierunku).",
+				"en": "The tug rocking its wings is the 'release at once' signal - something is seriously wrong. 'Check airbrakes' is signalled by the rudder waggle/yaw."
+			},
+			"source": "authored:spl"
+		}
+	]
+}

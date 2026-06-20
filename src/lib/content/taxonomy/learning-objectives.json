@@ -3,73 +3,561 @@
 	"subjects": [
 		{
 			"id": "AIRLAW",
-			"name": { "pl": "Prawo lotnicze", "en": "Air law" },
+			"name": {
+				"pl": "Prawo lotnicze",
+				"en": "Air Law"
+			},
 			"los": [
 				{
-					"id": "AIRLAW.VFR_MINIMA",
+					"id": "AIRLAW.SPL_PRIVILEGES",
 					"text": {
-						"pl": "Minima VFR widzialności i odległości od chmur wg klasy przestrzeni",
-						"en": "VFR visibility and distance-from-cloud minima by airspace class"
+						"pl": "Uprawnienia, ograniczenia i warunki utrzymania ważności licencji szybowcowej SPL",
+						"en": "SPL privileges, limitations and conditions for maintaining licence validity"
 					},
-					"licenses": ["SPL", "BPL", "PPL_A"]
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "AIRLAW.AIRSPACE",
+					"text": {
+						"pl": "Klasyfikacja przestrzeni powietrznej i zasady lotów VFR według SERA",
+						"en": "Airspace classification and VFR flight rules under SERA"
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "AIRLAW.RULES_OF_AIR",
+					"text": {
+						"pl": "Zasady ruchu lotniczego: pierwszeństwo drogi, omijanie i wymijanie",
+						"en": "Rules of the air: right of way, avoiding and passing"
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "AIRLAW.VMC_MINIMA",
+					"text": {
+						"pl": "Minima VMC (widzialność i odległość od chmur) w poszczególnych klasach przestrzeni",
+						"en": "VMC minima (visibility and distance from cloud) by airspace class"
+					},
+					"licenses": ["SPL"]
 				},
 				{
 					"id": "AIRLAW.ALTIMETRY",
 					"text": {
-						"pl": "Nastawy wysokościomierza: QNH, QFE, QNE i ich znaczenie",
-						"en": "Altimeter settings: QNH, QFE, QNE and their meaning"
+						"pl": "Ustawienia wysokościomierza, poziomy odniesienia i poziom przejściowy",
+						"en": "Altimeter settings, reference datums and transition level"
 					},
-					"licenses": ["SPL", "BPL", "PPL_A"]
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "AIRLAW.RTF_TRANSPONDER",
+					"text": {
+						"pl": "Łączność radiowa, sygnały i kody transpondera w lotach szybowcowych",
+						"en": "Radio communication, signals and transponder codes in glider operations"
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "AIRLAW.DOCUMENTS_MED",
+					"text": {
+						"pl": "Wymagane dokumenty pokładowe i orzeczenia lotniczo-lekarskie pilota szybowca",
+						"en": "Required onboard documents and medical certificates for glider pilots"
+					},
+					"licenses": ["SPL"]
 				}
 			]
 		},
 		{
 			"id": "MET",
-			"name": { "pl": "Meteorologia", "en": "Meteorology" },
+			"name": {
+				"pl": "Meteorologia",
+				"en": "Meteorology"
+			},
 			"los": [
 				{
-					"id": "MET.METAR",
+					"id": "MET.ATMOSPHERE",
 					"text": {
-						"pl": "Odczyt skrótów i kodów depesz METAR/TAF",
-						"en": "Reading METAR/TAF abbreviations and codes"
+						"pl": "Opisać budowę atmosfery, ciśnienie, temperaturę i gęstość powietrza oraz Atmosferę Wzorcową ICAO (ISA).",
+						"en": "Describe the structure of the atmosphere, air pressure, temperature and density, and the ICAO Standard Atmosphere (ISA)."
 					},
-					"licenses": ["SPL", "BPL", "PPL_A"]
+					"licenses": ["SPL"]
 				},
 				{
-					"id": "MET.ISA",
+					"id": "MET.WIND",
 					"text": {
-						"pl": "Wartości atmosfery wzorcowej ISA",
-						"en": "International Standard Atmosphere (ISA) values"
+						"pl": "Wyjaśnić powstawanie wiatru, gradient ciśnienia, efekt Coriolisa, wiatr geostroficzny oraz lokalne wiatry (bryza, fen).",
+						"en": "Explain the formation of wind, pressure gradient, Coriolis effect, geostrophic wind and local winds (breeze, foehn)."
 					},
-					"licenses": ["SPL", "BPL", "PPL_A"]
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "MET.CLOUDS",
+					"text": {
+						"pl": "Rozpoznawać rodzaje chmur i ich znaczenie dla lotu szybowcowego, ze szczególnym uwzględnieniem chmur konwekcyjnych.",
+						"en": "Identify cloud types and their significance for glider flight, with particular emphasis on convective clouds."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "MET.THERMALS",
+					"text": {
+						"pl": "Wyjaśnić powstawanie noszeń termicznych, stabilność atmosfery, gradienty adiabatyczne i warunki sprzyjające szybowaniu.",
+						"en": "Explain the formation of thermal lift, atmospheric stability, adiabatic lapse rates and conditions favourable for soaring."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "MET.LIFT_TYPES",
+					"text": {
+						"pl": "Rozróżnić rodzaje noszeń wykorzystywanych w szybownictwie: termiczne, zboczowe (orograficzne) i falowe.",
+						"en": "Distinguish the types of lift used in gliding: thermal, ridge (orographic) and wave lift."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "MET.VISIBILITY",
+					"text": {
+						"pl": "Opisać zjawiska ograniczające widzialność: mgła, zamglenie, opady oraz ich wpływ na bezpieczeństwo lotu.",
+						"en": "Describe phenomena reducing visibility: fog, mist, precipitation and their effect on flight safety."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "MET.HAZARDS",
+					"text": {
+						"pl": "Identyfikować zagrożenia meteorologiczne: burze (Cb), oblodzenie, turbulencja, uskok wiatru i prądy zstępujące.",
+						"en": "Identify meteorological hazards: thunderstorms (Cb), icing, turbulence, wind shear and downdraughts."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "MET.PRODUCTS",
+					"text": {
+						"pl": "Interpretować informacje meteorologiczne dla lotnictwa: METAR, TAF, mapy synoptyczne i fronty atmosferyczne.",
+						"en": "Interpret aviation weather information: METAR, TAF, synoptic charts and atmospheric fronts."
+					},
+					"licenses": ["SPL"]
 				}
 			]
 		},
 		{
 			"id": "COM",
-			"name": { "pl": "Łączność", "en": "Communications" },
+			"name": {
+				"pl": "Łączność (VFR RTF)",
+				"en": "Communications (VFR RTF)"
+			},
 			"los": [
+				{
+					"id": "COM.PHRASEOLOGY",
+					"text": {
+						"pl": "Stosować standardową frazeologię lotniczą i poprawnie wymawiać litery oraz cyfry alfabetu fonetycznego ICAO.",
+						"en": "Apply standard aviation phraseology and correctly pronounce ICAO phonetic alphabet letters and numbers."
+					},
+					"licenses": ["SPL"]
+				},
 				{
 					"id": "COM.READBACK",
 					"text": {
-						"pl": "Obowiązkowe powtórzenia (readback) instrukcji ATC",
-						"en": "Mandatory readback of ATC instructions"
+						"pl": "Rozpoznawać, które zezwolenia i instrukcje wymagają obowiązkowego powtórzenia (readback) oraz prawidłowo je powtarzać.",
+						"en": "Identify which clearances and instructions require mandatory readback and read them back correctly."
 					},
-					"licenses": ["SPL", "BPL", "PPL_A"]
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "COM.CALLSIGN",
+					"text": {
+						"pl": "Budować i skracać znaki wywoławcze statków powietrznych oraz ustanawiać łączność zgodnie z procedurami.",
+						"en": "Construct and abbreviate aircraft call signs and establish communication per procedures."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "COM.FREQUENCIES",
+					"text": {
+						"pl": "Znać przeznaczenie lotniczych częstotliwości VHF, w tym częstotliwość niebezpieczeństwa, oraz znaczenie kodów transpondera (SSR).",
+						"en": "Know the purpose of aeronautical VHF frequencies, including the distress frequency, and the meaning of transponder (SSR) codes."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "COM.EMERGENCY",
+					"text": {
+						"pl": "Nadawać wezwania niebezpieczeństwa (MAYDAY) i naglące (PAN PAN) zgodnie z procedurą.",
+						"en": "Transmit distress (MAYDAY) and urgency (PAN PAN) calls according to procedure."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "COM.FAILURE",
+					"text": {
+						"pl": "Postępować zgodnie z procedurami w przypadku utraty łączności radiowej w przestrzeni VFR.",
+						"en": "Follow procedures in the event of radio communication failure in VFR airspace."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "COM.GLIDER_OPS",
+					"text": {
+						"pl": "Stosować łączność właściwą dla operacji szybowcowych, w tym lotów holowanych i ruchu w kręgu nadlotniskowym.",
+						"en": "Apply communication appropriate to glider operations, including aerotow and aerodrome traffic circuit."
+					},
+					"licenses": ["SPL"]
 				}
 			]
 		},
 		{
 			"id": "NAV",
-			"name": { "pl": "Nawigacja", "en": "Navigation" },
+			"name": {
+				"pl": "Nawigacja",
+				"en": "Navigation"
+			},
 			"los": [
 				{
-					"id": "NAV.ROD",
+					"id": "NAV.CHARTS",
 					"text": {
-						"pl": "Szacowanie prędkości opadania dla zniżania 3 stopni",
-						"en": "Estimating rate of descent for a 3-degree glidepath"
+						"pl": "Czytanie mapy lotniczej ICAO 1:500 000: skala, symbole, oznaczenia przestrzeni i przeszkód.",
+						"en": "Reading the ICAO 1:500 000 aeronautical chart: scale, symbols, airspace and obstacle markings."
 					},
-					"licenses": ["SPL", "BPL", "PPL_A"]
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "NAV.DIRECTION",
+					"text": {
+						"pl": "Kierunki, kursy i namiary: północ prawdziwa, magnetyczna i kompasowa, deklinacja i dewiacja.",
+						"en": "Directions, headings and bearings: true, magnetic and compass north, variation and deviation."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "NAV.MAGNETISM",
+					"text": {
+						"pl": "Zastosowanie deklinacji magnetycznej oraz zamiana kursu prawdziwego na magnetyczny i odwrotnie.",
+						"en": "Applying magnetic variation and converting between true and magnetic track/heading."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "NAV.TRIANGLE",
+					"text": {
+						"pl": "Trójkąt prędkości oraz wpływ wiatru: poprawka na znos, kurs a droga, prędkość względem ziemi.",
+						"en": "The triangle of velocities and wind effect: drift correction, heading vs track, groundspeed."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "NAV.DR_TIME",
+					"text": {
+						"pl": "Nawigacja zliczeniowa: obliczanie czasu, prędkości i odległości oraz korekta kursu w locie.",
+						"en": "Dead reckoning navigation: calculating time, speed and distance, and correcting heading in flight."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "NAV.UNITS",
+					"text": {
+						"pl": "Jednostki nawigacyjne i ich przeliczanie: mile morskie, kilometry, stopy, węzły, km/h.",
+						"en": "Navigation units and conversions: nautical miles, kilometres, feet, knots, km/h."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "NAV.POSITION",
+					"text": {
+						"pl": "Współrzędne geograficzne: szerokość i długość, południki, równoleżniki, GPS w lotach szybowcowych.",
+						"en": "Geographic coordinates: latitude and longitude, meridians, parallels, GPS in glider flying."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "NAV.PRACTICE",
+					"text": {
+						"pl": "Nawigacja praktyczna szybowca: orientacja terenowa, planowanie przelotu, znaki rozpoznawcze.",
+						"en": "Practical glider navigation: ground orientation, cross-country planning, landmark recognition."
+					},
+					"licenses": ["SPL"]
+				}
+			]
+		},
+		{
+			"id": "POF",
+			"name": {
+				"pl": "Zasady lotu (szybowce)",
+				"en": "Principles of Flight (sailplane)"
+			},
+			"los": [
+				{
+					"id": "POF.LIFT_DRAG",
+					"text": {
+						"pl": "Wyjaśnić powstawanie siły nośnej i oporu na profilu skrzydła oraz wpływ kąta natarcia na te siły.",
+						"en": "Explain the generation of lift and drag on an aerofoil and the effect of angle of attack on these forces."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "POF.DRAG_TYPES",
+					"text": {
+						"pl": "Rozróżnić opór indukowany i opór szkodliwy oraz opisać ich zależność od prędkości lotu.",
+						"en": "Distinguish induced drag from parasite drag and describe their variation with airspeed."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "POF.POLAR",
+					"text": {
+						"pl": "Zinterpretować biegunową prędkości szybowca oraz pojęcia doskonałości, prędkości minimalnego opadania i prędkości najlepszej doskonałości.",
+						"en": "Interpret the glider speed polar and the concepts of glide ratio, minimum sink speed and best glide speed."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "POF.STALL_SPIN",
+					"text": {
+						"pl": "Opisać przeciągnięcie i korkociąg, ich przyczyny, objawy oraz sposób wyprowadzenia.",
+						"en": "Describe the stall and the spin, their causes, symptoms and recovery."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "POF.STABILITY",
+					"text": {
+						"pl": "Wyjaśnić stateczność statyczną i dynamiczną oraz wpływ położenia środka ciężkości na sterowność szybowca.",
+						"en": "Explain static and dynamic stability and the effect of centre of gravity position on glider controllability."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "POF.LOAD_FACTOR",
+					"text": {
+						"pl": "Wyjaśnić współczynnik obciążenia, prędkość przeciągnięcia w zakręcie oraz prędkość manewrową.",
+						"en": "Explain load factor, stall speed in a turn and manoeuvring speed."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "POF.CONTROLS",
+					"text": {
+						"pl": "Opisać działanie powierzchni sterowych oraz hamulców aerodynamicznych szybowca.",
+						"en": "Describe the action of the flight control surfaces and the air brakes of a glider."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "POF.WATER_BALLAST",
+					"text": {
+						"pl": "Wyjaśnić wpływ balastu wodnego na osiągi i prędkości szybowca.",
+						"en": "Explain the effect of water ballast on glider performance and speeds."
+					},
+					"licenses": ["SPL"]
+				}
+			]
+		},
+		{
+			"id": "HPL",
+			"name": {
+				"pl": "Człowiek - możliwości i ograniczenia",
+				"en": "Human Performance & Limitations"
+			},
+			"los": [
+				{
+					"id": "HPL.HYPOXIA",
+					"text": {
+						"pl": "Wyjaśnić mechanizm i objawy niedotlenienia (hipoksji) w funkcji wysokości oraz zasady używania tlenu w lotach szybowcowych.",
+						"en": "Explain the mechanism and symptoms of hypoxia as a function of altitude and the rules for oxygen use in glider flights."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "HPL.HYPERVENTILATION",
+					"text": {
+						"pl": "Rozpoznać przyczyny, objawy i postępowanie w przypadku hiperwentylacji.",
+						"en": "Recognise the causes, symptoms and management of hyperventilation."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "HPL.VISION",
+					"text": {
+						"pl": "Opisać budowę i ograniczenia wzroku, technikę skanowania przestrzeni oraz widzenie nocne i olśnienie.",
+						"en": "Describe the structure and limitations of vision, the lookout scan technique, night vision and glare."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "HPL.DISORIENTATION",
+					"text": {
+						"pl": "Wyjaśnić działanie błędnika i mechanizmy dezorientacji przestrzennej oraz iluzji w locie.",
+						"en": "Explain the function of the vestibular system and the mechanisms of spatial disorientation and flight illusions."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "HPL.GFORCE",
+					"text": {
+						"pl": "Opisać wpływ przyspieszeń (przeciążeń) na organizm pilota, w tym GLOC i zjawiska szarej/czarnej zasłony.",
+						"en": "Describe the effects of acceleration (G-forces) on the pilot, including GLOC and grey-out/black-out."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "HPL.HEALTH",
+					"text": {
+						"pl": "Wymienić czynniki obniżające sprawność pilota: zmęczenie, alkohol, leki, odwodnienie, choroby i samoocena (IMSAFE).",
+						"en": "List factors that reduce pilot fitness: fatigue, alcohol, medication, dehydration, illness and self-assessment (IMSAFE)."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "HPL.DECISION",
+					"text": {
+						"pl": "Wyjaśnić podejmowanie decyzji, błędy ludzkie i postawy zagrażające bezpieczeństwu (hazardous attitudes).",
+						"en": "Explain decision making, human error and hazardous attitudes affecting flight safety."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "HPL.STRESS",
+					"text": {
+						"pl": "Opisać reakcję na stres i przeciążenie/niedociążenie informacyjne oraz świadomość sytuacyjną.",
+						"en": "Describe the stress response, information over/underload and situational awareness."
+					},
+					"licenses": ["SPL"]
+				}
+			]
+		},
+		{
+			"id": "OPS",
+			"name": {
+				"pl": "Procedury operacyjne",
+				"en": "Operational Procedures"
+			},
+			"los": [
+				{
+					"id": "OPS.LAUNCH_METHODS",
+					"text": {
+						"pl": "Metody startu szybowca: wyciągarka i hol za samolotem - procedury, sygnały i sytuacje awaryjne.",
+						"en": "Glider launch methods: winch and aerotow - procedures, signals and emergencies."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "OPS.SIGNALS",
+					"text": {
+						"pl": "Sygnały naziemne i wzrokowe stosowane w operacjach szybowcowych.",
+						"en": "Ground and visual signals used in glider operations."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "OPS.AIRFIELD_OPS",
+					"text": {
+						"pl": "Operacje lotniskowe: ruch w kręgu nadlotniskowym, pierwszeństwo i współdzielenie pola wzlotów.",
+						"en": "Airfield operations: traffic pattern, right of way and sharing the launch field."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "OPS.EMERGENCY",
+					"text": {
+						"pl": "Procedury awaryjne: zerwanie liny, lądowanie w terenie przygodnym i sytuacje szczególne.",
+						"en": "Emergency procedures: cable break, off-field landing and special situations."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "OPS.WAKE_TURB",
+					"text": {
+						"pl": "Turbulencja w śladzie aerodynamicznym i jej wpływ na operacje szybowcowe.",
+						"en": "Wake turbulence and its effect on glider operations."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "OPS.HUMAN_PERF",
+					"text": {
+						"pl": "Czynniki ludzkie i zarządzanie zagrożeniami w operacjach (TEM, lista kontrolna).",
+						"en": "Human factors and threat management in operations (TEM, checklists)."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "OPS.FUEL_NOISE",
+					"text": {
+						"pl": "Procedury ograniczania hałasu i ochrona środowiska wokół lotniska.",
+						"en": "Noise abatement and environmental procedures around the aerodrome."
+					},
+					"licenses": ["SPL"]
+				}
+			]
+		},
+		{
+			"id": "AGK",
+			"name": {
+				"pl": "Ogólna wiedza o statku powietrznym (szybowce)",
+				"en": "Aircraft General Knowledge (sailplane)"
+			},
+			"los": [
+				{
+					"id": "AGK.AIRFRAME",
+					"text": {
+						"pl": "Opisać konstrukcję płatowca szybowca: kadłub, skrzydło, usterzenie oraz stosowane materiały (drewno, metal, kompozyty).",
+						"en": "Describe the sailplane airframe structure: fuselage, wing, empennage and materials used (wood, metal, composites)."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "AGK.CONTROLS",
+					"text": {
+						"pl": "Wyjaśnić działanie powierzchni sterowych i mechanizacji skrzydła: lotki, ster wysokości, ster kierunku, klapy i hamulce aerodynamiczne.",
+						"en": "Explain the operation of control surfaces and wing devices: ailerons, elevator, rudder, flaps and airbrakes."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "AGK.INSTRUMENTS",
+					"text": {
+						"pl": "Wymienić i opisać przyrządy pokładowe szybowca, w tym układ pitota-statyki, wariometr i kompensację energii całkowitej.",
+						"en": "List and describe glider instruments, including the pitot-static system, variometer and total energy compensation."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "AGK.LANDINGGEAR",
+					"text": {
+						"pl": "Opisać podwozie szybowca, układ hamulcowy oraz typowe rozwiązania (koło chowane, kółko ogonowe, płoza).",
+						"en": "Describe glider landing gear, the wheel brake and typical configurations (retractable wheel, tailwheel, skid)."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "AGK.WEIGHTBALANCE",
+					"text": {
+						"pl": "Wyjaśnić znaczenie masy, środka ciężkości oraz balastu wodnego dla osiągów i bezpieczeństwa lotu.",
+						"en": "Explain the significance of mass, centre of gravity and water ballast for performance and flight safety."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "AGK.LIMITATIONS",
+					"text": {
+						"pl": "Zinterpretować ograniczenia eksploatacyjne i oznaczenia prędkościomierza (kolorowe pola i kreski).",
+						"en": "Interpret operating limitations and airspeed indicator markings (colour arcs and lines)."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "AGK.RELEASE",
+					"text": {
+						"pl": "Opisać zaczepy holownicze, mechanizm wyczepiania oraz różnice między startem za wyciągarką a holem za samolotem.",
+						"en": "Describe tow hooks, the release mechanism and differences between winch launch and aerotow."
+					},
+					"licenses": ["SPL"]
+				},
+				{
+					"id": "AGK.DOCS",
+					"text": {
+						"pl": "Wymienić dokumentację i przeglądy szybowca wymagane do legalnej eksploatacji (świadectwo zdatności, instrukcja użytkowania w locie).",
+						"en": "List the glider documentation and inspections required for legal operation (certificate of airworthiness, flight manual)."
+					},
+					"licenses": ["SPL"]
 				}
 			]
 		}

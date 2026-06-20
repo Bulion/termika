@@ -1,0 +1,729 @@
+{
+	"schemaVersion": 1,
+	"id": "spl-pof",
+	"title": {
+		"pl": "Zasady lotu (szybowce)",
+		"en": "Principles of Flight (sailplane)"
+	},
+	"subjectId": "POF",
+	"items": [
+		{
+			"id": "spl-pof-aoa-def",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.LIFT_DRAG"],
+			"licenses": ["SPL"],
+			"tags": ["aerofoil", "aoa"],
+			"front": {
+				"pl": "Co to jest kąt natarcia?",
+				"en": "What is the angle of attack?"
+			},
+			"back": {
+				"pl": "Kąt zawarty między cięciwą profilu a kierunkiem napływającego strumienia powietrza (prędkością niezakłóconą).",
+				"en": "The angle between the chord line of the aerofoil and the relative airflow (free stream direction)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-lift-formula",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.LIFT_DRAG"],
+			"licenses": ["SPL"],
+			"tags": ["lift"],
+			"front": {
+				"pl": "Od czego zależy siła nośna?",
+				"en": "What does the lift force depend on?"
+			},
+			"back": {
+				"pl": "Od współczynnika nośności CL, gęstości powietrza, kwadratu prędkości oraz powierzchni skrzydła: L = CL · ½ρV² · S.",
+				"en": "On lift coefficient CL, air density, the square of airspeed and wing area: L = CL · ½ρV² · S."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-cl-max",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.STALL_SPIN"],
+			"licenses": ["SPL"],
+			"tags": ["stall", "critical-aoa"],
+			"front": {
+				"pl": "Przy jakim kącie natarcia występuje przeciągnięcie?",
+				"en": "At what angle of attack does the stall occur?"
+			},
+			"back": {
+				"pl": "Przy krytycznym (przeciągnięcia) kącie natarcia, zwykle około 15-16°, gdy CL osiąga wartość maksymalną i strugi odrywają się od górnej powierzchni skrzydła.",
+				"en": "At the critical (stalling) angle of attack, typically around 15-16°, where CL reaches its maximum and the airflow separates from the upper wing surface."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-induced-drag",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.DRAG_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["drag", "induced"],
+			"front": {
+				"pl": "Jak zmienia się opór indukowany wraz z prędkością?",
+				"en": "How does induced drag vary with airspeed?"
+			},
+			"back": {
+				"pl": "Opór indukowany maleje wraz ze wzrostem prędkości (jest największy przy małych prędkościach i dużym kącie natarcia).",
+				"en": "Induced drag decreases as airspeed increases (it is greatest at low speed and high angle of attack)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-parasite-drag",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.DRAG_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["drag", "parasite"],
+			"front": {
+				"pl": "Jak zmienia się opór szkodliwy (pasożytniczy) wraz z prędkością?",
+				"en": "How does parasite drag vary with airspeed?"
+			},
+			"back": {
+				"pl": "Opór szkodliwy rośnie wraz ze wzrostem prędkości, proporcjonalnie do kwadratu prędkości.",
+				"en": "Parasite drag increases with airspeed, proportionally to the square of the speed."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-glide-ratio",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.POLAR"],
+			"licenses": ["SPL"],
+			"tags": ["polar", "glide-ratio"],
+			"front": {
+				"pl": "Co oznacza doskonałość szybowca równa 40?",
+				"en": "What does a glide ratio of 40 mean for a glider?"
+			},
+			"back": {
+				"pl": "Przy bezwietrznej pogodzie szybowiec przebywa 40 jednostek odległości poziomej na każdą 1 jednostkę utraconej wysokości (40:1).",
+				"en": "In still air the glider travels 40 units of horizontal distance for every 1 unit of height lost (40:1)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-min-sink",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.POLAR"],
+			"licenses": ["SPL"],
+			"tags": ["polar", "min-sink"],
+			"front": {
+				"pl": "Czym jest prędkość minimalnego opadania?",
+				"en": "What is the minimum sink speed?"
+			},
+			"back": {
+				"pl": "Prędkość, przy której szybowiec traci wysokość najwolniej; używana do utrzymywania się w słabym noszeniu (np. krążenia w kominie termicznym).",
+				"en": "The speed at which the glider loses height most slowly; used to stay airborne in weak lift (e.g. circling in a thermal)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-best-glide",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.POLAR"],
+			"licenses": ["SPL"],
+			"tags": ["polar", "best-glide"],
+			"front": {
+				"pl": "Czym jest prędkość najlepszej doskonałości?",
+				"en": "What is the best glide speed?"
+			},
+			"back": {
+				"pl": "Prędkość dająca największą odległość pokonaną na utraconą wysokość; wyznacza ją styczna poprowadzona z początku układu współrzędnych do biegunowej.",
+				"en": "The speed giving the greatest distance per height lost; found by the tangent from the origin to the polar curve."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-spin-cause",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STALL_SPIN"],
+			"licenses": ["SPL"],
+			"tags": ["spin"],
+			"front": {
+				"pl": "Jaki jest warunek wejścia w korkociąg?",
+				"en": "What is the condition for entering a spin?"
+			},
+			"back": {
+				"pl": "Przeciągnięcie połączone ze ślizgiem/obrotem (asymetryczne przeciągnięcie skrzydeł) - jedno skrzydło jest bardziej przeciągnięte niż drugie.",
+				"en": "A stall combined with yaw/rotation (asymmetric wing stall) - one wing is more stalled than the other."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-cg-forward",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STABILITY"],
+			"licenses": ["SPL"],
+			"tags": ["stability", "cg"],
+			"front": {
+				"pl": "Jak przednie położenie środka ciężkości wpływa na szybowiec?",
+				"en": "How does a forward centre of gravity affect the glider?"
+			},
+			"back": {
+				"pl": "Zwiększa stateczność podłużną, ale zmniejsza sterowność (cięższy ster wysokości) i podnosi prędkość przeciągnięcia.",
+				"en": "It increases longitudinal stability but reduces controllability (heavier elevator) and raises the stall speed."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-load-factor-turn",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.LOAD_FACTOR"],
+			"licenses": ["SPL"],
+			"tags": ["load-factor", "turn"],
+			"front": {
+				"pl": "Jaki jest współczynnik obciążenia w prawidłowym zakręcie o przechyleniu 60°?",
+				"en": "What is the load factor in a balanced 60° banked turn?"
+			},
+			"back": {
+				"pl": "2 (n = 1/cos 60° = 2), a prędkość przeciągnięcia wzrasta o około 41% (√2).",
+				"en": "2 (n = 1/cos 60° = 2), and the stall speed increases by about 41% (√2)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-airbrakes",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["air-brakes", "spoilers"],
+			"front": {
+				"pl": "Jaki jest skutek wysunięcia hamulców aerodynamicznych?",
+				"en": "What is the effect of deploying the air brakes?"
+			},
+			"back": {
+				"pl": "Zwiększają opór i niszczą siłę nośną, zwiększając opadanie i stromość zniżania bez nadmiernego wzrostu prędkości - służą do kontroli ścieżki podejścia.",
+				"en": "They increase drag and spoil lift, increasing the sink rate and steepening the descent without excessive speed gain - used to control the approach path."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-water-ballast",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.WATER_BALLAST"],
+			"licenses": ["SPL"],
+			"tags": ["water-ballast", "polar"],
+			"front": {
+				"pl": "Jak balast wodny wpływa na osiągi szybowca?",
+				"en": "How does water ballast affect glider performance?"
+			},
+			"back": {
+				"pl": "Zwiększa masę, przesuwając biegunową w stronę większych prędkości - lepsze przeskoki przy dużych prędkościach, ale wolniejsze wznoszenie w słabej termice; doskonałość maksymalna pozostaje zbliżona.",
+				"en": "It increases mass, shifting the polar towards higher speeds - better cruise at high speed but slower climb in weak thermals; the maximum glide ratio stays about the same."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-adverse-yaw",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["aileron", "yaw"],
+			"front": {
+				"pl": "Czym jest moment odchylający przeciwny (adverse yaw) i jak się go koryguje?",
+				"en": "What is adverse yaw and how is it corrected?"
+			},
+			"back": {
+				"pl": "Odchylenie nosa w stronę przeciwną do zamierzonego zakrętu, spowodowane większym oporem skrzydła z wychylonym w dół lotkiem; koryguje się skoordynowanym użyciem steru kierunku.",
+				"en": "Yawing of the nose opposite to the intended turn, caused by greater drag on the wing with the down-going aileron; corrected by coordinated use of the rudder."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-mcq-stall-aoa",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["POF.STALL_SPIN"],
+			"licenses": ["SPL"],
+			"tags": ["stall"],
+			"stem": {
+				"pl": "Od czego bezpośrednio zależy przeciągnięcie szybowca?",
+				"en": "What does the stall of a glider directly depend on?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Wyłącznie od prędkości lotu",
+						"en": "Only on the airspeed"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Od przekroczenia krytycznego kąta natarcia",
+						"en": "On exceeding the critical angle of attack"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Od masy szybowca",
+						"en": "On the mass of the glider"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Od wysokości lotu",
+						"en": "On the flight altitude"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Przeciągnięcie zawsze następuje po przekroczeniu krytycznego kąta natarcia, niezależnie od prędkości, przechylenia czy masy.",
+				"en": "A stall always occurs when the critical angle of attack is exceeded, regardless of speed, bank or mass."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-mcq-induced-drag",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["POF.DRAG_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["drag"],
+			"stem": {
+				"pl": "Kiedy opór indukowany jest największy?",
+				"en": "When is induced drag greatest?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Przy dużej prędkości i małym kącie natarcia",
+						"en": "At high speed and low angle of attack"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Przy małej prędkości i dużym kącie natarcia",
+						"en": "At low speed and high angle of attack"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Przy prędkości najlepszej doskonałości",
+						"en": "At best glide speed"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Opór indukowany nie zależy od prędkości",
+						"en": "Induced drag does not depend on speed"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Opór indukowany rośnie wraz ze wzrostem kąta natarcia, więc jest największy przy małych prędkościach.",
+				"en": "Induced drag increases with angle of attack, so it is greatest at low airspeeds."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-mcq-best-glide",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["POF.POLAR"],
+			"licenses": ["SPL"],
+			"tags": ["polar"],
+			"stem": {
+				"pl": "Jak na biegunowej prędkości wyznacza się prędkość najlepszej doskonałości?",
+				"en": "How is the best glide speed found on the speed polar?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Jako punkt najwyższy (najmniejsze opadanie) biegunowej",
+						"en": "As the topmost point (minimum sink) of the polar"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Jako punkt styczności prostej poprowadzonej z początku układu współrzędnych do biegunowej",
+						"en": "As the tangent point of a line drawn from the origin to the polar"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Jako punkt przecięcia biegunowej z osią prędkości",
+						"en": "As the intersection of the polar with the speed axis"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Jako punkt najniższy biegunowej",
+						"en": "As the lowest point of the polar"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Prędkość najlepszej doskonałości to punkt, w którym styczna z początku układu dotyka biegunowej; punkt najwyższy biegunowej (najmniejsze opadanie) to prędkość minimalnego opadania.",
+				"en": "Best glide speed is the point where the tangent from the origin touches the polar; the topmost point of the polar (least sink) is the minimum sink speed."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-mcq-load-60",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["POF.LOAD_FACTOR"],
+			"licenses": ["SPL"],
+			"tags": ["load-factor"],
+			"stem": {
+				"pl": "Jaki jest współczynnik obciążenia w skoordynowanym zakręcie z przechyleniem 60°?",
+				"en": "What is the load factor in a coordinated 60° banked turn?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "1,15",
+						"en": "1.15"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "1,41",
+						"en": "1.41"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "2,0",
+						"en": "2.0"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "3,0",
+						"en": "3.0"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "n = 1/cos 60° = 1/0,5 = 2,0. Prędkość przeciągnięcia rośnie wówczas o około 41%.",
+				"en": "n = 1/cos 60° = 1/0.5 = 2.0. The stall speed then increases by about 41%."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-mcq-cg-aft",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["POF.STABILITY"],
+			"licenses": ["SPL"],
+			"tags": ["stability", "cg"],
+			"stem": {
+				"pl": "Jaki jest skutek tylnego (skrajnego) położenia środka ciężkości?",
+				"en": "What is the effect of an aft (extreme rear) centre of gravity?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zwiększona stateczność podłużna i cięższy ster",
+						"en": "Increased longitudinal stability and heavier controls"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Zmniejszona stateczność podłużna i lekki, wrażliwy ster",
+						"en": "Reduced longitudinal stability and light, sensitive controls"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Brak wpływu na stateczność",
+						"en": "No effect on stability"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Wzrost prędkości przeciągnięcia",
+						"en": "Increase of the stall speed"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Tylne położenie środka ciężkości zmniejsza stateczność podłużną i czyni ster wysokości lekkim oraz wrażliwym, co utrudnia wyprowadzenie z korkociągu.",
+				"en": "An aft CG reduces longitudinal stability and makes the elevator light and sensitive, which can make spin recovery harder."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-mcq-spin-recovery",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["POF.STALL_SPIN"],
+			"licenses": ["SPL"],
+			"tags": ["spin"],
+			"stem": {
+				"pl": "Jaka jest typowa standardowa procedura wyprowadzenia szybowca z korkociągu?",
+				"en": "What is the typical standard glider spin recovery procedure?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Ster kierunku przeciwny do obrotu, lotki neutralnie, drążek do przodu",
+						"en": "Full opposite rudder, ailerons neutral, stick forward"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Drążek do siebie i ster kierunku zgodny z obrotem",
+						"en": "Stick back and rudder with the rotation"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Pełne wychylenie lotek przeciwne do obrotu",
+						"en": "Full opposite aileron only"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Wysunięcie hamulców aerodynamicznych",
+						"en": "Deploy the air brakes"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Standardowe wyprowadzenie: ster kierunku energicznie przeciwny do obrotu, lotki neutralnie, drążek do przodu aż do ustania obrotu, następnie wyprowadzenie z nurkowania.",
+				"en": "Standard recovery: apply full opposite rudder, ailerons neutral, move the stick forward until rotation stops, then recover from the dive."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-mcq-airbrakes",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["POF.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["air-brakes"],
+			"stem": {
+				"pl": "Jaki jest podstawowy cel hamulców aerodynamicznych szybowca podczas podejścia?",
+				"en": "What is the primary purpose of a glider's air brakes during the approach?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zwiększenie siły nośnej do lądowania",
+						"en": "Increasing lift for landing"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Kontrola kąta i ścieżki zniżania",
+						"en": "Controlling the angle and path of the descent"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zmniejszenie oporu w locie szybkim",
+						"en": "Reducing drag in fast flight"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zwiększenie doskonałości szybowca",
+						"en": "Increasing the glide ratio"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Hamulce aerodynamiczne zwiększają opór i niszczą nośność, pozwalając pilotowi kontrolować stromość i punkt przyziemienia na podejściu.",
+				"en": "Air brakes increase drag and spoil lift, letting the pilot control the steepness and touchdown point on the approach."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-mcq-ballast",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["POF.WATER_BALLAST"],
+			"licenses": ["SPL"],
+			"tags": ["water-ballast"],
+			"stem": {
+				"pl": "Jaki jest główny efekt napełnienia szybowca balastem wodnym?",
+				"en": "What is the main effect of filling a glider with water ballast?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Znaczne zwiększenie maksymalnej doskonałości",
+						"en": "A large increase in maximum glide ratio"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Przesunięcie optymalnych prędkości lotu ku większym wartościom",
+						"en": "A shift of the optimum flight speeds to higher values"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zmniejszenie prędkości przeciągnięcia",
+						"en": "A reduction of the stall speed"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Szybsze wznoszenie w słabej termice",
+						"en": "Faster climb in weak thermals"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Balast zwiększa obciążenie powierzchni, przesuwając biegunową ku większym prędkościom - korzystne przy silnej termice; prędkość przeciągnięcia rośnie, a wznoszenie w słabej termice jest wolniejsze.",
+				"en": "Ballast increases wing loading, shifting the polar to higher speeds - useful in strong lift; stall speed rises and climb in weak thermals is slower."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-mcq-adverse-yaw",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["POF.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["yaw", "aileron"],
+			"stem": {
+				"pl": "Czym jest spowodowany moment odchylający przeciwny (adverse yaw) przy wprowadzaniu w zakręt?",
+				"en": "What causes adverse yaw when rolling into a turn?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Większym oporem skrzydła z lotką wychyloną w dół",
+						"en": "Greater drag on the wing with the down-going aileron"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Działaniem steru kierunku",
+						"en": "The action of the rudder"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Wysunięciem hamulców aerodynamicznych",
+						"en": "Deployment of the air brakes"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Przeciągnięciem skrzydła wewnętrznego",
+						"en": "Stalling of the inner wing"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Lotka wychylona w dół zwiększa nośność, ale też opór tego skrzydła, co odchyla nos w stronę przeciwną do zakrętu; koryguje się to skoordynowanym sterem kierunku.",
+				"en": "The down-going aileron increases lift but also drag on that wing, yawing the nose away from the turn; this is corrected with coordinated rudder."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-mcq-stall-speed-turn",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["POF.LOAD_FACTOR"],
+			"licenses": ["SPL"],
+			"tags": ["load-factor", "stall"],
+			"stem": {
+				"pl": "O ile w przybliżeniu wzrasta prędkość przeciągnięcia w zakręcie z przechyleniem 60°?",
+				"en": "By approximately how much does the stall speed increase in a 60° banked turn?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "O około 10%",
+						"en": "By about 10%"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "O około 41%",
+						"en": "By about 41%"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "O około 100%",
+						"en": "By about 100%"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Nie zmienia się",
+						"en": "It does not change"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Prędkość przeciągnięcia rośnie proporcjonalnie do pierwiastka ze współczynnika obciążenia: √2 ≈ 1,41, czyli o około 41%.",
+				"en": "Stall speed rises with the square root of the load factor: √2 ≈ 1.41, i.e. about 41%."
+			},
+			"source": "authored:spl"
+		}
+	]
+}

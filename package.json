@@ -18,7 +18,8 @@
 		"test:component": "vitest run --project=client",
 		"test:e2e": "playwright test",
 		"test": "npm run test:unit && npm run test:component && npm run test:e2e",
-		"ingest:fifly": "tsx scripts/ingest-fifly.ts"
+		"ingest:fifly": "tsx scripts/ingest-fifly.ts",
+		"assemble:content": "tsx scripts/assemble-content.ts"
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",

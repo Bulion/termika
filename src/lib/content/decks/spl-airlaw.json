@@ -1,94 +1,794 @@
 {
 	"schemaVersion": 1,
 	"id": "spl-airlaw",
-	"title": { "pl": "SPL: Prawo lotnicze", "en": "SPL: Air law" },
+	"title": {
+		"pl": "Prawo lotnicze",
+		"en": "Air Law"
+	},
 	"subjectId": "AIRLAW",
 	"items": [
+		{
+			"id": "spl-airlaw-spl-abbr",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["AIRLAW.SPL_PRIVILEGES"],
+			"licenses": ["SPL"],
+			"tags": ["spl", "fcl"],
+			"front": {
+				"pl": "Co oznacza skrót SPL?",
+				"en": "What does the abbreviation SPL stand for?"
+			},
+			"back": {
+				"pl": "Sailplane Pilot Licence - licencja pilota szybowcowego wydawana zgodnie z Part-FCL.",
+				"en": "Sailplane Pilot Licence - the glider pilot licence issued under Part-FCL."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-airlaw-recency",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["AIRLAW.SPL_PRIVILEGES"],
+			"licenses": ["SPL"],
+			"tags": ["recency", "passenger"],
+			"front": {
+				"pl": "Jakie minimum bieżącej praktyki (recency) musi spełnić pilot SPL, by przewozić pasażera?",
+				"en": "What recency minimum must an SPL holder meet to carry a passenger?"
+			},
+			"back": {
+				"pl": "Co najmniej 3 starty i lądowania na szybowcu w ciągu ostatnich 90 dni jako pilot dowódca lub w locie szkolnym z instruktorem.",
+				"en": "At least 3 take-offs and landings on a sailplane within the preceding 90 days as PIC or in dual training with an instructor."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-airlaw-spl-min-age",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["AIRLAW.SPL_PRIVILEGES"],
+			"licenses": ["SPL"],
+			"tags": ["age", "spl"],
+			"front": {
+				"pl": "Jaki jest minimalny wiek do wydania licencji SPL?",
+				"en": "What is the minimum age to be issued an SPL?"
+			},
+			"back": {
+				"pl": "16 lat (do pierwszego samodzielnego lotu - solo - wymagane jest ukończenie 14 lat).",
+				"en": "16 years old (for the first solo flight a minimum age of 14 is required)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-airlaw-class-g",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["AIRLAW.AIRSPACE"],
+			"licenses": ["SPL"],
+			"tags": ["airspace", "vfr"],
+			"front": {
+				"pl": "Czy lot VFR w przestrzeni klasy G wymaga zezwolenia kontroli ruchu lotniczego (ATC)?",
+				"en": "Does a VFR flight in Class G airspace require ATC clearance?"
+			},
+			"back": {
+				"pl": "Nie. Klasa G jest niekontrolowana - zezwolenie ATC nie jest wymagane, ale obowiązuje zasada \"widzę i unikam\".",
+				"en": "No. Class G is uncontrolled - no ATC clearance is required, but the see-and-avoid principle applies."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-airlaw-class-c-clearance",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["AIRLAW.AIRSPACE"],
+			"licenses": ["SPL"],
+			"tags": ["airspace", "class-c"],
+			"front": {
+				"pl": "Co jest wymagane, aby wykonać lot VFR w przestrzeni klasy C?",
+				"en": "What is required to fly VFR in Class C airspace?"
+			},
+			"back": {
+				"pl": "Zezwolenie ATC oraz dwukierunkowa łączność radiowa; ATC zapewnia separację VFR od IFR (separacji VFR od VFR nie zapewnia, podaje jedynie informacje o ruchu).",
+				"en": "ATC clearance and two-way radio communication; ATC provides separation of VFR from IFR (VFR-to-VFR is not separated, only traffic information is given)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-airlaw-vmc-below-3050",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["AIRLAW.VMC_MINIMA"],
+			"licenses": ["SPL"],
+			"tags": ["vmc", "class-g"],
+			"front": {
+				"pl": "Jakie są minima VMC dla VFR w klasie G na/poniżej 3050 m (10 000 ft) AMSL i poniżej 900 m (3000 ft)?",
+				"en": "What are the VMC minima for VFR in Class G at or below 3050 m (10 000 ft) AMSL and below 900 m (3000 ft)?"
+			},
+			"back": {
+				"pl": "Widzialność 5 km, z dala od chmur i z widocznością terenu (clear of cloud and in sight of the surface).",
+				"en": "Visibility 5 km, clear of cloud and in sight of the surface."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-airlaw-vmc-above-3050",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["AIRLAW.VMC_MINIMA"],
+			"licenses": ["SPL"],
+			"tags": ["vmc", "cloud-clearance"],
+			"front": {
+				"pl": "Jaka jest minimalna odległość od chmur w VMC powyżej 3050 m (10 000 ft) AMSL?",
+				"en": "What is the minimum distance from cloud in VMC above 3050 m (10 000 ft) AMSL?"
+			},
+			"back": {
+				"pl": "1500 m w poziomie i 300 m (1000 ft) w pionie; widzialność 8 km.",
+				"en": "1500 m horizontally and 300 m (1000 ft) vertically; visibility 8 km."
+			},
+			"source": "authored:spl"
+		},
 		{
 			"id": "spl-airlaw-qnh",
 			"type": "flashcard",
 			"microSkill": "abbreviation",
 			"loIds": ["AIRLAW.ALTIMETRY"],
 			"licenses": ["SPL"],
-			"tags": ["altimetry", "code"],
-			"confusableWith": ["spl-airlaw-qfe"],
-			"front": { "pl": "QNH", "en": "QNH" },
+			"tags": ["altimetry", "qnh"],
+			"front": {
+				"pl": "Co wskazuje wysokościomierz po ustawieniu QNH?",
+				"en": "What does the altimeter indicate when set to QNH?"
+			},
 			"back": {
-				"pl": "Nastawa dająca wysokość nad poziomem morza; na lotnisku wskazuje jego elewację",
-				"en": "Setting giving altitude above mean sea level; reads field elevation on the ground"
-			}
+				"pl": "Wysokość bezwzględną nad średnim poziomem morza (altitude AMSL); na lotnisku pokaże jego elewację.",
+				"en": "Altitude above mean sea level (AMSL); on the airfield it reads the field elevation."
+			},
+			"source": "authored:spl"
 		},
 		{
-			"id": "spl-airlaw-qfe",
+			"id": "spl-airlaw-qfe-qne",
 			"type": "flashcard",
 			"microSkill": "abbreviation",
 			"loIds": ["AIRLAW.ALTIMETRY"],
 			"licenses": ["SPL"],
-			"tags": ["altimetry", "code"],
-			"confusableWith": ["spl-airlaw-qnh"],
-			"front": { "pl": "QFE", "en": "QFE" },
+			"tags": ["altimetry", "qfe", "qne"],
+			"front": {
+				"pl": "Co oznaczają ustawienia QFE i ustawienie standardowe (1013,25 hPa)?",
+				"en": "What do QFE and the standard setting (1013.25 hPa) mean?"
+			},
 			"back": {
-				"pl": "Nastawa dająca wysokość nad progiem/elewacją lotniska; na pasie wskazuje 0",
-				"en": "Setting giving height above the airfield datum; reads 0 on the runway"
-			}
+				"pl": "QFE - ciśnienie na poziomie lotniska (wysokościomierz pokazuje 0 na ziemi). 1013,25 hPa - ustawienie standardowe do lotu na poziomach lotu (flight levels).",
+				"en": "QFE - pressure at airfield level (altimeter reads 0 on the ground). 1013.25 hPa - standard setting used for flying flight levels."
+			},
+			"source": "authored:spl"
 		},
 		{
-			"id": "spl-airlaw-vfr-g",
+			"id": "spl-airlaw-transition-level",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["AIRLAW.ALTIMETRY"],
+			"licenses": ["SPL"],
+			"tags": ["altimetry", "transition"],
+			"front": {
+				"pl": "Jakie ustawienie wysokościomierza obowiązuje powyżej wysokości przejściowej (transition altitude)?",
+				"en": "Which altimeter setting applies above the transition altitude?"
+			},
+			"back": {
+				"pl": "Ustawienie standardowe 1013,25 hPa - lot odbywa się wówczas na poziomach lotu (FL).",
+				"en": "The standard setting 1013.25 hPa - the flight is then conducted on flight levels (FL)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-airlaw-glider-overtaking",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["AIRLAW.RULES_OF_AIR"],
+			"licenses": ["SPL"],
+			"tags": ["rules-of-air", "overtaking"],
+			"front": {
+				"pl": "W którą stronę wymija się wyprzedzany statek powietrzny zgodnie z SERA?",
+				"en": "On which side does an aircraft overtake another under SERA?"
+			},
+			"back": {
+				"pl": "Wyprzedzanie wykonuje się z prawej strony wyprzedzanego statku powietrznego (zmiana kursu w prawo).",
+				"en": "Overtaking is done by passing on the right-hand side of the aircraft being overtaken (alter heading to the right)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-airlaw-head-on",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["AIRLAW.RULES_OF_AIR"],
+			"licenses": ["SPL"],
+			"tags": ["rules-of-air", "head-on"],
+			"front": {
+				"pl": "Jak należy postąpić przy zbliżaniu się dwóch statków powietrznych czołowo (head-on)?",
+				"en": "What must each aircraft do when approaching head-on?"
+			},
+			"back": {
+				"pl": "Każdy zmienia kurs w prawo, aby minąć się lewymi burtami.",
+				"en": "Each alters its heading to the right to pass with the other on its left."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-airlaw-glider-conv",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["AIRLAW.RULES_OF_AIR"],
+			"licenses": ["SPL"],
+			"tags": ["rules-of-air", "right-of-way"],
+			"front": {
+				"pl": "Kto ma pierwszeństwo: szybowiec czy samolot, gdy ich kursy się zbiegają?",
+				"en": "Who has right of way when a glider and an aeroplane are converging?"
+			},
+			"back": {
+				"pl": "Szybowiec ma pierwszeństwo przed samolotem. Hierarchia SERA: balon > szybowiec > sterowiec > samolot/śmigłowiec (statek mniej manewrowy ma pierwszeństwo).",
+				"en": "The glider has right of way over the aeroplane. SERA hierarchy: balloon > glider > airship > aeroplane/helicopter (the less manoeuvrable aircraft has priority)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-airlaw-squawk-7600",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["AIRLAW.RTF_TRANSPONDER"],
+			"licenses": ["SPL"],
+			"tags": ["transponder", "squawk"],
+			"front": {
+				"pl": "Jaki kod transpondera oznacza utratę łączności radiowej?",
+				"en": "Which transponder code indicates radio communication failure?"
+			},
+			"back": {
+				"pl": "7600 (7700 - niebezpieczeństwo/emergency; 7500 - bezprawna ingerencja/uprowadzenie).",
+				"en": "7600 (7700 - emergency; 7500 - unlawful interference/hijack)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-airlaw-documents",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["AIRLAW.DOCUMENTS_MED"],
+			"licenses": ["SPL"],
+			"tags": ["medical", "lapl"],
+			"front": {
+				"pl": "Jaki rodzaj orzeczenia lotniczo-lekarskiego jest minimalnie wymagany dla pilota szybowcowego SPL?",
+				"en": "What minimum medical certificate is required for an SPL glider pilot?"
+			},
+			"back": {
+				"pl": "Orzeczenie LAPL (Light Aircraft Pilot Licence medical), które jest wystarczające dla SPL.",
+				"en": "A LAPL medical certificate, which is sufficient for the SPL."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-airlaw-mcq-medical",
 			"type": "mcq",
 			"microSkill": "regulation",
-			"loIds": ["AIRLAW.VFR_MINIMA"],
+			"loIds": ["AIRLAW.DOCUMENTS_MED"],
 			"licenses": ["SPL"],
-			"tags": ["vfr-minima"],
+			"tags": ["medical"],
 			"stem": {
-				"pl": "Minima VFR w przestrzeni klasy G na/poniżej 3000 ft AMSL przy prędkości ≤140 kt?",
-				"en": "VFR minima in Class G at/below 3000 ft AMSL at ≤140 kt?"
+				"pl": "Jakie minimalne orzeczenie lotniczo-lekarskie musi posiadać pilot wykonujący loty na podstawie licencji SPL?",
+				"en": "What minimum medical certificate must a pilot exercising SPL privileges hold?"
 			},
 			"choices": [
 				{
 					"id": "a",
 					"text": {
-						"pl": "Widzialność 1500 m, z dala od chmur, z widocznością terenu",
-						"en": "1500 m visibility, clear of cloud, in sight of the surface"
+						"pl": "Orzeczenie klasy 1",
+						"en": "Class 1 medical"
 					}
 				},
 				{
 					"id": "b",
 					"text": {
-						"pl": "Widzialność 5000 m, 1000 ft w pionie od chmur",
-						"en": "5000 m visibility, 1000 ft vertically from cloud"
+						"pl": "Orzeczenie klasy 2",
+						"en": "Class 2 medical"
 					}
 				},
 				{
 					"id": "c",
 					"text": {
-						"pl": "Widzialność 8000 m, 1500 m poziomo od chmur",
-						"en": "8000 m visibility, 1500 m horizontally from cloud"
+						"pl": "Orzeczenie LAPL",
+						"en": "LAPL medical"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Żadne orzeczenie nie jest wymagane",
+						"en": "No medical is required"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Dla licencji szybowcowej SPL wystarczające jest orzeczenie LAPL; klasa 1 i 2 są wyższe niż wymagane minimum.",
+				"en": "For the SPL a LAPL medical is sufficient; Class 1 and 2 are higher than the required minimum."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-airlaw-mcq-recency",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["AIRLAW.SPL_PRIVILEGES"],
+			"licenses": ["SPL"],
+			"tags": ["recency"],
+			"stem": {
+				"pl": "Aby przewozić pasażera na szybowcu, pilot SPL musi wykonać w ciągu ostatnich 90 dni co najmniej:",
+				"en": "To carry a passenger on a sailplane, an SPL holder must have completed within the preceding 90 days at least:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "1 start i lądowanie",
+						"en": "1 take-off and landing"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "3 starty i lądowania",
+						"en": "3 take-offs and landings"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "5 startów i lądowań",
+						"en": "5 take-offs and landings"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "10 godzin lotu",
+						"en": "10 flight hours"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Part-FCL wymaga co najmniej 3 startów i lądowań w ostatnich 90 dniach na szybowcu, aby przewozić pasażera.",
+				"en": "Part-FCL requires at least 3 take-offs and landings in the preceding 90 days on a sailplane to carry a passenger."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-airlaw-mcq-classg-vis",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["AIRLAW.VMC_MINIMA"],
+			"licenses": ["SPL"],
+			"tags": ["vmc"],
+			"stem": {
+				"pl": "Jaka jest minimalna widzialność w locie VFR w klasie G poniżej 900 m (3000 ft) AMSL?",
+				"en": "What is the minimum flight visibility for VFR in Class G below 900 m (3000 ft) AMSL?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "1,5 km",
+						"en": "1.5 km"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "5 km",
+						"en": "5 km"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "8 km",
+						"en": "8 km"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "10 km",
+						"en": "10 km"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "W klasie G na/poniżej 3050 m i poniżej 900 m widzialność wynosi 5 km, z dala od chmur i z widocznością terenu.",
+				"en": "In Class G at/below 3050 m and below 900 m, visibility is 5 km, clear of cloud and in sight of the surface."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-airlaw-mcq-cloud-high",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["AIRLAW.VMC_MINIMA"],
+			"licenses": ["SPL"],
+			"tags": ["vmc"],
+			"stem": {
+				"pl": "Powyżej 3050 m (10 000 ft) AMSL minimalna odległość od chmur w VMC wynosi:",
+				"en": "Above 3050 m (10 000 ft) AMSL the minimum distance from cloud in VMC is:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "1500 m poziomo i 300 m pionowo",
+						"en": "1500 m horizontally and 300 m vertically"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "z dala od chmur i z widocznością terenu",
+						"en": "clear of cloud and in sight of the surface"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "300 m poziomo i 150 m pionowo",
+						"en": "300 m horizontally and 150 m vertically"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "brak wymagań co do odległości",
+						"en": "no distance requirement"
 					}
 				}
 			],
 			"answer": "a",
 			"explanation": {
-				"pl": "SERA.5001, tabela S5-1: opcja dla niskiego poziomu i małej prędkości.",
-				"en": "SERA.5001 Table S5-1: the low-level, low-speed option."
-			}
+				"pl": "Powyżej 3050 m obowiązuje 1500 m w poziomie i 300 m (1000 ft) w pionie oraz widzialność 8 km.",
+				"en": "Above 3050 m, 1500 m horizontal and 300 m (1000 ft) vertical separation apply, with 8 km visibility."
+			},
+			"source": "authored:spl"
 		},
 		{
-			"id": "spl-airlaw-qfe-mcq",
+			"id": "spl-airlaw-mcq-rightofway",
+			"type": "mcq",
+			"microSkill": "nav_rule",
+			"loIds": ["AIRLAW.RULES_OF_AIR"],
+			"licenses": ["SPL"],
+			"tags": ["right-of-way"],
+			"stem": {
+				"pl": "Szybowiec i samolot zbliżają się na zbieżnych kursach na podobnej wysokości. Kto ustępuje drogi?",
+				"en": "A glider and an aeroplane are converging at similar height. Who gives way?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Szybowiec ustępuje samolotowi",
+						"en": "The glider gives way to the aeroplane"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Samolot ustępuje szybowcowi",
+						"en": "The aeroplane gives way to the glider"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Ustępuje ten z lewej strony",
+						"en": "The one on the left gives way"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Ustępuje statek lecący wyżej",
+						"en": "The higher aircraft gives way"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "W hierarchii pierwszeństwa szybowiec jest wyżej niż samolot, więc to samolot ustępuje drogi szybowcowi.",
+				"en": "In the right-of-way hierarchy a glider ranks above an aeroplane, so the aeroplane gives way to the glider."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-airlaw-mcq-overtake",
+			"type": "mcq",
+			"microSkill": "nav_rule",
+			"loIds": ["AIRLAW.RULES_OF_AIR"],
+			"licenses": ["SPL"],
+			"tags": ["overtaking"],
+			"stem": {
+				"pl": "Wyprzedzając inny statek powietrzny, należy go wyminąć:",
+				"en": "When overtaking another aircraft you must pass:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "z lewej strony",
+						"en": "on its left"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "z prawej strony",
+						"en": "on its right"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "z dołu",
+						"en": "from below"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "dowolnie, byle bezpiecznie",
+						"en": "on either side, as long as it is safe"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Zgodnie z SERA wyprzedzanie wykonuje się z prawej strony wyprzedzanego statku powietrznego.",
+				"en": "Under SERA, overtaking is performed by passing on the right of the aircraft being overtaken."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-airlaw-mcq-qnh",
+			"type": "mcq",
+			"microSkill": "abbreviation",
+			"loIds": ["AIRLAW.ALTIMETRY"],
+			"licenses": ["SPL"],
+			"tags": ["qnh"],
+			"stem": {
+				"pl": "Po ustawieniu QNH na lotnisku wysokościomierz wskaże:",
+				"en": "With QNH set on the airfield, the altimeter will read:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "zero",
+						"en": "zero"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "elewację lotniska",
+						"en": "the airfield elevation"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "wysokość 1013 m",
+						"en": "an altitude of 1013 m"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "poziom lotu",
+						"en": "a flight level"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "QNH odnosi się do średniego poziomu morza, więc na ziemi wysokościomierz pokazuje elewację lotniska.",
+				"en": "QNH is referenced to mean sea level, so on the ground the altimeter reads the airfield elevation."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-airlaw-mcq-squawk",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["AIRLAW.RTF_TRANSPONDER"],
+			"licenses": ["SPL"],
+			"tags": ["squawk"],
+			"stem": {
+				"pl": "Który kod transpondera ustawia pilot w sytuacji niebezpieczeństwa (emergency)?",
+				"en": "Which transponder code does a pilot set in an emergency?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "7500",
+						"en": "7500"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "7600",
+						"en": "7600"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "7700",
+						"en": "7700"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "2000",
+						"en": "2000"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "7700 oznacza niebezpieczeństwo, 7600 utratę łączności, a 7500 bezprawną ingerencję.",
+				"en": "7700 means emergency, 7600 means radio failure, and 7500 means unlawful interference."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-airlaw-mcq-classg-clearance",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["AIRLAW.AIRSPACE"],
+			"licenses": ["SPL"],
+			"tags": ["airspace"],
+			"stem": {
+				"pl": "Lot VFR szybowcem w niekontrolowanej przestrzeni klasy G:",
+				"en": "A VFR glider flight in uncontrolled Class G airspace:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "wymaga zezwolenia ATC",
+						"en": "requires ATC clearance"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "nie wymaga zezwolenia ATC",
+						"en": "does not require ATC clearance"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "jest zabroniony dla szybowców",
+						"en": "is prohibited for gliders"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "wymaga planu lotu IFR",
+						"en": "requires an IFR flight plan"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Klasa G jest przestrzenią niekontrolowaną - zezwolenie ATC nie jest wymagane, obowiązuje zasada widzę i unikam.",
+				"en": "Class G is uncontrolled airspace - no ATC clearance is required and the see-and-avoid principle applies."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-airlaw-mcq-transition",
 			"type": "mcq",
 			"microSkill": "regulation",
 			"loIds": ["AIRLAW.ALTIMETRY"],
 			"licenses": ["SPL"],
-			"tags": ["altimetry"],
+			"tags": ["transition"],
 			"stem": {
-				"pl": "Wysokościomierz nastawiony na QFE na pasie startowym wskazuje:",
-				"en": "With QFE set, the altimeter on the runway reads:"
+				"pl": "Wznosząc się powyżej wysokości przejściowej (transition altitude), pilot ustawia wysokościomierz na:",
+				"en": "Climbing through the transition altitude, the pilot sets the altimeter to:"
 			},
 			"choices": [
-				{ "id": "a", "text": { "pl": "0", "en": "0" } },
-				{ "id": "b", "text": { "pl": "Elewację lotniska", "en": "Aerodrome elevation" } },
-				{ "id": "c", "text": { "pl": "Wysokość nad poziomem morza", "en": "Altitude above MSL" } }
+				{
+					"id": "a",
+					"text": {
+						"pl": "QNH",
+						"en": "QNH"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "QFE",
+						"en": "QFE"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "1013,25 hPa (ustawienie standardowe)",
+						"en": "1013.25 hPa (standard setting)"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "ciśnienie regionalne QNH",
+						"en": "regional QNH"
+					}
+				}
 			],
-			"answer": "a"
+			"answer": "c",
+			"explanation": {
+				"pl": "Powyżej wysokości przejściowej obowiązuje ustawienie standardowe 1013,25 hPa i lot na poziomach lotu.",
+				"en": "Above the transition altitude the standard setting 1013.25 hPa applies and flight is on flight levels."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-airlaw-mcq-headon",
+			"type": "mcq",
+			"microSkill": "nav_rule",
+			"loIds": ["AIRLAW.RULES_OF_AIR"],
+			"licenses": ["SPL"],
+			"tags": ["head-on"],
+			"stem": {
+				"pl": "Dwa szybowce zbliżają się czołowo na tej samej wysokości. Każdy pilot powinien:",
+				"en": "Two gliders are approaching head-on at the same height. Each pilot should:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "zmienić kurs w lewo",
+						"en": "alter heading to the left"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "zmienić kurs w prawo",
+						"en": "alter heading to the right"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "wznieść się",
+						"en": "climb"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "utrzymać kurs",
+						"en": "maintain heading"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Przy zbliżaniu czołowym każdy statek powietrzny zmienia kurs w prawo, aby minąć się lewymi burtami.",
+				"en": "When approaching head-on each aircraft alters heading to the right to pass left-to-left."
+			},
+			"source": "authored:spl"
 		}
 	]
 }

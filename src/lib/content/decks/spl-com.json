@@ -1,24 +1,746 @@
 {
 	"schemaVersion": 1,
 	"id": "spl-com",
-	"title": { "pl": "SPL: Łączność", "en": "SPL: Communications" },
+	"title": {
+		"pl": "Łączność (VFR RTF)",
+		"en": "Communications (VFR RTF)"
+	},
 	"subjectId": "COM",
 	"items": [
 		{
-			"id": "spl-com-readback-landing",
-			"type": "scenario",
+			"id": "spl-com-phonetic-letters",
+			"type": "flashcard",
 			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["phonetic", "alphabet"],
+			"front": {
+				"pl": "Podaj alfabet fonetyczny ICAO dla liter: G, J, Q, V.",
+				"en": "Give the ICAO phonetic alphabet for the letters G, J, Q, V."
+			},
+			"back": {
+				"pl": "G = Golf, J = Juliett, Q = Quebec, V = Victor.",
+				"en": "G = Golf, J = Juliett, Q = Quebec, V = Victor."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-phonetic-numbers",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["phonetic", "numbers"],
+			"front": {
+				"pl": "Jak wymawia się cyfry 3, 5 i 9 w radiotelefonii ICAO?",
+				"en": "How are the numbers 3, 5 and 9 pronounced in ICAO radiotelephony?"
+			},
+			"back": {
+				"pl": "3 = TREE, 5 = FIFE, 9 = NINER. Cyfry nadaje się pojedynczo.",
+				"en": "3 = TREE, 5 = FIFE, 9 = NINER. Numbers are transmitted as separate digits."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-wilco",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["phraseology"],
+			"front": {
+				"pl": "Co oznacza słowo WILCO w korespondencji radiowej?",
+				"en": "What does the word WILCO mean in radio communication?"
+			},
+			"back": {
+				"pl": "WILCO (will comply) - zrozumiałem Twoją wiadomość i zastosuję się do niej.",
+				"en": "WILCO (will comply) - I understand your message and will comply with it."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-roger-affirm",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["phraseology"],
+			"front": {
+				"pl": "Czym różni się ROGER od AFFIRM?",
+				"en": "What is the difference between ROGER and AFFIRM?"
+			},
+			"back": {
+				"pl": "ROGER = odebrałem całą Twoją wiadomość. AFFIRM = tak (potwierdzenie). ROGER nie oznacza zgody ani odpowiedzi tak/nie.",
+				"en": "ROGER = I have received all of your transmission. AFFIRM = yes. ROGER does not mean agreement or a yes/no answer."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-say-again",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["phraseology"],
+			"front": {
+				"pl": "Jakiego zwrotu używasz, prosząc o powtórzenie całości lub części wiadomości?",
+				"en": "Which phrase do you use to request repetition of all or part of a message?"
+			},
+			"back": {
+				"pl": "SAY AGAIN (powtórz). Można dodać np. SAY AGAIN ALL AFTER... aby powtórzyć fragment.",
+				"en": "SAY AGAIN. You may add e.g. SAY AGAIN ALL AFTER... to repeat a portion."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-mayday",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["emergency", "distress"],
+			"front": {
+				"pl": "Jaki sygnał i ile razy nadajesz na początku wezwania niebezpieczeństwa?",
+				"en": "Which signal, and how many times, do you transmit at the start of a distress call?"
+			},
+			"back": {
+				"pl": "MAYDAY, MAYDAY, MAYDAY - trzykrotnie na początku wezwania niebezpieczeństwa.",
+				"en": "MAYDAY, MAYDAY, MAYDAY - three times at the start of a distress call."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-panpan",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["emergency", "urgency"],
+			"front": {
+				"pl": "Kiedy stosuje się sygnał PAN PAN zamiast MAYDAY?",
+				"en": "When is the signal PAN PAN used instead of MAYDAY?"
+			},
+			"back": {
+				"pl": "PAN PAN (sytuacja nagląca) - gdy bezpieczeństwo statku lub osoby jest zagrożone, ale nie ma bezpośredniego, grożącego niebezpieczeństwa wymagającego natychmiastowej pomocy.",
+				"en": "PAN PAN (urgency) - when the safety of the aircraft or a person is at risk but there is no immediate, grave danger requiring immediate assistance."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-121-5",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["frequency", "emergency"],
+			"front": {
+				"pl": "Jaka jest lotnicza częstotliwość niebezpieczeństwa VHF?",
+				"en": "What is the aeronautical VHF emergency (distress) frequency?"
+			},
+			"back": {
+				"pl": "121,500 MHz - międzynarodowa lotnicza częstotliwość niebezpieczeństwa.",
+				"en": "121.500 MHz - international aeronautical emergency frequency."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-7600",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["transponder", "failure"],
+			"front": {
+				"pl": "Jaki kod transpondera ustawiasz przy utracie łączności radiowej?",
+				"en": "Which transponder code do you set on loss of radio communication?"
+			},
+			"back": {
+				"pl": "Kod 7600 - oznacza utratę łączności (radio failure).",
+				"en": "Code 7600 - indicates radio communication failure."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-7700",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["transponder", "emergency"],
+			"front": {
+				"pl": "Co oznacza kod transpondera 7700?",
+				"en": "What does transponder code 7700 mean?"
+			},
+			"back": {
+				"pl": "7700 - sytuacja awaryjna / niebezpieczeństwo (emergency).",
+				"en": "7700 - emergency / distress situation."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-readback-items",
+			"type": "flashcard",
+			"microSkill": "regulation",
 			"loIds": ["COM.READBACK"],
 			"licenses": ["SPL"],
 			"tags": ["readback"],
-			"prompt": {
-				"pl": "Wieża: „SP-AB, zezwalam na lądowanie pas 27, wiatr 250/12”. Podaj poprawne powtórzenie.",
-				"en": "Tower: 'SP-AB, cleared to land runway 27, wind 250/12.' Give the correct readback."
+			"front": {
+				"pl": "Wymień przykłady instrukcji wymagających obowiązkowego powtórzenia (readback).",
+				"en": "Give examples of instructions requiring mandatory readback."
 			},
-			"modelChecklist": [
-				{ "pl": "Zezwolenie na lądowanie pas 27", "en": "Cleared to land runway 27" },
-				{ "pl": "Znak wywoławczy SP-AB", "en": "Callsign SP-AB" }
-			]
+			"back": {
+				"pl": "Zezwolenia ATC na trasę, instrukcje wejścia/zajęcia/przekroczenia/oczekiwania na pasie, pas w użyciu, kody SSR, ustawienia wysokościomierza, kursy, prędkości, poziomy oraz instrukcje zmiany częstotliwości.",
+				"en": "ATC route clearances, runway entry/line-up/crossing/holding instructions, runway in use, SSR codes, altimeter settings, headings, speeds, levels and frequency change instructions."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-callsign-abbrev",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["callsign"],
+			"front": {
+				"pl": "Kiedy wolno skrócić znak wywoławczy statku powietrznego?",
+				"en": "When may an aircraft call sign be abbreviated?"
+			},
+			"back": {
+				"pl": "Dopiero po nawiązaniu zadowalającej łączności i wyłącznie jeśli stacja naziemna pierwsza go skróci; statek powietrzny sam nie inicjuje skracania.",
+				"en": "Only after satisfactory two-way communication is established and only if the ground station abbreviates it first; the aircraft does not initiate abbreviation."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-listening-squawk",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["transponder", "vfr"],
+			"front": {
+				"pl": "Jaki kod transpondera oznacza lot VFR bez przydzielonego kodu indywidualnego (conspicuity)?",
+				"en": "Which transponder code indicates a VFR flight with no discrete code assigned (conspicuity)?"
+			},
+			"back": {
+				"pl": "7000 - kod ogólny dla VFR (conspicuity) w Europie, gdy nie przydzielono kodu indywidualnego.",
+				"en": "7000 - the general VFR conspicuity code in Europe when no discrete code is assigned."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-blind-transmission",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["procedure", "failure"],
+			"front": {
+				"pl": "Co to jest nadawanie w ciemno (transmitting blind) i kiedy się je stosuje?",
+				"en": "What is transmitting blind and when is it used?"
+			},
+			"back": {
+				"pl": "Nadawanie informacji bez potwierdzenia odbioru, stosowane gdy podejrzewasz, że odbiornik nie działa lub stacja Cię nie słyszy - poprzedzone zwrotem TRANSMITTING BLIND.",
+				"en": "Transmitting information without receiving acknowledgement, used when the receiver is suspected unserviceable or the station cannot hear you - prefixed by TRANSMITTING BLIND."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-glider-circuit",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.GLIDER_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["glider", "circuit"],
+			"front": {
+				"pl": "Po jakiej stronie szybowiec zwykle ma pierwszeństwo i jak zgłasza pozycję w kręgu nadlotniskowym bez kontroli?",
+				"en": "How does a glider report its position in a non-controlled aerodrome traffic circuit?"
+			},
+			"back": {
+				"pl": "Na lotnisku bez kontroli szybowiec nadaje pozycje w kręgu (np. wiatr w plecy, baza, prosta) na częstotliwości lotniska, podając znak wywoławczy i zamiary; obowiązuje zasada wzajemnej obserwacji i pierwszeństwa.",
+				"en": "At a non-controlled aerodrome the glider reports circuit positions (e.g. downwind, base, final) on the aerodrome frequency, giving its call sign and intentions; see-and-avoid and right-of-way rules apply."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-mcq-mayday-count",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["emergency"],
+			"stem": {
+				"pl": "Ile razy nadaje się słowo MAYDAY na początku wezwania niebezpieczeństwa?",
+				"en": "How many times is the word MAYDAY transmitted at the start of a distress call?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Jeden raz",
+						"en": "Once"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Dwa razy",
+						"en": "Twice"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Trzy razy",
+						"en": "Three times"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Pięć razy",
+						"en": "Five times"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Wezwanie niebezpieczeństwa rozpoczyna się od trzykrotnego nadania MAYDAY.",
+				"en": "A distress call begins with MAYDAY transmitted three times."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-mcq-emerg-freq",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["frequency"],
+			"stem": {
+				"pl": "Która częstotliwość VHF jest międzynarodową lotniczą częstotliwością niebezpieczeństwa?",
+				"en": "Which VHF frequency is the international aeronautical emergency frequency?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "118,000 MHz",
+						"en": "118.000 MHz"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "121,500 MHz",
+						"en": "121.500 MHz"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "123,450 MHz",
+						"en": "123.450 MHz"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "243,000 MHz",
+						"en": "243.000 MHz"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "121,500 MHz to lotnicza częstotliwość niebezpieczeństwa VHF. 243,000 MHz to odpowiednik UHF (wojskowy).",
+				"en": "121.500 MHz is the VHF aeronautical emergency frequency. 243.000 MHz is the UHF (military) counterpart."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-mcq-7600",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["transponder", "failure"],
+			"stem": {
+				"pl": "Jaki kod transpondera ustawisz przy utracie łączności radiowej?",
+				"en": "Which transponder code should you set upon radio communication failure?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "7500",
+						"en": "7500"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "7600",
+						"en": "7600"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "7700",
+						"en": "7700"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "7000",
+						"en": "7000"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "7600 oznacza utratę łączności. 7500 to bezprawna ingerencja, 7700 to sytuacja awaryjna, 7000 to VFR conspicuity.",
+				"en": "7600 means radio failure. 7500 is unlawful interference, 7700 is emergency, 7000 is VFR conspicuity."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-mcq-roger",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["phraseology"],
+			"stem": {
+				"pl": "Co dokładnie oznacza słowo ROGER?",
+				"en": "What exactly does the word ROGER mean?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Tak, zgadzam się",
+						"en": "Yes, I agree"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Odebrałem całą Twoją ostatnią wiadomość",
+						"en": "I have received all of your last transmission"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zastosuję się do instrukcji",
+						"en": "I will comply with the instruction"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Powtórz wiadomość",
+						"en": "Repeat your message"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "ROGER oznacza wyłącznie odebranie całej wiadomości; nie jest potwierdzeniem ani zgodą. Zgodę wyraża WILCO, potwierdzenie AFFIRM.",
+				"en": "ROGER means only that the full message was received; it is not agreement or acknowledgement. WILCO means will comply, AFFIRM means yes."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-mcq-nine",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["numbers"],
+			"stem": {
+				"pl": "Jak prawidłowo wymawia się cyfrę 9 w radiotelefonii?",
+				"en": "How is the number 9 correctly pronounced in radiotelephony?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "NINE",
+						"en": "NINE"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "NINER",
+						"en": "NINER"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "NOVEMBER",
+						"en": "NOVEMBER"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "NADA",
+						"en": "NADA"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Cyfrę 9 wymawia się NINER, aby uniknąć pomyłki z niemieckim nein i poprawić zrozumiałość.",
+				"en": "The number 9 is pronounced NINER to avoid confusion with German nein and improve clarity."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-mcq-readback",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["readback"],
+			"stem": {
+				"pl": "Która z poniższych instrukcji bezwzględnie wymaga powtórzenia (readback)?",
+				"en": "Which of the following instructions absolutely requires a readback?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Informacja o ruchu (traffic information)",
+						"en": "Traffic information"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Ustawienie wysokościomierza (QNH)",
+						"en": "Altimeter setting (QNH)"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Informacja o pogodzie",
+						"en": "Weather information"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Życzenie miłego lotu",
+						"en": "A wish for a pleasant flight"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Ustawienia wysokościomierza należą do pozycji obowiązkowo powtarzanych. Informacje o ruchu i pogodzie nie wymagają readback.",
+				"en": "Altimeter settings are mandatory readback items. Traffic and weather information do not require a readback."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-mcq-panpan",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["urgency"],
+			"stem": {
+				"pl": "W której sytuacji prawidłowo użyjesz sygnału PAN PAN zamiast MAYDAY?",
+				"en": "In which situation would you correctly use PAN PAN rather than MAYDAY?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Pożar na pokładzie z natychmiastowym zagrożeniem życia",
+						"en": "On-board fire with immediate threat to life"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Pasażer odczuwa pogarszające się złe samopoczucie, ale nie ma bezpośredniego zagrożenia",
+						"en": "A passenger is becoming unwell but there is no immediate danger"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Utrata kontroli nad statkiem powietrznym",
+						"en": "Loss of control of the aircraft"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zderzenie z ptakiem powodujące rozległe uszkodzenia i niesterowność",
+						"en": "A bird strike causing major damage and loss of control"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "PAN PAN to sygnał naglący - sytuacja dotyczy bezpieczeństwa, lecz bez bezpośredniego, grożącego niebezpieczeństwa. Pozostałe przypadki wymagają MAYDAY.",
+				"en": "PAN PAN is the urgency signal - a safety concern without immediate grave danger. The other cases require MAYDAY."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-mcq-callsign",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["callsign"],
+			"stem": {
+				"pl": "Kiedy szybowiec może używać skróconego znaku wywoławczego?",
+				"en": "When may a glider use an abbreviated call sign?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zawsze przy pierwszym wywołaniu",
+						"en": "Always, on the first call"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Dopiero po tym, jak stacja naziemna jako pierwsza go skróci",
+						"en": "Only after the ground station has first abbreviated it"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Nigdy - szybowce muszą używać pełnego znaku",
+						"en": "Never - gliders must always use the full call sign"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Tylko w przestrzeni kontrolowanej",
+						"en": "Only in controlled airspace"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Znak wywoławczy wolno skrócić dopiero po nawiązaniu łączności i tylko gdy stacja naziemna pierwsza zastosuje skrót.",
+				"en": "A call sign may be abbreviated only after communication is established and only once the ground station abbreviates it first."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-mcq-7000",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["transponder", "vfr"],
+			"stem": {
+				"pl": "Jaki kod transpondera stosuje się dla lotów VFR bez przydzielonego kodu indywidualnego w Europie?",
+				"en": "Which transponder code is used for VFR flights with no discrete code assigned in Europe?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "1200",
+						"en": "1200"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "7000",
+						"en": "7000"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "7500",
+						"en": "7500"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "7600",
+						"en": "7600"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "W Europie kod 7000 to ogólny kod VFR (conspicuity). 1200 jest stosowany w USA, 7500 to bezprawna ingerencja, a 7600 to utrata łączności.",
+				"en": "In Europe 7000 is the general VFR conspicuity code. 1200 is used in the USA, 7500 is unlawful interference and 7600 is radio failure."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-mcq-sayagain",
+			"type": "mcq",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["phraseology"],
+			"stem": {
+				"pl": "Którego zwrotu użyjesz, aby poprosić o powtórzenie ostatniej wiadomości?",
+				"en": "Which phrase do you use to ask for the last message to be repeated?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "READ BACK",
+						"en": "READ BACK"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "SAY AGAIN",
+						"en": "SAY AGAIN"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "CONFIRM",
+						"en": "CONFIRM"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "STAND BY",
+						"en": "STAND BY"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "SAY AGAIN oznacza prośbę o powtórzenie. READ BACK to żądanie, by druga strona powtórzyła, CONFIRM to prośba o potwierdzenie, STAND BY to czekaj.",
+				"en": "SAY AGAIN requests repetition. READ BACK asks the other party to repeat, CONFIRM requests verification, STAND BY means wait."
+			},
+			"source": "authored:spl"
 		}
 	]
 }

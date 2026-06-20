@@ -1,0 +1,760 @@
+{
+	"schemaVersion": 1,
+	"id": "spl-nav",
+	"title": {
+		"pl": "Nawigacja",
+		"en": "Navigation"
+	},
+	"subjectId": "NAV",
+	"items": [
+		{
+			"id": "spl-nav-icao-scale",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.CHARTS"],
+			"licenses": ["SPL"],
+			"tags": ["chart", "scale"],
+			"front": {
+				"pl": "Jaka jest skala standardowej lotniczej mapy ICAO używanej w nawigacji VFR?",
+				"en": "What is the scale of the standard ICAO aeronautical chart used for VFR navigation?"
+			},
+			"back": {
+				"pl": "1:500 000, czyli 1 cm na mapie odpowiada 5 km w terenie.",
+				"en": "1:500 000, i.e. 1 cm on the chart equals 5 km on the ground."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-true-north",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.DIRECTION"],
+			"licenses": ["SPL"],
+			"tags": ["direction", "north"],
+			"front": {
+				"pl": "Czym różni się północ prawdziwa od północy magnetycznej?",
+				"en": "How does true north differ from magnetic north?"
+			},
+			"back": {
+				"pl": "Północ prawdziwa wskazuje biegun geograficzny (kierunek południków), a północ magnetyczna kierunek, w którym ustawia się igła kompasu (biegun magnetyczny).",
+				"en": "True north points to the geographic pole (direction of the meridians); magnetic north is the direction the compass needle settles on (magnetic pole)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-variation-def",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["variation", "magnetism"],
+			"front": {
+				"pl": "Co to jest deklinacja magnetyczna (variation) i jak ją uwzględniamy?",
+				"en": "What is magnetic variation and how is it applied?"
+			},
+			"back": {
+				"pl": "Kąt między północą prawdziwą a magnetyczną. Przy zamianie kursu prawdziwego na magnetyczny deklinację zachodnią (W) dodaje się, a wschodnią (E) odejmuje.",
+				"en": "The angle between true and magnetic north. When converting true track to magnetic, west (W) variation is added and east (E) variation is subtracted."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-deviation-def",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.DIRECTION"],
+			"licenses": ["SPL"],
+			"tags": ["deviation", "compass"],
+			"front": {
+				"pl": "Co to jest dewiacja kompasu (deviation)?",
+				"en": "What is compass deviation?"
+			},
+			"back": {
+				"pl": "Błąd wskazań kompasu spowodowany własnymi polami magnetycznymi statku powietrznego; odczytuje się go z tabliczki dewiacji.",
+				"en": "Error in compass indication caused by the aircraft's own magnetic fields; read from the deviation card."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-thd-conversion",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["conversion", "heading"],
+			"front": {
+				"pl": "Jaką regułą zamienia się kurs prawdziwy (T) na kompasowy (C)?",
+				"en": "Which rule converts true heading (T) to compass heading (C)?"
+			},
+			"back": {
+				"pl": "T -> M przez deklinację, M -> C przez dewiację: wartości zachodnie (W) dodajemy, wschodnie (E) odejmujemy. Skrót: 'East is least, West is best'.",
+				"en": "T -> M via variation, then M -> C via deviation: add west (W) values, subtract east (E) values. Mnemonic: 'East is least, West is best'."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-drift",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["wind", "drift"],
+			"front": {
+				"pl": "Co to jest znos i jak się go koryguje?",
+				"en": "What is drift and how is it corrected?"
+			},
+			"back": {
+				"pl": "Znos to odchylenie toru lotu od kursu spowodowane wiatrem; koryguje się go poprawką na znos (WCA), kierując nos statku 'pod wiatr'.",
+				"en": "Drift is the displacement of the flight path from heading caused by wind; corrected by a wind correction angle (WCA), pointing the nose into the wind."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-groundspeed",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["wind", "groundspeed"],
+			"front": {
+				"pl": "Jak wiatr czołowy i tylny wpływa na prędkość względem ziemi (GS)?",
+				"en": "How do headwind and tailwind affect groundspeed (GS)?"
+			},
+			"back": {
+				"pl": "Wiatr czołowy zmniejsza GS względem prędkości powietrznej (TAS), a wiatr tylny ją zwiększa.",
+				"en": "A headwind reduces GS relative to airspeed (TAS); a tailwind increases it."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-nm-km",
+			"type": "flashcard",
+			"microSkill": "unit_conversion",
+			"loIds": ["NAV.UNITS"],
+			"licenses": ["SPL"],
+			"tags": ["units", "distance"],
+			"front": {
+				"pl": "Ile kilometrów ma jedna mila morska (NM)?",
+				"en": "How many kilometres are in one nautical mile (NM)?"
+			},
+			"back": {
+				"pl": "1 NM = 1,852 km (w przybliżeniu 1,85 km).",
+				"en": "1 NM = 1.852 km (approximately 1.85 km)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-knot",
+			"type": "flashcard",
+			"microSkill": "unit_conversion",
+			"loIds": ["NAV.UNITS"],
+			"licenses": ["SPL"],
+			"tags": ["units", "speed"],
+			"front": {
+				"pl": "Co to jest węzeł (kt) i ile wynosi w km/h?",
+				"en": "What is a knot (kt) and how much is it in km/h?"
+			},
+			"back": {
+				"pl": "Węzeł to 1 mila morska na godzinę; 1 kt = 1,852 km/h.",
+				"en": "A knot is one nautical mile per hour; 1 kt = 1.852 km/h."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-feet-m",
+			"type": "flashcard",
+			"microSkill": "unit_conversion",
+			"loIds": ["NAV.UNITS"],
+			"licenses": ["SPL"],
+			"tags": ["units", "altitude"],
+			"front": {
+				"pl": "Ile metrów ma 1000 stóp (ft)?",
+				"en": "How many metres are in 1000 feet (ft)?"
+			},
+			"back": {
+				"pl": "1 ft = 0,3048 m, więc 1000 ft = 304,8 m (w przybliżeniu 305 m).",
+				"en": "1 ft = 0.3048 m, so 1000 ft = 304.8 m (approximately 305 m)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-latitude",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.POSITION"],
+			"licenses": ["SPL"],
+			"tags": ["coordinates", "latitude"],
+			"front": {
+				"pl": "Ile mil morskich odpowiada 1 minucie szerokości geograficznej?",
+				"en": "How many nautical miles correspond to 1 minute of latitude?"
+			},
+			"back": {
+				"pl": "1 minuta szerokości geograficznej = 1 NM (stąd 1 stopień szerokości to 60 NM wzdłuż południka).",
+				"en": "1 minute of latitude = 1 NM (so each degree spans 60 NM along a meridian)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-1in60",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["NAV.DR_TIME"],
+			"licenses": ["SPL"],
+			"tags": ["dead-reckoning", "track-error"],
+			"front": {
+				"pl": "Na czym polega reguła 1 na 60 (1-in-60)?",
+				"en": "What is the 1-in-60 rule?"
+			},
+			"back": {
+				"pl": "Odchylenie 1 NM na dystansie 60 NM odpowiada błędowi kursu o 1 stopień; służy do korekty kursu w locie.",
+				"en": "An error of 1 NM over 60 NM equals a 1 degree track error; used to correct heading in flight."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-isogonal",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["NAV.CHARTS"],
+			"licenses": ["SPL"],
+			"tags": ["chart", "variation"],
+			"front": {
+				"pl": "Co przedstawiają izogony na mapie lotniczej?",
+				"en": "What do isogonals show on an aeronautical chart?"
+			},
+			"back": {
+				"pl": "Linie łączące punkty o jednakowej deklinacji magnetycznej (variation).",
+				"en": "Lines joining points of equal magnetic variation."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-mcq-scale",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.CHARTS"],
+			"licenses": ["SPL"],
+			"tags": ["chart", "scale"],
+			"stem": {
+				"pl": "Na mapie ICAO w skali 1:500 000 dwa lotniska są oddalone o 8 cm. Jaka jest rzeczywista odległość?",
+				"en": "On a 1:500 000 ICAO chart two airfields are 8 cm apart. What is the real distance?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "20 km",
+						"en": "20 km"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "40 km",
+						"en": "40 km"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "80 km",
+						"en": "80 km"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "4 km",
+						"en": "4 km"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "W skali 1:500 000 1 cm = 5 km, więc 8 cm = 40 km.",
+				"en": "At 1:500 000, 1 cm = 5 km, so 8 cm = 40 km."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-mcq-conversion",
+			"type": "mcq",
+			"microSkill": "nav_rule",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["conversion"],
+			"stem": {
+				"pl": "Kurs prawdziwy wynosi 090 stopni, deklinacja 5 stopni W. Jaki jest kurs magnetyczny?",
+				"en": "True heading is 090 degrees, variation is 5 degrees W. What is the magnetic heading?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "085 stopni",
+						"en": "085 degrees"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "095 stopni",
+						"en": "095 degrees"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "090 stopni",
+						"en": "090 degrees"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "100 stopni",
+						"en": "100 degrees"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Deklinację zachodnią dodaje się do kursu prawdziwego ('West is best'): 090 + 5 = 095.",
+				"en": "West variation is added to true heading ('West is best'): 090 + 5 = 095."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-mcq-nm",
+			"type": "mcq",
+			"microSkill": "unit_conversion",
+			"loIds": ["NAV.UNITS"],
+			"licenses": ["SPL"],
+			"tags": ["units"],
+			"stem": {
+				"pl": "Ile w przybliżeniu wynosi 50 NM w kilometrach?",
+				"en": "Approximately how many kilometres is 50 NM?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "80 km",
+						"en": "80 km"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "93 km",
+						"en": "93 km"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "50 km",
+						"en": "50 km"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "108 km",
+						"en": "108 km"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "50 NM x 1,852 km = 92,6 km, czyli około 93 km.",
+				"en": "50 NM x 1.852 km = 92.6 km, about 93 km."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-mcq-gs",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["wind", "groundspeed"],
+			"stem": {
+				"pl": "Szybowiec leci z TAS 100 km/h przy wietrze czołowym 20 km/h. Jaka jest prędkość względem ziemi?",
+				"en": "A glider flies at 100 km/h TAS with a 20 km/h headwind. What is the groundspeed?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "120 km/h",
+						"en": "120 km/h"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "100 km/h",
+						"en": "100 km/h"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "80 km/h",
+						"en": "80 km/h"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "20 km/h",
+						"en": "20 km/h"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Wiatr czołowy zmniejsza GS: 100 - 20 = 80 km/h.",
+				"en": "A headwind reduces GS: 100 - 20 = 80 km/h."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-mcq-time",
+			"type": "mcq",
+			"microSkill": "nav_rule",
+			"loIds": ["NAV.DR_TIME"],
+			"licenses": ["SPL"],
+			"tags": ["dead-reckoning", "time"],
+			"stem": {
+				"pl": "Przy prędkości względem ziemi 120 km/h pokonanie 60 km zajmie:",
+				"en": "At a groundspeed of 120 km/h, covering 60 km takes:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "20 minut",
+						"en": "20 minutes"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "30 minut",
+						"en": "30 minutes"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "45 minut",
+						"en": "45 minutes"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "60 minut",
+						"en": "60 minutes"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Czas = odległość / prędkość = 60 / 120 h = 0,5 h = 30 minut.",
+				"en": "Time = distance / speed = 60 / 120 h = 0.5 h = 30 minutes."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-mcq-deviation",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["NAV.DIRECTION"],
+			"licenses": ["SPL"],
+			"tags": ["deviation"],
+			"stem": {
+				"pl": "Co jest źródłem dewiacji kompasu w statku powietrznym?",
+				"en": "What causes compass deviation in an aircraft?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Pole magnetyczne Ziemi w danym miejscu",
+						"en": "The Earth's magnetic field at that location"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Własne pola magnetyczne i metalowe elementy statku powietrznego",
+						"en": "The aircraft's own magnetic fields and metal parts"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Wiatr i znos",
+						"en": "Wind and drift"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Różnica między czasem UTC a lokalnym",
+						"en": "The difference between UTC and local time"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Dewiacja wynika z pól magnetycznych samego statku powietrznego; deklinacja zależy od pola magnetycznego Ziemi.",
+				"en": "Deviation results from the aircraft's own magnetic fields; variation depends on the Earth's magnetic field."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-mcq-latitude",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.POSITION"],
+			"licenses": ["SPL"],
+			"tags": ["coordinates"],
+			"stem": {
+				"pl": "Jaka odległość odpowiada różnicy 1 stopnia szerokości geograficznej wzdłuż południka?",
+				"en": "What distance corresponds to a 1 degree difference of latitude along a meridian?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "1 NM",
+						"en": "1 NM"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "10 NM",
+						"en": "10 NM"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "60 NM",
+						"en": "60 NM"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "100 NM",
+						"en": "100 NM"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "1 minuta szerokości = 1 NM, a stopień ma 60 minut, więc 1 stopień = 60 NM.",
+				"en": "1 minute of latitude = 1 NM, and a degree has 60 minutes, so 1 degree = 60 NM."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-mcq-feet",
+			"type": "mcq",
+			"microSkill": "unit_conversion",
+			"loIds": ["NAV.UNITS"],
+			"licenses": ["SPL"],
+			"tags": ["units", "altitude"],
+			"stem": {
+				"pl": "Wysokość 3000 ft odpowiada w przybliżeniu:",
+				"en": "An altitude of 3000 ft corresponds approximately to:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "300 m",
+						"en": "300 m"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "915 m",
+						"en": "915 m"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "1500 m",
+						"en": "1500 m"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "1000 m",
+						"en": "1000 m"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "1 ft = 0,3048 m, więc 3000 ft = 914,4 m, czyli około 915 m.",
+				"en": "1 ft = 0.3048 m, so 3000 ft = 914.4 m, about 915 m."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-mcq-1in60",
+			"type": "mcq",
+			"microSkill": "nav_rule",
+			"loIds": ["NAV.DR_TIME"],
+			"licenses": ["SPL"],
+			"tags": ["dead-reckoning", "track-error"],
+			"stem": {
+				"pl": "Po przebyciu 60 NM szybowiec znalazł się 3 NM w prawo od planowanego toru. Jaki jest błąd kursu?",
+				"en": "After 60 NM a glider is 3 NM right of the planned track. What is the track error?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "1 stopień",
+						"en": "1 degree"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "3 stopnie",
+						"en": "3 degrees"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "6 stopni",
+						"en": "6 degrees"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "10 stopni",
+						"en": "10 degrees"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Według reguły 1 na 60: 1 NM odchylenia na 60 NM = 1 stopień, więc 3 NM = 3 stopnie.",
+				"en": "By the 1-in-60 rule: 1 NM off over 60 NM = 1 degree, so 3 NM = 3 degrees."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-mcq-isogonal",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["NAV.CHARTS"],
+			"licenses": ["SPL"],
+			"tags": ["chart", "variation"],
+			"stem": {
+				"pl": "Linie izogon na mapie lotniczej łączą punkty o jednakowej:",
+				"en": "Isogonal lines on an aeronautical chart join points of equal:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "wysokości terenu",
+						"en": "terrain elevation"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "deklinacji magnetycznej",
+						"en": "magnetic variation"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "temperatury powietrza",
+						"en": "air temperature"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "ciśnienia atmosferycznego",
+						"en": "atmospheric pressure"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Izogony łączą punkty o tej samej deklinacji magnetycznej; izobary dotyczą ciśnienia, a izohipsy wysokości terenu.",
+				"en": "Isogonals join points of equal magnetic variation; isobars relate to pressure and contour lines to terrain elevation."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-mcq-drift",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["wind", "drift"],
+			"stem": {
+				"pl": "Aby utrzymać zaplanowany tor lotu przy wietrze bocznym, pilot szybowca powinien:",
+				"en": "To maintain the planned track in a crosswind, the glider pilot should:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "lecieć kursem równym torowi i ignorować wiatr",
+						"en": "fly a heading equal to the track and ignore the wind"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "skierować nos szybowca pod wiatr o kąt poprawki na znos",
+						"en": "point the nose into the wind by the drift correction angle"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "zwiększyć prędkość, aby zniwelować znos",
+						"en": "increase speed to cancel the drift"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "lecieć z wiatrem, aby skrócić czas lotu",
+						"en": "fly downwind to shorten the flight time"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Poprawka na znos polega na skierowaniu nosa 'pod wiatr', dzięki czemu tor lotu pokrywa się z zaplanowanym.",
+				"en": "Drift correction means pointing the nose into the wind so the resulting track matches the planned one."
+			},
+			"source": "authored:spl"
+		}
+	]
+}

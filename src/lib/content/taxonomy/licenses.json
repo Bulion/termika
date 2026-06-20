@@ -3,13 +3,60 @@
 	"licenses": [
 		{
 			"id": "SPL",
-			"name": { "pl": "SPL (szybowce)", "en": "SPL (sailplanes)" },
+			"name": {
+				"pl": "SPL (szybowce)",
+				"en": "SPL (sailplanes)"
+			},
 			"examBlueprint": {
 				"subjects": [
-					{ "subjectId": "AIRLAW", "questionCount": 16, "timeLimitMin": 30, "passPct": 75 },
-					{ "subjectId": "MET", "questionCount": 16, "timeLimitMin": 30, "passPct": 75 },
-					{ "subjectId": "COM", "questionCount": 12, "timeLimitMin": 20, "passPct": 75 },
-					{ "subjectId": "NAV", "questionCount": 12, "timeLimitMin": 30, "passPct": 75 }
+					{
+						"subjectId": "AIRLAW",
+						"questionCount": 11,
+						"timeLimitMin": 30,
+						"passPct": 75
+					},
+					{
+						"subjectId": "MET",
+						"questionCount": 12,
+						"timeLimitMin": 30,
+						"passPct": 75
+					},
+					{
+						"subjectId": "COM",
+						"questionCount": 10,
+						"timeLimitMin": 30,
+						"passPct": 75
+					},
+					{
+						"subjectId": "NAV",
+						"questionCount": 11,
+						"timeLimitMin": 30,
+						"passPct": 75
+					},
+					{
+						"subjectId": "POF",
+						"questionCount": 10,
+						"timeLimitMin": 30,
+						"passPct": 75
+					},
+					{
+						"subjectId": "HPL",
+						"questionCount": 11,
+						"timeLimitMin": 30,
+						"passPct": 75
+					},
+					{
+						"subjectId": "OPS",
+						"questionCount": 10,
+						"timeLimitMin": 30,
+						"passPct": 75
+					},
+					{
+						"subjectId": "AGK",
+						"questionCount": 10,
+						"timeLimitMin": 30,
+						"passPct": 75
+					}
 				]
 			}
 		}

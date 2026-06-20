@@ -1,89 +1,842 @@
 {
 	"schemaVersion": 1,
 	"id": "spl-met",
-	"title": { "pl": "SPL: Meteorologia", "en": "SPL: Meteorology" },
+	"title": {
+		"pl": "Meteorologia",
+		"en": "Meteorology"
+	},
 	"subjectId": "MET",
 	"items": [
 		{
-			"id": "spl-met-cavok",
-			"type": "flashcard",
-			"microSkill": "abbreviation",
-			"loIds": ["MET.METAR"],
-			"licenses": ["SPL"],
-			"tags": ["metar", "code"],
-			"source": "authored:LO-MET.METAR",
-			"front": { "pl": "CAVOK", "en": "CAVOK" },
-			"back": {
-				"pl": "Widzialność ≥10 km, brak chmur poniżej 5000 ft/MSA, brak CB/TCU, brak zjawisk istotnych",
-				"en": "Visibility ≥10 km, no cloud below 5000 ft/MSA, no CB/TCU, no significant weather"
-			}
-		},
-		{
-			"id": "spl-met-isa",
+			"id": "spl-met-isa-msl",
 			"type": "flashcard",
 			"microSkill": "concept_number",
-			"loIds": ["MET.ISA"],
+			"loIds": ["MET.ATMOSPHERE"],
 			"licenses": ["SPL"],
-			"tags": ["isa", "values"],
+			"tags": ["ISA", "ciśnienie"],
 			"front": {
-				"pl": "Wartości ISA na poziomie morza: temperatura, ciśnienie, gradient",
-				"en": "ISA sea-level values: temperature, pressure, lapse rate"
+				"pl": "Jakie są wartości temperatury i ciśnienia na poziomie morza w Atmosferze Wzorcowej ICAO (ISA)?",
+				"en": "What are the sea-level temperature and pressure values in the ICAO Standard Atmosphere (ISA)?"
 			},
 			"back": {
-				"pl": "15 °C, 1013,25 hPa, ~2 °C/1000 ft",
-				"en": "15 °C, 1013.25 hPa, ~2 °C/1000 ft"
-			}
+				"pl": "Temperatura +15 stopni C i ciśnienie 1013,25 hPa (29,92 inHg) na poziomie morza.",
+				"en": "Temperature +15 degrees C and pressure 1013.25 hPa (29.92 inHg) at sea level."
+			},
+			"source": "authored:spl"
 		},
 		{
-			"id": "spl-met-isa-mcq",
+			"id": "spl-met-isa-lapse",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["MET.ATMOSPHERE"],
+			"licenses": ["SPL"],
+			"tags": ["ISA", "gradient"],
+			"front": {
+				"pl": "Jaki jest standardowy pionowy gradient temperatury (ISA) w troposferze?",
+				"en": "What is the standard vertical temperature lapse rate (ISA) in the troposphere?"
+			},
+			"back": {
+				"pl": "Około 0,65 stopnia C na każde 100 m wysokości (około 2 stopnie C na 1000 ft).",
+				"en": "About 0.65 degrees C per 100 m of altitude (about 2 degrees C per 1000 ft)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-dalr",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["MET.THERMALS"],
+			"licenses": ["SPL"],
+			"tags": ["adiabata", "termika"],
+			"front": {
+				"pl": "Ile wynosi sucho-adiabatyczny gradient temperatury (DALR)?",
+				"en": "What is the dry adiabatic lapse rate (DALR)?"
+			},
+			"back": {
+				"pl": "1 stopień C na 100 m (około 3 stopnie C na 1000 ft) - dla nienasyconego powietrza.",
+				"en": "1 degree C per 100 m (about 3 degrees C per 1000 ft) - for unsaturated air."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-coriolis",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.WIND"],
+			"licenses": ["SPL"],
+			"tags": ["wiatr", "Coriolis"],
+			"front": {
+				"pl": "W którą stronę efekt Coriolisa odchyla poruszające się powietrze na półkuli północnej?",
+				"en": "Which way does the Coriolis effect deflect moving air in the Northern Hemisphere?"
+			},
+			"back": {
+				"pl": "W prawo (względem kierunku ruchu powietrza).",
+				"en": "To the right (relative to the direction of air motion)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-cumulus-thermals",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.THERMALS"],
+			"licenses": ["SPL"],
+			"tags": ["chmury", "termika"],
+			"front": {
+				"pl": "Jaka chmura jest typowym wskaźnikiem noszeń termicznych dla szybowników?",
+				"en": "Which cloud is the typical indicator of thermal lift for glider pilots?"
+			},
+			"back": {
+				"pl": "Cumulus (Cu) - kłębiasta chmura konwekcyjna; jej podstawa wyznacza poziom kondensacji, czyli górę użytecznej termiki.",
+				"en": "Cumulus (Cu) - a convective cloud; its base marks the condensation level, the top of the usable thermal."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-cloud-families",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.CLOUDS"],
+			"licenses": ["SPL"],
+			"tags": ["chmury", "klasyfikacja"],
+			"front": {
+				"pl": "Jak dzieli się chmury według wysokości występowania ich podstawy?",
+				"en": "How are clouds classified by the height of their base?"
+			},
+			"back": {
+				"pl": "Niskie (St, Sc, Cu), średnie z przedrostkiem alto- (Ac, As) i wysokie z przedrostkiem cirro- (Ci, Cc, Cs); Cb i Ns rozciągają się w pionie.",
+				"en": "Low (St, Sc, Cu), middle with the alto- prefix (Ac, As) and high with the cirro- prefix (Ci, Cc, Cs); Cb and Ns are vertically developed."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-cb",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.HAZARDS"],
+			"licenses": ["SPL"],
+			"tags": ["Cb", "burza"],
+			"front": {
+				"pl": "Co oznacza skrót Cb i dlaczego jest niebezpieczny dla szybowca?",
+				"en": "What does the abbreviation Cb mean and why is it dangerous for a glider?"
+			},
+			"back": {
+				"pl": "Cumulonimbus - chmura burzowa; silna turbulencja, prądy zstępujące, oblodzenie, grad i wyładowania.",
+				"en": "Cumulonimbus - thunderstorm cloud; severe turbulence, downdraughts, icing, hail and lightning."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-wave",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.LIFT_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["fala", "lenticularis"],
+			"front": {
+				"pl": "Jaki rodzaj noszenia powstaje po zawietrznej stronie gór i jaka chmura go wskazuje?",
+				"en": "What type of lift forms on the lee side of mountains and which cloud indicates it?"
+			},
+			"back": {
+				"pl": "Fala górska (noszenie falowe); wskazuje ją soczewkowata chmura Altocumulus lenticularis.",
+				"en": "Mountain wave (wave lift); indicated by the lens-shaped Altocumulus lenticularis cloud."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-ridge",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.LIFT_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["zboczowe", "noszenia"],
+			"front": {
+				"pl": "Na czym polega noszenie zboczowe (orograficzne)?",
+				"en": "What is ridge (orographic) lift?"
+			},
+			"back": {
+				"pl": "Wiatr napływający na zbocze wzgórza jest wymuszany do wznoszenia, tworząc obszar noszeń nad stokiem dowietrznym.",
+				"en": "Wind flowing against a slope is forced to rise, creating lift over the windward side of the hill."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-fog-radiation",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.VISIBILITY"],
+			"licenses": ["SPL"],
+			"tags": ["mgła", "widzialność"],
+			"front": {
+				"pl": "W jakich warunkach powstaje mgła radiacyjna?",
+				"en": "Under what conditions does radiation fog form?"
+			},
+			"back": {
+				"pl": "W bezchmurną, bezwietrzną noc, gdy ziemia wypromieniowuje ciepło i ochładza wilgotne powietrze do punktu rosy.",
+				"en": "On a clear, calm night when the ground radiates heat and cools moist air to the dew point."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-metar-decode",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.PRODUCTS"],
+			"licenses": ["SPL"],
+			"tags": ["METAR", "depesza"],
+			"front": {
+				"pl": "Co to jest METAR i czego dotyczy?",
+				"en": "What is a METAR and what does it cover?"
+			},
+			"back": {
+				"pl": "Regularny komunikat o aktualnej pogodzie lotniska (obserwacja bieżąca), zwykle wydawany co 30 lub 60 minut.",
+				"en": "A routine report of current aerodrome weather (actual observation), usually issued every 30 or 60 minutes."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-taf",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.PRODUCTS"],
+			"licenses": ["SPL"],
+			"tags": ["TAF", "prognoza"],
+			"front": {
+				"pl": "Czym różni się TAF od METAR?",
+				"en": "How does a TAF differ from a METAR?"
+			},
+			"back": {
+				"pl": "TAF to prognoza pogody dla lotniska na określony okres, a METAR to obserwacja stanu bieżącego.",
+				"en": "A TAF is a forecast of aerodrome weather for a defined period, while a METAR is a current observation."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-cold-front",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.PRODUCTS"],
+			"licenses": ["SPL"],
+			"tags": ["front", "synoptyka"],
+			"front": {
+				"pl": "Jaka pogoda towarzyszy przejściu frontu chłodnego?",
+				"en": "What weather accompanies the passage of a cold front?"
+			},
+			"back": {
+				"pl": "Chmury Cb, opady przelotne i burze, silny porywisty wiatr, a po przejściu poprawa widzialności i spadek temperatury.",
+				"en": "Cb clouds, showers and thunderstorms, strong gusty wind, then improving visibility and falling temperature after passage."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-inversion",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.THERMALS"],
+			"licenses": ["SPL"],
+			"tags": ["inwersja", "stabilność"],
+			"front": {
+				"pl": "Jak inwersja temperatury wpływa na rozwój termiki?",
+				"en": "How does a temperature inversion affect thermal development?"
+			},
+			"back": {
+				"pl": "Inwersja stanowi pokrywę (warstwę hamującą), która zatrzymuje wznoszące się powietrze i ogranicza górną granicę termiki.",
+				"en": "An inversion acts as a cap that stops rising air and limits the upper boundary of thermals."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-qnh",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.ATMOSPHERE"],
+			"licenses": ["SPL"],
+			"tags": ["QNH", "wysokościomierz"],
+			"front": {
+				"pl": "Co wskazuje wysokościomierz po nastawieniu QNH?",
+				"en": "What does the altimeter indicate when set to QNH?"
+			},
+			"back": {
+				"pl": "Wysokość bezwzględną nad średnim poziomem morza (AMSL); na lotnisku pokaże jego elewację.",
+				"en": "Altitude above mean sea level (AMSL); on the aerodrome it shows its elevation."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-mcq-isa",
 			"type": "mcq",
 			"microSkill": "concept_number",
-			"loIds": ["MET.ISA"],
+			"loIds": ["MET.ATMOSPHERE"],
 			"licenses": ["SPL"],
-			"tags": ["isa"],
+			"tags": ["ISA"],
 			"stem": {
-				"pl": "Standardowe ciśnienie atmosfery wzorcowej (ISA) na poziomie morza?",
-				"en": "Standard ISA pressure at mean sea level?"
-			},
-			"choices": [
-				{ "id": "a", "text": { "pl": "1013,25 hPa", "en": "1013.25 hPa" } },
-				{ "id": "b", "text": { "pl": "1000 hPa", "en": "1000 hPa" } },
-				{ "id": "c", "text": { "pl": "1025 hPa", "en": "1025 hPa" } }
-			],
-			"answer": "a"
-		},
-		{
-			"id": "spl-met-cavok-mcq",
-			"type": "mcq",
-			"microSkill": "abbreviation",
-			"loIds": ["MET.METAR"],
-			"licenses": ["SPL"],
-			"tags": ["metar"],
-			"stem": {
-				"pl": "Co oznacza CAVOK w depeszy METAR?",
-				"en": "What does CAVOK mean in a METAR?"
+				"pl": "Jakie są wartości temperatury i ciśnienia na poziomie morza w Atmosferze Wzorcowej ICAO?",
+				"en": "What are the sea-level temperature and pressure values in the ICAO Standard Atmosphere?"
 			},
 			"choices": [
 				{
 					"id": "a",
 					"text": {
-						"pl": "Widzialność ≥10 km, brak istotnych chmur i zjawisk",
-						"en": "Visibility ≥10 km, no significant cloud or weather"
+						"pl": "+15 stopni C i 1013,25 hPa",
+						"en": "+15 degrees C and 1013.25 hPa"
 					}
 				},
 				{
 					"id": "b",
 					"text": {
-						"pl": "Mgła i widzialność poniżej 1 km",
-						"en": "Fog with visibility below 1 km"
+						"pl": "0 stopni C i 1000 hPa",
+						"en": "0 degrees C and 1000 hPa"
 					}
 				},
 				{
 					"id": "c",
-					"text": { "pl": "Burze w rejonie lotniska", "en": "Thunderstorms in the aerodrome area" }
+					"text": {
+						"pl": "+20 stopni C i 1025 hPa",
+						"en": "+20 degrees C and 1025 hPa"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "+15 stopni C i 1000 hPa",
+						"en": "+15 degrees C and 1000 hPa"
+					}
 				}
 			],
-			"answer": "a"
+			"answer": "a",
+			"explanation": {
+				"pl": "ISA przyjmuje na poziomie morza temperaturę +15 stopni C i ciśnienie 1013,25 hPa.",
+				"en": "ISA assumes a sea-level temperature of +15 degrees C and pressure of 1013.25 hPa."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-mcq-dalr",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["MET.THERMALS"],
+			"licenses": ["SPL"],
+			"tags": ["adiabata"],
+			"stem": {
+				"pl": "Ile wynosi sucho-adiabatyczny gradient temperatury (DALR) dla nienasyconego powietrza?",
+				"en": "What is the dry adiabatic lapse rate (DALR) for unsaturated air?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "0,65 stopnia C na 100 m",
+						"en": "0.65 degrees C per 100 m"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "1 stopień C na 100 m",
+						"en": "1 degree C per 100 m"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "0,5 stopnia C na 100 m",
+						"en": "0.5 degrees C per 100 m"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "2 stopnie C na 100 m",
+						"en": "2 degrees C per 100 m"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "DALR wynosi 1 stopień C na 100 m; wartość 0,65 to standardowy gradient ISA, a nie adiabatyczny.",
+				"en": "DALR is 1 degree C per 100 m; 0.65 is the standard ISA lapse rate, not the adiabatic one."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-mcq-cu",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["MET.CLOUDS"],
+			"licenses": ["SPL"],
+			"tags": ["chmury", "termika"],
+			"stem": {
+				"pl": "Która chmura jest najlepszym wskaźnikiem aktywnej termiki dla szybownika?",
+				"en": "Which cloud is the best indicator of active thermals for a glider pilot?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Stratus (St)",
+						"en": "Stratus (St)"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Cirrus (Ci)",
+						"en": "Cirrus (Ci)"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Cumulus (Cu)",
+						"en": "Cumulus (Cu)"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Nimbostratus (Ns)",
+						"en": "Nimbostratus (Ns)"
+					}
+				}
+			],
+			"answer": "c",
+			"explanation": {
+				"pl": "Cumulus to chmura konwekcyjna powstająca na szczycie kominów termicznych - klasyczny znak noszeń.",
+				"en": "Cumulus is a convective cloud forming at the top of thermals - the classic sign of lift."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-mcq-coriolis",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["MET.WIND"],
+			"licenses": ["SPL"],
+			"tags": ["wiatr"],
+			"stem": {
+				"pl": "Na półkuli północnej siła Coriolisa odchyla poruszające się powietrze:",
+				"en": "In the Northern Hemisphere the Coriolis force deflects moving air:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "w lewo",
+						"en": "to the left"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "w prawo",
+						"en": "to the right"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "zawsze ku równikowi",
+						"en": "always towards the equator"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "pionowo w górę",
+						"en": "vertically upwards"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Na półkuli północnej efekt Coriolisa odchyla ruch powietrza w prawo.",
+				"en": "In the Northern Hemisphere the Coriolis effect deflects air motion to the right."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-mcq-lenticularis",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["MET.LIFT_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["fala"],
+			"stem": {
+				"pl": "Soczewkowata chmura Altocumulus lenticularis sygnalizuje obecność:",
+				"en": "A lens-shaped Altocumulus lenticularis cloud signals the presence of:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "noszeń termicznych",
+						"en": "thermal lift"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "fali górskiej (noszeń falowych)",
+						"en": "mountain wave (wave lift)"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "mgły adwekcyjnej",
+						"en": "advection fog"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "frontu ciepłego",
+						"en": "a warm front"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Chmura lenticularis tworzy się w grzbietach fali górskiej po zawietrznej stronie gór.",
+				"en": "The lenticularis cloud forms in the crests of a mountain wave on the lee side."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-mcq-cb",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["MET.HAZARDS"],
+			"licenses": ["SPL"],
+			"tags": ["Cb", "burza"],
+			"stem": {
+				"pl": "Dlaczego należy bezwzględnie unikać lotu szybowcem w pobliżu chmury Cumulonimbus?",
+				"en": "Why must flight near a Cumulonimbus cloud be strictly avoided in a glider?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Daje słabe, równomierne noszenia idealne do przelotu",
+						"en": "It gives weak, even lift ideal for cross-country"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Występuje tam silna turbulencja, prądy zstępujące, oblodzenie i grad",
+						"en": "It has severe turbulence, downdraughts, icing and hail"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Powoduje wyłącznie ograniczenie widzialności",
+						"en": "It only reduces visibility"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Nie stanowi żadnego zagrożenia poniżej podstawy",
+						"en": "It poses no hazard below the base"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Cb to chmura burzowa o ekstremalnych prądach pionowych, oblodzeniu, gradzie i wyładowaniach.",
+				"en": "Cb is a thunderstorm cloud with extreme vertical currents, icing, hail and lightning."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-mcq-inversion",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["MET.THERMALS"],
+			"licenses": ["SPL"],
+			"tags": ["inwersja", "stabilność"],
+			"stem": {
+				"pl": "Jaki jest wpływ inwersji temperatury na szybowanie termiczne?",
+				"en": "What is the effect of a temperature inversion on thermal soaring?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zwiększa wysokość podstawy chmur bez ograniczeń",
+						"en": "It raises the cloud base without limit"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Hamuje wznoszenie powietrza i ogranicza górną granicę termiki",
+						"en": "It stops rising air and limits the top of thermals"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Wzmacnia noszenia powyżej swojej warstwy",
+						"en": "It strengthens lift above its layer"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Nie ma żadnego wpływu na termikę",
+						"en": "It has no effect on thermals"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Inwersja działa jak pokrywa zatrzymująca konwekcję, ograniczając pułap noszeń.",
+				"en": "An inversion acts as a cap that halts convection, limiting the lift ceiling."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-mcq-metar-taf",
+			"type": "mcq",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.PRODUCTS"],
+			"licenses": ["SPL"],
+			"tags": ["TAF", "METAR"],
+			"stem": {
+				"pl": "Który komunikat zawiera prognozę pogody dla lotniska na określony okres?",
+				"en": "Which report contains a forecast of aerodrome weather for a defined period?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "METAR",
+						"en": "METAR"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "TAF",
+						"en": "TAF"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "SPECI",
+						"en": "SPECI"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "NOTAM",
+						"en": "NOTAM"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "TAF to prognoza; METAR i SPECI to obserwacje bieżące, a NOTAM dotyczy informacji nawigacyjnych.",
+				"en": "TAF is a forecast; METAR and SPECI are observations, and NOTAM is navigational information."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-mcq-radfog",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["MET.VISIBILITY"],
+			"licenses": ["SPL"],
+			"tags": ["mgła"],
+			"stem": {
+				"pl": "W jakich warunkach najczęściej powstaje mgła radiacyjna?",
+				"en": "Under which conditions does radiation fog most commonly form?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Bezchmurna, bezwietrzna noc nad wilgotnym podłożem",
+						"en": "Clear, calm night over moist ground"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Silny wiatr i zachmurzenie",
+						"en": "Strong wind and cloud cover"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Napływ ciepłego powietrza nad ciepłą wodę",
+						"en": "Warm air flowing over warm water"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Przejście aktywnego frontu chłodnego",
+						"en": "Passage of an active cold front"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "Mgła radiacyjna wymaga nocnego wypromieniowania ciepła, słabego wiatru i wilgotnego powietrza.",
+				"en": "Radiation fog requires nocturnal heat loss, light wind and moist air."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-mcq-qnh",
+			"type": "mcq",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.ATMOSPHERE"],
+			"licenses": ["SPL"],
+			"tags": ["QNH"],
+			"stem": {
+				"pl": "Po nastawieniu QNH na ziemi na lotnisku wysokościomierz wskaże:",
+				"en": "With QNH set, the altimeter on the ground at the aerodrome will indicate:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "zero",
+						"en": "zero"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "elewację lotniska (wysokość AMSL)",
+						"en": "the aerodrome elevation (altitude AMSL)"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "poziom lotu (FL)",
+						"en": "the flight level (FL)"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "wysokość nad terenem (AGL)",
+						"en": "height above ground (AGL)"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "QNH odnosi wskazania do średniego poziomu morza, więc na ziemi pokaże elewację lotniska.",
+				"en": "QNH references indications to mean sea level, so on the ground it shows the aerodrome elevation."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-mcq-coldfront",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["MET.PRODUCTS"],
+			"licenses": ["SPL"],
+			"tags": ["front"],
+			"stem": {
+				"pl": "Co zwykle charakteryzuje przejście aktywnego frontu chłodnego?",
+				"en": "What usually characterises the passage of an active cold front?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Długotrwały ciągły opad z chmur Ns i mgła",
+						"en": "Prolonged continuous rain from Ns and fog"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Chmury Cb, przelotne opady, burze i porywisty wiatr",
+						"en": "Cb clouds, showers, thunderstorms and gusty wind"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Bezchmurne niebo i całkowita cisza",
+						"en": "Clear sky and complete calm"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Stały wzrost temperatury i zachmurzenia",
+						"en": "Steady rise in temperature and cloud"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Front chłodny daje strome chmury konwekcyjne (Cb), przelotne opady i burze; długotrwały opad z Ns jest typowy dla frontu ciepłego.",
+				"en": "A cold front brings steep convective clouds (Cb), showers and thunderstorms; prolonged Ns rain is typical of a warm front."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-mcq-ridge",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["MET.LIFT_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["zboczowe"],
+			"stem": {
+				"pl": "Noszenie zboczowe (orograficzne) powstaje, gdy:",
+				"en": "Ridge (orographic) lift is produced when:"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "słońce nagrzewa nierównomiernie podłoże",
+						"en": "the sun heats the ground unevenly"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "wiatr jest wymuszany do wznoszenia po dowietrznej stronie zbocza",
+						"en": "wind is forced to rise on the windward side of a slope"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "powietrze oscyluje za grzbietem górskim",
+						"en": "air oscillates downwind of a mountain ridge"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "front ciepły nasuwa się na chłodny",
+						"en": "a warm front overruns cold air"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Noszenie zboczowe powstaje z mechanicznego wymuszenia wznoszenia wiatru na stoku dowietrznym; nagrzewanie daje termikę, a oscylacja za grzbietem to fala.",
+				"en": "Ridge lift comes from mechanical forcing of wind up the windward slope; heating gives thermals and oscillation downwind gives wave."
+			},
+			"source": "authored:spl"
 		}
 	]
 }

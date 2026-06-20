@@ -1,0 +1,712 @@
+{
+	"schemaVersion": 1,
+	"id": "spl-agk",
+	"title": {
+		"pl": "Ogólna wiedza o statku powietrznym (szybowce)",
+		"en": "Aircraft General Knowledge (sailplane)"
+	},
+	"subjectId": "AGK",
+	"items": [
+		{
+			"id": "spl-agk-ias-abbr",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["AGK.LIMITATIONS"],
+			"licenses": ["SPL"],
+			"tags": ["speed", "instruments"],
+			"front": {
+				"pl": "Co oznacza skrót IAS?",
+				"en": "What does the abbreviation IAS mean?"
+			},
+			"back": {
+				"pl": "Prędkość przyrządowa (Indicated Air Speed) - prędkość odczytana z prędkościomierza, bez poprawek na błędy i gęstość powietrza.",
+				"en": "Indicated Air Speed - the speed read on the airspeed indicator, uncorrected for errors and air density."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-agk-vne",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["AGK.LIMITATIONS"],
+			"licenses": ["SPL"],
+			"tags": ["limits", "speed"],
+			"front": {
+				"pl": "Co oznacza VNE i jak jest zaznaczona na prędkościomierzu?",
+				"en": "What is VNE and how is it marked on the airspeed indicator?"
+			},
+			"back": {
+				"pl": "VNE to prędkość nigdy nieprzekraczalna (never exceed speed); zaznaczona czerwoną kreską radialną na końcu żółtego pola.",
+				"en": "VNE is the never exceed speed; marked by a red radial line at the end of the yellow arc."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-agk-yellow-arc",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["AGK.LIMITATIONS"],
+			"licenses": ["SPL"],
+			"tags": ["limits", "speed"],
+			"front": {
+				"pl": "Co oznacza żółte pole (łuk) na prędkościomierzu szybowca?",
+				"en": "What does the yellow arc on a glider airspeed indicator mean?"
+			},
+			"back": {
+				"pl": "Zakres ostrożności (powyżej VRA do VNE) dozwolony tylko w spokojnym powietrzu; loty w turbulencji w tym zakresie są zabronione.",
+				"en": "The caution range (from VRA up to VNE) allowed only in smooth air; flight in turbulence in this range is prohibited."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-agk-green-arc",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["AGK.LIMITATIONS"],
+			"licenses": ["SPL"],
+			"tags": ["limits", "speed"],
+			"front": {
+				"pl": "Co oznacza zielone pole na prędkościomierzu szybowca?",
+				"en": "What does the green arc on a glider airspeed indicator mean?"
+			},
+			"back": {
+				"pl": "Normalny zakres eksploatacyjny - od prędkości przeciągnięcia (Vs1) do prędkości w powietrzu burzliwym (VRA); dozwolony także w turbulencji.",
+				"en": "The normal operating range - from stall speed (Vs1) up to the rough-air speed (VRA); permitted also in turbulence."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-agk-airbrakes",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["controls", "landing"],
+			"front": {
+				"pl": "Do czego służą hamulce aerodynamiczne (spojlery) w szybowcu?",
+				"en": "What is the purpose of airbrakes (spoilers) in a glider?"
+			},
+			"back": {
+				"pl": "Zmniejszają siłę nośną i zwiększają opór, co zwiększa opadanie i strome podejście - umożliwiają precyzyjne sterowanie podejściem do lądowania.",
+				"en": "They reduce lift and increase drag, steepening the descent and approach angle - allowing precise control of the landing approach."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-agk-variometer",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.INSTRUMENTS"],
+			"licenses": ["SPL"],
+			"tags": ["instruments", "soaring"],
+			"front": {
+				"pl": "Co mierzy wariometr i z jakiego źródła ciśnienia korzysta?",
+				"en": "What does a variometer measure and which pressure source does it use?"
+			},
+			"back": {
+				"pl": "Prędkość pionową (wznoszenie/opadanie) na podstawie zmian ciśnienia statycznego; często sprzężony z butlą wyrównawczą i kompensacją energii całkowitej (TE).",
+				"en": "Vertical speed (climb/sink) from changes in static pressure; often linked to a capacity flask and total energy (TE) compensation."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-agk-te-comp",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["AGK.INSTRUMENTS"],
+			"licenses": ["SPL"],
+			"tags": ["instruments", "soaring"],
+			"front": {
+				"pl": "Co oznacza kompensacja TE i czemu służy?",
+				"en": "What does TE compensation mean and what is its purpose?"
+			},
+			"back": {
+				"pl": "TE = Total Energy (energia całkowita). Eliminuje wskazania wariometru wynikające ze zmian prędkości lotu (tzw. komin od drążka), pokazując rzeczywisty ruch masy powietrza.",
+				"en": "TE = Total Energy. It removes variometer indications caused by airspeed changes (stick thermals), showing real air-mass movement."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-agk-pitot-static",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.INSTRUMENTS"],
+			"licenses": ["SPL"],
+			"tags": ["instruments", "pitot-static"],
+			"front": {
+				"pl": "Które przyrządy korzystają z ciśnienia całkowitego (pitota), a które ze statycznego?",
+				"en": "Which instruments use total (pitot) pressure and which use static pressure?"
+			},
+			"back": {
+				"pl": "Prędkościomierz używa ciśnienia całkowitego i statycznego; wysokościomierz i wariometr - tylko statycznego.",
+				"en": "The airspeed indicator uses both total and static pressure; the altimeter and variometer use static pressure only."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-agk-water-ballast",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["weight", "performance"],
+			"front": {
+				"pl": "Jaki jest cel stosowania balastu wodnego w szybowcu?",
+				"en": "What is the purpose of carrying water ballast in a glider?"
+			},
+			"back": {
+				"pl": "Zwiększa masę i obciążenie powierzchni, podnosząc prędkość przelotową przy zachowaniu doskonałości - korzystne przy silnej termice. Zrzucany przed lądowaniem.",
+				"en": "It increases mass and wing loading, raising cruising speed while keeping the glide ratio - useful in strong thermals. Dumped before landing."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-agk-cg-aft",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["weight", "stability"],
+			"front": {
+				"pl": "Jak tylne położenie środka ciężkości (CG) wpływa na zachowanie szybowca?",
+				"en": "How does an aft centre of gravity (CG) affect glider behaviour?"
+			},
+			"back": {
+				"pl": "Zmniejsza stateczność podłużną, czyni szybowiec bardziej wrażliwym w sterowaniu i utrudnia wyprowadzenie z korkociągu.",
+				"en": "It reduces longitudinal stability, makes the glider more sensitive in pitch and harder to recover from a spin."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-agk-weak-link",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["AGK.RELEASE"],
+			"licenses": ["SPL"],
+			"tags": ["launch", "safety"],
+			"front": {
+				"pl": "Czemu służy ogniwo bezpiecznikowe (weak link) w linie holowniczej?",
+				"en": "What is the purpose of the weak link in the tow rope?"
+			},
+			"back": {
+				"pl": "To celowo osłabiony element, który zrywa się przy przekroczeniu dopuszczalnej siły, chroniąc konstrukcję szybowca przed przeciążeniem.",
+				"en": "A deliberately weakened element that breaks when the permitted load is exceeded, protecting the glider structure from overload."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-agk-cg-hook",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.RELEASE"],
+			"licenses": ["SPL"],
+			"tags": ["launch", "release"],
+			"front": {
+				"pl": "Którego zaczepu używa się zwykle do startu za wyciągarką, a którego do holu za samolotem?",
+				"en": "Which hook is normally used for winch launch and which for aerotow?"
+			},
+			"back": {
+				"pl": "Do wyciągarki - zaczep brzuszny (CG hook), do holu za samolotem - zaczep dziobowy (nose hook), choć niektóre szybowce mają tylko jeden.",
+				"en": "Winch - the belly (CG) hook; aerotow - the nose hook, although some gliders have only one."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-agk-arc-docs",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["AGK.DOCS"],
+			"licenses": ["SPL"],
+			"tags": ["documents", "regulation"],
+			"front": {
+				"pl": "Co to jest ARC w kontekście dokumentacji szybowca?",
+				"en": "What is the ARC in the context of glider documentation?"
+			},
+			"back": {
+				"pl": "ARC (Airworthiness Review Certificate) - poświadczenie przeglądu zdatności do lotu, potwierdzające ważność świadectwa zdatności (CofA).",
+				"en": "ARC (Airworthiness Review Certificate) - confirms the validity of the certificate of airworthiness (CofA)."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-agk-mcq-vne-mark",
+			"type": "mcq",
+			"microSkill": "concept_number",
+			"loIds": ["AGK.LIMITATIONS"],
+			"licenses": ["SPL"],
+			"tags": ["limits", "speed"],
+			"stem": {
+				"pl": "W jaki sposób na prędkościomierzu szybowca oznaczona jest prędkość nigdy nieprzekraczalna (VNE)?",
+				"en": "How is the never exceed speed (VNE) marked on a glider airspeed indicator?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Czerwoną kreską radialną",
+						"en": "A red radial line"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Początkiem zielonego pola",
+						"en": "The start of the green arc"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Niebieską kreską radialną",
+						"en": "A blue radial line"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Końcem zielonego pola",
+						"en": "The end of the green arc"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "VNE jest zaznaczona czerwoną kreską radialną na końcu żółtego pola; jej przekroczenie grozi zniszczeniem konstrukcji.",
+				"en": "VNE is marked by a red radial line at the end of the yellow arc; exceeding it risks structural failure."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-agk-mcq-airbrake",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["AGK.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["controls", "landing"],
+			"stem": {
+				"pl": "Jaki jest podstawowy skutek aerodynamiczny wysunięcia hamulców aerodynamicznych?",
+				"en": "What is the primary aerodynamic effect of extending the airbrakes?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Wzrost siły nośnej i zmniejszenie opadania",
+						"en": "Increased lift and reduced sink"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Zmniejszenie siły nośnej i wzrost oporu, większe opadanie",
+						"en": "Reduced lift and increased drag, more sink"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zwiększenie doskonałości szybowca",
+						"en": "Increased glide ratio"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Brak wpływu na tor lotu, tylko hamowanie po przyziemieniu",
+						"en": "No effect on flight path, only braking after touchdown"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Hamulce aerodynamiczne zaburzają opływ skrzydła: zmniejszają nośność i zwiększają opór, co stromi tor podejścia.",
+				"en": "Airbrakes disturb the wing airflow: they cut lift and add drag, steepening the approach path."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-agk-mcq-static",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["AGK.INSTRUMENTS"],
+			"licenses": ["SPL"],
+			"tags": ["instruments", "pitot-static"],
+			"stem": {
+				"pl": "Który przyrząd przestanie pokazywać prawidłowe wskazania przy zablokowaniu wyłącznie odbioru ciśnienia statycznego?",
+				"en": "Which instrument fails to show correct readings if only the static port is blocked?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Busola magnetyczna",
+						"en": "Magnetic compass"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Wysokościomierz",
+						"en": "Altimeter"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zakrętomierz elektryczny",
+						"en": "Electric turn indicator"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Termometr zewnętrzny",
+						"en": "Outside air thermometer"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Wysokościomierz mierzy ciśnienie statyczne; jego zablokowanie powoduje zamrożenie wskazań wysokości na wartości z chwili zatkania.",
+				"en": "The altimeter measures static pressure; a blocked static port freezes the altitude reading at the value when it was blocked."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-agk-mcq-ballast",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["weight", "performance"],
+			"stem": {
+				"pl": "Jaką główną korzyść daje balast wodny podczas przelotu w silnej termice?",
+				"en": "What is the main benefit of water ballast during cross-country flight in strong thermals?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Mniejszą prędkość przeciągnięcia",
+						"en": "Lower stall speed"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Wyższą prędkość przelotową przy zachowaniu doskonałości",
+						"en": "Higher cruising speed while keeping the glide ratio"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Większą doskonałość niż bez balastu",
+						"en": "A higher glide ratio than without ballast"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Krótszy rozbieg na starcie",
+						"en": "A shorter take-off run"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Większa masa podnosi optymalne prędkości na biegunowej, więc szybowiec leci szybciej między kominami przy zbliżonej doskonałości maksymalnej.",
+				"en": "Greater mass raises the optimum speeds on the polar, so the glider cruises faster between thermals while keeping a similar best glide ratio."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-agk-mcq-cg-aft",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["weight", "stability"],
+			"stem": {
+				"pl": "Jak wpływa nadmiernie tylne położenie środka ciężkości na szybowiec?",
+				"en": "How does an excessively aft centre of gravity affect a glider?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zwiększa stateczność podłużną i ułatwia wyprowadzenie z korkociągu",
+						"en": "Increases longitudinal stability and eases spin recovery"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Zmniejsza stateczność podłużną i utrudnia wyprowadzenie z korkociągu",
+						"en": "Reduces longitudinal stability and makes spin recovery harder"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Nie ma wpływu na zachowanie szybowca",
+						"en": "Has no effect on glider behaviour"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Powoduje stałą tendencję do nurkowania",
+						"en": "Causes a constant tendency to dive"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Tylne CG zmniejsza ramię stateczności statecznika, czyniąc szybowiec wrażliwym i trudniejszym do wyprowadzenia z korkociągu.",
+				"en": "An aft CG reduces the stabiliser moment arm, making the glider sensitive and harder to recover from a spin."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-agk-mcq-winch-hook",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["AGK.RELEASE"],
+			"licenses": ["SPL"],
+			"tags": ["launch", "release"],
+			"stem": {
+				"pl": "Którego zaczepu używa się standardowo podczas startu za wyciągarką?",
+				"en": "Which hook is standardly used during a winch launch?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Zaczepu dziobowego (nose hook)",
+						"en": "The nose hook"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Zaczepu brzusznego / CG",
+						"en": "The belly / CG hook"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zaczepu na końcu skrzydła",
+						"en": "The wingtip hook"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Zaczepu na stateczniku",
+						"en": "The tailplane hook"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Do wyciągarki używa się zaczepu brzusznego (CG), który zapewnia prawidłowe wyczepienie i geometrię ciągu; dziobowy służy do holu za samolotem.",
+				"en": "The belly (CG) hook is used for winching, giving correct release geometry; the nose hook is for aerotow."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-agk-mcq-weak-link",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["AGK.RELEASE"],
+			"licenses": ["SPL"],
+			"tags": ["launch", "safety"],
+			"stem": {
+				"pl": "Jaką funkcję pełni ogniwo bezpiecznikowe (weak link) w linie holowniczej?",
+				"en": "What function does the weak link serve in the tow rope?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Ułatwia wyczepienie liny po starcie",
+						"en": "Makes rope release after launch easier"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Zrywa się przy przekroczeniu dopuszczalnej siły, chroniąc szybowiec przed przeciążeniem",
+						"en": "Breaks when the permitted force is exceeded, protecting the glider from overload"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Zwiększa maksymalną siłę ciągu wyciągarki",
+						"en": "Increases the maximum winch pull force"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Sygnalizuje pilotowi koniec startu",
+						"en": "Signals the pilot the end of the launch"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Weak link to celowo osłabione ogniwo, które pęka przy przekroczeniu dopuszczalnego obciążenia, chroniąc konstrukcję szybowca.",
+				"en": "The weak link is a deliberately weakened element that breaks above the permitted load, protecting the glider structure."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-agk-mcq-te",
+			"type": "mcq",
+			"microSkill": "abbreviation",
+			"loIds": ["AGK.INSTRUMENTS"],
+			"licenses": ["SPL"],
+			"tags": ["instruments", "soaring"],
+			"stem": {
+				"pl": "Co eliminuje kompensacja energii całkowitej (TE) w odczytach wariometru?",
+				"en": "What does total energy (TE) compensation remove from variometer readings?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Błędy wynikające ze zmian ciśnienia atmosferycznego",
+						"en": "Errors due to changes in atmospheric pressure"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Pozorne wskazania spowodowane zmianami prędkości lotu (komin od drążka)",
+						"en": "False indications caused by airspeed changes (stick thermals)"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Opóźnienie wskazań wariometru",
+						"en": "The lag of the variometer reading"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Wpływ temperatury na butlę wyrównawczą",
+						"en": "Temperature effect on the capacity flask"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Kompensacja TE usuwa wskazania wznoszenia/opadania wynikające z zamiany prędkości na wysokość, pokazując rzeczywisty ruch powietrza.",
+				"en": "TE compensation removes climb/sink indications caused by trading speed for height, showing real air-mass movement."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-agk-mcq-materials",
+			"type": "mcq",
+			"microSkill": "general",
+			"loIds": ["AGK.AIRFRAME"],
+			"licenses": ["SPL"],
+			"tags": ["airframe", "materials"],
+			"stem": {
+				"pl": "Z jakiego materiału zbudowana jest większość współczesnych szybowców wyczynowych?",
+				"en": "From what material are most modern performance gliders built?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "Drewno i płótno",
+						"en": "Wood and fabric"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Materiały kompozytowe (laminat szklany, węglowy)",
+						"en": "Composite materials (glass and carbon fibre)"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Wyłącznie blacha aluminiowa nitowana",
+						"en": "Riveted aluminium sheet only"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Stal nierdzewna",
+						"en": "Stainless steel"
+					}
+				}
+			],
+			"answer": "b",
+			"explanation": {
+				"pl": "Nowoczesne szybowce buduje się głównie z kompozytów (laminat szklano- i węglowo-epoksydowy), co daje gładkie profile i dużą doskonałość.",
+				"en": "Modern gliders are built mainly from composites (glass/carbon-epoxy laminate), giving smooth profiles and high glide ratios."
+			},
+			"source": "authored:spl"
+		},
+		{
+			"id": "spl-agk-mcq-docs",
+			"type": "mcq",
+			"microSkill": "regulation",
+			"loIds": ["AGK.DOCS"],
+			"licenses": ["SPL"],
+			"tags": ["documents", "regulation"],
+			"stem": {
+				"pl": "Który dokument potwierdza ważność świadectwa zdatności do lotu szybowca?",
+				"en": "Which document confirms the validity of a glider's certificate of airworthiness?"
+			},
+			"choices": [
+				{
+					"id": "a",
+					"text": {
+						"pl": "ARC - poświadczenie przeglądu zdatności do lotu",
+						"en": "ARC - the Airworthiness Review Certificate"
+					}
+				},
+				{
+					"id": "b",
+					"text": {
+						"pl": "Licencja pilota SPL",
+						"en": "The SPL pilot licence"
+					}
+				},
+				{
+					"id": "c",
+					"text": {
+						"pl": "Polisa ubezpieczeniowa",
+						"en": "The insurance policy"
+					}
+				},
+				{
+					"id": "d",
+					"text": {
+						"pl": "Książka startów za wyciągarką",
+						"en": "The winch launch logbook"
+					}
+				}
+			],
+			"answer": "a",
+			"explanation": {
+				"pl": "ARC (Airworthiness Review Certificate) poświadcza, że świadectwo zdatności (CofA) pozostaje ważne po przeglądzie zdatności do lotu.",
+				"en": "The ARC confirms that the certificate of airworthiness (CofA) remains valid after the airworthiness review."
+			},
+			"source": "authored:spl"
+		}
+	]
+}
