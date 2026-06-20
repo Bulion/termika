@@ -1,5 +1,19 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"app_name": "Termika",
-	"tagline": "Nauka teorii lotniczej, która zostaje w głowie."
+	"tagline": "Nauka teorii lotniczej, która zostaje w głowie.",
+	"nav_study": "Nauka",
+	"study_title": "Sesja nauki",
+	"show_answer": "Pokaż odpowiedź",
+	"grade_again": "Powtórz",
+	"grade_hard": "Trudne",
+	"grade_good": "Dobrze",
+	"grade_easy": "Łatwe",
+	"session_empty": "Brak kart do nauki. Wróć później.",
+	"session_done": "Sesja ukończona. Dobra robota!",
+	"cards_left": "Pozostało: {count}",
+	"mode_all": "Wszystko",
+	"mode_abbreviations": "Skróty",
+	"mode_numbers": "Wartości",
+	"start_again": "Zacznij od nowa"
 }

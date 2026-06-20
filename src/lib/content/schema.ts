@@ -108,6 +108,10 @@ export const itemSchema = z
 		}
 	});
 export type StudyItem = z.infer<typeof itemSchema>;
+export type Flashcard = z.infer<typeof flashcardSchema>;
+export type Mcq = z.infer<typeof mcqSchema>;
+export type ScenarioItem = z.infer<typeof scenarioSchema>;
+export type ImageOcclusionItem = z.infer<typeof imageOcclusionSchema>;
 
 export const deckSchema = z.object({
 	schemaVersion: z.literal(SCHEMA_VERSION),

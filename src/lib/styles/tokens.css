@@ -1,0 +1,51 @@
+/*
+ * Single source of truth for visual style. Components reference these tokens only,
+ * never raw values. The dark theme overrides the same tokens under [data-theme='dark'].
+ */
+:root {
+	--font-display: 'Fredoka', 'Baloo 2', system-ui, sans-serif;
+	--font-body: 'Atkinson Hyperlegible', system-ui, -apple-system, sans-serif;
+	--font-mono: 'Space Mono', ui-monospace, 'SFMono-Regular', monospace;
+
+	--space-1: 0.25rem;
+	--space-2: 0.5rem;
+	--space-3: 0.75rem;
+	--space-4: 1rem;
+	--space-6: 1.5rem;
+	--space-8: 2rem;
+
+	--radius-sm: 0.5rem;
+	--radius-md: 0.875rem;
+	--radius-lg: 1.25rem;
+
+	--border-width: 2px;
+
+	/* Light theme: daytime sky */
+	--color-sky: #4fb6e8;
+	--color-sun: #ffc93c;
+	--color-lift: #34c77b;
+	--color-sink: #ff6b5e;
+	--color-surface: #fff;
+	--color-bg: #eaf6ff;
+	--color-ink: #1e2a3a;
+	--color-ink-soft: #4a5a6a;
+	--color-outline: #1e2a3a;
+
+	--shadow-card: 0 4px 0 0 var(--color-outline);
+	--focus-ring: 0 0 0 3px var(--color-sun);
+}
+
+[data-theme='dark'] {
+	--color-sky: #5cc2f0;
+	--color-sun: #ffd24d;
+	--color-lift: #3fd98a;
+	--color-sink: #ff7c70;
+	--color-surface: #1b2740;
+	--color-bg: #121a2b;
+	--color-ink: #e7eef7;
+	--color-ink-soft: #aebccd;
+	--color-outline: #0a0f18;
+
+	--shadow-card: 0 4px 0 0 var(--color-outline);
+	--focus-ring: 0 0 0 3px var(--color-sun);
+}

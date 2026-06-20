@@ -1,5 +1,19 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"app_name": "Termika",
-	"tagline": "Learn aviation theory that actually sticks."
+	"tagline": "Learn aviation theory that actually sticks.",
+	"nav_study": "Study",
+	"study_title": "Study session",
+	"show_answer": "Show answer",
+	"grade_again": "Again",
+	"grade_hard": "Hard",
+	"grade_good": "Good",
+	"grade_easy": "Easy",
+	"session_empty": "Nothing to study right now. Come back later.",
+	"session_done": "Session complete. Nice work!",
+	"cards_left": "{count} left",
+	"mode_all": "All",
+	"mode_abbreviations": "Abbreviations",
+	"mode_numbers": "Values",
+	"start_again": "Start again"
 }

@@ -5,7 +5,8 @@ import adapter from '@sveltejs/adapter-static';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { SvelteKitPWA } from '@vite-pwa/sveltekit';
 
-const base: '' | `/${string}` = process.argv.includes('dev')
+const servedAtRoot = process.argv.includes('dev') || Boolean(process.env.VITEST);
+const base: '' | `/${string}` = servedAtRoot
 	? ''
 	: ((process.env.BASE_PATH as `/${string}` | undefined) ?? '/licencjeLotnicze');
 
@@ -55,7 +56,7 @@ export default defineConfig({
 					name: 'client',
 					browser: {
 						enabled: true,
-						provider: playwright(),
+						provider: playwright({ launchOptions: { args: ['--no-sandbox'] } }),
 						instances: [{ browser: 'chromium', headless: true }]
 					},
 					include: ['src/**/*.svelte.{test,spec}.{js,ts}'],
