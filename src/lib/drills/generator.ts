@@ -7,6 +7,7 @@ export interface DrillProblem {
 	value: number;
 	expected: number;
 	prompt: string;
+	rule?: string;
 	round: number;
 	tolerancePct: number;
 	timeLimitSec?: number;
@@ -43,6 +44,7 @@ export function generateProblem(
 		value,
 		expected,
 		prompt,
+		rule: drill.rule ? resolveText(drill.rule, locale) : undefined,
 		round: drill.round,
 		tolerancePct: drill.tolerancePct,
 		timeLimitSec: drill.timeLimitSec

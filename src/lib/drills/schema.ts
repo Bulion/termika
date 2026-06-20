@@ -33,7 +33,9 @@ export const drillSchema = z.object({
 		})
 		.refine((g) => g.max > g.min, { message: 'max must be greater than min', path: ['max'] }),
 	op: drillOpSchema,
-	/** Accepted error band as a percentage of the exact answer. */
+	/** Short rule-of-thumb hint shown to the learner, e.g. "× 1,85". */
+	rule: localizedTextSchema.optional(),
+	/** Accepted error band as a percentage of the expected (rule-of-thumb) answer. */
 	tolerancePct: z.number().min(0).max(100),
 	timeLimitSec: z.number().positive().optional(),
 	/** Decimal places the learner is expected to answer to. */

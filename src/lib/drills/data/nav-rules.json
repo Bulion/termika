@@ -12,6 +12,7 @@
 			},
 			"generate": { "min": 70, "max": 160, "step": 10 },
 			"op": { "kind": "linear", "factor": 5 },
+			"rule": { "pl": "GS ÷ 2 × 10 (czyli GS × 5)", "en": "GS ÷ 2 × 10 (i.e. GS × 5)" },
 			"tolerancePct": 5,
 			"timeLimitSec": 10,
 			"tags": ["descent"]
@@ -25,6 +26,7 @@
 			},
 			"generate": { "min": 2, "max": 12, "step": 1 },
 			"op": { "kind": "linear", "factor": 3 },
+			"rule": { "pl": "tys. ft × 3 (reguła 3:1)", "en": "thousands ft × 3 (3:1 rule)" },
 			"tolerancePct": 5,
 			"timeLimitSec": 10,
 			"tags": ["descent"]

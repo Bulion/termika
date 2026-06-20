@@ -80,3 +80,23 @@ describe('isWithinTolerance', () => {
 		expect(isWithinTolerance(200, Number.NaN, 3)).toBe(false);
 	});
 });
+
+describe('rule-of-thumb tolerance (aviation mental math)', () => {
+	it('accepts both the rule-of-thumb and the precise conversion', () => {
+		// kt -> km/h: rule x1.85, precise x1.852
+		const ruleKmh = 100 * 1.85;
+		expect(isWithinTolerance(ruleKmh, 100 * 1.852, 5)).toBe(true);
+		// ft -> m: rule x0.3, precise x0.3048
+		const ruleM = 35000 * 0.3;
+		expect(isWithinTolerance(ruleM, 35000 * 0.3048, 5)).toBe(true);
+	});
+
+	it('accepts a rounded mental answer near the rule-of-thumb value', () => {
+		// 120 kt -> rule 222 km/h; a pilot answering 220 should pass.
+		expect(isWithinTolerance(120 * 1.85, 220, 5)).toBe(true);
+	});
+
+	it('still rejects an answer that ignores the conversion', () => {
+		expect(isWithinTolerance(120 * 1.85, 120, 5)).toBe(false);
+	});
+});

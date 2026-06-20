@@ -62,6 +62,9 @@
 	}}
 >
 	<p class="prompt">{problem.prompt}</p>
+	{#if problem.rule}
+		<p class="rule">{problem.rule}</p>
+	{/if}
 
 	<input
 		class="answer"
@@ -110,6 +113,13 @@
 		background: var(--color-surface-2);
 		border: var(--border-width-sm) solid var(--color-outline);
 		border-radius: var(--radius-md);
+	}
+
+	.rule {
+		margin: 0;
+		font-family: var(--font-mono);
+		font-size: 0.85rem;
+		color: var(--color-ink-soft);
 	}
 
 	.answer {

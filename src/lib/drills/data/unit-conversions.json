@@ -8,8 +8,9 @@
 			"microSkill": "unit_conversion",
 			"prompt": { "pl": "{value} kt → km/h?", "en": "{value} kt → km/h?" },
 			"generate": { "min": 60, "max": 320, "step": 5 },
-			"op": { "kind": "convert", "from": "knot", "to": "km/h" },
-			"tolerancePct": 3,
+			"op": { "kind": "linear", "factor": 1.85 },
+			"rule": { "pl": "≈ × 1,85 (czyli × 2 − 10%)", "en": "≈ × 1.85 (i.e. × 2 − 10%)" },
+			"tolerancePct": 5,
 			"timeLimitSec": 12,
 			"tags": ["speed"]
 		},
@@ -18,8 +19,9 @@
 			"microSkill": "unit_conversion",
 			"prompt": { "pl": "{value} ft → m?", "en": "{value} ft → m?" },
 			"generate": { "min": 1000, "max": 41000, "step": 500 },
-			"op": { "kind": "convert", "from": "ft", "to": "m" },
-			"tolerancePct": 2,
+			"op": { "kind": "linear", "factor": 0.3 },
+			"rule": { "pl": "≈ × 0,3", "en": "≈ × 0.3" },
+			"tolerancePct": 5,
 			"timeLimitSec": 12,
 			"tags": ["altitude"]
 		},
@@ -28,8 +30,9 @@
 			"microSkill": "unit_conversion",
 			"prompt": { "pl": "{value} NM → km?", "en": "{value} NM → km?" },
 			"generate": { "min": 5, "max": 200, "step": 5 },
-			"op": { "kind": "linear", "factor": 1.852 },
-			"tolerancePct": 3,
+			"op": { "kind": "linear", "factor": 1.85 },
+			"rule": { "pl": "≈ × 1,85", "en": "≈ × 1.85" },
+			"tolerancePct": 5,
 			"timeLimitSec": 12,
 			"tags": ["distance"]
 		},
@@ -38,8 +41,9 @@
 			"microSkill": "unit_conversion",
 			"prompt": { "pl": "{value} inHg → hPa?", "en": "{value} inHg → hPa?" },
 			"generate": { "min": 28, "max": 31, "step": 0.1 },
-			"op": { "kind": "linear", "factor": 33.8639 },
-			"tolerancePct": 1,
+			"op": { "kind": "linear", "factor": 34 },
+			"rule": { "pl": "≈ × 34 (1 inHg ≈ 34 hPa)", "en": "≈ × 34 (1 inHg ≈ 34 hPa)" },
+			"tolerancePct": 2,
 			"timeLimitSec": 15,
 			"tags": ["pressure"]
 		}
