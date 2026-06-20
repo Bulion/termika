@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 760">
+<rect x="40" y="648" width="440" height="60" rx="6" fill="#e9e7dd" stroke="#8a8a82" />
+<text x="260" y="657" text-anchor="middle" dominant-baseline="middle" font-size="8" fill="#1a1a14" font-family="Arial, sans-serif">TEMPERATURE  °C (gora) / °F (dol)</text>
+<line x1="60" y1="666" x2="60" y2="675" stroke="#1a1a14" stroke-width="0.9" />
+<text x="60" y="663" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#1a1a14" font-family="Arial, sans-serif">-30</text>
+<line x1="85" y1="666" x2="85" y2="671" stroke="#1a1a14" stroke-width="0.5" />
+<line x1="110" y1="666" x2="110" y2="675" stroke="#1a1a14" stroke-width="0.9" />
+<text x="110" y="663" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#1a1a14" font-family="Arial, sans-serif">-20</text>
+<line x1="135" y1="666" x2="135" y2="671" stroke="#1a1a14" stroke-width="0.5" />
+<line x1="160" y1="666" x2="160" y2="675" stroke="#1a1a14" stroke-width="0.9" />
+<text x="160" y="663" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#1a1a14" font-family="Arial, sans-serif">-10</text>
+<line x1="185" y1="666" x2="185" y2="671" stroke="#1a1a14" stroke-width="0.5" />
+<line x1="210" y1="666" x2="210" y2="675" stroke="#1a1a14" stroke-width="0.9" />
+<text x="210" y="663" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#1a1a14" font-family="Arial, sans-serif">0</text>
+<line x1="235" y1="666" x2="235" y2="671" stroke="#1a1a14" stroke-width="0.5" />
+<line x1="260" y1="666" x2="260" y2="675" stroke="#1a1a14" stroke-width="0.9" />
+<text x="260" y="663" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#1a1a14" font-family="Arial, sans-serif">10</text>
+<line x1="285" y1="666" x2="285" y2="671" stroke="#1a1a14" stroke-width="0.5" />
+<line x1="310" y1="666" x2="310" y2="675" stroke="#1a1a14" stroke-width="0.9" />
+<text x="310" y="663" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#1a1a14" font-family="Arial, sans-serif">20</text>
+<line x1="335" y1="666" x2="335" y2="671" stroke="#1a1a14" stroke-width="0.5" />
+<line x1="360" y1="666" x2="360" y2="675" stroke="#1a1a14" stroke-width="0.9" />
+<text x="360" y="663" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#1a1a14" font-family="Arial, sans-serif">30</text>
+<line x1="385" y1="666" x2="385" y2="671" stroke="#1a1a14" stroke-width="0.5" />
+<line x1="410" y1="666" x2="410" y2="675" stroke="#1a1a14" stroke-width="0.9" />
+<text x="410" y="663" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#1a1a14" font-family="Arial, sans-serif">40</text>
+<line x1="435" y1="666" x2="435" y2="671" stroke="#1a1a14" stroke-width="0.5" />
+<line x1="460" y1="666" x2="460" y2="675" stroke="#1a1a14" stroke-width="0.9" />
+<text x="460" y="663" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#1a1a14" font-family="Arial, sans-serif">50</text>
+<line x1="65.556" y1="690" x2="65.556" y2="681" stroke="#a8281c" stroke-width="0.9" />
+<text x="65.556" y="699" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#a8281c" font-family="Arial, sans-serif">-20</text>
+<line x1="93.333" y1="690" x2="93.333" y2="685" stroke="#a8281c" stroke-width="0.5" />
+<line x1="121.111" y1="690" x2="121.111" y2="681" stroke="#a8281c" stroke-width="0.9" />
+<text x="121.111" y="699" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#a8281c" font-family="Arial, sans-serif">0</text>
+<line x1="148.889" y1="690" x2="148.889" y2="685" stroke="#a8281c" stroke-width="0.5" />
+<line x1="176.667" y1="690" x2="176.667" y2="681" stroke="#a8281c" stroke-width="0.9" />
+<text x="176.667" y="699" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#a8281c" font-family="Arial, sans-serif">20</text>
+<line x1="204.444" y1="690" x2="204.444" y2="685" stroke="#a8281c" stroke-width="0.5" />
+<line x1="232.222" y1="690" x2="232.222" y2="681" stroke="#a8281c" stroke-width="0.9" />
+<text x="232.222" y="699" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#a8281c" font-family="Arial, sans-serif">40</text>
+<line x1="260" y1="690" x2="260" y2="685" stroke="#a8281c" stroke-width="0.5" />
+<line x1="287.778" y1="690" x2="287.778" y2="681" stroke="#a8281c" stroke-width="0.9" />
+<text x="287.778" y="699" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#a8281c" font-family="Arial, sans-serif">60</text>
+<line x1="315.556" y1="690" x2="315.556" y2="685" stroke="#a8281c" stroke-width="0.5" />
+<line x1="343.333" y1="690" x2="343.333" y2="681" stroke="#a8281c" stroke-width="0.9" />
+<text x="343.333" y="699" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#a8281c" font-family="Arial, sans-serif">80</text>
+<line x1="371.111" y1="690" x2="371.111" y2="685" stroke="#a8281c" stroke-width="0.5" />
+<line x1="398.889" y1="690" x2="398.889" y2="681" stroke="#a8281c" stroke-width="0.9" />
+<text x="398.889" y="699" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#a8281c" font-family="Arial, sans-serif">100</text>
+<line x1="426.667" y1="690" x2="426.667" y2="685" stroke="#a8281c" stroke-width="0.5" />
+<line x1="454.444" y1="690" x2="454.444" y2="681" stroke="#a8281c" stroke-width="0.9" />
+<text x="454.444" y="699" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#a8281c" font-family="Arial, sans-serif">120</text>
+<line x1="60" y1="678" x2="460" y2="678" stroke="#c9c6ba" stroke-width="0.6" />
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 760">
+<rect x="40" y="24" width="200" height="120" rx="6" fill="#e9e7dd" stroke="#8a8a82" />
+<text x="140" y="34" text-anchor="middle" dominant-baseline="middle" font-size="7" fill="#1a1a14" font-family="Arial, sans-serif">WIND COMPONENTS (kt)</text>
+<path d="M 69.6 132 L 69.6 132 L 69.573 130.974 L 69.493 129.951 L 69.359 128.934 L 69.172 127.925 L 68.932 126.927 L 68.641 125.943 L 68.298 124.976 L 67.905 124.028 L 67.464 123.102 L 66.974 122.2 L 66.438 121.325 L 65.857 120.479 L 65.232 119.665 L 64.566 118.885 L 63.859 118.141 L 63.115 117.434 L 62.335 116.768 L 61.521 116.143 L 60.675 115.562 L 59.8 115.026 L 58.898 114.536 L 57.972 114.095 L 57.024 113.702 L 56.057 113.359 L 55.073 113.068 L 54.075 112.828 L 53.066 112.641 L 52.049 112.507 L 51.026 112.427 L 50 112.4" fill="none" stroke="#9aa39a" stroke-width="0.5" />
+<text x="66.6" y="129" text-anchor="end" dominant-baseline="middle" font-size="6" fill="#3a4339" font-family="Arial, sans-serif">10</text>
+<path d="M 89.2 132 L 89.2 132 L 89.146 129.948 L 88.985 127.902 L 88.717 125.868 L 88.343 123.85 L 87.864 121.854 L 87.281 119.887 L 86.596 117.952 L 85.811 116.056 L 84.927 114.204 L 83.948 112.4 L 82.876 110.65 L 81.713 108.959 L 80.464 107.331 L 79.131 105.77 L 77.719 104.281 L 76.23 102.869 L 74.669 101.536 L 73.041 100.287 L 71.35 99.124 L 69.6 98.052 L 67.796 97.073 L 65.944 96.189 L 64.048 95.404 L 62.113 94.719 L 60.146 94.136 L 58.15 93.657 L 56.132 93.283 L 54.098 93.015 L 52.052 92.854 L 50 92.8" fill="none" stroke="#9aa39a" stroke-width="0.5" />
+<text x="86.2" y="129" text-anchor="end" dominant-baseline="middle" font-size="6" fill="#3a4339" font-family="Arial, sans-serif">20</text>
+<path d="M 108.8 132 L 108.8 132 L 108.719 128.923 L 108.478 125.854 L 108.076 122.802 L 107.515 119.775 L 106.796 116.781 L 105.922 113.83 L 104.895 110.928 L 103.716 108.084 L 102.391 105.305 L 100.922 102.6 L 99.314 99.975 L 97.57 97.438 L 95.696 94.996 L 93.697 92.655 L 91.578 90.422 L 89.345 88.303 L 87.004 86.304 L 84.562 84.43 L 82.025 82.686 L 79.4 81.078 L 76.695 79.609 L 73.916 78.284 L 71.072 77.105 L 68.17 76.078 L 65.219 75.204 L 62.225 74.485 L 59.198 73.924 L 56.146 73.522 L 53.077 73.281 L 50 73.2" fill="none" stroke="#9aa39a" stroke-width="0.5" />
+<text x="105.8" y="129" text-anchor="end" dominant-baseline="middle" font-size="6" fill="#3a4339" font-family="Arial, sans-serif">30</text>
+<path d="M 128.4 132 L 128.4 132 L 128.293 127.897 L 127.971 123.805 L 127.435 119.736 L 126.687 115.7 L 125.729 111.709 L 124.563 107.773 L 123.193 103.904 L 121.622 100.112 L 119.855 96.407 L 117.896 92.8 L 115.752 89.3 L 113.427 85.918 L 110.928 82.661 L 108.263 79.54 L 105.437 76.563 L 102.46 73.737 L 99.339 71.072 L 96.082 68.573 L 92.7 66.248 L 89.2 64.104 L 85.593 62.145 L 81.888 60.378 L 78.096 58.807 L 74.227 57.437 L 70.291 56.271 L 66.3 55.313 L 62.264 54.565 L 58.195 54.029 L 54.103 53.707 L 50 53.6" fill="none" stroke="#9aa39a" stroke-width="0.5" />
+<text x="125.4" y="129" text-anchor="end" dominant-baseline="middle" font-size="6" fill="#3a4339" font-family="Arial, sans-serif">40</text>
+<path d="M 148 132 L 148 132 L 147.866 126.871 L 147.463 121.756 L 146.793 116.669 L 145.858 111.625 L 144.661 106.636 L 143.204 101.716 L 141.491 96.88 L 139.527 92.14 L 137.319 87.509 L 134.87 83 L 132.19 78.625 L 129.284 74.397 L 126.16 70.327 L 122.828 66.425 L 119.296 62.704 L 115.575 59.172 L 111.673 55.84 L 107.603 52.716 L 103.375 49.81 L 99 47.13 L 94.491 44.681 L 89.86 42.473 L 85.12 40.509 L 80.284 38.796 L 75.364 37.339 L 70.375 36.142 L 65.331 35.207 L 60.244 34.537 L 55.129 34.134 L 50 34" fill="none" stroke="#9aa39a" stroke-width="0.9" />
+<text x="145" y="129" text-anchor="end" dominant-baseline="middle" font-size="6" fill="#3a4339" font-family="Arial, sans-serif">50</text>
+<line x1="50" y1="132" x2="148" y2="132" stroke="#9aa39a" stroke-width="0.9" />
+<text x="156" y="132" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#3a4339" font-family="Arial, sans-serif">0°</text>
+<line x1="50" y1="132" x2="144.661" y2="106.636" stroke="#9aa39a" stroke-width="0.5" />
+<text x="152.388" y="104.565" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#3a4339" font-family="Arial, sans-serif">15°</text>
+<line x1="50" y1="132" x2="134.87" y2="83" stroke="#9aa39a" stroke-width="0.5" />
+<text x="141.799" y="79" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#3a4339" font-family="Arial, sans-serif">30°</text>
+<line x1="50" y1="132" x2="119.296" y2="62.704" stroke="#9aa39a" stroke-width="0.5" />
+<text x="124.953" y="57.047" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#3a4339" font-family="Arial, sans-serif">45°</text>
+<line x1="50" y1="132" x2="99" y2="47.13" stroke="#9aa39a" stroke-width="0.5" />
+<text x="103" y="40.201" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#3a4339" font-family="Arial, sans-serif">60°</text>
+<line x1="50" y1="132" x2="75.364" y2="37.339" stroke="#9aa39a" stroke-width="0.5" />
+<text x="77.435" y="29.612" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#3a4339" font-family="Arial, sans-serif">75°</text>
+<line x1="50" y1="132" x2="50" y2="34" stroke="#9aa39a" stroke-width="0.9" />
+<text x="50" y="26" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#3a4339" font-family="Arial, sans-serif">90°</text>
+<text x="99" y="141" text-anchor="middle" dominant-baseline="middle" font-size="6" fill="#3a4339" font-family="Arial, sans-serif">crosswind →</text>
+<text x="44" y="83" text-anchor="end" dominant-baseline="middle" font-size="6" fill="#3a4339" font-family="Arial, sans-serif" transform="rotate(-90 44 83)">head</text>
+</svg>

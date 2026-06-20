@@ -1,4 +1,6 @@
 import { E6B_STRINGS, type E6bLocale } from './strings';
+import crosswindGridSvg from './assets/crosswind-grid.svg?raw';
+import temperatureScaleSvg from './assets/temperature-scale.svg?raw';
 
 const NS = 'http://www.w3.org/2000/svg';
 const PXPERKT = 2.0;
@@ -41,6 +43,14 @@ function txt(x: number, y: number, value: string, opts: TextOpts = {}): SVGEleme
 function polar(cx: number, cy: number, r: number, deg: number): [number, number] {
 	const a = ((deg - 90) * Math.PI) / 180;
 	return [cx + r * Math.cos(a), cy + r * Math.sin(a)];
+}
+
+/** Appends the children of a standalone SVG asset (the static decorations) into `target`. */
+function injectSvg(target: SVGElement, raw: string): void {
+	const parsed = new DOMParser().parseFromString(raw, 'image/svg+xml').documentElement;
+	Array.from(parsed.childNodes).forEach((node) =>
+		target.appendChild(document.importNode(node, true))
+	);
 }
 
 function logAngle(v: number): number {
@@ -181,71 +191,12 @@ function buildFront(strings: typeof E6B_STRINGS.pl): FrontRefs {
 	);
 	const CWX = 40,
 		CWY = 24,
-		CWW = 200,
 		CWH = 120;
 	const ox = CWX + 10,
 		oy = CWY + CWH - 12;
 	const cwMaxKt = 50,
 		cwR = CWH - 22;
-	svg.appendChild(
-		el('rect', {
-			x: CWX,
-			y: CWY,
-			width: CWW,
-			height: CWH,
-			rx: 6,
-			fill: '#e9e7dd',
-			stroke: '#8a8a82'
-		})
-	);
-	svg.appendChild(
-		txt(CWX + CWW / 2, CWY + 10, 'WIND COMPONENTS (kt)', { size: 7, fill: '#1a1a14' })
-	);
-	for (let kt = 10; kt <= 50; kt += 10) {
-		const r = (kt / cwMaxKt) * cwR;
-		let dpath = `M ${ox + r} ${oy}`;
-		for (let a = 0; a <= 90; a += 3) {
-			const rad = (a * Math.PI) / 180;
-			dpath += ` L ${ox + r * Math.cos(rad)} ${oy - r * Math.sin(rad)}`;
-		}
-		svg.appendChild(
-			el('path', {
-				d: dpath,
-				fill: 'none',
-				stroke: '#9aa39a',
-				'stroke-width': kt % 50 === 0 ? 0.9 : 0.5
-			})
-		);
-		svg.appendChild(
-			txt(ox + r - 3, oy - 3, String(kt), { size: 6, fill: '#3a4339', anchor: 'end' })
-		);
-	}
-	for (let a = 0; a <= 90; a += 15) {
-		const rad = (a * Math.PI) / 180;
-		svg.appendChild(
-			el('line', {
-				x1: ox,
-				y1: oy,
-				x2: ox + cwR * Math.cos(rad),
-				y2: oy - cwR * Math.sin(rad),
-				stroke: '#9aa39a',
-				'stroke-width': a % 90 === 0 ? 0.9 : 0.5
-			})
-		);
-		const lr = cwR + 8;
-		svg.appendChild(
-			txt(ox + lr * Math.cos(rad), oy - lr * Math.sin(rad), `${a}°`, { size: 6, fill: '#3a4339' })
-		);
-	}
-	svg.appendChild(txt(ox + cwR / 2, oy + 9, 'crosswind →', { size: 6, fill: '#3a4339' }));
-	svg.appendChild(
-		txt(ox - 6, oy - cwR / 2, 'head', {
-			size: 6,
-			fill: '#3a4339',
-			anchor: 'end',
-			rot: `rotate(-90 ${ox - 6} ${oy - cwR / 2})`
-		})
-	);
+	injectSvg(svg, crosswindGridSvg);
 	const cwMark = el('g', { class: 'e6b-grab' });
 	cwMark.appendChild(
 		el('circle', { cx: 0, cy: 0, r: 7, fill: 'none', stroke: '#a8281c', 'stroke-width': 2 })
@@ -348,54 +299,7 @@ function buildFront(strings: typeof E6B_STRINGS.pl): FrontRefs {
 	const tCmin = -30,
 		tCmax = 50;
 	const tX = (c: number): number => TX + 20 + ((c - tCmin) / (tCmax - tCmin)) * (TW - 40);
-	svg.appendChild(
-		el('rect', { x: TX, y: TY, width: TW, height: TH, rx: 6, fill: '#e9e7dd', stroke: '#8a8a82' })
-	);
-	svg.appendChild(
-		txt(TX + TW / 2, TY + 9, 'TEMPERATURE  °C (gora) / °F (dol)', { size: 8, fill: '#1a1a14' })
-	);
-	for (let c = tCmin; c <= tCmax; c += 5) {
-		const x = tX(c),
-			big = c % 10 === 0;
-		svg.appendChild(
-			el('line', {
-				x1: x,
-				y1: TY + 18,
-				x2: x,
-				y2: TY + 18 + (big ? 9 : 5),
-				stroke: '#1a1a14',
-				'stroke-width': big ? 0.9 : 0.5
-			})
-		);
-		if (big) svg.appendChild(txt(x, TY + 15, String(c), { size: 6, fill: '#1a1a14' }));
-	}
-	for (let f = -20; f <= 120; f += 10) {
-		const c = ((f - 32) * 5) / 9;
-		if (c < tCmin || c > tCmax) continue;
-		const x = tX(c),
-			big = f % 20 === 0;
-		svg.appendChild(
-			el('line', {
-				x1: x,
-				y1: TY + TH - 18,
-				x2: x,
-				y2: TY + TH - 18 - (big ? 9 : 5),
-				stroke: '#a8281c',
-				'stroke-width': big ? 0.9 : 0.5
-			})
-		);
-		if (big) svg.appendChild(txt(x, TY + TH - 9, String(f), { size: 6, fill: '#a8281c' }));
-	}
-	svg.appendChild(
-		el('line', {
-			x1: tX(tCmin),
-			y1: TY + 30,
-			x2: tX(tCmax),
-			y2: TY + 30,
-			stroke: '#c9c6ba',
-			'stroke-width': 0.6
-		})
-	);
+	injectSvg(svg, temperatureScaleSvg);
 	const tMark = el('g', { class: 'e6b-grab' });
 	tMark.appendChild(
 		el('line', {
