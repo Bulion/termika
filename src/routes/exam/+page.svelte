@@ -241,7 +241,7 @@
 		align-self: flex-start;
 		padding: var(--space-3) var(--space-6);
 		font-size: 1rem;
-		color: var(--color-ink);
+		color: var(--color-on-accent);
 		background: var(--color-sun);
 		border: var(--border-width) solid var(--color-outline);
 		border-radius: var(--radius-md);

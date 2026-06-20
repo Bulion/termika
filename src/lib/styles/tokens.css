@@ -31,6 +31,10 @@
 	--color-ink-soft: #4a5a6a;
 	--color-outline: #1e2a3a;
 
+	/* Text on the light accent fills (sun/sky/lift/sink); dark in both themes since the
+	   accents stay light. Verified >= 4.5:1 against every accent in light and dark. */
+	--color-on-accent: #13213b;
+
 	--shadow-card: 0 4px 0 0 var(--color-outline);
 	--focus-ring: 0 0 0 3px var(--color-sun);
 }

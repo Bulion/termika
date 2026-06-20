@@ -93,6 +93,7 @@
 	}
 
 	.set[aria-pressed='true'] {
+		color: var(--color-on-accent);
 		background: var(--color-sky);
 	}
 

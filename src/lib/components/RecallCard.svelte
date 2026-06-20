@@ -112,6 +112,7 @@
 	}
 
 	.reveal {
+		color: var(--color-on-accent);
 		background: var(--color-sun);
 		align-self: flex-start;
 	}

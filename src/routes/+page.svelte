@@ -113,7 +113,7 @@
 		font-family: var(--font-display);
 		font-size: 1.25rem;
 		text-decoration: none;
-		color: var(--color-ink);
+		color: var(--color-on-accent);
 		background: var(--color-sun);
 		border: var(--border-width) solid var(--color-outline);
 		border-radius: var(--radius-md);

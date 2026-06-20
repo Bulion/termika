@@ -199,7 +199,7 @@
 
 	.action {
 		padding: var(--space-3) var(--space-4);
-		color: var(--color-ink);
+		color: var(--color-on-accent);
 		background: var(--color-sky);
 		border: var(--border-width) solid var(--color-outline);
 		border-radius: var(--radius-md);
