@@ -10,38 +10,56 @@ const convertOpSchema = z.object({
 	to: z.string().min(1)
 });
 
-/** Linear rule of thumb: result = value * factor + offset (e.g. ROD = GS * 5; °C -> °F). */
+/** Linear rule of thumb on the single input `value`: value * factor + offset (e.g. ROD = GS * 5). */
 const linearOpSchema = z.object({
 	kind: z.literal('linear'),
 	factor: z.number(),
 	offset: z.number().default(0)
 });
 
-export const drillOpSchema = z.discriminatedUnion('kind', [convertOpSchema, linearOpSchema]);
+/** Arithmetic formula over named inputs, e.g. "distance / speed * 60" for time-speed-distance. */
+const formulaOpSchema = z.object({
+	kind: z.literal('formula'),
+	expr: z.string().min(1)
+});
+
+export const drillOpSchema = z.discriminatedUnion('kind', [
+	convertOpSchema,
+	linearOpSchema,
+	formulaOpSchema
+]);
 export type DrillOp = z.infer<typeof drillOpSchema>;
 
-export const drillSchema = z.object({
-	id: z.string().min(1),
-	microSkill: microSkillSchema,
-	/** Localized template, with `{value}` replaced by the generated input. */
-	prompt: localizedTextSchema,
-	generate: z
-		.object({
-			min: z.number(),
-			max: z.number(),
-			step: z.number().positive()
-		})
-		.refine((g) => g.max > g.min, { message: 'max must be greater than min', path: ['max'] }),
-	op: drillOpSchema,
-	/** Short rule-of-thumb hint shown to the learner, e.g. "× 1,85". */
-	rule: localizedTextSchema.optional(),
-	/** Accepted error band as a percentage of the expected (rule-of-thumb) answer. */
-	tolerancePct: z.number().min(0).max(100),
-	timeLimitSec: z.number().positive().optional(),
-	/** Decimal places the learner is expected to answer to. */
-	round: z.number().int().min(0).max(6).default(0),
-	tags: z.array(z.string()).default([])
-});
+const rangeSchema = z
+	.object({ min: z.number(), max: z.number(), step: z.number().positive() })
+	.refine((g) => g.max > g.min, { message: 'max must be greater than min', path: ['max'] });
+
+const inputSchema = rangeSchema.and(z.object({ name: z.string().min(1) }));
+
+export const drillSchema = z
+	.object({
+		id: z.string().min(1),
+		microSkill: microSkillSchema,
+		/** Localized template; `{value}` (single input) or `{name}` (named inputs) is substituted. */
+		prompt: localizedTextSchema,
+		/** Single generated input named `value` (used by convert/linear ops). */
+		generate: rangeSchema.optional(),
+		/** Named generated inputs (used by formula ops), e.g. distance + speed. */
+		inputs: z.array(inputSchema).min(1).optional(),
+		op: drillOpSchema,
+		/** Short rule-of-thumb hint shown to the learner, e.g. "× 1,85". */
+		rule: localizedTextSchema.optional(),
+		/** Accepted error band as a percentage of the expected (rule-of-thumb) answer. */
+		tolerancePct: z.number().min(0).max(100),
+		timeLimitSec: z.number().positive().optional(),
+		/** Decimal places the learner is expected to answer to. */
+		round: z.number().int().min(0).max(6).default(0),
+		tags: z.array(z.string()).default([])
+	})
+	.refine((d) => Boolean(d.generate) !== Boolean(d.inputs), {
+		message: 'a drill needs exactly one of `generate` or `inputs`',
+		path: ['inputs']
+	});
 export type Drill = z.infer<typeof drillSchema>;
 
 export const drillSetSchema = z.object({

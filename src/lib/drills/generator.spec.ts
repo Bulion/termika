@@ -1,6 +1,20 @@
 import { describe, expect, it } from 'vitest';
 import type { Drill } from './schema';
-import { computeExpected, generateProblem, generateValue, isWithinTolerance } from './generator';
+import { computeExpected, generateProblem, generateScope, isWithinTolerance } from './generator';
+
+const tsdDrill: Drill = {
+	id: 'tsd',
+	microSkill: 'nav_rule',
+	prompt: { pl: '{distance} NM przy {speed} kt → min?' },
+	inputs: [
+		{ name: 'distance', min: 10, max: 100, step: 10 },
+		{ name: 'speed', min: 60, max: 120, step: 10 }
+	],
+	op: { kind: 'formula', expr: 'distance / speed * 60' },
+	tolerancePct: 5,
+	round: 0,
+	tags: []
+};
 
 const ktDrill: Drill = {
 	id: 'kt-kmh',
@@ -24,39 +38,48 @@ const linearDrill: Drill = {
 	tags: []
 };
 
-describe('generateValue', () => {
+describe('generateScope', () => {
 	it('returns the minimum at pick 0 and the maximum near pick 1', () => {
-		expect(generateValue(ktDrill, () => 0)).toBe(60);
-		expect(generateValue(ktDrill, () => 0.999999)).toBe(320);
+		expect(generateScope(ktDrill, () => 0)).toEqual({ value: 60 });
+		expect(generateScope(ktDrill, () => 0.999999)).toEqual({ value: 320 });
 	});
 
 	it('snaps to the configured step', () => {
-		expect(generateValue(ktDrill, () => 0.5)).toBe(190);
+		expect(generateScope(ktDrill, () => 0.5)).toEqual({ value: 190 });
 	});
 
-	it('clamps out-of-range pick values', () => {
-		expect(generateValue(ktDrill, () => -5)).toBe(60);
-		expect(generateValue(ktDrill, () => 5)).toBe(320);
+	it('generates one value per named input', () => {
+		expect(generateScope(tsdDrill, () => 0)).toEqual({ distance: 10, speed: 60 });
 	});
 });
 
 describe('computeExpected', () => {
 	it('converts units via convert-units', () => {
-		expect(computeExpected(ktDrill.op, 100)).toBeCloseTo(185.2, 1);
+		expect(computeExpected(ktDrill.op, { value: 100 })).toBeCloseTo(185.2, 1);
 	});
 
 	it('applies a linear rule of thumb', () => {
-		expect(computeExpected(linearDrill.op, 120)).toBe(600);
-		expect(computeExpected({ kind: 'linear', factor: 1.8, offset: 32 }, 100)).toBe(212);
+		expect(computeExpected(linearDrill.op, { value: 120 })).toBe(600);
+		expect(computeExpected({ kind: 'linear', factor: 1.8, offset: 32 }, { value: 100 })).toBe(212);
+	});
+
+	it('evaluates a multi-input formula', () => {
+		expect(computeExpected(tsdDrill.op, { distance: 30, speed: 90 })).toBe(20);
 	});
 });
 
 describe('generateProblem', () => {
 	it('substitutes the value into the prompt and computes the answer', () => {
 		const problem = generateProblem(linearDrill, 'pl', () => 0);
-		expect(problem.value).toBe(70);
+		expect(problem.scope).toEqual({ value: 70 });
 		expect(problem.prompt).toBe('GS 70 kt → ROD?');
 		expect(problem.expected).toBe(350);
+	});
+
+	it('substitutes multiple named inputs and evaluates the formula', () => {
+		const problem = generateProblem(tsdDrill, 'pl', () => 0);
+		expect(problem.prompt).toBe('10 NM przy 60 kt → min?');
+		expect(problem.expected).toBeCloseTo(10, 5);
 	});
 });
 

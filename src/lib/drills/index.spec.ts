@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { computeExpected, isWithinTolerance } from './generator';
+import { computeExpected, generateProblem, isWithinTolerance } from './generator';
 import { allDrills, DrillValidationError, loadDrillSets } from './index';
 
 describe('loadDrillSets (bundled data)', () => {
@@ -11,8 +11,8 @@ describe('loadDrillSets (bundled data)', () => {
 
 	it('every bundled drill produces a finite expected answer at its range edges', () => {
 		for (const drill of allDrills()) {
-			expect(Number.isFinite(computeExpected(drill.op, drill.generate.min))).toBe(true);
-			expect(Number.isFinite(computeExpected(drill.op, drill.generate.max))).toBe(true);
+			expect(Number.isFinite(generateProblem(drill, 'pl', () => 0).expected)).toBe(true);
+			expect(Number.isFinite(generateProblem(drill, 'pl', () => 0.999999).expected)).toBe(true);
 		}
 	});
 
@@ -56,7 +56,11 @@ describe('loadDrillSets (bundled data)', () => {
 
 	it('sanity-checks a known conversion against the tolerance band', () => {
 		expect(
-			isWithinTolerance(computeExpected({ kind: 'convert', from: 'knot', to: 'km/h' }, 100), 185, 3)
+			isWithinTolerance(
+				computeExpected({ kind: 'convert', from: 'knot', to: 'km/h' }, { value: 100 }),
+				185,
+				3
+			)
 		).toBe(true);
 	});
 });

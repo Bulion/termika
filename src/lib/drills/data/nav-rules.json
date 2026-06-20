@@ -34,6 +34,40 @@
 			"tolerancePct": 5,
 			"timeLimitSec": 10,
 			"tags": ["descent"]
+		},
+		{
+			"id": "time-speed-distance",
+			"microSkill": "nav_rule",
+			"prompt": {
+				"pl": "{distance} NM przy {speed} kt → czas (min)?",
+				"en": "{distance} NM at {speed} kt → time (min)?"
+			},
+			"inputs": [
+				{ "name": "distance", "min": 10, "max": 120, "step": 10 },
+				{ "name": "speed", "min": 60, "max": 120, "step": 10 }
+			],
+			"op": { "kind": "formula", "expr": "distance / speed * 60" },
+			"rule": { "pl": "odległość ÷ GS × 60", "en": "distance ÷ GS × 60" },
+			"tolerancePct": 5,
+			"timeLimitSec": 15,
+			"tags": ["time"]
+		},
+		{
+			"id": "one-in-sixty",
+			"microSkill": "nav_rule",
+			"prompt": {
+				"pl": "{offset} NM odchyłki po {leg} NM → błąd kursu (°)?",
+				"en": "{offset} NM off track after {leg} NM → track error (°)?"
+			},
+			"inputs": [
+				{ "name": "offset", "min": 1, "max": 10, "step": 1 },
+				{ "name": "leg", "min": 30, "max": 120, "step": 10 }
+			],
+			"op": { "kind": "formula", "expr": "offset / leg * 60" },
+			"rule": { "pl": "odchyłka ÷ przebyta odległość × 60", "en": "offset ÷ distance flown × 60" },
+			"tolerancePct": 8,
+			"timeLimitSec": 15,
+			"tags": ["track"]
 		}
 	]
 }

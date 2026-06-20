@@ -1,10 +1,13 @@
 import convert from 'convert-units';
 import { resolveText, type ContentLocale } from '../content/schema';
+import { evaluateExpr } from './expr';
 import type { Drill, DrillOp } from './schema';
+
+export type DrillScope = Record<string, number>;
 
 export interface DrillProblem {
 	drillId: string;
-	value: number;
+	scope: DrillScope;
 	expected: number;
 	prompt: string;
 	rule?: string;
@@ -13,22 +16,32 @@ export interface DrillProblem {
 	timeLimitSec?: number;
 }
 
-export function computeExpected(op: DrillOp, value: number): number {
+function snap(min: number, max: number, step: number, pick: () => number): number {
+	const steps = Math.floor((max - min) / step);
+	const clamped = Math.min(Math.max(pick(), 0), 0.999999);
+	return min + Math.round(clamped * steps) * step;
+}
+
+/** Generates the named input values for a drill (single `value`, or named `inputs`). */
+export function generateScope(drill: Drill, pick: () => number = Math.random): DrillScope {
+	if (drill.inputs) {
+		const scope: DrillScope = {};
+		for (const input of drill.inputs)
+			scope[input.name] = snap(input.min, input.max, input.step, pick);
+		return scope;
+	}
+	const { min, max, step } = drill.generate!;
+	return { value: snap(min, max, step, pick) };
+}
+
+export function computeExpected(op: DrillOp, scope: DrillScope): number {
 	if (op.kind === 'convert') {
-		return convert(value)
+		return convert(scope.value)
 			.from(op.from as convert.Unit)
 			.to(op.to as convert.Unit);
 	}
-	return value * op.factor + op.offset;
-}
-
-/** Picks a value on the drill's `min..max` grid using `pick`, an rng returning [0, 1). */
-export function generateValue(drill: Drill, pick: () => number = Math.random): number {
-	const { min, max, step } = drill.generate;
-	const steps = Math.floor((max - min) / step);
-	const clamped = Math.min(Math.max(pick(), 0), 0.999999);
-	const index = Math.round(clamped * steps);
-	return min + index * step;
+	if (op.kind === 'linear') return scope.value * op.factor + op.offset;
+	return evaluateExpr(op.expr, scope);
 }
 
 export function generateProblem(
@@ -36,12 +49,15 @@ export function generateProblem(
 	locale: ContentLocale,
 	pick: () => number = Math.random
 ): DrillProblem {
-	const value = generateValue(drill, pick);
-	const expected = computeExpected(drill.op, value);
-	const prompt = resolveText(drill.prompt, locale).replaceAll('{value}', String(value));
+	const scope = generateScope(drill, pick);
+	const expected = computeExpected(drill.op, scope);
+	let prompt = resolveText(drill.prompt, locale);
+	for (const [name, value] of Object.entries(scope)) {
+		prompt = prompt.replaceAll(`{${name}}`, String(value));
+	}
 	return {
 		drillId: drill.id,
-		value,
+		scope,
 		expected,
 		prompt,
 		rule: drill.rule ? resolveText(drill.rule, locale) : undefined,
