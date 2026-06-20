@@ -1,5 +1,7 @@
 import convert from 'convert-units';
 import { resolveText, type ContentLocale } from '../content/schema';
+import { angularDiff } from '../nav/headings';
+import { solveWindTriangle } from '../nav/wind';
 import { evaluateExpr } from './expr';
 import type { Drill, DrillOp } from './schema';
 
@@ -12,7 +14,9 @@ export interface DrillProblem {
 	prompt: string;
 	rule?: string;
 	round: number;
-	tolerancePct: number;
+	tolerancePct?: number;
+	toleranceAbs?: number;
+	circular?: boolean;
 	timeLimitSec?: number;
 }
 
@@ -41,6 +45,12 @@ export function computeExpected(op: DrillOp, scope: DrillScope): number {
 			.to(op.to as convert.Unit);
 	}
 	if (op.kind === 'linear') return scope.value * op.factor + op.offset;
+	if (op.kind === 'wind') {
+		const solution = solveWindTriangle(scope.tas, scope.tc, scope.wd, scope.ws);
+		if (op.solve === 'gs') return solution.groundSpeed;
+		if (op.solve === 'th') return solution.trueHeading;
+		return solution.windCorrectionAngle;
+	}
 	return evaluateExpr(op.expr, scope);
 }
 
@@ -63,6 +73,8 @@ export function generateProblem(
 		rule: drill.rule ? resolveText(drill.rule, locale) : undefined,
 		round: drill.round,
 		tolerancePct: drill.tolerancePct,
+		toleranceAbs: drill.toleranceAbs,
+		circular: drill.circular,
 		timeLimitSec: drill.timeLimitSec
 	};
 }
@@ -75,4 +87,18 @@ export function isWithinTolerance(expected: number, answer: number, tolerancePct
 	if (!Number.isFinite(answer)) return false;
 	const band = Math.abs(expected) * (tolerancePct / 100);
 	return Math.abs(answer - expected) <= band + 1e-9;
+}
+
+/**
+ * Acceptance check for a generated problem: an absolute band when set, otherwise a
+ * percentage band, and a wrap-around comparison for circular (bearing) answers.
+ */
+export function isAnswerAccepted(problem: DrillProblem, answer: number): boolean {
+	if (!Number.isFinite(answer)) return false;
+	const band =
+		problem.toleranceAbs ?? Math.abs(problem.expected) * ((problem.tolerancePct ?? 0) / 100);
+	const diff = problem.circular
+		? angularDiff(problem.expected, answer)
+		: Math.abs(answer - problem.expected);
+	return diff <= band + 1e-9;
 }

@@ -1,0 +1,56 @@
+{
+	"schemaVersion": 1,
+	"id": "e6b-wind",
+	"title": { "pl": "Komputer E6B: wiatr", "en": "E6B computer: wind" },
+	"description": {
+		"pl": "Trójkąt nawigacyjny jak na wietrznej stronie E6B: prędkość względem ziemi i kurs do utrzymania.",
+		"en": "The wind triangle from the E6B wind side: ground speed and the heading to fly."
+	},
+	"drills": [
+		{
+			"id": "wind-ground-speed",
+			"microSkill": "nav_rule",
+			"prompt": {
+				"pl": "TAS {tas} kt, kurs {tc}°, wiatr {wd}°/{ws} kt → GS (kt)?",
+				"en": "TAS {tas} kt, course {tc}°, wind {wd}°/{ws} kt → GS (kt)?"
+			},
+			"inputs": [
+				{ "name": "tas", "min": 70, "max": 140, "step": 5 },
+				{ "name": "tc", "min": 0, "max": 350, "step": 10 },
+				{ "name": "wd", "min": 0, "max": 350, "step": 10 },
+				{ "name": "ws", "min": 5, "max": 30, "step": 5 }
+			],
+			"op": { "kind": "wind", "solve": "gs" },
+			"rule": {
+				"pl": "GS = TAS · cos(WCA) − składowa czołowa wiatru",
+				"en": "GS = TAS · cos(WCA) − headwind component"
+			},
+			"toleranceAbs": 4,
+			"timeLimitSec": 30,
+			"tags": ["wind"]
+		},
+		{
+			"id": "wind-heading",
+			"microSkill": "nav_rule",
+			"prompt": {
+				"pl": "TAS {tas} kt, kurs {tc}°, wiatr {wd}°/{ws} kt → kurs do utrzymania TH (°)?",
+				"en": "TAS {tas} kt, course {tc}°, wind {wd}°/{ws} kt → heading to fly TH (°)?"
+			},
+			"inputs": [
+				{ "name": "tas", "min": 70, "max": 140, "step": 5 },
+				{ "name": "tc", "min": 0, "max": 350, "step": 10 },
+				{ "name": "wd", "min": 0, "max": 350, "step": 10 },
+				{ "name": "ws", "min": 5, "max": 30, "step": 5 }
+			],
+			"op": { "kind": "wind", "solve": "th" },
+			"rule": {
+				"pl": "TH = kurs + kąt poprawki na wiatr",
+				"en": "TH = course + wind correction angle"
+			},
+			"toleranceAbs": 3,
+			"circular": true,
+			"timeLimitSec": 30,
+			"tags": ["wind"]
+		}
+	]
+}

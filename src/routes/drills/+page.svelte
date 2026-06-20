@@ -23,6 +23,13 @@
 	</header>
 
 	<ul class="cards">
+		<li>
+			<a class="card lift card--tool" href={resolve('/drills/e6b')}>
+				<span class="card-title">{m.e6b_card_title()}</span>
+				<span class="card-desc">{m.e6b_card_desc()}</span>
+				<span class="go" aria-hidden="true">→</span>
+			</a>
+		</li>
 		{#each sets as set (set.id)}
 			<li>
 				<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
@@ -88,6 +95,11 @@
 		border: var(--border-width) solid var(--color-outline);
 		border-radius: var(--radius-lg);
 		box-shadow: var(--shadow-card);
+	}
+
+	.card--tool {
+		background: var(--color-surface-2);
+		border-style: dashed;
 	}
 
 	.card-title {

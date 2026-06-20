@@ -1,6 +1,6 @@
 /**
  * A tiny safe arithmetic evaluator for multi-input drill formulas (e.g. "distance / speed * 60").
- * Supports numbers, named variables, + - * /, parentheses and unary +/-. No JS eval, no globals.
+ * Supports numbers, named variables, + - * / %, parentheses and unary +/-. No JS eval, no globals.
  */
 export function evaluateExpr(expr: string, scope: Record<string, number>): number {
 	let pos = 0;
@@ -24,10 +24,10 @@ export function evaluateExpr(expr: string, scope: Record<string, number>): numbe
 	function parseTerm(): number {
 		let value = parseFactor();
 		skip();
-		while (expr[pos] === '*' || expr[pos] === '/') {
+		while (expr[pos] === '*' || expr[pos] === '/' || expr[pos] === '%') {
 			const op = expr[pos++];
 			const rhs = parseFactor();
-			value = op === '*' ? value * rhs : value / rhs;
+			value = op === '*' ? value * rhs : op === '/' ? value / rhs : value % rhs;
 			skip();
 		}
 		return value;

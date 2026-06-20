@@ -1,0 +1,121 @@
+{
+	"schemaVersion": 1,
+	"id": "magnetic-headings",
+	"title": { "pl": "Kursy: deklinacja i dewiacja", "en": "Headings: variation and deviation" },
+	"description": {
+		"pl": "Przeliczanie kursów rzeczywisty ↔ magnetyczny ↔ kompasowy. Wschód odejmij, zachód dodaj.",
+		"en": "Convert true ↔ magnetic ↔ compass headings. East is least, west is best."
+	},
+	"drills": [
+		{
+			"id": "th-to-mh-east",
+			"microSkill": "nav_rule",
+			"prompt": {
+				"pl": "TH {th}°, deklinacja {v}°E → MH (°)?",
+				"en": "TH {th}°, variation {v}°E → MH (°)?"
+			},
+			"inputs": [
+				{ "name": "th", "min": 10, "max": 350, "step": 5 },
+				{ "name": "v", "min": 1, "max": 12, "step": 1 }
+			],
+			"op": { "kind": "formula", "expr": "((th - v) % 360 + 360) % 360" },
+			"rule": { "pl": "wschód odejmij (magnetyczny mniejszy)", "en": "east is least" },
+			"toleranceAbs": 1,
+			"circular": true,
+			"timeLimitSec": 20,
+			"tags": ["variation"]
+		},
+		{
+			"id": "th-to-mh-west",
+			"microSkill": "nav_rule",
+			"prompt": {
+				"pl": "TH {th}°, deklinacja {v}°W → MH (°)?",
+				"en": "TH {th}°, variation {v}°W → MH (°)?"
+			},
+			"inputs": [
+				{ "name": "th", "min": 10, "max": 350, "step": 5 },
+				{ "name": "v", "min": 1, "max": 12, "step": 1 }
+			],
+			"op": { "kind": "formula", "expr": "((th + v) % 360 + 360) % 360" },
+			"rule": { "pl": "zachód dodaj (magnetyczny większy)", "en": "west is best" },
+			"toleranceAbs": 1,
+			"circular": true,
+			"timeLimitSec": 20,
+			"tags": ["variation"]
+		},
+		{
+			"id": "mh-to-ch-east",
+			"microSkill": "nav_rule",
+			"prompt": {
+				"pl": "MH {mh}°, dewiacja {d}°E → CH (°)?",
+				"en": "MH {mh}°, deviation {d}°E → CH (°)?"
+			},
+			"inputs": [
+				{ "name": "mh", "min": 10, "max": 350, "step": 5 },
+				{ "name": "d", "min": 1, "max": 6, "step": 1 }
+			],
+			"op": { "kind": "formula", "expr": "((mh - d) % 360 + 360) % 360" },
+			"rule": { "pl": "wschód odejmij", "en": "east is least" },
+			"toleranceAbs": 1,
+			"circular": true,
+			"timeLimitSec": 20,
+			"tags": ["deviation"]
+		},
+		{
+			"id": "mh-to-ch-west",
+			"microSkill": "nav_rule",
+			"prompt": {
+				"pl": "MH {mh}°, dewiacja {d}°W → CH (°)?",
+				"en": "MH {mh}°, deviation {d}°W → CH (°)?"
+			},
+			"inputs": [
+				{ "name": "mh", "min": 10, "max": 350, "step": 5 },
+				{ "name": "d", "min": 1, "max": 6, "step": 1 }
+			],
+			"op": { "kind": "formula", "expr": "((mh + d) % 360 + 360) % 360" },
+			"rule": { "pl": "zachód dodaj", "en": "west is best" },
+			"toleranceAbs": 1,
+			"circular": true,
+			"timeLimitSec": 20,
+			"tags": ["deviation"]
+		},
+		{
+			"id": "th-to-ch-west",
+			"microSkill": "nav_rule",
+			"prompt": {
+				"pl": "TH {th}°, deklinacja {v}°W, dewiacja {d}°W → CH (°)?",
+				"en": "TH {th}°, variation {v}°W, deviation {d}°W → CH (°)?"
+			},
+			"inputs": [
+				{ "name": "th", "min": 10, "max": 350, "step": 5 },
+				{ "name": "v", "min": 1, "max": 12, "step": 1 },
+				{ "name": "d", "min": 1, "max": 6, "step": 1 }
+			],
+			"op": { "kind": "formula", "expr": "((th + v + d) % 360 + 360) % 360" },
+			"rule": { "pl": "cały łańcuch: zachód dodaj", "en": "whole chain: add west" },
+			"toleranceAbs": 1,
+			"circular": true,
+			"timeLimitSec": 25,
+			"tags": ["variation", "deviation"]
+		},
+		{
+			"id": "ch-to-th-east",
+			"microSkill": "nav_rule",
+			"prompt": {
+				"pl": "CH {ch}°, dewiacja {d}°E, deklinacja {v}°E → TH (°)?",
+				"en": "CH {ch}°, deviation {d}°E, variation {v}°E → TH (°)?"
+			},
+			"inputs": [
+				{ "name": "ch", "min": 10, "max": 350, "step": 5 },
+				{ "name": "d", "min": 1, "max": 6, "step": 1 },
+				{ "name": "v", "min": 1, "max": 12, "step": 1 }
+			],
+			"op": { "kind": "formula", "expr": "((ch + d + v) % 360 + 360) % 360" },
+			"rule": { "pl": "w drugą stronę: wschód dodaj", "en": "reverse chain: add east" },
+			"toleranceAbs": 1,
+			"circular": true,
+			"timeLimitSec": 25,
+			"tags": ["variation", "deviation"]
+		}
+	]
+}

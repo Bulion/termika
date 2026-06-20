@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onDestroy, onMount } from 'svelte';
 	import type { ContentLocale } from '$lib/content/schema';
-	import { generateProblem, isWithinTolerance, type DrillProblem } from '$lib/drills/generator';
+	import { generateProblem, isAnswerAccepted, type DrillProblem } from '$lib/drills/generator';
 	import type { Attempt } from '$lib/drills/fluency';
 	import type { Drill } from '$lib/drills/schema';
 	import { m } from '$lib/paraglide/messages.js';
@@ -77,7 +77,7 @@
 		if (phase !== 'answering' || answer.trim() === '') return;
 		clearInterval(ticker);
 		const value = Number.parseFloat(answer.replace(',', '.'));
-		lastCorrect = isWithinTolerance(problem.expected, value, problem.tolerancePct);
+		lastCorrect = isAnswerAccepted(problem, value);
 		phase = 'feedback';
 		onAttempt?.({ drillId: problem.drillId, correct: lastCorrect, latencyMs: now() - startedAt });
 	}

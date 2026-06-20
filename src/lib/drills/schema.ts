@@ -23,10 +23,17 @@ const formulaOpSchema = z.object({
 	expr: z.string().min(1)
 });
 
+/** E6B wind triangle over inputs `tas`, `tc`, `wd`, `ws`; `solve` picks the output. */
+const windOpSchema = z.object({
+	kind: z.literal('wind'),
+	solve: z.enum(['gs', 'wca', 'th'])
+});
+
 export const drillOpSchema = z.discriminatedUnion('kind', [
 	convertOpSchema,
 	linearOpSchema,
-	formulaOpSchema
+	formulaOpSchema,
+	windOpSchema
 ]);
 export type DrillOp = z.infer<typeof drillOpSchema>;
 
@@ -50,7 +57,11 @@ export const drillSchema = z
 		/** Short rule-of-thumb hint shown to the learner, e.g. "× 1,85". */
 		rule: localizedTextSchema.optional(),
 		/** Accepted error band as a percentage of the expected (rule-of-thumb) answer. */
-		tolerancePct: z.number().min(0).max(100),
+		tolerancePct: z.number().min(0).max(100).optional(),
+		/** Accepted error band in the answer's own unit (e.g. ±2° for headings). */
+		toleranceAbs: z.number().min(0).optional(),
+		/** Compare answers as bearings (wrap at 360°), used by heading drills. */
+		circular: z.boolean().optional(),
 		timeLimitSec: z.number().positive().optional(),
 		/** Decimal places the learner is expected to answer to. */
 		round: z.number().int().min(0).max(6).default(0),
@@ -59,6 +70,10 @@ export const drillSchema = z
 	.refine((d) => Boolean(d.generate) !== Boolean(d.inputs), {
 		message: 'a drill needs exactly one of `generate` or `inputs`',
 		path: ['inputs']
+	})
+	.refine((d) => d.tolerancePct !== undefined || d.toleranceAbs !== undefined, {
+		message: 'a drill needs either `tolerancePct` or `toleranceAbs`',
+		path: ['tolerancePct']
 	});
 export type Drill = z.infer<typeof drillSchema>;
 

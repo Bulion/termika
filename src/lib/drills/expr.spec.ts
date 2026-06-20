@@ -17,6 +17,11 @@ describe('evaluateExpr', () => {
 		expect(evaluateExpr('10 - -5', {})).toBe(15);
 	});
 
+	it('supports modulo for compass wrap-around', () => {
+		expect(evaluateExpr('(th + 360) % 360', { th: 5 })).toBe(5);
+		expect(evaluateExpr('(357 + 8) % 360', {})).toBe(5);
+	});
+
 	it('throws on an unknown variable (negative case)', () => {
 		expect(() => evaluateExpr('a + b', { a: 1 })).toThrow(/unknown variable/);
 	});

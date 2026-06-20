@@ -1,6 +1,13 @@
 import { describe, expect, it } from 'vitest';
 import type { Drill } from './schema';
-import { computeExpected, generateProblem, generateScope, isWithinTolerance } from './generator';
+import {
+	computeExpected,
+	generateProblem,
+	generateScope,
+	isAnswerAccepted,
+	isWithinTolerance,
+	type DrillProblem
+} from './generator';
 
 const tsdDrill: Drill = {
 	id: 'tsd',
@@ -65,6 +72,43 @@ describe('computeExpected', () => {
 
 	it('evaluates a multi-input formula', () => {
 		expect(computeExpected(tsdDrill.op, { distance: 30, speed: 90 })).toBe(20);
+	});
+
+	it('solves the wind triangle for ground speed', () => {
+		const gs = computeExpected({ kind: 'wind', solve: 'gs' }, { tas: 100, tc: 90, wd: 90, ws: 20 });
+		expect(gs).toBeCloseTo(80, 1);
+	});
+});
+
+describe('isAnswerAccepted', () => {
+	const base: DrillProblem = {
+		drillId: 'd',
+		scope: {},
+		expected: 0,
+		prompt: '',
+		round: 0
+	};
+
+	it('uses an absolute band when set', () => {
+		const problem = { ...base, expected: 120, toleranceAbs: 2 };
+		expect(isAnswerAccepted(problem, 122)).toBe(true);
+		expect(isAnswerAccepted(problem, 123)).toBe(false);
+	});
+
+	it('compares bearings the short way around when circular', () => {
+		const problem = { ...base, expected: 2, toleranceAbs: 3, circular: true };
+		expect(isAnswerAccepted(problem, 359)).toBe(true);
+		expect(isAnswerAccepted(problem, 350)).toBe(false);
+	});
+
+	it('falls back to a percentage band', () => {
+		const problem = { ...base, expected: 200, tolerancePct: 5 };
+		expect(isAnswerAccepted(problem, 209)).toBe(true);
+		expect(isAnswerAccepted(problem, 211)).toBe(false);
+	});
+
+	it('rejects a non-finite answer (negative case)', () => {
+		expect(isAnswerAccepted({ ...base, expected: 100, toleranceAbs: 1 }, Number.NaN)).toBe(false);
 	});
 });
 
