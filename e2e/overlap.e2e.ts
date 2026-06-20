@@ -6,6 +6,8 @@ const routes = [
 	'./study/session?mode=all',
 	'./drills',
 	'./drills/run?set=nav-rules',
+	'./drills/quiz?set=phonetic-alphabet',
+	'./drills/quiz?set=abbreviations',
 	'./exam',
 	'./dashboard'
 ];

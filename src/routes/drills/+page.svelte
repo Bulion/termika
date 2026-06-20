@@ -4,11 +4,14 @@
 	import { resolveText } from '$lib/content/schema';
 	import { loadDrillSets } from '$lib/drills/index';
 	import type { DrillSet } from '$lib/drills/schema';
+	import { loadQuizSets } from '$lib/quiz/index';
+	import type { QuizSet } from '$lib/quiz/schema';
 	import { m } from '$lib/paraglide/messages.js';
 	import { getLocale } from '$lib/paraglide/runtime';
 
 	const locale = (): ContentLocale => (getLocale() === 'pl' ? 'pl' : 'en');
 	const sets: DrillSet[] = loadDrillSets();
+	const quizSets: QuizSet[] = loadQuizSets();
 </script>
 
 <svelte:head><title>{m.drills_title()} · {m.app_name()}</title></svelte:head>
@@ -29,6 +32,19 @@
 						<span class="card-desc">{resolveText(set.description, locale())}</span>
 					{/if}
 					<span class="count">{m.exercises_count({ count: set.drills.length })}</span>
+					<span class="go" aria-hidden="true">→</span>
+				</a>
+			</li>
+		{/each}
+		{#each quizSets as set (set.id)}
+			<li>
+				<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+				<a class="card lift" href={`${resolve('/drills/quiz')}?set=${set.id}`}>
+					<span class="card-title">{resolveText(set.title, locale())}</span>
+					{#if set.description}
+						<span class="card-desc">{resolveText(set.description, locale())}</span>
+					{/if}
+					<span class="count">{m.exercises_count({ count: set.pairs.length })}</span>
 					<span class="go" aria-hidden="true">→</span>
 				</a>
 			</li>

@@ -1,0 +1,163 @@
+{
+	"schemaVersion": 1,
+	"id": "abbreviations",
+	"title": { "pl": "Skróty lotnicze", "en": "Aviation abbreviations" },
+	"description": {
+		"pl": "Skróty w obie strony: ze skrótu rozwiń pełną nazwę i odwrotnie.",
+		"en": "Abbreviations both ways: expand the acronym and recall it from its meaning."
+	},
+	"labelA": { "pl": "Skrót", "en": "Abbreviation" },
+	"labelB": { "pl": "Rozwinięcie", "en": "Expansion" },
+	"directions": ["a-to-b", "b-to-a"],
+	"timeLimitSec": 20,
+	"pairs": [
+		{
+			"id": "abbr-metar",
+			"a": { "pl": "METAR" },
+			"b": { "pl": "Meteorological Aerodrome Report" },
+			"acceptB": ["Aviation Routine Weather Report"],
+			"hint": {
+				"pl": "rutynowa depesza pogodowa lotniska",
+				"en": "routine aerodrome weather report"
+			}
+		},
+		{
+			"id": "abbr-taf",
+			"a": { "pl": "TAF" },
+			"b": { "pl": "Terminal Aerodrome Forecast" },
+			"hint": { "pl": "prognoza pogody dla lotniska", "en": "aerodrome weather forecast" }
+		},
+		{
+			"id": "abbr-atis",
+			"a": { "pl": "ATIS" },
+			"b": { "pl": "Automatic Terminal Information Service" },
+			"hint": {
+				"pl": "automatyczna informacja lotniskowa",
+				"en": "automatic aerodrome information broadcast"
+			}
+		},
+		{
+			"id": "abbr-vfr",
+			"a": { "pl": "VFR" },
+			"b": { "pl": "Visual Flight Rules" },
+			"hint": { "pl": "przepisy wykonywania lotów z widocznością", "en": "visual flight rules" }
+		},
+		{
+			"id": "abbr-ifr",
+			"a": { "pl": "IFR" },
+			"b": { "pl": "Instrument Flight Rules" },
+			"hint": {
+				"pl": "przepisy wykonywania lotów według wskazań przyrządów",
+				"en": "instrument flight rules"
+			}
+		},
+		{
+			"id": "abbr-atc",
+			"a": { "pl": "ATC" },
+			"b": { "pl": "Air Traffic Control" },
+			"hint": { "pl": "kontrola ruchu lotniczego", "en": "air traffic control" }
+		},
+		{
+			"id": "abbr-notam",
+			"a": { "pl": "NOTAM" },
+			"b": { "pl": "Notice to Airmen" },
+			"acceptB": ["Notice to Air Missions"],
+			"hint": {
+				"pl": "bieżąca informacja dla pilotów o stanie urządzeń i procedur",
+				"en": "notice to airmen"
+			}
+		},
+		{
+			"id": "abbr-agl",
+			"a": { "pl": "AGL" },
+			"b": { "pl": "Above Ground Level" },
+			"hint": { "pl": "wysokość nad poziomem terenu", "en": "height above ground level" }
+		},
+		{
+			"id": "abbr-amsl",
+			"a": { "pl": "AMSL" },
+			"b": { "pl": "Above Mean Sea Level" },
+			"hint": { "pl": "wysokość nad średnim poziomem morza", "en": "altitude above mean sea level" }
+		},
+		{
+			"id": "abbr-tas",
+			"a": { "pl": "TAS" },
+			"b": { "pl": "True Airspeed" },
+			"hint": { "pl": "prędkość rzeczywista względem powietrza", "en": "true airspeed" }
+		},
+		{
+			"id": "abbr-ias",
+			"a": { "pl": "IAS" },
+			"b": { "pl": "Indicated Airspeed" },
+			"hint": { "pl": "prędkość przyrządowa", "en": "indicated airspeed" }
+		},
+		{
+			"id": "abbr-gs",
+			"a": { "pl": "GS" },
+			"b": { "pl": "Ground Speed" },
+			"hint": { "pl": "prędkość względem ziemi", "en": "ground speed" }
+		},
+		{
+			"id": "abbr-eta",
+			"a": { "pl": "ETA" },
+			"b": { "pl": "Estimated Time of Arrival" },
+			"hint": { "pl": "przewidywany czas przylotu", "en": "estimated time of arrival" }
+		},
+		{
+			"id": "abbr-etd",
+			"a": { "pl": "ETD" },
+			"b": { "pl": "Estimated Time of Departure" },
+			"hint": { "pl": "przewidywany czas odlotu", "en": "estimated time of departure" }
+		},
+		{
+			"id": "abbr-mtow",
+			"a": { "pl": "MTOW" },
+			"b": { "pl": "Maximum Take-Off Weight" },
+			"acceptB": ["Maximum Take-Off Mass"],
+			"hint": { "pl": "maksymalna masa startowa", "en": "maximum take-off mass" }
+		},
+		{
+			"id": "abbr-cg",
+			"a": { "pl": "CG" },
+			"b": { "pl": "Centre of Gravity" },
+			"acceptB": ["Center of Gravity"],
+			"hint": { "pl": "środek ciężkości", "en": "centre of gravity" }
+		},
+		{
+			"id": "abbr-rvr",
+			"a": { "pl": "RVR" },
+			"b": { "pl": "Runway Visual Range" },
+			"hint": { "pl": "zasięg widzialności wzdłuż drogi startowej", "en": "runway visual range" }
+		},
+		{
+			"id": "abbr-ils",
+			"a": { "pl": "ILS" },
+			"b": { "pl": "Instrument Landing System" },
+			"hint": { "pl": "system lądowania według przyrządów", "en": "instrument landing system" }
+		},
+		{
+			"id": "abbr-vor",
+			"a": { "pl": "VOR" },
+			"b": { "pl": "VHF Omnidirectional Range" },
+			"hint": { "pl": "radiolatarnia ogólnokierunkowa VHF", "en": "VHF omnidirectional range" }
+		},
+		{
+			"id": "abbr-tem",
+			"a": { "pl": "TEM" },
+			"b": { "pl": "Threat and Error Management" },
+			"hint": { "pl": "zarządzanie zagrożeniami i błędami", "en": "threat and error management" }
+		},
+		{
+			"id": "abbr-roc",
+			"a": { "pl": "ROC" },
+			"b": { "pl": "Rate of Climb" },
+			"hint": { "pl": "prędkość wznoszenia", "en": "rate of climb" }
+		},
+		{
+			"id": "abbr-rod",
+			"a": { "pl": "ROD" },
+			"b": { "pl": "Rate of Descent" },
+			"hint": { "pl": "prędkość opadania", "en": "rate of descent" }
+		}
+	]
+}
