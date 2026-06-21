@@ -115,5 +115,12 @@
 	"theme_system": "Systemowy",
 	"theme_light": "Jasny",
 	"theme_dark": "Ciemny",
-	"lang_label": "Język"
+	"lang_label": "Język",
+	"glossary_title": "Glosariusz",
+	"glossary_desc": "Przeszukaj lotnicze skróty i kody METAR.",
+	"glossary_card_desc": "Słownik skrótów i kodów pogodowych z wyszukiwarką.",
+	"glossary_search": "Szukaj skrótu lub znaczenia…",
+	"glossary_group_abbreviations": "Skróty",
+	"glossary_group_metar": "Kody METAR",
+	"glossary_empty": "Brak wyników dla podanej frazy."
 }

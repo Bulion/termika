@@ -1,16 +1,45 @@
 <script lang="ts">
 	import { parseRichText } from '$lib/text/rich-text';
 	import { renderFormula } from '$lib/text/katex';
+	import { glossaryEnabled } from '$lib/glossary/context';
+	import { findGlossaryMatches } from '$lib/glossary/data';
+	import { getLocale } from '$lib/paraglide/runtime';
+	import GlossaryTerm from './GlossaryTerm.svelte';
 
 	let { text }: { text: string } = $props();
 
+	const enabled = glossaryEnabled();
 	const segments = $derived(parseRichText(text));
+
+	type Item =
+		| { kind: 'sub' | 'sup' | 'formula' | 'text'; text: string }
+		| { kind: 'term'; text: string; definition: string };
+
+	const items = $derived.by((): Item[] => {
+		const locale = getLocale() === 'pl' ? 'pl' : 'en';
+		const out: Item[] = [];
+		const used = new Set<string>();
+		for (const seg of segments) {
+			if (seg.kind === 'normal' && enabled) {
+				for (const part of findGlossaryMatches(seg.text, locale, used)) {
+					if (typeof part === 'string') out.push({ kind: 'text', text: part });
+					else out.push({ kind: 'term', text: part.term, definition: part.definition });
+				}
+			} else {
+				out.push({ kind: seg.kind === 'normal' ? 'text' : seg.kind, text: seg.text });
+			}
+		}
+		return out;
+	});
 </script>
 
-{#each segments as seg, i (i)}{#if seg.kind === 'sub'}<sub>{seg.text}</sub
-		>{:else if seg.kind === 'sup'}<sup>{seg.text}</sup>{:else if seg.kind === 'formula'}<span
-			class="formula">{@html renderFormula(seg.text)}</span
-		>{:else}{seg.text}{/if}{/each}
+{#each items as item, i (i)}{#if item.kind === 'sub'}<sub>{item.text}</sub
+		>{:else if item.kind === 'sup'}<sup>{item.text}</sup>{:else if item.kind === 'formula'}<span
+			class="formula">{@html renderFormula(item.text)}</span
+		>{:else if item.kind === 'term'}<GlossaryTerm
+			term={item.text}
+			definition={item.definition}
+		/>{:else}{item.text}{/if}{/each}
 
 <style>
 	.formula {
