@@ -33,6 +33,8 @@ export interface MockResultRow {
 	scorePct: number;
 	passed: boolean;
 	finishedAt: Date;
+	/** Per-category correct/total for external exams; absent on older rows. */
+	categories?: { id: string; correct: number; total: number }[];
 }
 
 export class TermikaDb extends Dexie {

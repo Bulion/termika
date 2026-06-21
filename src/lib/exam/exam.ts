@@ -89,3 +89,25 @@ export function scoreExam(
 		wrongItemIds
 	};
 }
+
+/**
+ * Groups exam questions by their `cat-<id>` tag and counts correct/total per category,
+ * so a whole-bank external exam updates every category it touched. Questions without a
+ * category tag are ignored.
+ */
+export function scoreByCategory(
+	questions: Mcq[],
+	answers: Map<string, string | null>
+): { id: string; correct: number; total: number }[] {
+	const byId = new Map<string, { correct: number; total: number }>();
+	for (const question of questions) {
+		const tag = question.tags.find((t) => t.startsWith('cat-'));
+		if (!tag) continue;
+		const id = tag.slice('cat-'.length);
+		const bucket = byId.get(id) ?? { correct: 0, total: 0 };
+		bucket.total += 1;
+		if ((answers.get(question.id) ?? null) === question.answer) bucket.correct += 1;
+		byId.set(id, bucket);
+	}
+	return [...byId.entries()].map(([id, b]) => ({ id, ...b }));
+}

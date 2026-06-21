@@ -24,6 +24,7 @@
 	<header>
 		<h1>{m.study_title()}</h1>
 		<p class="lead">{m.exercise_choose()}</p>
+		<p class="unofficial-note">{m.study_unofficial_note()}</p>
 	</header>
 
 	<ul class="cards">
@@ -78,6 +79,16 @@
 		font-family: var(--font-mono);
 		color: var(--color-ink-soft);
 		margin: var(--space-2) 0 0;
+	}
+
+	.unofficial-note {
+		margin: var(--space-3) 0 0;
+		padding: var(--space-2) var(--space-3);
+		font-size: 0.85rem;
+		color: var(--color-ink-soft);
+		background: var(--color-surface-2);
+		border-left: var(--border-width) solid var(--color-sun);
+		border-radius: var(--radius-sm);
 	}
 
 	.external {

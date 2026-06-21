@@ -1,7 +1,14 @@
 import { describe, expect, it } from 'vitest';
 import type { Mcq, StudyItem } from '../content/schema';
 import type { Subject } from '../content/taxonomy';
-import { loIdToSubject, mcqItemsForSubject, pickQuestions, scoreExam, shuffle } from './exam';
+import {
+	loIdToSubject,
+	mcqItemsForSubject,
+	pickQuestions,
+	scoreByCategory,
+	scoreExam,
+	shuffle
+} from './exam';
 
 function mcq(id: string, loId: string, answer = 'a'): Mcq {
 	return {
@@ -115,5 +122,28 @@ describe('scoreExam', () => {
 		const result = scoreExam([], new Map(), 0);
 		expect(result.total).toBe(0);
 		expect(result.passed).toBe(false);
+	});
+});
+
+describe('scoreByCategory', () => {
+	const tagged = (id: string, cat: string, answer = 'a'): Mcq => ({
+		...mcq(id, 'lo', answer),
+		tags: ['ulc', `cat-${cat}`]
+	});
+
+	it('groups correct/total by the cat tag', () => {
+		const qs = [tagged('q1', '18'), tagged('q2', '18'), tagged('q3', '22')];
+		const answers = new Map([
+			['q1', 'a'],
+			['q2', 'b'],
+			['q3', 'a']
+		]);
+		const breakdown = scoreByCategory(qs, answers);
+		expect(breakdown.find((c) => c.id === '18')).toEqual({ id: '18', correct: 1, total: 2 });
+		expect(breakdown.find((c) => c.id === '22')).toEqual({ id: '22', correct: 1, total: 1 });
+	});
+
+	it('ignores questions without a category tag', () => {
+		expect(scoreByCategory([mcq('x', 'lo')], new Map([['x', 'a']]))).toEqual([]);
 	});
 });

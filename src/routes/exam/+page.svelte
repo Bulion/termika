@@ -12,6 +12,7 @@
 		loIdToSubject,
 		mcqItemsForSubject,
 		pickQuestions,
+		scoreByCategory,
 		scoreExam,
 		type ExamResult
 	} from '$lib/exam/exam';
@@ -49,6 +50,7 @@
 	let activeExternal = false;
 	let activePassPct = 75;
 	let activeExtLabel = $state('');
+	const externalSources = EXAM_SOURCES.filter((s) => s.external);
 	const activeSource = $derived(EXAM_SOURCES.find((s) => s.id === sourceId) ?? EXAM_SOURCES[0]);
 
 	async function selectSource(id: string) {
@@ -159,7 +161,8 @@
 
 	async function submit() {
 		clearInterval(timer);
-		const scored = scoreExam(questions, new Map(Object.entries(answers)), activePassPct);
+		const answerMap = new Map(Object.entries(answers));
+		const scored = scoreExam(questions, answerMap, activePassPct);
 		result = scored;
 		phase = 'result';
 		await db.mockResults.add({
@@ -167,7 +170,8 @@
 			subjectId: activeSubjectId,
 			scorePct: scored.scorePct,
 			passed: scored.passed,
-			finishedAt: new Date()
+			finishedAt: new Date(),
+			...(activeExternal ? { categories: scoreByCategory(questions, answerMap) } : {})
 		});
 		if (!activeExternal) {
 			for (const itemId of scored.wrongItemIds) {
@@ -183,18 +187,20 @@
 	<h1>{m.exam_title()}</h1>
 
 	{#if phase === 'select'}
-		<div class="sources" role="group" aria-label={m.exam_source()}>
-			{#each EXAM_SOURCES as src (src.id)}
-				<button
-					type="button"
-					class="src"
-					aria-pressed={sourceId === src.id}
-					onclick={() => selectSource(src.id)}
-				>
-					{resolveText(src.label, locale())}
-				</button>
-			{/each}
-		</div>
+		{#if externalSources.length > 1}
+			<div class="sources" role="group" aria-label={m.exam_source()}>
+				{#each externalSources as src (src.id)}
+					<button
+						type="button"
+						class="src"
+						aria-pressed={sourceId === src.id}
+						onclick={() => selectSource(src.id)}
+					>
+						{resolveText(src.label, locale())}
+					</button>
+				{/each}
+			</div>
+		{/if}
 
 		{#if activeSource.external && activeSource.hasCategories}
 			{#if loadingCats}
