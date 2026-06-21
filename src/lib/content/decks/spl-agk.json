@@ -32,12 +32,12 @@
 			"licenses": ["SPL"],
 			"tags": ["limits", "speed"],
 			"front": {
-				"pl": "Co oznacza VNE i jak jest zaznaczona na prędkościomierzu?",
-				"en": "What is VNE and how is it marked on the airspeed indicator?"
+				"pl": "Co oznacza `V_{NE}` i jak jest zaznaczona na prędkościomierzu?",
+				"en": "What is `V_{NE}` and how is it marked on the airspeed indicator?"
 			},
 			"back": {
-				"pl": "VNE to prędkość nigdy nieprzekraczalna (never exceed speed); zaznaczona czerwoną kreską radialną na końcu żółtego pola.",
-				"en": "VNE is the never exceed speed; marked by a red radial line at the end of the yellow arc."
+				"pl": "`V_{NE}` to prędkość nigdy nieprzekraczalna (never exceed speed); zaznaczona czerwoną kreską radialną na końcu żółtego pola.",
+				"en": "`V_{NE}` is the never exceed speed; marked by a red radial line at the end of the yellow arc."
 			},
 			"source": "authored:spl"
 		},
@@ -53,8 +53,8 @@
 				"en": "What does the yellow arc on a glider airspeed indicator mean?"
 			},
 			"back": {
-				"pl": "Zakres ostrożności (od VRA do VNE) dozwolony tylko w spokojnym powietrzu; loty w turbulencji w tym zakresie są zabronione.",
-				"en": "The caution range (from VRA up to VNE) allowed only in smooth air; flight in turbulence in this range is prohibited."
+				"pl": "Zakres ostrożności (od `V_{RA}` do `V_{NE}`) dozwolony tylko w spokojnym powietrzu; loty w turbulencji w tym zakresie są zabronione.",
+				"en": "The caution range (from `V_{RA}` up to `V_{NE}`) allowed only in smooth air; flight in turbulence in this range is prohibited."
 			},
 			"source": "authored:spl"
 		},
@@ -70,8 +70,8 @@
 				"en": "What does the green arc on a glider airspeed indicator mean?"
 			},
 			"back": {
-				"pl": "Normalny zakres eksploatacyjny - od prędkości przeciągnięcia (Vs1) do prędkości w powietrzu burzliwym (VRA); dozwolony także w turbulencji.",
-				"en": "The normal operating range - from stall speed (Vs1) up to the rough-air speed (VRA); permitted also in turbulence."
+				"pl": "Normalny zakres eksploatacyjny - od prędkości przeciągnięcia (`V_{S1}`) do prędkości w powietrzu burzliwym (`V_{RA}`); dozwolony także w turbulencji.",
+				"en": "The normal operating range - from stall speed (`V_{S1}`) up to the rough-air speed (`V_{RA}`); permitted also in turbulence."
 			},
 			"source": "authored:spl"
 		},
@@ -236,8 +236,8 @@
 			"licenses": ["SPL"],
 			"tags": ["limits", "speed"],
 			"stem": {
-				"pl": "W jaki sposób na prędkościomierzu szybowca oznaczona jest prędkość nigdy nieprzekraczalna (VNE)?",
-				"en": "How is the never exceed speed (VNE) marked on a glider airspeed indicator?"
+				"pl": "W jaki sposób na prędkościomierzu szybowca oznaczona jest prędkość nigdy nieprzekraczalna (`V_{NE}`)?",
+				"en": "How is the never exceed speed (`V_{NE}`) marked on a glider airspeed indicator?"
 			},
 			"choices": [
 				{
@@ -271,8 +271,8 @@
 			],
 			"answer": "a",
 			"explanation": {
-				"pl": "VNE jest zaznaczona czerwoną kreską radialną na końcu żółtego pola; jej przekroczenie grozi zniszczeniem konstrukcji.",
-				"en": "VNE is marked by a red radial line at the end of the yellow arc; exceeding it risks structural failure."
+				"pl": "`V_{NE}` jest zaznaczona czerwoną kreską radialną na końcu żółtego pola; jej przekroczenie grozi zniszczeniem konstrukcji.",
+				"en": "`V_{NE}` is marked by a red radial line at the end of the yellow arc; exceeding it risks structural failure."
 			},
 			"source": "authored:spl"
 		},
