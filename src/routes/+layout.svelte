@@ -4,6 +4,8 @@
 	import { page } from '$app/state';
 	import '$lib/styles/app.css';
 	import favicon from '$lib/assets/favicon.svg';
+	import BuyMeACoffee from '$lib/components/BuyMeACoffee.svelte';
+	import GithubLink from '$lib/components/GithubLink.svelte';
 	import LangToggle from '$lib/components/LangToggle.svelte';
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 	import { m } from '$lib/paraglide/messages.js';
@@ -56,6 +58,8 @@
 		{/each}
 	</nav>
 	<div class="controls">
+		<GithubLink />
+		<BuyMeACoffee />
 		<LangToggle />
 		<ThemeToggle />
 	</div>
