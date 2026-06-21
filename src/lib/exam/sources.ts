@@ -26,6 +26,19 @@ interface ExternalPool {
 
 export const INTERNAL_SOURCE_ID = 'internal';
 
+/** The nine ULC LKE exam categories (the official SPL exam structure). */
+export const ULC_CATEGORIES: { id: string; name: LocalizedText }[] = [
+	{ id: '2', name: { pl: 'Prawo lotnicze', en: 'Air law' } },
+	{ id: '6', name: { pl: 'Ogólna wiedza o statku powietrznym', en: 'Aircraft general knowledge' } },
+	{ id: '10', name: { pl: 'Osiągi i planowanie lotu', en: 'Performance and flight planning' } },
+	{ id: '14', name: { pl: 'Człowiek - możliwości i ograniczenia', en: 'Human performance' } },
+	{ id: '18', name: { pl: 'Meteorologia', en: 'Meteorology' } },
+	{ id: '22', name: { pl: 'Nawigacja', en: 'Navigation' } },
+	{ id: '26', name: { pl: 'Procedury operacyjne', en: 'Operational procedures' } },
+	{ id: '30', name: { pl: 'Zasady lotu', en: 'Principles of flight' } },
+	{ id: '34', name: { pl: 'Łączność', en: 'Communications' } }
+];
+
 export const EXAM_SOURCES: ExamSource[] = [
 	{
 		id: INTERNAL_SOURCE_ID,

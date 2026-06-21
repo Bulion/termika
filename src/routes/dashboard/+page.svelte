@@ -2,14 +2,13 @@
 	import { onMount } from 'svelte';
 	import { resolve } from '$app/paths';
 	import MasteryGauge from '$lib/components/MasteryGauge.svelte';
-	import { loadContent } from '$lib/content';
 	import type { ContentLocale } from '$lib/content/schema';
 	import { resolveText } from '$lib/content/schema';
-	import type { Subject } from '$lib/content/taxonomy';
 	import { exportState, importState, parseBackup } from '$lib/engine/backup';
 	import { db } from '$lib/engine/db';
 	import type { MockResultRow } from '$lib/engine/db';
-	import { computeMasteryFromStates, type MasterySummary } from '$lib/mastery/mastery';
+	import { ULC_CATEGORIES } from '$lib/exam/sources';
+	import { computeUlcReadiness, type UlcReadiness } from '$lib/mastery/ulc-readiness';
 	import Seo from '$lib/components/Seo.svelte';
 	import { m } from '$lib/paraglide/messages.js';
 	import { getLocale } from '$lib/paraglide/runtime';
@@ -22,8 +21,7 @@
 		'var(--color-sink)'
 	];
 
-	let subjects: Subject[] = [];
-	let mastery = $state<MasterySummary>({ subjects: [], overallReadinessPct: 0 });
+	let readiness = $state<UlcReadiness>({ categories: [], overallPct: 0 });
 	let exams = $state<MockResultRow[]>([]);
 	let reviewsCount = $state(0);
 	let examsCount = $state(0);
@@ -32,25 +30,21 @@
 	let fileInput: HTMLInputElement;
 
 	const encouragement = $derived(
-		mastery.overallReadinessPct >= 80
+		readiness.overallPct >= 80
 			? m.enc_high()
-			: mastery.overallReadinessPct >= 65
+			: readiness.overallPct >= 65
 				? m.enc_mid()
 				: m.enc_low()
 	);
 
 	async function refresh() {
 		revealBars = false;
-		const content = await loadContent();
-		subjects = content.subjects;
-		const rows = await db.cardState.bulkGet(content.items.map((i) => i.id));
-		const states = rows
-			.filter((row): row is NonNullable<typeof row> => Boolean(row))
-			.map((row) => ({ itemId: row.itemId, state: row.state }));
-		mastery = computeMasteryFromStates(content.items, states, content.subjects);
-		exams = (await db.mockResults.orderBy('finishedAt').reverse().toArray()).slice(0, 10);
+		const rows = await db.mockResults.orderBy('finishedAt').reverse().toArray();
+		const cats = ULC_CATEGORIES.map((c) => ({ id: c.id, name: resolveText(c.name, locale()) }));
+		readiness = computeUlcReadiness(rows, cats);
+		exams = rows.slice(0, 10);
 		reviewsCount = await db.reviewLogs.count();
-		examsCount = await db.mockResults.count();
+		examsCount = rows.length;
 		// Render bars at 0 first, then grow them to their value so the fill animates in.
 		setTimeout(() => {
 			revealBars = true;
@@ -59,9 +53,12 @@
 
 	onMount(refresh);
 
-	function subjectName(subjectId: string): string {
-		const subject = subjects.find((s) => s.id === subjectId);
-		return subject ? resolveText(subject.name, locale()) : subjectId;
+	function examLabel(subjectId: string | null): string {
+		if (!subjectId) return m.exam_all_categories();
+		if (subjectId === 'ulc') return m.exam_all_categories();
+		const catId = subjectId.startsWith('ulc:') ? subjectId.slice('ulc:'.length) : null;
+		const cat = catId ? ULC_CATEGORIES.find((c) => c.id === catId) : undefined;
+		return cat ? resolveText(cat.name, locale()) : subjectId;
 	}
 
 	async function exportProgress() {
@@ -128,7 +125,7 @@
 			<section class="card vario-card">
 				<span class="chip">{m.dashboard_vario()}</span>
 				<h2>{m.dashboard_readiness()}</h2>
-				<MasteryGauge pct={mastery.overallReadinessPct} label={m.dashboard_readiness()} />
+				<MasteryGauge pct={readiness.overallPct} label={m.dashboard_readiness()} />
 				<p class="encouragement">
 					<span class="bobbing" aria-hidden="true">🪂</span>
 					{encouragement}
@@ -151,23 +148,25 @@
 			<section class="card">
 				<h2>{m.dashboard_subjects()}</h2>
 				<ul class="subjects">
-					{#each mastery.subjects as subject, i (subject.subjectId)}
+					{#each readiness.categories as category, i (category.id)}
 						<li class="subject">
 							<div class="row">
 								<span class="subject-name">
 									<span class="dot" style:background={dotColors[i % dotColors.length]}></span>
-									{subjectName(subject.subjectId)}
+									{category.name}
 								</span>
-								<span class="meta">{subject.readinessPct}%</span>
+								<span class="meta">{category.readinessPct}%</span>
 							</div>
 							<div class="bar">
 								<div
 									class="bar-fill wind-streak"
-									style:width={`${revealBars ? subject.readinessPct : 0}%`}
+									style:width={`${revealBars ? category.readinessPct : 0}%`}
 								></div>
 							</div>
 							<span class="meta sub-meta">
-								{m.dashboard_mastered({ mastered: subject.mastered, total: subject.total })}
+								{category.attempts === 0
+									? m.dashboard_no_attempts()
+									: m.dashboard_attempts({ count: category.attempts })}
 							</span>
 						</li>
 					{/each}
@@ -187,7 +186,7 @@
 							<li>
 								<span class="badge-icon" class:pass={exam.passed}>{exam.passed ? '✓' : '✗'}</span>
 								<div class="exam-info">
-									<span class="exam-title">{subjectName(exam.subjectId ?? '')}</span>
+									<span class="exam-title">{examLabel(exam.subjectId)}</span>
 									<span class="meta">{formatDate(exam.finishedAt)}</span>
 								</div>
 								<div class="exam-score">
