@@ -54,6 +54,9 @@ function findOcclusions(): Occlusion[] {
 		// The E6B instrument is a deliberately dense SVG and the launcher floats over content.
 		if (el.closest('.e6b-root') || top.closest('.e6b-root')) continue;
 		if (el.closest('.fab') || top.closest('.fab')) continue;
+		// KaTeX renders maths as intentionally layered, absolutely-positioned spans (stacked
+		// sub/superscripts, the radical SVG, operators), so its internals legitimately overlap.
+		if (el.closest('.katex') || top.closest('.katex')) continue;
 
 		out.push({
 			text: ownText.slice(0, 50),
