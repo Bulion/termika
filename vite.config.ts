@@ -8,7 +8,7 @@ import { SvelteKitPWA } from '@vite-pwa/sveltekit';
 const servedAtRoot = process.argv.includes('dev') || Boolean(process.env.VITEST);
 const base: '' | `/${string}` = servedAtRoot
 	? ''
-	: ((process.env.BASE_PATH as `/${string}` | undefined) ?? '/licencjeLotnicze');
+	: ((process.env.BASE_PATH as `/${string}` | undefined) ?? '/termika');
 
 export default defineConfig({
 	// convert-units is CommonJS and pulls in lodash, which expects a `global` binding.

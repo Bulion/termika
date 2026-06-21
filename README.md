@@ -100,7 +100,7 @@ pozostają publicznym materiałem urzędowym.
 
 ```bash
 git clone <repo>
-cd licencjeLotnicze
+cd termika
 npm install        # instaluje zależności i hooki gita
 npm run dev        # serwer deweloperski
 ```

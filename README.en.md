@@ -98,7 +98,7 @@ questions remain public, official material.
 
 ```bash
 git clone <repo>
-cd licencjeLotnicze
+cd termika
 npm install        # installs dependencies and git hooks
 npm run dev        # dev server
 ```

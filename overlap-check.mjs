@@ -1,6 +1,6 @@
 import { chromium } from 'playwright';
 
-const BASE = 'http://localhost:4321/licencjeLotnicze';
+const BASE = 'http://localhost:4321/termika';
 const routes = ['/', '/study', '/drills', '/exam', '/dashboard'];
 const schemes = ['light', 'dark'];
 
