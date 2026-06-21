@@ -41,17 +41,6 @@
 			"tags": ["distance"]
 		},
 		{
-			"id": "kt-mph",
-			"microSkill": "unit_conversion",
-			"prompt": { "pl": "{value} kt → mph?", "en": "{value} kt → mph?" },
-			"generate": { "min": 60, "max": 320, "step": 5 },
-			"op": { "kind": "linear", "factor": 1.15 },
-			"rule": { "pl": "`≈ × 1{,}15`", "en": "`≈ × 1.15`" },
-			"tolerancePct": 4,
-			"timeLimitSec": 60,
-			"tags": ["speed"]
-		},
-		{
 			"id": "inhg-hpa",
 			"microSkill": "unit_conversion",
 			"prompt": { "pl": "{value} inHg → hPa?", "en": "{value} inHg → hPa?" },
