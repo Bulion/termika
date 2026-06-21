@@ -7,6 +7,7 @@
 	import { loadQuizSets } from '$lib/quiz/index';
 	import type { QuizSet } from '$lib/quiz/schema';
 	import { openE6b } from '$lib/e6b/state.svelte';
+	import Seo from '$lib/components/Seo.svelte';
 	import { m } from '$lib/paraglide/messages.js';
 	import { getLocale } from '$lib/paraglide/runtime';
 
@@ -15,7 +16,7 @@
 	const quizSets: QuizSet[] = loadQuizSets();
 </script>
 
-<svelte:head><title>{m.drills_title()} · {m.app_name()}</title></svelte:head>
+<Seo title={`${m.drills_title()} · ${m.app_name()}`} description={m.seo_desc_drills()} />
 
 <main class="hub fade-in">
 	<header>

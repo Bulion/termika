@@ -10,6 +10,7 @@
 	import { db } from '$lib/engine/db';
 	import type { MockResultRow } from '$lib/engine/db';
 	import { computeMasteryFromStates, type MasterySummary } from '$lib/mastery/mastery';
+	import Seo from '$lib/components/Seo.svelte';
 	import { m } from '$lib/paraglide/messages.js';
 	import { getLocale } from '$lib/paraglide/runtime';
 
@@ -95,7 +96,7 @@
 	}
 </script>
 
-<svelte:head><title>{m.dashboard_title()} · {m.app_name()}</title></svelte:head>
+<Seo title={`${m.dashboard_title()} · ${m.app_name()}`} description={m.seo_desc_dashboard()} />
 
 <main class="dashboard fade-in">
 	<header class="head">

@@ -21,6 +21,7 @@
 		loadExternalMcqs,
 		type ExamCategory
 	} from '$lib/exam/sources';
+	import Seo from '$lib/components/Seo.svelte';
 	import { m } from '$lib/paraglide/messages.js';
 	import { getLocale } from '$lib/paraglide/runtime';
 
@@ -176,7 +177,7 @@
 	}
 </script>
 
-<svelte:head><title>{m.exam_title()} · {m.app_name()}</title></svelte:head>
+<Seo title={`${m.exam_title()} · ${m.app_name()}`} description={m.seo_desc_exam()} />
 
 <main class="exam fade-in">
 	<h1>{m.exam_title()}</h1>

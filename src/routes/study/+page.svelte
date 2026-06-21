@@ -2,6 +2,7 @@
 	import { resolve } from '$app/paths';
 	import { resolveText, type ContentLocale } from '$lib/content/schema';
 	import { EXAM_SOURCES } from '$lib/exam/sources';
+	import Seo from '$lib/components/Seo.svelte';
 	import { m } from '$lib/paraglide/messages.js';
 	import { getLocale } from '$lib/paraglide/runtime';
 
@@ -17,7 +18,7 @@
 	const externalSources = EXAM_SOURCES.filter((s) => s.external);
 </script>
 
-<svelte:head><title>{m.study_title()} · {m.app_name()}</title></svelte:head>
+<Seo title={`${m.study_title()} · ${m.app_name()}`} description={m.seo_desc_study()} />
 
 <main class="hub fade-in">
 	<header>

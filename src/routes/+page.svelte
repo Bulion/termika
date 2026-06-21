@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { base, resolve } from '$app/paths';
+	import Seo from '$lib/components/Seo.svelte';
 	import { m } from '$lib/paraglide/messages.js';
 
 	const features = [
@@ -9,7 +10,7 @@
 	];
 </script>
 
-<svelte:head><title>{m.app_name()}</title></svelte:head>
+<Seo title={`${m.app_name()} - ${m.tagline()}`} description={m.seo_desc_home()} />
 
 <main class="home fade-in">
 	<section class="hero">
