@@ -5,12 +5,13 @@
 [![Licencja: GPL-3.0](https://img.shields.io/badge/Licencja-GPL--3.0-blue.svg)](LICENSE)
 &nbsp;**🇵🇱 Polski** · [🇬🇧 English](README.en.md)
 
-**Termika** to otwarta aplikacja webowa do nauki teorii lotniczej do egzaminów na licencje pilota.
-Pierwszą obsługiwaną licencją (MVP) jest **SPL** - licencja pilota szybowcowego. Aplikacja jest
-w pełni „data-driven": kolejne licencje i tematy dodaje się jako dane, bez zmian w kodzie.
+**Termika** to otwartoźródłowa aplikacja internetowa do nauki teorii lotniczej przed egzaminami
+na licencje pilota. Pierwszą obsługiwaną licencją (MVP) jest **SPL** - licencja pilota
+szybowcowego. Aplikacja jest w pełni oparta na danych (data-driven): kolejne licencje i tematy
+dodaje się jako dane, bez zmian w kodzie.
 
-Działa w przeglądarce, **offline** (PWA), **bez kont i bez backendu** - całość Twoich postępów
-zostaje na Twoim urządzeniu.
+Działa w przeglądarce, **offline** (PWA), **bez kont i bez serwera** - wszystkie Twoje postępy
+zostają na Twoim urządzeniu.
 
 ## Dlaczego Termika
 
@@ -28,9 +29,10 @@ jedyne narzędzie nauki.
 - **Fiszki z powtórkami rozłożonymi w czasie** (algorytm FSRS) - aktywne przypominanie i ocena
   trudności; materiał wraca dokładnie wtedy, gdy zaczynasz go zapominać.
 - **Trener skrótów** - skróty lotnicze w obie strony (skrót → znaczenie i znaczenie → skrót).
-- **Kojarzenie pojęć z wartościami** - limity, minima, prędkości i progi „do wyklikania z głowy".
+- **Kojarzenie pojęć z wartościami** - limity, minima, prędkości i progi, które trzeba znać na
+  pamięć.
 - **Scenariusze decyzyjne** - sytuacje w locie, w których planujesz reakcję, a potem porównujesz
-  ją z wzorcową listą kontrolną.
+  ją ze wzorcową listą kontrolną.
 
 ### Ćwiczenia na czas (generowane parametrycznie)
 
@@ -39,37 +41,38 @@ Wartości są losowane przy każdym podejściu, więc nie da się ich po prostu 
 - przeliczenia jednostek, reguły nawigacyjne, paliwo i masa,
 - kursy: **deklinacja i dewiacja** (rzeczywisty ↔ magnetyczny ↔ kompasowy),
 - **trójkąt wiatru** (strona wiatru E6B): prędkość względem ziemi i kurs do utrzymania,
-- osiągi: wysokość ciśnieniowa i gęstościowa, zasięg ślizgu, temperatura ISA,
+- osiągi: wysokość ciśnieniowa i gęstościowa, zasięg lotu ślizgowego, temperatura ISA,
 - obliczenia szybowcowe: wydłużenie skrzydła, współczynnik obciążenia i prędkość przeciągnięcia
   w zakręcie.
 
 ### Quizy aktywnego przypominania
 
 - **Alfabet fonetyczny ICAO**, **kody METAR/TAF** oraz zestawy **kluczowych faktów** dla każdego
-  przedmiotu - odpowiedź się wpisuje, a nie wybiera.
+  przedmiotu - odpowiedź wpisujesz, a nie wybierasz.
 
 ### Interaktywny komputer E6B
 
-Wierna, w pełni interaktywna replika wiatrakowego kalkulatora nawigacyjnego (przelicznik
-logarytmiczny + strona wiatru), przystosowana do sterowania dotykiem, otwierana jako płynny
+Wierna, w pełni interaktywna replika okrągłego kalkulatora nawigacyjnego E6B (strona z linijką
+logarytmiczną oraz strona wiatru), przystosowana do sterowania dotykiem i otwierana jako płynny
 panel obok pytań.
 
 ### Egzamin / symulacja ULC
 
 - **Oficjalna baza pytań ULC LKE (1354 pytania)** z **własnym, niezależnie zweryfikowanym kluczem
-  odpowiedzi**, oraz mniejszy zestaw kuratorski.
-- Tryb per-przedmiot, a do każdego pytania uzasadnienie i odniesienie do przepisu lub zasady.
+  odpowiedzi** oraz mniejszy, ręcznie opracowany zestaw.
+- Tryb z podziałem na przedmioty, a do każdego pytania uzasadnienie i odniesienie do przepisu lub
+  zasady.
 
 ### Twoje dane zostają u Ciebie
 
-- Postępy zapisywane lokalnie (IndexedDB), **eksport i import do pliku JSON**.
-- **Offline** (PWA), pełna responsywność (telefon/tablet/desktop, dowolny układ), **motyw jasny
-  i ciemny**, interfejs **PL/EN**.
+- Postępy zapisywane lokalnie (IndexedDB), z **eksportem i importem w pliku JSON**.
+- **Offline** (PWA), pełna responsywność (telefon, tablet, komputer, dowolny układ ekranu),
+  **motyw jasny i ciemny**, interfejs **PL/EN**.
 
 ## Wiarygodność i zastrzeżenia
 
-- Treść pytań egzaminacyjnych pochodzi z **oficjalnej, publicznej bazy ULC** i została
-  zweryfikowana co do treści z oficjalnym dokumentem PDF.
+- Treść pytań egzaminacyjnych pochodzi z **oficjalnej, publicznej bazy ULC**, a jej zgodność
+  sprawdzono z oficjalnym dokumentem PDF.
 - **Klucz odpowiedzi jest nasz**: wygenerowany niezależnie przez model językowy i poddany kontroli
   krzyżowej; pytania sporne rozstrzygał osobny, silniejszy model. Pojedyncze pozycje oznaczono
   jako wymagające weryfikacji.
