@@ -9,7 +9,12 @@
 	}
 </script>
 
-<button type="button" class="lang-toggle" onclick={switchLanguage} aria-label={m.lang_label()}>
+<button
+	type="button"
+	class="lang-toggle"
+	onclick={switchLanguage}
+	aria-label={`${m.lang_label()}: ${next.toUpperCase()}`}
+>
 	{next.toUpperCase()}
 </button>
 

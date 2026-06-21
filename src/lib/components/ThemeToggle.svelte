@@ -19,7 +19,7 @@
 	type="button"
 	class="theme-toggle"
 	onclick={cycle}
-	aria-label={m.theme_label()}
+	aria-label={`${m.theme_label()}: ${labels[theme.preference]()}`}
 	data-theme-pref={theme.preference}
 >
 	<span aria-hidden="true">{theme.resolved === 'dark' ? '🌙' : '☀️'}</span>

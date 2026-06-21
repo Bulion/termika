@@ -202,10 +202,6 @@
 		color: var(--color-on-accent);
 	}
 
-	.feature--accent p {
-		color: var(--color-on-accent);
-	}
-
 	.badge {
 		width: 3rem;
 		height: 3rem;
@@ -226,5 +222,9 @@
 	.feature p {
 		margin: 0;
 		color: var(--color-ink-soft);
+	}
+
+	.feature--accent p {
+		color: var(--color-on-accent);
 	}
 </style>
