@@ -3,8 +3,8 @@
 	"id": "performance",
 	"title": { "pl": "Osiągi i wysokości", "en": "Performance and altitudes" },
 	"description": {
-		"pl": "Wysokość ciśnieniowa i gęstościowa oraz zasięg ślizgu - obliczenia przybliżone.",
-		"en": "Pressure and density altitude and glide range - rule-of-thumb calculations."
+		"pl": "Wysokość ciśnieniowa i zasięg ślizgu - obliczenia przybliżone.",
+		"en": "Pressure altitude and glide range - rule-of-thumb calculations."
 	},
 	"drills": [
 		{
@@ -29,27 +29,6 @@
 			"tags": ["altimetry"]
 		},
 		{
-			"id": "density-altitude",
-			"microSkill": "general",
-			"prompt": {
-				"pl": "Wysokość ciśnieniowa {pa} ft, temperatura {oat} °C → wysokość gęstościowa (ft)?",
-				"en": "Pressure altitude {pa} ft, temperature {oat} °C → density altitude (ft)?"
-			},
-			"inputs": [
-				{ "name": "pa", "min": 0, "max": 8000, "step": 500 },
-				{ "name": "oat", "min": -15, "max": 35, "step": 5 }
-			],
-			"op": { "kind": "formula", "expr": "pa + 120 * (oat - (15 - pa / 1000 * 2))" },
-			"rule": {
-				"pl": "`\\mathrm{DA} = \\mathrm{PA} + 120 × (\\mathrm{OAT} − \\mathrm{ISA}); \\mathrm{ISA} = 15 − 2 × \\mathrm{PA}/1000`",
-				"en": "`\\mathrm{DA} = \\mathrm{PA} + 120 × (\\mathrm{OAT} − \\mathrm{ISA\\ temp}); \\mathrm{ISA} = 15 − 2 × \\mathrm{PA}/1000`"
-			},
-			"toleranceAbs": 150,
-			"timeLimitSec": 60,
-			"round": 0,
-			"tags": ["performance"]
-		},
-		{
 			"id": "glide-range",
 			"microSkill": "nav_rule",
 			"prompt": {
@@ -69,24 +48,6 @@
 			"timeLimitSec": 60,
 			"round": 0,
 			"tags": ["glide"]
-		},
-		{
-			"id": "isa-temperature",
-			"microSkill": "general",
-			"prompt": {
-				"pl": "Temperatura ISA na wysokości {h} m (n.p.m.)?",
-				"en": "ISA temperature at {h} m AMSL?"
-			},
-			"inputs": [{ "name": "h", "min": 0, "max": 6000, "step": 250 }],
-			"op": { "kind": "formula", "expr": "15 - 6.5 * (h / 1000)" },
-			"rule": {
-				"pl": "`T = 15\\,°\\mathrm{C} − 6{,}5\\,°\\mathrm{C} \\text{ na każdy } 1000\\,\\mathrm{m}`",
-				"en": "`T = 15\\,°\\mathrm{C} − 6.5\\,°\\mathrm{C} \\text{ per } 1000\\,\\mathrm{m}`"
-			},
-			"toleranceAbs": 1,
-			"timeLimitSec": 60,
-			"round": 1,
-			"tags": ["isa"]
 		}
 	]
 }
