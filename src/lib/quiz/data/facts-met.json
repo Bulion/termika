@@ -30,7 +30,8 @@
 				"pl": "850 hPa",
 				"en": "850 hPa"
 			},
-			"acceptB": ["850 hPa", "850hPa", "około 850 hPa", "~850 hPa"]
+			"acceptB": ["850 hPa", "850hPa", "około 850 hPa", "~850 hPa"],
+			"keywordsB": [["850"]]
 		},
 		{
 			"id": "met-2",
@@ -42,7 +43,8 @@
 				"pl": "1 hPa",
 				"en": "1 hPa"
 			},
-			"acceptB": ["1 hPa", "1hPa", "około 1 hPa"]
+			"acceptB": ["1 hPa", "1hPa", "około 1 hPa"],
+			"keywordsB": [["1"]]
 		},
 		{
 			"id": "met-3",
@@ -54,7 +56,8 @@
 				"pl": "60-80 km/h",
 				"en": "60-80 km/h"
 			},
-			"acceptB": ["60-80 km/h", "60 do 80 km/h", "60–80 km/h"]
+			"acceptB": ["60-80 km/h", "60 do 80 km/h", "60–80 km/h"],
+			"keywordsB": [["60"], ["80"]]
 		},
 		{
 			"id": "met-4",
@@ -66,7 +69,8 @@
 				"pl": "20-40 km/h",
 				"en": "20-40 km/h"
 			},
-			"acceptB": ["20-40 km/h", "20 do 40 km/h", "20–40 km/h"]
+			"acceptB": ["20-40 km/h", "20 do 40 km/h", "20–40 km/h"],
+			"keywordsB": [["20"], ["40"]]
 		},
 		{
 			"id": "met-5",
@@ -78,7 +82,8 @@
 				"pl": "Spada",
 				"en": "Falls"
 			},
-			"acceptB": ["spada", "obniża się", "falls", "decreasing"]
+			"acceptB": ["spada", "obniża się", "falls", "decreasing"],
+			"keywordsB": [["spad", "obniz", "malej", "fall", "decreas", "drop"]]
 		},
 		{
 			"id": "met-6",
@@ -90,7 +95,8 @@
 				"pl": "Rośnie",
 				"en": "Rises"
 			},
-			"acceptB": ["rośnie", "wzrasta", "rises", "increasing"]
+			"acceptB": ["rośnie", "wzrasta", "rises", "increasing"],
+			"keywordsB": [["rosn", "ros", "wzras", "wzros", "rise", "increas"]]
 		},
 		{
 			"id": "met-7",
@@ -107,6 +113,10 @@
 				"chłodny II rodzaju",
 				"cold front type II",
 				"cold front type 2"
+			],
+			"keywordsB": [
+				["chlodn", "cold"],
+				["ii", "2"]
 			]
 		},
 		{
@@ -119,7 +129,8 @@
 				"pl": "Ci unc (Cirrus uncinus)",
 				"en": "Ci unc (Cirrus uncinus)"
 			},
-			"acceptB": ["Ci unc", "cirrus uncinus", "Cirrus uncinus"]
+			"acceptB": ["Ci unc", "cirrus uncinus", "Cirrus uncinus"],
+			"keywordsB": [["ci unc", "uncinus", "ciunc"]]
 		},
 		{
 			"id": "met-9",
@@ -131,7 +142,11 @@
 				"pl": "Ac, As",
 				"en": "Ac, As"
 			},
-			"acceptB": ["Ac, As", "As, Ac", "Altocumulus, Altostratus", "Ac i As"]
+			"acceptB": ["Ac, As", "As, Ac", "Altocumulus, Altostratus", "Ac i As"],
+			"keywordsB": [
+				["ac", "altocumulus"],
+				["as", "altostratus"]
+			]
 		},
 		{
 			"id": "met-10",
@@ -143,7 +158,8 @@
 				"pl": "Ac lub Sc castellanus",
 				"en": "Ac or Sc castellanus"
 			},
-			"acceptB": ["Ac castellanus", "Sc castellanus", "Ac lub Sc castellanus", "castellanus"]
+			"acceptB": ["Ac castellanus", "Sc castellanus", "Ac lub Sc castellanus", "castellanus"],
+			"keywordsB": [["castellanus", "castellan"]]
 		},
 		{
 			"id": "met-11",
@@ -155,7 +171,8 @@
 				"pl": "Cu hum (Cumulus humilis)",
 				"en": "Cu hum (Cumulus humilis)"
 			},
-			"acceptB": ["Cu hum", "Cumulus humilis", "Cu humilis"]
+			"acceptB": ["Cu hum", "Cumulus humilis", "Cu humilis"],
+			"keywordsB": [["cu hum", "humilis", "cuhum"]]
 		},
 		{
 			"id": "met-12",
@@ -167,7 +184,8 @@
 				"pl": "Chwiejna",
 				"en": "Unstable (labile)"
 			},
-			"acceptB": ["chwiejna", "niestabilna", "unstable", "labile"]
+			"acceptB": ["chwiejna", "niestabilna", "unstable", "labile"],
+			"keywordsB": [["chwiej", "niestabiln", "labiln", "unstable", "labile"]]
 		},
 		{
 			"id": "met-13",
@@ -179,7 +197,8 @@
 				"pl": "Zgodna z ruchem wskazówek zegara",
 				"en": "Clockwise"
 			},
-			"acceptB": ["zgodna z ruchem wskazówek zegara", "zgodnie z ruchem wskazówek", "clockwise"]
+			"acceptB": ["zgodna z ruchem wskazówek zegara", "zgodnie z ruchem wskazówek", "clockwise"],
+			"keywordsB": [["wskazowek", "zegara", "clockwise"]]
 		},
 		{
 			"id": "met-14",
@@ -191,7 +210,8 @@
 				"pl": "Poniżej 0°C (woda ciekła)",
 				"en": "Below 0°C (still liquid)"
 			},
-			"acceptB": ["poniżej 0°C", "poniżej zera", "below 0°C", "below 0 degrees", "<0°C"]
+			"acceptB": ["poniżej 0°C", "poniżej zera", "below 0°C", "below 0 degrees", "<0°C"],
+			"keywordsB": [["ponizej 0", "ponizej zera", "below 0", "<0", "ujemn", "minus"]]
 		},
 		{
 			"id": "met-15",
@@ -207,6 +227,10 @@
 				"połączenie frontu chłodnego z ciepłym",
 				"z połączenia frontu chłodnego z ciepłym",
 				"merger of cold and warm front"
+			],
+			"keywordsB": [
+				["chlodn", "cold"],
+				["ciepl", "warm"]
 			]
 		},
 		{
@@ -224,7 +248,8 @@
 				"prąd opadający obok prądu wstępującego",
 				"downdraft beside updraft",
 				"descending current"
-			]
+			],
+			"keywordsB": [["opadajac", "zstepujac", "downdraft", "descending", "opadaj"]]
 		},
 		{
 			"id": "met-17",
@@ -236,7 +261,8 @@
 				"pl": "Cb (Cumulonimbus)",
 				"en": "Cb (Cumulonimbus)"
 			},
-			"acceptB": ["Cb", "Cumulonimbus", "cumulonimbus"]
+			"acceptB": ["Cb", "Cumulonimbus", "cumulonimbus"],
+			"keywordsB": [["cb", "cumulonimbus"]]
 		}
 	]
 }

@@ -30,7 +30,8 @@
 				"pl": "121,500 MHz",
 				"en": "121.500 MHz"
 			},
-			"acceptB": ["121.5 MHz", "121,5 MHz", "121.500", "121,500"]
+			"acceptB": ["121.5 MHz", "121,5 MHz", "121.500", "121,500"],
+			"keywordsB": [["121,5", "121.5"]]
 		},
 		{
 			"id": "com-2",
@@ -42,7 +43,8 @@
 				"pl": "MAYDAY",
 				"en": "MAYDAY"
 			},
-			"acceptB": ["mayday", "Mayday"]
+			"acceptB": ["mayday", "Mayday"],
+			"keywordsB": [["mayday"]]
 		},
 		{
 			"id": "com-3",
@@ -54,7 +56,8 @@
 				"pl": "3 razy",
 				"en": "3 times"
 			},
-			"acceptB": ["trzy", "trzy razy", "3x"]
+			"acceptB": ["trzy", "trzy razy", "3x"],
+			"keywordsB": [["3", "trzy"]]
 		},
 		{
 			"id": "com-4",
@@ -66,7 +69,8 @@
 				"pl": "Simplex",
 				"en": "Simplex"
 			},
-			"acceptB": ["system simplex"]
+			"acceptB": ["system simplex"],
+			"keywordsB": [["simplex"]]
 		},
 		{
 			"id": "com-5",
@@ -78,7 +82,8 @@
 				"pl": "A3E",
 				"en": "A3E"
 			},
-			"acceptB": ["a3e"]
+			"acceptB": ["a3e"],
+			"keywordsB": [["a3e"]]
 		},
 		{
 			"id": "com-6",
@@ -90,7 +95,8 @@
 				"pl": "1 do 5",
 				"en": "1 to 5"
 			},
-			"acceptB": ["1-5", "od 1 do 5"]
+			"acceptB": ["1-5", "od 1 do 5"],
+			"keywordsB": [["1"], ["5"]]
 		},
 		{
 			"id": "com-7",
@@ -102,7 +108,8 @@
 				"pl": "SHN",
 				"en": "SHN"
 			},
-			"acceptB": ["S H N"]
+			"acceptB": ["S H N"],
+			"keywordsB": [["shn", "s h n"]]
 		},
 		{
 			"id": "com-8",
@@ -114,7 +121,11 @@
 				"pl": "Po wywołaniu jej w ten sposób przez stację naziemną",
 				"en": "After being called that way by the ground station"
 			},
-			"acceptB": ["gdy stacja naziemna użyła skróconego znaku", "po wywołaniu przez ATC"]
+			"acceptB": ["gdy stacja naziemna użyła skróconego znaku", "po wywołaniu przez ATC"],
+			"keywordsB": [
+				["naziemn", "atc", "wiezy", "wieza"],
+				["wywola", "uzy", "skroc", "tak samo", "w ten sposob"]
+			]
 		},
 		{
 			"id": "com-9",
@@ -126,7 +137,8 @@
 				"pl": "Foxtrot",
 				"en": "Foxtrot"
 			},
-			"acceptB": ["foxtrot"]
+			"acceptB": ["foxtrot"],
+			"keywordsB": [["foxtrot"]]
 		},
 		{
 			"id": "com-10",
@@ -138,7 +150,8 @@
 				"pl": "Oscar",
 				"en": "Oscar"
 			},
-			"acceptB": ["oscar"]
+			"acceptB": ["oscar"],
+			"keywordsB": [["oscar", "oskar"]]
 		},
 		{
 			"id": "com-11",
@@ -150,7 +163,8 @@
 				"pl": "Romeo",
 				"en": "Romeo"
 			},
-			"acceptB": ["romeo"]
+			"acceptB": ["romeo"],
+			"keywordsB": [["romeo"]]
 		},
 		{
 			"id": "com-12",
@@ -162,7 +176,8 @@
 				"pl": "JEDYNKA",
 				"en": "JEDYNKA"
 			},
-			"acceptB": ["jedynka"]
+			"acceptB": ["jedynka"],
+			"keywordsB": [["jedynka"]]
 		},
 		{
 			"id": "com-13",
@@ -174,7 +189,8 @@
 				"pl": "121,500 MHz",
 				"en": "121.500 MHz"
 			},
-			"acceptB": ["121.5", "121,5"]
+			"acceptB": ["121.5", "121,5"],
+			"keywordsB": [["121,5", "121.5"]]
 		},
 		{
 			"id": "com-14",
@@ -186,7 +202,8 @@
 				"pl": "Powtórzenie całości korespondencji i podanie swojego znaku wywoławczego (readback)",
 				"en": "Full readback plus own callsign"
 			},
-			"acceptB": ["readback", "powtórzenie", "odczyt"]
+			"acceptB": ["readback", "powtórzenie", "odczyt"],
+			"keywordsB": [["readback", "powtorz", "odczyt"]]
 		}
 	]
 }

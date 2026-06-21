@@ -30,7 +30,8 @@
 				"pl": "bezwładnościowy ruch endolimfy odchylający rzęski",
 				"en": "inertial movement of endolymph deflecting hair cells"
 			},
-			"acceptB": ["endolimfa", "ruch endolimfy", "odchylenie rzęsek", "endolymph"]
+			"acceptB": ["endolimfa", "ruch endolimfy", "odchylenie rzęsek", "endolymph"],
+			"keywordsB": [["endolimf", "endolymph"]]
 		},
 		{
 			"id": "hpl-2",
@@ -42,7 +43,8 @@
 				"pl": "płeć",
 				"en": "sex / gender"
 			},
-			"acceptB": ["płeć", "sex", "gender"]
+			"acceptB": ["płeć", "sex", "gender"],
+			"keywordsB": [["plec", "sex", "gender"]]
 		},
 		{
 			"id": "hpl-3",
@@ -54,7 +56,8 @@
 				"pl": "choroba kesonowa",
 				"en": "caisson disease"
 			},
-			"acceptB": ["choroba kesonowa", "caisson disease", "kesonowa"]
+			"acceptB": ["choroba kesonowa", "caisson disease", "kesonowa"],
+			"keywordsB": [["keson", "caisson"]]
 		},
 		{
 			"id": "hpl-4",
@@ -66,7 +69,8 @@
 				"pl": "formowanie pęcherzyków gazu we krwi i tkankach przy nagłym spadku ciśnienia",
 				"en": "gas bubble formation in blood and tissues due to rapid pressure drop"
 			},
-			"acceptB": ["pęcherzyki gazu", "gas bubbles", "obniżenie ciśnienia", "dekompresja"]
+			"acceptB": ["pęcherzyki gazu", "gas bubbles", "obniżenie ciśnienia", "dekompresja"],
+			"keywordsB": [["pecherzyk", "bubble"]]
 		},
 		{
 			"id": "hpl-5",
@@ -83,7 +87,8 @@
 				"trąbka Eustachiusza",
 				"Eustachian tube",
 				"trąbka słuchowa"
-			]
+			],
+			"keywordsB": [["trabk", "eustach"]]
 		},
 		{
 			"id": "hpl-6",
@@ -95,7 +100,8 @@
 				"pl": "podczas zmniejszania wysokości (zstępowania)",
 				"en": "during descent"
 			},
-			"acceptB": ["zmniejszanie wysokości", "descent", "opadanie", "zstępowanie"]
+			"acceptB": ["zmniejszanie wysokości", "descent", "opadanie", "zstępowanie"],
+			"keywordsB": [["zmniejsz", "obniz", "opad", "zstep", "zniz", "descent"]]
 		},
 		{
 			"id": "hpl-7",
@@ -107,7 +113,11 @@
 				"pl": "absorpcja energii świetlnej przez siatkówkę i wyzwolenie energii cieplnej",
 				"en": "absorption of light energy by retina releasing heat"
 			},
-			"acceptB": ["siatkówka", "absorpcja energii świetlnej", "retina", "energia cieplna"]
+			"acceptB": ["siatkówka", "absorpcja energii świetlnej", "retina", "energia cieplna"],
+			"keywordsB": [
+				["siatkow", "retin"],
+				["absorpc", "pochlan", "absorb", "energi", "ciepl", "swiat", "light"]
+			]
 		},
 		{
 			"id": "hpl-8",
@@ -119,7 +129,15 @@
 				"pl": "zdolność przystosowania się oka do danego oświetlenia",
 				"en": "ability of the eye to adjust to a given illumination level"
 			},
-			"acceptB": ["przystosowanie do oświetlenia", "adaptation to illumination", "adaptacja wzroku"]
+			"acceptB": [
+				"przystosowanie do oświetlenia",
+				"adaptation to illumination",
+				"adaptacja wzroku"
+			],
+			"keywordsB": [
+				["przystosow", "adapt", "dostosow"],
+				["oswietlen", "swiat", "illumin", "light", "jasnosc"]
+			]
 		},
 		{
 			"id": "hpl-9",
@@ -131,7 +149,8 @@
 				"pl": "zmiana kształtu soczewki",
 				"en": "change in lens shape"
 			},
-			"acceptB": ["zmiana kształtu soczewki", "soczewka", "lens shape", "soczewki"]
+			"acceptB": ["zmiana kształtu soczewki", "soczewka", "lens shape", "soczewki"],
+			"keywordsB": [["soczewk", "lens"]]
 		},
 		{
 			"id": "hpl-10",
@@ -143,7 +162,8 @@
 				"pl": "nie - jedynie spowalnia wchłanianie",
 				"en": "no - it only slows absorption"
 			},
-			"acceptB": ["nie", "no", "spowalnia wchłanianie", "slows absorption"]
+			"acceptB": ["nie", "no", "spowalnia wchłanianie", "slows absorption"],
+			"keywordsB": [["nie", "no", "spowal", "slow"]]
 		},
 		{
 			"id": "hpl-11",
@@ -155,7 +175,11 @@
 				"pl": "obniża zdolność wykorzystania tlenu przez komórki mózgu",
 				"en": "reduces brain cells' ability to utilise oxygen"
 			},
-			"acceptB": ["obniża", "reduces", "zmniejsza", "upośledzenie wykorzystania tlenu"]
+			"acceptB": ["obniża", "reduces", "zmniejsza", "upośledzenie wykorzystania tlenu"],
+			"keywordsB": [
+				["obniz", "zmniejsz", "reduc", "upośledz", "uposledz", "pogarsz"],
+				["tlen", "oxygen"]
+			]
 		},
 		{
 			"id": "hpl-12",
@@ -167,7 +191,11 @@
 				"pl": "mózgowie i rdzeń kręgowy",
 				"en": "brain and spinal cord"
 			},
-			"acceptB": ["mózgowie i rdzeń kręgowy", "brain and spinal cord", "mózg i rdzeń"]
+			"acceptB": ["mózgowie i rdzeń kręgowy", "brain and spinal cord", "mózg i rdzeń"],
+			"keywordsB": [
+				["mozg", "brain"],
+				["rdzen", "spinal cord"]
+			]
 		},
 		{
 			"id": "hpl-13",
@@ -179,7 +207,8 @@
 				"pl": "wyćwiczone czynności poznawcze i ruchowe wykonywane bez aktywnego udziału świadomej uwagi",
 				"en": "well-practised cognitive and motor actions performed without active conscious attention"
 			},
-			"acceptB": ["bez udziału uwagi", "without conscious attention", "automatyzm", "automaticity"]
+			"acceptB": ["bez udziału uwagi", "without conscious attention", "automatyzm", "automaticity"],
+			"keywordsB": [["uwag", "swiadom", "attention", "conscious", "automat"]]
 		},
 		{
 			"id": "hpl-14",
@@ -196,6 +225,18 @@
 				"spatial disorientation",
 				"dezorientacja przestrzenna",
 				"zdeformowany odbiór"
+			],
+			"keywordsB": [
+				[
+					"bledn",
+					"niewlasciw",
+					"niepeln",
+					"zdeformowan",
+					"dezorientac",
+					"disorient",
+					"incorrect",
+					"distorted"
+				]
 			]
 		},
 		{
@@ -213,7 +254,8 @@
 				"constant core temperature",
 				"homeotermia",
 				"termoregulacja"
-			]
+			],
+			"keywordsB": [["temperatur", "ciepl", "homeoterm", "termoregulac", "temperature"]]
 		}
 	]
 }

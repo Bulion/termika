@@ -85,7 +85,10 @@
 	function submit() {
 		if (phase !== 'answering' || finished || answer.trim() === '') return;
 		clearInterval(ticker);
-		score(isQuizAnswerCorrect(answer, current.expected, current.accept), now() - startedAt);
+		score(
+			isQuizAnswerCorrect(answer, current.expected, current.accept, current.keywordGroups),
+			now() - startedAt
+		);
 	}
 
 	function reveal() {
@@ -192,6 +195,9 @@
 			<p class="feedback" class:correct={lastCorrect} class:wrong={!lastCorrect} role="status">
 				{lastCorrect ? m.drill_correct() : m.drill_wrong({ expected: current.expected })}
 			</p>
+			{#if lastCorrect}
+				<p class="model-answer">{m.quiz_model_answer()}: {current.expected}</p>
+			{/if}
 			{#if current.hint}
 				<p class="hint">{current.hint}</p>
 			{/if}
@@ -337,6 +343,13 @@
 		font-family: var(--font-mono);
 		font-size: 0.85rem;
 		color: var(--color-ink-soft);
+	}
+
+	.model-answer {
+		margin: 0;
+		font-family: var(--font-mono);
+		font-size: 0.9rem;
+		color: var(--color-ink);
 	}
 
 	.actions {

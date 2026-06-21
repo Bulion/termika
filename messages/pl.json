@@ -65,6 +65,7 @@
 	"quiz_reveal": "Nie wiem",
 	"quiz_progress": "{n} z {total}",
 	"quiz_done": "{correct}/{total} poprawnych",
+	"quiz_model_answer": "Odpowiedź wzorcowa",
 	"e6b_card_title": "Komputer E6B",
 	"e6b_card_desc": "Interaktywny kalkulator nawigacyjny: kursy i trójkąt wiatru.",
 	"e6b_title": "Komputer E6B",
