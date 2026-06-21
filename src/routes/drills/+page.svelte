@@ -32,6 +32,13 @@
 				<span class="go" aria-hidden="true">→</span>
 			</button>
 		</li>
+		<li>
+			<a class="card lift" href={resolve('/drills/metar')}>
+				<span class="card-title">{m.metar_title()}</span>
+				<span class="card-desc">{m.metar_card_desc()}</span>
+				<span class="go" aria-hidden="true">→</span>
+			</a>
+		</li>
 		{#each sets as set (set.id)}
 			<li>
 				<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->

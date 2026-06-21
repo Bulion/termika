@@ -11,6 +11,7 @@
 	let query = $state('');
 
 	const groupLabel = {
+		aero: m.glossary_group_aero,
 		abbreviations: m.glossary_group_abbreviations,
 		metar: m.glossary_group_metar
 	};

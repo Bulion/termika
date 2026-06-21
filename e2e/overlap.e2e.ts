@@ -7,6 +7,7 @@ const routes = [
 	'./study/session?mode=scenario',
 	'./study/glossary',
 	'./drills',
+	'./drills/metar',
 	'./drills/run?set=nav-rules',
 	'./drills/run?set=magnetic-headings',
 	'./drills/run?set=e6b-wind',

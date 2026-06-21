@@ -120,7 +120,18 @@
 	"glossary_desc": "Search aviation abbreviations and METAR codes.",
 	"glossary_card_desc": "A searchable dictionary of abbreviations and weather codes.",
 	"glossary_search": "Search term or meaning…",
+	"glossary_group_aero": "Aviation quantities",
 	"glossary_group_abbreviations": "Abbreviations",
 	"glossary_group_metar": "METAR codes",
-	"glossary_empty": "No results for that search."
+	"glossary_empty": "No results for that search.",
+	"metar_title": "Decode the METAR",
+	"metar_lead": "Build the weather description by choosing the meaning of the highlighted group.",
+	"metar_card_desc": "Decode a generated METAR report, group by group.",
+	"metar_pick": "Choose the description of the highlighted group:",
+	"metar_your_sentence": "Your description:",
+	"metar_result": "Score: {correct}/{total} groups",
+	"metar_perfect": "METAR decoded perfectly!",
+	"metar_almost": "Almost! Check the correct descriptions below.",
+	"metar_correct_answer": "Correct:",
+	"metar_new": "New METAR"
 }

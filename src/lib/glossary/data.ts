@@ -1,6 +1,7 @@
 import type { ContentLocale } from '$lib/content/schema';
 import abbreviations from '$lib/quiz/data/abbreviations.json';
 import metarCodes from '$lib/quiz/data/metar-codes.json';
+import aeroTerms from './aero-terms.json';
 
 interface Localized {
 	pl: string;
@@ -82,7 +83,7 @@ export interface GlossaryEntry {
 	explanation?: string;
 }
 export interface GlossaryGroup {
-	id: 'abbreviations' | 'metar';
+	id: 'aero' | 'abbreviations' | 'metar';
 	entries: GlossaryEntry[];
 }
 
@@ -101,6 +102,7 @@ function entriesFrom(set: { pairs: Pair[] }, locale: ContentLocale): GlossaryEnt
 /** Both glossary sources as display groups for the browsable glossary page. */
 export function glossaryGroups(locale: ContentLocale): GlossaryGroup[] {
 	return [
+		{ id: 'aero', entries: entriesFrom(aeroTerms as { pairs: Pair[] }, locale) },
 		{ id: 'abbreviations', entries: entriesFrom(abbreviations as { pairs: Pair[] }, locale) },
 		{ id: 'metar', entries: entriesFrom(metarCodes as { pairs: Pair[] }, locale) }
 	];

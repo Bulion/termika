@@ -54,13 +54,21 @@ describe('findGlossaryMatches', () => {
 });
 
 describe('glossaryGroups', () => {
-	it('returns abbreviation and METAR groups with non-empty entries', () => {
+	it('returns aero, abbreviation and METAR groups with non-empty entries', () => {
 		const groups = glossaryGroups('pl');
+		const aero = groups.find((g) => g.id === 'aero');
 		const abbr = groups.find((g) => g.id === 'abbreviations');
 		const metar = groups.find((g) => g.id === 'metar');
+		expect(aero?.entries.length).toBeGreaterThan(0);
 		expect(abbr?.entries.length).toBeGreaterThan(0);
 		expect(metar?.entries.length).toBeGreaterThan(0);
 		expect(abbr?.entries.every((e) => e.term && e.expansion)).toBe(true);
+	});
+
+	it('includes the drag coefficient Cx in the aero group', () => {
+		const aero = glossaryGroups('pl').find((g) => g.id === 'aero');
+		const cx = aero?.entries.find((e) => e.term === 'Cx');
+		expect(cx?.expansion).toBe('współczynnik siły oporu');
 	});
 });
 

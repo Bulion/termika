@@ -6,9 +6,10 @@
 	import { getLocale } from '$lib/paraglide/runtime';
 	import GlossaryTerm from './GlossaryTerm.svelte';
 
-	let { text }: { text: string } = $props();
+	let { text, glossary }: { text: string; glossary?: boolean } = $props();
 
-	const enabled = glossaryEnabled();
+	const contextEnabled = glossaryEnabled();
+	const enabled = $derived(contextEnabled && (glossary ?? true));
 	const segments = $derived(parseRichText(text));
 
 	type Item =

@@ -120,7 +120,18 @@
 	"glossary_desc": "Przeszukaj lotnicze skróty i kody METAR.",
 	"glossary_card_desc": "Słownik skrótów i kodów pogodowych z wyszukiwarką.",
 	"glossary_search": "Szukaj skrótu lub znaczenia…",
+	"glossary_group_aero": "Wielkości lotnicze",
 	"glossary_group_abbreviations": "Skróty",
 	"glossary_group_metar": "Kody METAR",
-	"glossary_empty": "Brak wyników dla podanej frazy."
+	"glossary_empty": "Brak wyników dla podanej frazy.",
+	"metar_title": "Rozszyfruj METAR",
+	"metar_lead": "Składaj opis pogody, wybierając znaczenie podświetlonego elementu depeszy.",
+	"metar_card_desc": "Rozszyfruj wygenerowaną depeszę METAR, element po elemencie.",
+	"metar_pick": "Wybierz opis podświetlonego elementu:",
+	"metar_your_sentence": "Twój opis:",
+	"metar_result": "Wynik: {correct}/{total} elementów",
+	"metar_perfect": "METAR rozszyfrowany bezbłędnie!",
+	"metar_almost": "Prawie! Sprawdź poprawne opisy poniżej.",
+	"metar_correct_answer": "Poprawnie:",
+	"metar_new": "Nowy METAR"
 }

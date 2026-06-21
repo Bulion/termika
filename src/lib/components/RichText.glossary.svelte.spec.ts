@@ -17,6 +17,16 @@ describe('RichText glossary integration', () => {
 		expect(screen.container.textContent).toContain('METAR');
 	});
 
+	it('respects glossary={false} even when the context is enabled (question side)', async () => {
+		const screen = render(Harness, {
+			text: 'Odczytaj METAR przed startem.',
+			enabled: true,
+			glossary: false
+		});
+		expect(screen.container.querySelector('.glossary-term')).toBeNull();
+		expect(screen.container.textContent).toContain('METAR');
+	});
+
 	it('leaves formula segments untouched', async () => {
 		const screen = render(Harness, { text: 'Wzór `C_x` i METAR', enabled: true });
 		expect(screen.container.querySelector('.formula .katex')).not.toBeNull();
