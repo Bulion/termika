@@ -751,6 +751,1657 @@
 				}
 			],
 			"source": "authored:spl"
+		},
+		{
+			"id": "spl-ops-gen-001",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki sygnał oznacza polecenie przerwania startu za wyciągarką?",
+				"en": "What signal means 'stop' (abort) during a winch launch?"
+			},
+			"back": {
+				"pl": "Szybkie błyski lampy sygnałowej lub komenda radiowa STOP STOP STOP; operator wyciągarki natychmiast zwalnia ciąg, a pilot wyczepia linę.",
+				"en": "Rapid flashing of the signal lamp or the radio call STOP STOP STOP; the winch driver immediately backs off the throttle and the pilot releases the cable."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-002",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co zrobić, gdy podczas startu za wyciągarką lina nie wyczepi się po pociągnięciu za zaczep?",
+				"en": "What should you do if the cable fails to release at the top of a winch launch?"
+			},
+			"back": {
+				"pl": "Pociągnąć energicznie kilka razy za zaczep; jeśli nadal nie puszcza, odlecieć w bok od osi wyciągarki, a operator przetnie lub zwolni linę. Nie wolno dać się ściągnąć w dół.",
+				"en": "Pull the release knob firmly several times; if it still does not release, fly off to the side of the winch axis and the operator will cut or release the cable. Never allow yourself to be pulled back down."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-003",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki jest typowy maksymalny kąt wznoszenia w pełnej fazie startu za wyciągarką?",
+				"en": "What is the typical maximum climb attitude during the full-climb phase of a winch launch?"
+			},
+			"back": {
+				"pl": "Około 45 stopni względem horyzontu (zależnie od typu szybowca); kąt zwiększa się stopniowo po oderwaniu, a nie gwałtownie tuż nad ziemią.",
+				"en": "About 45 degrees relative to the horizon (depending on glider type); the attitude is increased gradually after lift-off, not abruptly close to the ground."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-004",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego słabe ogniwo (bezpiecznik liny) musi odpowiadać masie szybowca?",
+				"en": "Why must the winch weak link match the glider's mass?"
+			},
+			"back": {
+				"pl": "Zbyt mocne ogniwo nie pęknie przy przeciążeniu i może uszkodzić konstrukcję; zbyt słabe zerwie się przedwcześnie. Słabe ogniwo dobiera się do MTOM danego typu szybowca.",
+				"en": "A weak link that is too strong will not break under overload and may damage the airframe; one too weak breaks prematurely. The weak link is selected for the glider type's MTOM."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-005",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza komenda 'luz' (lina luźna) podawana operatorowi wyciągarki przed startem?",
+				"en": "What does the command 'take up slack' mean to the winch operator?"
+			},
+			"back": {
+				"pl": "Polecenie powolnego wybierania luzu liny aż do jej napięcia, zanim padnie komenda 'całość' do pełnego ciągu.",
+				"en": "An instruction to slowly take up the slack until the cable is taut, before the command 'all out' for full power is given."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-006",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka jest podstawowa różnica w profilu lotu między startem za samolotem a startem za wyciągarką?",
+				"en": "What is the basic flight-profile difference between aerotow and winch launch?"
+			},
+			"back": {
+				"pl": "Aerotow to płaski lot za samolotem do wybranej wysokości i miejsca wyczepienia; wyciągarka daje strome, krótkie wznoszenie do wysokości około jednej trzeciej do połowy długości liny.",
+				"en": "Aerotow is a shallow climb behind the tug to a chosen altitude and release point; the winch gives a steep, short climb reaching roughly one third to one half of the cable length in height."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-007",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest pozycja low tow i kiedy bywa stosowana?",
+				"en": "What is the low tow position and when is it used?"
+			},
+			"back": {
+				"pl": "Pozycja holu, w której szybowiec leci poniżej spławu zaśmigłowego samolotu holującego; stosowana m.in. na długich przelotach holowanych i jako alternatywa dla high tow.",
+				"en": "A tow position where the glider flies below the tug's propeller wash; used e.g. on long aerotows and as an alternative to high tow."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-008",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co sygnalizuje samolot holujący kiwaniem skrzydłami podczas holu?",
+				"en": "What does the tug rocking its wings signal during the tow?"
+			},
+			"back": {
+				"pl": "Komenda 'wyczep się natychmiast'; pilot szybowca powinien niezwłocznie wyczepić linę.",
+				"en": "The command 'release at once'; the glider pilot must release the towrope immediately."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-009",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza kiwanie sterem kierunku (machanie ogonem) przez samolot holujący w locie holowanym?",
+				"en": "What does the tug yawing (fanning the rudder) mean during aerotow?"
+			},
+			"back": {
+				"pl": "Sygnał 'sprawdź hamulce aerodynamiczne - są otwarte, zamknij je'. Pilot szybowca powinien sprawdzić i zamknąć hamulce.",
+				"en": "The signal 'check airbrakes - they are open, close them'. The glider pilot should check and close the airbrakes."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-010",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak dobiera się prędkość holowania względem prędkości przeciągnięcia?",
+				"en": "How is the aerotow speed chosen relative to stall speeds?"
+			},
+			"back": {
+				"pl": "Prędkość holu dobiera się tak, by dawała bezpieczny zapas nad prędkością przeciągnięcia zarówno szybowca, jak i samolotu holującego (zwykle podana w instrukcji szybowca).",
+				"en": "The tow speed is set to give a safe margin above the stall speed of both the glider and the tug (usually given in the glider flight manual)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-011",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co zrobić w razie zerwania liny holowniczej na bezpiecznej wysokości w aerotow?",
+				"en": "What should you do if the towrope breaks at a safe height during aerotow?"
+			},
+			"back": {
+				"pl": "Utrzymać prędkość i zdecydować: powrót na lotnisko, lądowanie z prostej lub w teren przygodny, zależnie od wysokości i pozycji; zachować rozdział od samolotu holującego.",
+				"en": "Maintain speed and decide: return to the airfield, land straight ahead, or land out depending on height and position; keep separation from the tug."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-012",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.LAUNCH_METHODS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co obejmuje kontrola zaczepu i liny przed startem za wyciągarką?",
+				"en": "What does the pre-launch check of the release and cable cover before a winch launch?"
+			},
+			"back": {
+				"pl": "Sprawdzenie poprawnego zapięcia liny w zaczepie, działania wyczepu, prawidłowego słabego ogniwa, braku zaplątania liny oraz czystości przedpola startu.",
+				"en": "Confirming the cable is correctly attached, the release works, the correct weak link is fitted, the cable is not tangled, and the launch run is clear."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-013",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak ułożony jest standardowy krąg nadlotniskowy dla szybowców i z jakich odcinków się składa?",
+				"en": "How is the standard gliding airfield circuit structured and what legs does it have?"
+			},
+			"back": {
+				"pl": "Z wiatru (downwind), z baru (base) i prosta do lądowania (final). Standardowo krąg lewy, chyba że lokalne procedury wskazują prawy.",
+				"en": "Downwind leg, base leg and final approach. The standard circuit is left-hand unless local procedures specify a right-hand circuit."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-014",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Który szybowiec ma pierwszeństwo, gdy dwa zbliżają się do lądowania na różnych wysokościach?",
+				"en": "Which glider has right of way when two are approaching to land at different heights?"
+			},
+			"back": {
+				"pl": "Pierwszeństwo ma statek powietrzny znajdujący się niżej, jednak nie wolno go wyprzedzać ani podcinać od dołu.",
+				"en": "The lower aircraft has right of way, but it must not be overtaken or cut in front of from below."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-015",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza biały krzyż wyłożony na polu sygnałowym lotniska?",
+				"en": "What does a white cross displayed on the airfield signal area mean?"
+			},
+			"back": {
+				"pl": "Oznacza, że lotnisko lub jego część jest niezdatne do użytku i lądowanie na oznaczonym obszarze jest zabronione.",
+				"en": "It indicates that the aerodrome (or part of it) is unfit for use and landing on the marked area is prohibited."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-016",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak wyznacza się kierunek startów i lądowań na lotnisku bez łączności radiowej?",
+				"en": "How is the take-off and landing direction shown at an airfield without radio?"
+			},
+			"back": {
+				"pl": "Za pomocą znaku 'T' na polu sygnałowym lub rękawa wiatru; starty i lądowania odbywają się w kierunku ramienia litery T, pod wiatr.",
+				"en": "By the landing 'T' on the signal area or the wind sock; take-offs and landings are made in the direction of the T's stem, into wind."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-017",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrot QFE i jak go wykorzystuje pilot szybowca w operacjach lotniskowych?",
+				"en": "What does QFE mean and how does a glider pilot use it in airfield operations?"
+			},
+			"back": {
+				"pl": "QFE to ciśnienie zredukowane do poziomu lotniska; nastawione na wysokościomierzu daje wskazanie 0 ft na lotnisku, co ułatwia ocenę wysokości w kręgu.",
+				"en": "QFE is the pressure reduced to airfield level; set on the altimeter it reads zero at the airfield, making circuit height easy to judge."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-018",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego po lądowaniu szybowiec powinien jak najszybciej zostać ściągnięty z pola wzlotów?",
+				"en": "Why should a glider be cleared from the landing area as soon as possible after landing?"
+			},
+			"back": {
+				"pl": "Aby zwolnić pole wzlotów dla kolejnych lądujących szybowców, które często nie mają możliwości odejścia na drugi krąg.",
+				"en": "To free the landing area for following gliders, which frequently cannot go around."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-019",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Po której stronie pola wzlotów ląduje szybowiec, gdy odbywają się jednoczesne starty i lądowania?",
+				"en": "On which side of the field should a glider land during simultaneous launches and landings?"
+			},
+			"back": {
+				"pl": "Lądujące szybowce trzymają się jednej ustalonej strony pola, a startujące drugiej, tak aby tory się nie przecinały; podział reguluje regulamin lotniska.",
+				"en": "Landing gliders keep to one designated side of the field and launching gliders to the other so their paths do not cross; the split is set by local airfield rules."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-020",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznaczają białe błyski skierowane do statku powietrznego w locie?",
+				"en": "What do white flashes directed at an aircraft in flight mean?"
+			},
+			"back": {
+				"pl": "'Wyląduj na tym lotnisku i kołuj na płytę'; dla statku w locie oznacza polecenie powrotu na lotnisko.",
+				"en": "'Land at this aerodrome and proceed to the apron'; for an aircraft in flight it signifies a return to the aerodrome."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-021",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza ciągłe czerwone światło skierowane do statku powietrznego w locie?",
+				"en": "What does a steady red light directed at an aircraft in flight mean?"
+			},
+			"back": {
+				"pl": "'Ustąp pierwszeństwa innemu statkowi powietrznemu i kontynuuj krążenie'.",
+				"en": "'Give way to another aircraft and continue circling.'"
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-022",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki meldunek pozycyjny podaje pilot szybowca przed wejściem w krąg na lotnisku niekontrolowanym z łącznością?",
+				"en": "What position report does a glider pilot make before joining the circuit at an uncontrolled airfield with radio?"
+			},
+			"back": {
+				"pl": "Podaje znak wywoławczy, pozycję, wysokość i zamiary (np. wejście z wiatru), aby zapewnić rozdział z innym ruchem; obowiązuje zasada 'patrz i unikaj'.",
+				"en": "Reports call sign, position, altitude and intentions (e.g. joining downwind) to ensure separation from other traffic; the 'see and avoid' principle applies."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-023",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.AIRFIELD_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego na lotnisku szybowcowym trzeba zachować szczególną ostrożność przy przechodzeniu przez pole wzlotów i linie wyciągarki?",
+				"en": "Why is extra caution needed when crossing the launch field and winch cable runs at a gliding site?"
+			},
+			"back": {
+				"pl": "Napięte lub zwijane liny wyciągarkowe mogą poderwać się i poważnie zranić; nigdy nie wolno przechodzić nad napiętą liną ani pod startującym szybowcem.",
+				"en": "Taut or retrieving winch cables can whip up and cause serious injury; never step over a tensioned cable or under a launching glider."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-024",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co obejmuje brief startowy na wypadek awarii startu (przerwanie startu / zerwanie liny) i kiedy się go wykonuje?",
+				"en": "What does the pre-takeoff emergency brief (launch failure / cable break) cover and when is it done for a glider?"
+			},
+			"back": {
+				"pl": "Brief startowy obejmuje przemyślenie wariantów na wypadek awarii: jaka prędkość, czy ląduję prosto, czy wykonuję zakręt o 180 stopni i powrót na lotnisko, oraz pole do lądowania awaryjnego. Wykonuje się go przed każdym startem, dostosowując decyzje do aktualnej wysokości i wiatru.",
+				"en": "The pre-takeoff emergency brief covers the plan for a launch failure: the airspeed to fly, whether to land ahead, whether to make a 180-degree turn back to the field, and the chosen emergency landing area. It is briefed before every launch and tailored to current height and wind."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-025",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie są pierwsze czynności pilota, gdy nie można otworzyć zaczepu (lina nie zwalnia się na starcie za wyciągarką)?",
+				"en": "What are the pilot's first actions if the release will not open (the cable fails to release on a winch launch)?"
+			},
+			"back": {
+				"pl": "Pociągnąć kilkukrotnie energicznie za uchwyt wyczepu. Jeśli lina nadal się nie zwalnia, obniżyć dziób, zmniejszyć kąt natarcia i sygnalizować problem; przy wyciągarce operator powinien przerwać start, a pilot dąży do bezpiecznego lądowania prosto przed siebie.",
+				"en": "Pull the release knob firmly several times. If the cable still will not release, lower the nose to reduce the angle of attack and signal the problem; on a winch the operator should stop the launch, and the pilot continues to a safe landing straight ahead."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-026",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co zrobić, gdy podczas holu szybowiec znajdzie się niebezpiecznie wysoko nad samolotem holującym i nie da się obniżyć?",
+				"en": "What must the glider pilot do if, during aerotow, the glider gets dangerously high above the tug and cannot descend?"
+			},
+			"back": {
+				"pl": "Natychmiast wyczepić się. Zbyt wysokie położenie szybowca unosi ogon holownika i może uniemożliwić jego pilotowi utrzymanie kontroli - to bezpośrednie zagrożenie życia załogi holownika, dlatego priorytetem jest błyskawiczne zwolnienie liny.",
+				"en": "Release immediately. A glider that climbs too high pulls the tug's tail up and can prevent the tug pilot from keeping control, directly endangering the tug crew, so the priority is an instant release."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-027",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki sygnał daje pilot holownika, gdy chce, aby szybowiec natychmiast się wyczepił?",
+				"en": "What signal does the tug pilot give to order the glider to release immediately?"
+			},
+			"back": {
+				"pl": "Pilot holownika kiwa skrzydłami (rocking wings). Oznacza to 'natychmiast wyczep się'. Szybowiec potwierdza wykonanie przez wyczepienie.",
+				"en": "The tug pilot rocks the wings, meaning 'release at once'. The glider acknowledges by releasing."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-028",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza dla pilota szybowca sygnał holownika polegający na kiwaniu sterem kierunku (machanie ogonem)?",
+				"en": "What does the tug yawing its tail (rudder waggle) mean to the glider pilot?"
+			},
+			"back": {
+				"pl": "Holownik machający ogonem sygnalizuje szybowcowi: 'sprawdź swoje hamulce aerodynamiczne - są wysunięte'. Pilot szybowca powinien sprawdzić i schować hamulce.",
+				"en": "The tug yawing its tail (rudder waggle) tells the glider: 'check your airbrakes - they are open'. The glider pilot should check and close the airbrakes."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-029",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co należy zrobić w razie pożaru na pokładzie szybowca (np. zwarcie instalacji, dym w kabinie)?",
+				"en": "What should be done in case of an in-flight fire in a glider (e.g. electrical short, smoke in the cockpit)?"
+			},
+			"back": {
+				"pl": "Wyłączyć zasilanie elektryczne (master), w miarę możliwości odciąć źródło ognia, rozważyć otwarcie wentylacji lub okienka dla usunięcia dymu i dążyć do jak najszybszego lądowania. Jeśli sytuacja jest niemożliwa do opanowania - rozważyć opuszczenie szybowca ze spadochronem.",
+				"en": "Switch off the electrical master, isolate the source if possible, consider opening a vent or clear-view panel to clear smoke, and make the earliest possible landing. If the situation is uncontrollable, consider abandoning the glider by parachute."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-030",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka jest prawidłowa kolejność czynności przy awaryjnym opuszczeniu szybowca ze spadochronem?",
+				"en": "What is the correct sequence for an emergency bailout from a glider with a parachute?"
+			},
+			"back": {
+				"pl": "Odrzucić osłonę kabiny (canopy), rozpiąć pasy uprzęży, wyskoczyć z kabiny (najlepiej przez krawędź spływu skrzydła), odczekać chwilę dla oddalenia się od kadłuba i pociągnąć za uchwyt spadochronu.",
+				"en": "Jettison the canopy, release the harness straps, climb out of the cockpit (clear of the wing trailing edge), wait briefly to fall clear of the fuselage, then pull the parachute ripcord."
+			},
+			"mnemonic": {
+				"pl": "Osłona - pasy - skok - uchwyt",
+				"en": "Canopy - straps - jump - pull"
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-031",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co robić po nieumyślnym wejściu w chmurę szybowcem (utrata widoczności horyzontu)?",
+				"en": "What should you do if you inadvertently enter cloud in a glider (loss of visual horizon)?"
+			},
+			"back": {
+				"pl": "Większość szybowców nie jest przystosowana do lotu wg wskazań przyrządów, a pilot SPL nie ma uprawnień IFR. Należy w kontrolowany sposób jak najszybciej opuścić chmurę - zwykle przez otwarcie hamulców aerodynamicznych, utrzymanie prędkości i prostego, ustabilizowanego lotu z odniesieniem do dostępnych przyrządów (chyłomierz, prędkościomierz, wariometr), aż do odzyskania widoczności.",
+				"en": "Most gliders are not equipped for instrument flight and an SPL pilot is not IFR-rated. Leave the cloud in a controlled manner as soon as possible, typically by opening the airbrakes to limit speed and holding a steady, straight attitude using available instruments (slip indicator, ASI, variometer) until visual reference returns."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-032",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak rozpoznać i wyprowadzić szybowiec z korkociągu?",
+				"en": "How do you recognise and recover a glider from a spin?"
+			},
+			"back": {
+				"pl": "Objawy: opadnięcie nosa, szybka rotacja, niska i mało skuteczna prędkość, drgania. Standardowe wyprowadzenie: ster kierunku przeciwnie do kierunku obrotu, następnie zdecydowane wypchnięcie drążka do przodu (zmniejszenie kąta natarcia), po zatrzymaniu rotacji wyzerować ster kierunku i płynnie wyprowadzić z nurkowania.",
+				"en": "Symptoms: nose drops, rapid rotation, low and ineffective airspeed, buffet. Standard recovery: full opposite rudder against the rotation, then move the stick firmly forward to reduce the angle of attack; once rotation stops, centralise the rudder and ease out of the dive."
+			},
+			"mnemonic": {
+				"pl": "Noga przeciwnie, drążek do przodu",
+				"en": "Opposite rudder, stick forward"
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-033",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak postąpić przy konieczności lądowania w terenie przygodnym (poza lotniskiem)?",
+				"en": "What is the procedure for an off-field (outlanding) landing?"
+			},
+			"back": {
+				"pl": "Podjąć decyzję odpowiednio wcześnie (z zapasem wysokości), wybrać pole biorąc pod uwagę kierunek wiatru, wielkość, nachylenie, przeszkody i rodzaj uprawy (regułą bywa skrót S: Size, Slope, Surface, Surround, Stock, Wind), wykonać normalny krąg z ustabilizowanym podejściem i lądować pod wiatr.",
+				"en": "Decide early with height in hand, select a field considering wind direction, size, slope, obstacles and crop type (a common check is the 'S' rule: Size, Slope, Surface, Surround, Stock, Wind), then fly a normal circuit with a stabilised approach and land into wind."
+			},
+			"mnemonic": {
+				"pl": "5S: Size, Slope, Surface, Surround, Stock + wiatr",
+				"en": "5S: Size, Slope, Surface, Surround, Stock + wind"
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-034",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co zrobić przy zbyt wysokim podejściu, gdy mimo pełnych hamulców aerodynamicznych szybowiec wciąż jest za wysoko?",
+				"en": "What can you do on a landing approach that is too high even with full airbrakes deployed?"
+			},
+			"back": {
+				"pl": "Po otwarciu pełnych hamulców można dodatkowo zwiększyć opadanie przez ślizg (slip) - wychylenie steru kierunku w jedną stronę i przeciwne lotki przy zachowaniu kierunku toru. Pozwala to zwiększyć kąt opadania bez nadmiernego rozpędzania szybowca.",
+				"en": "With full airbrakes you can increase the descent further by sideslipping - applying rudder one way and opposite aileron while maintaining track. This steepens the descent without overspeeding the glider."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-035",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co robić, gdy hamulce aerodynamiczne nie chcą się otworzyć podczas podejścia do lądowania?",
+				"en": "What should you do if the airbrakes will not open during the approach?"
+			},
+			"back": {
+				"pl": "Spodziewać się znacznie płaskiego podejścia i dłuższego dobiegu. Należy wydłużyć podejście, w razie potrzeby użyć ślizgu do zwiększenia opadania, celować dalej na pasie i być gotowym na dłuższy przebieg po ziemi.",
+				"en": "Expect a much flatter approach and a longer landing run. Lengthen the approach, use a sideslip if needed to increase the descent, aim further into the field, and be prepared for a longer ground run."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-036",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie działania podejmuje pilot po zerwaniu liny holowniczej na średniej wysokości (np. 200 m), gdy powrót na lotnisko jest pewny?",
+				"en": "What does the pilot do after a tow rope break at a medium height (e.g. 200 m) when a return to the airfield is assured?"
+			},
+			"back": {
+				"pl": "Najpierw obniżyć dziób i ustabilizować bezpieczną prędkość. Następnie ocenić wysokość i pozycję, wykonać skrócony krąg (zwykle zakręt w stronę lotniska), zaplanować podejście i wylądować. Kluczowe jest najpierw odzyskanie prędkości, a dopiero potem decyzja o trasie.",
+				"en": "First lower the nose and establish a safe airspeed. Then assess height and position, fly an abbreviated circuit (usually turning toward the field), plan the approach and land. The key is to regain airspeed first, then decide on the route."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-037",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest IMSAFE i do czego służy pilotowi szybowca?",
+				"en": "What is the IMSAFE checklist and what does it serve a glider pilot?"
+			},
+			"back": {
+				"pl": "IMSAFE to lista samooceny stanu pilota przed lotem: Illness (choroba), Medication (leki), Stress (stres), Alcohol (alkohol), Fatigue (zmęczenie), Eating/Emotion (odżywienie/emocje). Pomaga ocenić, czy jesteśmy zdolni do bezpiecznego wykonania lotu.",
+				"en": "IMSAFE is a pilot self-assessment before flight: Illness, Medication, Stress, Alcohol, Fatigue, Eating/Emotion. It helps judge whether you are fit to fly safely."
+			},
+			"mnemonic": {
+				"pl": "IMSAFE: choroba, leki, stres, alkohol, zmeczenie, jedzenie",
+				"en": "IMSAFE: Illness, Medication, Stress, Alcohol, Fatigue, Eating"
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-038",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest hipoksja (niedotlenienie) i od jakiej wysokości pilot szybowca powinien zwracać na nią szczególną uwagę?",
+				"en": "What is hypoxia and from what altitude should a glider pilot pay particular attention to it?"
+			},
+			"back": {
+				"pl": "Hipoksja to niedobór tlenu w tkankach wskutek malejącego ciśnienia parcjalnego tlenu z wysokością. Objawy (euforia, pogorszenie sądu, sinica, senność) mogą narastać podstępnie. Tlen zaleca się przy dłuższych lotach powyżej ok. 3000-4000 m (10 000-13 000 ft); przepisy zwykle wymagają tlenu powyżej FL100-FL130 w zależności od czasu lotu.",
+				"en": "Hypoxia is a tissue oxygen deficiency caused by the falling partial pressure of oxygen with altitude. Symptoms (euphoria, poor judgement, cyanosis, drowsiness) can creep up unnoticed. Supplemental oxygen is advised on sustained flight above about 3000-4000 m (10,000-13,000 ft); regulations typically require oxygen above FL100-FL130 depending on flight time."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-039",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Na czym polega hiperwentylacja u pilota i jak ją opanować?",
+				"en": "What is hyperventilation in a pilot and how is it controlled?"
+			},
+			"back": {
+				"pl": "Hiperwentylacja to zbyt szybkie i głębokie oddychanie (często ze stresu), powodujące nadmierne wydalenie dwutlenku węgla. Objawy: zawroty głowy, mrowienie kończyn i wokół ust, drżenie, zaburzenia widzenia. Opanowanie: świadome spowolnienie oddechu, rozmowa na głos lub oddychanie do dłoni, by podnieść poziom CO2.",
+				"en": "Hyperventilation is breathing too fast and deep (often from stress), expelling too much carbon dioxide. Symptoms: dizziness, tingling in the limbs and around the mouth, trembling, visual disturbance. Control: consciously slow the breathing, talk aloud, or breathe into cupped hands to restore CO2."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-040",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym różni się hipoksja od hiperwentylacji pod względem przyczyny i co je łączy w objawach?",
+				"en": "How do hypoxia and hyperventilation differ in cause, and what links their symptoms?"
+			},
+			"back": {
+				"pl": "Hipoksja wynika z niedoboru tlenu (rośnie z wysokością), hiperwentylacja z nadmiernego wydalania CO2 (zwykle ze stresu, niezależnie od wysokości). Objawy bywają podobne (zawroty, mrowienie, pogorszenie sprawności), dlatego na dużej wysokości w razie wątpliwości najpierw zakłada się hipoksję i sięga po tlen.",
+				"en": "Hypoxia results from a lack of oxygen (increasing with altitude), while hyperventilation results from expelling too much CO2 (usually from stress, regardless of altitude). The symptoms can be similar (dizziness, tingling, reduced performance), so at high altitude, when in doubt, assume hypoxia first and use oxygen."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-041",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak duża wysokość wpływa na ryzyko choroby dekompresyjnej u pilota szybowca i jak się przed nią chronić?",
+				"en": "How does altitude affect decompression sickness risk for a glider pilot and how is it mitigated?"
+			},
+			"back": {
+				"pl": "Przy szybkim wznoszeniu na duże wysokości (np. w fali) rozpuszczony azot może tworzyć pęcherzyki, dając bóle stawów i inne objawy. Ryzyko rośnie po nurkowaniu z akwalungiem - nie należy latać wysoko bezpośrednio po nurkowaniu (zwykle 24-48 h przerwy). Ochrona: ograniczenie czasu na dużej wysokości i właściwa aklimatyzacja.",
+				"en": "On rapid climbs to high altitude (e.g. in wave) dissolved nitrogen can form bubbles, causing joint pain and other symptoms. The risk is higher after scuba diving - do not fly high straight after diving (typically wait 24-48 h). Mitigation: limit time at high altitude and acclimatise properly."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-042",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest dezorientacja przestrzenna i dlaczego jest groźna w locie bez widoczności horyzontu?",
+				"en": "What is spatial disorientation and why is it dangerous in flight without a visual horizon?"
+			},
+			"back": {
+				"pl": "Dezorientacja przestrzenna to błędne odczucie położenia, prędkości lub przyspieszenia, gdy narząd równowagi (błędnik) i czucie 'oszukują' pilota bez wzrokowego odniesienia do horyzontu. Może prowadzić do tzw. spirali śmierci. Jedyne wyjście to zaufać przyrządom i unikać warunków IMC bez uprawnień i wyposażenia.",
+				"en": "Spatial disorientation is a false sense of attitude, speed or acceleration when the balance organ (vestibular system) and body senses deceive the pilot without a visual horizon. It can lead to a graveyard spiral. The only remedy is to trust the instruments and avoid IMC without the rating and equipment."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-043",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak odwodnienie i przegrzanie wpływają na pilota szybowca w długim locie w upalny dzień?",
+				"en": "How do dehydration and overheating affect a glider pilot on a long flight on a hot day?"
+			},
+			"back": {
+				"pl": "Odwodnienie i przegrzanie obniżają koncentrację, wydłużają czas reakcji, powodują bóle głowy i zmęczenie, co pogarsza podejmowanie decyzji pod koniec lotu. Profilaktyka: zabranie wody i regularne picie, wentylacja kabiny, nakrycie głowy i unikanie nadmiernego nasłonecznienia przez przeszkloną osłonę.",
+				"en": "Dehydration and overheating reduce concentration, slow reaction time, and cause headaches and fatigue, degrading decision-making late in the flight. Prevention: carry water and drink regularly, ventilate the cockpit, wear headgear and avoid excessive sun through the canopy."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-044",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest 'get-home-itis' (presja dolecenia) i jak jej przeciwdziałać?",
+				"en": "What is 'get-home-itis' (press-on-itis) and how do you counter it?"
+			},
+			"back": {
+				"pl": "To skłonność do kontynuowania lotu lub przelotu mimo pogarszających się warunków, z chęci dolecenia do celu lub na macierzyste lotnisko. Prowadzi do ryzykownych decyzji. Przeciwdziałanie: wcześniejsze ustalanie punktów decyzyjnych, gotowość do lądowania w terenie i świadome odrzucenie presji 'za wszelką cenę'.",
+				"en": "It is the tendency to continue a flight or cross-country despite deteriorating conditions, driven by the urge to reach the destination or home field. It leads to risky decisions. Counter it by setting decision points in advance, being ready to outland, and consciously rejecting 'at all costs' pressure."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-045",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak zmęczenie wpływa na zdolności pilota i jakie są jego rodzaje?",
+				"en": "How does fatigue affect a pilot's abilities and what are its types?"
+			},
+			"back": {
+				"pl": "Zmęczenie obniża czujność, pogarsza pamięć krótkotrwałą, wydłuża czas reakcji i sprzyja błędom oraz widzeniu tunelowemu. Rozróżnia się zmęczenie ostre (po jednym wysiłku/dniu) i przewlekłe (kumulujące się przez dni/tygodnie). Najskuteczniejszym lekarstwem jest odpowiedni sen i odpoczynek, a nie kofeina.",
+				"en": "Fatigue lowers alertness, impairs short-term memory, slows reaction time, and promotes errors and tunnel vision. It is divided into acute fatigue (after a single effort/day) and chronic fatigue (accumulating over days/weeks). The most effective remedy is adequate sleep and rest, not caffeine."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-046",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego skanowanie nieba metodą sekwencyjną jest skuteczniejsze od jednego spojrzenia i jak ograniczenia oka tłumaczą zderzenia w locie?",
+				"en": "Why is a systematic scanning technique more effective than a single glance, and how do eye limitations explain mid-air collisions?"
+			},
+			"back": {
+				"pl": "Oko ostro widzi tylko w wąskim polu plamki żółtej, a peryferia słabo rozróżniają nieruchome obiekty. Samolot na kursie kolizyjnym pozostaje w tym samym miejscu pola widzenia (stały namiar) i nie przyciąga uwagi. Dlatego skanuje się niebo sektorami, zatrzymując wzrok co kilka stopni, dając oku czas na akomodację i wykrycie statycznego punktu.",
+				"en": "The eye sees sharply only in the narrow foveal field, and the periphery poorly detects stationary objects. An aircraft on a collision course stays in the same place in the field of view (constant bearing) and does not draw attention. Therefore scan the sky in sectors, pausing the eyes every few degrees to let them focus and detect the static point."
+			},
+			"mnemonic": {
+				"pl": "Staly namiar = kurs kolizyjny",
+				"en": "Constant bearing = collision course"
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-047",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest 'empty-field myopia' (krótkowzroczność pustego pola) i jakie ma znaczenie dla skanowania przestrzeni?",
+				"en": "What is empty-field myopia and what is its significance for visual scanning?"
+			},
+			"back": {
+				"pl": "To zjawisko, w którym oko patrzące w jednolite, puste niebo bez punktu odniesienia mimowolnie nastawia się na odległość ok. 1-2 m zamiast na nieskończoność, przez co odległe obiekty są przeoczane. Przeciwdziała się temu, okresowo skupiając wzrok na konkretnym obiekcie (np. końcówce skrzydła lub odległej chmurze) podczas skanowania.",
+				"en": "It is the phenomenon where the eye, looking into a uniform empty sky with no reference point, involuntarily focuses at about 1-2 m instead of infinity, causing distant objects to be missed. Counter it by periodically focusing on a definite object (e.g. a wingtip or a distant cloud) while scanning."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-048",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["OPS.HUMAN_PERF"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie są skutki alkoholu u pilota i jaka jest ogólna zasada dotycząca odstępu czasu od spożycia do lotu?",
+				"en": "What are the effects of alcohol on a pilot and what is the general rule on the interval from drinking to flying?"
+			},
+			"back": {
+				"pl": "Alkohol pogarsza koordynację, sąd, czas reakcji i widzenie, nasila skutki hipoksji i utrzymuje się we krwi mimo subiektywnej trzeźwości (kac również obniża sprawność). Ogólna zasada to minimum 8 godzin 'od kieliszka do steru' (bottle to throttle), a często zaleca się 24 godziny; obowiązuje też nieprzekraczalny limit stężenia we krwi wg przepisów.",
+				"en": "Alcohol impairs coordination, judgement, reaction time and vision, worsens the effects of hypoxia, and remains in the blood despite feeling sober (a hangover also degrades performance). The general rule is a minimum of 8 hours 'bottle to throttle', and 24 hours is often advised; a maximum blood concentration limit also applies by regulation."
+			},
+			"mnemonic": {
+				"pl": "8 godzin od kieliszka do steru",
+				"en": "8 hours bottle to throttle"
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-049",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co robi pilot holowanego szybowca, który nie może zwolnić liny?",
+				"en": "What does the glider pilot do when unable to release the towrope?"
+			},
+			"back": {
+				"pl": "Kołysze skrzydłami (rocking wings), sygnalizując pilotowi holującemu: 'nie mogę zwolnic liny'. Hol przelatuje wtedy nad miejscem, gdzie linę można bezpiecznie zrzucić.",
+				"en": "Rocks the wings to signal the tug: 'I cannot release the rope'. The tug then flies over an area where the rope can be safely dropped."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-050",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza kołysanie skrzydłami (rocking wings) przez samolot holujący w locie po prostej?",
+				"en": "What does wing-rocking by the tug aircraft in straight flight mean?"
+			},
+			"back": {
+				"pl": "Sygnal 'zwolnij linę natychmiast' (release at once). Pilot szybowca powinien bezzwlocznie odczepic linę.",
+				"en": "The signal 'release the towrope at once'. The glider pilot must release immediately."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-051",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza kiwanie sterem kierunku (yawing) przez samolot holujący?",
+				"en": "What does yawing (waggling the tail) by the tug aircraft signal to the glider?"
+			},
+			"back": {
+				"pl": "'Sprawdz szybowiec / cos jest nie tak' - najczesciej otwarte hamulce aerodynamiczne (spoilery). Pilot szybowca powinien sprawdzic i zamknac hamulce.",
+				"en": "'Check your glider / something is wrong' - usually the airbrakes (spoilers) are open. The glider pilot should check and close them."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-052",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co sygnalizuje pilot szybowca, wychodzac wyraznie w lewo, poza pozycję holowania?",
+				"en": "What does the glider pilot signal by moving well out to the left of the towing position?"
+			},
+			"back": {
+				"pl": "Prosbe do pilota holujacego o zwolnienie liny po stronie samolotu (gdy szybowiec nie moze zwolnic po swojej stronie).",
+				"en": "A request for the tug pilot to release the rope at the tug end (when the glider cannot release at its own end)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-053",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki recznych sygnal oznacza 'naciagnij linę' (take up slack) przed startem za wyciagarka lub samolotem?",
+				"en": "What ground hand signal means 'take up slack' before a winch or aerotow launch?"
+			},
+			"back": {
+				"pl": "Pomocnik startowy powoli porusza reka w gore i w dol - polecenie powolnego naciagniecia luzu liny do napiecia.",
+				"en": "The launch marshal slowly moves an arm up and down, commanding a slow take-up of the slack until the cable is taut."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-054",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki recznych sygnal startowy oznacza 'caly naprzod / start' (all out) przy wyciagarce?",
+				"en": "What launch hand signal means 'all out / begin the launch' on a winch?"
+			},
+			"back": {
+				"pl": "Pomocnik szybko i energicznie macha reka - polecenie pelnego ciagu i rozpoczecia startu.",
+				"en": "The marshal waves an arm rapidly and energetically, commanding full power and the start of the launch."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-055",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki sygnal oznacza 'STOP' podczas procedury startowej na ziemi?",
+				"en": "What ground signal means 'STOP' during the launch procedure?"
+			},
+			"back": {
+				"pl": "Uniesienie nieruchomej reki do gory (lub skrzyzowanie ramion nad glowa) - natychmiastowe przerwanie startu. Kazdy w zespole moze go dac.",
+				"en": "An arm held up still (or arms crossed above the head) - an immediate abort of the launch. Anyone in the team may give it."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-056",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Po co stosuje się sygnaly wzrokowe (kolysanie skrzydlami) miedzy szybowcem a holem, skoro dostepne jest radio?",
+				"en": "Why are visual signals (wing rocking) used between glider and tug when radio is available?"
+			},
+			"back": {
+				"pl": "Radio moze zawiesc (awaria, zla czestotliwosc, zaklocenia), dlatego standardowe sygnaly wzrokowe sa podstawowym, zawsze dzialajacym srodkiem porozumienia w holu.",
+				"en": "Radio can fail (malfunction, wrong frequency, interference), so standardised visual signals are the primary, always-available means of communication during aerotow."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-057",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki sygnal daje pilot szybowca pomocnikowi, ze jest gotow do startu i zaczep jest sprawdzony?",
+				"en": "What signal does the glider pilot give the wing-tip helper to confirm readiness and a checked hook?"
+			},
+			"back": {
+				"pl": "Po wykonaniu listy kontrolnej pilot daje wyrazny sygnal gotowosci (np. potwierdzenie glosowe), a pomocnik wyrownuje skrzydlo poziomo i przekazuje komende startowa.",
+				"en": "After completing the checklist the pilot gives a clear ready sign (e.g. a verbal call); the helper levels the wing and relays the launch command."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-058",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co sygnalizuje czerwona rakieta (lub stale czerwone swiatlo) wystrzelona z wiezy lub stanowiska startowego do szybowca w locie?",
+				"en": "What does a red flare (or steady red light) from the tower or launch point signal to a glider in flight?"
+			},
+			"back": {
+				"pl": "Zakaz ladowania / nie startuj - lotnisko lub kierunek jest niebezpieczny. Pilot musi odejsc na drugi krag lub czekac.",
+				"en": "Do not land / do not launch - the aerodrome or area is unsafe. The pilot must go around or hold."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-059",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza stale swiatlo zielone skierowane z ziemi do statku powietrznego w locie?",
+				"en": "What does a steady green light directed from the ground to an aircraft in flight mean?"
+			},
+			"back": {
+				"pl": "'Masz zezwolenie na ladowanie' (cleared to land). Dla statku na ziemi stale swiatlo zielone oznacza 'zezwolenie na start'.",
+				"en": "'Cleared to land'. For an aircraft on the ground, a steady green light means 'cleared for take-off'."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-060",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza blyskowe swiatlo czerwone skierowane z ziemi do statku powietrznego na ziemi?",
+				"en": "What does a flashing red light from the ground to an aircraft on the ground mean?"
+			},
+			"back": {
+				"pl": "'Zejdz z pola wzlotow / drogi startowej w uzyciu' (taxi clear of the landing area in use).",
+				"en": "'Taxi clear of the landing area in use'."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-061",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza blyskowe swiatlo zielone skierowane do statku powietrznego w locie?",
+				"en": "What does a flashing green light to an aircraft in flight mean?"
+			},
+			"back": {
+				"pl": "'Wroc na lotnisko, oczekuj na zezwolenie na ladowanie' (return for landing - clearance will follow).",
+				"en": "'Return for landing' (a landing clearance will follow in due course)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-062",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznaczaja blyski biale (white flashes) skierowane do statku powietrznego na ziemi?",
+				"en": "What do white flashes directed to an aircraft on the ground mean?"
+			},
+			"back": {
+				"pl": "'Wroc na miejsce postoju na lotnisku' (return to your starting point on the aerodrome).",
+				"en": "'Return to your starting point on the aerodrome'."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-063",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["OPS.SIGNALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrot T/O w zargonie operacyjnym?",
+				"en": "In operations jargon, what does the abbreviation T/O stand for?"
+			},
+			"back": {
+				"pl": "Take-off - start. Stosowany w komunikacji i dokumentacji operacyjnej.",
+				"en": "Take-off. Used in operational communication and documentation."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-064",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego operacje szybowcowe obejmuja procedury ograniczania halasu (noise abatement) mimo braku silnika w szybowcu?",
+				"en": "Why do gliding operations include noise-abatement procedures despite gliders having no engine?"
+			},
+			"back": {
+				"pl": "Halas generuje przede wszystkim samolot holujacy oraz wyciagarka; procedury (trasy odlotu, godziny, unikanie zabudowan) chronia okoliczna ludnosc i utrzymuja akceptacje lotniska.",
+				"en": "The noise comes mainly from the tug aircraft and the winch; procedures (departure routes, hours, avoiding built-up areas) protect local residents and preserve the airfield's acceptance."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-065",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie paliwo stosuje się w typowych motoszybowcach turystycznych (TMG)?",
+				"en": "What fuel is used in typical touring motor gliders (TMG)?"
+			},
+			"back": {
+				"pl": "Najczesciej benzyna lotnicza AVGAS 100LL lub benzyna samochodowa MOGAS, zaleznie od dopuszczenia silnika w instrukcji uzytkowania w locie (AFM).",
+				"en": "Usually AVGAS 100LL aviation gasoline or MOGAS automotive petrol, depending on the engine approval in the aircraft flight manual (AFM)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-066",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego po zatankowaniu motoszybowca nalezy odczekac i sprawdzic obecnosc wody w paliwie?",
+				"en": "Why should you wait and drain a fuel sample to check for water after refuelling a motor glider?"
+			},
+			"back": {
+				"pl": "Woda i osad gromadza się na dnie zbiornika (woda jest ciezsza od paliwa); odczekanie po tankowaniu i spuszczenie probki z odwadniaczy zapobiega zassaniu wody i zatrzymaniu silnika.",
+				"en": "Water and sediment settle at the tank bottom (water is denser than fuel); waiting after refuelling and draining a sample from the sumps prevents water ingestion and engine stoppage."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-067",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrot AVGAS i jaki kolor ma paliwo AVGAS 100LL?",
+				"en": "What does AVGAS stand for and what colour is AVGAS 100LL?"
+			},
+			"back": {
+				"pl": "AVGAS = Aviation Gasoline (benzyna lotnicza). Odmiana 100LL ('low lead') jest barwiona na niebiesko.",
+				"en": "AVGAS = Aviation Gasoline. The 100LL ('low lead') grade is dyed blue."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-068",
+			"type": "flashcard",
+			"microSkill": "unit_conversion",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Ile litrow ma 1 galon amerykanski (US gal), co jest istotne przy planowaniu paliwa motoszybowca?",
+				"en": "How many litres is one US gallon, relevant when planning motor-glider fuel?"
+			},
+			"back": {
+				"pl": "1 galon amerykanski = ok. 3,785 litra. Galon brytyjski (imperialny) to ok. 4,546 litra - nie wolno ich mylic.",
+				"en": "1 US gallon equals about 3.785 litres. The UK (imperial) gallon is about 4.546 litres - the two must not be confused."
+			},
+			"mnemonic": {
+				"pl": "US mniejszy: ~3,79 l; UK wiekszy: ~4,55 l.",
+				"en": "US smaller (~3.79 L), UK bigger (~4.55 L)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-069",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego procedury ograniczania halasu czesto wymagaja jak najszybszego nabrania wysokosci przez samolot holujacy po starcie?",
+				"en": "Why do noise-abatement procedures often require the tug to climb as quickly as practicable after take-off?"
+			},
+			"back": {
+				"pl": "Im wyzej znajdzie się zespol holowniczy, tym mniej halasu dociera do ziemi; szybkie wznoszenie i wczesne odejscie od terenow zamieszkanych ogranicza uciazliwosc dla otoczenia.",
+				"en": "The higher the tug-glider combination, the less engine noise reaches the ground; a prompt climb and early turn away from populated areas reduce the nuisance."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-070",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie zagrozenie stwarza elektrycznosc statyczna podczas tankowania motoszybowca i jak mu zapobiec?",
+				"en": "What hazard does static electricity pose during motor-glider refuelling and how is it prevented?"
+			},
+			"back": {
+				"pl": "Iskra od ladunkow statycznych moze zapalic opary paliwa; zapobiega się temu uziemieniem (bonding) statku powietrznego i dystrybutora przed rozpoczeciem tankowania.",
+				"en": "A static spark can ignite fuel vapours; this is prevented by bonding/earthing the aircraft and the fuel nozzle before refuelling begins."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-071",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["OPS.FUEL_NOISE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co - poza paliwem na trasę - nalezy uwzglednic w planowaniu paliwa motoszybowca?",
+				"en": "Besides trip fuel, what must be included when planning a motor glider's fuel?"
+			},
+			"back": {
+				"pl": "Rezerwy paliwa: paliwo na dolot do lotniska zapasowego oraz koncowa rezerwe (final reserve) zgodnie z przepisami i AFM, plus zapas na nieprzewidziane warunki.",
+				"en": "Fuel reserves: alternate fuel to reach an alternate aerodrome and a final reserve as required by the regulations and AFM, plus a contingency for unforeseen conditions."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-072",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to są turbulencje śladowe (wake turbulence) i co jest ich główną przyczyną?",
+				"en": "What is wake turbulence and what is its main cause?"
+			},
+			"back": {
+				"pl": "To zaburzenie powietrza za statkiem powietrznym wytwarzającym siłę nośną. Głównym składnikiem są wiry końcowe powstające na końcówkach skrzydeł wskutek różnicy ciśnień między górną a dolną powierzchnią płata.",
+				"en": "It is the disturbed air behind an aircraft generating lift. The main component is the pair of trailing (wingtip) vortices created by the pressure difference between the upper and lower wing surfaces."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-073",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "W którą stronę obracają się wiry śladowe za samolotem, patrząc z tyłu?",
+				"en": "Which way do the wake vortices rotate behind an aircraft, viewed from behind?"
+			},
+			"back": {
+				"pl": "Wir z lewego skrzydła obraca się zgodnie z ruchem wskazówek zegara, a z prawego przeciwnie - oba kierują powietrze ku górze na zewnątrz i ku dołowi pomiędzy sobą.",
+				"en": "The left wingtip vortex rotates clockwise and the right one counter-clockwise - both push air upward on the outside and downward between them."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-074",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki statek powietrzny wytwarza najsilniejsze turbulencje śladowe i w jakiej konfiguracji?",
+				"en": "Which aircraft produces the strongest wake turbulence and in what configuration?"
+			},
+			"back": {
+				"pl": "Najsilniejsze wiry wytwarza samolot CIĘŻKI, WOLNY i w GŁADKIEJ konfiguracji (klapy schowane), bo wytworzenie dużej nośności na małej prędkości wymaga dużego kąta natarcia.",
+				"en": "The strongest vortices come from an aircraft that is HEAVY, CLEAN (flaps up) and SLOW, because producing high lift at low speed requires a high angle of attack."
+			},
+			"mnemonic": {
+				"pl": "Ciężki, gładki, wolny = najgroźniejszy ślad",
+				"en": "Heavy, Clean, Slow = worst wake"
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-075",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak zachowują się wiry śladowe w bezwietrznej atmosferze tuż po wytworzeniu?",
+				"en": "How do wake vortices behave in still air just after being generated?"
+			},
+			"back": {
+				"pl": "Rozchodzą się na boki od toru lotu i jednocześnie opadają, stabilizując się zwykle ok. 150-300 m (500-900 ft) poniżej toru lotu samolotu, który je wytworzył.",
+				"en": "They move sideways from the flight path and sink, typically levelling off about 150-300 m (500-900 ft) below the flight path of the generating aircraft."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-076",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego dla szybowca turbulencje śladowe są szczególnie niebezpieczne?",
+				"en": "Why is wake turbulence especially dangerous for a glider?"
+			},
+			"back": {
+				"pl": "Szybowiec ma małą masę i duże powierzchnie nośne, więc gwałtowny przepływ w wirze może wywołać niezamierzone przechylenie, utratę sterowności, a na małej wysokości brak możliwości wyprowadzenia.",
+				"en": "A glider is light with large lifting surfaces, so the violent flow in a vortex can cause an uncommanded roll and loss of control, with no room to recover at low height."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-077",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka jest najgroźniejsza orientacja wlotu w wir śladowy?",
+				"en": "What is the most hazardous way of encountering a wake vortex?"
+			},
+			"back": {
+				"pl": "Wlot równolegle do osi wiru i wzdłuż niej, wywołujący gwałtowne przechylenie (induced roll) przekraczające możliwości przeciwdziałania lotkami, zwłaszcza gdy rozpiętość statku jest mniejsza niż średnica wiru.",
+				"en": "Flying parallel to and along the vortex axis, which produces a rapid induced roll that can exceed the available aileron authority, especially when the wingspan is smaller than the vortex."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-078",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak wiatr boczny wpływa na położenie wirów śladowych nad pasem?",
+				"en": "How does a crosswind affect the position of wake vortices over the runway?"
+			},
+			"back": {
+				"pl": "Wiatr boczny znosi oba wiry zgodnie z kierunkiem wiatru. Słaby wiatr ok. 3-5 kt może zatrzymać wir nawietrzny nad osią pasa, wydłużając czas zagrożenia.",
+				"en": "A crosswind drifts both vortices downwind. A light wind of about 3-5 kt can hold the upwind vortex over the runway centreline, prolonging the hazard."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-079",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Gdzie podczas startu i lądowania samolotu zaczynają i kończą się jego wiry śladowe?",
+				"en": "During an aircraft's take-off and landing, where do its wake vortices begin and end?"
+			},
+			"back": {
+				"pl": "Wiry powstają w momencie oderwania (rotation), gdy skrzydło zaczyna wytwarzać nośność, i ustają w punkcie przyziemienia przy lądowaniu.",
+				"en": "Vortices start at the point of rotation (lift-off), when the wing begins producing lift, and cease at the touchdown point on landing."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-080",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka technika podejścia za ciężkim samolotem minimalizuje wlot w jego wiry śladowe?",
+				"en": "What approach technique minimises entering a heavy aircraft's wake on landing?"
+			},
+			"back": {
+				"pl": "Lecieć POWYŻEJ jego ścieżki schodzenia i przyziemić ZA jego punktem przyziemienia, ponieważ wiry opadają i pozostają za punktem touchdown poprzedzającego statku.",
+				"en": "Stay ABOVE the preceding aircraft's glide path and touch down BEYOND its touchdown point, because the vortices sink and remain behind the leader's touchdown point."
+			},
+			"mnemonic": {
+				"pl": "Wyżej i dalej za jego śladem",
+				"en": "Stay high, land long"
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-081",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaką technikę startu stosuje się, by uniknąć wirów po starcie ciężkiego samolotu z tego samego pasa?",
+				"en": "What take-off technique avoids the vortices after a heavy aircraft departs from the same runway?"
+			},
+			"back": {
+				"pl": "Oderwać się PRZED jego punktem rotacji i wznosić się POWYŻEJ jego toru wznoszenia, a w miarę możliwości skręcić na wiatr, aby ominąć opadające i znoszone wiry.",
+				"en": "Lift off BEFORE its rotation point and climb ABOVE its climb path, and if possible turn upwind to clear the sinking, drifting vortices."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-082",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki jest zalecany minimalny odstęp czasowy dla lekkiego statku startującego za ciężkim z tego samego pasa?",
+				"en": "What is the recommended minimum time separation for a light aircraft departing behind a heavy from the same runway?"
+			},
+			"back": {
+				"pl": "Co najmniej 2 minuty, a 3 minuty przy starcie z punktu pośredniego pasa, aby wiry zdążyły się rozproszyć lub znieść poza tor lotu.",
+				"en": "At least 2 minutes, and 3 minutes when departing from an intermediate point of the runway, allowing the vortices to dissipate or drift clear."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-083",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza kategoria turbulencji śladowych ICAO 'H' i jaki zakres mas obejmuje?",
+				"en": "What does the ICAO wake-turbulence category 'H' mean and what mass range does it cover?"
+			},
+			"back": {
+				"pl": "H = Heavy (ciężki): maksymalna masa startowa (MTOM) 136 000 kg i więcej.",
+				"en": "H = Heavy: maximum take-off mass (MTOM) of 136 000 kg or more."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-084",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie są kategorie turbulencji śladowych ICAO i ich progi masowe?",
+				"en": "What are the ICAO wake-turbulence categories and their mass thresholds?"
+			},
+			"back": {
+				"pl": "L (Light) do 7 000 kg; M (Medium) powyżej 7 000 kg do poniżej 136 000 kg; H (Heavy) 136 000 kg i więcej; oraz J (Super) dla A380 i An-225.",
+				"en": "L (Light) up to 7 000 kg; M (Medium) above 7 000 kg up to below 136 000 kg; H (Heavy) 136 000 kg and above; plus J (Super) for the A380 and An-225."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-085",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrót 'CAT' w meteorologii i czym różni się od turbulencji śladowej?",
+				"en": "What does the abbreviation 'CAT' mean and how does it differ from wake turbulence?"
+			},
+			"back": {
+				"pl": "CAT = Clear Air Turbulence (turbulencja w czystym powietrzu), zjawisko meteorologiczne. To NIE jest turbulencja śladowa, która powstaje za statkiem powietrznym; oba dają jednak gwałtowne zaburzenia lotu.",
+				"en": "CAT = Clear Air Turbulence, a meteorological phenomenon. It is NOT wake turbulence, which is generated by an aircraft; both, however, cause abrupt upsets."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-086",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego ostrzeżenie 'Caution wake turbulence' od kontrolera nie zwalnia pilota z odpowiedzialności?",
+				"en": "Why does an ATC 'Caution wake turbulence' advisory not relieve the pilot of responsibility?"
+			},
+			"back": {
+				"pl": "Bo to dowódca ocenia warunki i decyduje o bezpiecznym odstępie oraz ewentualnym odejściu. Ostrzeżenie ATC jest informacją, a separacja wizualna pozostaje obowiązkiem pilota.",
+				"en": "Because the pilot-in-command judges conditions and decides on safe spacing or a go-around. The ATC advisory is information only, and visual separation remains the pilot's responsibility."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-087",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie warunki atmosferyczne powodują, że wiry śladowe utrzymują się najdłużej?",
+				"en": "What atmospheric conditions make wake vortices persist the longest?"
+			},
+			"back": {
+				"pl": "Spokojne, bezwietrzne i stabilne (inwersyjne) powietrze - brak turbulencji mechanicznej i mieszania powoduje, że wiry rozpadają się powoli.",
+				"en": "Calm, light-wind, stable (inversion) air - the lack of mechanical turbulence and mixing makes the vortices decay slowly."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-088",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak prawidłowo zgłosić przez radio wlot w turbulencje śladowe w locie holowanym?",
+				"en": "How should you report by radio an encounter with wake turbulence during an aerotow?"
+			},
+			"back": {
+				"pl": "Zwięźle, np. '[znak wywoławczy], encountering wake turbulence'. Jeśli grozi to bezpieczeństwu holu, koordynuj rozłączenie z samolotem holującym.",
+				"en": "Concisely, e.g. '[callsign], encountering wake turbulence'. If it threatens the safety of the tow, coordinate releasing with the tug."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-089",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego szybowiec w holu może wpaść w wiry samolotu holującego i jak temu zapobiec?",
+				"en": "Why can a glider on tow enter the tug's wake turbulence, and how is this prevented?"
+			},
+			"back": {
+				"pl": "Gdy szybowiec opadnie poniżej toru samolotu (zła pozycja lub zluzowanie liny), wchodzi w opadające wiry holownika. Zapobiega się temu, utrzymując prawidłową pozycję i napiętą linę.",
+				"en": "If the glider drops below the tug's flight path (wrong position or a slack rope), it enters the tug's sinking vortices. This is prevented by keeping the correct position and the rope taut."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-090",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki jest związek między rozpiętością skrzydeł a rozstawem wirów końcowych?",
+				"en": "What is the relationship between wingspan and the spacing of the wingtip vortices?"
+			},
+			"back": {
+				"pl": "Wiry tworzą się blisko końcówek skrzydeł, ale szybko zwijają się do wewnątrz, ustalając rozstaw rdzeni równy ok. 0,75-0,8 rozpiętości skrzydeł statku, który je wytworzył.",
+				"en": "Vortices form near the wingtips but quickly roll up inward, settling at a core spacing of about 0.75-0.8 of the generating aircraft's wingspan."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-091",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak bliskość ziemi (efekt przyziemny) wpływa na wiry śladowe?",
+				"en": "How does proximity to the ground (ground effect) affect wake vortices?"
+			},
+			"back": {
+				"pl": "Po opadnięciu do ok. połowy rozpiętości skrzydeł nad ziemią wiry przestają opadać i rozchodzą się bocznie z prędkością ok. 5 kt, co może utrzymać wir nad pasem lub znieść go na pas równoległy.",
+				"en": "After sinking to about half a wingspan above the ground, the vortices stop descending and move sideways at roughly 5 kt, which can keep a vortex over the runway or drift it onto a parallel one."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-092",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka jest prawidłowa reakcja pilota szybowca przy nagłym silnym przechyleniu wywołanym wirem na małej wysokości?",
+				"en": "What is the correct glider pilot response to a sudden strong roll from a vortex at low height?"
+			},
+			"back": {
+				"pl": "Energiczne przeciwdziałanie lotkami i sterem kierunku w celu wyrównania, utrzymanie prędkości i kierunku oraz natychmiastowe oddalenie się od strefy wiru.",
+				"en": "Apply firm aileron and rudder to level the wings, maintain airspeed and heading, and immediately move away from the vortex area."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-093",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego śmigłowiec w zawisie również wytwarza groźne turbulencje śladowe?",
+				"en": "Why does a helicopter in the hover also generate hazardous wake turbulence?"
+			},
+			"back": {
+				"pl": "Wirnik nośny wytwarza silny strumień zaśmigłowy i wiry porównywalne lub silniejsze niż samolot tej samej masy. Należy zachować ostrożność blisko śmigłowca w zawisie lub kołującego w powietrzu.",
+				"en": "The main rotor produces a strong downwash and vortices comparable to or stronger than a fixed-wing aircraft of the same mass. Keep well clear near a hovering or air-taxiing helicopter."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-094",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "W której fazie operacji na lotnisku z ruchem mieszanym szybowiec jest najbardziej narażony na wiry?",
+				"en": "In which phase of operations at a mixed-traffic airfield is a glider most exposed to vortices?"
+			},
+			"back": {
+				"pl": "Na końcowym podejściu oraz tuż po przyziemieniu lub oderwaniu, gdy leci nisko i wolno za większym statkiem powietrznym, gdzie wiry opadły do poziomu jego toru.",
+				"en": "On final approach and just after touchdown or lift-off, flying low and slow behind a larger aircraft, where the vortices have sunk to its flight level."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-ops-gen-095",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["OPS.WAKE_TURB"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czy wypuszczone klapy i podwozie zwiększają czy zmniejszają intensywność wirów śladowych?",
+				"en": "Do extended flaps and landing gear increase or decrease the intensity of wake vortices?"
+			},
+			"back": {
+				"pl": "Zmniejszają - wypuszczone klapy zmieniają rozkład nośności wzdłuż skrzydła i wprowadzają dodatkowe mieszanie, przez co wiry są słabsze i szybciej się rozpadają niż w konfiguracji gładkiej.",
+				"en": "They decrease it - extended flaps change the spanwise lift distribution and add mixing, so the vortices are weaker and decay faster than in the clean configuration."
+			},
+			"source": "generated:spl"
 		}
 	]
 }

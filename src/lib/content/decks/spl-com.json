@@ -741,6 +741,1624 @@
 				"en": "SAY AGAIN requests repetition. READ BACK asks the other party to repeat, CONFIRM requests verification, STAND BY means wait."
 			},
 			"source": "authored:spl"
+		},
+		{
+			"id": "spl-com-gen-001",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak poprawnie podać swój znak wywoławczy przy pierwszym wywołaniu organu kontroli, gdy używasz pełnego znaku rejestracyjnego SP-1234?",
+				"en": "How do you correctly state your call sign on first contact with an ATS unit when using full registration SP-1234?"
+			},
+			"back": {
+				"pl": "Pełny znak fonetycznie: Sierra Papa One Two Three Four. Skróconej wersji możesz użyć dopiero po jej zastosowaniu przez organ.",
+				"en": "Full call sign phonetically: Sierra Papa One Two Three Four. You may use the shortened form only after the unit has used it."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-002",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "W jaki sposób organ ruchu lotniczego może skrócić znak wywoławczy SP-ABCD i jak wtedy odpowiadasz?",
+				"en": "How may an ATS unit abbreviate the call sign SP-ABCD, and how do you then reply?"
+			},
+			"back": {
+				"pl": "Skrócenie polega na podaniu pierwszego znaku i co najmniej dwóch ostatnich: SP-CD (Sierra Papa Charlie Delta). Skróconego znaku możesz użyć dopiero po jego zastosowaniu przez organ.",
+				"en": "Abbreviation uses the first character and at least the last two: SP-CD (Sierra Papa Charlie Delta). You may use the abbreviated form only after the unit has used it."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-003",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak prawidłowo wypowiedzieć częstotliwość 118,275 MHz w korespondencji radiowej?",
+				"en": "How do you correctly pronounce the frequency 118.275 MHz on the radio?"
+			},
+			"back": {
+				"pl": "WAN WAN EJT DESYMAL TU SEWEN FAJF. Przy kanałach 8,33 kHz podaje się wszystkie sześć cyfr, łącznie z trzecią cyfrą po przecinku.",
+				"en": "WUN WUN AIT DAY-SEE-MAL TOO SEV-EN FIFE. For 8.33 kHz spacing all six digits are read, including the third decimal."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-004",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak w radiotelefonii wymawia się cyfry 3, 5 i 9, aby uniknąć pomyłek?",
+				"en": "How are the digits 3, 5 and 9 pronounced in radiotelephony to avoid confusion?"
+			},
+			"back": {
+				"pl": "3 = TRI, 5 = FAJF, 9 = NAJNER. Zmieniona wymowa zwiększa odróżnialność przy zakłóceniach.",
+				"en": "3 = TREE, 5 = FIFE, 9 = NIN-er. The modified pronunciation improves intelligibility under interference."
+			},
+			"mnemonic": {
+				"pl": "TRI-FAJF-NAJNER to trzy najczęściej mylone cyfry.",
+				"en": "TREE-FIFE-NINer are the three most-confused digits."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-005",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza i kiedy stosujesz słowo CORRECTION w transmisji?",
+				"en": "What does the word CORRECTION mean and when is it used in a transmission?"
+			},
+			"back": {
+				"pl": "Sygnalizuje, że w tej transmisji popełniono błąd; poprawna wersja brzmi następująco. Używasz go, aby natychmiast poprawić błędnie podaną informację.",
+				"en": "It indicates an error was made in this transmission; the correct version follows. Use it to immediately correct misspoken information."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-006",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakiego wyrażenia użyjesz, aby poprosić o powtórzenie całości lub części ostatniej transmisji?",
+				"en": "What phrase do you use to ask for repetition of all or part of the last transmission?"
+			},
+			"back": {
+				"pl": "SAY AGAIN. Można doprecyzować: SAY AGAIN ALL BEFORE/AFTER... lub SAY AGAIN WORDS TWICE przy złej słyszalności.",
+				"en": "SAY AGAIN. It can be qualified: SAY AGAIN ALL BEFORE/AFTER..., or SAY AGAIN WORDS TWICE in poor reception."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-007",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza wyrażenie STANDBY i czy zwalnia ono pilota z dalszego nasłuchu?",
+				"en": "What does STANDBY mean and does it relieve the pilot from listening out?"
+			},
+			"back": {
+				"pl": "Czekaj, wywołam cię. Nie jest zezwoleniem ani odmową; pilot pozostaje na częstotliwości i czeka na wywołanie.",
+				"en": "Wait and I will call you. It is neither a clearance nor a refusal; the pilot stays on frequency and waits to be called."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-008",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym różni się znaczenie słów REQUEST i CLEARED w korespondencji?",
+				"en": "How do the words REQUEST and CLEARED differ in meaning?"
+			},
+			"back": {
+				"pl": "REQUEST = chciałbym wiedzieć / chciałbym uzyskać (prośba pilota). CLEARED = zezwala się na działanie w określonych warunkach (zezwolenie organu).",
+				"en": "REQUEST = I would like to know / to obtain (a pilot's request). CLEARED = authorized to proceed under specified conditions (a unit's clearance)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-009",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak prawidłowo podać kurs 270 stopni oraz wysokość 2500 stóp w transmisji?",
+				"en": "How do you correctly transmit a heading of 270 degrees and an altitude of 2500 feet?"
+			},
+			"back": {
+				"pl": "Kurs: HEADING TU SEWEN ZIRO. Wysokość: TU TAUZEND FAJF HANDRED FEET. Każdą cyfrę kursu wymawia się osobno.",
+				"en": "Heading: HEADING TOO SEV-EN ZE-RO. Altitude: TOO TOUSAND FIFE HUNDRED FEET. Heading digits are spoken individually."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-010",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie elementy musisz potwierdzić (readback) z zezwolenia, aby było ono kompletne?",
+				"en": "Which elements of a clearance must you read back for it to be complete?"
+			},
+			"back": {
+				"pl": "Zezwolenia trasowe, instrukcje dotyczące drogi startowej w użyciu, ustawienia wysokościomierza (QNH), kody SSR, polecenia poziomu, kursu i prędkości oraz przydzielone częstotliwości.",
+				"en": "Route clearances, runway-in-use instructions, altimeter (QNH) settings, SSR codes, level/heading/speed instructions, and assigned frequencies."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-011",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czy ustawienie wysokościomierza QNH 1013 podane przez kontrolę wymaga potwierdzenia, a jeśli tak, to jak je odczytasz?",
+				"en": "Does a QNH setting of 1013 given by ATC require a read-back, and if so how do you read it?"
+			},
+			"back": {
+				"pl": "Tak, QNH podlega obowiązkowemu potwierdzeniu. Odczyt: QNH WAN ZIRO WAN TRI, znak wywoławczy.",
+				"en": "Yes, QNH is subject to mandatory read-back. Read-back: QNH WUN ZE-RO WUN TREE, call sign."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-012",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak potwierdzisz przydzielony kod transpondera (SSR) 4321 nadany przez kontrolę?",
+				"en": "How do you read back an assigned SSR (transponder) code 4321 issued by ATC?"
+			},
+			"back": {
+				"pl": "SQUAWK FOWER TRI TU WAN, znak wywoławczy. Każdą cyfrę kodu podaje się osobno; kod nie zawiera cyfr 8 ani 9.",
+				"en": "SQUAWK FOWER TREE TOO WUN, call sign. Each code digit is spoken separately; codes contain no 8 or 9."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-013",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co powinien zrobić organ kontroli, jeśli w potwierdzeniu pilota wykryje błąd?",
+				"en": "What should the ATS unit do if it detects an error in the pilot's read-back?"
+			},
+			"back": {
+				"pl": "Nadaje słowo NEGATIVE i podaje poprawną wersję; pilot ponownie ją potwierdza.",
+				"en": "It transmits NEGATIVE followed by the correct version; the pilot reads it back again."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-014",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak potwierdzisz polecenie zmiany częstotliwości na 124,5 MHz wydane przez organ kontroli?",
+				"en": "How do you read back an instruction to change frequency to 124.5 MHz issued by an ATS unit?"
+			},
+			"back": {
+				"pl": "WAN TU FOWER DESYMAL FAJF, znak wywoławczy. Przydzielona częstotliwość podlega obowiązkowemu potwierdzeniu.",
+				"en": "WUN TOO FOWER DAY-SEE-MAL FIFE, call sign. An assigned frequency is subject to mandatory read-back."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-015",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym różni się READ BACK (jako instrukcja organu) od potwierdzenia z własnej inicjatywy pilota?",
+				"en": "How does READ BACK (as a unit instruction) differ from a pilot's own-initiative confirmation?"
+			},
+			"back": {
+				"pl": "READ BACK to polecenie organu: powtórz całość lub wskazaną część w dokładnym brzmieniu. Pilot i tak ma obowiązek powtarzać określone elementy zezwolenia bez osobnego polecenia.",
+				"en": "READ BACK is a unit instruction: repeat all or the specified part exactly as received. The pilot must in any case read back certain clearance items without a separate instruction."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-016",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak odczytasz instrukcję 'climb to altitude 4000 feet' w potwierdzeniu?",
+				"en": "How do you read back the instruction 'climb to altitude 4000 feet'?"
+			},
+			"back": {
+				"pl": "CLIMBING TO ALTITUDE FOWER TAUZEND FEET, znak wywoławczy. Polecenie poziomu zawsze podlega potwierdzeniu.",
+				"en": "CLIMBING TO ALTITUDE FOWER TOUSAND FEET, call sign. A level instruction always requires read-back."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-017",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza wyrażenie HOW DO YOU READ i jaką skalą odpowiadasz?",
+				"en": "What does HOW DO YOU READ mean and what scale do you answer with?"
+			},
+			"back": {
+				"pl": "Pytanie o czytelność odbioru. Odpowiada się skalą czytelności od 1 (nieczytelnie) do 5 (doskonale czytelnie), np. READING YOU FIVE.",
+				"en": "A question about readability. You answer with the readability scale 1 (unreadable) to 5 (perfectly readable), e.g. READING YOU FIVE."
+			},
+			"mnemonic": {
+				"pl": "Skala 1-5: od 'nieczytelnie' do 'doskonale'.",
+				"en": "Scale 1-5: from 'unreadable' to 'perfectly readable'."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-018",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie wyrażenie potwierdza, że zrozumiałeś i zastosujesz się do instrukcji, a czym różni się od potwierdzenia samego odbioru?",
+				"en": "Which phrase confirms you understood and will comply with an instruction, and how does it differ from acknowledging receipt only?"
+			},
+			"back": {
+				"pl": "Zgodę na wykonanie wyraża pełny readback lub WILCO. Samo potwierdzenie odbioru bez zobowiązania do wykonania to ROGER.",
+				"en": "Compliance is expressed by a full read-back or WILCO. Mere acknowledgement of receipt without commitment to comply is ROGER."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-019",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak prawidłowo zgłosisz gotowość do startu na lotnisku z wieżą?",
+				"en": "How do you correctly report ready for departure at a tower-controlled aerodrome?"
+			},
+			"back": {
+				"pl": "Znak wywoławczy, READY FOR DEPARTURE. Czekasz na CLEARED FOR TAKE-OFF; słowa TAKE-OFF używa się wyłącznie w zezwoleniu i jego potwierdzeniu.",
+				"en": "Call sign, READY FOR DEPARTURE. You wait for CLEARED FOR TAKE-OFF; the word TAKE-OFF is used only in the clearance and its read-back."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-020",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak potwierdzisz zezwolenie CLEARED FOR TAKE-OFF RUNWAY 25?",
+				"en": "How do you read back the clearance CLEARED FOR TAKE-OFF RUNWAY 25?"
+			},
+			"back": {
+				"pl": "CLEARED FOR TAKE-OFF RUNWAY TU FAJF, znak wywoławczy. Zezwolenie na start i oznaczenie drogi startowej podlegają obowiązkowemu potwierdzeniu.",
+				"en": "CLEARED FOR TAKE-OFF RUNWAY TOO FIFE, call sign. The take-off clearance and runway designator require mandatory read-back."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-021",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.READBACK"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza polecenie HOLD POSITION i jak je potwierdzisz?",
+				"en": "What does the instruction HOLD POSITION mean and how do you read it back?"
+			},
+			"back": {
+				"pl": "Pozostań w miejscu, nie ruszaj się. Readback: HOLDING (POSITION), znak wywoławczy.",
+				"en": "Stop and remain where you are. Read-back: HOLDING (POSITION), call sign."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-022",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak zainicjujesz korespondencję z organem FIS, prosząc o informacje o ruchu?",
+				"en": "How do you initiate communication with a FIS unit requesting traffic information?"
+			},
+			"back": {
+				"pl": "Wywołanie: nazwa organu INFORMATION, znak wywoławczy, REQUEST TRAFFIC INFORMATION. FIS udziela informacji, nie wydaje zezwoleń.",
+				"en": "Call: unit name INFORMATION, your call sign, REQUEST TRAFFIC INFORMATION. FIS provides information, not clearances."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-023",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak podać literę informacji ATIS 'G' i jaką frazą potwierdzisz jej odbiór?",
+				"en": "How do you state ATIS information letter 'G', and what phrase confirms its receipt?"
+			},
+			"back": {
+				"pl": "Literę podaje się fonetycznie: GOLF. Odbiór ATIS potwierdza się przy nawiązaniu łączności: INFORMATION GOLF RECEIVED / WITH INFORMATION GOLF.",
+				"en": "The letter is given phonetically: GOLF. ATIS receipt is confirmed on first contact: INFORMATION GOLF RECEIVED / WITH INFORMATION GOLF."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-024",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak nawiązuje się pierwszy kontakt radiowy ze stacją, podając pełne znaki wywoławcze?",
+				"en": "How do you establish initial radio contact using full call signs?"
+			},
+			"back": {
+				"pl": "Najpierw znak wywoławczy stacji wywoływanej, potem znak własny, np. \"Kraków Wieża, SP-1234\". Przy nawiązaniu łączności podaje się pełne znaki.",
+				"en": "State the called station's call sign first, then your own, e.g. \"Krakow Tower, SP-1234\". Full call signs are used when establishing contact."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-025",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Kiedy organ kontroli może skrócić znak wywoławczy statku powietrznego?",
+				"en": "When may ATC abbreviate an aircraft call sign?"
+			},
+			"back": {
+				"pl": "Dopiero po nawiązaniu łączności i tylko gdy nie spowoduje to pomyłki. Pilot może skracać własny znak wyłącznie po tym, jak skróci go stacja naziemna.",
+				"en": "Only after contact is established and if no confusion results. The pilot may abbreviate only after the ground station has done so first."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-026",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak prawidłowo skraca się znak rejestracyjny SP-1234?",
+				"en": "How is the registration call sign SP-1234 correctly abbreviated?"
+			},
+			"back": {
+				"pl": "Pierwszy znak znaku rejestracyjnego oraz co najmniej dwa ostatnie znaki, np. \"S-34\". Nie pomija się znaków ze środka dowolnie.",
+				"en": "The first character of the registration plus at least the last two characters, e.g. \"S-34\". Middle characters are not dropped arbitrarily."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-027",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Z czego składa się znak wywoławczy stacji naziemnej służby ruchu lotniczego?",
+				"en": "What does an ATS ground station call sign consist of?"
+			},
+			"back": {
+				"pl": "Z nazwy lokalizacji oraz przyrostka określającego rodzaj służby, np. \"Wieża\" (TWR), \"Ziemia\" (GND), \"Zbliżanie\" (APP), \"Informacja\" (FIS).",
+				"en": "A location name plus a suffix denoting the unit, e.g. \"Tower\" (TWR), \"Ground\" (GND), \"Approach\" (APP), \"Information\" (FIS)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-028",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza przyrostek \"Radio\" w znaku wywoławczym stacji naziemnej?",
+				"en": "What does the suffix \"Radio\" in a ground station call sign denote?"
+			},
+			"back": {
+				"pl": "Stację łączności powietrze-ziemia (np. AFIS) zapewniającą informacje, ale nie kontrolę ruchu lotniczego.",
+				"en": "An air-ground communication station (e.g. AFIS) providing information, not air traffic control."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-029",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co robi pilot, gdy nie jest pewien, czy wywołanie było skierowane do niego?",
+				"en": "What should a pilot do when unsure whether a call was directed to them?"
+			},
+			"back": {
+				"pl": "Nie odpowiada do czasu ponownego wywołania i jednoznacznego potwierdzenia adresata. Lepiej poprosić o powtórzenie niż odpowiedzieć błędnie.",
+				"en": "Do not respond until the call is repeated and the addressee is clear. Better to ask for a repeat than answer wrongly."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-030",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak zgłasza się nowej stacji po zmianie częstotliwości?",
+				"en": "How do you check in with a new station after a frequency change?"
+			},
+			"back": {
+				"pl": "Podaje się znak stacji wywoływanej, znak własny i istotne dane, np. pozycję i wysokość: \"Warszawa Informacja, SP-1234, ...\".",
+				"en": "State the called station, your own call sign and relevant data such as position and altitude: \"Warsaw Information, SP-1234, ...\"."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-031",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czy szybowiec może używać znaku wywoławczego opartego na nazwie aeroklubu lub typie statku?",
+				"en": "May a glider use a call sign based on the aero club name or aircraft type?"
+			},
+			"back": {
+				"pl": "Standardowo używa się znaku rejestracyjnego (SP-xxxx). Znak telefoniczny oparty na nazwie operatora wymaga przydziału; sam typ statku nie jest znakiem wywoławczym.",
+				"en": "The registration mark (SP-xxxx) is standard. A telephony call sign based on an operator name must be assigned; the aircraft type alone is not a call sign."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-032",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak wymawia się znak SP-AKL fonetycznie przy nawiązywaniu łączności?",
+				"en": "How is the call sign SP-AKL pronounced phonetically when establishing contact?"
+			},
+			"back": {
+				"pl": "\"Sierra Papa Alfa Kilo Lima\". Litery wymawia się alfabetem ICAO przy pierwszym kontakcie.",
+				"en": "\"Sierra Papa Alfa Kilo Lima\". Letters are spoken using the ICAO alphabet on first contact."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-033",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak podaje się znaki wywoławcze, gdy dwa statki na częstotliwości mają podobne znaki?",
+				"en": "How should call signs be used when two aircraft on frequency have similar marks?"
+			},
+			"back": {
+				"pl": "ATC może polecić obu statkom używanie pełnych znaków wywoławczych, aby uniknąć pomyłek; skracanie jest wtedy zabronione.",
+				"en": "ATC may instruct both aircraft to use full call signs to avoid confusion; abbreviation is then prohibited."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-034",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza przyrostek \"Kontrola\" (Control) w znaku stacji naziemnej?",
+				"en": "What does the suffix \"Control\" in a ground station call sign mean?"
+			},
+			"back": {
+				"pl": "Organ kontroli obszaru (ACC), zapewniający kontrolę ruchu na trasie w przestrzeni kontrolowanej.",
+				"en": "An area control centre (ACC) providing en-route air traffic control in controlled airspace."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-035",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak wywołać stację, gdy nie znasz jej dokładnego znaku, np. ruchu na lotnisku bez kontroli?",
+				"en": "How do you call a station whose exact call sign you don't know, e.g. traffic at an uncontrolled aerodrome?"
+			},
+			"back": {
+				"pl": "Używa się adresu ogólnego, np. \"Wszystkie stacje\" (All stations) dla komunikatu ogólnego, lub nazwy lotniska + \"Ruch\" (Traffic) na lotniskach bez służby kontroli.",
+				"en": "Use a general address such as \"All stations\" for a broadcast, or the aerodrome name + \"Traffic\" at uncontrolled aerodromes."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-036",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza wywołanie \"All stations\" i czy wymaga potwierdzenia?",
+				"en": "What does the call \"All stations\" mean and does it require a reply?"
+			},
+			"back": {
+				"pl": "To komunikat skierowany do wszystkich stacji jednocześnie (np. ostrzeżenie). Zwykle nie oczekuje się potwierdzenia od poszczególnych stacji.",
+				"en": "It is a message addressed to all stations at once (e.g. a warning). Usually no acknowledgement from individual stations is expected."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-037",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki sygnał poprzedza komunikat dotyczący bezpieczeństwa nadawany do wielu stacji?",
+				"en": "What signal precedes a safety message broadcast to many stations?"
+			},
+			"back": {
+				"pl": "Sygnał bezpieczeństwa \"SECURITE\" (wymawiany say-cu-ri-tay), powtarzany trzykrotnie. Dotyczy ważnej informacji o bezpieczeństwie (np. żeglugi powietrznej lub pogody).",
+				"en": "The safety signal \"SECURITE\" (pronounced say-cu-ri-tay), repeated three times. It precedes an important safety message (e.g. navigation or weather)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-038",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaką strukturę ma pełna depesza MAYDAY?",
+				"en": "What structure does a full MAYDAY message have?"
+			},
+			"back": {
+				"pl": "MAYDAY x3, znak wywoławczy, rodzaj zagrożenia, zamiary pilota, pozycja/wysokość/kurs oraz inne istotne informacje (np. liczba osób na pokładzie).",
+				"en": "MAYDAY x3, call sign, nature of emergency, pilot's intentions, position/altitude/heading and other useful information (e.g. persons on board)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-039",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Na jakiej częstotliwości nadaje się wywołanie w niebezpieczeństwie, gdy brak kontaktu z jakimkolwiek organem?",
+				"en": "On what frequency is a distress call made if no unit is in contact?"
+			},
+			"back": {
+				"pl": "Na aktualnie używanej częstotliwości, a w razie braku odpowiedzi na lotniczej częstotliwości niebezpieczeństwa 121,5 MHz.",
+				"en": "On the frequency currently in use, and if no reply, on the aeronautical emergency frequency 121.5 MHz."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-040",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak anuluje się stan zagrożenia (MAYDAY) po opanowaniu sytuacji?",
+				"en": "How is a distress (MAYDAY) condition cancelled once resolved?"
+			},
+			"back": {
+				"pl": "Nadaje się komunikat o odwołaniu, np. \"... CANCEL MAYDAY ...\" wraz ze znakiem wywoławczym i informacją, że niebezpieczeństwo minęło.",
+				"en": "Transmit a cancellation message such as \"... CANCEL MAYDAY ...\" with the call sign and a statement that the emergency is over."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-041",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co robi pilot w razie awarii odbiornika (może nadawać, nie słyszy)?",
+				"en": "What should you do if your receiver fails (can transmit, cannot receive)?"
+			},
+			"back": {
+				"pl": "Nadaje w ciemno (transmitting blind), podając zamiary; powtarza komunikat dwukrotnie i podaje czas kolejnej transmisji.",
+				"en": "Transmit blind, stating intentions; transmit the message twice and announce the time of the next transmission."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-042",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki kod transpondera ustawia się przy całkowitej utracie łączności radiowej?",
+				"en": "What transponder code is set on complete radio communication failure?"
+			},
+			"back": {
+				"pl": "Kod 7600 oznacza utratę łączności radiowej.",
+				"en": "Code 7600 indicates radio communication failure."
+			},
+			"mnemonic": {
+				"pl": "7600 - radio zamilkło, cisza w eterze.",
+				"en": "7600 - lost comms, radio gone silent."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-043",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki kod transpondera oznacza akt bezprawnej ingerencji (porwanie)?",
+				"en": "What transponder code indicates unlawful interference (hijack)?"
+			},
+			"back": {
+				"pl": "Kod 7500 oznacza akt bezprawnej ingerencji.",
+				"en": "Code 7500 indicates unlawful interference (hijacking)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-044",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakim zwrotem nakazuje się ciszę radiową w trakcie trwającego zagrożenia?",
+				"en": "What phrase imposes radio silence during an ongoing distress situation?"
+			},
+			"back": {
+				"pl": "Stacja kierująca może nakazać ciszę: \"STOP TRANSMITTING - MAYDAY\", aby zwolnić częstotliwość dla statku w niebezpieczeństwie.",
+				"en": "The controlling station may impose silence: \"STOP TRANSMITTING - MAYDAY\" to clear the frequency for the aircraft in distress."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-045",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakim zwrotem znosi się ciszę radiową po zakończeniu sytuacji niebezpieczeństwa?",
+				"en": "What phrase lifts imposed radio silence after a distress situation ends?"
+			},
+			"back": {
+				"pl": "\"DISTRESS TRAFFIC ENDED\" - oznacza zakończenie korespondencji w niebezpieczeństwie i powrót do normalnego ruchu na częstotliwości.",
+				"en": "\"DISTRESS TRAFFIC ENDED\" - signals the end of distress communications and resumption of normal frequency use."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-046",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Kto może nadać sygnał MAYDAY w imieniu statku powietrznego w niebezpieczeństwie?",
+				"en": "Who may transmit a MAYDAY on behalf of an aircraft in distress?"
+			},
+			"back": {
+				"pl": "Dowódca statku w niebezpieczeństwie lub - gdy nie może - inna stacja (np. inny statek lub organ ATS) działająca w jego imieniu.",
+				"en": "The pilot-in-command of the distressed aircraft or, if unable, another station (e.g. another aircraft or ATS unit) acting on its behalf."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-047",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza zwrot \"MAYDAY RELAY\" i kiedy się go używa?",
+				"en": "What does \"MAYDAY RELAY\" mean and when is it used?"
+			},
+			"back": {
+				"pl": "To retransmisja wezwania w niebezpieczeństwie przez stację, która sama nie jest w niebezpieczeństwie, ale przekazuje wezwanie usłyszane od innego statku.",
+				"en": "It is a relay of a distress call by a station that is not itself in distress but forwards a call heard from another aircraft."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-048",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka jest standardowa kolejność pierwszego wywołania (initial call) do organu ATS, gdy nie nawiązano jeszcze łączności?",
+				"en": "What is the standard order of an initial call to an ATS unit before two-way communication is established?"
+			},
+			"back": {
+				"pl": "Najpierw znak wywoławczy wywoływanej stacji, potem własny znak wywoławczy. Po nawiązaniu łączności podaje się treść (np. pozycję, intencje). Przykład: 'Kraków Informacja, SP-XXXX'.",
+				"en": "First the call sign of the station being called, then your own call sign. Once contact is established you pass the message (e.g. position, intentions). Example: 'Krakow Information, SP-XXXX'."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-049",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Po nawiązaniu łączności i otrzymaniu zgody, w jaki sposób można skrócić znak wywoławczy statku powietrznego SP-1234?",
+				"en": "Once contact is established and permitted, how may the call sign SP-1234 be abbreviated?"
+			},
+			"back": {
+				"pl": "Do pierwszego znaku przedrostka oraz co najmniej dwóch ostatnich znaków: 'SP-34' lub 'S-34'. Skrót może wprowadzić tylko stacja naziemna; dopiero potem statek powietrzny może go stosować.",
+				"en": "To the first character of the prefix plus at least the last two characters: 'SP-34' or 'S-34'. Only the ground station may introduce the abbreviation; the aircraft may then use it."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-050",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak w korespondencji radiowej przekazuje się liczbę 118,1 (np. częstotliwość)?",
+				"en": "How is the number 118.1 (e.g. a frequency) transmitted by radio?"
+			},
+			"back": {
+				"pl": "Cyfra po cyfrze z osobno wymawianym przecinkiem: 'jeden jeden osiem przecinek jeden' (ang. 'one one eight decimal one').",
+				"en": "Digit by digit with the decimal point spoken: 'one one eight decimal one'. Each digit is pronounced separately."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-051",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrót QNH w korespondencji radiowej?",
+				"en": "What does the abbreviation QNH mean in radio communication?"
+			},
+			"back": {
+				"pl": "Ciśnienie atmosferyczne sprowadzone do poziomu morza wg atmosfery wzorcowej; nastawione na wysokościomierzu daje wysokość bezwzględną nad poziomem morza (altitude).",
+				"en": "Atmospheric pressure reduced to mean sea level using the standard atmosphere; set on the altimeter it indicates altitude above mean sea level."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-052",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["COM.GLIDER_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrót QFE i kiedy bywa stosowany przez szybowce?",
+				"en": "What does QFE mean and when is it used by gliders?"
+			},
+			"back": {
+				"pl": "Ciśnienie panujące na poziomie lotniska (lub progu); nastawione na wysokościomierzu daje wysokość względną (height) nad lotniskiem, czyli zero na ziemi. Przydatne w lotach po kręgu.",
+				"en": "Pressure at aerodrome (or threshold) level; set on the altimeter it shows height above the aerodrome, reading zero on the ground. Useful for circuit flying."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-053",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka jest lotnicza częstotliwość awaryjna (emergency) w lotnictwie VFR i kto ją monitoruje?",
+				"en": "What is the aeronautical emergency frequency used in VFR and who monitors it?"
+			},
+			"back": {
+				"pl": "121,5 MHz. Jest monitorowana m.in. przez organy ATS i wiele stacji; służy do wezwań w niebezpieczeństwie i naglących, gdy brak łączności z właściwym organem.",
+				"en": "121.5 MHz. It is monitored by ATS units and many stations; used for distress and urgency calls when no contact with the appropriate unit exists."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-054",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "W jakim zakresie częstotliwości pracują lotnicze radiostacje VHF używane w łączności VFR?",
+				"en": "In what frequency band do the aeronautical VHF radios used in VFR communication operate?"
+			},
+			"back": {
+				"pl": "W paśmie VHF od 118,000 do 136,975 MHz, z modulacją amplitudy (AM).",
+				"en": "In the VHF band from 118.000 to 136.975 MHz, using amplitude modulation (AM)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-055",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza rozdzielczość kanałowa 8,33 kHz i czym różni się od dawnej 25 kHz?",
+				"en": "What does 8.33 kHz channel spacing mean and how does it differ from the older 25 kHz?"
+			},
+			"back": {
+				"pl": "To węższy odstęp między kanałami, pozwalający zmieścić więcej kanałów w paśmie VHF. Daje częstotliwości typu 118,005 czy 120,055 zamiast tylko co 25 kHz; wymaga radia 8,33 kHz.",
+				"en": "It is a narrower spacing between channels, fitting more channels into the VHF band. It yields frequencies like 118.005 or 120.055 instead of only every 25 kHz; it requires an 8.33 kHz capable radio."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-056",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest FIS (Flight Information Service) i jaką częstotliwość wykorzystuje pilot szybowca w przestrzeni niekontrolowanej?",
+				"en": "What is FIS (Flight Information Service) and which frequency does a glider pilot use in uncontrolled airspace?"
+			},
+			"back": {
+				"pl": "Służba informacji powietrznej udzielająca informacji o ruchu, pogodzie i ograniczeniach. Pilot korzysta z opublikowanej częstotliwości właściwego sektora FIS (np. FIS Kraków), podanej w AIP / na mapie.",
+				"en": "An information service providing traffic, weather and restriction information. The pilot uses the published frequency of the relevant FIS sector (e.g. FIS Krakow), shown in the AIP / on the chart."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-057",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza polecenie 'STANDBY' w korespondencji radiowej?",
+				"en": "What does the instruction 'STANDBY' mean in radiotelephony?"
+			},
+			"back": {
+				"pl": "'Czekaj, wywołam cię' - stacja prosi o oczekiwanie, niczego nie potwierdza ani nie zezwala. To nie jest zgoda na żadne działanie.",
+				"en": "'Wait, I will call you' - the station asks you to wait and neither confirms nor clears anything. It is not approval for any action."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-058",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza zwrot 'SAY AGAIN' i jak poprosić o powtórzenie tylko fragmentu depeszy?",
+				"en": "What does 'SAY AGAIN' mean and how do you request only part of a message be repeated?"
+			},
+			"back": {
+				"pl": "'SAY AGAIN' = powtórz całość. Aby powtórzyć fragment: 'SAY AGAIN ALL BEFORE...', 'SAY AGAIN ALL AFTER...' lub 'SAY AGAIN... (dany element)'.",
+				"en": "'SAY AGAIN' = repeat all. For part: 'SAY AGAIN ALL BEFORE...', 'SAY AGAIN ALL AFTER...' or 'SAY AGAIN... (the item)'."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-059",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak poprawnie skorygować pomyłkę w trakcie nadawania depeszy?",
+				"en": "How do you correctly fix a mistake while transmitting a message?"
+			},
+			"back": {
+				"pl": "Wypowiada się słowo 'CORRECTION' (pol. 'POPRAWKA'), następnie powtarza ostatnią poprawną grupę i podaje poprawną wersję.",
+				"en": "Say the word 'CORRECTION', then repeat the last correct group and give the corrected version."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-060",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza odpowiedź 'NEGATIVE' i czym różni się od 'UNABLE'?",
+				"en": "What does the reply 'NEGATIVE' mean and how does it differ from 'UNABLE'?"
+			},
+			"back": {
+				"pl": "'NEGATIVE' = 'nie' / 'zgoda nieudzielona' / 'niepoprawne'. 'UNABLE' = 'nie mogę spełnić waszego żądania', zwykle z podaniem powodu. To różne znaczenia.",
+				"en": "'NEGATIVE' = 'no' / 'permission not granted' / 'incorrect'. 'UNABLE' = 'I cannot comply with your request', usually with a reason. They mean different things."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-061",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak przeprowadza się sprawdzenie łączności (radio check) i co oznacza ocena czytelności 5?",
+				"en": "How is a radio check performed and what does readability 5 mean?"
+			},
+			"back": {
+				"pl": "Wywołanie: '... RADIO CHECK (częstotliwość)'. Czytelność ocenia się w skali 1-5, gdzie 5 oznacza 'doskonale czytelny' (perfectly readable). Odpowiedź np. 'READING YOU FIVE'.",
+				"en": "Call: '... RADIO CHECK (frequency)'. Readability is rated 1-5, where 5 means 'perfectly readable'. A reply may be 'READING YOU FIVE'."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-062",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.CALLSIGN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak wymawia się znak wywoławczy SP-1234 w całości z użyciem alfabetu fonetycznego?",
+				"en": "How is the call sign SP-1234 spoken in full using the phonetic alphabet?"
+			},
+			"back": {
+				"pl": "'Sierra Papa - One Two Three Four'. Litery przedrostka fonetycznie, cyfry pojedynczo. Pełny znak podaje się przy pierwszym wywołaniu.",
+				"en": "'Sierra Papa - One Two Three Four'. Prefix letters phonetically, digits individually. The full call sign is used on the initial call."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-063",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki tryb i kod transpondera jest standardowy dla lotu VFR, gdy organ nie przydzielił indywidualnego kodu?",
+				"en": "Which transponder mode and code is standard for a VFR flight when no individual code has been assigned?"
+			},
+			"back": {
+				"pl": "Tryb A/C (lub S) z kodem konspikacyjnym 7000 dla lotów VFR, chyba że organ ATS przydzielił inny kod. Mode C/S podaje także wysokość.",
+				"en": "Mode A/C (or S) with the VFR conspicuity code 7000, unless an ATS unit assigns another code. Mode C/S also reports altitude."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-064",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.EMERGENCY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznaczają kody transpondera 7600, 7500 i 7700?",
+				"en": "What do transponder codes 7600, 7500 and 7700 mean?"
+			},
+			"back": {
+				"pl": "7600 = utrata łączności radiowej (radio failure). 7500 = bezprawna ingerencja / uprowadzenie. 7700 = ogólny kod awaryjny (emergency).",
+				"en": "7600 = radio communication failure. 7500 = unlawful interference / hijack. 7700 = general emergency code."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-065",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["COM.GLIDER_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co należy zrobić z radiem przed startem szybowca w zakresie częstotliwości i sprawdzenia?",
+				"en": "What should be checked on the radio before a glider launch regarding frequency and operation?"
+			},
+			"back": {
+				"pl": "Nastawić właściwą częstotliwość (np. startu/lotniska), wykonać radio check, ustawić głośność i upewnić się, że przycisk nadawania nie jest zablokowany (stuck mic).",
+				"en": "Set the correct frequency (e.g. launch/aerodrome), perform a radio check, set the volume and confirm the transmit button is not stuck (stuck mic)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-066",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza procedura 'TRANSMITTING BLIND' i kiedy szybowiec ją stosuje?",
+				"en": "What does 'transmitting blind' mean and when does a glider use it?"
+			},
+			"back": {
+				"pl": "Przy utracie odbioru (lub podejrzeniu awarii odbiornika) nadaje się depesze 'w ciemno', poprzedzając je słowami 'TRANSMITTING BLIND', powtarzając treść i zakładając, że ktoś odbiera mimo braku potwierdzenia.",
+				"en": "When reception is lost (or a receiver fault is suspected) messages are sent without expecting a reply, prefixed 'TRANSMITTING BLIND', repeated, assuming someone receives despite no acknowledgement."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-067",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.GLIDER_OPS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie elementy powinien zawierać meldunek pozycyjny szybowca dla FIS?",
+				"en": "What elements should a glider position report to FIS contain?"
+			},
+			"back": {
+				"pl": "Znak wywoławczy, pozycję (punkt lub odległość i kierunek od punktu), wysokość oraz w razie potrzeby kurs i intencje. Zwięźle i jednoznacznie.",
+				"en": "Call sign, position (point or distance and bearing from a point), altitude, and if relevant heading and intentions. Concise and unambiguous."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-068",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak przekazuje się drogą radiową czas, np. godzinę 13:24 UTC?",
+				"en": "How is time, e.g. 13:24 UTC, transmitted by radio?"
+			},
+			"back": {
+				"pl": "Zwykle podaje się tylko minuty: 'two four'. Pełny czas, gdy może być niejasny: 'one three two four'. Czas zawsze odnosi się do UTC.",
+				"en": "Usually only the minutes are given: 'two four'. The full time when ambiguity is possible: 'one three two four'. Time is always referenced to UTC."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-069",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza polecenie 'MONITOR (częstotliwość)' w odróżnieniu od 'CONTACT (częstotliwość)'?",
+				"en": "What does 'MONITOR (frequency)' mean as opposed to 'CONTACT (frequency)'?"
+			},
+			"back": {
+				"pl": "'MONITOR' = nasłuchuj na podanej częstotliwości (np. ATIS/informacja), bez nawiązywania łączności. 'CONTACT' = nawiąż łączność (wywołaj) na podanej częstotliwości.",
+				"en": "'MONITOR' = listen out on the given frequency (e.g. ATIS/information) without calling. 'CONTACT' = establish communication (call) on the given frequency."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-070",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["COM.FREQUENCIES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest ATIS i jak pilot potwierdza odbiór bieżącej informacji ATIS?",
+				"en": "What is ATIS and how does a pilot confirm receipt of the current ATIS information?"
+			},
+			"back": {
+				"pl": "ATIS to automatycznie nadawana informacja lotniskowa (pogoda, pas w użyciu itp.) oznaczona literą (np. Information Alpha). Pilot potwierdza, podając literę: 'Information Bravo'.",
+				"en": "ATIS is an automatically broadcast aerodrome information (weather, runway in use, etc.) labelled with a letter (e.g. Information Alpha). The pilot confirms by stating the letter: 'Information Bravo'."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-071",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["COM.PHRASEOLOGY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego przed naciśnięciem przycisku nadawania pilot powinien chwilę nasłuchiwać?",
+				"en": "Why should a pilot listen for a moment before pressing the transmit button?"
+			},
+			"back": {
+				"pl": "Aby nie nadawać, gdy inny korespondent zajmuje częstotliwość - zapobiega to nakładaniu się transmisji (blocking), które zagłusza obie depesze.",
+				"en": "To avoid transmitting while another station is using the frequency - this prevents over-transmission (blocking), which garbles both messages."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-072",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki kod transpondera ustawiasz przy utracie łączności radiowej (radio failure)?",
+				"en": "What transponder code do you set on radio communication failure?"
+			},
+			"back": {
+				"pl": "Kod 7600 - oznacza utratę łączności radiowej.",
+				"en": "Code 7600 - it indicates radio communication failure."
+			},
+			"mnemonic": {
+				"pl": "7600: 'sześćset' brzmi jak 'cisza w eterze'.",
+				"en": "7600 - 'no comms, no sound'."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-073",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka jest pierwsza czynność pilota po stwierdzeniu braku odbioru ze stacji naziemnej?",
+				"en": "What is the pilot's first action after noticing no reception from the ground station?"
+			},
+			"back": {
+				"pl": "Sprawdzić nastawy radia: głośność, wybraną częstotliwość, squelch, działanie PTT oraz podłączenie i zasilanie zestawu (próba zlokalizowania usterki).",
+				"en": "Check the radio settings: volume, selected frequency, squelch, PTT operation and headset/power connection (try to localise the fault)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-074",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakiej frazy używasz, gdy podejrzewasz, że nadajesz, ale nie odbierasz (uszkodzony odbiornik)?",
+				"en": "What phrase do you use when you suspect you can transmit but not receive (receiver failure)?"
+			},
+			"back": {
+				"pl": "Nadajesz w ciemno z podaniem przyczyny, np. 'TRANSMITTING BLIND DUE TO RECEIVER FAILURE', i podajesz swoje zamiary.",
+				"en": "You transmit blind stating the cause, e.g. 'TRANSMITTING BLIND DUE TO RECEIVER FAILURE', and state your intentions."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-075",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co należy zrobić z transponderem, jeśli działa, a utracono łączność radiową?",
+				"en": "What should you do with the transponder if it works but radio communication is lost?"
+			},
+			"back": {
+				"pl": "Ustawić kod 7600 i pozostawić transponder włączony (tryb A/C lub S z transmisją wysokości), aby ATC widział pozycję.",
+				"en": "Set code 7600 and keep the transponder ON (mode A/C or S with altitude reporting) so ATC can see your position."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-076",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co pilot powinien robić, aby przywrócić łączność po jej utracie?",
+				"en": "What should the pilot do to try to restore communication after a loss?"
+			},
+			"back": {
+				"pl": "Próbować na poprzedniej i bieżącej częstotliwości, użyć drugiego radia lub odbiornika, wezwać na 121,5 MHz albo za pośrednictwem innej stacji.",
+				"en": "Try the previous and current frequency, use a second radio or receiver, call on 121.5 MHz or via another station."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-077",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza zwrot 'IF YOU READ ME' w procedurze utraty łączności?",
+				"en": "What does the phrase 'IF YOU READ ME' mean in a communication failure procedure?"
+			},
+			"back": {
+				"pl": "To wywołanie ATC sprawdzające, czy pilot odbiera, z prośbą o potwierdzenie umówionym sygnałem (np. manewrem lub kodem transpondera).",
+				"en": "It is an ATC call checking whether the pilot can receive, asking for confirmation by an agreed signal (e.g. a manoeuvre or a transponder code)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-078",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak pilot z działającym odbiornikiem (ale bez nadajnika) może potwierdzić ATC odbiór polecenia transponderem?",
+				"en": "How can a pilot with a working receiver but no transmitter acknowledge an ATC instruction via the transponder?"
+			},
+			"back": {
+				"pl": "Wykonując IDENT (przycisk SPI) na żądanie ATC - 'SQUAWK IDENT' służy do potwierdzenia odbioru i identyfikacji.",
+				"en": "By pressing IDENT (SPI) when ATC requests it - 'SQUAWK IDENT' confirms reception and identifies the aircraft."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-079",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Na jakiej zasadzie pilot bez łączności wykonuje lot i lądowanie na lotnisku kontrolowanym?",
+				"en": "On what basis does a pilot without communication fly and land at a controlled aerodrome?"
+			},
+			"back": {
+				"pl": "Obserwując i stosując się do sygnałów świetlnych z wieży oraz prowadząc uważną obserwację innego ruchu.",
+				"en": "By watching and complying with light signals from the tower and keeping a sharp lookout for other traffic."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-080",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza stałe zielone światło lampy sygnałowej dla statku w locie?",
+				"en": "What does a steady green light from the signalling lamp mean to an aircraft in flight?"
+			},
+			"back": {
+				"pl": "Macie zezwolenie na lądowanie.",
+				"en": "You are cleared to land."
+			},
+			"mnemonic": {
+				"pl": "Zielone = 'ląduj', jak na drodze.",
+				"en": "Green = go/land, like a traffic light."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-081",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza stałe czerwone światło lampy sygnałowej dla statku w locie?",
+				"en": "What does a steady red light from the signalling lamp mean to an aircraft in flight?"
+			},
+			"back": {
+				"pl": "Ustąp pierwszeństwa innym statkom i kontynuuj krążenie - nie lądować.",
+				"en": "Give way to other aircraft and continue circling - do not land."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-082",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza seria błysków zielonego światła dla statku w locie?",
+				"en": "What do green flashes mean to an aircraft in flight?"
+			},
+			"back": {
+				"pl": "Powróć na lotnisko i czekaj na zezwolenie na lądowanie (zostanie wydane we właściwym czasie).",
+				"en": "Return to the aerodrome and wait for clearance to land (it will follow in due course)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-083",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza seria błysków czerwonego światła dla statku w locie?",
+				"en": "What do red flashes mean to an aircraft in flight?"
+			},
+			"back": {
+				"pl": "Lotnisko niebezpieczne, nie lądować.",
+				"en": "Aerodrome unsafe, do not land."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-084",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza seria białych błysków lampy sygnałowej dla statku w locie?",
+				"en": "What do white flashes mean to an aircraft in flight?"
+			},
+			"back": {
+				"pl": "Wyląduj na tym lotnisku i kołuj na płytę (po otrzymaniu zielonych sygnałów na lądowanie).",
+				"en": "Land at this aerodrome and proceed to the apron (after receiving green signals to land)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-085",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza stałe czerwone światło dla statku na ziemi?",
+				"en": "What does a steady red light mean to an aircraft on the ground?"
+			},
+			"back": {
+				"pl": "Zatrzymaj się.",
+				"en": "Stop."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-086",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza stałe zielone światło dla statku na ziemi?",
+				"en": "What does a steady green light mean to an aircraft on the ground?"
+			},
+			"back": {
+				"pl": "Masz zezwolenie na start.",
+				"en": "You are cleared for take-off."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-087",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza seria czerwonych błysków dla statku na ziemi?",
+				"en": "What do red flashes mean to an aircraft on the ground?"
+			},
+			"back": {
+				"pl": "Zejdź z używanego pola wzlotów / drogi startowej (zwolnij pas).",
+				"en": "Taxi clear of the landing area / runway in use (vacate the runway)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-088",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak pilot potwierdza w dzień odebranie i zrozumienie sygnału świetlnego z wieży?",
+				"en": "How does a pilot acknowledge a light signal from the tower during the day?"
+			},
+			"back": {
+				"pl": "W locie: kołysaniem skrzydłami; na ziemi: poruszaniem lotek lub steru kierunku.",
+				"en": "In flight: by rocking the wings; on the ground: by moving the ailerons or rudder."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-089",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak pilot potwierdza w nocy odebranie sygnału świetlnego?",
+				"en": "How does a pilot acknowledge a light signal at night?"
+			},
+			"back": {
+				"pl": "Dwukrotnym włączeniem i wyłączeniem świateł do lądowania, a w razie ich braku - świateł nawigacyjnych.",
+				"en": "By switching the landing lights on and off twice, or if not fitted, the navigation lights."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-090",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co powinien zawierać komunikat 'transmitting blind' przy utracie odbioru?",
+				"en": "What should a 'transmitting blind' message contain on loss of reception?"
+			},
+			"back": {
+				"pl": "Znak wywoławczy, informację, że nadaje w ciemno, pozycję i wysokość oraz zamiary pilota (np. trasę i miejsce lądowania).",
+				"en": "Call sign, a statement that it is transmitting blind, position and altitude, and the pilot's intentions (e.g. route and landing place)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-091",
+			"type": "flashcard",
+			"microSkill": "rtf",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Po czym pilot powinien podejrzewać utratę łączności radiowej?",
+				"en": "What sign should make a pilot suspect a radio communication failure?"
+			},
+			"back": {
+				"pl": "Gdy w spodziewanym czasie nie otrzymuje odpowiedzi ani innych transmisji mimo prawidłowych wywołań - całkowita cisza na częstotliwości jest sygnałem ostrzegawczym.",
+				"en": "When no reply or other transmissions are heard within the expected time despite correct calls - total silence on the frequency is a warning sign."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-092",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co robi pilot szybowca po utracie łączności w przestrzeni kontrolowanej, w warunkach VMC?",
+				"en": "What does a glider pilot do after a comms loss in controlled airspace in VMC?"
+			},
+			"back": {
+				"pl": "Kontynuuje lot w warunkach VFR, ląduje na najbliższym odpowiednim lotnisku i melduje przylot właściwemu organowi ATS najszybciej, jak to możliwe.",
+				"en": "Continue in VFR, land at the nearest suitable aerodrome and report the arrival to the appropriate ATS unit as soon as possible."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-093",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka częstotliwość jest lotniczą częstotliwością awaryjną do wywołania przy problemach z łącznością?",
+				"en": "Which frequency is the aeronautical emergency frequency to call when having comms problems?"
+			},
+			"back": {
+				"pl": "121,5 MHz - lotnicza częstotliwość awaryjna VHF, monitorowana m.in. przez służby ATS.",
+				"en": "121.5 MHz - the aeronautical VHF emergency frequency, monitored by ATS among others."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-com-gen-094",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["COM.FAILURE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co zrobić z transponderem, jeśli trwa sytuacja awaryjna (7700), a dochodzi do utraty łączności?",
+				"en": "What to do with the transponder if an emergency (7700) is in progress and comms are also lost?"
+			},
+			"back": {
+				"pl": "Priorytet ma stan najpilniejszy: przy trwającej sytuacji niebezpieczeństwa pozostaje 7700; jeśli to wyłącznie utrata łączności - ustawia się 7600.",
+				"en": "The most urgent state has priority: during an ongoing emergency keep 7700; if it is purely a comms loss, set 7600."
+			},
+			"source": "generated:spl"
 		}
 	]
 }

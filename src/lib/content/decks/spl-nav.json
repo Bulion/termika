@@ -786,6 +786,1682 @@
 				}
 			],
 			"source": "authored:spl"
+		},
+		{
+			"id": "spl-nav-gen-001",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["NAV.UNITS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrót MSL używany na mapach lotniczych?",
+				"en": "What does the abbreviation MSL mean on aeronautical charts?"
+			},
+			"back": {
+				"pl": "MSL (Mean Sea Level) to średni poziom morza, czyli poziom odniesienia, względem którego podaje się wysokości bezwzględne (AMSL).",
+				"en": "MSL (Mean Sea Level) is the average sea level, the reference datum against which absolute altitudes (AMSL) are given."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-002",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["NAV.UNITS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym różni się wysokość AMSL od wysokości AGL?",
+				"en": "What is the difference between AMSL and AGL altitude?"
+			},
+			"back": {
+				"pl": "AMSL (Above Mean Sea Level) liczona jest od średniego poziomu morza, a AGL (Above Ground Level) od poziomu terenu bezpośrednio pod statkiem powietrznym.",
+				"en": "AMSL (Above Mean Sea Level) is measured from mean sea level, while AGL (Above Ground Level) is measured from the terrain directly below the aircraft."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-003",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["NAV.CHARTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak na mapie ICAO VFR 1:500 000 oznacza się przeszkody (np. maszty)?",
+				"en": "How are obstacles (e.g. masts) marked on the ICAO VFR 1:500 000 chart?"
+			},
+			"back": {
+				"pl": "Symbolem masztu lub wieży, a obok podaje się dwie wysokości: większą AMSL (nad poziomem morza) oraz mniejszą w nawiasach AGL (nad terenem).",
+				"en": "With a mast or tower symbol, with two heights given alongside: the larger AMSL value and the smaller one in brackets AGL."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-004",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co przedstawiają linie izogony na mapie nawigacyjnej?",
+				"en": "What do isogonic lines (isogons) represent on a navigation chart?"
+			},
+			"back": {
+				"pl": "Izogony łączą punkty o jednakowej deklinacji magnetycznej i pozwalają odczytać poprawkę na różnicę między północą geograficzną a magnetyczną.",
+				"en": "Isogons join points of equal magnetic variation and let you read the correction between true and magnetic north."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-005",
+			"type": "flashcard",
+			"microSkill": "unit_conversion",
+			"loIds": ["NAV.UNITS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "W jakich jednostkach standardowo podaje się prędkość wiatru w lotnictwie?",
+				"en": "In what units is wind speed standardly given in aviation?"
+			},
+			"back": {
+				"pl": "Zwykle w węzłach (kt), czyli milach morskich na godzinę; 1 kt = 1 NM/h.",
+				"en": "Usually in knots (kt), i.e. nautical miles per hour; 1 kt = 1 NM/h."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-006",
+			"type": "flashcard",
+			"microSkill": "unit_conversion",
+			"loIds": ["NAV.UNITS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Ile wynosi 10 węzłów w przybliżeniu w km/h?",
+				"en": "Approximately how much is 10 knots in km/h?"
+			},
+			"back": {
+				"pl": "Około 18,5 km/h (1 kt = 1,852 km/h).",
+				"en": "About 18.5 km/h (1 kt = 1.852 km/h)."
+			},
+			"mnemonic": {
+				"pl": "Węzeł to prawie 1,85 km/h - mnóż przez 1,85.",
+				"en": "A knot is nearly 1.85 km/h - multiply by 1.85."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-007",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["NAV.CHARTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak na mapie odczytuje się rzeźbę terenu metodą warstwic barwnych (hipsometrii)?",
+				"en": "How is terrain relief read from colour layer tinting (hypsometry) on a chart?"
+			},
+			"back": {
+				"pl": "Im wyższy teren, tym ciemniejszy/bardziej brązowy odcień: zielenie to niziny, a brązy i biel - tereny wysokie i góry.",
+				"en": "The higher the terrain, the darker/browner the shade: greens are lowlands, browns and white are high ground and mountains."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-008",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["NAV.CHARTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrót MEF (Maximum Elevation Figure) na mapie ICAO VFR?",
+				"en": "What does the abbreviation MEF (Maximum Elevation Figure) mean on the ICAO VFR chart?"
+			},
+			"back": {
+				"pl": "MEF to najwyższy znany punkt terenu lub przeszkody w danym polu mapy, podawany w setkach stóp AMSL.",
+				"en": "MEF is the highest known terrain or obstacle elevation within a given chart quadrangle, given in hundreds of feet AMSL."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-009",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.CHARTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak odczytać MEF zapisany na mapie jako '23'?",
+				"en": "How do you read an MEF shown on the chart as '23'?"
+			},
+			"back": {
+				"pl": "'23' oznacza 2300 ft AMSL - liczbę mnoży się przez 100 stóp.",
+				"en": "'23' means 2300 ft AMSL - the figure is multiplied by 100 feet."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-010",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.DIRECTION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest kurs/droga rzeczywista (TC/TT) i względem czego jest mierzony?",
+				"en": "What is true course/true track (TC/TT) and what is it measured against?"
+			},
+			"back": {
+				"pl": "To kąt między północą geograficzną a linią drogi, mierzony zgodnie z ruchem wskazówek zegara od 000° do 359°.",
+				"en": "It is the angle between true (geographic) north and the track line, measured clockwise from 000° to 359°."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-011",
+			"type": "flashcard",
+			"microSkill": "unit_conversion",
+			"loIds": ["NAV.UNITS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Ile stóp wynosi 1 metr (w przybliżeniu używanym w lotnictwie)?",
+				"en": "How many feet is 1 metre (using the aviation approximation)?"
+			},
+			"back": {
+				"pl": "Około 3,28 ft (1 ft = 0,3048 m).",
+				"en": "About 3.28 ft (1 ft = 0.3048 m)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-012",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.POSITION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakim układem współrzędnych określa się pozycję na mapie lotniczej?",
+				"en": "What coordinate system defines position on an aeronautical chart?"
+			},
+			"back": {
+				"pl": "Szerokością geograficzną (latitude, N/S) i długością geograficzną (longitude, E/W), w stopniach, minutach i sekundach.",
+				"en": "Latitude (N/S) and longitude (E/W), expressed in degrees, minutes and seconds."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-013",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.POSITION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym różnią się południki od równoleżników?",
+				"en": "What is the difference between meridians and parallels?"
+			},
+			"back": {
+				"pl": "Południki biegną od bieguna do bieguna (długość geograficzna), a równoleżniki to okręgi równoległe do równika (szerokość geograficzna).",
+				"en": "Meridians run from pole to pole (longitude), while parallels are circles parallel to the equator (latitude)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-014",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.UNITS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Ile minut kątowych ma jeden stopień?",
+				"en": "How many arc minutes are there in one degree?"
+			},
+			"back": {
+				"pl": "Jeden stopień to 60 minut kątowych (1° = 60'), a każda minuta to 60 sekund.",
+				"en": "One degree is 60 arc minutes (1° = 60'), and each minute is 60 seconds."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-015",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["NAV.CHARTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego na mapie w odwzorowaniu Lamberta linia prosta jest w przybliżeniu ortodromą?",
+				"en": "Why on a Lambert projection chart is a straight line approximately a great circle?"
+			},
+			"back": {
+				"pl": "W odwzorowaniu stożkowym Lamberta zniekształcenia są małe, więc linia prosta między punktami odpowiada w przybliżeniu najkrótszej drodze (ortodromie).",
+				"en": "In the Lambert conformal conic projection distortion is small, so a straight line between points approximates the shortest path (great circle)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-016",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["NAV.UNITS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrót QNH i w jakich jednostkach jest podawany w Polsce?",
+				"en": "What does QNH mean and in what units is it given in Poland?"
+			},
+			"back": {
+				"pl": "QNH to ciśnienie nastawiane na wysokościomierzu, by wskazywał wysokość AMSL; w Polsce podawane w hektopaskalach (hPa).",
+				"en": "QNH is the pressure set on the altimeter so it reads altitude AMSL; in Poland it is given in hectopascals (hPa)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-017",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["NAV.UNITS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym różni się QNH od QFE?",
+				"en": "What is the difference between QNH and QFE?"
+			},
+			"back": {
+				"pl": "Przy QNH wysokościomierz wskazuje wysokość nad poziomem morza, a przy QFE - wysokość nad poziomem lotniska (na ziemi pokazuje 0).",
+				"en": "With QNH the altimeter reads altitude above mean sea level; with QFE it reads height above the aerodrome (showing 0 on the ground)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-018",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.UNITS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest poziom lotu (FL - Flight Level) i od jakiego ciśnienia jest liczony?",
+				"en": "What is a Flight Level (FL) and from what pressure setting is it counted?"
+			},
+			"back": {
+				"pl": "FL to wysokość liczona przy ciśnieniu standardowym 1013,25 hPa, w setkach stóp; np. FL65 to 6500 ft.",
+				"en": "FL is altitude referenced to the standard pressure of 1013.25 hPa, in hundreds of feet; e.g. FL65 is 6500 ft."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-019",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["NAV.CHARTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak na mapie ICAO VFR przedstawia się strefę kontrolowaną lotniska (CTR)?",
+				"en": "How is an aerodrome control zone (CTR) depicted on the ICAO VFR chart?"
+			},
+			"back": {
+				"pl": "Ciągłą niebieską obwiednią strefy, z podanym oznaczeniem i granicami pionowymi (od ziemi do określonej wysokości).",
+				"en": "With a solid blue boundary, its designation and vertical limits (from ground up to a stated altitude)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-020",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["NAV.CHARTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznaczają litery przy strefach przestrzeni powietrznej, np. 'D' w TMA klasy D?",
+				"en": "What do airspace class letters, e.g. 'D' in a class D TMA, indicate?"
+			},
+			"back": {
+				"pl": "Litera określa klasę przestrzeni (A-G): zasady lotów, wymagania separacji i łączności; klasa D wymaga zezwolenia i łączności z ATC.",
+				"en": "The letter denotes the airspace class (A-G): flight rules, separation and communication requirements; class D requires clearance and contact with ATC."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-021",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["NAV.CHARTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak odczytać granice strefy podane jako '5500 / GND'?",
+				"en": "How do you read an airspace limit shown as '5500 / GND'?"
+			},
+			"back": {
+				"pl": "Górna granica to 5500 ft AMSL, a dolna sięga ziemi (GND), więc strefa obejmuje przestrzeń od terenu do 5500 ft.",
+				"en": "The upper limit is 5500 ft AMSL and the lower limit is the ground (GND), so the zone spans from the terrain up to 5500 ft."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-022",
+			"type": "flashcard",
+			"microSkill": "unit_conversion",
+			"loIds": ["NAV.UNITS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Ile kilometrów ma w przybliżeniu 1 stopień łuku południka?",
+				"en": "Approximately how many kilometres is 1 degree of arc along a meridian?"
+			},
+			"back": {
+				"pl": "1° łuku to 60 NM, czyli około 111 km (60 x 1,852 km).",
+				"en": "1° of arc is 60 NM, i.e. about 111 km (60 x 1.852 km)."
+			},
+			"mnemonic": {
+				"pl": "Stopień = 60 mil morskich = ~111 km.",
+				"en": "One degree = 60 nautical miles = ~111 km."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-023",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza VAR (W/E) podawane przy róży kompasowej na mapie i jak stosować poprawkę?",
+				"en": "What does VAR (W/E) near the compass rose mean and how is the correction applied?"
+			},
+			"back": {
+				"pl": "VAR to deklinacja magnetyczna. Aby z kursu rzeczywistego policzyć magnetyczny: deklinację zachodnią (W) dodaje się, a wschodnią (E) odejmuje (variation east, magnetic least).",
+				"en": "VAR is magnetic variation. To get magnetic heading from true: add westerly (W) variation and subtract easterly (E) variation (variation east, magnetic least)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-024",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["NAV.CHARTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak na mapie ICAO VFR oznacza się lotnisko niekontrolowane z utwardzoną drogą startową?",
+				"en": "How is an uncontrolled aerodrome with a paved runway marked on the ICAO VFR chart?"
+			},
+			"back": {
+				"pl": "Symbolem okręgu z zaznaczonym układem dróg startowych; obok podaje się nazwę, elewację oraz długość i orientację pasa.",
+				"en": "By a circle symbol with the runway pattern drawn in; alongside are the name, elevation, and runway length and orientation."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-025",
+			"type": "flashcard",
+			"microSkill": "unit_conversion",
+			"loIds": ["NAV.UNITS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego widzialność poziomą podaje się w metrach, a wysokość podstawy chmur w stopach?",
+				"en": "Why is horizontal visibility given in metres while cloud base height is given in feet?"
+			},
+			"back": {
+				"pl": "To konwencja ICAO: meteorologiczne odległości przy ziemi podaje się w metrach/kilometrach, a wysokości pionowe w lotnictwie zwyczajowo w stopach.",
+				"en": "It is an ICAO convention: meteorological distances near the ground are given in metres/kilometres, while vertical heights are customarily given in feet."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-026",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["NAV.DIRECTION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrot QDM?",
+				"en": "What does the abbreviation QDM mean?"
+			},
+			"back": {
+				"pl": "QDM to kurs magnetyczny do stacji radiowej (przy zerowym wietrze), czyli namiar magnetyczny na stacje z pozycji statku powietrznego.",
+				"en": "QDM is the magnetic heading to a radio station (in zero wind), i.e. the magnetic bearing to the station from the aircraft."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-027",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["NAV.DIRECTION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrot QDR?",
+				"en": "What does the abbreviation QDR mean?"
+			},
+			"back": {
+				"pl": "QDR to namiar magnetyczny od stacji, czyli kierunek magnetyczny od stacji do statku powietrznego. QDR jest przeciwny do QDM (rozni sie o 180 stopni).",
+				"en": "QDR is the magnetic bearing from the station, i.e. the magnetic direction from the station to the aircraft. QDR is the reciprocal of QDM (differs by 180 degrees)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-028",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak z kursu magnetycznego (MH) obliczyc kurs rzeczywisty (TH) przy znanej deklinacji?",
+				"en": "How do you convert magnetic heading (MH) to true heading (TH) given the variation?"
+			},
+			"back": {
+				"pl": "TH = MH minus deklinacja wschodnia (E) lub plus deklinacja zachodnia (W). Regula: przy przejsciu z magnetycznego na rzeczywisty wschodnia odejmij, zachodnia dodaj.",
+				"en": "TH = MH minus easterly variation (E) or plus westerly variation (W). When going from magnetic to true, subtract East and add West variation."
+			},
+			"mnemonic": {
+				"pl": "Magnetyczny na rzeczywisty: wschod odejmij, zachod dodaj.",
+				"en": "Magnetic to true: East least (subtract), West best (add)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-029",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.DIRECTION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym rozni sie kurs (heading) od sciezki nad ziemia (track)?",
+				"en": "What is the difference between heading and track?"
+			},
+			"back": {
+				"pl": "Kurs to kierunek, w ktory zwrocona jest os podluzna statku powietrznego. Track to rzeczywisty kierunek przemieszczania sie nad ziemia. Roznice miedzy nimi powoduje znos od wiatru.",
+				"en": "Heading is the direction the aircraft's longitudinal axis points. Track is the actual direction of movement over the ground. The difference is caused by wind drift."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-030",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.DIRECTION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Ile wynosi kurs przeciwny (reciprocal) do kursu 075 stopni?",
+				"en": "What is the reciprocal of a heading of 075 degrees?"
+			},
+			"back": {
+				"pl": "Kurs przeciwny to 255 stopni. Oblicza sie go, dodajac 180 stopni (075 + 180 = 255). Gdy wynik przekroczy 360, odejmuje sie 360.",
+				"en": "The reciprocal is 255 degrees, found by adding 180 degrees (075 + 180 = 255). If the result exceeds 360, subtract 360."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-031",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.DIRECTION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza oznaczenie drogi startowej (RWY), np. 09/27?",
+				"en": "What does a runway designator such as RWY 09/27 mean?"
+			},
+			"back": {
+				"pl": "Oznaczenie drogi startowej to kurs magnetyczny zaokraglony do dziesiatek stopni i podzielony przez 10. RWY 09 ma kierunek ok. 090 stopni, RWY 27 ok. 270 stopni (kierunek przeciwny tej samej drogi).",
+				"en": "A runway designator is the magnetic heading rounded to the nearest ten degrees and divided by 10. RWY 09 points to about 090 degrees, RWY 27 to about 270 degrees (the reciprocal of the same runway)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-032",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "W ktora strone odchyla sie igla kompasu magnetycznego na polkuli polnocnej (inklinacja)?",
+				"en": "Which way does the compass needle dip in the northern hemisphere?"
+			},
+			"back": {
+				"pl": "Na polkuli polnocnej igla pochyla sie w dol ku polnocnemu biegunowi magnetycznemu (inklinacja), co powoduje bledy kompasu podczas zakretow i przyspieszania.",
+				"en": "In the northern hemisphere the needle dips downward toward the magnetic north pole (inclination), causing compass errors during turns and acceleration."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-033",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest blad akceleracyjny kompasu magnetycznego (ANDS) i kiedy wystepuje?",
+				"en": "What is the magnetic compass acceleration error (ANDS) and when does it occur?"
+			},
+			"back": {
+				"pl": "Blad akceleracyjny wystepuje na kursach wschodnim i zachodnim: przy przyspieszaniu kompas wskazuje skret na polnoc, przy hamowaniu na poludnie. Regula ANDS: Accelerate North, Decelerate South.",
+				"en": "The acceleration error occurs on easterly and westerly headings: accelerating shows a turn toward north, decelerating toward south. Rule ANDS: Accelerate North, Decelerate South."
+			},
+			"mnemonic": {
+				"pl": "ANDS: przyspieszasz - North, zwalniasz - South.",
+				"en": "ANDS: Accelerate North, Decelerate South."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-034",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak zachowuje sie kompas magnetyczny podczas zakretu z kursu polnocnego na polkuli polnocnej (blad zakretowy)?",
+				"en": "How does the magnetic compass behave when turning from a northerly heading in the northern hemisphere (turning error)?"
+			},
+			"back": {
+				"pl": "Przy zakrecie z kursu polnocnego kompas opoznia sie lub chwilowo wskazuje przeciwny kierunek zakretu. Regula UNOS: z polnocy wychodz wczesniej, z poludnia pozniej.",
+				"en": "When turning from a northerly heading the compass lags or briefly shows the opposite turn direction. Rule UNOS: Undershoot North, Overshoot South - roll out early from north, late from south."
+			},
+			"mnemonic": {
+				"pl": "UNOS: z Polnocy wychodz wczesniej (Undershoot), z Poludnia pozniej (Overshoot).",
+				"en": "UNOS: Undershoot North, Overshoot South."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-035",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest kat poprawki na wiatr (WCA)?",
+				"en": "What is the wind correction angle (WCA)?"
+			},
+			"back": {
+				"pl": "Kat poprawki na wiatr to roznica miedzy kursem a katem drogi, ktora pilot wprowadza, kierujac nos statku powietrznego pod wiatr, aby utrzymac zamierzona linie drogi nad ziemia.",
+				"en": "The wind correction angle is the difference between heading and track that the pilot applies by pointing the nose into the wind to maintain the intended track over the ground."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-036",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.DIRECTION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie sa punkty glowne (kardynalne) i miedzykierunkowe rozy kompasowej w stopniach?",
+				"en": "What are the cardinal and intercardinal points of the compass rose in degrees?"
+			},
+			"back": {
+				"pl": "Punkty glowne: N=360/000, E=090, S=180, W=270. Punkty miedzykierunkowe: NE=045, SE=135, SW=225, NW=315.",
+				"en": "Cardinal points: N=360/000, E=090, S=180, W=270. Intercardinal points: NE=045, SE=135, SW=225, NW=315."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-037",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.POSITION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co okresla szerokosc, a co dlugosc geograficzna?",
+				"en": "What do latitude and longitude define?"
+			},
+			"back": {
+				"pl": "Szerokosc geograficzna okresla polozenie na polnoc lub poludnie od rownika (0-90 stopni). Dlugosc geograficzna okresla polozenie na wschod lub zachod od poludnika Greenwich (0-180 stopni).",
+				"en": "Latitude defines position north or south of the equator (0-90 degrees). Longitude defines position east or west of the Greenwich meridian (0-180 degrees)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-038",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["NAV.CHARTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym rozni sie loksodroma (rhumb line) od ortodromy (great circle)?",
+				"en": "What is the difference between a rhumb line and a great circle?"
+			},
+			"back": {
+				"pl": "Loksodroma przecina wszystkie poludniki pod stalym katem (staly kurs), ale jest dluzsza. Ortodroma to najkrotsza droga miedzy dwoma punktami na kuli, lecz wymaga ciaglej zmiany kursu.",
+				"en": "A rhumb line crosses all meridians at a constant angle (constant heading) but is longer. A great circle is the shortest path between two points on a sphere but requires a continuously changing heading."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-039",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["NAV.CHARTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak na mapie ICAO 1:500 000 (odwzorowanie Lamberta) przedstawiana jest prosta linia trasy?",
+				"en": "How is a straight route line represented on the ICAO 1:500 000 (Lambert conformal) chart?"
+			},
+			"back": {
+				"pl": "Na odwzorowaniu stozkowym Lamberta prosta linia narysowana na mapie jest praktycznie ortodroma, a katy (kursy) sa wierne, co ulatwia nawigacje zliczeniowa.",
+				"en": "On the Lambert conformal conic projection a straight line on the chart approximates a great circle, and angles (headings) are true, which facilitates dead reckoning."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-040",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.POSITION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest namiar krzyzowy (cross bearing) i do czego sluzy?",
+				"en": "What is a cross bearing (fix) and what is it used for?"
+			},
+			"back": {
+				"pl": "Namiar krzyzowy to wyznaczenie pozycji przez przeciecie co najmniej dwoch linii pozycyjnych z roznych punktow orientacyjnych lub stacji. Miejsce ich przeciecia wskazuje pozycje statku powietrznego.",
+				"en": "A cross bearing is determining position by the intersection of at least two position lines from different landmarks or stations. Their intersection indicates the aircraft's position."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-041",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.DR_TIME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest nawigacja zliczeniowa (dead reckoning)?",
+				"en": "What is dead reckoning navigation?"
+			},
+			"back": {
+				"pl": "Nawigacja zliczeniowa to wyznaczanie aktualnej pozycji na podstawie znanej pozycji wyjsciowej, kursu, predkosci, czasu lotu oraz wplywu wiatru, bez pomocy zewnetrznych pomocy nawigacyjnych.",
+				"en": "Dead reckoning is determining current position from a known starting position, heading, speed, elapsed time and the effect of wind, without external navigation aids."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-042",
+			"type": "flashcard",
+			"microSkill": "unit_conversion",
+			"loIds": ["NAV.UNITS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Ile w przyblizeniu wynosi 1 stopien dlugosci geograficznej w milach morskich na rowniku?",
+				"en": "Approximately how many nautical miles is 1 degree of longitude at the equator?"
+			},
+			"back": {
+				"pl": "1 stopien dlugosci geograficznej na rowniku to 60 minut, czyli okolo 60 mil morskich. W miare zblizania sie do biegunow odleglosc ta maleje (jak cosinus szerokosci).",
+				"en": "1 degree of longitude at the equator equals 60 minutes, i.e. about 60 nautical miles. This distance decreases toward the poles (as the cosine of latitude)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-043",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest izogona (linia izogoniczna) na mapie nawigacyjnej?",
+				"en": "What is an isogonal line on a navigation chart?"
+			},
+			"back": {
+				"pl": "Izogona to linia laczaca punkty o jednakowej deklinacji magnetycznej. Linia o deklinacji rownej zero nazywana jest agonalna (agonic line).",
+				"en": "An isogonal is a line connecting points of equal magnetic variation. The line of zero variation is called the agonic line."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-044",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.POSITION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest punkt orientacyjny liniowy (line feature) i jak wykorzystuje sie go w nawigacji wizualnej?",
+				"en": "What is a line feature and how is it used in visual navigation?"
+			},
+			"back": {
+				"pl": "Punkt orientacyjny liniowy to rozciagly obiekt terenowy (rzeka, droga, linia kolejowa, brzeg), ktory pilot moze wykorzystac jako prowadnice kursu lub linie kontrolna do potwierdzenia pozycji.",
+				"en": "A line feature is an extended ground object (river, road, railway, coastline) that the pilot can use as a track guide or check line to confirm position."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-045",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.POSITION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest punkt zwrotny trasy (turning point) w planie nawigacyjnym lotu?",
+				"en": "What is a turning point in a navigation flight plan?"
+			},
+			"back": {
+				"pl": "Punkt zwrotny to wyrazny, latwo rozpoznawalny punkt orientacyjny, w ktorym trasa zmienia kierunek; sluzy do weryfikacji pozycji, czasu przelotu i korekty nawigacji.",
+				"en": "A turning point is a distinct, easily recognizable landmark where the route changes direction; it is used to verify position, timing and to correct navigation."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-046",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["NAV.CHARTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak na mapie topograficznej rozpoznac wysokosc terenu i przeszkody istotne dla bezpiecznej nawigacji?",
+				"en": "How do you read terrain elevation and obstacles on a topographic chart?"
+			},
+			"back": {
+				"pl": "Wysokosc terenu odczytuje sie z poziomic, cieniowania i barwnej skali hipsometrycznej, a przeszkody (maszty, kominy) z symboli z podana wysokoscia bezwzgledna i wzgledna (AMSL/AGL).",
+				"en": "Terrain elevation is read from contour lines, hill shading and the elevation tint scale, while obstacles (masts, chimneys) are shown by symbols with their absolute and relative heights (AMSL/AGL)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-047",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["NAV.CHARTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrot MSA w nawigacji i na mapach?",
+				"en": "What does the abbreviation MSA mean in charts and navigation?"
+			},
+			"back": {
+				"pl": "MSA (Minimum Sector/Safe Altitude) to minimalna bezpieczna wysokosc zapewniajaca okreslony margines (zwykle 1000 ft) nad najwyzsza przeszkoda w danym sektorze.",
+				"en": "MSA (Minimum Sector/Safe Altitude) is the minimum safe altitude providing a defined clearance (usually 1000 ft) above the highest obstacle within a given sector."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-048",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.DR_TIME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak oblicza sie czas przelotu na odcinku, majac dystans i predkosc wzgledem ziemi (GS)?",
+				"en": "How do you calculate leg time given distance and ground speed (GS)?"
+			},
+			"back": {
+				"pl": "Czas (w minutach) = dystans w NM podzielony przez GS w wezlach, pomnozony przez 60. Np. 30 NM przy GS 90 kt: 30/90 x 60 = 20 minut.",
+				"en": "Time (in minutes) = distance in NM divided by ground speed in knots, multiplied by 60. E.g. 30 NM at GS 90 kt: 30/90 x 60 = 20 minutes."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-049",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["NAV.CHARTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest siatka poludnikow i rownoleznikow i jak poludniki wskazuja polnoc?",
+				"en": "What is the graticule of meridians and parallels and how do meridians indicate north?"
+			},
+			"back": {
+				"pl": "Siatka to uklad poludnikow (linii N-S) i rownoleznikow (linii E-W). Kazdy poludnik biegnie wzdluz kierunku polnoc-poludnie geograficzny, wiec wskazuje polnoc rzeczywista uzywana do odczytu kursow na mapie.",
+				"en": "The graticule is the grid of meridians (N-S lines) and parallels (E-W lines). Each meridian runs along true north-south, so it indicates true north used to read headings on the chart."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-050",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrot MH w nawigacji?",
+				"en": "What does the abbreviation MH mean in navigation?"
+			},
+			"back": {
+				"pl": "MH (Magnetic Heading) to kurs magnetyczny: kat miedzy polnoca magnetyczna a osia podluzna statku powietrznego.",
+				"en": "MH (Magnetic Heading) is the magnetic heading: the angle between magnetic north and the aircraft's longitudinal axis."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-051",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrot TT i czym rozni sie od MT?",
+				"en": "What does the abbreviation TT mean and how does it differ from MT?"
+			},
+			"back": {
+				"pl": "TT (True Track) to droga rzeczywista liczona od polnocy geograficznej, a MT (Magnetic Track) to droga magnetyczna liczona od polnocy magnetycznej; rozni je deklinacja magnetyczna (VAR).",
+				"en": "TT (True Track) is measured from true north, MT (Magnetic Track) from magnetic north; they differ by the magnetic variation (VAR)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-052",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak przeliczyc kurs rzeczywisty na magnetyczny przy deklinacji wschodniej (E)?",
+				"en": "How do you convert a true heading to a magnetic heading with easterly (E) variation?"
+			},
+			"back": {
+				"pl": "Od kursu rzeczywistego odejmujemy deklinacje wschodnia: MH = TH - VAR(E). Zasada: variation east, magnetic least.",
+				"en": "Subtract easterly variation from the true heading: MH = TH - VAR(E). Rule: variation east, magnetic least."
+			},
+			"mnemonic": {
+				"pl": "Wschod (E) odejmij, zachod (W) dodaj, by uzyskac kurs magnetyczny.",
+				"en": "Variation east, magnetic least; variation west, magnetic best."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-053",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak przeliczyc kurs rzeczywisty na magnetyczny przy deklinacji zachodniej (W)?",
+				"en": "How do you convert a true heading to a magnetic heading with westerly (W) variation?"
+			},
+			"back": {
+				"pl": "Do kursu rzeczywistego dodajemy deklinacje zachodnia: MH = TH + VAR(W). Zasada: variation west, magnetic best.",
+				"en": "Add westerly variation to the true heading: MH = TH + VAR(W). Rule: variation west, magnetic best."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-054",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka jest pelna kolejnosc przejscia od kursu rzeczywistego do kompasowego?",
+				"en": "What is the full sequence from true heading to compass heading?"
+			},
+			"back": {
+				"pl": "TH -> (deklinacja VAR) -> MH -> (dewiacja DEV) -> CH. Najpierw uwzgledniamy deklinacje, potem dewiacje kompasu.",
+				"en": "TH -> (variation VAR) -> MH -> (deviation DEV) -> CH. Apply variation first, then compass deviation."
+			},
+			"mnemonic": {
+				"pl": "TVMDC: True, Variation, Magnetic, Deviation, Compass.",
+				"en": "TVMDC: True, Variation, Magnetic, Deviation, Compass."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-055",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest inklinacja magnetyczna?",
+				"en": "What is magnetic dip (inclination)?"
+			},
+			"back": {
+				"pl": "Inklinacja to kat nachylenia wektora ziemskiego pola magnetycznego wzgledem poziomu; rosnie ku biegunom magnetycznym, gdzie wynosi 90 stopni, a na rowniku magnetycznym wynosi 0 stopni.",
+				"en": "Dip is the angle of the Earth's magnetic field vector relative to the horizontal; it increases toward the magnetic poles (90 degrees) and is 0 at the magnetic equator."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-056",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest izogona na mapie nawigacyjnej?",
+				"en": "What is an isogonal line on a navigation chart?"
+			},
+			"back": {
+				"pl": "Izogona to linia laczaca punkty o jednakowej deklinacji magnetycznej. Linia o deklinacji zero to agona.",
+				"en": "An isogonal is a line connecting points of equal magnetic variation. A line of zero variation is an agonic line."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-057",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Na czym polega blad przyspieszeniowy kompasu magnetycznego na polkuli polnocnej?",
+				"en": "What is the acceleration error of a magnetic compass in the northern hemisphere?"
+			},
+			"back": {
+				"pl": "Na kursie wschodnim lub zachodnim przyspieszanie powoduje pozorny skret na polnoc, a hamowanie na poludnie. Zasada ANDS: Accelerate North, Decelerate South.",
+				"en": "On easterly or westerly headings, accelerating shows an apparent turn toward north and decelerating toward south. Rule ANDS: Accelerate North, Decelerate South."
+			},
+			"mnemonic": {
+				"pl": "ANDS: przyspieszasz - polnoc, hamujesz - poludnie.",
+				"en": "ANDS: Accelerate North, Decelerate South."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-058",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Na czym polega blad zakretowy kompasu na polkuli polnocnej?",
+				"en": "What is the turning error of a compass in the northern hemisphere?"
+			},
+			"back": {
+				"pl": "Przy skrecie z kursu polnocnego kompas opoznia sie (undershoot north), a przy skrecie z kursu poludniowego wyprzedza (overshoot south).",
+				"en": "Turning from a northerly heading the compass lags (undershoots north); turning from a southerly heading it leads (overshoots south)."
+			},
+			"mnemonic": {
+				"pl": "UNOS: Undershoot North, Overshoot South.",
+				"en": "UNOS: Undershoot North, Overshoot South."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-059",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego biegun magnetyczny nie pokrywa sie z biegunem geograficznym?",
+				"en": "Why does the magnetic pole not coincide with the geographic pole?"
+			},
+			"back": {
+				"pl": "Pole magnetyczne Ziemi powstaje wskutek ruchow plynnego jadra, dlatego bieguny magnetyczne sa przesuniete wzgledem osi obrotu i powoli wedruja, co powoduje istnienie deklinacji.",
+				"en": "The Earth's magnetic field is generated by motions in the liquid core, so the magnetic poles are offset from the rotation axis and slowly migrate, which is why variation exists."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-060",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest pozioma skladowa ziemskiego pola magnetycznego i dlaczego jest wazna dla kompasu?",
+				"en": "What is the horizontal component of the Earth's magnetic field and why does it matter for the compass?"
+			},
+			"back": {
+				"pl": "To rzut wektora pola na plaszczyzne pozioma; ustawia igle kompasu. W poblizu biegunow magnetycznych staje sie bardzo mala, wiec kompas magnetyczny jest tam bezuzyteczny.",
+				"en": "It is the projection of the field vector onto the horizontal plane; it aligns the compass needle. Near the magnetic poles it becomes very small, making the magnetic compass useless there."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-061",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest karta dewiacji kompasu?",
+				"en": "What is a compass deviation card?"
+			},
+			"back": {
+				"pl": "To tabela lub wykres umieszczony przy kompasie, podajacy poprawke dewiacji dla roznych kursow, pozwalajacy przeliczyc kurs magnetyczny na kompasowy.",
+				"en": "It is a table or chart mounted near the compass giving the deviation correction for various headings, allowing conversion from magnetic to compass heading."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-062",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego deklinacja magnetyczna na mapie ma date i roczna zmiane?",
+				"en": "Why does the magnetic variation on a chart have a date and an annual change value?"
+			},
+			"back": {
+				"pl": "Poniewaz bieguny magnetyczne wedruja, deklinacja zmienia sie w czasie; mapa podaje wartosc dla roku odniesienia oraz roczny przyrost, by mozna ja zaktualizowac.",
+				"en": "Because the magnetic poles migrate, variation changes over time; the chart gives a value for a reference year plus an annual change so it can be updated."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-063",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["NAV.MAGNETISM"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrot VAR i jaka jest konwencja jego znaku?",
+				"en": "What does the abbreviation VAR mean and what is its sign convention?"
+			},
+			"back": {
+				"pl": "VAR (variation) to deklinacja magnetyczna, kat miedzy polnoca geograficzna a magnetyczna; oznaczana jako E (wschodnia) lub W (zachodnia).",
+				"en": "VAR (variation) is magnetic variation, the angle between true and magnetic north; it is labelled E (east) or W (west)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-064",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.DR_TIME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Ile czasu zajmie przelot 45 NM przy predkosci wzgledem ziemi (GS) 90 kt?",
+				"en": "How long does it take to fly 45 NM at a ground speed (GS) of 90 kt?"
+			},
+			"back": {
+				"pl": "Czas = droga / predkosc = 45 / 90 h = 0,5 h = 30 minut.",
+				"en": "Time = distance / speed = 45 / 90 h = 0.5 h = 30 minutes."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-065",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.DR_TIME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka droge pokona szybowiec w 20 minut przy GS 60 kt?",
+				"en": "What distance does a glider cover in 20 minutes at GS 60 kt?"
+			},
+			"back": {
+				"pl": "Droga = predkosc x czas = 60 kt x (20/60) h = 20 NM.",
+				"en": "Distance = speed x time = 60 kt x (20/60) h = 20 NM."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-066",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.DR_TIME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka jest GS, jesli odcinek 12 NM pokonano w 8 minut?",
+				"en": "What is the GS if a 12 NM leg was flown in 8 minutes?"
+			},
+			"back": {
+				"pl": "GS = droga / czas = 12 NM / (8/60 h) = 12 x 60 / 8 = 90 kt.",
+				"en": "GS = distance / time = 12 NM / (8/60 h) = 12 x 60 / 8 = 90 kt."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-067",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.DR_TIME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Na czym polega zliczanie drogi (dead reckoning)?",
+				"en": "What is dead reckoning navigation?"
+			},
+			"back": {
+				"pl": "To wyznaczanie aktualnej pozycji na podstawie znanego punktu wyjscia oraz kursu, predkosci i czasu lotu, z uwzglednieniem wplywu wiatru.",
+				"en": "It is determining current position from a known starting point using heading, speed and elapsed time, accounting for the effect of wind."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-068",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.DR_TIME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym rozni sie TAS od GS w obliczeniach czasu przelotu?",
+				"en": "How do TAS and GS differ in flight time calculations?"
+			},
+			"back": {
+				"pl": "TAS to predkosc wzgledem powietrza, a GS wzgledem ziemi; do obliczania czasu i drogi nad ziemia uzywamy GS, ktora jest TAS skorygowana o wiatr.",
+				"en": "TAS is speed through the air, GS is speed over the ground; for time and ground distance we use GS, which is TAS corrected for wind."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-069",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.DR_TIME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak czolowa skladowa wiatru wplywa na czas przelotu odcinka trasy?",
+				"en": "How does a headwind component affect the time over a route leg?"
+			},
+			"back": {
+				"pl": "Wiatr czolowy zmniejsza GS wzgledem TAS, wiec czas przelotu rosnie; wiatr w plecy zwieksza GS i skraca czas.",
+				"en": "A headwind reduces GS relative to TAS, so the leg time increases; a tailwind increases GS and shortens it."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-070",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.DR_TIME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Ile minut zajmie przelot 6 NM przy GS 120 kt?",
+				"en": "How many minutes does it take to fly 6 NM at GS 120 kt?"
+			},
+			"back": {
+				"pl": "Przy 120 kt pokonujemy 2 NM/min, wiec 6 NM zajmie 3 minuty (6/2).",
+				"en": "At 120 kt we cover 2 NM/min, so 6 NM takes 3 minutes (6/2)."
+			},
+			"mnemonic": {
+				"pl": "GS w kt podziel przez 60, by uzyskac NM na minute.",
+				"en": "Divide GS in kt by 60 to get NM per minute."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-071",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["NAV.DR_TIME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest ETA i jak ja wyznaczamy?",
+				"en": "What is ETA and how is it determined?"
+			},
+			"back": {
+				"pl": "ETA (Estimated Time of Arrival) to przewidywany czas przylotu, obliczany przez dodanie czasu przelotu (droga/GS) do czasu miniecia ostatniego punktu kontrolnego.",
+				"en": "ETA (Estimated Time of Arrival) is the expected arrival time, computed by adding the leg time (distance/GS) to the time of passing the last checkpoint."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-072",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.DR_TIME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak skorygowac ETA, jesli po pierwszym odcinku rzeczywista GS jest nizsza niz planowana?",
+				"en": "How do you revise the ETA if after the first leg the actual GS is lower than planned?"
+			},
+			"back": {
+				"pl": "Mierzymy rzeczywista GS (droga/czas miedzy punktami) i przeliczamy pozostaly czas dla reszty trasy ta nowa, nizsza predkoscia, co przesuwa ETA na pozniej.",
+				"en": "Measure the actual GS (distance/time between checkpoints) and recompute the remaining time for the rest of the route at this new, lower speed, which moves the ETA later."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-073",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["NAV.DR_TIME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrot ETE w planowaniu nawigacyjnym?",
+				"en": "What does the abbreviation ETE mean in navigation planning?"
+			},
+			"back": {
+				"pl": "ETE (Estimated Time Enroute) to przewidywany czas przelotu danego odcinka lub calej trasy, rowny drodze podzielonej przez GS.",
+				"en": "ETE (Estimated Time Enroute) is the expected time to fly a leg or the whole route, equal to distance divided by GS."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-074",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest trójkąt nawigacyjny (trójkąt prędkości)?",
+				"en": "What is the navigation (velocity) triangle?"
+			},
+			"back": {
+				"pl": "Graficzne przedstawienie zależności między wektorem prędkości własnej (TAS na kursie), wektorem wiatru i wektorem prędkości względem ziemi (GS na ścieżce). Pozwala wyznaczyć kurs i prędkość podróżną.",
+				"en": "A graphical representation of the relationship between the air vector (TAS along heading), the wind vector, and the ground vector (GS along track). It lets you determine heading and groundspeed."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-075",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Z jakich trzech wektorów składa się trójkąt nawigacyjny?",
+				"en": "Which three vectors make up the navigation triangle?"
+			},
+			"back": {
+				"pl": "Wektor prędkości powietrznej (TAS wzdłuż kursu HDG), wektor wiatru (W/V w kierunku, dokąd wieje) oraz wektor prędkości względem ziemi (GS wzdłuż ścieżki TRK).",
+				"en": "The air vector (TAS along heading HDG), the wind vector (W/V pointing in the direction it blows towards), and the ground vector (GS along track TRK)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-076",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrót TAS i czym różni się od GS?",
+				"en": "What does TAS stand for and how does it differ from GS?"
+			},
+			"back": {
+				"pl": "TAS (True Airspeed) to prawdziwa prędkość względem masy powietrza. GS (Ground Speed) to prędkość względem ziemi. Różnica między nimi wynika z wpływu wiatru.",
+				"en": "TAS (True Airspeed) is the speed relative to the air mass. GS (Ground Speed) is the speed relative to the ground. The difference between them is caused by the wind."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-077",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym różni się kurs (HDG) od ścieżki (TRK) w trójkącie nawigacyjnym?",
+				"en": "How does heading (HDG) differ from track (TRK) in the navigation triangle?"
+			},
+			"back": {
+				"pl": "Kurs (HDG) to kierunek, w którym skierowany jest dziób (oś podłużna) szybowca. Ścieżka (TRK) to rzeczywisty kierunek przemieszczania się nad ziemią. Różnica między nimi to kąt znoszenia wywołany wiatrem.",
+				"en": "Heading (HDG) is the direction the glider's nose (longitudinal axis) points. Track (TRK) is the actual path over the ground. The difference between them is the drift angle caused by wind."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-078",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak w konwencji nawigacyjnej podaje się kierunek wiatru w trójkącie prędkości?",
+				"en": "How is wind direction expressed by convention in the velocity triangle?"
+			},
+			"back": {
+				"pl": "Wiatr podaje się jako kierunek, SKĄD wieje (np. 270 stopni = z zachodu). W trójkącie nawigacyjnym wektor wiatru rysuje się jednak w kierunku, DOKĄD wieje (czyli odwrotnym, 090).",
+				"en": "Wind is given as the direction it blows FROM (e.g. 270 deg = from the west). In the navigation triangle, however, the wind vector is drawn in the direction it blows TO (i.e. the reciprocal, 090)."
+			},
+			"mnemonic": {
+				"pl": "Wiatr nazywamy od skąd, rysujemy dokąd.",
+				"en": "Wind is named where it's from, drawn where it goes to."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-079",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka jest podstawowa zależność: kurs, ścieżka i kąt poprawki na wiatr?",
+				"en": "What is the basic relationship between heading, track and wind correction angle?"
+			},
+			"back": {
+				"pl": "HDG = TRK + WCA (z uwzględnieniem znaku). Dziób kieruje się w stronę, z której wieje wiatr: przy wietrze z prawej poprawka w prawo, przy wietrze z lewej w lewo.",
+				"en": "HDG = TRK + WCA (with the correct sign). The nose is turned towards the side the wind comes from: with wind from the right correct to the right, with wind from the left correct to the left."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-080",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak wiatr czołowy i tylny wpływają na prędkość względem ziemi (GS)?",
+				"en": "How do headwind and tailwind affect groundspeed (GS)?"
+			},
+			"back": {
+				"pl": "Czysty wiatr czołowy zmniejsza GS o swoją prędkość (GS = TAS - składowa czołowa). Czysty wiatr tylny zwiększa GS o swoją prędkość (GS = TAS + składowa tylna). Czysty wiatr boczny nie zmienia GS, ale powoduje znoszenie.",
+				"en": "A pure headwind reduces GS by its speed (GS = TAS - headwind component). A pure tailwind increases GS by its speed (GS = TAS + tailwind component). A pure crosswind does not change GS but causes drift."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-081",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest składowa czołowa i boczna wiatru?",
+				"en": "What are the headwind and crosswind components of the wind?"
+			},
+			"back": {
+				"pl": "Wiatr wiejący pod kątem rozkłada się na składową równoległą do ścieżki (czołową/tylną, wpływa na GS) oraz prostopadłą (boczną, powoduje znoszenie i wymaga kąta poprawki WCA).",
+				"en": "Wind blowing at an angle resolves into a component parallel to the track (head/tailwind, affects GS) and a perpendicular component (crosswind, causes drift and requires the correction angle WCA)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-082",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak przybliżyć kąt poprawki na wiatr (WCA) regułą 1 na 60?",
+				"en": "How do you approximate the wind correction angle (WCA) using the 1-in-60 rule?"
+			},
+			"back": {
+				"pl": "WCA (w stopniach) w przybliżeniu = (60 x składowa boczna wiatru) / TAS. Przybliżenie jest dobre dla małych kątów.",
+				"en": "WCA (in degrees) is approximately = (60 x crosswind component) / TAS. The approximation holds for small angles."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-083",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "TAS 90 kt, składowa boczna wiatru 15 kt. Jaki jest przybliżony kąt poprawki na wiatr?",
+				"en": "TAS 90 kt, crosswind component 15 kt. What is the approximate wind correction angle?"
+			},
+			"back": {
+				"pl": "WCA = 60 x 15 / 90 = 10 stopni. Dziób należy odchylić o około 10 stopni w stronę, z której wieje wiatr.",
+				"en": "WCA = 60 x 15 / 90 = 10 degrees. The nose must be turned about 10 degrees towards the side the wind comes from."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-084",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego w trójkącie nawigacyjnym używa się TAS, a nie IAS?",
+				"en": "Why is TAS, not IAS, used in the navigation triangle?"
+			},
+			"back": {
+				"pl": "Wiatr działa na prawdziwą prędkość względem masy powietrza, czyli TAS. IAS (prędkość przyrządowa) jest na danej wysokości mniejsza od TAS wskutek spadku gęstości powietrza, więc nie odzwierciedla rzeczywistej prędkości w powietrzu.",
+				"en": "Wind acts on the true speed relative to the air mass, i.e. TAS. IAS (indicated airspeed) is lower than TAS at altitude due to falling air density, so it does not represent the real speed through the air."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-085",
+			"type": "flashcard",
+			"microSkill": "unit_conversion",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak z grubsza przeliczyć IAS na TAS w warunkach standardowych?",
+				"en": "How do you roughly convert IAS to TAS in standard conditions?"
+			},
+			"back": {
+				"pl": "TAS rośnie o około 2% IAS na każde 1000 ft wysokości (przybliżenie). Np. IAS 100 kt na 5000 ft daje TAS około 110 kt.",
+				"en": "TAS increases by about 2% of IAS per 1000 ft of altitude (approximation). E.g. IAS 100 kt at 5000 ft gives TAS of about 110 kt."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-086",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest kąt znoszenia (drift angle)?",
+				"en": "What is the drift angle?"
+			},
+			"back": {
+				"pl": "Różnica między kursem (HDG) a rzeczywistą ścieżką (TRK), gdy lecimy stałym kursem bez poprawki. Jest skutkiem działania wiatru, a nie celową poprawką jak WCA.",
+				"en": "The difference between heading (HDG) and the actual track (TRK) when flying a constant heading without correction. It is an effect of the wind rather than a deliberate correction like WCA."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-087",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak rozwiązać trójkąt nawigacyjny na wiatrochronie kalkulatora nawigacyjnego?",
+				"en": "How do you solve the navigation triangle on the wind side of a flight computer?"
+			},
+			"back": {
+				"pl": "Na obrotowej skali ustawia się kierunek wiatru, odmierza punkt wiatru (jego prędkość) od środka, a następnie pod żądaną ścieżką odczytuje GS oraz kąt znoszenia, z którego wyznacza się kurs.",
+				"en": "On the rotatable wind side you set the wind direction, mark the wind dot (its speed) from the centre, then under the desired track read off GS and the drift angle, from which the heading is derived."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-088",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest droga zadana (DTK), a czym droga rzeczywista nad ziemią?",
+				"en": "What is desired track (DTK) versus the actual track made good?"
+			},
+			"back": {
+				"pl": "DTK (Desired Track) to zaplanowany kierunek linii drogi między punktami trasy. Droga rzeczywista (track made good) to faktycznie przebyta ścieżka nad ziemią; różnica wskazuje błąd znoszenia do skorygowania.",
+				"en": "DTK (Desired Track) is the planned course line between waypoints. Track made good is the path actually flown over the ground; the difference shows the drift error to be corrected."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-089",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego przy locie tam i z powrotem tą samą trasą czas całkowity rośnie przy stałym wietrze czołowym/tylnym?",
+				"en": "Why does total time increase on an out-and-back leg with a steady head/tailwind?"
+			},
+			"back": {
+				"pl": "Pod wiatr (mała GS) leci się dłużej, niż zyskuje się z wiatrem (duża GS). Strata na odcinku pod wiatr przeważa nad zyskiem z wiatrem, więc średnia GS spada, a łączny czas rośnie.",
+				"en": "You spend more time into wind (low GS) than you save downwind (high GS). The loss on the upwind leg outweighs the downwind gain, so average GS drops and total time increases."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-090",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak składowa boczna wiatru wpływa na GS, gdy stosujemy pełną poprawkę WCA?",
+				"en": "How does the crosswind component affect GS when full WCA is applied?"
+			},
+			"back": {
+				"pl": "Część TAS jest zużywana na kompensację znoszenia, więc GS jest mniejsza niż TAS nawet bez składowej czołowej. Im większa składowa boczna, tym większy kąt WCA i tym bardziej GS spada poniżej TAS.",
+				"en": "Part of the TAS is used to offset the drift, so GS is less than TAS even with no headwind component. The larger the crosswind, the larger the WCA and the more GS falls below TAS."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-091",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza zapis wiatru 240/20 i jak go użyć w trójkącie prędkości?",
+				"en": "What does a wind report of 240/20 mean and how is it used in the velocity triangle?"
+			},
+			"back": {
+				"pl": "Wiatr wieje z kierunku 240 stopni z prędkością 20 węzłów. W trójkącie wektor wiatru kreśli się w kierunku odwrotnym (060) o długości odpowiadającej 20 kt.",
+				"en": "The wind blows from 240 degrees at 20 knots. In the triangle the wind vector is drawn towards the reciprocal direction (060) with a length corresponding to 20 kt."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-092",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "TAS 100 kt, wiatr czołowy 25 kt. Ile wynosi GS?",
+				"en": "TAS 100 kt, headwind 25 kt. What is the GS?"
+			},
+			"back": {
+				"pl": "GS = TAS - wiatr czołowy = 100 - 25 = 75 kt. Przy czystym wietrze czołowym nie ma znoszenia, więc kurs równa się ścieżce.",
+				"en": "GS = TAS - headwind = 100 - 25 = 75 kt. With a pure headwind there is no drift, so heading equals track."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-093",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego pilot szybowca planuje trasę z uwzględnieniem wiatru na różnych wysokościach?",
+				"en": "Why does a glider pilot plan a route accounting for wind at different altitudes?"
+			},
+			"back": {
+				"pl": "Wiatr zmienia kierunek i prędkość z wysokością (np. skręca w prawo i wzmaga się), więc kąt poprawki i GS różnią się na różnych poziomach. Wpływa to na wybór kursu i osiągalny zasięg w przeskokach.",
+				"en": "Wind changes direction and speed with altitude (e.g. veers and strengthens), so the correction angle and GS differ at different levels. This affects heading choice and achievable glide range between thermals."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-094",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak wiatr wpływa na efektywny kąt szybowania (przeskok) względem ziemi?",
+				"en": "How does wind affect the effective glide angle (final glide) over the ground?"
+			},
+			"back": {
+				"pl": "Wiatr czołowy spłaszcza tor nad ziemią (mniejszy zasięg, należy zwiększyć prędkość przelotową), wiatr tylny wydłuża zasięg (można zmniejszyć prędkość). To wynik dodawania wektora wiatru do wektora prędkości szybowca.",
+				"en": "A headwind flattens the path over the ground (less range, fly faster), a tailwind extends the range (fly slower). This results from adding the wind vector to the glider's velocity vector."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-095",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co jest dane, a co szukane przy przedlotowym planowaniu trasy z trójkątem prędkości?",
+				"en": "What is known and what is unknown when pre-flight planning with the velocity triangle?"
+			},
+			"back": {
+				"pl": "Dane: żądana ścieżka (DTK), TAS i prognozowany wiatr (W/V). Szukane: kurs do utrzymania (HDG = DTK + WCA) oraz prędkość względem ziemi (GS) do obliczenia czasu przelotu.",
+				"en": "Known: desired track (DTK), TAS and forecast wind (W/V). Unknown: the heading to fly (HDG = DTK + WCA) and the groundspeed (GS) to compute leg time."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-nav-gen-096",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["NAV.TRIANGLE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak obliczyć czas przelotu odcinka, mając jego długość i GS z trójkąta prędkości?",
+				"en": "How do you compute leg time from its distance and the GS derived from the velocity triangle?"
+			},
+			"back": {
+				"pl": "Czas = odległość / GS. Np. 30 NM przy GS 60 kt daje 0,5 h, czyli 30 minut. O rzeczywistym czasie przelotu nad ziemią decyduje GS, a nie TAS.",
+				"en": "Time = distance / GS. E.g. 30 NM at GS 60 kt gives 0.5 h, i.e. 30 minutes. It is GS, not TAS, that determines the real time flown over the ground."
+			},
+			"source": "generated:spl"
 		}
 	]
 }

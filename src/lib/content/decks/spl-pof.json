@@ -724,6 +724,1633 @@
 				"en": "Stall speed rises with the square root of the load factor: `\\sqrt{2} ≈ 1.41`, i.e. about 41%."
 			},
 			"source": "authored:spl"
+		},
+		{
+			"id": "spl-pof-gen-001",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["POF.POLAR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest biegunowa prędkości szybowca?",
+				"en": "What is a glider's speed polar?"
+			},
+			"back": {
+				"pl": "Wykres zależności prędkości opadania od prędkości lotu poziomego. Pozwala odczytać prędkość minimalnego opadania, prędkość najlepszej doskonałości oraz wpływ wiatru i noszeń lub duszeń na optymalną prędkość przelotową.",
+				"en": "A graph of sink rate versus airspeed. It lets you read off the minimum-sink speed, the best-glide speed, and how wind and lift or sink shift the optimal cruise speed."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-002",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.POLAR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym różni się prędkość minimalnego opadania od prędkości najlepszej doskonałości?",
+				"en": "How does minimum-sink speed differ from best-glide speed?"
+			},
+			"back": {
+				"pl": "Prędkość minimalnego opadania daje najmniejsze opadanie (najdłuższy czas w powietrzu, dobra w kominie) i jest mniejsza od prędkości najlepszej doskonałości, która daje największy zasięg poziomy (najpłaszczejszy tor).",
+				"en": "Minimum-sink speed gives the lowest rate of descent (longest time aloft, good for thermalling) and is lower than best-glide speed, which gives the greatest horizontal range (flattest glide path)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-003",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.WATER_BALLAST"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak obciążenie skrzydła wpływa na biegunową szybowca?",
+				"en": "How does wing loading affect a glider's polar?"
+			},
+			"back": {
+				"pl": "Większe obciążenie przesuwa biegunową w stronę większych prędkości: rośnie prędkość najlepszej doskonałości i minimalnego opadania, a sama maksymalna doskonałość pozostaje niezmieniona. Dlatego stosuje się balast wodny przy silnej termice.",
+				"en": "Higher wing loading shifts the polar toward higher speeds: best-glide and minimum-sink speeds increase, while the maximum glide ratio itself is unchanged. This is why water ballast is used in strong thermals."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-004",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.POLAR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co opisuje teoria MacCready i do czego służy?",
+				"en": "What does MacCready theory describe and what is it for?"
+			},
+			"back": {
+				"pl": "Określa optymalną prędkość przelotu między kominami w zależności od spodziewanej siły następnego noszenia. Im silniejsza termika (wyższe ustawienie MacCready), tym szybciej należy przelatywać, by zmaksymalizować średnią prędkość podróżną.",
+				"en": "It gives the optimum inter-thermal cruise speed as a function of the expected strength of the next climb. The stronger the lift (higher MacCready setting), the faster you should fly between thermals to maximize cross-country speed."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-005",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.LIFT_DRAG"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest doskonałość szybowca i jak ją liczymy?",
+				"en": "What is a glider's glide ratio and how is it calculated?"
+			},
+			"back": {
+				"pl": "To stosunek przebytej drogi poziomej do utraconej wysokości w spokojnym powietrzu. Liczbowo równa się stosunkowi siły nośnej do oporu (L/D) przy danej prędkości. Jest bezwymiarowa, np. 40:1.",
+				"en": "It is the ratio of horizontal distance travelled to height lost in still air. Numerically it equals the lift-to-drag ratio (L/D) at a given speed. It is dimensionless, e.g. 40:1."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-006",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.DRAG_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Z jakich głównych składników zbudowany jest opór całkowity szybowca?",
+				"en": "What are the main components of a glider's total drag?"
+			},
+			"back": {
+				"pl": "Z oporu indukowanego (związanego z wytwarzaniem nośności, malejącego z prędkością) oraz oporu szkodliwego (profilowego, tarcia i kształtu, rosnącego z kwadratem prędkości). Ich suma osiąga minimum przy prędkości najlepszej doskonałości.",
+				"en": "Induced drag (linked to producing lift, decreasing with speed) and parasite drag (profile, skin-friction and form drag, increasing with the square of speed). Their sum is minimal at the best-glide speed."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-007",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.DRAG_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego skrzydło o dużym wydłużeniu poprawia doskonałość?",
+				"en": "Why does a high-aspect-ratio wing improve glide performance?"
+			},
+			"back": {
+				"pl": "Duże wydłużenie (rozpiętość względem cięciwy) zmniejsza intensywność wirów brzegowych, a przez to opór indukowany. Mniejszy opór przy danej nośności daje wyższą doskonałość, dlatego szybowce mają wąskie, długie skrzydła.",
+				"en": "High aspect ratio (span relative to chord) weakens the wingtip vortices and thus the induced drag. Lower drag for a given lift yields a higher glide ratio, which is why gliders have long, narrow wings."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-008",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["POF.LIFT_DRAG"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest CL (współczynnik siły nośnej)?",
+				"en": "What is CL (the lift coefficient)?"
+			},
+			"back": {
+				"pl": "Bezwymiarowy współczynnik opisujący zdolność profilu do wytwarzania nośności przy danym kącie natarcia. Rośnie wraz z kątem natarcia aż do CLmax tuż przed przeciągnięciem. Wchodzi do wzoru L = ½·ρ·V²·S·CL.",
+				"en": "A dimensionless coefficient describing the airfoil's lift-producing ability at a given angle of attack. It rises with angle of attack up to CLmax just before the stall. It appears in L = ½·ρ·V²·S·CL."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-009",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Do czego służą klapy w szybowcu wyczynowym?",
+				"en": "What are flaps used for in a performance glider?"
+			},
+			"back": {
+				"pl": "Zmieniają wysklepienie profilu: dodatnie wychylenie zwiększa nośność i CLmax na małych prędkościach (krążenie), ujemne zmniejsza opór na dużych prędkościach przelotowych, dopasowując profil do bieżącego zakresu prędkości.",
+				"en": "They change the airfoil camber: positive flap increases lift and CLmax at low speed (thermalling), negative flap reduces drag at high cruise speed, tuning the airfoil to the current speed range."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-010",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki jest cel hamulców aerodynamicznych i jak wpływają na biegunową?",
+				"en": "What is the purpose of airbrakes and how do they affect the polar?"
+			},
+			"back": {
+				"pl": "Zaburzają opływ górnej powierzchni skrzydła, gwałtownie zwiększając opór i zmniejszając nośność. Pogarszają doskonałość, co pozwala kontrolować kąt podejścia i prędkość opadania bez nadmiernego rozpędzania szybowca.",
+				"en": "They disrupt the airflow over the upper wing surface, sharply increasing drag and reducing lift. They worsen the glide ratio, allowing control of the approach angle and descent rate without over-speeding the glider."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-011",
+			"type": "flashcard",
+			"microSkill": "unit_conversion",
+			"loIds": ["POF.LIFT_DRAG"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak gęstość powietrza (wysokość, temperatura) wpływa na siłę nośną?",
+				"en": "How does air density (altitude, temperature) affect lift?"
+			},
+			"back": {
+				"pl": "Siła nośna jest wprost proporcjonalna do gęstości powietrza (L = ½·ρ·V²·S·CL). Na większej wysokości lub w cieple gęstość maleje, więc dla tej samej prędkości przyrządowej (IAS) rzeczywista prędkość lotu (TAS) jest większa.",
+				"en": "Lift is directly proportional to air density (L = ½·ρ·V²·S·CL). At higher altitude or in warm air density falls, so true airspeed (TAS) is higher for the same indicated airspeed (IAS)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-012",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["POF.DRAG_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest CD (współczynnik oporu) i z czego się składa?",
+				"en": "What is CD (the drag coefficient) and what does it comprise?"
+			},
+			"back": {
+				"pl": "Bezwymiarowy współczynnik oporu we wzorze D = ½·ρ·V²·S·CD. Składa się z oporu szkodliwego (CD0, niezależnego od nośności) i oporu indukowanego, który rośnie z kwadratem CL i maleje z wydłużeniem skrzydła.",
+				"en": "A dimensionless drag coefficient in D = ½·ρ·V²·S·CD. It comprises parasite drag (CD0, independent of lift) and induced drag, which rises with the square of CL and falls with wing aspect ratio."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-013",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.POLAR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego doskonałość względem ziemi pogarsza się pod wiatr, a poprawia z wiatrem?",
+				"en": "Why does glide ratio over the ground worsen into wind and improve downwind?"
+			},
+			"back": {
+				"pl": "Doskonałość względem ziemi zależy od prędkości względem ziemi. Wiatr czołowy zmniejsza zasięg poziomy przy tej samej utracie wysokości, więc realna doskonałość spada; wiatr w plecy ją zwiększa. Dlatego pod wiatr leci się nieco szybciej.",
+				"en": "Glide ratio over the ground depends on groundspeed. A headwind reduces horizontal distance for the same height loss, lowering the effective glide ratio; a tailwind raises it. Hence you fly slightly faster into wind."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-014",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.DRAG_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest opór interferencyjny w szybowcu?",
+				"en": "What is interference drag on a glider?"
+			},
+			"back": {
+				"pl": "Dodatkowy opór powstający w miejscach styku elementów konstrukcji (np. połączenie skrzydła z kadłubem), gdzie nakładają się ich pola opływu. Minimalizuje się go owiewkami i gładkimi przejściami.",
+				"en": "Extra drag arising where structural parts meet (e.g. wing-fuselage junction), where their airflow fields interact. It is minimized with fillets, fairings and smooth transitions."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-015",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.DRAG_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak owady i deszcz na krawędzi natarcia wpływają na osiągi szybowca?",
+				"en": "How do insects and rain on the leading edge affect glider performance?"
+			},
+			"back": {
+				"pl": "Zaburzają laminarny opływ profilu, powodując wcześniejsze przejście w opływ turbulentny i wzrost oporu profilowego. Doskonałość może spaść o kilka do kilkunastu procent. Stąd stosowanie zgarniaczy owadów i utrzymywanie czystego skrzydła.",
+				"en": "They trip the laminar airflow into turbulent flow earlier, increasing profile drag. Glide ratio can drop by several to over ten percent. Hence the use of bug wipers and keeping the wing clean."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-016",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STABILITY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest stateczność statyczna podłużna i kiedy jest dodatnia?",
+				"en": "What is longitudinal static stability and when is it positive?"
+			},
+			"back": {
+				"pl": "To dążenie szybowca do powrotu do wyjściowego kąta natarcia po zaburzeniu w osi pochylenia. Jest dodatnia, gdy środek ciężkości leży przed punktem neutralnym; zapewnia ją usterzenie poziome.",
+				"en": "The glider's tendency to return to its original angle of attack after a pitch disturbance. It is positive when the centre of gravity lies ahead of the neutral point; the horizontal tailplane provides it."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-017",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STABILITY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak położenie środka ciężkości (CG) wpływa na stateczność podłużną?",
+				"en": "How does centre-of-gravity (CG) position affect longitudinal stability?"
+			},
+			"back": {
+				"pl": "Przednie położenie CG zwiększa stateczność (cięższy pilotaż, większe siły na drążku), ale pogarsza zwrotność. Tylne położenie ją zmniejsza; za skrajnym tylnym CG szybowiec staje się niestateczny i niebezpieczny.",
+				"en": "A forward CG increases stability (heavier handling, larger stick forces) but reduces maneuverability. An aft CG reduces it; beyond the aft limit the glider becomes unstable and dangerous."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-018",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STABILITY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest punkt neutralny i jak wiąże się z zapasem stateczności?",
+				"en": "What is the neutral point and how does it relate to the stability margin?"
+			},
+			"back": {
+				"pl": "Punkt neutralny to położenie CG, przy którym stateczność podłużna jest zerowa. Odległość między CG a punktem neutralnym to zapas stateczności: im CG bardziej z przodu względem niego, tym większa stateczność.",
+				"en": "The neutral point is the CG position at which longitudinal stability is zero. The distance between the CG and the neutral point is the stability margin: the further forward the CG, the greater the stability."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-019",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STABILITY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co zapewnia stateczność kierunkową szybowca i jak się ona objawia?",
+				"en": "What provides a glider's directional stability and how does it manifest?"
+			},
+			"back": {
+				"pl": "Statecznik pionowy. Po zaburzeniu w osi odchylania (ślizg) wytwarza on moment kierujący nos z powrotem na kierunek lotu - to tzw. efekt chorągiewki na wietrze (weathercock).",
+				"en": "The vertical fin. After a yaw disturbance (sideslip) it produces a moment turning the nose back into the relative wind - the weathercock effect."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-020",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STABILITY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest wznios skrzydła (efekt V) i jakiej stateczności sprzyja?",
+				"en": "What is wing dihedral and which stability does it promote?"
+			},
+			"back": {
+				"pl": "Wzniesienie końcówek skrzydeł ku górze. Przy ślizgu opadające skrzydło ma większy efektywny kąt natarcia i wytwarza większą nośność, co przywraca przechylenie do zera - poprawia stateczność poprzeczną.",
+				"en": "An upward inclination of the wings. In a sideslip the lower wing meets a higher effective angle of attack and produces more lift, righting the bank - this improves lateral (roll) stability."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-021",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STABILITY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Na czym polega niestateczność spiralna i jak się objawia?",
+				"en": "What is spiral instability and how does it manifest?"
+			},
+			"back": {
+				"pl": "Gdy stateczność kierunkowa przeważa nad poprzeczną, niewielkie przechylenie samo się pogłębia: szybowiec wchodzi w coraz ciaśniejszą spiralę zniżającą. Wymaga interwencji pilota, by nie przejść w spiralę nurkową.",
+				"en": "When directional stability dominates over lateral stability, a small bank deepens by itself: the glider enters an ever-tightening descending spiral. Pilot intervention is needed to avoid a spiral dive."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-022",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STABILITY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to są oscylacje fugoidalne (fugoida)?",
+				"en": "What are phugoid oscillations?"
+			},
+			"back": {
+				"pl": "Powolne, długookresowe wahania toru lotu, w których prędkość i wysokość zmieniają się na przemian przy niemal stałym kącie natarcia. Pilot łatwo je tłumi sterem wysokości; są przejawem stateczności dynamicznej podłużnej.",
+				"en": "Slow, long-period oscillations of the flight path in which speed and altitude trade off at a nearly constant angle of attack. The pilot easily damps them with elevator; they are a feature of longitudinal dynamic stability."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-023",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STABILITY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka jest rola statecznika poziomego i dlaczego zwykle wytwarza on siłę skierowaną w dół?",
+				"en": "What is the tailplane's role and why does it usually produce a downward force?"
+			},
+			"back": {
+				"pl": "Statecznik poziomy równoważy moment pochylający od skrzydła i CG, utrzymując równowagę podłużną. Przy CG przed środkiem parcia skrzydła wytwarza on siłę skierowaną w dół, co zapewnia dodatnią stateczność.",
+				"en": "The horizontal tailplane balances the pitching moment from the wing and CG, maintaining longitudinal trim. With the CG ahead of the wing's centre of pressure it produces a downforce, ensuring positive stability."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-024",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STABILITY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest oscylacja krótkookresowa w osi pochylania?",
+				"en": "What is the short-period pitch oscillation?"
+			},
+			"back": {
+				"pl": "Szybkie, mocno tłumione wahania kąta natarcia wokół położenia równowagi po zaburzeniu w pochyleniu. W przeciwieństwie do fugoidy prędkość pozostaje prawie stała; dobrze stateczny szybowiec tłumi je w ułamku sekundy.",
+				"en": "A rapid, heavily damped oscillation of the angle of attack about equilibrium after a pitch disturbance. Unlike the phugoid, airspeed stays nearly constant; a well-behaved glider damps it within a fraction of a second."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-025",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STABILITY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym różni się stateczność statyczna od dynamicznej?",
+				"en": "What is the difference between static and dynamic stability?"
+			},
+			"back": {
+				"pl": "Stateczność statyczna to początkowa tendencja powrotu do równowagi po zaburzeniu. Stateczność dynamiczna opisuje, jak ten powrót przebiega w czasie - czy oscylacje są tłumione, stałe czy narastające.",
+				"en": "Static stability is the initial tendency to return to equilibrium after a disturbance. Dynamic stability describes how that return develops over time - whether the oscillations damp out, persist, or grow."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-026",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.STALL_SPIN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest prędkość przeciągnięcia (VS) i jak zmienia się z masą szybowca?",
+				"en": "What is the stall speed (VS) and how does it change with glider mass?"
+			},
+			"back": {
+				"pl": "VS to najmniejsza prędkość lotu poziomego, przy której skrzydło wytwarza jeszcze siłę nośną równą ciężarowi. Rośnie z masą proporcjonalnie do pierwiastka kwadratowego z masy (wzrost masy o 21% podnosi VS o ok. 10%).",
+				"en": "VS is the lowest level-flight speed at which the wing still produces lift equal to weight. It rises with mass in proportion to the square root of mass (a 21% mass increase raises VS by about 10%)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-027",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.STALL_SPIN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego przeciągnięcie zawsze następuje przy tym samym krytycznym kącie natarcia, niezależnie od prędkości?",
+				"en": "Why does a stall always occur at the same critical angle of attack regardless of airspeed?"
+			},
+			"back": {
+				"pl": "Przeciągnięcie to oderwanie strug od profilu po przekroczeniu krytycznego kąta natarcia (ok. 15-16 stopni). Kąt ten zależy od geometrii profilu, a nie od prędkości, dlatego szybowiec można przeciągnąć przy każdej prędkości i w każdym położeniu.",
+				"en": "A stall is flow separation from the airfoil once the critical angle of attack (about 15-16 degrees) is exceeded. This angle depends on airfoil geometry, not on airspeed, so a glider can be stalled at any speed and attitude."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-028",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STALL_SPIN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest przeciągnięcie przyspieszone (dynamiczne) i kiedy występuje?",
+				"en": "What is an accelerated (dynamic) stall and when does it occur?"
+			},
+			"back": {
+				"pl": "To przeciągnięcie przy prędkości wyższej niż VS, wywołane gwałtownym zwiększeniem kąta natarcia, np. ostrym ściągnięciem drążka w zakręcie lub przy wyprowadzaniu z nurkowania. Rośnie współczynnik obciążenia, więc szybowiec przeciąga się przy wyższej prędkości niż w locie prostym.",
+				"en": "It is a stall at a speed higher than VS, caused by a rapid increase in angle of attack, e.g. abrupt back-stick in a turn or during recovery from a dive. The load factor rises, so the glider stalls at a higher speed than in straight flight."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-029",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.STALL_SPIN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak rośnie prędkość przeciągnięcia w funkcji współczynnika obciążenia n?",
+				"en": "How does stall speed grow as a function of load factor n?"
+			},
+			"back": {
+				"pl": "Prędkość przeciągnięcia w manewrze równa się VS razy pierwiastek z n: VS(n) = VS x sqrt(n). Przy n=2 rośnie o ok. 41%, przy n=4 dwukrotnie.",
+				"en": "The maneuvering stall speed equals VS times the square root of n: VS(n) = VS x sqrt(n). At n=2 it rises by about 41%, at n=4 it doubles."
+			},
+			"mnemonic": {
+				"pl": "Pierwiastek z przeciążenia - tyle razy rośnie VS.",
+				"en": "Square root of load factor - that is how much VS grows."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-030",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STALL_SPIN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego przeciągnięcie z odchyleniem (ślizgiem lub poślizgiem) sprzyja wpadnięciu w korkociąg?",
+				"en": "Why does a glider tend to enter a spin when stalled with yaw (skid or slip)?"
+			},
+			"back": {
+				"pl": "Gdy w chwili przeciągnięcia opływ jest niesymetryczny (odchylenie w osi pionowej), jedno skrzydło jest bardziej przeciągnięte niż drugie. Powstaje autorotacja: skrzydło opadające zwiększa kąt natarcia i traci nośność, a unoszące się ją odzyskuje.",
+				"en": "When the airflow is asymmetric at the moment of stall (yaw), one wing is more stalled than the other. Autorotation develops: the dropping wing increases its angle of attack and loses lift, while the rising wing regains it."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-031",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STALL_SPIN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka jest standardowa metoda wyprowadzania szybowca z korkociągu?",
+				"en": "What is the standard glider spin recovery procedure?"
+			},
+			"back": {
+				"pl": "Kolejno: pełny ster kierunku przeciwny do obrotu, następnie drążek płynnie do przodu (zmniejszenie kąta natarcia), lotki neutralne, a po zatrzymaniu obrotu wyzerować ster kierunku i płynnie wyprowadzić z nurkowania, kontrolując prędkość i przeciążenie.",
+				"en": "In sequence: full rudder opposite to the rotation, then stick smoothly forward (reduce angle of attack), ailerons neutral, once rotation stops center the rudder and ease out of the dive while controlling speed and load factor."
+			},
+			"mnemonic": {
+				"pl": "Najpierw nogą zatrzymaj obrót, potem drążkiem zbij kąt natarcia.",
+				"en": "Rudder stops the rotation first, then stick breaks the angle of attack."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-032",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STALL_SPIN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym różni się korkociąg od spirali nurkowej?",
+				"en": "How does a spin differ from a spiral dive?"
+			},
+			"back": {
+				"pl": "W korkociągu skrzydło jest przeciągnięte, prędkość jest mała i ustabilizowana, a przeciążenie niewielkie. W spirali nurkowej skrzydło NIE jest przeciągnięte, a prędkość i przeciążenie szybko rosną - grozi przekroczenie VNE i dopuszczalnego przeciążenia.",
+				"en": "In a spin the wing is stalled, airspeed is low and steady, and the load factor is small. In a spiral dive the wing is NOT stalled and both airspeed and load factor increase rapidly - risk of exceeding VNE and the load limit."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-033",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STALL_SPIN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie sygnały ostrzegawcze poprzedzają przeciągnięcie szybowca?",
+				"en": "What warning signs precede a glider stall?"
+			},
+			"back": {
+				"pl": "Malejąca prędkość i cichnący szum opływu, mniejsza skuteczność sterów (zwłaszcza lotek), wysokie położenie nosa, drżenie konstrukcji (buffeting), a w niektórych szybowcach sygnał czujnika przeciągnięcia.",
+				"en": "Decreasing airspeed and quieter airflow noise, reduced control effectiveness (especially ailerons), high nose attitude, airframe buffeting, and in some gliders a stall warning sensor."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-034",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STALL_SPIN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego użycie lotek do podniesienia opadającego skrzydła tuż przed przeciągnięciem jest niebezpieczne?",
+				"en": "Why is using ailerons to raise a dropping wing just before a stall dangerous?"
+			},
+			"back": {
+				"pl": "Wychylenie lotki w dół na opadającym skrzydle zwiększa lokalnie jego kąt natarcia i może je głębiej przeciągnąć, pogłębiając przechylenie i prowokując korkociąg. Na granicy przeciągnięcia kierunek i poziom skrzydeł utrzymuje się sterem kierunku.",
+				"en": "Deflecting the aileron down on the dropping wing locally increases its angle of attack and can stall that wing more deeply, worsening the bank and provoking a spin. Near the stall the rudder, not the ailerons, keeps direction and wings level."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-035",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STALL_SPIN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak krążenie w kominie z dużym przechyleniem zwiększa ryzyko przeciągnięcia?",
+				"en": "How does thermalling with high bank increase stall risk?"
+			},
+			"back": {
+				"pl": "W zakręcie rośnie współczynnik obciążenia, więc prędkość przeciągnięcia jest wyższa niż w locie prostym. Mała prędkość krążenia i ewentualne odchylenie sprawiają, że szybowiec jest blisko przeciągnięcia, a niesymetria sprzyja korkociągowi.",
+				"en": "In a turn the load factor rises, so the stall speed is higher than in straight flight. The low circling speed and any yaw bring the glider close to the stall, and asymmetry favors a spin."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-036",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STALL_SPIN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest korkociąg płaski i dlaczego jest groźniejszy niż korkociąg stromy?",
+				"en": "What is a flat spin and why is it more dangerous than a steep spin?"
+			},
+			"back": {
+				"pl": "W korkociągu płaskim nos jest blisko poziomu, kąt natarcia bardzo duży, a obrót szybki. Stery są mało skuteczne, bo opływ jest mocno oderwany, przez co wyprowadzenie bywa trudne lub niemożliwe. Często wiąże się z tylnym położeniem środka ciężkości.",
+				"en": "In a flat spin the nose is near the horizon, the angle of attack is very high, and the rotation is fast. Controls are barely effective because the flow is heavily separated, making recovery hard or impossible. It is often linked to an aft center of gravity."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-037",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STALL_SPIN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak położenie środka ciężkości (CG) wpływa na charakterystyki przeciągnięcia i korkociągu?",
+				"en": "How does the center of gravity (CG) position affect stall and spin behavior?"
+			},
+			"back": {
+				"pl": "Przednie CG daje większą stateczność podłużną, łagodniejsze przeciągnięcie i łatwiejsze wyprowadzanie z korkociągu. Tylne CG zmniejsza stateczność, utrudnia wyprowadzanie i sprzyja korkociągowi płaskiemu, dlatego balast i obciążenie muszą mieścić się w dopuszczalnym zakresie CG.",
+				"en": "A forward CG gives more longitudinal stability, a gentler stall, and easier spin recovery. An aft CG reduces stability, hampers recovery, and favors a flat spin, which is why ballast and loading must stay within the CG envelope."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-038",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STALL_SPIN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Po co stosuje się skręcenie geometryczne skrzydła (washout) w kontekście przeciągnięcia?",
+				"en": "Why is wing twist (washout) used with respect to stalling?"
+			},
+			"back": {
+				"pl": "Washout to mniejszy kąt zaklinowania końcówki skrzydła niż nasady. Dzięki temu nasada przeciąga się pierwsza, a końcówki (gdzie są lotki) pozostają dłużej nieprzeciągnięte, zachowując skuteczność lotek i opóźniając wpadnięcie w korkociąg.",
+				"en": "Washout means the wingtip has a lower incidence than the root. This makes the root stall first while the tips (where the ailerons are) stay unstalled longer, preserving aileron effectiveness and delaying spin entry."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-039",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STALL_SPIN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego szron lub owady na krawędzi natarcia podnoszą prędkość przeciągnięcia?",
+				"en": "Why does stall speed increase with frost or insects on the leading edge?"
+			},
+			"back": {
+				"pl": "Zanieczyszczenie lub szron na krawędzi natarcia zaburzają opływ, obniżają maksymalny współczynnik siły nośnej i powodują wcześniejsze oderwanie strug. Skrzydło przeciąga się przy mniejszym kącie natarcia i wyższej prędkości, czasem nierównomiernie.",
+				"en": "Contamination or frost on the leading edge disturbs the airflow, lowers the maximum lift coefficient, and causes earlier flow separation. The wing stalls at a lower angle of attack and a higher speed, sometimes unevenly."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-040",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.STALL_SPIN"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka jest typowa kolejność działań na sterach przy zamierzonym wprowadzeniu w korkociąg?",
+				"en": "What is the typical control sequence for an intentional spin entry?"
+			},
+			"back": {
+				"pl": "Zmniejszać prędkość do bliskiej przeciągnięcia, stopniowo ściągając drążek. W momencie przeciągnięcia wychylić pełny ster kierunku w stronę zamierzonego obrotu, trzymając drążek ściągnięty. Szybowiec opuści skrzydło i rozpocznie autorotację.",
+				"en": "Reduce speed close to the stall with progressive back-stick. At the stall apply full rudder in the desired direction of rotation while holding the stick back. The glider drops a wing and begins autorotation."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-041",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.LOAD_FACTOR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest współczynnik obciążenia n i co oznacza n=1?",
+				"en": "What is the load factor n and what does n=1 mean?"
+			},
+			"back": {
+				"pl": "Współczynnik obciążenia to stosunek siły nośnej do ciężaru szybowca (n = L/W), wyrażany w wielokrotnościach g. n=1 oznacza lot prosty poziomy lub szybowanie ustalone, gdzie nośność równoważy ciężar.",
+				"en": "The load factor is the ratio of lift to the glider's weight (n = L/W), expressed in multiples of g. n=1 means straight and level flight or steady gliding, where lift balances weight."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-042",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["POF.LOAD_FACTOR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co opisuje obwiednia obciążeń (wykres V-n) szybowca?",
+				"en": "What does a glider's load (V-n) diagram describe?"
+			},
+			"back": {
+				"pl": "Wykres V-n pokazuje dopuszczalne kombinacje prędkości i współczynnika obciążenia. Ograniczają go: krzywa przeciągnięcia (granica aerodynamiczna), dodatnie i ujemne limity strukturalne oraz prędkość VNE. Wewnątrz obwiedni lot jest bezpieczny.",
+				"en": "The V-n diagram shows the permissible combinations of airspeed and load factor. It is bounded by the stall curve (aerodynamic limit), the positive and negative structural limits, and VNE. Flight inside the envelope is safe."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-043",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.LOAD_FACTOR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie typowe maksymalne dodatnie i ujemne współczynniki obciążenia ma szybowiec w kategorii Utility?",
+				"en": "What are typical maximum positive and negative load factors of a glider in the Utility category?"
+			},
+			"back": {
+				"pl": "Dla szybowca w kategorii Utility limity manewrowe wynoszą zwykle +5,3 g i -2,65 g. Do prędkości manewrowej VA konstrukcja wytrzymuje te wartości; powyżej VA należy unikać pełnych wychyleń sterów.",
+				"en": "For a Utility category glider the maneuvering limits are typically +5.3 g and -2.65 g. Up to the maneuvering speed VA the structure withstands these values; above VA full control deflections must be avoided."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-044",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.LOAD_FACTOR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest prędkość manewrowa VA i dlaczego jej przekroczenie ma znaczenie dla obciążeń?",
+				"en": "What is the maneuvering speed VA and why does exceeding it matter for loads?"
+			},
+			"back": {
+				"pl": "VA to najwyższa prędkość, przy której pełne, gwałtowne wychylenie steru spowoduje przeciągnięcie skrzydła ZANIM przekroczone zostanie dopuszczalne przeciążenie. Powyżej VA pełne wychylenia mogą przeciążyć konstrukcję, bo skrzydło osiąga limit g bez przeciągnięcia.",
+				"en": "VA is the highest speed at which a full, abrupt control deflection will stall the wing BEFORE the load limit is exceeded. Above VA full deflections can overstress the structure, because the wing reaches the g limit without stalling."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-045",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.LOAD_FACTOR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego turbulencja i podmuchy pionowe zwiększają chwilowy współczynnik obciążenia?",
+				"en": "Why do turbulence and vertical gusts increase the instantaneous load factor?"
+			},
+			"back": {
+				"pl": "Podmuch pionowy zmienia chwilowo kąt natarcia skrzydła, a więc i siłę nośną. Nagły wzrost nośności daje skok przeciążenia. Dlatego w silnej turbulencji lata się z prędkością zredukowaną do prędkości w turbulencji (VRA/VB), by ograniczyć obciążenia.",
+				"en": "A vertical gust momentarily changes the wing's angle of attack and thus its lift. The sudden lift increase produces a load factor spike. That is why in strong turbulence one flies at the reduced rough-air speed (VRA/VB) to limit loads."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-046",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.LOAD_FACTOR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak współczynnik obciążenia zależy od kąta przechylenia w zakręcie ustalonym poziomym?",
+				"en": "How does the load factor depend on bank angle in a coordinated level turn?"
+			},
+			"back": {
+				"pl": "W zakręcie poziomym ustalonym n = 1/cos(kąta przechylenia). Przy 30 stopniach n wynosi ok. 1,15; przy 45 stopniach ok. 1,41; przy 70 stopniach ok. 2,9. Rosnące przechylenie szybko podnosi obciążenie i prędkość przeciągnięcia.",
+				"en": "In a coordinated level turn n = 1/cos(bank angle). At 30 degrees n is about 1.15; at 45 degrees about 1.41; at 70 degrees about 2.9. Increasing bank rapidly raises the load and the stall speed."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-047",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.LOAD_FACTOR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co odczuwa pilot przy ujemnym współczynniku obciążenia i kiedy on występuje?",
+				"en": "What does a pilot feel at a negative load factor and when does it occur?"
+			},
+			"back": {
+				"pl": "Przy ujemnym n pilot jest wypychany z fotela ku górze (uczucie lekkości, luźne pasy), bo siła nośna jest skierowana w dół względem kadłuba. Występuje przy gwałtownym oddaniu drążka, przejściu przez szczyt górki (pushover) lub w silnym opadającym podmuchu.",
+				"en": "At negative n the pilot is pushed up out of the seat (a light, loose-strap feeling), because lift acts downward relative to the fuselage. It occurs with an abrupt push-over, going over the top of a maneuver, or in a strong downward gust."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-048",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.WATER_BALLAST"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak balast wodny wpływa na obciążenia konstrukcji i osiągi szybowca?",
+				"en": "How does water ballast affect structural loads and glider performance?"
+			},
+			"back": {
+				"pl": "Balast zwiększa masę i obciążenie powierzchni nośnej, co podnosi prędkość optymalną i pozwala szybciej przeskakiwać między kominami przy zachowanej doskonałości. Jednocześnie rośnie prędkość przeciągnięcia oraz rzeczywiste obciążenia konstrukcji w manewrach, więc zapas do limitów g jest mniejszy.",
+				"en": "Ballast increases mass and wing loading, which raises the optimum cruise speed and lets the glider transit faster between thermals while keeping its glide ratio. At the same time the stall speed rises and the actual structural loads in maneuvers increase, so the g margins are reduced."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-049",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.LOAD_FACTOR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego dopuszczalny współczynnik obciążenia z wypuszczonymi klapami lub hamulcami aerodynamicznymi bywa niższy?",
+				"en": "Why is the permitted load factor often lower with flaps or airbrakes extended?"
+			},
+			"back": {
+				"pl": "Wypuszczone klapy lub hamulce aerodynamiczne zmieniają rozkład sił na skrzydle i obciążają lokalnie konstrukcję, dlatego instrukcja użytkowania podaje obniżony limit g oraz odrębne, niższe prędkości dopuszczalne (np. VFE dla klap, VB/VSB dla hamulców).",
+				"en": "Extended flaps or airbrakes change the load distribution on the wing and locally stress the structure, so the flight manual gives a reduced g limit and separate, lower permissible speeds (e.g. VFE for flaps, VB/VSB for airbrakes)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-050",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.LOAD_FACTOR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego przy wyprowadzaniu szybowca z nurkowania trzeba kontrolować przeciążenie?",
+				"en": "Why must load factor be controlled when recovering a glider from a dive?"
+			},
+			"back": {
+				"pl": "Wyprowadzanie z nurkowania to zakręt w płaszczyźnie pionowej: im ciaśniej i gwałtowniej ściągany drążek, tym większy współczynnik obciążenia. Przy dużej prędkości łatwo przekroczyć limit strukturalny, dlatego wyprowadza się płynnie, monitorując prędkość i przeciążenie.",
+				"en": "A dive recovery is a pull-up in the vertical plane: the tighter and more abrupt the back-stick, the higher the load factor. At high speed the structural limit is easily exceeded, so recovery is done smoothly while monitoring speed and load factor."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-051",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.DRAG_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie są dwa główne rodzaje oporu aerodynamicznego szybowca?",
+				"en": "What are the two main types of aerodynamic drag of a glider?"
+			},
+			"back": {
+				"pl": "Opór szkodliwy (pasożytniczy), niezależny od wytwarzania siły nośnej, oraz opór indukowany, będący następstwem powstawania siły nośnej.",
+				"en": "Parasite drag, independent of lift generation, and induced drag, which is a by-product of producing lift."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-052",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.DRAG_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Z jakich składowych składa się opór szkodliwy (pasożytniczy)?",
+				"en": "What components make up parasite drag?"
+			},
+			"back": {
+				"pl": "Z oporu kształtu (ciśnieniowego), oporu tarcia oraz oporu interferencyjnego w miejscach łączenia elementów płatowca.",
+				"en": "Form (pressure) drag, skin friction drag, and interference drag at the junctions of airframe components."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-053",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.DRAG_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak zmienia się opór szkodliwy wraz ze wzrostem prędkości lotu?",
+				"en": "How does parasite drag change as airspeed increases?"
+			},
+			"back": {
+				"pl": "Rośnie z kwadratem prędkości: przy dwukrotnym wzroście prędkości opór szkodliwy rośnie czterokrotnie.",
+				"en": "It increases with the square of speed: doubling the airspeed quadruples the parasite drag."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-054",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.DRAG_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest opór interferencyjny?",
+				"en": "What is interference drag?"
+			},
+			"back": {
+				"pl": "Dodatkowy opór powstający w miejscach łączenia elementów płatowca (np. skrzydło-kadłub), gdzie mieszają się strugi powietrza i zaburza się ich opływ.",
+				"en": "Extra drag arising where airframe parts meet (e.g. wing-fuselage), where airflows mix and disturb each other."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-055",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.DRAG_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki rodzaj oporu dominuje przy małych prędkościach lotu (blisko przeciągnięcia)?",
+				"en": "Which type of drag dominates at low airspeeds (near the stall)?"
+			},
+			"back": {
+				"pl": "Opór indukowany, ponieważ przy małej prędkości wymagany jest duży kąt natarcia i duży współczynnik siły nośnej.",
+				"en": "Induced drag, because at low speed a high angle of attack and high lift coefficient are required."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-056",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.DRAG_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki rodzaj oporu dominuje przy dużych prędkościach lotu?",
+				"en": "Which type of drag dominates at high airspeeds?"
+			},
+			"back": {
+				"pl": "Opór szkodliwy (pasożytniczy), gdyż rośnie z kwadratem prędkości, podczas gdy indukowany maleje.",
+				"en": "Parasite drag, because it grows with the square of speed while induced drag decreases."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-057",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.DRAG_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Przy jakim warunku opór całkowity szybowca jest najmniejszy?",
+				"en": "At what condition is the glider's total drag at a minimum?"
+			},
+			"back": {
+				"pl": "Gdy opór indukowany jest równy oporowi szkodliwemu; w tym punkcie opór całkowity osiąga minimum.",
+				"en": "When induced drag equals parasite drag; at this point total drag is minimal."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-058",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.DRAG_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co fizycznie wywołuje opór indukowany na końcach skrzydła?",
+				"en": "What physically causes induced drag at the wingtips?"
+			},
+			"back": {
+				"pl": "Wiry brzegowe powstające w wyniku przepływu powietrza z dołu na górę wokół końcówki skrzydła, odchylające strugi w dół (downwash).",
+				"en": "Wingtip vortices created by air flowing from the lower to the upper surface around the tip, deflecting the flow downward (downwash)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-059",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.DRAG_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego szybowce mają smukłe skrzydła o dużym wydłużeniu?",
+				"en": "Why do gliders have slender, high-aspect-ratio wings?"
+			},
+			"back": {
+				"pl": "Duże wydłużenie zmniejsza opór indukowany, ponieważ osłabia wiry brzegowe i zwiększa doskonałość aerodynamiczną.",
+				"en": "High aspect ratio reduces induced drag by weakening tip vortices and improving the glide ratio."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-060",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.DRAG_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaką rolę w ograniczaniu oporu indukowanego pełnią winglety?",
+				"en": "What role do winglets play in limiting induced drag?"
+			},
+			"back": {
+				"pl": "Utrudniają przepływ powietrza wokół końcówki skrzydła, osłabiając wiry brzegowe i zmniejszając opór indukowany.",
+				"en": "They obstruct the airflow around the wingtip, weakening tip vortices and reducing induced drag."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-061",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.DRAG_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak na opór szkodliwy wpływa wypuszczenie podwozia i otwarcie hamulców aerodynamicznych?",
+				"en": "How does extending the gear and opening the airbrakes affect parasite drag?"
+			},
+			"back": {
+				"pl": "Znacznie zwiększają opór szkodliwy, co pogarsza doskonałość i zwiększa opadanie; wykorzystuje się to przy podejściu do lądowania.",
+				"en": "They greatly increase parasite drag, degrading the glide ratio and increasing sink, which is used on approach to land."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-062",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.DRAG_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest opór profilowy skrzydła?",
+				"en": "What is the profile drag of a wing?"
+			},
+			"back": {
+				"pl": "Suma oporu kształtu i oporu tarcia samego profilu skrzydła; jest częścią oporu szkodliwego niezależną od siły nośnej.",
+				"en": "The sum of form drag and skin friction drag of the wing section itself; it is the lift-independent part of parasite drag."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-063",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.DRAG_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego gładka, czysta powierzchnia skrzydła ma znaczenie dla oporu?",
+				"en": "Why does a smooth, clean wing surface matter for drag?"
+			},
+			"back": {
+				"pl": "Zanieczyszczenia, owady czy szron przyspieszają przejście w opływ turbulentny i zwiększają opór tarcia, pogarszając doskonałość.",
+				"en": "Contamination, insects or frost hasten transition to turbulent flow and increase skin friction drag, worsening the glide ratio."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-064",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.DRAG_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak na opór indukowany wpływa wzrost masy szybowca przy danej prędkości?",
+				"en": "How does increased glider weight affect induced drag at a given speed?"
+			},
+			"back": {
+				"pl": "Zwiększa go, bo do utrzymania lotu potrzeba większej siły nośnej, czyli większego kąta natarcia i silniejszych wirów brzegowych.",
+				"en": "It increases it, because more lift is needed, requiring a higher angle of attack and stronger tip vortices."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-065",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie trzy podstawowe powierzchnie sterowe ma szybowiec i wokół jakich osi działają?",
+				"en": "What are the three primary control surfaces of a glider and which axes do they act about?"
+			},
+			"back": {
+				"pl": "Lotki (oś podłużna - przechylanie), ster wysokości (oś poprzeczna - pochylanie), ster kierunku (oś pionowa - odchylanie).",
+				"en": "Ailerons (longitudinal axis - roll), elevator (lateral axis - pitch), rudder (vertical axis - yaw)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-066",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak działają lotki - co dzieje się ze skrzydłami przy wychyleniu drążka w bok?",
+				"en": "How do ailerons work - what happens to the wings when the stick is moved sideways?"
+			},
+			"back": {
+				"pl": "Lotki wychylają się przeciwnie: na jednym skrzydle w dół (zwiększa nośność, unosi je), na drugim w górę (zmniejsza nośność, opuszcza je), powodując przechylenie.",
+				"en": "Ailerons deflect oppositely: down on one wing (more lift, it rises) and up on the other (less lift, it drops), producing roll."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-067",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki jest podstawowy efekt działania steru kierunku i czy używa się go samodzielnie do zakrętu?",
+				"en": "What is the primary effect of the rudder and is it used alone to turn?"
+			},
+			"back": {
+				"pl": "Wywołuje odchylanie wokół osi pionowej; nie służy do samodzielnego wykonania zakrętu, lecz głównie do koordynacji i zwalczania odchylenia odwrotnego.",
+				"en": "It produces yaw about the vertical axis; it is not used alone to turn, but mainly to coordinate and counter adverse yaw."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-068",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki jest wtórny (uboczny) efekt wychylenia steru kierunku?",
+				"en": "What is the secondary effect of rudder deflection?"
+			},
+			"back": {
+				"pl": "Po odchyleniu szybowca wzrasta prędkość skrzydła zewnętrznego, co daje na nim większą nośność i powoduje wtórne przechylenie w stronę zakrętu.",
+				"en": "After yawing, the outer wing speeds up and gains lift, causing a secondary roll into the turn."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-069",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Do czego służą i jak działają hamulce aerodynamiczne (spojlery) szybowca?",
+				"en": "What are glider airbrakes (spoilers) for and how do they work?"
+			},
+			"back": {
+				"pl": "Wysuwane z powierzchni skrzydła płyty psują opływ, zmniejszają nośność i zwiększają opór, co pozwala zwiększyć opadanie i kontrolować kąt podejścia bez rozpędzania.",
+				"en": "Plates extending from the wing surface spoil the airflow, reducing lift and increasing drag, allowing increased sink and control of the approach angle without gaining speed."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-070",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest trymer steru wysokości i jaką pełni funkcję?",
+				"en": "What is the elevator trim and what is its function?"
+			},
+			"back": {
+				"pl": "Urządzenie (klapka lub sprężyna) odciążające drążek, które utrzymuje zadany kąt pochylenia i prędkość bez konieczności ciągłego trzymania siły na drążku.",
+				"en": "A device (tab or spring) that relieves stick force, holding a set pitch and speed without continuously holding pressure on the stick."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-071",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "W jaki sposób ster wysokości pośrednio steruje prędkością lotu szybowca?",
+				"en": "How does the elevator indirectly control the glider's airspeed?"
+			},
+			"back": {
+				"pl": "Zmienia kąt natarcia: ściągnięcie drążka zwiększa kąt natarcia i zmniejsza prędkość, oddanie zmniejsza kąt natarcia i zwiększa prędkość.",
+				"en": "It changes the angle of attack: pulling the stick raises AoA and reduces speed, pushing lowers AoA and increases speed."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-072",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego skuteczność sterów maleje przy małej prędkości lotu?",
+				"en": "Why does control effectiveness decrease at low airspeed?"
+			},
+			"back": {
+				"pl": "Siła generowana przez powierzchnie sterowe zależy od ciśnienia dynamicznego (kwadratu prędkości), więc przy małej prędkości stery reagują leniwie i wymagają większych wychyleń.",
+				"en": "Control force depends on dynamic pressure (square of speed), so at low speed controls feel sluggish and need larger deflections."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-073",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Do czego służą klapy w szybowcach wyczynowych?",
+				"en": "What are flaps for in performance gliders?"
+			},
+			"back": {
+				"pl": "Zmieniają wysklepienie profilu: dodatnie wychylenie zwiększa nośność i opór na małych prędkościach (krążenie, lądowanie), ujemne zmniejsza opór na dużych prędkościach (przeskok).",
+				"en": "They change the airfoil camber: positive settings increase lift and drag at low speed (thermalling, landing), negative settings cut drag at high speed (cruise)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-074",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak prawidłowo skoordynować wejście w zakręt szybowcem?",
+				"en": "How do you correctly coordinate entry into a turn in a glider?"
+			},
+			"back": {
+				"pl": "Jednocześnie wychylić lotki w stronę zakrętu i dodać proporcjonalnie ster kierunku w tę samą stronę, aby zniwelować odchylenie odwrotne i utrzymać lot bez ślizgu.",
+				"en": "Apply ailerons into the turn and simultaneously add proportional rudder the same way to cancel adverse yaw and keep the turn balanced."
+			},
+			"mnemonic": {
+				"pl": "Lotka i noga w tę samą stronę",
+				"en": "Stick and rudder the same way"
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-075",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["POF.POLAR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co przedstawia biegunowa prędkości szybowca?",
+				"en": "What does a glider's speed polar represent?"
+			},
+			"back": {
+				"pl": "Zależność prędkości opadania (pionowej) od prędkości lotu po torze (poziomej) w locie ustalonym. Z wykresu odczytuje się prędkości optymalne dla różnych warunków.",
+				"en": "The relationship between sink rate (vertical speed) and airspeed along the flight path in steady flight. Optimum speeds for various conditions are read off the curve."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-076",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["POF.POLAR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak na biegunowej znajduje się prędkość minimalnego opadania?",
+				"en": "How is the minimum sink speed found on the polar?"
+			},
+			"back": {
+				"pl": "To punkt biegunowej o najmniejszym opadaniu. Wyznacza go styczna pozioma do krzywej. Daje najdłuższy czas lotu, używana przy krążeniu w słabej noszącej.",
+				"en": "It is the point on the polar with the smallest sink. A horizontal tangent to the curve marks it. It gives the longest flight time and is used when circling in weak lift."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-077",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["POF.POLAR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak graficznie wyznacza się prędkość ekonomiczną (najlepszej doskonałości) na biegunowej?",
+				"en": "How is best glide speed graphically determined on the polar?"
+			},
+			"back": {
+				"pl": "Przez poprowadzenie stycznej do biegunowej z początku układu współrzędnych. Punkt styczności wyznacza prędkość najlepszej doskonałości.",
+				"en": "By drawing a tangent to the polar from the origin of the coordinate system. The point of tangency gives the best glide speed."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-078",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.POLAR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym różni się prędkość minimalnego opadania od prędkości ekonomicznej?",
+				"en": "How does minimum sink speed differ from best glide speed?"
+			},
+			"back": {
+				"pl": "Prędkość minimalnego opadania jest mniejsza i daje najmniejsze opadanie (najdłuższy lot). Prędkość ekonomiczna jest większa i daje największy zasięg (najlepszą doskonałość).",
+				"en": "Minimum sink speed is lower and gives the smallest sink (longest duration). Best glide speed is higher and gives the greatest range (best glide ratio)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-079",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.POLAR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak doskonałość szybowca odczytuje się z biegunowej?",
+				"en": "How is the glide ratio read from the polar?"
+			},
+			"back": {
+				"pl": "Doskonałość w danym punkcie to stosunek prędkości lotu do prędkości opadania (V/w). Maksimum występuje w punkcie styczności prostej poprowadzonej z początku układu.",
+				"en": "The glide ratio at any point is the ratio of airspeed to sink rate (V/w). The maximum occurs where the tangent from the origin touches the curve."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-080",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.POLAR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Na czym polega teoria prędkości optymalnej (MacCready) i jak wiąże się z biegunową?",
+				"en": "What is the MacCready (optimum speed) theory and how does it relate to the polar?"
+			},
+			"back": {
+				"pl": "Metoda doboru prędkości przeskoku zależnie od spodziewanej siły następnej noszącej. Styczną prowadzi się nie z początku układu, lecz z punktu na osi opadania odpowiadającego nastawie MacCready, co daje większą prędkość przy silnych kominach.",
+				"en": "A method of choosing cruise speed based on the expected strength of the next thermal. The tangent is drawn not from the origin but from a point on the sink axis matching the MacCready setting, giving a higher speed in strong thermals."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-081",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["POF.POLAR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak lot pod wiatr (wiatr czołowy) wpływa na korzystanie z biegunowej?",
+				"en": "How does flying into a headwind affect the use of the polar?"
+			},
+			"back": {
+				"pl": "Początek stycznej przesuwa się w prawo o prędkość wiatru, więc optymalna prędkość lotu rośnie, aby ograniczyć stratę zasięgu nad ziemią.",
+				"en": "The origin of the tangent shifts to the right by the wind speed, so the optimum airspeed increases to reduce the loss of range over the ground."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-082",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["POF.POLAR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak wiatr tylny zmienia optymalną prędkość lotu wg biegunowej?",
+				"en": "How does a tailwind change the optimum airspeed from the polar?"
+			},
+			"back": {
+				"pl": "Początek stycznej przesuwa się w lewo o prędkość wiatru, więc optymalna prędkość lotu maleje (warto lecieć wolniej, bliżej prędkości minimalnego opadania).",
+				"en": "The tangent origin shifts left by the wind speed, so the optimum airspeed decreases (it pays to fly slower, closer to minimum sink speed)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-083",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["POF.POLAR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak opadające masy powietrza wpływają na dobór prędkości z biegunowej?",
+				"en": "How does sinking air affect speed selection from the polar?"
+			},
+			"back": {
+				"pl": "Cała biegunowa przesuwa się w dół o prędkość opadania powietrza. Styczna z początku układu wymaga wówczas większej prędkości lotu, aby szybciej opuścić strefę opadania.",
+				"en": "The whole polar shifts downward by the sink rate of the air. The tangent from the origin then requires a higher airspeed to leave the sinking area faster."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-084",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.POLAR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego przy dużych prędkościach prawa część biegunowej opada bardzo stromo?",
+				"en": "Why does the right part of the polar drop very steeply at high speeds?"
+			},
+			"back": {
+				"pl": "Bo opór szkodliwy (pasożytniczy) rośnie z kwadratem prędkości, gwałtownie zwiększając prędkość opadania potrzebną do utrzymania lotu.",
+				"en": "Because parasite drag increases with the square of speed, sharply raising the sink rate needed to sustain flight."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-085",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["POF.POLAR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak zmiana masy szybowca (np. cięższy pilot) przesuwa biegunową?",
+				"en": "How does a change in glider mass (e.g. heavier pilot) shift the polar?"
+			},
+			"back": {
+				"pl": "Biegunowa przesuwa się wzdłuż samej siebie w prawo i w dół: rosną wszystkie prędkości charakterystyczne, a maksymalna doskonałość pozostaje praktycznie taka sama.",
+				"en": "The polar shifts along itself to the right and down: all characteristic speeds increase while the maximum glide ratio stays practically the same."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-086",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.POLAR"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego maksymalna doskonałość nie zależy od masy szybowca?",
+				"en": "Why is the maximum glide ratio independent of glider mass?"
+			},
+			"back": {
+				"pl": "Doskonałość zależy od stosunku siły nośnej do oporu (L/D), będącego cechą aerodynamiczną. Większa masa zmienia tylko prędkość, przy której osiąga się tę samą najlepszą doskonałość.",
+				"en": "Glide ratio depends on the lift-to-drag ratio (L/D), an aerodynamic property. More mass only changes the speed at which the same best glide ratio is reached."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-087",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.WATER_BALLAST"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Po co stosuje się balast wodny w szybowcach wyczynowych?",
+				"en": "Why is water ballast used in performance gliders?"
+			},
+			"back": {
+				"pl": "Aby zwiększyć masę, a tym samym obciążenie powierzchni. Daje to wyższe prędkości optymalne i większą prędkość przelotową w silnej termice, bez utraty maksymalnej doskonałości.",
+				"en": "To increase mass and thus wing loading. This yields higher optimum speeds and a higher cross-country speed in strong thermals, without losing maximum glide ratio."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-088",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.WATER_BALLAST"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak balast wodny wpływa na obciążenie powierzchni nośnej?",
+				"en": "How does water ballast affect wing loading?"
+			},
+			"back": {
+				"pl": "Zwiększa obciążenie powierzchni (masa na metr kwadratowy skrzydła), co przesuwa biegunową w stronę wyższych prędkości.",
+				"en": "It increases wing loading (mass per square metre of wing), shifting the polar toward higher speeds."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-089",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.WATER_BALLAST"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "W jakich warunkach termicznych warto napełnić zbiorniki balastu wodnego?",
+				"en": "In what thermal conditions is it worth filling the water ballast tanks?"
+			},
+			"back": {
+				"pl": "W silnej termice z mocnymi, szerokimi kominami. Wtedy większa masa pozwala szybciej przeskakiwać między kominami, zwiększając średnią prędkość przelotową.",
+				"en": "In strong thermals with powerful, wide cores. Then the higher mass allows faster glides between thermals, increasing the average cross-country speed."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-090",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.WATER_BALLAST"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego w słabej termice balast wodny jest niekorzystny?",
+				"en": "Why is water ballast disadvantageous in weak thermals?"
+			},
+			"back": {
+				"pl": "Bo zwiększa prędkość minimalnego opadania i pogarsza zdolność krążenia w ciasnych, słabych kominach. W takich warunkach balast się zrzuca.",
+				"en": "Because it raises the minimum sink rate and worsens the ability to circle in tight, weak thermals. In such conditions the ballast is dumped."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-091",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.WATER_BALLAST"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak balast wodny wpływa na prędkość przeciągnięcia?",
+				"en": "How does water ballast affect stall speed?"
+			},
+			"back": {
+				"pl": "Zwiększa prędkość przeciągnięcia, bo rośnie potrzebna siła nośna. Prędkość przeciągnięcia rośnie proporcjonalnie do pierwiastka ze stosunku mas.",
+				"en": "It increases stall speed because more lift is required. Stall speed rises in proportion to the square root of the mass ratio."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-092",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.WATER_BALLAST"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego balast wodny zwykle zrzuca się przed lądowaniem?",
+				"en": "Why is water ballast usually dumped before landing?"
+			},
+			"back": {
+				"pl": "Aby zmniejszyć prędkość przeciągnięcia i prędkość podejścia oraz odciążyć konstrukcję przy przyziemieniu. Lżejszy szybowiec ląduje łatwiej i bezpieczniej.",
+				"en": "To reduce stall and approach speeds and to relieve the structure at touchdown. A lighter glider lands more easily and safely."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-093",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["POF.WATER_BALLAST"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego po zwiększeniu masy o czynnik k prędkości na biegunowej rosną o pierwiastek z k?",
+				"en": "Why do speeds on the polar increase by the square root of k when mass increases by factor k?"
+			},
+			"back": {
+				"pl": "Bo siła nośna jest proporcjonalna do kwadratu prędkości. Aby unieść k razy większą masę przy tym samym kącie natarcia, prędkość musi wzrosnąć pierwiastek z k razy.",
+				"en": "Because lift is proportional to the square of speed. To carry k times more mass at the same angle of attack, speed must rise by the square root of k."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-094",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.WATER_BALLAST"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co dzieje się z balastem wodnym przy locie w temperaturach poniżej zera?",
+				"en": "What happens to water ballast in below-freezing temperatures?"
+			},
+			"back": {
+				"pl": "Woda może zamarznąć w zbiornikach i zatkać odpływy, uniemożliwiając zrzut. Dlatego przy ryzyku oblodzenia balastu się nie stosuje albo dodaje środek przeciw zamarzaniu.",
+				"en": "Water can freeze in the tanks and block the outlets, preventing dumping. So ballast is not used when icing is a risk, or antifreeze is added."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-pof-gen-095",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["POF.WATER_BALLAST"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego niesymetryczny zrzut balastu wodnego jest niebezpieczny?",
+				"en": "Why is asymmetric dumping of water ballast dangerous?"
+			},
+			"back": {
+				"pl": "Powoduje nierówne obciążenie skrzydeł i moment przechylający trudny do skontrowania, zwłaszcza przy małych prędkościach. Może prowadzić do utraty kontroli.",
+				"en": "It causes unequal wing loading and a rolling moment hard to counter, especially at low speed. It can lead to loss of control."
+			},
+			"source": "generated:spl"
 		}
 	]
 }
