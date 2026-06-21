@@ -19,7 +19,7 @@
 				"en": "What is altitude hypoxia?"
 			},
 			"back": {
-				"pl": "Niedobór tlenu w tkankach spowodowany spadkiem ciśnienia parcjalnego tlenu wraz ze wzrostem wysokości; pogarsza funkcje umysłowe i wzrok, często bez odczucia przez pilota.",
+				"pl": "Niedobór tlenu w tkankach spowodowany spadkiem ciśnienia parcjalnego tlenu wraz ze wzrostem wysokości; pogarsza sprawność umysłową i wzrok, często niezauważalnie dla pilota.",
 				"en": "A deficiency of oxygen in the tissues caused by the fall in oxygen partial pressure with altitude; it degrades mental function and vision, often without the pilot noticing."
 			},
 			"source": "authored:spl"
@@ -87,7 +87,7 @@
 				"en": "What is hyperventilation and how is it corrected?"
 			},
 			"back": {
-				"pl": "Nadmiernie szybkie oddychanie powodujące spadek CO2 we krwi; objawy to zawroty, mrowienie, skurcze. Korekta: świadome spowolnienie i pogłębienie oddechu oraz mowa. Uwaga: objawy bywają nie do odróżnienia od niedotlenienia, więc na wysokości najpierw zastosuj tlen i zniżaj.",
+				"pl": "Nadmiernie szybkie oddychanie powodujące spadek CO2 we krwi; objawy to zawroty, mrowienie, skurcze. Korekta: świadome spowolnienie i pogłębienie oddechu, pomaga też mówienie na głos. Uwaga: objawy bywają nie do odróżnienia od niedotlenienia, więc na wysokości najpierw zastosuj tlen i zniżaj.",
 				"en": "Excessively rapid breathing that lowers blood CO2; symptoms include dizziness, tingling and cramps. Correction: consciously slow and steady the breathing and talk. Note: symptoms can be indistinguishable from hypoxia, so at altitude use oxygen and descend first."
 			},
 			"source": "authored:spl"
@@ -121,7 +121,7 @@
 				"en": "What is the correct lookout scan technique?"
 			},
 			"back": {
-				"pl": "Skanowanie sektorami: krótkie zatrzymania wzroku (ok. 10°) z ostrym widzeniem, zanim oko ruszy dalej; obiekt na kursie kolizyjnym pozostaje nieruchomy w polu widzenia (stała namiarowa).",
+				"pl": "Skanowanie sektorami: krótkie zatrzymania wzroku (ok. 10°) z ostrym widzeniem, zanim oko przesunie się dalej; obiekt na kursie kolizyjnym pozostaje nieruchomy w polu widzenia (stała namiarowa).",
 				"en": "Scan in segments with short stops (about 10°) of sharp fixation before moving on; an aircraft on a collision course stays stationary in the windscreen (constant bearing)."
 			},
 			"source": "authored:spl"
@@ -189,7 +189,7 @@
 				"en": "What does the IMSAFE checklist stand for?"
 			},
 			"back": {
-				"pl": "Illness (choroba), Medication (leki), Stress (stres), Alcohol (alkohol), Fatigue (zmęczenie), Eating/Emotion (odżywienie/emocje) - samoocena gotowości pilota do lotu.",
+				"pl": "Illness (choroba), Medication (leki), Stress (stres), Alcohol (alkohol), Fatigue (zmęczenie), Eating/Emotion (odżywianie/emocje) - samoocena gotowości pilota do lotu.",
 				"en": "Illness, Medication, Stress, Alcohol, Fatigue, Eating/Emotion - a pilot self-assessment of fitness to fly."
 			},
 			"source": "authored:spl"

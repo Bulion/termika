@@ -53,7 +53,7 @@
 				"en": "What does the yellow arc on a glider airspeed indicator mean?"
 			},
 			"back": {
-				"pl": "Zakres ostrożności (powyżej VRA do VNE) dozwolony tylko w spokojnym powietrzu; loty w turbulencji w tym zakresie są zabronione.",
+				"pl": "Zakres ostrożności (od VRA do VNE) dozwolony tylko w spokojnym powietrzu; loty w turbulencji w tym zakresie są zabronione.",
 				"en": "The caution range (from VRA up to VNE) allowed only in smooth air; flight in turbulence in this range is prohibited."
 			},
 			"source": "authored:spl"
@@ -87,7 +87,7 @@
 				"en": "What is the purpose of airbrakes (spoilers) in a glider?"
 			},
 			"back": {
-				"pl": "Zmniejszają siłę nośną i zwiększają opór, co zwiększa opadanie i strome podejście - umożliwiają precyzyjne sterowanie podejściem do lądowania.",
+				"pl": "Zmniejszają siłę nośną i zwiększają opór, dzięki czemu szybowiec opada szybciej i schodzi po bardziej stromym torze - pozwala to precyzyjnie sterować podejściem do lądowania.",
 				"en": "They reduce lift and increase drag, steepening the descent and approach angle - allowing precise control of the landing approach."
 			},
 			"source": "authored:spl"
@@ -172,7 +172,7 @@
 				"en": "How does an aft centre of gravity (CG) affect glider behaviour?"
 			},
 			"back": {
-				"pl": "Zmniejsza stateczność podłużną, czyni szybowiec bardziej wrażliwym w sterowaniu i utrudnia wyprowadzenie z korkociągu.",
+				"pl": "Zmniejsza stateczność podłużną, sprawia, że szybowiec jest bardziej wrażliwy na ster wysokości, i utrudnia wyprowadzenie z korkociągu.",
 				"en": "It reduces longitudinal stability, makes the glider more sensitive in pitch and harder to recover from a spin."
 			},
 			"source": "authored:spl"
@@ -319,7 +319,7 @@
 			],
 			"answer": "b",
 			"explanation": {
-				"pl": "Hamulce aerodynamiczne zaburzają opływ skrzydła: zmniejszają nośność i zwiększają opór, co stromi tor podejścia.",
+				"pl": "Hamulce aerodynamiczne zaburzają opływ skrzydła: zmniejszają nośność i zwiększają opór, przez co tor podejścia staje się bardziej stromy.",
 				"en": "Airbrakes disturb the wing airflow: they cut lift and add drag, steepening the approach path."
 			},
 			"source": "authored:spl"
@@ -463,7 +463,7 @@
 			],
 			"answer": "b",
 			"explanation": {
-				"pl": "Tylne CG zmniejsza ramię stateczności statecznika, czyniąc szybowiec wrażliwym i trudniejszym do wyprowadzenia z korkociągu.",
+				"pl": "Tylne CG skraca ramię siły statecznika poziomego, przez co szybowiec staje się wrażliwy i trudniejszy do wyprowadzenia z korkociągu.",
 				"en": "An aft CG reduces the stabiliser moment arm, making the glider sensitive and harder to recover from a spin."
 			},
 			"source": "authored:spl"

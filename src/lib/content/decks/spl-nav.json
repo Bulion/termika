@@ -769,11 +769,11 @@
 			},
 			"modelChecklist": [
 				{
-					"pl": "Najpierw lataj szybowcem - utrzymaj wysokość i prędkość, nie skupiaj się tylko na mapie.",
+					"pl": "Przede wszystkim pilotuj szybowiec - utrzymuj wysokość i prędkość, nie skupiaj się wyłącznie na mapie.",
 					"en": "Fly the glider first - hold height and speed, do not fixate on the map."
 				},
 				{
-					"pl": "Oszacuj ostatnią pewną pozycję, kurs i czas, by wyznaczyć krąg prawdopodobnego położenia (martwy rachunek).",
+					"pl": "Oszacuj ostatnią pewną pozycję, kurs i czas, by wyznaczyć obszar prawdopodobnego położenia (nawigacja zliczeniowa).",
 					"en": "Estimate last known position, heading and time to set a circle of probable position (dead reckoning)."
 				},
 				{

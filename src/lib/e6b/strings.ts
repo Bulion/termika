@@ -72,7 +72,7 @@ const pl: E6bStrings = {
 	targetTas: 'Cel: TAS',
 	tasArc: 'TAS (łuk docelowy)',
 	hitOk: '✓ kropka na łuku TAS',
-	hitMiss: 'przesuń grid, aż kropka trafi na niebieski łuk',
+	hitMiss: 'przesuń siatkę, aż kropka trafi na niebieski łuk',
 	liveReadout: 'Odczyt na żywo',
 	underIndex: 'Pod indeksem',
 	gsUnderCentre: 'Łuk pod środkiem (GS)',
@@ -88,16 +88,16 @@ const pl: E6bStrings = {
 	stepsFindTitle: 'Szukasz GS i WCA:',
 	stepsFind: [
 		'Obróć tarczę: kierunek wiatru pod TRUE INDEX.',
-		'Przesuń grid, by środek stał na okrągłej linii, np. 100.',
+		'Przesuń siatkę, by środek stał na okrągłej linii, np. 100.',
 		'Przeciągnij czerwoną kropkę w górę o tyle węzłów, ile wynosi prędkość wiatru.',
 		'Obróć tarczę: kurs (TC) pod TRUE INDEX.',
-		'Przesuń grid, aż kropka trafi na łuk równy TAS.',
+		'Przesuń siatkę, aż kropka trafi na łuk równy TAS.',
 		'Odczyt: GS = łuk pod środkiem, WCA = kąt kropki.'
 	],
 	stepsWindTitle: 'Szukasz wiatru (odwrotnie):',
 	stepsWind: [
 		'Ustaw kurs (TC) pod TRUE INDEX.',
-		'Przesuń grid, aż GS będzie pod środkiem.',
+		'Przesuń siatkę, aż GS będzie pod środkiem.',
 		'Postaw kropkę na przecięciu linii WCA i łuku TAS.',
 		'Obróć tarczę, aż kropka znajdzie się pionowo nad środkiem.',
 		'Pod indeksem: kierunek wiatru; odległość kropki = prędkość.'
@@ -135,7 +135,7 @@ const pl: E6bStrings = {
 	forGsTh: 'FOR G.S. AND T.H.',
 	backSvgLines: [
 		'1  kierunek wiatru pod TRUE INDEX    2  kropka w górę od środka',
-		'3  kurs (TC) pod TRUE INDEX    4  przesuń grid, aż kropka na łuku TAS',
+		'3  kurs (TC) pod TRUE INDEX    4  przesuń siatkę, aż kropka na łuku TAS',
 		'5  GS pod środkiem    WCA = kąt kropki od linii środkowej'
 	]
 };

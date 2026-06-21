@@ -35,7 +35,7 @@
 		{
 			"id": "nav-2",
 			"a": {
-				"pl": "Ile minut łuku koła wielkiego Ziemi odpowiada 1 NM?",
+				"pl": "Ilu minutom łuku koła wielkiego Ziemi odpowiada 1 NM?",
 				"en": "Arc minutes of great circle corresponding to 1 NM"
 			},
 			"b": {
@@ -71,7 +71,7 @@
 		{
 			"id": "nav-5",
 			"a": {
-				"pl": "Ciśnienie ustawiane na wysokościomierzu gdy ma wskazywać wysokość bezwzględną (AMSL)",
+				"pl": "Ciśnienie ustawiane na wysokościomierzu, gdy ma on wskazywać wysokość bezwzględną (AMSL)",
 				"en": "Altimeter pressure setting for altitude above mean sea level"
 			},
 			"b": {

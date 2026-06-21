@@ -3,7 +3,7 @@
 	"id": "unit-conversions",
 	"title": { "pl": "Przeliczenia jednostek", "en": "Unit conversions" },
 	"description": {
-		"pl": "Szybkie przeliczenia prędkości, wysokości, odległości i ciśnienia regułą kciuka.",
+		"pl": "Szybkie, przybliżone przeliczenia prędkości, wysokości, odległości i ciśnienia.",
 		"en": "Quick speed, altitude, distance and pressure conversions by rule of thumb."
 	},
 	"drills": [

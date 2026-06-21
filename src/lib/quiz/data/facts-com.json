@@ -23,7 +23,7 @@
 		{
 			"id": "com-1",
 			"a": {
-				"pl": "Międzynarodowa częstotliwość alarmowa (niebezpieczeństwo) w lotnictwie",
+				"pl": "Międzynarodowa lotnicza częstotliwość niebezpieczeństwa",
 				"en": "International aviation distress frequency"
 			},
 			"b": {
@@ -59,7 +59,7 @@
 		{
 			"id": "com-4",
 			"a": {
-				"pl": "System pracy sieci radiotelefonicznej stosowany w lotnictwie",
+				"pl": "Tryb pracy sieci radiotelefonicznej stosowany w lotnictwie",
 				"en": "Radio network operating mode used in aviation"
 			},
 			"b": {
@@ -83,7 +83,7 @@
 		{
 			"id": "com-6",
 			"a": {
-				"pl": "Skala czytelności transmisji w lotnictwie (zakres)",
+				"pl": "Skala czytelności w lotniczej korespondencji radiowej (zakres)",
 				"en": "Readability scale range used in aviation"
 			},
 			"b": {
@@ -155,7 +155,7 @@
 		{
 			"id": "com-12",
 			"a": {
-				"pl": "Jak wymawia się liczbę 1 w polskiej łączności lotniczej przy słabej słyszalności?",
+				"pl": "Jak wymawia się cyfrę 1 w polskiej łączności lotniczej przy słabej słyszalności?",
 				"en": "How is digit 1 pronounced in Polish aviation radio when readability is poor?"
 			},
 			"b": {
@@ -167,7 +167,7 @@
 		{
 			"id": "com-13",
 			"a": {
-				"pl": "Na jakiej częstotliwości nadaje się wywołanie w niebezpieczeństwie jeśli niemożliwa jest komunikacja na bieżącej częstotliwości?",
+				"pl": "Na jakiej częstotliwości nadaje się wywołanie w niebezpieczeństwie, gdy łączność na bieżącej częstotliwości jest niemożliwa?",
 				"en": "Fallback distress call frequency when current frequency unavailable"
 			},
 			"b": {

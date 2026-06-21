@@ -53,7 +53,7 @@
 				"en": "What does the word WILCO mean in radio communication?"
 			},
 			"back": {
-				"pl": "WILCO (will comply) - zrozumiałem Twoją wiadomość i zastosuję się do niej.",
+				"pl": "WILCO (will comply) - zrozumiałem twoją wiadomość i się do niej zastosuję.",
 				"en": "WILCO (will comply) - I understand your message and will comply with it."
 			},
 			"source": "authored:spl"
@@ -121,7 +121,7 @@
 				"en": "When is the signal PAN PAN used instead of MAYDAY?"
 			},
 			"back": {
-				"pl": "PAN PAN (sytuacja nagląca) - gdy bezpieczeństwo statku lub osoby jest zagrożone, ale nie ma bezpośredniego, grożącego niebezpieczeństwa wymagającego natychmiastowej pomocy.",
+				"pl": "PAN PAN (sytuacja nagląca) - gdy bezpieczeństwo statku powietrznego lub osoby jest zagrożone, ale nie występuje bezpośrednie, poważne niebezpieczeństwo wymagające natychmiastowej pomocy.",
 				"en": "PAN PAN (urgency) - when the safety of the aircraft or a person is at risk but there is no immediate, grave danger requiring immediate assistance."
 			},
 			"source": "authored:spl"
@@ -257,7 +257,7 @@
 				"en": "How does a glider report its position in a non-controlled aerodrome traffic circuit?"
 			},
 			"back": {
-				"pl": "Na lotnisku bez kontroli szybowiec nadaje pozycje w kręgu (np. wiatr w plecy, baza, prosta) na częstotliwości lotniska, podając znak wywoławczy i zamiary; obowiązuje zasada wzajemnej obserwacji i pierwszeństwa.",
+				"pl": "Na lotnisku bez kontroli szybowiec nadaje pozycje w kręgu (np. wiatr w plecy, baza, prosta) na częstotliwości lotniska, podając znak wywoławczy i zamiary; obowiązuje zasada wzajemnej obserwacji i ustępowania pierwszeństwa.",
 				"en": "At a non-controlled aerodrome the glider reports circuit positions (e.g. downwind, base, final) on the aerodrome frequency, giving its call sign and intentions; see-and-avoid and right-of-way rules apply."
 			},
 			"source": "authored:spl"
@@ -572,7 +572,7 @@
 				{
 					"id": "b",
 					"text": {
-						"pl": "Pasażer odczuwa pogarszające się złe samopoczucie, ale nie ma bezpośredniego zagrożenia",
+						"pl": "Pasażer czuje się coraz gorzej, ale nie ma bezpośredniego zagrożenia",
 						"en": "A passenger is becoming unwell but there is no immediate danger"
 					}
 				},
@@ -593,7 +593,7 @@
 			],
 			"answer": "b",
 			"explanation": {
-				"pl": "PAN PAN to sygnał naglący - sytuacja dotyczy bezpieczeństwa, lecz bez bezpośredniego, grożącego niebezpieczeństwa. Pozostałe przypadki wymagają MAYDAY.",
+				"pl": "PAN PAN to sygnał naglący - sytuacja dotyczy bezpieczeństwa, lecz bez bezpośredniego, poważnego niebezpieczeństwa. Pozostałe przypadki wymagają MAYDAY.",
 				"en": "PAN PAN is the urgency signal - a safety concern without immediate grave danger. The other cases require MAYDAY."
 			},
 			"source": "authored:spl"

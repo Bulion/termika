@@ -83,7 +83,7 @@
 			"licenses": ["SPL"],
 			"tags": [],
 			"front": {
-				"pl": "Co oznacza machanie sterem kierunku (wilanie ogonem) przez samolot holujący?",
+				"pl": "Co oznacza machanie sterem kierunku (wiercenie ogonem) przez samolot holujący?",
 				"en": "What does the tug yawing (rudder waggle / fishtail) mean?"
 			},
 			"back": {
@@ -134,7 +134,7 @@
 			"licenses": ["SPL"],
 			"tags": [],
 			"front": {
-				"pl": "Gdzie tworzą się najsilniejsze wiry brzegowe i jak ich unikać przy lądowaniu za dużym samolotem?",
+				"pl": "Gdzie tworzą się najsilniejsze wiry krawędziowe i jak ich unikać przy lądowaniu za dużym samolotem?",
 				"en": "Where are wake vortices strongest and how to avoid them on landing behind a large aircraft?"
 			},
 			"back": {
@@ -301,7 +301,7 @@
 			"licenses": ["SPL"],
 			"tags": [],
 			"stem": {
-				"pl": "Podczas holu samolot holujący zaczyna machać sterem kierunku (wilanie ogonem). Co to oznacza dla pilota szybowca?",
+				"pl": "Podczas holu samolot holujący zaczyna machać sterem kierunku (wiercenie ogonem). Co to oznacza dla pilota szybowca?",
 				"en": "During aerotow the tug starts yawing (waggling its rudder / fishtailing). What does this mean to the glider pilot?"
 			},
 			"choices": [
@@ -329,7 +329,7 @@
 			],
 			"answer": "a",
 			"explanation": {
-				"pl": "Wilanie ogonem (machanie sterem kierunku) przez samolot holujący to sygnał 'sprawdź hamulce aerodynamiczne', najczęściej przypadkowo otwarte. Sygnałem 'zwolnij natychmiast' jest kołysanie skrzydłami.",
+				"pl": "Wiercenie ogonem (machanie sterem kierunku) przez samolot holujący to sygnał 'sprawdź hamulce aerodynamiczne', najczęściej przypadkowo otwarte. Sygnałem 'zwolnij natychmiast' jest kołysanie skrzydłami.",
 				"en": "The tug yawing/rudder waggle is the 'check your airbrakes' signal, most often inadvertently open. 'Release at once' is signalled by the tug rocking its wings."
 			},
 			"source": "authored:spl"
@@ -685,7 +685,7 @@
 			],
 			"answer": "a",
 			"explanation": {
-				"pl": "Kołysanie skrzydłami przez samolot holujący to sygnał 'zwolnij natychmiast' - coś jest poważnie nie tak. Sygnałem 'sprawdź hamulce' jest wilanie ogonem (ster kierunku).",
+				"pl": "Kołysanie skrzydłami przez samolot holujący to sygnał 'zwolnij natychmiast' - coś jest poważnie nie tak. Sygnałem 'sprawdź hamulce' jest wiercenie ogonem (ster kierunku).",
 				"en": "The tug rocking its wings is the 'release at once' signal - something is seriously wrong. 'Check airbrakes' is signalled by the rudder waggle/yaw."
 			},
 			"source": "authored:spl"
@@ -734,7 +734,7 @@
 			},
 			"modelChecklist": [
 				{
-					"pl": "Wyhamuj zbliżanie do samolotu - delikatnie wypuść hamulce lub odchyl tor, by napiąć linę stopniowo.",
+					"pl": "Powstrzymaj zbliżanie się do samolotu - delikatnie wypuść hamulce lub lekko odchyl tor lotu, aby stopniowo napiąć linę.",
 					"en": "Stop closing on the tug - gently ease the airbrakes or yaw slightly to take up the slack gradually."
 				},
 				{

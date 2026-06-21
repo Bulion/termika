@@ -3,7 +3,7 @@
 	"id": "performance",
 	"title": { "pl": "Osiągi i wysokości", "en": "Performance and altitudes" },
 	"description": {
-		"pl": "Wysokość ciśnieniowa i gęstościowa oraz zasięg ślizgu - obliczenia regułami kciuka.",
+		"pl": "Wysokość ciśnieniowa i gęstościowa oraz zasięg ślizgu - obliczenia przybliżone.",
 		"en": "Pressure and density altitude and glide range - rule-of-thumb calculations."
 	},
 	"drills": [

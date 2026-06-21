@@ -83,7 +83,7 @@
 		{
 			"id": "perf-6",
 			"a": {
-				"pl": "Jednostka wyrażenia położenia środka ciężkości jako procent",
+				"pl": "Jednostka wyrażania położenia środka ciężkości w procentach",
 				"en": "CG position unit as percentage"
 			},
 			"b": {

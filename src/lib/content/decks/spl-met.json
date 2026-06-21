@@ -87,7 +87,7 @@
 				"en": "Which cloud is the typical indicator of thermal lift for glider pilots?"
 			},
 			"back": {
-				"pl": "Cumulus (Cu) - kłębiasta chmura konwekcyjna; jej podstawa wyznacza poziom kondensacji, czyli górę użytecznej termiki.",
+				"pl": "Cumulus (Cu) - kłębiasta chmura konwekcyjna; jej podstawa wyznacza poziom kondensacji, czyli górną granicę użytecznej termiki.",
 				"en": "Cumulus (Cu) - a convective cloud; its base marks the condensation level, the top of the usable thermal."
 			},
 			"source": "authored:spl"
@@ -155,7 +155,7 @@
 				"en": "What is ridge (orographic) lift?"
 			},
 			"back": {
-				"pl": "Wiatr napływający na zbocze wzgórza jest wymuszany do wznoszenia, tworząc obszar noszeń nad stokiem dowietrznym.",
+				"pl": "Wiatr napływający na zbocze wzgórza jest zmuszony do wznoszenia, dzięki czemu nad stokiem dowietrznym powstaje obszar noszeń.",
 				"en": "Wind flowing against a slope is forced to rise, creating lift over the windward side of the hill."
 			},
 			"source": "authored:spl"
@@ -812,7 +812,7 @@
 				{
 					"id": "b",
 					"text": {
-						"pl": "wiatr jest wymuszany do wznoszenia po dowietrznej stronie zbocza",
+						"pl": "wiatr zostaje zmuszony do wznoszenia po dowietrznej stronie zbocza",
 						"en": "wind is forced to rise on the windward side of a slope"
 					}
 				},
@@ -833,7 +833,7 @@
 			],
 			"answer": "b",
 			"explanation": {
-				"pl": "Noszenie zboczowe powstaje z mechanicznego wymuszenia wznoszenia wiatru na stoku dowietrznym; nagrzewanie daje termikę, a oscylacja za grzbietem to fala.",
+				"pl": "Noszenie zboczowe powstaje wskutek mechanicznego wymuszenia wznoszenia wiatru na stoku dowietrznym; nagrzewanie daje termikę, a oscylacja za grzbietem to fala.",
 				"en": "Ridge lift comes from mechanical forcing of wind up the windward slope; heating gives thermals and oscillation downwind gives wave."
 			},
 			"source": "authored:spl"
@@ -851,7 +851,7 @@
 			},
 			"modelChecklist": [
 				{
-					"pl": "Nie wlatuj pod chmurę ani w strefę opadu - groźny silny prąd zstępujący, gradient wiatru i turbulencja.",
+					"pl": "Nie wlatuj pod chmurę ani w strefę opadu - grożą tam silne prądy zstępujące, uskok wiatru i turbulencja.",
 					"en": "Do not fly under the cloud or into the precipitation - severe downdraught, wind shear and turbulence."
 				},
 				{

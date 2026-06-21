@@ -104,7 +104,7 @@
 				"en": "What does a glide ratio of 40 mean for a glider?"
 			},
 			"back": {
-				"pl": "Przy bezwietrznej pogodzie szybowiec przebywa 40 jednostek odległości poziomej na każdą 1 jednostkę utraconej wysokości (40:1).",
+				"pl": "W spokojnym powietrzu szybowiec pokonuje w poziomie 40 jednostek odległości na każdą 1 jednostkę utraconej wysokości (40:1).",
 				"en": "In still air the glider travels 40 units of horizontal distance for every 1 unit of height lost (40:1)."
 			},
 			"source": "authored:spl"
@@ -206,7 +206,7 @@
 				"en": "What is the effect of deploying the air brakes?"
 			},
 			"back": {
-				"pl": "Zwiększają opór i niszczą siłę nośną, zwiększając opadanie i stromość zniżania bez nadmiernego wzrostu prędkości - służą do kontroli ścieżki podejścia.",
+				"pl": "Zwiększają opór i zmniejszają siłę nośną, zwiększając opadanie i stromość zniżania bez nadmiernego wzrostu prędkości - służą do kontroli ścieżki podejścia.",
 				"en": "They increase drag and spoil lift, increasing the sink rate and steepening the descent without excessive speed gain - used to control the approach path."
 			},
 			"source": "authored:spl"
@@ -223,7 +223,7 @@
 				"en": "How does water ballast affect glider performance?"
 			},
 			"back": {
-				"pl": "Zwiększa masę, przesuwając biegunową w stronę większych prędkości - lepsze przeskoki przy dużych prędkościach, ale wolniejsze wznoszenie w słabej termice; doskonałość maksymalna pozostaje zbliżona.",
+				"pl": "Zwiększa masę, przesuwając biegunową w stronę większych prędkości - szybsze przeskoki między kominami, ale wolniejsze wznoszenie w słabej termice; doskonałość maksymalna pozostaje zbliżona.",
 				"en": "It increases mass, shifting the polar towards higher speeds - better cruise at high speed but slower climb in weak thermals; the maximum glide ratio stays about the same."
 			},
 			"source": "authored:spl"
@@ -236,11 +236,11 @@
 			"licenses": ["SPL"],
 			"tags": ["aileron", "yaw"],
 			"front": {
-				"pl": "Czym jest moment odchylający przeciwny (adverse yaw) i jak się go koryguje?",
+				"pl": "Czym jest odwrotne odchylanie (adverse yaw) i jak się je koryguje?",
 				"en": "What is adverse yaw and how is it corrected?"
 			},
 			"back": {
-				"pl": "Odchylenie nosa w stronę przeciwną do zamierzonego zakrętu, spowodowane większym oporem skrzydła z wychylonym w dół lotkiem; koryguje się skoordynowanym użyciem steru kierunku.",
+				"pl": "Odchylanie nosa w stronę przeciwną do zamierzonego zakrętu, spowodowane większym oporem skrzydła z lotką wychyloną w dół; koryguje się je skoordynowanym użyciem steru kierunku.",
 				"en": "Yawing of the nose opposite to the intended turn, caused by greater drag on the wing with the down-going aileron; corrected by coordinated use of the rudder."
 			},
 			"source": "authored:spl"
@@ -576,7 +576,7 @@
 			],
 			"answer": "b",
 			"explanation": {
-				"pl": "Hamulce aerodynamiczne zwiększają opór i niszczą nośność, pozwalając pilotowi kontrolować stromość i punkt przyziemienia na podejściu.",
+				"pl": "Hamulce aerodynamiczne zwiększają opór i zmniejszają nośność, pozwalając pilotowi kontrolować stromość i punkt przyziemienia na podejściu.",
 				"en": "Air brakes increase drag and spoil lift, letting the pilot control the steepness and touchdown point on the approach."
 			},
 			"source": "authored:spl"
@@ -637,7 +637,7 @@
 			"licenses": ["SPL"],
 			"tags": ["yaw", "aileron"],
 			"stem": {
-				"pl": "Czym jest spowodowany moment odchylający przeciwny (adverse yaw) przy wprowadzaniu w zakręt?",
+				"pl": "Czym jest spowodowane odwrotne odchylanie (adverse yaw) przy wprowadzaniu w zakręt?",
 				"en": "What causes adverse yaw when rolling into a turn?"
 			},
 			"choices": [
