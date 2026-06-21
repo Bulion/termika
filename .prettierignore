@@ -10,3 +10,6 @@ bun.lockb
 
 # Generated E6B assets (source of truth is scripts/gen-e6b-assets.mjs)
 /src/lib/e6b/assets/
+
+# Committed ULC question bank (large generated data file)
+/static/external/ulc-spl.json

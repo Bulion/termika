@@ -30,4 +30,6 @@ project.inlang/cache/
 # Generated content from source adapters (ingested locally)
 content-generated
 # Scraped proprietary question banks - built locally, never redistributed
-static/external
+static/external/*
+# ...except the official ULC SPL bank (public exam questions), which is committed
+!static/external/ulc-spl.json

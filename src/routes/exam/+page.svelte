@@ -17,7 +17,6 @@
 	} from '$lib/exam/exam';
 	import {
 		EXAM_SOURCES,
-		INTERNAL_SOURCE_ID,
 		loadExternalCategories,
 		loadExternalMcqs,
 		type ExamCategory
@@ -41,7 +40,7 @@
 	let result = $state<ExamResult | null>(null);
 	let timer: ReturnType<typeof setInterval> | undefined;
 
-	let sourceId = $state(INTERNAL_SOURCE_ID);
+	let sourceId = $state('ulc');
 	let loadingExternal = $state(false);
 	let loadingCats = $state(false);
 	let sourceError = $state(false);
@@ -74,6 +73,7 @@
 		subjects = content.subjects;
 		loSubject = loIdToSubject(content.subjects);
 		blueprint = content.licenses.find((l) => l.id === 'SPL')?.examBlueprint.subjects ?? [];
+		await selectSource(sourceId);
 	});
 
 	onDestroy(() => clearInterval(timer));

@@ -1,6 +1,4 @@
 import { base } from '$app/paths';
-import { FiflyPplAdapter } from '../content/adapters/fifly';
-import { ulcSubjectName } from '../content/adapters/ulc-subjects';
 import type { LocalizedText, Mcq } from '../content/schema';
 
 export interface ExamCategory {
@@ -8,21 +6,10 @@ export interface ExamCategory {
 	name: string;
 }
 
-/** Builds the category list from the `cat-<id>` tags present on a question pool. */
-function categoriesFromTags(questions: Mcq[], nameOf: (id: string) => string): ExamCategory[] {
-	const ids: string[] = [];
-	for (const q of questions) {
-		const tag = q.tags.find((t) => t.startsWith('cat-'));
-		const id = tag?.slice(4);
-		if (id && !ids.includes(id)) ids.push(id);
-	}
-	return ids.map((id) => ({ id, name: nameOf(id) }));
-}
-
 export interface ExamSource {
 	id: string;
 	label: LocalizedText;
-	/** Internal sources read the bundled content; external sources fetch at runtime. */
+	/** Internal sources read the bundled content decks; pool sources read a committed bank file. */
 	external: boolean;
 	/** Whether this source can split its bank into per-category exams. */
 	hasCategories: boolean;
@@ -50,8 +37,8 @@ export const EXAM_SOURCES: ExamSource[] = [
 		passPct: 75
 	},
 	{
-		id: 'fifly',
-		label: { pl: 'fifly PPL(A)', en: 'fifly PPL(A)' },
+		id: 'ulc',
+		label: { pl: 'ULC LKE (oficjalna baza SPL)', en: 'ULC official SPL bank' },
 		external: true,
 		hasCategories: true,
 		questionCount: 20,
@@ -59,8 +46,8 @@ export const EXAM_SOURCES: ExamSource[] = [
 		passPct: 75
 	},
 	{
-		id: 'pplka',
-		label: { pl: 'pplka.pl (SPL)', en: 'pplka.pl (SPL)' },
+		id: 'fifly',
+		label: { pl: 'fifly PPL(A)', en: 'fifly PPL(A)' },
 		external: true,
 		hasCategories: true,
 		questionCount: 20,
@@ -75,37 +62,19 @@ async function loadPool(sourceId: string): Promise<ExternalPool> {
 	const cached = cache.get(sourceId);
 	if (cached) return cached;
 
-	let pool: ExternalPool;
-	if (sourceId === 'fifly') {
-		const adapter = new FiflyPplAdapter({
-			deckId: 'fifly-ppl-a',
-			title: { pl: 'fifly PPL(A)', en: 'fifly PPL(A)' },
-			subjectId: 'fifly',
-			loId: 'fifly',
-			onInvalidBlock: () => {}
-		});
-		const decks = await adapter.load();
-		const questions = decks
-			.flatMap((deck) => deck.items)
-			.filter((item): item is Mcq => item.type === 'mcq');
-		pool = { categories: categoriesFromTags(questions, ulcSubjectName), questions };
-	} else if (sourceId === 'pplka') {
-		// pplka.pl blocks cross-origin requests, so read the pool ingested into the build
-		// (npm run ingest:pplka -> static/external/pplka-spl.json).
-		const response = await fetch(`${base}/external/pplka-spl.json`);
-		if (!response.ok) throw new Error(`pplka pool not available: ${response.status}`);
-		const raw = (await response.json()) as {
-			categories: { id: number | string; name: string }[];
-			questions: Mcq[];
-		};
-		pool = {
-			categories: raw.categories.map((c) => ({ id: String(c.id), name: c.name })),
-			questions: raw.questions
-		};
-	} else {
-		throw new Error(`Unknown external source: ${sourceId}`);
-	}
-
+	if (sourceId !== 'ulc') throw new Error(`Unknown question source: ${sourceId}`);
+	// Official ULC LKE SPL bank with our own validated answer key, committed under
+	// static/external and served same-origin (no third-party runtime dependency).
+	const response = await fetch(`${base}/external/ulc-spl.json`);
+	if (!response.ok) throw new Error(`ULC pool not available: ${response.status}`);
+	const raw = (await response.json()) as {
+		categories: { id: number | string; name: string }[];
+		questions: Mcq[];
+	};
+	const pool: ExternalPool = {
+		categories: raw.categories.map((c) => ({ id: String(c.id), name: c.name })),
+		questions: raw.questions
+	};
 	cache.set(sourceId, pool);
 	return pool;
 }
