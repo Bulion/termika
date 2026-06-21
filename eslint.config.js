@@ -45,5 +45,12 @@ export default defineConfig(
 		// Override or add rule settings here, such as:
 		// 'svelte/button-has-type': 'error'
 		rules: {}
+	},
+	{
+		files: ['src/lib/components/RichText.svelte'],
+		rules: {
+			// RichText renders KaTeX HTML built from our own validated content; KaTeX sanitizes its output.
+			'svelte/no-at-html-tags': 'off'
+		}
 	}
 );

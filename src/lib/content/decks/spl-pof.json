@@ -36,8 +36,8 @@
 				"en": "What does the lift force depend on?"
 			},
 			"back": {
-				"pl": "Od współczynnika nośności CL, gęstości powietrza, kwadratu prędkości oraz powierzchni skrzydła: L = CL · ½ρV² · S.",
-				"en": "On lift coefficient CL, air density, the square of airspeed and wing area: L = CL · ½ρV² · S."
+				"pl": "Od współczynnika nośności `C_L`, gęstości powietrza, kwadratu prędkości oraz powierzchni skrzydła: `L = C_L · \\tfrac{1}{2}ρV^2 · S`.",
+				"en": "On lift coefficient `C_L`, air density, the square of airspeed and wing area: `L = C_L · \\tfrac{1}{2}ρV^2 · S`."
 			},
 			"source": "authored:spl"
 		},
@@ -189,8 +189,8 @@
 				"en": "What is the load factor in a balanced 60° banked turn?"
 			},
 			"back": {
-				"pl": "2 (n = 1/cos 60° = 2), a prędkość przeciągnięcia wzrasta o około 41% (√2).",
-				"en": "2 (n = 1/cos 60° = 2), and the stall speed increases by about 41% (√2)."
+				"pl": "2 (`n = 1/\\cos 60° = 2`), a prędkość przeciągnięcia wzrasta o około 41% (`\\sqrt{2}`).",
+				"en": "2 (`n = 1/\\cos 60° = 2`), and the stall speed increases by about 41% (`\\sqrt{2}`)."
 			},
 			"source": "authored:spl"
 		},
@@ -432,8 +432,8 @@
 			],
 			"answer": "c",
 			"explanation": {
-				"pl": "n = 1/cos 60° = 1/0,5 = 2,0. Prędkość przeciągnięcia rośnie wówczas o około 41%.",
-				"en": "n = 1/cos 60° = 1/0.5 = 2.0. The stall speed then increases by about 41%."
+				"pl": "`n = 1/\\cos 60° = 1/0{,}5 = 2{,}0`. Prędkość przeciągnięcia rośnie wówczas o około 41%.",
+				"en": "`n = 1/\\cos 60° = 1/0.5 = 2.0`. The stall speed then increases by about 41%."
 			},
 			"source": "authored:spl"
 		},
@@ -720,8 +720,8 @@
 			],
 			"answer": "b",
 			"explanation": {
-				"pl": "Prędkość przeciągnięcia rośnie proporcjonalnie do pierwiastka ze współczynnika obciążenia: √2 ≈ 1,41, czyli o około 41%.",
-				"en": "Stall speed rises with the square root of the load factor: √2 ≈ 1.41, i.e. about 41%."
+				"pl": "Prędkość przeciągnięcia rośnie proporcjonalnie do pierwiastka ze współczynnika obciążenia: `\\sqrt{2} ≈ 1{,}41`, czyli o około 41%.",
+				"en": "Stall speed rises with the square root of the load factor: `\\sqrt{2} ≈ 1.41`, i.e. about 41%."
 			},
 			"source": "authored:spl"
 		}

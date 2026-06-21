@@ -22,8 +22,8 @@
 			],
 			"op": { "kind": "wind", "solve": "gs" },
 			"rule": {
-				"pl": "GS = TAS · cos(WCA) − składowa czołowa wiatru",
-				"en": "GS = TAS · cos(WCA) − headwind component"
+				"pl": "`\\mathrm{GS} = \\mathrm{TAS} · \\cos(\\mathrm{WCA}) − \\text{składowa czołowa wiatru}`",
+				"en": "`\\mathrm{GS} = \\mathrm{TAS} · \\cos(\\mathrm{WCA}) − \\text{headwind component}`"
 			},
 			"toleranceAbs": 4,
 			"timeLimitSec": 120,
@@ -44,8 +44,8 @@
 			],
 			"op": { "kind": "wind", "solve": "th" },
 			"rule": {
-				"pl": "TH = kurs + kąt poprawki na wiatr",
-				"en": "TH = course + wind correction angle"
+				"pl": "`\\mathrm{TH} = \\text{kurs} + \\text{kąt poprawki na wiatr}`",
+				"en": "`\\mathrm{TH} = \\text{course} + \\text{wind correction angle}`"
 			},
 			"toleranceAbs": 3,
 			"circular": true,

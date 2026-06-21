@@ -41,6 +41,11 @@
 	--color-on-sink: #93000a;
 	--color-answer: #c6e7ff;
 
+	/* Formula chip: tinted "inline code" backdrop for KaTeX-rendered maths. */
+	--color-formula-bg: #e7f1f8;
+	--color-formula-border: #bcd4e3;
+	--color-formula-ink: #0b3a52;
+
 	/* Dark text on the light sky/sun/lift fills; verified >= 4.5:1 against each. */
 	--color-on-accent: #13213b;
 
@@ -68,6 +73,10 @@
 	--color-sink-bg: #93000a;
 	--color-on-sink: #ffdad6;
 	--color-answer: #15303f;
+
+	--color-formula-bg: #243137;
+	--color-formula-border: #3c4a51;
+	--color-formula-ink: #d8eefc;
 
 	--shadow-card: 4px 4px 0 0 #05080c;
 	--shadow-card-sm: 2px 2px 0 0 #05080c;

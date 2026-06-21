@@ -51,6 +51,26 @@ describe('parseRichText', () => {
 			{ text: 'z', kind: 'sub' }
 		]);
 	});
+
+	it('extracts a formula delimited by backticks', () => {
+		expect(parseRichText('Wzór `L = C_L`.')).toEqual([
+			{ text: 'Wzór ', kind: 'normal' },
+			{ text: 'L = C_L', kind: 'formula' },
+			{ text: '.', kind: 'normal' }
+		]);
+	});
+
+	it('keeps formula content raw and does not tag-parse it', () => {
+		expect(parseRichText('`C_{śr}`')).toEqual([{ text: 'C_{śr}', kind: 'formula' }]);
+	});
+
+	it('treats an unpaired backtick as a literal character', () => {
+		expect(parseRichText('koszt 5 ` netto')).toEqual([{ text: 'koszt 5 ` netto', kind: 'normal' }]);
+	});
+
+	it('renders an escaped backtick as a literal backtick in text', () => {
+		expect(parseRichText('a \\` b')).toEqual([{ text: 'a ` b', kind: 'normal' }]);
+	});
 });
 
 describe('hasRichMarkup', () => {

@@ -20,4 +20,13 @@ describe('RichText', () => {
 		expect(screen.container.querySelector('sub')).toBeNull();
 		expect(screen.container.textContent).toBe('α<0');
 	});
+
+	it('renders a backtick formula as a KaTeX chip', async () => {
+		const screen = render(RichText, { text: 'Wzór `C_{\\text{śr}}` tu.' });
+		const formula = screen.container.querySelector('.formula');
+		expect(formula).not.toBeNull();
+		expect(formula?.querySelector('.katex')).not.toBeNull();
+		expect(screen.container.textContent).toContain('Wzór');
+		expect(screen.container.textContent).toContain('tu.');
+	});
 });
