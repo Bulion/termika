@@ -730,6 +730,1671 @@
 				"en": "Heat, exertion and low humidity cause dehydration, reducing concentration and performance; carry water and drink regularly."
 			},
 			"source": "authored:spl"
+		},
+		{
+			"id": "spl-hpl-gen-001",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["HPL.HYPOXIA"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest hipoksja hipoksyczna (wysokościowa) i co ją powoduje?",
+				"en": "What is hypoxic (altitude) hypoxia and what causes it?"
+			},
+			"back": {
+				"pl": "To niedotlenienie tkanek spowodowane spadkiem ciśnienia parcjalnego tlenu wraz z wysokością. Mimo niezmienionego udziału procentowego tlenu (ok. 21%) malejące ciśnienie atmosferyczne obniża ciśnienie parcjalne O2 w pęcherzykach płucnych, więc do krwi przechodzi mniej tlenu.",
+				"en": "Tissue oxygen deficiency caused by the fall in oxygen partial pressure with altitude. Although the oxygen percentage stays constant (about 21%), falling atmospheric pressure lowers the partial pressure of O2 in the alveoli, so less oxygen diffuses into the blood."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-002",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["HPL.HYPOXIA"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Wymień cztery podstawowe typy hipoksji.",
+				"en": "Name the four basic types of hypoxia."
+			},
+			"back": {
+				"pl": "Hipoksyczna (niskie ciśnienie parcjalne tlenu, np. wysokość), anemiczna (zmniejszona zdolność krwi do przenoszenia tlenu, np. zatrucie CO, niedokrwistość), zastoinowa/krążeniowa (upośledzony przepływ krwi, np. przy przeciążeniach), histotoksyczna (komórki nie mogą wykorzystać tlenu, np. zatrucie alkoholem).",
+				"en": "Hypoxic (low oxygen partial pressure, e.g. altitude), anaemic (reduced oxygen-carrying capacity, e.g. CO poisoning, anaemia), stagnant/circulatory (impaired blood flow, e.g. under g-load), and histotoxic (cells cannot use oxygen, e.g. alcohol poisoning)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-003",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HYPOXIA"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego zatrucie tlenkiem węgla (CO) powoduje hipoksję?",
+				"en": "Why does carbon monoxide (CO) poisoning cause hypoxia?"
+			},
+			"back": {
+				"pl": "CO wiąże się z hemoglobiną około 200-250 razy silniej niż tlen, tworząc karboksyhemoglobinę i blokując transport O2. To hipoksja anemiczna: czerwonych krwinek jest dużo, ale nie przenoszą tlenu. Źródłem CO w samolocie bywa nieszczelny układ ogrzewania od silnika.",
+				"en": "CO binds to haemoglobin roughly 200-250 times more strongly than oxygen, forming carboxyhaemoglobin and blocking O2 transport. This is anaemic hypoxia: plenty of red cells are present but cannot carry oxygen. A common CO source is a leaking engine-driven cabin heater."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-004",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["HPL.VISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Od jakiej wysokości typowo zaczyna się odczuwalne pogorszenie widzenia nocnego z powodu niedotlenienia?",
+				"en": "At roughly what altitude does night vision typically begin to degrade due to hypoxia?"
+			},
+			"back": {
+				"pl": "Już od około 1500 m (5000 ft) pręciki siatkówki reagują na obniżone ciśnienie tlenu, przez co pogarsza się widzenie przy słabym oświetleniu, mimo braku innych odczuwalnych objawów.",
+				"en": "From about 1500 m (5000 ft) the retinal rods become sensitive to the reduced oxygen pressure, so vision in low light deteriorates even though no other symptoms are yet noticeable."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-005",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["HPL.HYPOXIA"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaką wysokość uznaje się za fizjologicznie obojętną, a od jakiej zaczyna się strefa kompensacji?",
+				"en": "Which altitude band is physiologically indifferent and where does the compensatory zone begin?"
+			},
+			"back": {
+				"pl": "Strefa obojętna sięga ok. 1500 m (5000 ft) - organizm radzi sobie bez wyraźnych skutków. Strefa kompensacyjna to ok. 1500-3500 m, gdzie organizm kompensuje niedotlenienie zwiększoną wentylacją i tętnem. Powyżej zaczyna się strefa zaburzeń.",
+				"en": "The indifferent zone reaches about 1500 m (5000 ft) with no clear effects. The compensatory zone is roughly 1500-3500 m, where the body offsets the deficit by increased breathing and heart rate. Above that lies the zone of disturbance."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-006",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["HPL.HYPOXIA"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie są typowe progi wysokości dla używania tlenu uzupełniającego przez załogę nieuciśnioną?",
+				"en": "What are the typical cabin-altitude thresholds for supplemental oxygen for unpressurised crew?"
+			},
+			"back": {
+				"pl": "Powyżej 10000 ft (ok. 3050 m) tlen dla załogi przy locie dłuższym niż 30 min, a powyżej 13000 ft (ok. 3950 m) tlen przez cały czas lotu. To typowe progi lotnicze - przy planowaniu lotów falowych w szybownictwie należy je uwzględnić.",
+				"en": "Above 10000 ft (about 3050 m) crew need oxygen for any portion exceeding 30 minutes, and above 13000 ft (about 3950 m) crew need oxygen for the entire flight. These are the standard aviation thresholds, relevant when planning wave flights in gliders."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-007",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HYPOXIA"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak palenie tytoniu wpływa na odporność na niedotlenienie wysokościowe?",
+				"en": "How does smoking affect tolerance to altitude hypoxia?"
+			},
+			"back": {
+				"pl": "CO z dymu tytoniowego wiąże część hemoglobiny w karboksyhemoglobinę, więc efektywna wysokość fizjologiczna palacza jest wyższa niż rzeczywista - na poziomie morza organizm palacza może odpowiadać wysokości ok. 1200-1500 m. Obniża to próg wystąpienia objawów hipoksji.",
+				"en": "CO from tobacco smoke ties up part of the haemoglobin as carboxyhaemoglobin, so a smoker's effective physiological altitude is higher than the real one - at sea level a smoker's body may already correspond to about 1200-1500 m. This lowers the threshold for hypoxia symptoms."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-008",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HYPOXIA"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym różni się euforia jako objaw hipoksji od prawdziwego dobrego samopoczucia?",
+				"en": "How does hypoxic euphoria differ from a genuine feeling of wellbeing?"
+			},
+			"back": {
+				"pl": "Euforia w hipoksji to fałszywe poczucie zadowolenia i pewności siebie wynikające z upośledzenia pracy mózgu - pilot czuje się świetnie, choć jego zdolności poznawcze i ocena sytuacji są poważnie ograniczone. Jest groźna, bo zniechęca do podjęcia działań ratunkowych.",
+				"en": "Hypoxic euphoria is a false sense of contentment and confidence caused by impaired brain function - the pilot feels great while cognition and judgement are seriously degraded. It is dangerous because it discourages corrective action."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-009",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HYPERVENTILATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego kompensacyjne zwiększenie oddychania na wysokości może paradoksalnie pogorszyć stan pilota?",
+				"en": "Why can the compensatory increase in breathing at altitude paradoxically worsen the pilot's state?"
+			},
+			"back": {
+				"pl": "Przyspieszony oddech wypłukuje dwutlenek węgla (hipokapnia), co prowadzi do zasadowicy oddechowej i objawów zbliżonych do hiperwentylacji: zawrotów głowy, mrowienia, zaburzeń widzenia. Niedotlenienie i utrata CO2 mogą się więc nakładać.",
+				"en": "Faster breathing washes out carbon dioxide (hypocapnia), causing respiratory alkalosis and symptoms resembling hyperventilation: dizziness, tingling and visual disturbance. Hypoxia and CO2 loss can therefore compound each other."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-010",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HYPOXIA"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co należy zrobić po rozpoznaniu objawów niedotlenienia w locie falowym na dużej wysokości?",
+				"en": "What should you do once hypoxia symptoms are recognised during a high-altitude wave flight?"
+			},
+			"back": {
+				"pl": "Natychmiast zniżyć lot do bezpiecznej wysokości (poniżej ok. 3000 m / 10000 ft), włączyć lub zwiększyć dopływ tlenu, jeśli jest na pokładzie, i sprawdzić sprawność instalacji tlenowej. Zniżanie jest najpewniejszym sposobem usunięcia przyczyny.",
+				"en": "Immediately descend to a safe altitude (below about 3000 m / 10000 ft), switch on or increase supplemental oxygen if carried, and check the oxygen system. Descending is the most reliable way to remove the cause."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-011",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HYPOXIA"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak odwodnienie i zmęczenie modyfikują podatność na hipoksję?",
+				"en": "How do dehydration and fatigue modify susceptibility to hypoxia?"
+			},
+			"back": {
+				"pl": "Odwodnienie zmniejsza objętość krwi i pogarsza krążenie, a zmęczenie obniża rezerwy organizmu - oba czynniki obniżają próg pojawienia się objawów niedotlenienia i skracają czas użytecznej świadomości na danej wysokości.",
+				"en": "Dehydration reduces blood volume and impairs circulation, while fatigue lowers physiological reserves - both reduce the threshold at which hypoxia symptoms appear and shorten the time of useful consciousness at a given altitude."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-012",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["HPL.HYPOXIA"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czy oddychanie czystym tlenem chroni przed hipoksją na każdej wysokości?",
+				"en": "Does breathing pure oxygen protect against hypoxia at any altitude?"
+			},
+			"back": {
+				"pl": "Nie. Czysty tlen utrzymuje odpowiednie ciśnienie parcjalne tylko do ok. 12000 m (ok. 40000 ft). Powyżej nawet 100% tlenu pod ciśnieniem otoczenia nie wystarcza i konieczne jest oddychanie tlenem pod ciśnieniem (pressure breathing) lub kabina ciśnieniowa.",
+				"en": "No. Pure oxygen maintains adequate partial pressure only up to about 12000 m (about 40000 ft). Above that even 100% oxygen at ambient pressure is insufficient, so pressure breathing or a pressurised cabin is required."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-013",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.GFORCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest dodatnie przeciążenie +Gz i w jakim kierunku przemieszcza krew?",
+				"en": "What is positive +Gz acceleration and in which direction does it move blood?"
+			},
+			"back": {
+				"pl": "+Gz to przyspieszenie działające wzdłuż osi głowa-stopy, dociskające pilota do fotela. Krew odpływa od głowy w stronę nóg, co obniża ciśnienie tętnicze na poziomie mózgu i oczu i może prowadzić do zaburzeń widzenia oraz utraty przytomności.",
+				"en": "+Gz is acceleration along the head-to-foot axis that presses the pilot into the seat. Blood drains from the head toward the legs, lowering arterial pressure at brain and eye level and potentially causing visual disturbance and loss of consciousness."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-014",
+			"type": "flashcard",
+			"microSkill": "unit_conversion",
+			"loIds": ["HPL.GFORCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza symbol G i czemu odpowiada przeciążenie 1 G?",
+				"en": "What does the symbol G mean and what does 1 G correspond to?"
+			},
+			"back": {
+				"pl": "G to wielokrotność przyspieszenia ziemskiego (g ≈ 9,81 m/s²). Przeciążenie 1 G odpowiada normalnemu ciężarowi w ustalonym locie poziomym; 2 G oznacza, że pilot i konstrukcja odczuwają dwukrotność ciężaru.",
+				"en": "G is a multiple of gravitational acceleration (g ≈ 9.81 m/s²). A load of 1 G corresponds to normal weight in steady level flight; 2 G means pilot and structure feel twice the weight."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-015",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.GFORCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Wyjaśnij kolejność objawów wzrokowych przy narastającym dodatnim przeciążeniu.",
+				"en": "Explain the sequence of visual symptoms with increasing positive g."
+			},
+			"back": {
+				"pl": "Najpierw pojawia się szare zamglenie i zawężenie pola widzenia (grey-out), następnie całkowita utrata widzenia przy zachowanej świadomości (black-out), a dopiero przy dalszym wzroście przeciążenia utrata przytomności (G-LOC). Oczy zawodzą wcześniej niż mózg, bo ciśnienie w gałce ocznej dodatkowo utrudnia przepływ krwi.",
+				"en": "First comes grey-out: greying and narrowing of the visual field; then black-out, total loss of vision with consciousness retained; and only with further g-increase, loss of consciousness (G-LOC). The eyes fail before the brain because intraocular pressure further opposes blood flow."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-016",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.GFORCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego ujemne przeciążenie -Gz jest tak nieprzyjemne i niebezpieczne?",
+				"en": "Why is negative -Gz acceleration so unpleasant and dangerous?"
+			},
+			"back": {
+				"pl": "-Gz wypycha pilota z fotela i kieruje nadmiar krwi do głowy. Powoduje to uczucie nabrzmienia twarzy, ból głowy, a przy dużych wartościach przekrwienie i pękanie drobnych naczynek oczu (red-out). Człowiek znosi znacznie mniejsze przeciążenia ujemne niż dodatnie.",
+				"en": "-Gz pushes the pilot out of the seat and forces excess blood toward the head. It causes facial congestion, headache and, at higher values, engorgement and bursting of small eye vessels (red-out). Humans tolerate far smaller negative than positive loads."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-017",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.GFORCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie czynniki zwiększają tolerancję pilota na dodatnie przeciążenia?",
+				"en": "Which factors increase a pilot's tolerance to positive g-loads?"
+			},
+			"back": {
+				"pl": "Napinanie mięśni nóg i brzucha, odchylenie fotela (krótsza odległość serce-mózg), dobre nawodnienie, sprawność fizyczna, brak hipoksji i alkoholu oraz stopniowa ekspozycja. Krótkotrwałe przeciążenia znosi się lepiej niż długotrwałe.",
+				"en": "Tensing leg and abdominal muscles, a reclined seat (shorter heart-to-brain distance), good hydration, physical fitness, absence of hypoxia and alcohol, and gradual exposure. Brief loads are tolerated better than sustained ones."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-018",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["HPL.GFORCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest manewr AGSM (napięciowy) i jak działa przy przeciążeniach?",
+				"en": "What is the AGSM (anti-g straining manoeuvre) and how does it work under load?"
+			},
+			"back": {
+				"pl": "To skoordynowane napinanie mięśni nóg, pośladków i brzucha połączone z krótkim wstrzymywaniem i forsownym wydechem przy częściowo zamkniętej głośni. Podnosi ciśnienie tętnicze i utrzymuje przepływ krwi do mózgu, opóźniając grey-out i G-LOC.",
+				"en": "A coordinated tensing of leg, buttock and abdominal muscles combined with short breath-holds and forced exhalation against a partly closed glottis. It raises arterial pressure and sustains blood flow to the brain, delaying grey-out and G-LOC."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-019",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["HPL.GFORCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak ostry zakręt z dużym przechyleniem wpływa na przeciążenie w szybowcu?",
+				"en": "How does a steep, high-bank turn affect g-load in a glider?"
+			},
+			"back": {
+				"pl": "Aby utrzymać wysokość w zakręcie, siła nośna musi zrównoważyć ciężar i zapewnić siłę dośrodkową. Przeciążenie rośnie z odwrotnością cosinusa przechylenia: przy 60° wynosi 2 G, przy 70° około 2,9 G, a przy 75° około 3,9 G - rośnie też prędkość przeciągnięcia.",
+				"en": "To hold altitude in a turn, lift must balance weight and provide the centripetal force. Load factor grows with 1/cos(bank): 2 G at 60°, about 2.9 G at 70° and about 3.9 G at 75° - and the stall speed rises with it."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-020",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.GFORCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest push-pull effect i dlaczego obniża tolerancję na przeciążenia?",
+				"en": "What is the push-pull effect and why does it lower g-tolerance?"
+			},
+			"back": {
+				"pl": "To zjawisko, w którym faza ujemnego lub małego przeciążenia (np. wypchnięcie drążka) bezpośrednio poprzedzająca szybkie wprowadzenie dodatniego G znacznie obniża tolerancję organizmu. Odruch z baroreceptorów jest wytłumiony, więc dodatnie G daje objawy przy niższych wartościach niż zwykle.",
+				"en": "A phenomenon where a phase of negative or low g (e.g. pushing the stick) immediately before a rapid pull to positive g markedly reduces tolerance. The baroreceptor reflex is suppressed, so positive g produces symptoms at lower values than usual."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-021",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.GFORCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego G-LOC jest szczególnie groźny, mimo że trwa krótko?",
+				"en": "Why is G-LOC especially dangerous even though it is brief?"
+			},
+			"back": {
+				"pl": "Po ustaniu przeciążenia świadomość wraca, ale następuje faza całkowitej niesprawności (absolute incapacitation) trwająca kilkanaście sekund oraz późniejsza dezorientacja. W tym czasie pilot nie steruje szybowcem, a epizod może wystąpić bez ostrzegawczego grey-out przy gwałtownym narastaniu G.",
+				"en": "After the load eases consciousness returns, but a period of absolute incapacitation lasting around ten or more seconds, followed by disorientation, ensues. During this time the pilot does not control the glider, and the episode can occur with no warning grey-out under rapid g-onset."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-022",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.GFORCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak alkohol i odwodnienie wpływają na próg wystąpienia objawów przeciążeniowych?",
+				"en": "How do alcohol and dehydration affect the threshold for g-induced symptoms?"
+			},
+			"back": {
+				"pl": "Oba obniżają objętość i ciśnienie krwi oraz osłabiają reakcje układu krążenia, przez co grey-out i G-LOC pojawiają się przy mniejszych przeciążeniach. Alkohol dodatkowo upośledza odruchy obronne i ocenę sytuacji jeszcze wiele godzin po spożyciu.",
+				"en": "Both reduce blood volume and pressure and blunt cardiovascular responses, so grey-out and G-LOC occur at lower loads. Alcohol additionally impairs protective reflexes and judgement for many hours after consumption."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-023",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["HPL.GFORCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie są typowe dopuszczalne przeciążenia eksploatacyjne szybowca w kategorii Utility?",
+				"en": "What are the typical operational load-factor limits of a glider in the Utility category?"
+			},
+			"back": {
+				"pl": "Dla szybowca w kategorii Utility limity manewrowe wynoszą zwykle około +5,3 G i -2,65 G przy klapach schowanych. Przekroczenie ich grozi trwałym uszkodzeniem konstrukcji - granice te chronią zarówno płatowiec, jak i pilota.",
+				"en": "For a Utility-category glider the manoeuvring limits are typically about +5.3 G and -2.65 G with flaps retracted. Exceeding them risks permanent structural damage - these limits protect both airframe and pilot."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-024",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.GFORCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego szybkość narastania przeciążenia (G-onset rate) ma znaczenie dla pilota?",
+				"en": "Why does the rate of g-onset matter for the pilot?"
+			},
+			"back": {
+				"pl": "Przy wolnym narastaniu organizm zdąży uruchomić odruchy krążeniowe i pojawia się ostrzegawczy grey-out. Przy bardzo szybkim narastaniu (np. gwałtowne wyprowadzenie) mechanizmy obronne nie nadążają i może dojść do G-LOC bez wcześniejszych objawów wzrokowych.",
+				"en": "With slow onset the body has time to engage cardiovascular reflexes and a warning grey-out appears. With very rapid onset (e.g. an abrupt pull-up) protective mechanisms cannot keep pace and G-LOC may occur with no preceding visual symptoms."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-025",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HYPERVENTILATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest hiperwentylacja z fizjologicznego punktu widzenia?",
+				"en": "What is hyperventilation from a physiological standpoint?"
+			},
+			"back": {
+				"pl": "To zbyt szybkie i/lub zbyt głębokie oddychanie, które wypłukuje z krwi dwutlenek węgla (CO2). Powoduje to spadek ciśnienia parcjalnego CO2 i wzrost pH krwi, czyli zasadowicę (alkalozę) oddechową.",
+				"en": "It is breathing that is too fast and/or too deep, which washes carbon dioxide (CO2) out of the blood. This lowers the partial pressure of CO2 and raises blood pH, causing respiratory alkalosis."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-026",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HYPERVENTILATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka jest najczęstsza przyczyna hiperwentylacji u pilota szybowcowego?",
+				"en": "What is the most common cause of hyperventilation in a glider pilot?"
+			},
+			"back": {
+				"pl": "Stres, niepokój lub strach (czynniki psychiczne). Rzadziej wywołują ją czynniki fizyczne, takie jak ból, choroba lokomocyjna czy wibracje.",
+				"en": "Stress, anxiety or fear (psychological factors). Less commonly it is triggered by physical factors such as pain, motion sickness or vibration."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-027",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HYPERVENTILATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego objawy hiperwentylacji łatwo pomylić z objawami niedotlenienia?",
+				"en": "Why are the symptoms of hyperventilation easily confused with those of hypoxia?"
+			},
+			"back": {
+				"pl": "Obie dają podobne objawy: zawroty głowy, mrowienie, zaburzenia widzenia i splątanie. Kluczowa różnica: hiperwentylacja może wystąpić na każdej wysokości, a niedotlenienie głównie na dużych wysokościach. W razie wątpliwości reaguje się jak na niedotlenienie (tlen).",
+				"en": "Both produce similar symptoms: dizziness, tingling, visual disturbances and confusion. The key difference: hyperventilation can occur at any altitude, whereas hypoxia mainly occurs at high altitude. If in doubt, treat it as hypoxia (oxygen)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-028",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HYPERVENTILATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Gdzie pojawia się mrowienie i drętwienie towarzyszące hiperwentylacji?",
+				"en": "Where do the tingling and numbness that accompany hyperventilation appear?"
+			},
+			"back": {
+				"pl": "Wokół ust oraz w opuszkach palców rąk i stóp. Może też wystąpić skurcz mięśni (tężyczka), np. zgięcie nadgarstków i palców.",
+				"en": "Around the mouth and in the fingertips and toes. Muscle spasm (tetany) may also occur, for example flexion of the wrists and fingers."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-029",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HYPERVENTILATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak prawidłowo przeciwdziałać hiperwentylacji w locie?",
+				"en": "How should hyperventilation be correctly counteracted in flight?"
+			},
+			"back": {
+				"pl": "Świadomie spowolnić i odzyskać kontrolę nad oddechem (zmniejszyć częstość oddechów), uspokoić się i usunąć źródło stresu. Pomaga oddychanie do dłoni lub torebki, aby ponownie wdychać wydychany CO2. Jeśli objawy nie ustępują na wysokości, należy podejrzewać niedotlenienie.",
+				"en": "Consciously slow down and regain control of breathing (reduce the breathing rate), calm down and remove the source of stress. Breathing into the hands or a bag helps by re-inhaling exhaled CO2. If symptoms persist at altitude, hypoxia should be suspected."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-030",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HYPERVENTILATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego utrata przytomności wskutek hiperwentylacji może paradoksalnie sama ją przerwać?",
+				"en": "Why can loss of consciousness due to hyperventilation paradoxically end it by itself?"
+			},
+			"back": {
+				"pl": "Po omdleniu oddech wraca do normalnego, wolnego rytmu, więc poziom CO2 we krwi się odbudowuje i równowaga kwasowo-zasadowa wraca do normy. Dlatego na ziemi omdlenie nie jest groźne, lecz w locie utrata przytomności pilota jest skrajnie niebezpieczna.",
+				"en": "After fainting, breathing returns to a normal slow rhythm, so blood CO2 is restored and acid-base balance normalises. That is why fainting is harmless on the ground, but loss of consciousness of a pilot in flight is extremely dangerous."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-031",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["HPL.HYPERVENTILATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka jest normalna częstość oddechów w spoczynku i kiedy mówimy o hiperwentylacji?",
+				"en": "What is the normal resting breathing rate and when do we speak of hyperventilation?"
+			},
+			"back": {
+				"pl": "Normalna częstość oddechów w spoczynku to ok. 12-16 oddechów na minutę. Hiperwentylacja oznacza znaczne przekroczenie tej wartości i/lub zbyt głębokie oddechy, co prowadzi do nadmiernego wydalania CO2.",
+				"en": "Normal resting breathing rate is about 12-16 breaths per minute. Hyperventilation means significantly exceeding this and/or breathing too deeply, leading to excessive CO2 elimination."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-032",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HYPERVENTILATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czy podanie tlenu pomoże na samą hiperwentylację (bez niedotlenienia)?",
+				"en": "Will administering oxygen help pure hyperventilation (without hypoxia)?"
+			},
+			"back": {
+				"pl": "Nie. Problemem przy hiperwentylacji jest niedobór CO2, a nie tlenu, więc dodatkowy tlen nie usunie przyczyny. Pomaga jedynie spowolnienie oddechu. Mimo to przy wątpliwościach na wysokości stosuje się tlen, traktując objawy jak niedotlenienie.",
+				"en": "No. The problem in hyperventilation is a CO2 deficit, not lack of oxygen, so extra oxygen does not remove the cause. Only slowing the breathing helps. Nevertheless, when in doubt at altitude, oxygen is used, treating the symptoms as hypoxia."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-033",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HYPERVENTILATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaką rolę pełni dwutlenek węgla w regulacji oddychania?",
+				"en": "What role does carbon dioxide play in the regulation of breathing?"
+			},
+			"back": {
+				"pl": "To głównie poziom CO2 we krwi (a nie tlenu) pobudza ośrodek oddechowy i wyzwala potrzebę oddechu. Dlatego nadmierne wypłukanie CO2 podczas hiperwentylacji może czasowo zniwelować bodziec do oddychania.",
+				"en": "It is mainly the blood CO2 level (not oxygen) that stimulates the respiratory centre and triggers the urge to breathe. That is why washing out too much CO2 during hyperventilation can temporarily suppress the drive to breathe."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-034",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HEALTH"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza zasada \"nie lataj jako pilot, jeśli jesteś chory\" i jakie ma uzasadnienie?",
+				"en": "What does the rule \"do not fly as a pilot if you are ill\" mean and what is its justification?"
+			},
+			"back": {
+				"pl": "Nawet pozornie błaha choroba (przeziębienie, grypa, infekcja) obniża sprawność i koncentrację oraz może powodować groźne komplikacje w locie (np. zatkane zatoki, działanie leków). Pilot musi sam ocenić swoją zdatność do lotu i zrezygnować, gdy jest chory.",
+				"en": "Even a seemingly trivial illness (cold, flu, infection) reduces performance and concentration and can cause dangerous complications in flight (e.g. blocked sinuses, medication effects). The pilot must self-assess fitness to fly and stand down when ill."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-035",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HEALTH"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego latanie z przeziębieniem lub katarem jest niebezpieczne?",
+				"en": "Why is flying with a cold or blocked nose dangerous?"
+			},
+			"back": {
+				"pl": "Obrzęknięta błona śluzowa może zablokować trąbkę słuchową i ujścia zatok, uniemożliwiając wyrównywanie ciśnienia podczas wznoszenia i zniżania. Skutkiem jest silny ból ucha lub zatok (barotrauma), a nawet uszkodzenie błony bębenkowej i przejściowe zawroty głowy.",
+				"en": "A swollen mucous membrane can block the Eustachian tube and sinus openings, preventing pressure equalisation during climb and descent. This causes severe ear or sinus pain (barotrauma) and can even damage the eardrum and cause transient vertigo."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-036",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HEALTH"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki manewr stosuje się do wyrównania ciśnienia w uchu środkowym podczas zniżania?",
+				"en": "What manoeuvre is used to equalise middle-ear pressure during descent?"
+			},
+			"back": {
+				"pl": "Próba Valsalvy: delikatne wydmuchiwanie powietrza przy zamkniętych ustach i zaciśniętym nosie, co otwiera trąbkę słuchową. Pomaga też przełykanie, ziewanie lub ruchy żuchwą.",
+				"en": "The Valsalva manoeuvre: gently blowing air out with the mouth closed and the nose pinched, which opens the Eustachian tube. Swallowing, yawning or moving the jaw also helps."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-037",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["HPL.HEALTH"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki jest zalecany minimalny odstęp między spożyciem alkoholu a lotem oraz dopuszczalne stężenie wg EASA?",
+				"en": "What is the recommended minimum interval between alcohol consumption and flying, and the EASA permitted concentration?"
+			},
+			"back": {
+				"pl": "Zasada \"8 godzin od kieliszka do sterów\" (bottle to throttle) jest minimum, ale skutki (kac) mogą utrzymywać się dłużej. Wg przepisów EASA stężenie alkoholu we krwi nie może przekraczać 0,2 promila (0,2 g/l).",
+				"en": "The \"8 hours bottle to throttle\" rule is a minimum, but effects (hangover) can last longer. Under EASA rules blood alcohol concentration must not exceed 0.2 per mille (0.2 g/L)."
+			},
+			"mnemonic": {
+				"pl": "8 godzin od butelki do sterów",
+				"en": "8 hours bottle to throttle"
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-038",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HEALTH"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak alkohol wpływa na wrażliwość na niedotlenienie i organizm pilota?",
+				"en": "How does alcohol affect susceptibility to hypoxia and the pilot's body?"
+			},
+			"back": {
+				"pl": "Alkohol obniża tolerancję na niedotlenienie (działa tak, jakby pilot był na większej wysokości), upośledza zmysł równowagi, koordynację, czas reakcji i ocenę sytuacji. Przyspiesza też odwodnienie organizmu.",
+				"en": "Alcohol lowers tolerance to hypoxia (as if the pilot were at a higher altitude), impairs the sense of balance, coordination, reaction time and judgement. It also accelerates dehydration."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-039",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["HPL.HEALTH"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest choroba dekompresyjna i kiedy grozi pilotowi szybowca?",
+				"en": "What is decompression sickness and when does it threaten a glider pilot?"
+			},
+			"back": {
+				"pl": "To wytrącanie się pęcherzyków azotu z tkanek przy spadku ciśnienia. Pilotowi grozi głównie po nurkowaniu z akwalungiem: nie wolno latać przez co najmniej 24 godziny po nurkowaniu wymagającym przystanków dekompresyjnych (i min. 12 h po pojedynczym nurkowaniu bezdekompresyjnym).",
+				"en": "It is the release of nitrogen bubbles from tissues when pressure drops. A pilot is mainly at risk after scuba diving: do not fly for at least 24 hours after a dive requiring decompression stops (and at least 12 hours after a single no-decompression dive)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-040",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HEALTH"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego odwodnienie jest realnym zagrożeniem dla pilota szybowcowego w długim locie?",
+				"en": "Why is dehydration a real hazard for a glider pilot on a long flight?"
+			},
+			"back": {
+				"pl": "Słońce nagrzewające kabinę, suche rozrzedzone powietrze na wysokości i unikanie picia (by nie korzystać z toalety) prowadzą do odwodnienia, które powoduje zmęczenie, ból głowy oraz spadek koncentracji i czasu reakcji. Należy regularnie pić wodę.",
+				"en": "Sun heating the canopy, the dry thin air at altitude and avoiding drinking (to skip the toilet) lead to dehydration, which causes fatigue, headache and reduced concentration and reaction time. Drink water regularly."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-041",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HEALTH"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak palenie tytoniu wpływa na wydolność pilota i odporność na niedotlenienie?",
+				"en": "How does tobacco smoking affect a pilot's performance and resistance to hypoxia?"
+			},
+			"back": {
+				"pl": "Tlenek węgla z dymu wiąże się z hemoglobiną zamiast tlenu, zmniejszając jej zdolność przenoszenia tlenu. U palacza efekt jest taki, jakby przebywał już na wysokości kilku tysięcy stóp, co obniża tolerancję na niedotlenienie i ostrość widzenia nocnego.",
+				"en": "Carbon monoxide from smoke binds to haemoglobin instead of oxygen, reducing its oxygen-carrying capacity. For a smoker the effect is as if already at several thousand feet altitude, lowering hypoxia tolerance and night vision."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-042",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HEALTH"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie ryzyko niesie zażywanie leków (nawet dostępnych bez recepty) przed lotem?",
+				"en": "What risk does taking medication (even over-the-counter) before flying carry?"
+			},
+			"back": {
+				"pl": "Wiele leków, np. na alergię, przeziębienie czy uspokajających, daje skutki uboczne: senność, spowolnienie reakcji, zaburzenia widzenia. Sama choroba też dyskwalifikuje. Zasada: jeśli potrzebujesz leku, prawdopodobnie nie nadajesz się do lotu; w razie wątpliwości skonsultuj się z lekarzem orzecznikiem (AME).",
+				"en": "Many medicines, e.g. for allergy, cold or sedation, cause side effects: drowsiness, slowed reactions, visual disturbances. The illness itself also disqualifies. The rule: if you need medication you are probably unfit to fly; when in doubt consult an aeromedical examiner (AME)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-043",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HEALTH"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest choroba lokomocyjna (kinetoza) w locie i co ją wywołuje?",
+				"en": "What is motion sickness (kinetosis) in flight and what causes it?"
+			},
+			"back": {
+				"pl": "To nudności, pocenie się i osłabienie spowodowane konfliktem informacji z błędnika (ucho wewnętrzne) i ze wzroku. Sprzyjają jej turbulencje, gorąco i stres. Pomaga patrzenie na horyzont, wentylacja i przekazanie sterów; zwykle ustępuje wraz z nabieraniem doświadczenia.",
+				"en": "It is nausea, sweating and weakness caused by a conflict between signals from the vestibular system (inner ear) and the eyes. Turbulence, heat and stress promote it. Looking at the horizon, ventilation and handing over the controls help; it usually fades with experience."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-044",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HEALTH"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak zmęczenie (fatigue) wpływa na pilota i jak je rozróżniamy?",
+				"en": "How does fatigue affect a pilot and how do we distinguish its types?"
+			},
+			"back": {
+				"pl": "Rozróżniamy zmęczenie ostre (krótkotrwałe, po wysiłku, ustępuje po odpoczynku) i przewlekłe (kumulujące się przez dłuższy czas, wymaga dłuższej regeneracji). Zmęczenie obniża koncentrację, czujność i czas reakcji oraz sprzyja błędom i widzeniu tunelowemu.",
+				"en": "We distinguish acute fatigue (short-term, after exertion, relieved by rest) and chronic fatigue (accumulated over a long time, requiring longer recovery). Fatigue lowers concentration, alertness and reaction time and promotes errors and tunnel vision."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-045",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HEALTH"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego odpowiednie nawodnienie i posiłek są ważne przed lotem termicznym?",
+				"en": "Why are proper hydration and a meal important before a thermal flight?"
+			},
+			"back": {
+				"pl": "Niski poziom cukru we krwi (hipoglikemia) z powodu pominięcia posiłku powoduje osłabienie, drżenie, zawroty głowy i pogorszenie koncentracji - objawy podobne do niedotlenienia. Lekki, zbilansowany posiłek i nawodnienie utrzymują sprawność przez długi lot.",
+				"en": "Low blood sugar (hypoglycaemia) from skipping a meal causes weakness, trembling, dizziness and impaired concentration, symptoms similar to hypoxia. A light, balanced meal and hydration maintain performance over a long flight."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-046",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["HPL.HEALTH"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie wymagania zdrowotne (orzeczenie lekarskie) obowiązują pilota szybowcowego SPL wg EASA?",
+				"en": "What medical requirements (medical certificate) apply to an EASA SPL glider pilot?"
+			},
+			"back": {
+				"pl": "Pilot szybowcowy musi posiadać co najmniej orzeczenie lekarskie klasy LAPL, wydane przez lekarza orzecznika (AME), a w niektórych państwach przez lekarza ogólnego (GMP). Pilot ma też obowiązek nie korzystać z uprawnień, gdy wie lub podejrzewa pogorszenie stanu zdrowia.",
+				"en": "A glider pilot must hold at least a LAPL medical certificate issued by an aeromedical examiner (AME), or in some states by a general medical practitioner (GMP). The pilot must also not exercise privileges when aware of or suspecting any deterioration in health."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-047",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HEALTH"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co należy zrobić, gdy w trakcie lotu pilot poczuje nagłe pogorszenie samopoczucia (np. ból brzucha, zawroty głowy)?",
+				"en": "What should a pilot do if they feel a sudden deterioration in well-being during flight (e.g. abdominal pain, dizziness)?"
+			},
+			"back": {
+				"pl": "Bezpieczeństwo lotu jest priorytetem: należy ustabilizować lot, w razie potrzeby skrócić zadanie i jak najszybciej bezpiecznie wylądować na najbliższym odpowiednim lotnisku lub w terenie. Nie wolno ignorować objawów ani liczyć, że \"przejdzie\".",
+				"en": "Flight safety is the priority: stabilise the flight, shorten the task if necessary and land safely as soon as possible at the nearest suitable airfield or field. Symptoms must not be ignored or assumed to \"pass on their own\"."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-048",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.HEALTH"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak wpływ wysokości na rozszerzanie się gazów objawia się w przewodzie pokarmowym?",
+				"en": "How does the effect of altitude on gas expansion manifest in the digestive tract?"
+			},
+			"back": {
+				"pl": "Wraz ze spadkiem ciśnienia gazy w jelitach rozszerzają się (zgodnie z prawem Boyle'a), powodując wzdęcia, dyskomfort i ból brzucha. Dlatego przed lotem na wysokość unika się potraw wzdymających i napojów gazowanych.",
+				"en": "As pressure drops, gases in the intestines expand (per Boyle's law), causing bloating, discomfort and abdominal pain. That is why gas-producing foods and carbonated drinks are avoided before a high-altitude flight."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-049",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.VISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest plamka ślepa (ślepa plama) w oku i jakie ma znaczenie dla pilota?",
+				"en": "What is the blind spot in the eye and why does it matter to a pilot?"
+			},
+			"back": {
+				"pl": "To miejsce na siatkówce, gdzie nerw wzrokowy opuszcza gałkę oczną - nie ma tam fotoreceptorów. Obiekt (np. inny szybowiec), którego obraz pada na to miejsce, staje się niewidoczny. Skanowanie wzrokiem małymi ruchami eliminuje ryzyko, że samolot zniknie w plamce ślepej.",
+				"en": "It is the point on the retina where the optic nerve leaves the eye - there are no photoreceptors there. An object (e.g. another glider) imaged on that spot becomes invisible. Scanning with small eye movements prevents an aircraft from disappearing into the blind spot."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-050",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["HPL.VISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Na czym polega widzenie centralne (fowalne) i dlaczego jest istotne przy wypatrywaniu ruchu?",
+				"en": "What is foveal (central) vision and why does it matter for traffic scanning?"
+			},
+			"back": {
+				"pl": "Dołek środkowy (fovea) daje ostre, kolorowe widzenie tylko w bardzo wąskim kącie (ok. 1-2 stopni). Ostro widzimy zatem niewielki wycinek pola - pozostałe obiekty są widziane nieostro. Dlatego trzeba skanować niebo skokowo, zatrzymując wzrok na kolejnych sektorach.",
+				"en": "The fovea gives sharp, colour vision only within a very narrow angle (about 1-2 degrees). Only a tiny part of the field is seen sharply - the rest is blurred. Therefore the sky must be scanned in steps, fixating on successive sectors."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-051",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.VISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego nieruchomy punkt na tle nieba (ruch na kursie kolizyjnym) jest szczególnie trudny do zauważenia?",
+				"en": "Why is a stationary point against the sky (collision-course traffic) especially hard to spot?"
+			},
+			"back": {
+				"pl": "Samolot na kursie kolizyjnym pozostaje w stałym położeniu kątowym względem nas - nie przesuwa się po tle. Oko jest dużo mniej czułe na obiekty nieruchome, a w widzeniu peryferyjnym ruch jest głównym bodźcem zwracającym uwagę. Brak względnego ruchu sprawia, że zagrożenie pozostaje niezauważone aż do ostatniej chwili.",
+				"en": "An aircraft on a collision course stays in a constant angular position relative to us - it does not move across the background. The eye is far less sensitive to stationary objects, and in peripheral vision motion is the main attention-grabbing cue. The lack of relative movement means the threat goes unnoticed until the last moment."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-052",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["HPL.VISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest akomodacja oka i jak zjawisko 'empty field myopia' wpływa na wypatrywanie?",
+				"en": "What is accommodation, and how does 'empty field myopia' affect lookout?"
+			},
+			"back": {
+				"pl": "Akomodacja to zmiana kształtu soczewki dla ostrego widzenia na różne odległości. Gdy patrzymy w pusty, jednolity błękit bez punktów odniesienia, oko spoczynkowo ustawia się na ok. 1-2 m (krótkowzroczność pustego pola). Trzeba świadomie ogniskować wzrok na odległym obiekcie (np. chmurze), aby odzyskać ostrość na dystansie.",
+				"en": "Accommodation is the change of lens shape for sharp vision at different distances. When looking into empty, uniform blue with no reference points, the eye relaxes to about 1-2 m (empty field myopia). One must deliberately focus on a distant object (e.g. a cloud) to regain distance focus."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-053",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.VISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak działa widzenie pręcikowe i czopkowe oraz co to oznacza dla lotów o zmierzchu?",
+				"en": "How do rod and cone vision work, and what does it mean for twilight flying?"
+			},
+			"back": {
+				"pl": "Czopki dają widzenie barwne i ostre przy dobrym oświetleniu (widzenie dzienne, fotopowe). Pręciki są czułe na słabe światło, lecz nie rozróżniają barw i są skupione poza dołkiem (widzenie nocne, skotopowe). O zmierzchu i nocą najlepiej widzimy obiekty 'kątem oka', patrząc nieco obok nich (widzenie pozaśrodkowe).",
+				"en": "Cones give colour and sharp vision in good light (daytime, photopic vision). Rods are sensitive to dim light but do not distinguish colour and lie outside the fovea (night, scotopic vision). At dusk and night we see objects best 'out of the corner of the eye', looking slightly to one side (off-centre viewing)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-054",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["HPL.VISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak długo trwa pełna adaptacja oka do ciemności i co ją niszczy?",
+				"en": "How long does full dark adaptation take and what ruins it?"
+			},
+			"back": {
+				"pl": "Pełna adaptacja do ciemności (głównie pręcików) trwa około 30 minut. Krótka ekspozycja na jasne światło (np. reflektor, błyskawica, telefon) niszczy ją w ułamku sekundy, a odbudowa znów wymaga długiego czasu. Dlatego w nocy używa się przyciemnionego, najlepiej czerwonego oświetlenia.",
+				"en": "Full dark adaptation (mainly of the rods) takes about 30 minutes. A brief exposure to bright light (e.g. a landing light, lightning, a phone) destroys it in a fraction of a second, and recovery again takes a long time. That is why dim, preferably red, lighting is used at night."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-055",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.VISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Na czym polega technika skanowania nieba metodą sektorową i dlaczego ruch ciągły jest nieskuteczny?",
+				"en": "What is the block (sector) scanning technique and why is continuous sweeping ineffective?"
+			},
+			"back": {
+				"pl": "Niebo dzielimy na sektory (np. po ok. 10 stopni) i przesuwamy wzrok skokowo, zatrzymując go w każdym sektorze na 1-2 sekundy, aby oko zdążyło zogniskować i wychwycić obraz. Płynne, ciągłe wodzenie wzrokiem nie pozwala na ostre widzenie - obraz jest rozmazany i obiekty umykają uwadze.",
+				"en": "The sky is divided into sectors (e.g. about 10 degrees each) and the gaze is moved in steps, pausing in each sector for 1-2 seconds so the eye can focus and capture the image. Smooth, continuous sweeping prevents sharp vision - the image is blurred and objects are missed."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-056",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.VISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie czynniki w kabinie szybowca utrudniają zauważenie ruchu lotniczego?",
+				"en": "What cockpit factors hinder spotting other traffic in a glider?"
+			},
+			"back": {
+				"pl": "Zabrudzona lub porysowana osłona kabiny, refleksy i odblaski, słupki konstrukcji zasłaniające część pola widzenia, oślepiające słońce oraz brud lub owady na osłonie. Dodatkowo skupienie na przyrządach lub komputerze pokładowym ogranicza czas na obserwację przestrzeni.",
+				"en": "A dirty or scratched canopy, reflections and glare, structural frames blocking part of the view, dazzling sun, and dirt or insects on the canopy. In addition, fixation on instruments or the flight computer reduces time spent watching the airspace."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-057",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.VISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest fiksacja wzrokowa (tunnel vision / target fixation) i jak jej przeciwdziałać?",
+				"en": "What is visual/target fixation (tunnel vision) and how to counter it?"
+			},
+			"back": {
+				"pl": "To nadmierne skupienie wzroku i uwagi na jednym obiekcie (np. jednym szybowcu w kominie, przyrządzie, lądowisku), z jednoczesnym pominięciem reszty otoczenia i innego ruchu. Przeciwdziała się jej świadomym, regularnym rozdzielaniem uwagi i powrotem do pełnego skanowania przestrzeni.",
+				"en": "It is excessive focusing of gaze and attention on a single object (e.g. one glider in a thermal, an instrument, the landing field), while ignoring the rest of the surroundings and other traffic. It is countered by deliberately and regularly distributing attention and returning to full airspace scanning."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-058",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.VISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak zmęczenie i wiek wpływają na ostrość oraz akomodację wzroku pilota?",
+				"en": "How do fatigue and age affect a pilot's visual acuity and accommodation?"
+			},
+			"back": {
+				"pl": "Z wiekiem maleje zdolność akomodacji (prezbiopia) i pogarsza się widzenie w słabym świetle oraz adaptacja do ciemności. Zmęczenie obniża ostrość, zwęża pole skutecznej uwagi i wydłuża czas reakcji. Oba czynniki pogarszają skuteczność wypatrywania i ocenę odległości.",
+				"en": "With age the ability to accommodate declines (presbyopia) and low-light vision and dark adaptation worsen. Fatigue reduces acuity, narrows the field of effective attention and lengthens reaction time. Both factors degrade lookout effectiveness and distance judgement."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-059",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.VISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego okulary przeciwsłoneczne są zalecane, a jakie typy są niewskazane w szybowcu?",
+				"en": "Why are sunglasses recommended, and which types are unsuitable in a glider?"
+			},
+			"back": {
+				"pl": "Dobre okulary chronią przed olśnieniem i promieniowaniem UV, poprawiając komfort i ostrość widzenia, szczególnie na dużych wysokościach. Niewskazane są szkła zbyt ciemne (utrudniają dostrzeżenie ruchu i odczyt przyrządów) oraz polaryzacyjne, które mogą wygaszać wskazania niektórych wyświetlaczy i refleksy pomocne w wykryciu innego statku.",
+				"en": "Good sunglasses protect against glare and UV radiation, improving comfort and acuity, especially at high altitude. Unsuitable are lenses that are too dark (they hinder spotting traffic and reading instruments) and polarised ones, which can black out some displays and the reflections useful for detecting other aircraft."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-060",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.VISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Na czym polega ograniczenie oceny odległości i prędkości zbliżania w powietrzu?",
+				"en": "What limits the judgement of distance and closing speed in the air?"
+			},
+			"back": {
+				"pl": "W powietrzu brak jest naziemnych punktów odniesienia, dlatego ocena odległości do innego statku jest zawodna. Obiekt na kursie kolizyjnym długo wydaje się mały i odległy, a potem gwałtownie 'rośnie' w ostatnich sekundach (efekt 'blossom'). To zostawia bardzo mało czasu na reakcję, dlatego nie wolno polegać wyłącznie na ocenie wzrokowej.",
+				"en": "In the air there are no ground reference points, so judging the distance to another aircraft is unreliable. An object on a collision course appears small and far for a long time, then suddenly 'blossoms' in the final seconds. This leaves very little time to react, so one must not rely on visual judgement alone."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-061",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.VISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak olśnienie słoneczne wpływa na wykrywanie ruchu i jak je ograniczać?",
+				"en": "How does sun glare affect traffic detection and how to mitigate it?"
+			},
+			"back": {
+				"pl": "Patrzenie w kierunku słońca powoduje olśnienie, zmniejsza kontrast i może całkowicie ukryć inny statek powietrzny ('out of the sun'). Ogranicza się je przez używanie daszka/osłony, okularów, czystej osłony kabiny oraz przez planowanie trajektorii i zakrętów tak, by nie wypatrywać prosto pod słońce.",
+				"en": "Looking toward the sun causes glare, reduces contrast and can completely hide another aircraft ('out of the sun'). It is mitigated by using a visor/shade, sunglasses, a clean canopy, and by planning the track and turns so as not to look directly into the sun."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-062",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.VISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest widzenie peryferyjne (obwodowe) i jaką rolę pełni w bezpieczeństwie lotu?",
+				"en": "What is peripheral vision and what role does it play in flight safety?"
+			},
+			"back": {
+				"pl": "Widzenie peryferyjne to obraz z obrzeży pola widzenia - mało ostre i pozbawione barw, lecz bardzo czułe na ruch i zmiany jasności. Pełni rolę systemu ostrzegawczego: ruch dostrzeżony 'kątem oka' kieruje wzrok centralny na potencjalne zagrożenie. Hipoksja, zmęczenie i stres zawężają to pole ('tunnel vision').",
+				"en": "Peripheral vision is the image from the edges of the visual field - low in sharpness and colour, but very sensitive to motion and brightness changes. It acts as a warning system: movement caught 'out of the corner of the eye' directs central vision onto a potential threat. Hypoxia, fatigue and stress narrow this field ('tunnel vision')."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-063",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.VISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego przed wykonaniem zakrętu należy najpierw spojrzeć w kierunku zakrętu i sprawdzić ruch?",
+				"en": "Why should you look toward the turn and check for traffic before turning?"
+			},
+			"back": {
+				"pl": "Konstrukcja kabiny i własny kadłub tworzą martwe pola, a inny szybowiec może lecieć równolegle lub dołączać do komina. Spojrzenie w stronę zamierzonego zakrętu przed jego rozpoczęciem (clearing the turn) ujawnia ruch ukryty w martwym polu i zmniejsza ryzyko kolizji, zwłaszcza w zatłoczonym kominie.",
+				"en": "The cockpit structure and one's own fuselage create blind areas, and another glider may be flying parallel or joining the thermal. Looking toward the intended turn before starting it (clearing the turn) reveals traffic hidden in the blind area and reduces the risk of collision, especially in a crowded thermal."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-064",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["HPL.DECISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co opisuje model podejmowania decyzji DECIDE w lotnictwie?",
+				"en": "What does the DECIDE model of aeronautical decision-making describe?"
+			},
+			"back": {
+				"pl": "DECIDE to schemat racjonalnego podejmowania decyzji: Detect (wykryj zmianę), Estimate (oceń potrzebę reakcji), Choose (wybierz pożądany efekt), Identify (określ możliwe działania), Do (wykonaj działanie), Evaluate (oceń skutek). Pomaga ustrukturyzować reakcję na zmieniającą się sytuację.",
+				"en": "DECIDE is a rational decision-making framework: Detect (detect the change), Estimate (estimate the need to react), Choose (choose a desired outcome), Identify (identify possible actions), Do (do the action), Evaluate (evaluate the effect). It helps structure the response to a changing situation."
+			},
+			"mnemonic": {
+				"pl": "Litery układają się w słowo DECIDE = 'zdecyduj'.",
+				"en": "The letters spell DECIDE."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-065",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["HPL.DECISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest świadomość sytuacyjna i jakie są jej trzy poziomy?",
+				"en": "What is situational awareness and what are its three levels?"
+			},
+			"back": {
+				"pl": "Świadomość sytuacyjna to dokładny obraz tego, co dzieje się wokół, i przewidywanie, co nastąpi. Trzy poziomy to: 1) percepcja elementów (co widzę/słyszę), 2) zrozumienie sytuacji (co to znaczy), 3) przewidywanie (co stanie się dalej). Jej utrata jest częstą przyczyną błędnych decyzji.",
+				"en": "Situational awareness is an accurate picture of what is happening around you and anticipation of what will happen next. The three levels are: 1) perception of elements (what I see/hear), 2) comprehension of the situation (what it means), 3) projection (what will happen next). Its loss is a common cause of poor decisions."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-066",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DECISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest 'get-there-itis' (presja dotarcia do celu) i jak wpływa na decyzje pilota?",
+				"en": "What is 'get-there-itis' and how does it affect a pilot's decisions?"
+			},
+			"back": {
+				"pl": "To silne dążenie do osiągnięcia celu (np. powrotu na lotnisko, dolecenia do mety przelotu) mimo pogarszających się warunków. Powoduje ignorowanie sygnałów ostrzegawczych, kontynuację lotu w złą pogodę lub przeciąganie noszeń, zamiast podjęcia bezpiecznej decyzji o lądowaniu w terenie przygodnym.",
+				"en": "It is a strong drive to reach the goal (e.g. returning to the airfield, completing a cross-country task) despite deteriorating conditions. It causes warning signs to be ignored, flight to be continued into bad weather or lift to be stretched too far, instead of making the safe decision to land out."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-067",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DECISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Na czym polega błąd eskalacji zaangażowania (sunk cost) w decyzjach o lądowaniu w terenie?",
+				"en": "What is the sunk-cost (escalation of commitment) bias in land-out decisions?"
+			},
+			"back": {
+				"pl": "To skłonność do trzymania się raz obranego planu mimo zmiany warunków, bo 'zainwestowano' już dużo wysokości, czasu lub wysiłku. W przelocie szybowcowym objawia się np. odkładaniem decyzji o wyborze pola i lądowaniu w nadziei na kolejny komin, co zostawia coraz mniej wysokości na bezpieczne wykonanie procedury lądowania.",
+				"en": "It is the tendency to stick to a chosen plan despite changed conditions, because much altitude, time or effort has already been 'invested'. In gliding cross-country it shows as delaying the choice of a field and the land-out in hope of one more thermal, leaving ever less height for a safe landing procedure."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-068",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DECISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak stres wpływa na jakość podejmowania decyzji - na czym polega prawo Yerkesa-Dodsona?",
+				"en": "How does stress affect decision quality - what is the Yerkes-Dodson law?"
+			},
+			"back": {
+				"pl": "Prawo Yerkesa-Dodsona opisuje zależność w kształcie odwróconego U: zarówno zbyt niskie, jak i zbyt wysokie pobudzenie pogarsza sprawność, a najlepsze wyniki osiąga się przy umiarkowanym poziomie stresu. Przeciążenie stresem zawęża uwagę, upośledza myślenie i prowadzi do pominięcia istotnych informacji.",
+				"en": "The Yerkes-Dodson law describes an inverted-U relationship: both too low and too high arousal degrade performance, with the best results at a moderate level of stress. Overload by stress narrows attention, impairs thinking and leads to important information being missed."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-069",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DECISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym różni się decyzja oparta na umiejętnościach, regułach i wiedzy (model Rasmussena)?",
+				"en": "How do skill-based, rule-based and knowledge-based decisions differ (Rasmussen model)?"
+			},
+			"back": {
+				"pl": "Działanie oparte na umiejętnościach jest automatyczne, wyćwiczone (np. sterowanie). Oparte na regułach stosuje znane procedury 'jeśli-to' do rozpoznanej sytuacji. Oparte na wiedzy uruchamia się przy nowym, nieznanym problemie i wymaga analizy oraz rozumowania - jest najwolniejsze i najbardziej podatne na błędy.",
+				"en": "Skill-based behaviour is automatic and well-practised (e.g. stick handling). Rule-based applies known 'if-then' procedures to a recognised situation. Knowledge-based is triggered by a new, unfamiliar problem and requires analysis and reasoning - it is the slowest and most error-prone."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-070",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["HPL.DECISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaką zasadę wczesnej decyzji stosuje się przy wyborze pola do lądowania przygodnego?",
+				"en": "What early-decision principle applies when choosing a field for an outlanding?"
+			},
+			"back": {
+				"pl": "Decyzję o lądowaniu w terenie należy podjąć z odpowiednim zapasem wysokości, a nie 'na ostatnią chwilę'. Praktyczna zasada: zaczynaj wypatrywać pól ok. 1000 m, wybierz konkretne pole ok. 600 m i nieodwołalnie zobowiąż się do niego ok. 300 m AGL, by mieć czas na ocenę pola (powierzchnia, przeszkody, nachylenie, wiatr) i ułożenie kręgu.",
+				"en": "The decision to land out should be made with adequate height in hand, not at the last moment. A practical rule: start looking for fields around 1000 m, select a specific field around 600 m and irrevocably commit to it around 300 m AGL, to leave time to assess the field (surface, obstacles, slope, wind) and set up the circuit."
+			},
+			"mnemonic": {
+				"pl": "Decyduj WCZEŚNIE: szukaj - wybierz - zobowiąż się.",
+				"en": "Decide EARLY: search, select, commit."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-071",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DECISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest efekt potwierdzenia (confirmation bias) i jak objawia się w locie?",
+				"en": "What is confirmation bias and how does it show up in flight?"
+			},
+			"back": {
+				"pl": "To skłonność do wyszukiwania i przyjmowania tylko tych informacji, które potwierdzają nasze wcześniejsze przekonanie, a ignorowania dowodów przeciwnych. W locie objawia się np. trwaniem przy błędnej ocenie pozycji lub pogody, mimo że przyrządy i obraz terenu wskazują co innego. Lekarstwem jest aktywne szukanie informacji zaprzeczających.",
+				"en": "It is the tendency to seek and accept only information that confirms a prior belief, while ignoring contrary evidence. In flight it shows as clinging to a wrong assessment of position or weather even though instruments and the terrain picture indicate otherwise. The remedy is to actively look for disconfirming information."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-072",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DECISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza nadmierne obciążenie pracą (workload) i jak nim zarządzać w kabinie?",
+				"en": "What is task saturation (high workload) and how to manage it in the cockpit?"
+			},
+			"back": {
+				"pl": "Przeciążenie zadaniami występuje, gdy liczba czynności przekracza zdolność pilota do ich wykonania, prowadząc do pomijania zadań i błędów. Zarządza się nim przez ustalanie priorytetów (najpierw pilotuj - 'aviate, navigate, communicate'), planowanie z wyprzedzeniem, wcześniejsze odciążanie oraz przesuwanie czynności na fazy o niższym obciążeniu.",
+				"en": "Task saturation occurs when the number of tasks exceeds the pilot's capacity to perform them, leading to dropped tasks and errors. It is managed by setting priorities (fly first - 'aviate, navigate, communicate'), planning ahead, off-loading work earlier and deferring tasks to lower-workload phases."
+			},
+			"mnemonic": {
+				"pl": "Kolejność: AVIATE, NAVIGATE, COMMUNICATE.",
+				"en": "Order: AVIATE, NAVIGATE, COMMUNICATE."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-073",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DECISION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Na czym polega efekt zakotwiczenia w decyzjach pilota i jak go ograniczyć?",
+				"en": "What is the anchoring effect in a pilot's decisions and how to limit it?"
+			},
+			"back": {
+				"pl": "Zakotwiczenie to nadmierne przywiązanie do pierwszej otrzymanej informacji lub pierwotnego planu, które zniekształca dalszą ocenę sytuacji (np. trzymanie się prognozy pogody sprzed startu mimo realnych zmian). Ogranicza się je przez świadome, okresowe rewidowanie planu w oparciu o aktualne, bieżące dane z lotu.",
+				"en": "Anchoring is over-reliance on the first piece of information received or the original plan, which distorts later assessment of the situation (e.g. sticking to a pre-flight forecast despite real changes). It is limited by deliberately and periodically revising the plan based on current, real-time in-flight data."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-074",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest iluzja somatograwiczna i kiedy najczęściej występuje u pilota szybowca?",
+				"en": "What is the somatogravic illusion and when does it most often occur for a glider pilot?"
+			},
+			"back": {
+				"pl": "Fałszywe wrażenie zmiany pochylenia wywołane działaniem przyspieszenia liniowego na narządy otolitowe. Przyspieszenie (np. start z wyciągarki lub szarpnięcie na holu) daje złudzenie zadartego nosa i wznoszenia, a gwałtowne hamowanie złudzenie pochylenia nosa w dół.",
+				"en": "A false sensation of pitch change caused by linear acceleration acting on the otolith organs. Acceleration (e.g. a winch launch or a tow surge) creates the illusion of a nose-up climb, while sudden deceleration creates a nose-down illusion."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-075",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Które trzy układy zmysłów dostarczają mózgowi informacji o orientacji przestrzennej?",
+				"en": "Which three sensory systems supply the brain with spatial orientation information?"
+			},
+			"back": {
+				"pl": "Wzrok (dominujący), układ przedsionkowy ucha wewnętrznego (kanały półkoliste i otolity) oraz czucie proprioceptywne (tzw. czucie siedzeniem skóry, mięśni i stawów).",
+				"en": "Vision (dominant), the vestibular system of the inner ear (semicircular canals and otoliths), and the proprioceptive system (the seat-of-the-pants sense of skin, muscles and joints)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-076",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co rejestrują kanały półkoliste, a co otolity w uchu wewnętrznym?",
+				"en": "What do the semicircular canals sense versus the otoliths in the inner ear?"
+			},
+			"back": {
+				"pl": "Kanały półkoliste wykrywają przyspieszenia kątowe (obroty głowy w trzech płaszczyznach), a otolity (utriculus i sacculus) wykrywają przyspieszenia liniowe oraz kierunek grawitacji.",
+				"en": "The semicircular canals detect angular accelerations (head rotations in three planes), while the otoliths (utricle and saccule) detect linear accelerations and the direction of gravity."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-077",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Na czym polega złudzenie Coriolisa i co je wywołuje?",
+				"en": "What is the Coriolis illusion and what triggers it?"
+			},
+			"back": {
+				"pl": "Gwałtowne, dezorientujące wrażenie obrotu w innej płaszczyźnie, powstające gdy podczas ustabilizowanego zakrętu pilot porusza głową w innej osi (np. schyla się po mapę). Pobudza to inny kanał półkolisty i daje silne złudzenie przewracania się.",
+				"en": "A sudden, disorienting sensation of tumbling in a different plane, occurring when the pilot moves the head in another axis during a stabilized turn (e.g. bending down for a chart). It stimulates another semicircular canal and produces a strong sensation of rolling over."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-078",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego w długim, ustabilizowanym zakręcie pilot przestaje czuć obrót (iluzja somatogiralna)?",
+				"en": "Why does a pilot stop sensing rotation in a long, stabilized turn (somatogyral illusion)?"
+			},
+			"back": {
+				"pl": "Po kilkunastu sekundach endolimfa w kanale półkolistym nadąża za jego ścianami, kupula wraca do położenia neutralnego i mózg odbiera to jako lot prosty. Wyjście z zakrętu daje wtedy złudzenie obrotu w przeciwną stronę.",
+				"en": "After about 15-20 seconds the endolymph in the canal catches up with the canal walls, the cupula returns to neutral, and the brain perceives straight flight. Rolling out then produces a false sensation of turning the opposite way."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-079",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest spirala śmierci (graveyard spiral) i jak powstaje?",
+				"en": "What is the graveyard spiral and how does it develop?"
+			},
+			"back": {
+				"pl": "Zacieśniający się zakręt ze zniżaniem, w który pilot wpada bez widoczności, gdy przestaje czuć utrzymywany przechył. Próbując zatrzymać zniżanie, ciągnie drążek na siebie, co tylko zacieśnia zakręt i zwiększa prędkość opadania.",
+				"en": "A tightening descending turn that a pilot enters without visual reference after losing the sensation of a sustained bank. Trying to arrest the descent by pulling back only tightens the turn and increases the rate of descent."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-080",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest iluzja graveyard spin (cmentarny korkociąg)?",
+				"en": "What is the graveyard spin illusion?"
+			},
+			"back": {
+				"pl": "Po dłuższym korkociągu wrażenie obrotu zanika (adaptacja kanałów). Przy wyprowadzaniu pilot czuje obrót w przeciwną stronę i instynktownie ponownie wprowadza ster w stronę pierwotnego korkociągu, pogłębiając go.",
+				"en": "After a prolonged spin the sensation of rotation fades (canal adaptation). On recovery the pilot feels a turn in the opposite direction and instinctively re-applies controls back into the original spin, deepening it."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-081",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka jest podstawowa zasada przeciwdziałania dezorientacji przestrzennej w locie bez widoczności ziemi?",
+				"en": "What is the basic rule for countering spatial disorientation when ground reference is lost?"
+			},
+			"back": {
+				"pl": "Zaufać przyrządom, a nie własnym wrażeniom cielesnym, i pilotować wyłącznie według ich wskazań. Wzrok skierowany na przyrządy ma przewagę nad błędnymi sygnałami z błędnika.",
+				"en": "Trust the instruments, not your own bodily sensations, and fly solely by their indications. Visual reference to the instruments overrides the false signals from the vestibular system."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-082",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Na czym polega iluzja autokinetyczna (autokineza)?",
+				"en": "What is the autokinetic illusion (autokinesis)?"
+			},
+			"back": {
+				"pl": "Pojedynczy, nieruchomy punkt świetlny obserwowany przez kilka sekund w ciemności wydaje się poruszać. Pilot może wziąć go za inny statek powietrzny i niepotrzebnie manewrować. Zapobiega się temu przenoszeniem wzroku i skanowaniem.",
+				"en": "A single stationary point of light stared at for several seconds in darkness appears to move. The pilot may mistake it for another aircraft and manoeuvre needlessly. It is prevented by shifting the gaze and scanning."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-083",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak fałszywy horyzont (false horizon) może wywołać dezorientację u pilota szybowca?",
+				"en": "How can a false horizon cause disorientation for a glider pilot?"
+			},
+			"back": {
+				"pl": "Pochylona warstwa chmur, zbocze, linia świateł lub gwiazdy zlewające się ze światłami naziemnymi mogą zostać wzięte za prawdziwy horyzont. Pilot ustawia szybowiec równolegle do nich, nieświadomie przyjmując przechył lub pochylenie.",
+				"en": "A sloping cloud layer, a hillside, a line of lights or stars blending with ground lights can be taken for the true horizon. The pilot aligns the glider with them, unknowingly adopting a bank or pitch attitude."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-084",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest iluzja czarnej dziury (black hole) i kiedy grozi?",
+				"en": "What is the black hole illusion and when is it a hazard?"
+			},
+			"back": {
+				"pl": "Przy podejściu nad ciemnym, pozbawionym świateł terenem (woda, niezabudowane pole) brak punktów odniesienia sprawia, że pilot ocenia podejście jako za wysokie i zniża się zbyt nisko, ryzykując przedwczesne zetknięcie z ziemią.",
+				"en": "On approach over dark, featureless terrain (water, unlit fields) the lack of reference cues makes the pilot judge the approach as too high and descend too low, risking premature ground contact."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-085",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego lot w chmurze lub we mgle jest szczególnie niebezpieczny dla pilota szybowca bez uprawnień do lotów wg przyrządów?",
+				"en": "Why is flight into cloud or fog especially dangerous for a glider pilot without instrument qualifications?"
+			},
+			"back": {
+				"pl": "Utrata horyzontu pozbawia dominującego zmysłu wzroku, więc mózg zaczyna ufać błędnym sygnałom błędnika. W ciągu kilkudziesięciu sekund prowadzi to do utraty kontroli (spirala lub korkociąg) i zwykle do katastrofy.",
+				"en": "Loss of the horizon removes the dominant visual sense, so the brain relies on false vestibular signals. Within tens of seconds this leads to loss of control (spiral or spin) and usually to a crash."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-086",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki jest typowy czas zachowania kontroli przez nieprzeszkolonego pilota po wlocie w chmurę?",
+				"en": "What is the typical time an untrained pilot retains control after entering cloud?"
+			},
+			"back": {
+				"pl": "Klasyczne badania (raport \"178 sekund\") wskazują, że pilot nieprzeszkolony do lotu wg przyrządów traci kontrolę średnio po około 178 sekundach, czyli niespełna 3 minutach.",
+				"en": "Classic studies (the well-known 178-seconds report) indicate that a pilot untrained in instrument flight loses control after about 178 seconds on average, that is under 3 minutes."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-087",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrót SD w kontekście możliwości i ograniczeń człowieka?",
+				"en": "What does the abbreviation SD mean in the context of human performance and limitations?"
+			},
+			"back": {
+				"pl": "SD to Spatial Disorientation, czyli dezorientacja przestrzenna: błędne postrzeganie położenia, ruchu lub postawy statku powietrznego względem Ziemi i pionu grawitacyjnego.",
+				"en": "SD stands for Spatial Disorientation: an incorrect perception of the position, motion or attitude of the aircraft relative to the Earth and the gravitational vertical."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-088",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak dzieli się dezorientację przestrzenną na typy I, II i III?",
+				"en": "How is spatial disorientation classified into types I, II and III?"
+			},
+			"back": {
+				"pl": "Typ I (nierozpoznana) - pilot nie jest świadomy dezorientacji i ufa błędnym wrażeniom. Typ II (rozpoznana) - pilot czuje, że coś się nie zgadza, ale nie przypisuje tego dezorientacji. Typ III (obezwładniająca) - tak silna, że uniemożliwia pilotowanie.",
+				"en": "Type I (unrecognized) - the pilot is unaware of being disoriented and trusts false sensations. Type II (recognized) - the pilot senses something is wrong but does not attribute it to disorientation. Type III (incapacitating) - so severe it prevents the pilot from flying."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-089",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest złudzenie windy (elevator illusion) wywołane turbulencją lub kominem termicznym?",
+				"en": "What is the elevator illusion caused by turbulence or a thermal updraft?"
+			},
+			"back": {
+				"pl": "Nagły prąd wznoszący daje pionowe przyspieszenie ku górze, pobudzając otolity tak, że pilot odczuwa zadarcie nosa i instynktownie oddaje drążek od siebie. Prąd opadający daje odwrotne złudzenie i odruch ciągnięcia.",
+				"en": "A sudden updraft produces upward vertical acceleration, stimulating the otoliths so the pilot senses a nose-up pitch and instinctively pushes the stick forward. A downdraft gives the opposite illusion and an urge to pull back."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-090",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego bardzo powolne wprowadzenie zakrętu może pozostać niewyczute (przechył podprogowy)?",
+				"en": "Why can a very slowly entered turn go unfelt (sub-threshold bank)?"
+			},
+			"back": {
+				"pl": "Jeśli przechył narasta wolniej niż próg wykrywania kanałów półkolistych (ok. 2 stopni/s), pilot nie czuje wprowadzenia zakrętu. Szybowiec niepostrzeżenie wchodzi w przechył, co bez widoczności prowadzi do dezorientacji.",
+				"en": "If the bank builds up more slowly than the detection threshold of the semicircular canals (about 2 degrees/s), the pilot does not feel the turn beginning. The glider rolls into a bank unnoticed, leading to disorientation without visual reference."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-091",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego czucie siedzeniem (seat-of-the-pants) jest zawodnym wskaźnikiem przechyłu w zakręcie?",
+				"en": "Why is the seat-of-the-pants sense an unreliable bank indicator in a turn?"
+			},
+			"back": {
+				"pl": "W skoordynowanym zakręcie wypadkowa siły ciężkości i siły odśrodkowej działa wzdłuż osi pionowej szybowca, więc pilot dociskany jest do siedzenia tak samo jak w locie prostym i nie czuje przechyłu ani nie ocenia jego wielkości.",
+				"en": "In a coordinated turn the resultant of gravity and centrifugal force acts along the glider's vertical axis, so the pilot is pressed into the seat just as in straight flight and feels no bank nor can judge its magnitude."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-092",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak zmęczenie, stres i hipoksja wpływają na podatność na dezorientację przestrzenną?",
+				"en": "How do fatigue, stress and hypoxia affect susceptibility to spatial disorientation?"
+			},
+			"back": {
+				"pl": "Wszystkie te czynniki obniżają zdolność interpretacji przyrządów, spowalniają reakcje i osłabiają tłumienie błędnych wrażeń zmysłowych, przez co znacznie zwiększają podatność na dezorientację i wydłużają czas jej rozpoznania.",
+				"en": "All of these reduce the ability to interpret instruments, slow reactions and weaken the suppression of false sensory cues, markedly increasing susceptibility to disorientation and lengthening the time to recognize it."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-093",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak prawidłowo zareagować, gdy szybowiec nieoczekiwanie wejdzie w chmurę i pojawi się dezorientacja?",
+				"en": "How should a pilot react if the glider unexpectedly enters cloud and disorientation begins?"
+			},
+			"back": {
+				"pl": "Przejść natychmiast na pilotowanie wg przyrządów, ustawić skrzydła poziomo wg zakrętomierza lub sztucznego horyzontu, utrzymać bezpieczną prędkość, unikać gwałtownych ruchów głową i bezpiecznie wyjść z chmury, najlepiej kontrolowanym zakrętem o 180 stopni.",
+				"en": "Immediately transition to instrument flying, level the wings using the turn indicator or attitude indicator, maintain safe airspeed, avoid abrupt head movements, and exit the cloud safely, ideally with a controlled 180-degree turn."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-094",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego unikanie gwałtownych ruchów głową jest ważne w warunkach ograniczonej widoczności?",
+				"en": "Why is avoiding abrupt head movements important in reduced-visibility conditions?"
+			},
+			"back": {
+				"pl": "Ruch głową (zwłaszcza w zakręcie) pobudza dodatkowe kanały półkoliste i może wywołać silne złudzenie Coriolisa lub gwałtowną dezorientację. Bez horyzontu mózg nie ma jak skorygować tych błędnych sygnałów.",
+				"en": "Head movement (especially in a turn) stimulates additional semicircular canals and can trigger a strong Coriolis illusion or sudden disorientation. Without a horizon the brain cannot correct these false signals."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-095",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak deszcz lub krople wody na owiewce mogą wywołać złudzenie wzrokowe wpływające na ocenę położenia?",
+				"en": "How can rain or water droplets on the canopy create a visual illusion affecting attitude judgement?"
+			},
+			"back": {
+				"pl": "Refrakcja przez krople sprawia, że obiekty na zewnątrz wydają się niżej niż w rzeczywistości, co daje złudzenie większej wysokości i może skłonić do zaniżenia toru lotu lub błędnej oceny linii horyzontu.",
+				"en": "Refraction through droplets makes outside objects appear lower than they really are, creating an illusion of greater height and tempting the pilot to fly a lower path or misjudge the horizon line."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-096",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaką rolę w przeciwdziałaniu dezorientacji pełni regularne skanowanie przyrządów (cross-check)?",
+				"en": "What role does regular instrument scanning (cross-check) play in countering disorientation?"
+			},
+			"back": {
+				"pl": "Systematyczne porównywanie wskazań kilku przyrządów (zamiast wpatrywania się w jeden) pozwala wcześnie wykryć niezamierzony przechył lub zniżanie i skorygować je, zanim błędne wrażenia zmysłowe doprowadzą do utraty kontroli.",
+				"en": "Systematically comparing several instruments (rather than fixating on one) allows early detection of an unintended bank or descent and correction before false sensory cues lead to loss of control."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-hpl-gen-097",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["HPL.DISORIENTATION"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym różni się dezorientacja przestrzenna od utraty świadomości sytuacyjnej?",
+				"en": "How does spatial disorientation differ from loss of situational awareness?"
+			},
+			"back": {
+				"pl": "Dezorientacja przestrzenna to błędne postrzeganie położenia i ruchu szybowca względem pionu i Ziemi (problem percepcji postawy). Utrata świadomości sytuacyjnej to błędny obraz całej sytuacji: pozycji, ruchu lotniczego, pogody i stanu lotu.",
+				"en": "Spatial disorientation is a false perception of the glider's attitude and motion relative to the vertical and the Earth (an attitude-perception problem). Loss of situational awareness is a flawed picture of the whole situation: position, traffic, weather and flight state."
+			},
+			"source": "generated:spl"
 		}
 	]
 }

@@ -707,6 +707,1642 @@
 				"en": "The ARC confirms that the certificate of airworthiness (CofA) remains valid after the airworthiness review."
 			},
 			"source": "authored:spl"
+		},
+		{
+			"id": "spl-agk-gen-001",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["AGK.LIMITATIONS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza prędkość manewrowa VA i dlaczego nie wolno jej przekraczać przy gwałtownych wychyleniach sterów?",
+				"en": "What is the maneuvering speed VA and why must it not be exceeded with abrupt control inputs?"
+			},
+			"back": {
+				"pl": "VA to maksymalna prędkość, przy której pełne wychylenie pojedynczego steru nie przeciąży konstrukcji. Powyżej VA gwałtowny ruch sterem może przekroczyć dopuszczalne obciążenie i uszkodzić szybowiec.",
+				"en": "VA is the maximum speed at which full deflection of a single control will not overstress the airframe. Above VA an abrupt control input can exceed the load limit and damage the glider."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-002",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["AGK.LIMITATIONS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza prędkość VRA i kiedy jest istotna?",
+				"en": "What does the speed VRA mean and when is it relevant?"
+			},
+			"back": {
+				"pl": "VRA to maksymalna prędkość w turbulencji (rough air speed). W warunkach burzliwych nie wolno jej przekraczać, bo podmuchy dodają obciążeń do tych wynikających z manewru.",
+				"en": "VRA is the maximum rough air speed. In turbulence it must not be exceeded, because gusts add loads on top of those from maneuvering."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-003",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["AGK.LIMITATIONS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie typowe dopuszczalne współczynniki obciążenia ma szybowiec kategorii Utility wg CS-22?",
+				"en": "What are typical permissible load factors for a Utility category glider under CS-22?"
+			},
+			"back": {
+				"pl": "Dla kategorii Utility zwykle +5,3 g i -2,65 g przy klapach schowanych. Z wypuszczonymi klapami limity są niższe, podane w instrukcji użytkowania.",
+				"en": "For the Utility category typically +5.3 g and -2.65 g with flaps retracted. With flaps extended the limits are lower, as stated in the flight manual."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-004",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["AGK.LIMITATIONS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego maksymalna prędkość z wypuszczonymi klapami VFE jest niższa niż VNE?",
+				"en": "Why is the maximum flap-extended speed VFE lower than VNE?"
+			},
+			"back": {
+				"pl": "Wypuszczone klapy zwiększają obciążenie aerodynamiczne i moment gnący skrzydła. VFE chroni klapy i ich mocowania przed uszkodzeniem przy dużej prędkości.",
+				"en": "Extended flaps increase aerodynamic load and the wing bending moment. VFE protects the flaps and their attachments from damage at high speed."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-005",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["AGK.LIMITATIONS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest VW i dlaczego ją ograniczamy?",
+				"en": "What is VW and why is it limited?"
+			},
+			"back": {
+				"pl": "VW to maksymalna prędkość przy starcie za wyciągarką. Przekroczenie grozi przeciążeniem konstrukcji i zaczepu oraz utratą kontroli w stromej fazie wznoszenia.",
+				"en": "VW is the maximum speed for winch launch. Exceeding it risks overstressing the airframe and hook and losing control in the steep climb phase."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-006",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["AGK.LIMITATIONS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest VT i czym różni się od VW?",
+				"en": "What is VT and how does it differ from VW?"
+			},
+			"back": {
+				"pl": "VT to maksymalna prędkość przy starcie za samolotem holującym (aerotow). VW dotyczy startu za wyciągarką. Obie chronią zaczep i konstrukcję, ale dla różnych metod startu.",
+				"en": "VT is the maximum aerotow speed. VW applies to winch launch. Both protect the hook and structure, but for different launch methods."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-007",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["AGK.LIMITATIONS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak masa szybowca (np. balast wodny) wpływa na prędkość przeciągnięcia?",
+				"en": "How does glider mass (e.g. water ballast) affect the stall speed?"
+			},
+			"back": {
+				"pl": "Większa masa zwiększa prędkość przeciągnięcia. Cięższy szybowiec przeciąga się przy wyższej prędkości i wymaga wyższych prędkości w zakręcie.",
+				"en": "Greater mass increases the stall speed. A heavier glider stalls at a higher speed and requires higher speeds in turns."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-008",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["AGK.LIMITATIONS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak prędkość przeciągnięcia zmienia się w zakręcie z przechyleniem 60 stopni?",
+				"en": "How does the stall speed change in a 60-degree banked turn?"
+			},
+			"back": {
+				"pl": "Przy 60 stopniach przechylenia (w locie ustalonym) współczynnik obciążenia wynosi 2 g, a prędkość przeciągnięcia rośnie o pierwiastek z 2, czyli około 1,41 razy.",
+				"en": "At 60 degrees of bank (in a steady level turn) the load factor is 2 g, and the stall speed increases by the square root of 2, about 1.41 times."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-009",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["AGK.LIMITATIONS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza maksymalna masa do startu MTOW i co ją ogranicza?",
+				"en": "What does maximum takeoff mass MTOW mean and what limits it?"
+			},
+			"back": {
+				"pl": "MTOW to największa dopuszczalna masa szybowca przy starcie. Ogranicza ją wytrzymałość konstrukcji, charakterystyki lotu i certyfikacja danego typu.",
+				"en": "MTOW is the maximum permitted mass of the glider at takeoff. It is limited by airframe strength, flight characteristics and the type certification."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-010",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.LIMITATIONS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest maksymalna masa części nienośnych (non-lifting parts) i dlaczego się ją podaje?",
+				"en": "What is the maximum mass of non-lifting parts and why is it specified?"
+			},
+			"back": {
+				"pl": "To dopuszczalna masa kadłuba z pilotem i wyposażeniem, bez skrzydeł. Ogranicza moment gnący u nasady skrzydła, niezależnie od balastu w skrzydłach.",
+				"en": "It is the permitted mass of the fuselage with pilot and equipment, excluding the wings. It limits the wing-root bending moment, independent of wing ballast."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-011",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.LIMITATIONS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak temperatura otoczenia ogranicza użycie szybowców kompozytowych?",
+				"en": "How does ambient temperature limit the use of composite gliders?"
+			},
+			"back": {
+				"pl": "Żywice tracą sztywność przy wysokiej temperaturze. Instrukcja podaje limit temperatury powierzchni, a jasne malowanie obniża nagrzewanie w słońcu.",
+				"en": "Resins lose stiffness at high temperature. The manual gives a surface temperature limit, and light-colored paint reduces heating in the sun."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-012",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza minimalna masa pilota podana w instrukcji i czego dotyczy?",
+				"en": "What does the minimum pilot mass in the manual mean and what is its purpose?"
+			},
+			"back": {
+				"pl": "To najmniejsza masa pilota zapewniająca położenie środka ciężkości w dopuszczalnym zakresie. Poniżej niej trzeba dodać balast wyważający (np. w nosie).",
+				"en": "It is the smallest pilot mass that keeps the center of gravity within limits. Below it, trim ballast (e.g. in the nose) must be added."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-013",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["AGK.LIMITATIONS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co przedstawia obwiednia obciążeń (wykres V-n) szybowca?",
+				"en": "What does the glider's V-n diagram (flight envelope) represent?"
+			},
+			"back": {
+				"pl": "Pokazuje dopuszczalne kombinacje prędkości i współczynnika obciążenia. Granice wyznaczają przeciągnięcie, limity g oraz VNE. Lot poza obwiednią grozi uszkodzeniem.",
+				"en": "It shows the permitted combinations of speed and load factor. The boundaries are set by stall, g limits and VNE. Flight outside the envelope risks damage."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-014",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["AGK.LIMITATIONS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego VNE może być obniżana wraz ze wzrostem wysokości lotu?",
+				"en": "Why may VNE be reduced with increasing altitude?"
+			},
+			"back": {
+				"pl": "VNE jest podawana jako IAS, ale flatter zależy od prędkości rzeczywistej TAS. Na większej wysokości przy tej samej IAS rośnie TAS, więc instrukcja podaje niższe limity IAS.",
+				"en": "VNE is given as IAS, but flutter depends on true airspeed TAS. At higher altitude the same IAS means higher TAS, so the manual gives lower IAS limits."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-015",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.LIMITATIONS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest wykazana składowa boczna wiatru przy starcie i dlaczego się ją podaje?",
+				"en": "What is the demonstrated crosswind component at takeoff and why is it specified?"
+			},
+			"back": {
+				"pl": "Instrukcja podaje wykazaną składową boczną wiatru. Powyżej tej wartości utrzymanie kierunku i kontroli skrzydła w rozbiegu staje się niepewne.",
+				"en": "The manual gives a demonstrated crosswind component. Above it, maintaining direction and wing control during the ground run becomes unreliable."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-016",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.LIMITATIONS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego balast wodny należy zrzucić przed lądowaniem przy niskich temperaturach?",
+				"en": "Why should water ballast be dumped before landing in low temperatures?"
+			},
+			"back": {
+				"pl": "Resztki wody w zbiornikach mogą zamarznąć i zablokować zawory lub uszkodzić skrzydło. Lądowanie z balastem zwiększa też masę i prędkość lądowania.",
+				"en": "Residual water in the tanks can freeze and block valves or damage the wing. Landing with ballast also increases mass and landing speed."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-017",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.RELEASE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie dwa podstawowe rodzaje zaczepu holowniczego ma szybowiec i do czego służą?",
+				"en": "What two basic types of tow hook does a glider have and what are they for?"
+			},
+			"back": {
+				"pl": "Zaczep nosowy (dziobowy) używany głównie do holu za samolotem oraz zaczep brzuszny (CG hook) używany głównie do startu za wyciągarką.",
+				"en": "A nose hook used mainly for aerotow, and a belly (CG) hook used mainly for winch launch."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-018",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.RELEASE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego zaczep brzuszny (CG) jest preferowany do startu za wyciągarką, a nosowy do holu?",
+				"en": "Why is the CG (belly) hook preferred for winch launch and the nose hook for aerotow?"
+			},
+			"back": {
+				"pl": "CG daje szybkie i strome wznoszenie oraz samoczynne odczepienie przy nadmiernym kącie. Nosowy zapewnia stateczność kierunkową za holownikiem i łatwiejsze utrzymanie pozycji.",
+				"en": "The CG hook gives a fast, steep climb and back-release if the angle is excessive. The nose hook provides directional stability behind the tug and easier position keeping."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-019",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.RELEASE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak działa automatyczne odczepienie (back-release) zaczepu brzusznego?",
+				"en": "How does the automatic back-release of the CG hook work?"
+			},
+			"back": {
+				"pl": "Gdy lina ciągnie pod szybowiec pod dużym kątem do tyłu, mechanizm szczęk odczepia ją samoczynnie. Chroni to przed nadmiernym kątem wznoszenia na wyciągarce.",
+				"en": "When the cable pulls back under the glider at a large angle, the jaw mechanism releases it automatically. This protects against an excessive climb angle on the winch."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-020",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.RELEASE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka jest prawidłowa procedura odczepienia liny na końcu startu za wyciągarką?",
+				"en": "What is the correct cable release procedure at the end of a winch launch?"
+			},
+			"back": {
+				"pl": "W górnej fazie, gdy maleje siła ciągu, należy opuścić nos do lotu poziomego i dwukrotnie pociągnąć żółtą gałkę odczepu, upewniając się, że lina odeszła.",
+				"en": "In the top phase, as the pull decreases, lower the nose to level flight and pull the yellow release knob twice, confirming the cable has gone."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-021",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.RELEASE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakiego koloru jest gałka odczepu liny w szybowcu i dlaczego to ważne?",
+				"en": "What color is the cable release knob in a glider and why does it matter?"
+			},
+			"back": {
+				"pl": "Gałka odczepu jest żółta. Jednoznaczny kolor pozwala szybko i bez pomyłki uruchomić odczep w sytuacji awaryjnej, odróżniając go od innych dźwigni.",
+				"en": "The release knob is yellow. A clear color lets the pilot operate the release quickly and without confusion in an emergency, distinguishing it from other levers."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-022",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.RELEASE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co zrobić, gdy po pociągnięciu gałki lina nie odczepia się od szybowca?",
+				"en": "What should you do if the cable fails to release after pulling the knob?"
+			},
+			"back": {
+				"pl": "Powtórzyć energiczne pociągnięcia gałki kilka razy. Jeśli to nie pomaga, na wyciągarce zwykle przerywa ona ciąg, a sygnalizacja i procedury awaryjne danego lotniska decydują o dalszym działaniu.",
+				"en": "Pull the knob firmly several more times. If that fails on the winch, the winch normally cuts the pull, and the airfield's signals and emergency procedures dictate the next steps."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-023",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.RELEASE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego po starcie za samolotem nie wolno znaleźć się znacznie powyżej holownika?",
+				"en": "Why must you never get significantly above the tug during aerotow?"
+			},
+			"back": {
+				"pl": "Wysoka pozycja unosi ogon holownika i może uniemożliwić mu sterowanie, grożąc jego wypadkiem. W razie utraty pozycji należy natychmiast odczepić linę.",
+				"en": "A high position lifts the tug's tail and can rob it of control, risking its crash. If position is lost, release the cable immediately."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-024",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["AGK.RELEASE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka jest rola słabego ogniwa w torze liny i jak współgra z wytrzymałością zaczepu?",
+				"en": "What is the role of the weak link in the towline and how does it relate to the hook strength?"
+			},
+			"back": {
+				"pl": "Słabe ogniwo zrywa się przy przeciążeniu liny, chroniąc konstrukcję, ale jego wytrzymałość musi być dobrana do typu szybowca i niższa niż obciążenie niszczące zaczep oraz konstrukcję.",
+				"en": "The weak link breaks under cable overload to protect the structure, but its strength must match the glider type and stay below the failure load of the hook and airframe."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-025",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Do czego służy trymer steru wysokości w szybowcu?",
+				"en": "What is the purpose of an elevator trim in a glider?"
+			},
+			"back": {
+				"pl": "Trymer odciąża drążek, pozwalając utrzymać zadaną prędkość bez stałego nacisku na ster wysokości. Najczęściej działa na ster wysokości (sprężyna trymująca lub klapka trymująca).",
+				"en": "The trim relieves stick force, holding a set airspeed without constant pressure on the elevator. It usually acts on the elevator via a trim spring or a trim tab."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-026",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka jest funkcja klap skrzydłowych w szybowcu wyczynowym?",
+				"en": "What is the function of camber-changing flaps in a high-performance glider?"
+			},
+			"back": {
+				"pl": "Klapy zmieniają wygięcie profilu: wychylenie dodatnie poprawia osiągi przy małych prędkościach (krążenie w kominie), wychylenie ujemne zmniejsza opór przy dużych prędkościach przeskoku.",
+				"en": "Flaps change the wing camber: positive settings improve performance at low speeds (thermalling), negative settings reduce drag at high cruise speeds."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-027",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to są flaperony (sprzężenie lotek z klapami)?",
+				"en": "What are flaperons (interconnected ailerons and flaps)?"
+			},
+			"back": {
+				"pl": "Lotki i klapy są sprzężone tak, że klapy uczestniczą w sterowaniu przechyleniem, a lotki mogą zmieniać wygięcie profilu na całej rozpiętości, poprawiając sterowność i osiągi.",
+				"en": "Ailerons and flaps are interconnected so the flaps assist in roll control and the ailerons can change camber across the whole span, improving controllability and performance."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-028",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego ster kierunku w szybowcu jest duży i intensywnie używany?",
+				"en": "Why is a glider's rudder large and used actively?"
+			},
+			"back": {
+				"pl": "Długie skrzydła wywołują silny moment odchylający przeciwny do zakrętu (niekorzystne odchylenie od lotek), dlatego ster kierunku musi go kompensować, zwłaszcza w zakrętach.",
+				"en": "Long wings produce strong adverse yaw from the ailerons, so a large rudder is needed to counter it, especially in turns."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-029",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest niekorzystne odchylenie (adverse yaw) i jak mu przeciwdziałać?",
+				"en": "What is adverse yaw and how do you counter it?"
+			},
+			"back": {
+				"pl": "To odchylenie nosa w stronę przeciwną do zamierzonego zakrętu, wywołane większym oporem skrzydła z opuszczoną lotką. Przeciwdziała się skoordynowanym wychyleniem steru kierunku w stronę zakrętu.",
+				"en": "It is the nose yawing opposite to the intended turn, caused by extra drag on the wing with the down-going aileron. It is countered with coordinated rudder into the turn."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-030",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym charakteryzują się lotki różnicowe (differential ailerons)?",
+				"en": "What characterizes differential ailerons?"
+			},
+			"back": {
+				"pl": "Lotka idąca w górę wychyla się bardziej niż idąca w dół, co wyrównuje opór obu skrzydeł i zmniejsza niekorzystne odchylenie.",
+				"en": "The up-going aileron deflects more than the down-going one, equalising drag on both wings and reducing adverse yaw."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-031",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.RELEASE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakiego zaczepu holowniczego używa się do startu za wyciągarką, a jakiego za samolotem?",
+				"en": "Which tow hook is used for winch launch versus aerotow?"
+			},
+			"back": {
+				"pl": "Do wyciągarki używa się zaczepu brzusznego (CG), a do holu za samolotem zwykle zaczepu dziobowego (nose), co zapewnia stabilność i prawidłowe odczepienie.",
+				"en": "The belly (CG) hook is used for the winch; for aerotow the nose hook is normally used, giving stability and correct release behaviour."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-032",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.AIRFRAME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Do czego służy podwozie chowane i jak wpływa na osiągi?",
+				"en": "What is the purpose of retractable landing gear and how does it affect performance?"
+			},
+			"back": {
+				"pl": "Schowanie koła zmniejsza opór aerodynamiczny i poprawia doskonałość w przelocie. Przed lądowaniem koło musi być wypuszczone i zablokowane.",
+				"en": "Retracting the wheel reduces aerodynamic drag and improves glide performance in cruise. Before landing the gear must be extended and locked."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-033",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.AIRFRAME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak utrzymuje się kierunek na rozbiegu i jaką rolę pełni płoza lub kółko ogonowe?",
+				"en": "How is direction maintained during the ground run, and what is the role of the tailwheel or tailskid?"
+			},
+			"back": {
+				"pl": "Płoza lub kółko ogonowe podpierają tył kadłuba na ziemi; kierunek na rozbiegu utrzymuje się głównie sterem kierunku, ponieważ kółko ogonowe zwykle nie jest sterowane.",
+				"en": "The skid or tailwheel supports the rear fuselage on the ground; directional control during the ground run comes mainly from the rudder, as the tailwheel is usually not steerable."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-034",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["AGK.AIRFRAME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest TMG i czym różni się od czystego szybowca?",
+				"en": "What is a TMG and how does it differ from a pure glider?"
+			},
+			"back": {
+				"pl": "TMG (Touring Motor Glider) to motoszybowiec turystyczny z silnikiem i niechowanym śmigłem, zdolny do samodzielnego startu i lotu jak samolot, zachowujący cechy szybowca.",
+				"en": "A TMG (Touring Motor Glider) is a motor glider with a fixed engine and propeller, able to take off and fly on its own like an aeroplane while retaining glider characteristics."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-035",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.AIRFRAME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym różni się szybowiec self-launching od self-sustaining?",
+				"en": "What is the difference between a self-launching and a self-sustaining glider?"
+			},
+			"back": {
+				"pl": "Self-launching ma silnik o mocy pozwalającej na samodzielny start; self-sustaining ma silnik pomocniczy tylko do podtrzymania lotu (niewystarczający do startu).",
+				"en": "A self-launching glider has an engine powerful enough to take off on its own; a self-sustaining glider has an auxiliary engine only to maintain flight, not enough to take off."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-036",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.RELEASE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak działa hak odczepu i kiedy następuje samoczynne odczepienie (back-release) na wyciągarce?",
+				"en": "How does the release hook work and when does automatic back-release occur on the winch?"
+			},
+			"back": {
+				"pl": "Pociągnięcie żółtej gałki otwiera szczęki haka. Na zaczepie CG, gdy szybowiec przelatuje nad wyciągarką i lina zaczyna ciągnąć od dołu/tyłu, hak otwiera się samoczynnie (back-release).",
+				"en": "Pulling the yellow knob opens the hook jaws. On the CG hook, when the glider passes over the winch and the cable starts pulling from below/behind, the hook releases automatically (back-release)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-037",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki kolor ma gałka odczepu, a jaki uchwyt hamulców aerodynamicznych?",
+				"en": "What colour is the tow release knob and the airbrake handle in the cockpit?"
+			},
+			"back": {
+				"pl": "Gałka odczepu (release) jest żółta, a uchwyt hamulców aerodynamicznych (airbrakes) jest niebieski. Są to znormalizowane oznaczenia kolorystyczne.",
+				"en": "The release knob is yellow and the airbrake handle is blue. These are standardised colour markings."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-038",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Do czego służy spadochron hamujący (drag chute) montowany w niektórych szybowcach?",
+				"en": "What is the purpose of a drag (braking) chute fitted to some gliders?"
+			},
+			"back": {
+				"pl": "Spadochron hamujący zwiększa opór, skracając dobieg po lądowaniu lub stromiąc podejście; nie zastępuje hamulców aerodynamicznych i wymaga sprawdzenia przed użyciem.",
+				"en": "The drag chute increases drag to shorten the landing roll or steepen the approach; it does not replace airbrakes and must be checked before use."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-039",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest zbiornik balastu w statecznika pionowym i po co się go używa?",
+				"en": "What is the fin (tail) ballast tank and why is it used?"
+			},
+			"back": {
+				"pl": "Mały zbiornik wody w statecznika pionowym pozwala precyzyjnie przesunąć środek ciężkości do tyłu niezależnie od balastu w skrzydłach, optymalizując osiągi.",
+				"en": "A small water tank in the fin lets the pilot fine-tune the centre of gravity rearwards independently of the wing ballast, optimising performance."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-040",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["AGK.DOCS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki dokument określa dopuszczalne prędkości, masy i ograniczenia eksploatacyjne danego szybowca?",
+				"en": "Which document specifies the permitted speeds, masses and operating limitations of a specific glider?"
+			},
+			"back": {
+				"pl": "Instrukcja użytkowania w locie (AFM / Flight Manual) danego typu i egzemplarza zawiera ograniczenia, procedury i osiągi obowiązujące dla tego szybowca.",
+				"en": "The Aircraft Flight Manual (AFM) for the specific type and serial number contains the limitations, procedures and performance applicable to that glider."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-041",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["AGK.DOCS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie podstawowe dokumenty musi mieć na pokładzie szybowiec wykonujący lot?",
+				"en": "Which basic documents must be carried on board a glider in flight?"
+			},
+			"back": {
+				"pl": "Świadectwo rejestracji, świadectwo zdatności do lotu (CofA) z ważnym ARC, AFM, świadectwo zgodności hałasowej (jeśli dotyczy), polisa OC, licencja i dokumenty załogi oraz dokumentacja masy i wyważenia.",
+				"en": "Certificate of registration, certificate of airworthiness (CofA) with a valid ARC, AFM, noise certificate (if applicable), insurance, crew licence/documents and the weight-and-balance data."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-042",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["AGK.DOCS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co poświadcza świadectwo zdatności do lotu (CofA) i jak długo jest ważne w EASA?",
+				"en": "What does a Certificate of Airworthiness certify and how long is it valid under EASA?"
+			},
+			"back": {
+				"pl": "CofA poświadcza zgodność statku z certyfikowanym typem; w EASA jest bezterminowe, ale jego ważność zależy od aktualnego ARC i utrzymania ciągłej zdatności do lotu.",
+				"en": "The CofA certifies conformity with the certified type; under EASA it is issued without expiry, but its validity depends on a current ARC and continued airworthiness."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-043",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co zawiera dokumentacja masy i wyważenia (weight and balance) szybowca?",
+				"en": "What does the glider's weight-and-balance documentation contain?"
+			},
+			"back": {
+				"pl": "To zatwierdzony dokument podający masę własną, położenie środka ciężkości oraz dopuszczalny zakres masy pilota (minimalne i maksymalne obciążenie fotela) zapewniający CG w granicach.",
+				"en": "It is an approved document giving the empty mass, centre-of-gravity position and the permitted pilot mass range (minimum and maximum seat load) that keeps the CG within limits."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-044",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["AGK.LIMITATIONS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest tabliczka ograniczeń w kabinie (cockpit placard) i jakie informacje musi zawierać?",
+				"en": "What is the cockpit placard and what information must it contain?"
+			},
+			"back": {
+				"pl": "To umieszczona w kabinie tabliczka z najważniejszymi ograniczeniami: minimalną i maksymalną masą pilota, prędkościami granicznymi oraz ograniczeniami manewrowymi danego egzemplarza.",
+				"en": "It is a placard in the cockpit showing key limitations: minimum and maximum pilot mass, limiting speeds and manoeuvring restrictions for that aircraft."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-045",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["AGK.LIMITATIONS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrót MTOM i gdzie znajdziesz tę wartość dla szybowca?",
+				"en": "What does MTOM mean and where do you find it for a glider?"
+			},
+			"back": {
+				"pl": "MTOM (Maximum Take-Off Mass) to maksymalna dopuszczalna masa startowa; wartość podana jest w AFM oraz na tabliczkach/placardach danego szybowca.",
+				"en": "MTOM (Maximum Take-Off Mass) is the maximum permitted take-off mass; the value is given in the AFM and on the aircraft's placard markings."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-046",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["AGK.DOCS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co zapisuje się w dzienniku podróży / dzienniku technicznym szybowca?",
+				"en": "What is recorded in the glider's journey/technical log?"
+			},
+			"back": {
+				"pl": "To dokument eksploatacyjny, w którym zapisuje się loty, czas i liczbę startów, stwierdzone usterki oraz wykonane czynności obsługowe, dokumentując ciągłą zdatność do lotu.",
+				"en": "It is an operating record where flights, hours and launches, observed defects and maintenance actions are logged, documenting continued airworthiness."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-047",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["AGK.DOCS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest dyrektywa zdatności (Airworthiness Directive, AD) i jaki ma charakter?",
+				"en": "What is an Airworthiness Directive (AD) and what is its character?"
+			},
+			"back": {
+				"pl": "AD to obowiązkowe polecenie wydane przez nadzór lotniczy (np. EASA) usuwające stwierdzony stan zagrożenia bezpieczeństwa; jego wykonanie jest obligatoryjne i odnotowywane w dokumentacji.",
+				"en": "An AD is a mandatory instruction issued by the aviation authority (e.g. EASA) to address a recognised unsafe condition; compliance is obligatory and recorded in the documentation."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-048",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["AGK.DOCS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym różni się Airworthiness Directive (AD) od biuletynu serwisowego (Service Bulletin, SB)?",
+				"en": "How does an Airworthiness Directive (AD) differ from a Service Bulletin (SB)?"
+			},
+			"back": {
+				"pl": "SB jest zaleceniem producenta i zwykle nie jest obowiązkowy, natomiast AD wydane przez nadzór jest prawnie obowiązkowe; często AD czyni dany SB obowiązkowym.",
+				"en": "An SB is a manufacturer's recommendation and is usually not mandatory, whereas an AD issued by the authority is legally binding; an AD often makes a given SB mandatory."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-049",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.INSTRUMENTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak działa prędkościomierz (ASI) w szybowcu?",
+				"en": "How does the airspeed indicator (ASI) work in a glider?"
+			},
+			"back": {
+				"pl": "Mierzy różnicę między ciśnieniem całkowitym (spiętrzenia) z rurki Pitota a ciśnieniem statycznym; różnica ta jest równa ciśnieniu dynamicznemu i jest wyświetlana jako IAS.",
+				"en": "It measures the difference between total (pitot) pressure and static pressure; this difference equals dynamic pressure and is displayed as IAS."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-050",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.INSTRUMENTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co mierzy wysokościomierz barometryczny i na jakiej zasadzie działa?",
+				"en": "What does a barometric altimeter measure and how does it work?"
+			},
+			"back": {
+				"pl": "Mierzy ciśnienie statyczne za pomocą puszki aneroidowej; spadek ciśnienia z wysokością przeliczany jest na wysokość. Wymaga nastawienia ciśnienia odniesienia (np. QNH).",
+				"en": "It senses static pressure with an aneroid capsule; the pressure drop with altitude is converted to height. It needs a reference pressure setting (e.g. QNH)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-051",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["AGK.INSTRUMENTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza nastawienie QNH na wysokościomierzu?",
+				"en": "What does the QNH setting on an altimeter mean?"
+			},
+			"back": {
+				"pl": "Ciśnienie zredukowane do poziomu morza; po nastawieniu wysokościomierz wskazuje wysokość nad poziomem morza (AMSL), a na lotnisku jego elewację.",
+				"en": "Pressure reduced to mean sea level; with QNH set, the altimeter reads altitude above mean sea level (AMSL) and shows airfield elevation when on the ground."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-052",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["AGK.INSTRUMENTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza nastawienie QFE na wysokościomierzu?",
+				"en": "What does the QFE setting on an altimeter mean?"
+			},
+			"back": {
+				"pl": "Ciśnienie na poziomie lotniska; po nastawieniu wysokościomierz wskazuje 0 na poziomie lotniska, czyli wysokość nad lotniskiem (AGL).",
+				"en": "Pressure at airfield level; with QFE set, the altimeter reads 0 at airfield level, i.e. height above the airfield (AGL)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-053",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.INSTRUMENTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest błąd opóźnienia wskazań prędkościomierza i wariometru?",
+				"en": "What is the lag error in ASI and variometer readings?"
+			},
+			"back": {
+				"pl": "Opóźnienie wskazań wynikające z bezwładności mechanizmu i czasu wyrównywania ciśnień w przewodach; przyrząd reaguje z opóźnieniem na szybkie zmiany.",
+				"en": "A delay caused by mechanical inertia and the time needed for pressures to equalise in the tubing; the instrument responds late to rapid changes."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-054",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.INSTRUMENTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego IAS jest niższe od TAS wraz ze wzrostem wysokości?",
+				"en": "Why does IAS read lower than TAS as altitude increases?"
+			},
+			"back": {
+				"pl": "Bo gęstość powietrza maleje z wysokością; przy tym samym ciśnieniu dynamicznym (IAS) rzeczywista prędkość (TAS) jest większa.",
+				"en": "Because air density decreases with altitude; for the same dynamic pressure (IAS) the true airspeed (TAS) is higher."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-055",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["AGK.INSTRUMENTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza biały łuk na prędkościomierzu szybowca z klapami?",
+				"en": "What does the white arc on the ASI of a glider with flaps indicate?"
+			},
+			"back": {
+				"pl": "Zakres prędkości dopuszczalny dla wychylonych klap (od prędkości przeciągnięcia z klapami do VFE, maksymalnej prędkości z wypuszczonymi klapami).",
+				"en": "The speed range allowed with flaps extended (from stall speed with flaps to VFE, the maximum flap-extended speed)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-056",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["AGK.AIRFRAME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza prędkość manewrowa VA?",
+				"en": "What does the manoeuvring speed VA mean?"
+			},
+			"back": {
+				"pl": "Maksymalna prędkość, przy której pełne wychylenie steru nie przekroczy dopuszczalnych przeciążeń konstrukcji; powyżej VA gwałtowne sterowanie grozi uszkodzeniem.",
+				"en": "The maximum speed at which full control deflection will not exceed the structural load limits; above VA abrupt control inputs risk damage."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-057",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.INSTRUMENTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak działa busola magnetyczna i jakie ma główne błędy?",
+				"en": "How does a magnetic compass work and what are its main errors?"
+			},
+			"back": {
+				"pl": "Igła ustawia się wzdłuż linii pola magnetycznego Ziemi. Główne błędy: dewiacja oraz błędy przyspieszeniowe i zakrętowe (skutek inklinacji pola).",
+				"en": "The needle aligns with the Earth's magnetic field. Main errors: deviation, and acceleration/turning errors (caused by magnetic dip)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-058",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.INSTRUMENTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest dewiacja busoli?",
+				"en": "What is compass deviation?"
+			},
+			"back": {
+				"pl": "Odchylenie wskazań busoli spowodowane lokalnymi polami magnetycznymi szybowca (metalowe części, instalacja elektryczna), ujęte w krzywej dewiacji.",
+				"en": "The compass error caused by the glider's own local magnetic fields (metal parts, electrical wiring), recorded in a deviation card."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-059",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.AIRFRAME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Z jakiego materiału najczęściej budowane są współczesne szybowce wyczynowe?",
+				"en": "What material are modern performance gliders most commonly built from?"
+			},
+			"back": {
+				"pl": "Z kompozytów: laminatów z włókna szklanego, węglowego i aramidowego (kevlar) wiązanych żywicą epoksydową, co daje gładkie profile i dużą wytrzymałość.",
+				"en": "From composites: glass, carbon and aramid (kevlar) fibre laminates bonded with epoxy resin, giving smooth profiles and high strength."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-060",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.AIRFRAME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego kompozytowe szybowce mają ograniczenie maksymalnej temperatury powierzchni?",
+				"en": "Why do composite gliders have a maximum surface temperature limit?"
+			},
+			"back": {
+				"pl": "Bo żywica ma temperaturę zeszklenia; przegrzanie (np. ciemny kadłub na słońcu) zmiękcza laminat i grozi trwałą deformacją. Stąd jasne, białe pokrycie.",
+				"en": "Because the resin has a glass-transition temperature; overheating (e.g. a dark fuselage in the sun) softens the laminate and risks permanent deformation. Hence the light, white finish."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-061",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.AIRFRAME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaką funkcję pełnią klapy na skrzydle szybowca wyczynowego?",
+				"en": "What is the purpose of flaps on a performance glider wing?"
+			},
+			"back": {
+				"pl": "Zmieniają wygięcie profilu: dodatnie wychylenie zwiększa siłę nośną i poprawia osiągi przy małych prędkościach (krążenie), ujemne zmniejsza opór przy dużych prędkościach przeskoku.",
+				"en": "They change the airfoil camber: positive settings increase lift and improve low-speed performance (thermalling), negative settings reduce drag at high cruise speeds."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-062",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.CONTROLS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak stery (lotki, ster wysokości, ster kierunku) odpowiadają osiom obrotu szybowca?",
+				"en": "How do the controls relate to the glider's axes of rotation?"
+			},
+			"back": {
+				"pl": "Lotki sterują przechyleniem wokół osi podłużnej, ster wysokości pochyleniem wokół osi poprzecznej, a ster kierunku odchyleniem wokół osi pionowej.",
+				"en": "Ailerons control roll about the longitudinal axis, the elevator controls pitch about the lateral axis, and the rudder controls yaw about the vertical axis."
+			},
+			"mnemonic": {
+				"pl": "Lotki-podłużna, Wysokość-poprzeczna, Kierunek-pionowa",
+				"en": "Roll-long, Pitch-lateral, Yaw-vertical"
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-063",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.AIRFRAME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest flatter (trzepotanie) i dlaczego VNE chroni przed nim?",
+				"en": "What is flutter and why does VNE protect against it?"
+			},
+			"back": {
+				"pl": "To samowzbudne, narastające drgania konstrukcji przy dużych prędkościach, mogące szybko zniszczyć płatowiec. VNE jest ustalana z marginesem poniżej prędkości wystąpienia flatteru.",
+				"en": "A self-exciting, divergent structural vibration at high speed that can rapidly destroy the airframe. VNE is set with a margin below the flutter onset speed."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-064",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.AIRFRAME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaką rolę pełni wyważenie masowe sterów?",
+				"en": "What is the role of control surface mass balancing?"
+			},
+			"back": {
+				"pl": "Przesuwa środek ciężkości steru w pobliże osi obrotu, ograniczając sprzężenie drgań giętnych i sterowych, co podnosi prędkość wystąpienia flatteru.",
+				"en": "It moves the control surface centre of gravity near its hinge axis, reducing coupling between bending and control vibrations and raising the flutter onset speed."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-065",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["AGK.LIMITATIONS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie są dopuszczalne przeciążenia dodatnie i ujemne w obwiedni obciążeń szybowca?",
+				"en": "What are the positive and negative load limits in a glider's load envelope?"
+			},
+			"back": {
+				"pl": "To maksymalne wartości współczynnika obciążenia (g), jakie konstrukcja przenosi bez trwałych odkształceń; dla szybowców kategorii U (Utility) typowo +5,3 g i -2,65 g, ze współczynnikiem bezpieczeństwa 1,5.",
+				"en": "The maximum load factors (g) the structure withstands without permanent deformation; for Utility-category gliders typically +5.3 g and -2.65 g, with a 1.5 safety factor."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-066",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.INSTRUMENTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest akcelerometr (przyrząd przeciążeń) i kiedy jest wymagany?",
+				"en": "What is an accelerometer (g-meter) and when is it required?"
+			},
+			"back": {
+				"pl": "Przyrząd wskazujący aktualne i ekstremalne (max/min) przeciążenie; wymagany w szybowcach dopuszczonych do akrobacji, by kontrolować obciążenia konstrukcji.",
+				"en": "An instrument showing current and peak (max/min) load factor; required in gliders cleared for aerobatics to monitor structural loads."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-067",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.INSTRUMENTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak działa elektroniczny wariometr i czym różni się od pneumatycznego?",
+				"en": "How does an electronic variometer work and how does it differ from a pneumatic one?"
+			},
+			"back": {
+				"pl": "Mierzy zmianę ciśnienia statycznego czujnikiem elektronicznym i przelicza ją na prędkość pionową; reaguje szybciej i pozwala na elektroniczną kompensację oraz sygnał dźwiękowy (audio).",
+				"en": "It senses static pressure change with an electronic transducer and converts it to vertical speed; it responds faster and allows electronic compensation and an audio tone."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-068",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.INSTRUMENTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Do czego służy naczynie wyrównawcze w układzie wariometru pneumatycznego?",
+				"en": "What is the purpose of the capacity flask in a pneumatic variometer system?"
+			},
+			"back": {
+				"pl": "Stanowi pojemność odniesienia, w której ciśnienie zmienia się wolniej niż statyczne; różnica przepływu przez wariometr daje wskazanie prędkości pionowej.",
+				"en": "It provides a reference volume whose pressure changes more slowly than static; the resulting flow through the variometer gives the vertical speed reading."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-069",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.INSTRUMENTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest zakrętomierz z chyłomierzem i co wskazuje kulka?",
+				"en": "What is a turn-and-slip indicator and what does the ball show?"
+			},
+			"back": {
+				"pl": "Przyrząd pokazujący prędkość kątową zakrętu (żyroskop) oraz, przez kulkę w łuku, skoordynowanie lotu: kulka w środku oznacza lot bez ślizgu.",
+				"en": "An instrument showing the rate of turn (gyro) and, via a ball in a curved tube, flight coordination: a centred ball means no slip or skid."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-070",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.INSTRUMENTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Po co stosuje się nitkę (sznurek) na owiewce szybowca?",
+				"en": "Why is a yaw string fitted on a glider canopy?"
+			},
+			"back": {
+				"pl": "To prosty wskaźnik skoordynowania lotu; nitka ustawiona prosto wzdłuż osi oznacza lot bez ślizgu, odchylona w bok sygnalizuje ślizg lub poślizg.",
+				"en": "It is a simple slip/coordination indicator; a string straight along the axis means coordinated flight, a deflected string signals a slip or skid."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-071",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.AIRFRAME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie typy podwozia spotyka się w szybowcach?",
+				"en": "What types of landing gear are found in gliders?"
+			},
+			"back": {
+				"pl": "Najczęściej pojedyncze koło główne (stałe lub chowane) z płozą lub kółkiem ogonowym; w starszych konstrukcjach płoza główna, a w szkolnych dodatkowe kółko przednie.",
+				"en": "Most commonly a single main wheel (fixed or retractable) with a tail skid or tailwheel; older designs use a main skid, and trainers may add a nose wheel."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-072",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.RELEASE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego zaczep wyciągarkowy jest umieszczony inaczej niż zaczep do holu za samolotem?",
+				"en": "Why is the winch hook positioned differently from the aerotow hook?"
+			},
+			"back": {
+				"pl": "Zaczep wyciągarkowy umieszcza się bardziej pod kadłubem (blisko CG), by siła ciągu w stromym wznoszeniu nie podrywała nosa i umożliwiała samoczynne odczepienie; zaczep holowniczy jest z przodu, w osi ciągu poziomego.",
+				"en": "The winch hook is placed further under the fuselage (near the CG) so the steep-climb force does not pitch the nose up and allows automatic back-release; the aerotow hook is at the nose, aligned with the level tow line."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-073",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.AIRFRAME"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaką funkcję pełnią uszczelnienia szczelin sterów i klap w szybowcu?",
+				"en": "What is the function of control and flap gap seals on a glider?"
+			},
+			"back": {
+				"pl": "Zamykają szczeliny między powierzchnią ruchomą a stałą, ograniczając przepływ powietrza i opór indukowany szczeliną, co poprawia doskonałość i skuteczność sterów.",
+				"en": "They close the gaps between moving and fixed surfaces, reducing airflow through the gap and gap-induced drag, improving glide performance and control effectiveness."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-074",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrót MTOM w dokumentacji szybowca?",
+				"en": "What does the abbreviation MTOM mean in glider documentation?"
+			},
+			"back": {
+				"pl": "Maximum Take-Off Mass, czyli maksymalna masa startowa - najwyższa dopuszczalna masa szybowca w chwili startu, podana w instrukcji użytkowania w locie.",
+				"en": "Maximum Take-Off Mass - the highest permissible mass of the glider at the moment of take-off, given in the flight manual."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-075",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest masa pusta szybowca i czym różni się od masy startowej?",
+				"en": "What is the empty mass of a glider and how does it differ from take-off mass?"
+			},
+			"back": {
+				"pl": "Masa pusta to masa konstrukcji z wyposażeniem stałym i nieusuwalnym balastem; masa startowa obejmuje dodatkowo pilota, balast wodny i bagaż.",
+				"en": "Empty mass is the airframe with fixed equipment and non-removable ballast; take-off mass additionally includes pilot, water ballast and baggage."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-076",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego przekroczenie maksymalnej masy startowej szybowca jest niebezpieczne?",
+				"en": "Why is exceeding the glider's maximum take-off mass dangerous?"
+			},
+			"back": {
+				"pl": "Rosną obciążenia konstrukcji, wzrasta prędkość przeciągnięcia i prędkość lądowania, pogarsza się sterowność, a dopuszczalne współczynniki obciążeń mogą zostać przekroczone.",
+				"en": "Structural loads increase, stall and landing speeds rise, controllability worsens, and permitted load factors may be exceeded."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-077",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest środek ciężkości (CG) szybowca?",
+				"en": "What is the centre of gravity (CG) of a glider?"
+			},
+			"back": {
+				"pl": "Punkt, w którym można uznać, że skupiona jest cała masa szybowca; jego położenie wzdłużne decyduje o stateczności i sterowności podłużnej.",
+				"en": "The point at which the entire mass of the glider can be considered concentrated; its longitudinal position determines pitch stability and controllability."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-078",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Względem jakiego punktu odniesienia podaje się zwykle położenie CG szybowca?",
+				"en": "Relative to which reference point is the glider's CG position usually given?"
+			},
+			"back": {
+				"pl": "Względem punktu odniesienia (datum) określonego w instrukcji, często krawędzi natarcia skrzydła; położenie wyraża się w milimetrach lub w procentach średniej cięciwy aerodynamicznej (MAC).",
+				"en": "Relative to a datum defined in the manual, often the wing leading edge; the position is expressed in millimetres or as a percentage of the mean aerodynamic chord (MAC)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-079",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrót MAC w kontekście wyważenia szybowca?",
+				"en": "What does the abbreviation MAC mean in the context of glider balance?"
+			},
+			"back": {
+				"pl": "Mean Aerodynamic Chord - średnia cięciwa aerodynamiczna; względem niej wyraża się położenie CG w procentach (np. CG na 30% MAC).",
+				"en": "Mean Aerodynamic Chord; the CG position is expressed as a percentage of it (e.g. CG at 30% MAC)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-080",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak oblicza się moment w bilansie wyważenia szybowca?",
+				"en": "How is moment calculated in a glider's balance computation?"
+			},
+			"back": {
+				"pl": "Moment = masa x ramię (odległość od punktu odniesienia). Sumę momentów dzieli się przez sumę mas, aby otrzymać położenie CG.",
+				"en": "Moment = mass x arm (distance from the datum). The sum of moments is divided by the total mass to obtain the CG position."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-081",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak na sterowność podłużną wpływa zbyt przednie położenie CG?",
+				"en": "How does an excessively forward CG affect longitudinal control?"
+			},
+			"back": {
+				"pl": "Szybowiec staje się bardziej stateczny, ale ciężki na drążku; rosną siły do ściągania, trudniejsze jest wyrównanie i może zabraknąć skuteczności steru wysokości do podrównania.",
+				"en": "The glider becomes more stable but heavy on the stick; pull forces increase, the round-out is harder and elevator authority may be insufficient to flare."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-082",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Po co przy lekkim pilocie montuje się w szybowcu balast wyważający (trim ballast)?",
+				"en": "Why is trim ballast fitted in a glider for a light pilot?"
+			},
+			"back": {
+				"pl": "Aby utrzymać CG w dozwolonym zakresie i spełnić minimalne obciążenie kabiny; bez niego CG mogłoby być zbyt tylne, co grozi utratą stateczności.",
+				"en": "To keep the CG within the permitted range and meet the minimum cockpit load; without it the CG could be too far aft, risking loss of stability."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-083",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest minimalne obciążenie kabiny (minimum cockpit load) i gdzie je znajdziesz?",
+				"en": "What is the minimum cockpit load and where do you find it?"
+			},
+			"back": {
+				"pl": "Najmniejsza masa pilota z wyposażeniem dopuszczona do lotu; podana w instrukcji użytkowania w locie i często na tabliczce w kabinie. Poniżej niej trzeba dodać balast.",
+				"en": "The smallest pilot mass (with equipment) permitted for flight; given in the flight manual and often on a cockpit placard. Below it, ballast must be added."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-084",
+			"type": "flashcard",
+			"microSkill": "unit_conversion",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak przeliczyć ramię 1,2 m na milimetry przy obliczaniu momentu?",
+				"en": "How do you convert an arm of 1.2 m to millimetres when calculating moment?"
+			},
+			"back": {
+				"pl": "1,2 m = 1200 mm. Spójność jednostek (np. kg i mm) w całym obliczeniu jest kluczowa, aby moment był poprawny.",
+				"en": "1.2 m = 1200 mm. Unit consistency (e.g. kg and mm) throughout the calculation is essential for a correct moment."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-085",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak masa wpływa na prędkość przeciągnięcia szybowca?",
+				"en": "How does mass affect a glider's stall speed?"
+			},
+			"back": {
+				"pl": "Prędkość przeciągnięcia rośnie proporcjonalnie do pierwiastka ze stosunku mas - cięższy szybowiec przeciąga się przy wyższej prędkości.",
+				"en": "Stall speed increases in proportion to the square root of the mass ratio - a heavier glider stalls at a higher speed."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-086",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego cięższy (dociążony) szybowiec ma korzystniejszą prędkość przeskoku?",
+				"en": "Why does a heavier (ballasted) glider have a more favourable inter-thermal cruise speed?"
+			},
+			"back": {
+				"pl": "Większa masa przesuwa biegunową prędkości w stronę wyższych prędkości lotu przy zachowaniu doskonałości, co poprawia przeloty pod wiatr i w silnej termice. Dlatego stosuje się balast wodny.",
+				"en": "Greater mass shifts the speed polar towards higher airspeeds at the same glide ratio, improving cross-country speed into wind and in strong thermals. Hence water ballast is used."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-087",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czy maksymalna doskonałość szybowca zmienia się po dociążeniu balastem?",
+				"en": "Does a glider's maximum glide ratio change when loaded with ballast?"
+			},
+			"back": {
+				"pl": "Nie - wartość najlepszej doskonałości pozostaje praktycznie taka sama; zmienia się jedynie prędkość, przy której się ją osiąga (rośnie).",
+				"en": "No - the best glide ratio value stays practically the same; only the speed at which it is achieved changes (it increases)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-088",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co trzeba sprawdzić przed lotem szybowcem dwumiejscowym w kwestii wyważenia?",
+				"en": "What must be checked before a two-seat glider flight regarding balance?"
+			},
+			"back": {
+				"pl": "Czy masa każdego z pilotów mieści się między minimum a maksimum obciążenia siedzeń oraz czy CG przy danym rozkładzie mas pozostaje w zakresie z instrukcji.",
+				"en": "Whether each pilot's mass is between the minimum and maximum seat loads and whether the CG, for that mass distribution, stays within the manual's range."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-089",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak odczytać dopuszczalny zakres CG z wykresu obwiedni wyważenia (CG envelope)?",
+				"en": "How do you read the permitted CG range from a CG envelope chart?"
+			},
+			"back": {
+				"pl": "Na wykresie masa-moment (lub masa-położenie CG) punkt obliczonej masy i CG musi leżeć wewnątrz obwiedni; punkt poza nią oznacza lot niedozwolony.",
+				"en": "On the mass-moment (or mass-CG) chart, the computed mass and CG point must lie inside the envelope; a point outside it means flight is not permitted."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-090",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak zmienia się położenie CG szybowca w locie podczas zrzutu balastu wodnego ze skrzydeł?",
+				"en": "How does a glider's CG shift during a wing water-ballast dump in flight?"
+			},
+			"back": {
+				"pl": "Balast skrzydłowy leży blisko CG, więc zrzut zmienia głównie masę całkowitą; podłużne położenie CG zmienia się nieznacznie (chyba że jest też balast ogonowy).",
+				"en": "Wing ballast sits close to the CG, so dumping mainly changes total mass; the longitudinal CG shifts little (unless tail ballast is also present)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-091",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Do czego służy balast wodny w statecznika poziomym (tail water ballast)?",
+				"en": "What is the purpose of tail water ballast in the horizontal stabiliser?"
+			},
+			"back": {
+				"pl": "Pozwala utrzymać optymalne położenie CG mimo dużego balastu skrzydłowego, zachowując zwrotność w kominach bez nadmiernej stateczności.",
+				"en": "It keeps the CG at the optimum position despite heavy wing ballast, preserving thermalling agility without excessive stability."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-092",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co zawiera arkusz ważenia (weighing report) w dokumentacji szybowca?",
+				"en": "What does the weighing report contain in a glider's documentation?"
+			},
+			"back": {
+				"pl": "Masę pustą szybowca, położenie CG pustego, listę wyposażenia oraz datę ważenia; jest podstawą obliczeń przedlotowych. Po istotnych zmianach szybowiec waży się ponownie.",
+				"en": "The empty mass, the empty CG position, the equipment list and the weighing date; it is the basis for pre-flight calculations. After significant changes the glider is re-weighed."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-093",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego mokry, oblodzony lub zabłocony szybowiec może mieć zmienione wyważenie?",
+				"en": "Why can a wet, iced or muddy glider have altered balance?"
+			},
+			"back": {
+				"pl": "Woda, lód lub błoto to dodatkowa, nierównomiernie rozłożona masa, która zwiększa masę całkowitą i może przesunąć CG; przed startem powierzchnie trzeba oczyścić.",
+				"en": "Water, ice or mud is extra, unevenly distributed mass that raises total mass and can shift the CG; surfaces must be cleaned before take-off."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-094",
+			"type": "flashcard",
+			"microSkill": "unit_conversion",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Ile waży 1 litr wody balastowej i dlaczego to ważne dla obliczeń masy?",
+				"en": "How much does 1 litre of ballast water weigh and why does it matter for mass calculations?"
+			},
+			"back": {
+				"pl": "Około 1 kg (1 litr = 1 kg dla wody). Pozwala to szybko przeliczyć pojemność zbiorników w litrach na dodatkową masę w kilogramach.",
+				"en": "About 1 kg (1 litre = 1 kg for water). This lets you quickly convert tank capacity in litres into added mass in kilograms."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-095",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak masa wpływa na obciążenie powierzchni nośnej (wing loading) szybowca?",
+				"en": "How does mass affect a glider's wing loading?"
+			},
+			"back": {
+				"pl": "Obciążenie powierzchni = masa / powierzchnia skrzydła. Większa masa oznacza wyższe wing loading, co podnosi prędkości lotu i poprawia osiągi w szybkim locie.",
+				"en": "Wing loading = mass / wing area. Greater mass means higher wing loading, which raises flight speeds and improves fast-flight performance."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-agk-gen-096",
+			"type": "flashcard",
+			"microSkill": "regulation",
+			"loIds": ["AGK.WEIGHTBALANCE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Kto odpowiada za prawidłowe wyważenie szybowca i nieprzekroczenie dopuszczalnej masy przed startem?",
+				"en": "Who is responsible for ensuring the glider is correctly balanced and within mass limits before take-off?"
+			},
+			"back": {
+				"pl": "Pilot dowódca (PIC) - to jego obowiązek sprawdzić obliczenia masy i wyważenia oraz potwierdzić zgodność z instrukcją użytkowania w locie.",
+				"en": "The pilot in command (PIC) - it is their duty to check the mass and balance computation and confirm compliance with the flight manual."
+			},
+			"source": "generated:spl"
 		}
 	]
 }

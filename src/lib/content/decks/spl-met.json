@@ -868,6 +868,1762 @@
 				}
 			],
 			"source": "authored:spl"
+		},
+		{
+			"id": "spl-met-gen-001",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["MET.ATMOSPHERE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co opisuje suchoadiabatyczny gradient temperatury (DALR) i ile wynosi?",
+				"en": "What does the dry adiabatic lapse rate (DALR) describe and what is its value?"
+			},
+			"back": {
+				"pl": "Tempo ochładzania nienasyconej (suchej) paczki powietrza unoszącej się adiabatycznie. Wynosi około 1°C na 100 m wysokości (ok. 9,8°C/km).",
+				"en": "The rate at which an unsaturated (dry) air parcel cools as it rises adiabatically. It is about 1°C per 100 m (approx. 9.8°C/km)."
+			},
+			"mnemonic": {
+				"pl": "Sucho = 1 stopień na 100 m.",
+				"en": "Dry = 1 degree per 100 m."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-002",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["MET.ATMOSPHERE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego wilgotnoadiabatyczny gradient (SALR) jest mniejszy niż suchoadiabatyczny?",
+				"en": "Why is the saturated adiabatic lapse rate (SALR) smaller than the dry one?"
+			},
+			"back": {
+				"pl": "Podczas wznoszenia nasyconego powietrza para wodna kondensuje i uwalnia ciepło utajone, które częściowo ogrzewa paczkę. Dlatego SALR wynosi średnio ok. 0,6°C/100 m, mniej niż 1°C/100 m.",
+				"en": "As saturated air rises, water vapour condenses and releases latent heat that partly warms the parcel. Therefore the SALR averages about 0.6°C/100 m, less than 1°C/100 m."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-003",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["MET.CLOUDS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest poziom kondensacji konwekcyjnej (CCL) i jak szacuje się jego wysokość z różnicy temperatury i punktu rosy?",
+				"en": "What is the convective condensation level (CCL) and how is its height estimated from the temperature/dew point spread?"
+			},
+			"back": {
+				"pl": "Wysokość, na której wznoszące się termiczne powietrze osiąga nasycenie i tworzy się podstawa Cu. Reguła kciuka: wysokość [m] = (T - Td) x 125, gdzie T i Td są przy ziemi w °C.",
+				"en": "The height at which rising thermal air becomes saturated and the cumulus base forms. Rule of thumb: height [m] = (T - Td) x 125, with T and Td at the surface in °C."
+			},
+			"mnemonic": {
+				"pl": "Spread razy 125 = podstawa chmury w metrach.",
+				"en": "Spread times 125 = cloud base in metres."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-004",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.ATMOSPHERE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrót QNH i do czego służy?",
+				"en": "What does the abbreviation QNH mean and what is it used for?"
+			},
+			"back": {
+				"pl": "QNH to ciśnienie zredukowane do poziomu morza wg atmosfery wzorcowej. Nastawione na wysokościomierzu pokazuje wysokość nad poziomem morza (AMSL); na lotnisku wskazuje jego elewację.",
+				"en": "QNH is the pressure reduced to mean sea level using the standard atmosphere. Set on the altimeter it shows altitude above mean sea level (AMSL); on the ground it reads the aerodrome elevation."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-005",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.ATMOSPHERE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym różni się QFE od QNH?",
+				"en": "How does QFE differ from QNH?"
+			},
+			"back": {
+				"pl": "QFE to ciśnienie na poziomie elewacji lotniska. Nastawione na wysokościomierzu daje wskazanie 0 na ziemi i pokazuje wysokość nad lotniskiem (height). QNH pokazuje wysokość AMSL.",
+				"en": "QFE is the pressure at aerodrome elevation. Set on the altimeter it reads zero on the ground and shows height above the aerodrome. QNH shows altitude AMSL."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-006",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["MET.ATMOSPHERE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie jest wzorcowe ciśnienie ISA na poziomie morza i jak szybko ciśnienie spada przy ziemi?",
+				"en": "In ISA, what is the standard sea-level pressure and how fast does pressure fall near the surface?"
+			},
+			"back": {
+				"pl": "Ciśnienie wzorcowe to 1013,25 hPa. Blisko poziomu morza ciśnienie spada o ok. 1 hPa na każde 8 m (ok. 27 ft) wzrostu wysokości.",
+				"en": "Standard pressure is 1013.25 hPa. Near sea level pressure falls about 1 hPa per 8 m (about 27 ft) of height gain."
+			},
+			"mnemonic": {
+				"pl": "1 hPa na 8 metrów przy ziemi.",
+				"en": "1 hPa per 8 metres near the surface."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-007",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.WIND"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak wieje wiatr względem izobar przy gruncie na półkuli północnej (z uwzględnieniem tarcia)?",
+				"en": "How does surface wind blow relative to the isobars in the Northern Hemisphere (with friction)?"
+			},
+			"back": {
+				"pl": "Tarcie odchyla wiatr od kierunku izobar do wnętrza niżu. Wiatr wieje skośnie przez izobary w stronę niskiego ciśnienia, o ok. 10-30° nad lądem, mniej nad morzem.",
+				"en": "Friction deflects the wind across the isobars toward the low. The wind blows obliquely across the isobars toward lower pressure, by about 10-30° over land and less over sea."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-008",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["MET.WIND"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Sformułuj prawo Buys-Ballota dla półkuli północnej.",
+				"en": "State Buys Ballot's law for the Northern Hemisphere."
+			},
+			"back": {
+				"pl": "Stojąc tyłem do wiatru na półkuli północnej, niskie ciśnienie masz po lewej ręce, a wysokie po prawej.",
+				"en": "With your back to the wind in the Northern Hemisphere, low pressure is on your left and high pressure on your right."
+			},
+			"mnemonic": {
+				"pl": "Tyłem do wiatru: niż po lewej.",
+				"en": "Back to the wind: low on the left."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-009",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.HAZARDS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego wysokościomierz zawyża wysokość przy locie z obszaru wyższego do niższego ciśnienia bez przestawienia nastawy?",
+				"en": "Why does the altimeter over-read when flying from higher to lower pressure without resetting the subscale?"
+			},
+			"back": {
+				"pl": "Wysokościomierz odnosi się do nastawionego ciśnienia. Lecąc w rejon niższego ciśnienia, faktyczne ciśnienie maleje, więc przyrząd traktuje to jak wznoszenie i pokazuje wysokość większą niż rzeczywista, czyli zawyża.",
+				"en": "The altimeter references the set pressure. Flying into lower pressure, the actual pressure drops, so the instrument reads it as a climb and indicates more than the true altitude, i.e. over-reads."
+			},
+			"mnemonic": {
+				"pl": "Z wysokiego do niskiego: lecisz nisko, choć przyrząd kłamie wysoko.",
+				"en": "High to low, look out below."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-010",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.HAZARDS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest izoterma 0°C (freezing level) i dlaczego jest istotna dla bezpieczeństwa lotu szybowca?",
+				"en": "What is the freezing level and why does it matter for glider flight safety?"
+			},
+			"back": {
+				"pl": "To wysokość, na której temperatura spada do 0°C. Powyżej niej, w chmurach, istnieje ryzyko oblodzenia płatowca; wyznacza dolną granicę strefy oblodzenia.",
+				"en": "It is the height at which the temperature falls to 0°C. Above it, in cloud, there is a risk of airframe icing; it marks the lower boundary of the icing zone."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-011",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.VISIBILITY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie warunki sprzyjają powstaniu mgły radiacyjnej?",
+				"en": "What conditions favour the formation of radiation fog?"
+			},
+			"back": {
+				"pl": "Bezchmurna noc, słaby wiatr (1-3 kt), duża wilgotność i wychłodzenie podłoża przez wypromieniowanie. Powstaje nad lądem, najczęściej nad ranem, i rozprasza się po nagrzaniu słońcem.",
+				"en": "Clear night, light wind (1-3 kt), high humidity and ground cooling by radiation. It forms over land, usually toward dawn, and dissipates after solar heating."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-012",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.VISIBILITY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest mgła adwekcyjna i kiedy występuje?",
+				"en": "What is advection fog and when does it occur?"
+			},
+			"back": {
+				"pl": "Powstaje, gdy ciepłe, wilgotne powietrze przemieszcza się nad chłodniejsze podłoże i wychładza się poniżej punktu rosy. W odróżnieniu od radiacyjnej może utrzymywać się przy umiarkowanym wietrze.",
+				"en": "It forms when warm, moist air moves over a cooler surface and cools below its dew point. Unlike radiation fog it can persist in moderate wind."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-013",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.HAZARDS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest uskok wiatru (wind shear) i dlaczego jest groźny w fazie podejścia i lądowania szybowca?",
+				"en": "What is wind shear and why is it dangerous during a glider's approach and landing?"
+			},
+			"back": {
+				"pl": "To nagła zmiana prędkości lub kierunku wiatru na małej odległości. Może gwałtownie zmienić prędkość względem powietrza, prowadząc do utraty prędkości i przeciągnięcia blisko ziemi.",
+				"en": "It is a sudden change in wind speed or direction over a short distance. It can abruptly change airspeed, leading to loss of speed and a stall close to the ground."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-014",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.HAZARDS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest rotor fali górskiej i jakie zagrożenie stwarza dla szybowca?",
+				"en": "What is a mountain wave rotor and what hazard does it pose to a glider?"
+			},
+			"back": {
+				"pl": "Rotor to silnie turbulentny, wirujący przepływ pod grzbietami fali zawietrznej, zwykle przy chmurze rotorowej. Powoduje gwałtowne turbulencje i może przeciążyć konstrukcję lub utrudnić sterowanie.",
+				"en": "The rotor is a strongly turbulent, rolling flow beneath the crests of a lee wave, usually marked by rotor cloud. It causes severe turbulence and can overstress the airframe or make control difficult."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-015",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.LIFT_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaki jest mechanizm powstawania fali zawietrznej (mountain wave)?",
+				"en": "What is the mechanism of mountain (lee) wave formation?"
+			},
+			"back": {
+				"pl": "Stabilne powietrze przepływające w przybliżeniu prostopadle do grzbietu, przy odpowiednio silnym wietrze rosnącym z wysokością, tworzy stojące fale po stronie zawietrznej. Ich wierzchołki znaczą soczewkowate chmury Altocumulus lenticularis.",
+				"en": "Stable air flowing roughly perpendicular to a ridge with sufficiently strong wind increasing with height sets up standing waves downwind. Their crests are marked by lens-shaped Altocumulus lenticularis."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-016",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.CLOUDS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza chmura Altocumulus lenticularis dla pilota szybowcowego?",
+				"en": "What does an Altocumulus lenticularis cloud signify to a glider pilot?"
+			},
+			"back": {
+				"pl": "Soczewkowata, nieruchoma chmura znacząca wierzchołek fali zawietrznej. Wskazuje stojącą falę górską z silnymi noszeniami po stronie nawietrznej oraz duszeniami i turbulencją w innych miejscach.",
+				"en": "A stationary lens-shaped cloud marking a lee wave crest. It indicates a standing mountain wave with strong lift on the upwind side and sink and turbulence elsewhere."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-017",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["MET.THERMALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest stabilność i niestabilność atmosfery w kontekście tworzenia termiki?",
+				"en": "What are atmospheric stability and instability in the context of thermal formation?"
+			},
+			"back": {
+				"pl": "Atmosfera jest niestabilna, gdy rzeczywisty gradient temperatury jest większy od adiabatycznego: paczka powietrza wznosi się dalej, co sprzyja termice. Stabilna, gdy gradient jest mniejszy: ruchy pionowe są tłumione.",
+				"en": "The atmosphere is unstable when the actual lapse rate exceeds the adiabatic one: a parcel keeps rising, favouring thermals. It is stable when the lapse rate is smaller: vertical motions are damped."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-018",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.WIND"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest gradient wiatru w warstwie przyziemnej i jak wpływa na lądowanie pod wiatr?",
+				"en": "What is the surface wind gradient and how does it affect landing into wind?"
+			},
+			"back": {
+				"pl": "To spadek prędkości wiatru z wysokością wskutek tarcia o podłoże. Schodząc do lądowania, szybowiec traci składową czołową wiatru, co zmniejsza prędkość względem powietrza - należy zwiększyć prędkość podejścia.",
+				"en": "It is the decrease of wind speed with height due to surface friction. On the landing descent the glider loses headwind component, reducing airspeed, so the approach speed should be increased."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-019",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.HAZARDS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie zagrożenia dla szybowca niesie front okluzji?",
+				"en": "What hazards does an occluded front bring for a glider?"
+			},
+			"back": {
+				"pl": "Okluzja łączy cechy frontu ciepłego i chłodnego: rozległe zachmurzenie warstwowe, długotrwałe opady, niskie podstawy chmur i ograniczona widzialność, a w okluzji typu chłodnego także chmury kłębiaste z turbulencją.",
+				"en": "An occlusion combines warm and cold front features: extensive layered cloud, prolonged precipitation, low cloud bases and reduced visibility, and in a cold-type occlusion also convective cloud with turbulence."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-020",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.WIND"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest bryza morska i kiedy powstaje?",
+				"en": "What is a sea breeze and when does it form?"
+			},
+			"back": {
+				"pl": "Wiatr lokalny wiejący w dzień znad morza w głąb lądu. Powstaje, gdy ląd nagrzewa się szybciej niż woda, tworząc nad lądem niż termiczny. Front bryzy bywa wykorzystywany jako źródło noszeń.",
+				"en": "A local wind blowing from sea to land during the day. It forms because land heats faster than water, creating a thermal low over land. The sea-breeze front can be used as a source of lift."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-021",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.PRODUCTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza w METAR grupa CAVOK i jakie warunki musi spełniać?",
+				"en": "What does CAVOK mean in a METAR and what conditions must be met?"
+			},
+			"back": {
+				"pl": "CAVOK (Ceiling And Visibility OK): widzialność co najmniej 10 km, brak chmur poniżej 5000 ft (lub MSA) i brak Cb/TCu oraz brak zjawisk istotnych dla lotnictwa.",
+				"en": "CAVOK (Ceiling And Visibility OK): visibility at least 10 km, no cloud below 5000 ft (or MSA) and no Cb/TCu, and no significant weather."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-022",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.HAZARDS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak rozpoznać turbulencję w czystym powietrzu (CAT) i czym grozi?",
+				"en": "How is clear air turbulence (CAT) recognised and what does it threaten?"
+			},
+			"back": {
+				"pl": "CAT występuje bez chmur, często w pobliżu prądu strumieniowego i silnego uskoku wiatru na wysokości. Jest niewidoczna, dlatego niebezpieczna; powoduje nagłe, silne wstrząsy bez ostrzeżenia wizualnego.",
+				"en": "CAT occurs without cloud, often near the jet stream and strong wind shear at altitude. It is invisible and therefore dangerous, causing sudden severe jolts with no visual warning."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-023",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["MET.ATMOSPHERE"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest punkt rosy i jak jego bliskość do temperatury powietrza wpływa na ryzyko mgły?",
+				"en": "What is the dew point and how does its closeness to air temperature affect fog risk?"
+			},
+			"back": {
+				"pl": "Punkt rosy to temperatura, do której trzeba ochłodzić powietrze przy stałym ciśnieniu, by nastąpiło nasycenie. Mała różnica T - Td (spread) oznacza wysoką wilgotność i duże ryzyko mgły lub niskich chmur.",
+				"en": "The dew point is the temperature to which air must be cooled at constant pressure to reach saturation. A small T - Td spread means high humidity and a high risk of fog or low cloud."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-024",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.HAZARDS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie zagrożenie dla szybowca stanowią prądy zstępujące (downburst) związane z Cb?",
+				"en": "What hazard do downbursts associated with Cb pose to a glider?"
+			},
+			"back": {
+				"pl": "Downburst to gwałtowny prąd zstępujący uderzający w ziemię i rozchodzący się poziomo, dający silne, zmienne wiatry i front porywów (gust front). Blisko ziemi grozi to utratą sterowności i niekontrolowanym opadaniem.",
+				"en": "A downburst is a violent downdraught hitting the ground and spreading horizontally, producing strong, shifting winds and a gust front. Near the ground it can cause loss of control and uncontrolled descent."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-025",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.HAZARDS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego oblodzenie szybowca jest szczególnie groźne i kiedy najczęściej występuje?",
+				"en": "Why is glider icing especially dangerous and when does it most often occur?"
+			},
+			"back": {
+				"pl": "Lód zmienia profil płata, zwiększa masę i opór oraz podnosi prędkość przeciągnięcia. Występuje w chmurach i opadach przy temperaturze 0°C i niższej, gdy obecna jest woda przechłodzona; szybowce zwykle nie mają instalacji odladzających.",
+				"en": "Ice alters the wing profile, adds mass and drag, and raises the stall speed. It occurs in cloud and precipitation at temperatures of 0°C and below where supercooled water is present; gliders usually have no de-icing systems."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-026",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["MET.THERMALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest gradient suchoadiabatyczny i jaka jest jego wartość?",
+				"en": "What is the dry adiabatic lapse rate and what is its value?"
+			},
+			"back": {
+				"pl": "To tempo ochładzania niewysyconej (suchej) cząstki powietrza unoszącej się w atmosferze. Wynosi około 1°C na 100 m wysokości.",
+				"en": "The rate at which an unsaturated (dry) rising air parcel cools with altitude. It is about 1°C per 100 m."
+			},
+			"mnemonic": {
+				"pl": "Sucho = 1 stopień na 100 m.",
+				"en": "Dry = 1 degree per 100 m."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-027",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["MET.THERMALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka jest typowa wartość gradientu wilgotnoadiabatycznego?",
+				"en": "What is the typical value of the saturated (moist) adiabatic lapse rate?"
+			},
+			"back": {
+				"pl": "Około 0,6°C na 100 m. Jest mniejszy niż suchoadiabatyczny, ponieważ skraplanie pary wodnej uwalnia ciepło utajone, spowalniając ochładzanie.",
+				"en": "About 0.6°C per 100 m. It is smaller than the dry rate because condensation releases latent heat, slowing the cooling."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-028",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.THERMALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest poziom kondensacji (poziom podstawy chmur cumulus)?",
+				"en": "What is the condensation level (cumulus cloud base level)?"
+			},
+			"back": {
+				"pl": "Wysokość, na której wznosząca się cząstka termiczna osiąga punkt rosy i para wodna zaczyna się skraplać, tworząc podstawę chmury cumulus.",
+				"en": "The altitude at which a rising thermal parcel reaches its dew point and water vapour starts to condense, forming the cumulus cloud base."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-029",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["MET.THERMALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak orientacyjnie oszacować wysokość podstawy chmur cumulus na podstawie temperatury i punktu rosy przy ziemi?",
+				"en": "How can the cumulus cloud base be roughly estimated from surface temperature and dew point?"
+			},
+			"back": {
+				"pl": "Podstawa ≈ 125 m na każdy 1°C różnicy między temperaturą a punktem rosy przy ziemi (rozpiętość temperatura-punkt rosy razy 125 m).",
+				"en": "Base ≈ 125 m for every 1°C of spread between surface temperature and dew point (temperature-dew point spread times 125 m)."
+			},
+			"mnemonic": {
+				"pl": "Spread × 125 m.",
+				"en": "Spread × 125 m."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-030",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.THERMALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest wyzwalacz termiki i jak się objawia?",
+				"en": "What is a thermal trigger and how does it manifest?"
+			},
+			"back": {
+				"pl": "Termika startuje, gdy ogrzane przy ziemi powietrze oderwie się od podłoża, często przy lokalnej przeszkodzie lub zmianie rodzaju podłoża. Objawia się jako oderwany pęcherz (bąbel) ciepłego powietrza.",
+				"en": "A thermal starts when air heated at the ground detaches, often at a local obstacle or change in surface. It manifests as a detached bubble of warm air."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-031",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.THERMALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego ciemne, suche pola (np. zaorana ziemia) są lepszymi źródłami termiki niż lasy i zbiorniki wodne?",
+				"en": "Why are dark, dry fields (e.g. ploughed soil) better thermal sources than forests and water bodies?"
+			},
+			"back": {
+				"pl": "Mają niższą pojemność cieplną i niskie albedo, więc powierzchnia szybciej się nagrzewa i intensywniej oddaje ciepło powietrzu. Woda i las nagrzewają się wolniej i magazynują wilgoć.",
+				"en": "They have lower heat capacity and low albedo, so the surface heats up faster and transfers more heat to the air. Water and forest heat slowly and retain moisture."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-032",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.THERMALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym charakteryzuje się ulica termiczna (cloud street)?",
+				"en": "What characterises a thermal/cloud street?"
+			},
+			"back": {
+				"pl": "To rząd cumulusów ustawionych równolegle do wiatru, pod którymi ciągną się pasma noszeń. Powstaje przy umiarkowanym, stałym wietrze i konwekcji ograniczonej inwersją od góry.",
+				"en": "A line of cumulus aligned with the wind, marking continuous bands of lift. It forms in moderate, steady wind with convection capped by an inversion above."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-033",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.THERMALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak wiatr wpływa na kształt komina termicznego?",
+				"en": "How does wind affect the shape of a thermal column?"
+			},
+			"back": {
+				"pl": "Wiatr pochyla komin z wysokością, przesuwając noszenie zgodnie z kierunkiem wiatru. Im silniejszy wiatr, tym większe odchylenie i tym trudniej utrzymać się w kominie.",
+				"en": "Wind tilts the column downwind with altitude, shifting the lift in the wind direction. The stronger the wind, the greater the drift and the harder it is to stay centred."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-034",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.THERMALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest cykl (pulsacja) termiki?",
+				"en": "What is a thermal cycle (pulsing)?"
+			},
+			"back": {
+				"pl": "Termika nad danym źródłem nie jest ciągła, lecz uwalnia się porcjami: ciepło gromadzi się, odrywa jako bąbel, po czym następuje przerwa na ponowne nagrzanie podłoża.",
+				"en": "Thermals over a source are not continuous but release in batches: heat accumulates, detaches as a bubble, then a pause follows while the surface reheats."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-035",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.THERMALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego termika jest zwykle najsilniejsza wczesnym popołudniem?",
+				"en": "Why is thermal activity usually strongest in the early afternoon?"
+			},
+			"back": {
+				"pl": "Maksimum nasłonecznienia i nagromadzonego ciepła podłoża wypada po południowej kulminacji Słońca, gdy powierzchnia jest najcieplejsza, co daje największy kontrast temperatur.",
+				"en": "Peak insolation and accumulated ground heat occur after solar noon, when the surface is warmest, giving the greatest temperature contrast."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-036",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.THERMALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest warstwa graniczna (konwekcyjna) i jak wyznacza pułap termiki?",
+				"en": "What is the convective boundary layer and how does it set the thermal ceiling?"
+			},
+			"back": {
+				"pl": "To warstwa atmosfery mieszana przez konwekcję od ziemi do podstawy inwersji lub poziomu kondensacji. Jej górna granica wyznacza maksymalny pułap noszeń termicznych.",
+				"en": "The atmospheric layer mixed by convection from the ground up to an inversion or the condensation level. Its top sets the maximum height of thermal lift."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-037",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.THERMALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza chwiejność (niestabilność) atmosfery dla rozwoju termiki?",
+				"en": "What does atmospheric instability mean for thermal development?"
+			},
+			"back": {
+				"pl": "Gdy rzeczywisty gradient temperatury jest większy od adiabatycznego, uniesiona cząstka pozostaje cieplejsza od otoczenia i wznosi się dalej - sprzyja to silnej termice.",
+				"en": "When the actual lapse rate exceeds the adiabatic rate, a lifted parcel stays warmer than its surroundings and keeps rising, favouring strong thermals."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-038",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.THERMALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest diabeł pyłowy (trąba termiczna) i co sygnalizuje pilotowi szybowca?",
+				"en": "What is a dust devil and what does it signal to a glider pilot?"
+			},
+			"back": {
+				"pl": "To widoczny, wirujący słup pyłu znaczący silne, oderwane noszenie termiczne przy ziemi w upalny, słoneczny dzień - wskaźnik aktywnego źródła termiki.",
+				"en": "A visible rotating column of dust marking strong, detaching surface thermal lift on a hot sunny day - an indicator of an active thermal source."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-039",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.LIFT_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest noszenie falowe (fala orograficzna) i gdzie powstaje?",
+				"en": "What is wave lift (lee/mountain wave) and where does it form?"
+			},
+			"back": {
+				"pl": "To stojące fale powietrza powstające po zawietrznej stronie gór przy stabilnym, silnym wietrze prostopadłym do grzbietu. Daje gładkie, bardzo wysokie noszenie.",
+				"en": "Standing atmospheric waves forming on the lee side of mountains in stable, strong wind perpendicular to the ridge. It provides smooth, very high lift."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-040",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.LIFT_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka chmura jest charakterystycznym wskaźnikiem fali orograficznej?",
+				"en": "Which cloud is the characteristic indicator of mountain wave?"
+			},
+			"back": {
+				"pl": "Chmura soczewkowata (lenticularis) - gładka, soczewkowata, niemal nieruchoma, stojąca na szczycie fali mimo silnego wiatru.",
+				"en": "The lenticular cloud (lenticularis) - smooth, lens-shaped, almost stationary, standing at the crest of the wave despite strong wind."
+			},
+			"mnemonic": {
+				"pl": "Soczewka stoi - fala jest.",
+				"en": "Lens stands still - wave is there."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-041",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.LIFT_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest rotor pod falą orograficzną i dlaczego jest niebezpieczny?",
+				"en": "What is the rotor beneath a mountain wave and why is it dangerous?"
+			},
+			"back": {
+				"pl": "To silnie turbulentny, wirujący przepływ pod grzbietem fali, po zawietrznej stronie gór. Groźny ze względu na gwałtowną turbulencję mogącą uszkodzić szybowiec.",
+				"en": "A strongly turbulent, rotating flow below the wave crest on the lee side of the mountains. Dangerous due to violent turbulence that can damage a glider."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-042",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.LIFT_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest konwergencja jako źródło noszenia dla szybowca?",
+				"en": "What is convergence as a source of lift for a glider?"
+			},
+			"back": {
+				"pl": "To zbieżność dwóch mas powietrza (np. bryzy i wiatru ogólnego), która wymusza ruch wstępujący wzdłuż linii styku, dając pasma noszenia często znaczone rzędem chmur.",
+				"en": "The meeting of two air masses (e.g. a sea breeze and the general wind) forcing upward motion along the boundary, giving bands of lift often marked by a cloud line."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-043",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.LIFT_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Na czym polega noszenie frontowe (przy froncie chłodnym) i jak różni się od termiki?",
+				"en": "What is frontal lift (along a cold front) and how does it differ from thermal lift?"
+			},
+			"back": {
+				"pl": "Front chłodny podsuwa się pod cieplejsze powietrze, wymuszając jego wznoszenie wzdłuż linii frontu. To wymuszone uniesienie dynamiczne, niezależne od nasłonecznienia, w odróżnieniu od konwekcji termicznej.",
+				"en": "A cold front wedges under warmer air, forcing it to rise along the frontal line. This is forced dynamic lift independent of insolation, unlike thermal convection."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-044",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.LIFT_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest bryza morska i jak tworzy front bryzowy wykorzystywany w szybownictwie?",
+				"en": "What is a sea breeze and how does it create a sea-breeze front used in gliding?"
+			},
+			"back": {
+				"pl": "W dzień ląd nagrzewa się szybciej niż morze, ciepłe powietrze unosi się, a chłodniejsze powietrze znad morza napływa w głąb lądu. Granica jego natarcia tworzy front bryzowy z liniowym noszeniem.",
+				"en": "By day the land heats faster than the sea, warm air rises and cooler sea air flows inland. Its leading edge forms a sea-breeze front with linear lift."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-045",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.LIFT_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jakie warunki wiatrowe sprzyjają powstaniu silnej fali orograficznej?",
+				"en": "Which wind conditions favour formation of strong mountain wave?"
+			},
+			"back": {
+				"pl": "Wiatr silny (zwykle ponad 30-40 km/h), w miarę prostopadły do grzbietu i rosnący z wysokością, przy stabilnej warstwie powietrza ponad grzbietem.",
+				"en": "Strong wind (typically over 30-40 km/h), roughly perpendicular to the ridge and increasing with height, with a stable layer above the ridge."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-046",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.LIFT_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak rozpoznać noszenie konwergencyjne na podstawie chmur?",
+				"en": "How can convergence lift be recognised from clouds?"
+			},
+			"back": {
+				"pl": "Wzdłuż linii konwergencji ustawia się długi, prosty rząd cumulusów, często o wyraźniejszym, ciemniejszym rozwoju niż okoliczne, rozproszone chmury termiczne.",
+				"en": "Along the convergence line a long, straight row of cumulus forms, often with more vigorous, darker development than the surrounding scattered thermal clouds."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-047",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.LIFT_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym różni się noszenie dynamiczne (zboczowe i falowe) od termicznego pod względem źródła energii?",
+				"en": "How does dynamic lift (ridge and wave) differ from thermal lift in terms of energy source?"
+			},
+			"back": {
+				"pl": "Noszenie dynamiczne czerpie energię z poziomego ruchu wiatru przekształconego w ruch pionowy przez teren. Noszenie termiczne czerpie energię z nasłonecznienia i konwekcji.",
+				"en": "Dynamic lift draws energy from horizontal wind deflected upward by terrain. Thermal lift draws energy from solar heating and convection."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-048",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.LIFT_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego noszenie falowe pozwala osiągać znacznie większe wysokości niż termika?",
+				"en": "Why does wave lift allow much greater altitudes than thermals?"
+			},
+			"back": {
+				"pl": "Fala rozwija się ponad warstwą konwekcyjną w stabilnej, wysokiej troposferze (a nawet stratosferze) i nie jest ograniczona inwersją ani poziomem kondensacji jak termika.",
+				"en": "The wave develops above the convective layer in the stable, high troposphere (even the stratosphere) and is not capped by an inversion or condensation level like thermals."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-049",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.LIFT_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest wzmocnione noszenie tuż pod podstawą rozwijającej się chmury cumulus?",
+				"en": "What is the enhanced lift just below a developing cumulus base?"
+			},
+			"back": {
+				"pl": "Pod aktywnie rozbudowującą się chmurą cumulus skraplanie pary uwalnia ciepło utajone, dodatkowo wzmacniając prąd wstępujący - noszenie tuż pod podstawą bywa najsilniejsze.",
+				"en": "Beneath an actively growing cumulus, condensation releases latent heat that further strengthens the updraft - lift just below the base is often strongest."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-050",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.THERMALS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak długość dnia i pora roku wpływają na siłę i godziny pracy termiki?",
+				"en": "How do day length and season affect thermal strength and operating hours?"
+			},
+			"back": {
+				"pl": "Latem dłuższy dzień i wyżej położone Słońce dają silniejszą, dłużej trwającą termikę (od późnego ranka do wieczora). Zimą termika jest słaba i krótka z powodu niskiego kąta padania promieni.",
+				"en": "In summer the longer day and higher Sun give stronger, longer-lasting thermals (late morning to evening). In winter thermals are weak and short due to the low sun angle."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-051",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.WIND"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest wiatr geostroficzny?",
+				"en": "What is the geostrophic wind?"
+			},
+			"back": {
+				"pl": "Wiatr wiejacy rownolegle do izobar w swobodnej atmosferze, wynikajacy z rownowagi sily gradientu cisnienia i sily Coriolisa (bez tarcia).",
+				"en": "Wind blowing parallel to the isobars in the free atmosphere, resulting from the balance between the pressure gradient force and the Coriolis force (no friction)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-052",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.WIND"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego wiatr przy ziemi skreca w stosunku do wiatru w swobodnej atmosferze?",
+				"en": "Why does surface wind back relative to the wind in the free atmosphere?"
+			},
+			"back": {
+				"pl": "Tarcie o podloze zmniejsza predkosc, oslabiajac sile Coriolisa, wiec wiatr przygruntowy skreca w strone niskiego cisnienia (na polkuli polnocnej w lewo) i ma mniejsza predkosc.",
+				"en": "Surface friction reduces speed, weakening the Coriolis force, so the surface wind turns toward low pressure (backs to the left in the Northern Hemisphere) and is slower."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-053",
+			"type": "flashcard",
+			"microSkill": "nav_rule",
+			"loIds": ["MET.WIND"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Regula Buys-Ballota na polkuli polnocnej",
+				"en": "Buys Ballot's law in the Northern Hemisphere"
+			},
+			"back": {
+				"pl": "Stojac tylem do wiatru, niskie cisnienie masz po lewej rece, a wysokie po prawej.",
+				"en": "Standing with your back to the wind, low pressure is on your left and high pressure on your right."
+			},
+			"mnemonic": {
+				"pl": "Tylem do wiatru: niz po lewej.",
+				"en": "Back to the wind: low on the left."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-054",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.WIND"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak nazywa sie lokalny wiatr wiejacy w dzien znad morza na lad?",
+				"en": "What is the local wind blowing from sea to land during the day called?"
+			},
+			"back": {
+				"pl": "Bryza morska (dzienna). Powstaje, bo lad nagrzewa sie szybciej niz woda, tworzac nad nim nizsze cisnienie.",
+				"en": "Sea breeze (daytime). It forms because land heats faster than water, creating lower pressure over the land."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-055",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.WIND"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest front bryzy morskiej i dlaczego jest wazny dla szybownika?",
+				"en": "What is the sea breeze front and why does it matter to a glider pilot?"
+			},
+			"back": {
+				"pl": "Granica miedzy chlodnym powietrzem morskim a cieplym ladowym; dziala jak miniaturowy front chlodny, dajac strefe wznoszen przydatna do lotu zaglowego.",
+				"en": "The boundary between cool maritime air and warm land air; it acts like a miniature cold front producing a line of lift useful for soaring."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-056",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.WIND"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak przy ziemi wiatr krazy wokol srodka nizu (na polkuli polnocnej)?",
+				"en": "How does surface wind circulate around a low's centre (Northern Hemisphere)?"
+			},
+			"back": {
+				"pl": "Przeciwnie do ruchu wskazowek zegara, z lekkim naplywem do srodka (zbieznosc), co wymusza ruchy wstepujace.",
+				"en": "Counterclockwise and spiralling slightly inward (convergence), which forces ascending motion."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-057",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.WIND"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak przy ziemi wiatr krazy wokol wyzu (na polkuli polnocnej)?",
+				"en": "How does surface wind circulate in a high (Northern Hemisphere)?"
+			},
+			"back": {
+				"pl": "Zgodnie z ruchem wskazowek zegara, z odplywem na zewnatrz (rozbieznosc), czemu towarzysza ruchy zstepujace.",
+				"en": "Clockwise and spiralling outward (divergence), accompanied by descending motion."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-058",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.WIND"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "W jakich jednostkach podaje sie kierunek i predkosc wiatru w METAR?",
+				"en": "In what units are wind direction and speed given in a METAR?"
+			},
+			"back": {
+				"pl": "Kierunek w stopniach wzgledem polnocy rzeczywistej (geograficznej), predkosc zwykle w wezlach (KT). Kierunek to ten, Z KTOREGO wieje wiatr.",
+				"en": "Direction in degrees relative to true north, speed usually in knots (KT). The direction is the one the wind blows FROM."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-059",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.WIND"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza w METAR grupa wiatru VRB?",
+				"en": "What does the wind group VRB mean in a METAR?"
+			},
+			"back": {
+				"pl": "Variable - kierunek wiatru zmienny, podawany gdy nie da sie okreslic dominujacego kierunku, zwykle przy predkosci 3 kt lub mniejszej.",
+				"en": "Variable - the wind direction is variable, reported when no prevailing direction can be determined, usually at speeds of 3 kt or less."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-060",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.WIND"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza w METAR grupa wiatru np. 24015G27KT?",
+				"en": "What does a wind group such as 24015G27KT mean in a METAR?"
+			},
+			"back": {
+				"pl": "Wiatr z kierunku 240 stopni, predkosc 15 kt, z porywami (gust) do 27 kt.",
+				"en": "Wind from 240 degrees, speed 15 kt, with gusts up to 27 kt."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-061",
+			"type": "flashcard",
+			"microSkill": "unit_conversion",
+			"loIds": ["MET.WIND"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Przelicz 20 wezlow na km/h (w przyblizeniu)",
+				"en": "Convert 20 knots to km/h (approximately)"
+			},
+			"back": {
+				"pl": "1 wezel to ok. 1,852 km/h, wiec 20 kt to ok. 37 km/h.",
+				"en": "1 knot is about 1.852 km/h, so 20 kt is about 37 km/h."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-062",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.HAZARDS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest uskok wiatru (wind shear) i czym grozi przy ladowaniu?",
+				"en": "What is wind shear and what risk does it pose on landing?"
+			},
+			"back": {
+				"pl": "Nagla zmiana kierunku lub predkosci wiatru na niewielkim odcinku; moze gwaltownie zmienic predkosc lotu i wysokosc, grozac przeciagnieciem lub niedolotem.",
+				"en": "A sudden change of wind direction or speed over a short distance; it can abruptly change airspeed and altitude, risking a stall or undershoot."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-063",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.HAZARDS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest rotor wystepujacy przy fali gorskiej?",
+				"en": "What is the rotor associated with mountain wave?"
+			},
+			"back": {
+				"pl": "Wirowa, silnie turbulentna strefa pod grzbietem fali, po zawietrznej stronie gor; bardzo niebezpieczna ze wzgledu na gwaltowne ruchy pionowe i turbulencje.",
+				"en": "A turbulent, rotating zone beneath the wave crest on the lee side of mountains; very dangerous due to violent vertical motion and turbulence."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-064",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.LIFT_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jaka chmura zwykle wskazuje obecnosc fali gorskiej i pozwala na dlugie wznoszenia?",
+				"en": "Which cloud typically marks mountain wave and allows sustained climbs?"
+			},
+			"back": {
+				"pl": "Chmura soczewkowata (Altocumulus lenticularis), stacjonarna wzgledem terenu, znaczaca grzbiet fali.",
+				"en": "The lenticular cloud (Altocumulus lenticularis), stationary relative to the ground, marking the wave crest."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-065",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.WIND"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest gradient wiatru przy gruncie i jak wplywa na podejscie?",
+				"en": "What is the surface wind gradient and how does it affect the approach?"
+			},
+			"back": {
+				"pl": "Wzrost predkosci wiatru z wysokoscia tuz nad ziemia; przy schodzeniu maleje skladowa czolowa, wiec spada predkosc lotu - trzeba uwzglednic zapas predkosci.",
+				"en": "The increase of wind speed with height just above the ground; on descent the headwind decreases, so airspeed drops - a speed margin must be allowed."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-066",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["MET.VISIBILITY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza w METAR grupa widzialnosci 9999?",
+				"en": "What does the visibility group 9999 mean in a METAR?"
+			},
+			"back": {
+				"pl": "Widzialnosc 10 km lub wiecej.",
+				"en": "Visibility of 10 km or more."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-067",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.VISIBILITY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza w METAR skrot CAVOK?",
+				"en": "What does the abbreviation CAVOK mean in a METAR?"
+			},
+			"back": {
+				"pl": "Ceiling And Visibility OK: widzialnosc co najmniej 10 km, brak chmur ponizej 5000 ft (lub MSA) i brak Cb/TCu, brak zjawisk pogody istotnych dla lotnictwa.",
+				"en": "Ceiling And Visibility OK: visibility at least 10 km, no cloud below 5000 ft (or MSA) and no Cb/TCu, and no significant weather."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-068",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.VISIBILITY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym rozni sie mgla (FG) od zamglenia (BR)?",
+				"en": "How does fog (FG) differ from mist (BR)?"
+			},
+			"back": {
+				"pl": "Mgla (FG): widzialnosc ponizej 1000 m. Zamglenie (BR): widzialnosc od 1000 do 5000 m. Oba przy wilgotnosci wzglednej bliskiej 100%.",
+				"en": "Fog (FG): visibility below 1000 m. Mist (BR): visibility from 1000 to 5000 m. Both occur at relative humidity near 100%."
+			},
+			"mnemonic": {
+				"pl": "FG ponizej kilometra, BR powyzej.",
+				"en": "FG under a kilometre, BR above."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-069",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.VISIBILITY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak powstaje mgla radiacyjna i kiedy najczesciej wystepuje?",
+				"en": "How does radiation fog form and when is it most common?"
+			},
+			"back": {
+				"pl": "W bezchmurna, slabowietrzna noc grunt wypromieniowuje cieplo i ochladza przyziemne powietrze do punktu rosy; najczesciej nad ranem, rozpada sie po nagrzaniu sloncem.",
+				"en": "On a clear, light-wind night the ground radiates heat, cooling the near-surface air to its dew point; most common at dawn, dissipating after solar heating."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-070",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.VISIBILITY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak powstaje mgla adwekcyjna?",
+				"en": "How does advection fog form?"
+			},
+			"back": {
+				"pl": "Gdy cieple, wilgotne powietrze przemieszcza sie nad chlodniejsze podloze i ochladza sie ponizej punktu rosy; moze utrzymywac sie takze przy umiarkowanym wietrze.",
+				"en": "When warm, moist air moves over a colder surface and cools below its dew point; it can persist even in moderate wind."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-071",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["MET.VISIBILITY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza w METAR/TAF grupa widzialnosci np. 0800?",
+				"en": "What does a visibility group such as 0800 mean in a METAR/TAF?"
+			},
+			"back": {
+				"pl": "Widzialnosc pozioma przy powierzchni 800 m, podawana w metrach.",
+				"en": "Horizontal visibility at the surface of 800 m, reported in metres."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-072",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.VISIBILITY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest RVR i kiedy sie je podaje?",
+				"en": "What is RVR and when is it reported?"
+			},
+			"back": {
+				"pl": "Runway Visual Range - widzialnosc wzdluz drogi startowej; podawana, gdy widzialnosc lub RVR spadnie ponizej 1500 m.",
+				"en": "Runway Visual Range - visibility along the runway; reported when visibility or RVR drops below 1500 m."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-073",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.VISIBILITY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest zmetnienie suchego powietrza oznaczane jako HZ?",
+				"en": "What is haze, coded HZ, in a METAR?"
+			},
+			"back": {
+				"pl": "Zawiesina suchych czastek (pylu, dymu) obnizajaca widzialnosc, przy wilgotnosci wzglednej zwykle znacznie ponizej nasycenia.",
+				"en": "A suspension of dry particles (dust, smoke) that reduces visibility, with relative humidity usually well below saturation."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-074",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.VISIBILITY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Dlaczego lot pod slonce pogarsza widzialnosc skosna?",
+				"en": "Why does flying toward the sun worsen slant visibility?"
+			},
+			"back": {
+				"pl": "Swiatlo rozproszone na zamgleniu i kropelkach daje silne olsnienie, znacznie skracajac widzialnosc w kierunku slonca w porownaniu z lotem ze sloncem za plecami.",
+				"en": "Light scattered by haze and droplets causes strong glare, greatly shortening visibility toward the sun compared with flying with the sun behind."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-075",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.VISIBILITY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym rozni sie widzialnosc pozioma od pionowej i co oznacza grupa VV w METAR?",
+				"en": "What is the difference between horizontal and vertical visibility, and what does the VV group mean in a METAR?"
+			},
+			"back": {
+				"pl": "Widzialnosc pozioma to zasieg widzenia przy ziemi; VV (vertical visibility) podaje widzialnosc pionowa w setkach stop, gdy nieba nie widac (np. VV002 to 200 ft).",
+				"en": "Horizontal visibility is the range of sight at the surface; VV (vertical visibility) gives vertical visibility in hundreds of feet when the sky is obscured (e.g. VV002 is 200 ft)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-076",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.CLOUDS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym charakteryzuje się chmura Cumulus humilis i co oznacza dla pilota szybowca?",
+				"en": "What characterises a Cumulus humilis cloud and what does it mean for a glider pilot?"
+			},
+			"back": {
+				"pl": "To płaska chmura kłębiasta o słabej rozbudowie pionowej (\"chmura pięknej pogody\"). Oznacza słabą lub dopiero rozwijającą się termikę; podstawa chmury wyznacza górną granicę przydatnego komina termicznego.",
+				"en": "A flattened cumulus with little vertical development (a \"fair-weather cloud\"). It signals weak or developing thermals; the cloud base marks the top of the usable thermal."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-077",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.LIFT_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak rozpoznać i wykorzystać chmurę soczewkowatą (Altocumulus lenticularis)?",
+				"en": "How do you recognise and use a lenticular cloud (Altocumulus lenticularis)?"
+			},
+			"back": {
+				"pl": "Ma gładki, soczewkowaty kształt i pozostaje nieruchoma względem podłoża mimo silnego wiatru. Wskazuje na falę górską (falę zawietrzną) z silnym, równym noszeniem po stronie dowietrznej.",
+				"en": "It has a smooth, lens-like shape and stays stationary relative to the ground despite strong wind. It marks a mountain (lee) wave with strong, smooth lift on the upwind side."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-078",
+			"type": "flashcard",
+			"microSkill": "concept_number",
+			"loIds": ["MET.CLOUDS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak oszacować podstawę chmury (cloud base) ze spreadu temperatury i punktu rosy?",
+				"en": "How do you estimate the cloud base from the temperature and dew point spread?"
+			},
+			"back": {
+				"pl": "Podstawa chmury to wysokość, na której wznoszące się powietrze osiąga punkt rosy (kondensacja). Szacunkowo: różnica temperatury i punktu rosy przy ziemi (w °C) razy ok. 125 m daje wysokość podstawy w metrach.",
+				"en": "The cloud base is the altitude where rising air reaches its dew point (condensation). Rough estimate: surface temperature minus dew point (in °C) times about 125 m gives the base height in metres."
+			},
+			"mnemonic": {
+				"pl": "Spread w °C × 125 m = podstawa.",
+				"en": "Spread in °C × 125 m = base."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-079",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.CLOUDS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym różni się Stratus od Stratocumulus?",
+				"en": "How does Stratus differ from Stratocumulus?"
+			},
+			"back": {
+				"pl": "Stratus to jednolita, szara warstwa o niskiej podstawie, często dająca mżawkę i ograniczająca widzialność. Stratocumulus to warstwa o wyraźnej strukturze kłębiasto-wałowej z prześwitami. Obie ograniczają dopływ energii słonecznej, więc tłumią termikę.",
+				"en": "Stratus is a uniform grey low layer, often giving drizzle and reducing visibility. Stratocumulus is a layer with a distinct lumpy/rolled structure and gaps. Both reduce solar heating, so they suppress thermals."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-080",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.CLOUDS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznaczają chmury Cirrus i jak zapowiadają zmianę pogody?",
+				"en": "What do Cirrus clouds indicate and how do they forecast a weather change?"
+			},
+			"back": {
+				"pl": "To wysokie chmury z kryształków lodu, włókniste i białe. Gęstniejące i przechodzące w Cirrostratus zwykle zapowiadają nadejście ciepłego frontu i pogorszenie pogody w ciągu kilkunastu godzin.",
+				"en": "High ice-crystal clouds, fibrous and white. Thickening Cirrus turning into Cirrostratus usually heralds an approaching warm front and worsening weather within roughly a day."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-081",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.CLOUDS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak dzieli się chmury według piętra (poziomu) występowania?",
+				"en": "How are clouds classified by altitude level?"
+			},
+			"back": {
+				"pl": "Wysokie (Cirrus, Cirrocumulus, Cirrostratus), średnie (Altocumulus, Altostratus, Nimbostratus) i niskie (Stratus, Stratocumulus, Cumulus). Cumulus i Cumulonimbus mogą rozbudowywać się pionowo przez kilka pięter.",
+				"en": "High (Cirrus, Cirrocumulus, Cirrostratus), middle (Altocumulus, Altostratus, Nimbostratus) and low (Stratus, Stratocumulus, Cumulus). Cumulus and Cumulonimbus can develop vertically across several levels."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-082",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.HAZARDS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest chmura wałowa (Arcus) i dlaczego jest niebezpieczna?",
+				"en": "What is a roll/shelf cloud (Arcus) and why is it dangerous?"
+			},
+			"back": {
+				"pl": "Pozioma chmura wałowa na czole frontu porywów (gust front) przed burzą. Sygnalizuje gwałtowny wzrost wiatru, silne turbulencje i prądy zstępujące - obszar bezwzględnie do unikania.",
+				"en": "A horizontal roll cloud on the leading gust front ahead of a storm. It signals a sudden wind increase, severe turbulence and downdraughts - an area to avoid absolutely."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-083",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.CLOUDS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest chmura Nimbostratus i jakie warunki lotu wprowadza?",
+				"en": "What is a Nimbostratus cloud and what flying conditions does it bring?"
+			},
+			"back": {
+				"pl": "Gruba, ciemna warstwa o rozmytej podstawie, dająca ciągły, długotrwały opad deszczu lub śniegu. Niska podstawa i ograniczona widzialność praktycznie uniemożliwiają loty szybowcowe.",
+				"en": "A thick, dark layer with a diffuse base giving continuous, prolonged rain or snow. The low base and poor visibility make gliding effectively impossible."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-084",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.LIFT_TYPES"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to są ulice termiczne (cloud streets) i jak je wykorzystać?",
+				"en": "What are cloud streets (thermal streets) and how do you use them?"
+			},
+			"back": {
+				"pl": "Rzędy chmur Cumulus ustawione równolegle do kierunku wiatru, tworzące się przy umiarkowanym wietrze i odpowiednim gradiencie. Pozwalają lecieć długimi odcinkami w noszeniu bez krążenia, pod liniami chmur.",
+				"en": "Rows of Cumulus aligned parallel to the wind, forming with moderate wind and a suitable lapse rate. They let you fly long stretches in lift without circling, staying under the cloud lines."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-085",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.CLOUDS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrót OVC w raporcie zachmurzenia i ile to oktantów?",
+				"en": "What does the abbreviation OVC mean in a cloud report and how many oktas?"
+			},
+			"back": {
+				"pl": "OVC (overcast) oznacza całkowite zachmurzenie, czyli 8/8 oktantów. Pozostałe: FEW 1-2/8, SCT 3-4/8, BKN 5-7/8.",
+				"en": "OVC (overcast) means full cloud cover, i.e. 8/8 oktas. The others: FEW 1-2/8, SCT 3-4/8, BKN 5-7/8."
+			},
+			"mnemonic": {
+				"pl": "FEW-SCT-BKN-OVC = coraz więcej chmur.",
+				"en": "FEW-SCT-BKN-OVC = ever more cloud."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-086",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.CLOUDS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak rozpoznać chmurę Cumulus congestus (Towering Cumulus) i co zapowiada?",
+				"en": "How do you recognise a Cumulus congestus (Towering Cumulus) and what does it forecast?"
+			},
+			"back": {
+				"pl": "Ma wyraźną, rozbudowaną pionowo budowę kalafiorowatą o ostrych konturach. Świadczy o silnej, dobrze rozwiniętej termice, ale może przejść w Cumulonimbus, więc trzeba obserwować jego dalszy rozwój.",
+				"en": "It has a pronounced, vertically built cauliflower shape with sharp outlines. It indicates strong, well-developed thermals, but it can grow into a Cumulonimbus, so its further development must be watched."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-087",
+			"type": "flashcard",
+			"microSkill": "general",
+			"loIds": ["MET.HAZARDS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest virga i o czym informuje pilota?",
+				"en": "What is virga and what does it tell a pilot?"
+			},
+			"back": {
+				"pl": "Virga to smugi opadu wyparowujące przed dotarciem do ziemi, widoczne pod podstawą chmury. Informuje o prądach zstępujących i możliwym oziębieniu powietrza, a w pobliżu Cb o ryzyku porywów.",
+				"en": "Virga is precipitation streaks that evaporate before reaching the ground, seen below the cloud base. It indicates downdraughts and possible air cooling, and near a Cb a risk of gusts."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-088",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.PRODUCTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest GAFOR i do czego służy szybownikowi?",
+				"en": "What is GAFOR and what does a glider pilot use it for?"
+			},
+			"back": {
+				"pl": "GAFOR (General Aviation Forecast) to prognoza dla lotnictwa ogólnego dzieląca trasy/obszary na strefy z oceną warunków lotu VFR za pomocą kodów stanu (od dobrych do zamkniętych). Pomaga zaplanować lot trasowy.",
+				"en": "GAFOR (General Aviation Forecast) is a forecast for general aviation dividing routes/areas into zones with VFR condition codes (from open to closed). It helps plan a cross-country flight."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-089",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["MET.PRODUCTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co przedstawia mapa SWC (Significant Weather Chart) i jakie zjawiska na niej znajdziesz?",
+				"en": "What does an SWC (Significant Weather Chart) show and what phenomena appear on it?"
+			},
+			"back": {
+				"pl": "Mapa istotnych zjawisk pogody dla danego zakresu poziomów lotu: strefy burz, oblodzenia, turbulencji, frontów, prądów strumieniowych oraz granice mas powietrza. Służy do planowania lotu pod kątem zagrożeń.",
+				"en": "A chart of significant weather for a given flight-level range: zones of thunderstorms, icing, turbulence, fronts, jet streams and air-mass boundaries. It is used to plan a flight around hazards."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-090",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["MET.PRODUCTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak odczytać ciśnienie i jego gradient na mapie synoptycznej z izobarami?",
+				"en": "How do you read pressure and its gradient on a synoptic chart with isobars?"
+			},
+			"back": {
+				"pl": "Izobary łączą punkty o jednakowym ciśnieniu. Gęste izobary oznaczają duży gradient ciśnienia i silny wiatr; rozrzedzone - słaby wiatr. \"N\" (L) oznacza niż, \"W\" (H) wyż.",
+				"en": "Isobars join points of equal pressure. Closely spaced isobars mean a strong pressure gradient and strong wind; widely spaced mean light wind. \"L\" marks a low, \"H\" marks a high."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-091",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.WIND"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza grupa wiatru \"24015G27KT\" w METAR?",
+				"en": "What does the wind group \"24015G27KT\" mean in a METAR?"
+			},
+			"back": {
+				"pl": "Wiatr z kierunku 240° (względem północy rzeczywistej w METAR) o prędkości 15 węzłów, w porywach do 27 węzłów. Litera G oznacza poryw (gust).",
+				"en": "Wind from 240° (true north in a METAR) at 15 knots, gusting to 27 knots. The letter G stands for gust."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-092",
+			"type": "flashcard",
+			"microSkill": "chart",
+			"loIds": ["MET.PRODUCTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Czym jest emagram (diagram aerologiczny) i co z niego odczyta szybownik?",
+				"en": "What is an emagram (aerological diagram) and what does a glider pilot read from it?"
+			},
+			"back": {
+				"pl": "Wykres pionowego rozkładu temperatury i punktu rosy z sondażu. Pozwala wyznaczyć poziom kondensacji (podstawę Cu), górną granicę termiki oraz ocenić stabilność atmosfery i ryzyko burz.",
+				"en": "A plot of the vertical profile of temperature and dew point from a sounding. It lets you find the condensation level (Cu base), the thermal top and assess atmospheric stability and storm risk."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-093",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.PRODUCTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrót QNH i jak go wykorzystujesz w locie szybowcowym?",
+				"en": "What does the abbreviation QNH mean and how do you use it in glider flight?"
+			},
+			"back": {
+				"pl": "QNH to ciśnienie zredukowane do poziomu morza wg atmosfery wzorcowej; po nastawieniu na wysokościomierzu wskazuje on wysokość nad poziomem morza (AMSL). Służy do utrzymywania separacji od terenu i wysokości lotu.",
+				"en": "QNH is the pressure reduced to mean sea level per the standard atmosphere; set on the altimeter it shows altitude above mean sea level (AMSL). It is used to maintain terrain clearance and flight altitude."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-094",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.PRODUCTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza skrót QFE i kiedy bywa stosowany?",
+				"en": "What does the abbreviation QFE mean and when is it used?"
+			},
+			"back": {
+				"pl": "QFE to ciśnienie na poziomie lotniska; po nastawieniu wysokościomierz wskazuje 0 na poziomie lotniska, czyli wysokość nad lotniskiem (height). Bywa stosowane przy lotach w kręgu nadlotniskowym.",
+				"en": "QFE is the pressure at aerodrome level; set on the altimeter it reads 0 at the aerodrome, i.e. height above the field. It is sometimes used for circuit flying."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-095",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.PRODUCTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest TREND dołączany do METAR i jaki ma horyzont czasowy?",
+				"en": "What is the TREND appended to a METAR and what is its time horizon?"
+			},
+			"back": {
+				"pl": "TREND to krótka prognoza zmian dołączana do METAR, obowiązująca przez 2 godziny od czasu obserwacji. Używa wskaźników BECMG (zmiana stopniowa), TEMPO (chwilowa) lub NOSIG (bez istotnych zmian).",
+				"en": "TREND is a short forecast of changes appended to a METAR, valid for 2 hours from the observation time. It uses BECMG (gradual change), TEMPO (temporary) or NOSIG (no significant change)."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-096",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.VISIBILITY"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza grupa widzialności \"9999\" oraz \"CAVOK\" w depeszy lotniczej?",
+				"en": "What do the visibility group \"9999\" and \"CAVOK\" mean in an aviation report?"
+			},
+			"back": {
+				"pl": "9999 oznacza widzialność 10 km lub więcej. CAVOK (Ceiling And Visibility OK) oznacza widzialność co najmniej 10 km, brak chmur poniżej 5000 ft (lub MSA), brak Cb/TCU oraz brak zjawisk istotnych dla pogody.",
+				"en": "9999 means visibility of 10 km or more. CAVOK (Ceiling And Visibility OK) means visibility at least 10 km, no cloud below 5000 ft (or MSA), no Cb/TCU and no significant weather."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-097",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.PRODUCTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co to jest SIGMET i jakich zjawisk dotyczy?",
+				"en": "What is a SIGMET and what phenomena does it cover?"
+			},
+			"back": {
+				"pl": "SIGMET to ostrzeżenie o niebezpiecznych zjawiskach meteorologicznych w trasie, np. burze (TS), silne oblodzenie, silna turbulencja, pył/popiół wulkaniczny czy fala górska. Ma określony obszar i okres ważności.",
+				"en": "A SIGMET is a warning about hazardous en-route weather, e.g. thunderstorms (TS), severe icing, severe turbulence, dust/volcanic ash or mountain waves. It has a defined area and validity period."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-098",
+			"type": "flashcard",
+			"microSkill": "unit_conversion",
+			"loIds": ["MET.PRODUCTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Jak przeliczyć ciśnienie 1013 hPa na cale słupa rtęci (inHg)?",
+				"en": "How do you convert 1013 hPa to inches of mercury (inHg)?"
+			},
+			"back": {
+				"pl": "1013,25 hPa odpowiada 29,92 inHg (przelicznik: 1 inHg ≈ 33,86 hPa). To ciśnienie atmosfery wzorcowej na poziomie morza, czyli standardowe ustawienie QNE.",
+				"en": "1013.25 hPa equals 29.92 inHg (factor: 1 inHg ≈ 33.86 hPa). This is the standard atmosphere sea-level pressure, i.e. the standard QNE setting."
+			},
+			"mnemonic": {
+				"pl": "1013 hPa = 29,92 inHg.",
+				"en": "1013 hPa = 29.92 inHg."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-099",
+			"type": "flashcard",
+			"microSkill": "unit_conversion",
+			"loIds": ["MET.PRODUCTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Ile metrów to 1 hPa zmiany ciśnienia w dolnej troposferze i jak to wpływa na wysokościomierz?",
+				"en": "How many metres is 1 hPa of pressure change in the lower troposphere and how does it affect the altimeter?"
+			},
+			"back": {
+				"pl": "W pobliżu poziomu morza 1 hPa odpowiada w przybliżeniu 8 m (27 ft). Lecąc w stronę niższego ciśnienia bez korekty nastawy, wysokościomierz zawyża wysokość - realnie jesteś niżej.",
+				"en": "Near sea level 1 hPa corresponds to roughly 8 m (27 ft). Flying toward lower pressure without resetting, the altimeter over-reads - you are actually lower."
+			},
+			"mnemonic": {
+				"pl": "Z wyżu w niż - leć niżej (wysokościomierz zawyża).",
+				"en": "High to low, look out below."
+			},
+			"source": "generated:spl"
+		},
+		{
+			"id": "spl-met-gen-100",
+			"type": "flashcard",
+			"microSkill": "abbreviation",
+			"loIds": ["MET.PRODUCTS"],
+			"licenses": ["SPL"],
+			"tags": ["generated"],
+			"front": {
+				"pl": "Co oznacza w TAF grupa \"PROB30 TEMPO\" i jak ją interpretować?",
+				"en": "What does the group \"PROB30 TEMPO\" mean in a TAF and how is it interpreted?"
+			},
+			"back": {
+				"pl": "PROB30 oznacza 30% prawdopodobieństwa wystąpienia zjawiska, a TEMPO że będzie ono krótkotrwałe (trwa łącznie krócej niż połowę okresu, pojedynczy epizod poniżej godziny). Razem: 30% szansy na przejściowe wystąpienie danych warunków.",
+				"en": "PROB30 means a 30% probability of the phenomenon, and TEMPO that it will be temporary (lasting in total less than half the period, each episode under an hour). Together: a 30% chance of the conditions occurring temporarily."
+			},
+			"source": "generated:spl"
 		}
 	]
 }
