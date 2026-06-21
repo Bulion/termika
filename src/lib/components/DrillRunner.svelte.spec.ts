@@ -42,6 +42,21 @@ describe('DrillRunner', () => {
 		);
 	});
 
+	it('hides the rule while answering and reveals it only in feedback', async () => {
+		const withRule: Drill = { ...rodDrill, rule: { pl: 'reguła GS przez 2 razy 10' } };
+		const screen = render(DrillRunner, {
+			drills: [withRule],
+			locale: 'pl',
+			pick: () => 0,
+			now: () => 0,
+			onAttempt: vi.fn()
+		});
+		expect(screen.container.querySelector('.rule')).toBeNull();
+		await screen.getByRole('textbox').fill('350');
+		await screen.getByRole('button', { name: 'Sprawdź' }).click();
+		await expect.element(screen.getByText('reguła GS przez 2 razy 10')).toBeVisible();
+	});
+
 	it('marks a wrong answer and reveals the correct value', async () => {
 		const screen = render(DrillRunner, {
 			drills: [rodDrill],

@@ -15,7 +15,7 @@
 			"op": { "kind": "linear", "factor": 0.72 },
 			"rule": { "pl": "`≈ × 0{,}72` (gęstość AVGAS)", "en": "`≈ × 0.72` (AVGAS density)" },
 			"tolerancePct": 5,
-			"timeLimitSec": 15,
+			"timeLimitSec": 60,
 			"tags": ["fuel", "avgas"]
 		},
 		{
@@ -26,7 +26,7 @@
 			"op": { "kind": "linear", "factor": 0.8 },
 			"rule": { "pl": "`≈ × 0{,}8` (gęstość Jet A-1)", "en": "`≈ × 0.8` (Jet A-1 density)" },
 			"tolerancePct": 5,
-			"timeLimitSec": 15,
+			"timeLimitSec": 60,
 			"tags": ["fuel", "jet"]
 		},
 		{
@@ -37,7 +37,7 @@
 			"op": { "kind": "linear", "factor": 2.205 },
 			"rule": { "pl": "`≈ × 2{,}2`", "en": "`≈ × 2.2`" },
 			"tolerancePct": 4,
-			"timeLimitSec": 12,
+			"timeLimitSec": 60,
 			"tags": ["mass"]
 		}
 	]

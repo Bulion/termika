@@ -24,7 +24,7 @@
 				"en": "`\\mathrm{PA} = \\text{elevation} + (1013 − \\mathrm{QNH}) × 27\\ \\mathrm{ft/hPa}`"
 			},
 			"toleranceAbs": 80,
-			"timeLimitSec": 25,
+			"timeLimitSec": 60,
 			"round": 0,
 			"tags": ["altimetry"]
 		},
@@ -45,7 +45,7 @@
 				"en": "`\\mathrm{DA} = \\mathrm{PA} + 120 × (\\mathrm{OAT} − \\mathrm{ISA\\ temp}); \\mathrm{ISA} = 15 − 2 × \\mathrm{PA}/1000`"
 			},
 			"toleranceAbs": 150,
-			"timeLimitSec": 35,
+			"timeLimitSec": 60,
 			"round": 0,
 			"tags": ["performance"]
 		},
@@ -66,7 +66,7 @@
 				"en": "`\\text{range}\\,[\\mathrm{km}] = \\text{height}\\,[\\mathrm{m}] × \\text{glide ratio} ÷ 1000`"
 			},
 			"toleranceAbs": 1.5,
-			"timeLimitSec": 20,
+			"timeLimitSec": 60,
 			"round": 0,
 			"tags": ["glide"]
 		},
@@ -84,7 +84,7 @@
 				"en": "`T = 15\\,°\\mathrm{C} − 6.5\\,°\\mathrm{C} \\text{ per } 1000\\,\\mathrm{m}`"
 			},
 			"toleranceAbs": 1,
-			"timeLimitSec": 20,
+			"timeLimitSec": 60,
 			"round": 1,
 			"tags": ["isa"]
 		}
