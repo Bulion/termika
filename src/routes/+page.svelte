@@ -24,13 +24,16 @@
 			</div>
 		</div>
 
-		<img
-			class="art"
-			src={`${base}/termika-hero.png`}
-			alt={m.hero_art_alt()}
-			width="1254"
-			height="1254"
-		/>
+		<picture class="art">
+			<source srcset={`${base}/termika-hero.webp`} type="image/webp" />
+			<img
+				src={`${base}/termika-hero.jpg`}
+				alt={m.hero_art_alt()}
+				width="1200"
+				height="1200"
+				fetchpriority="high"
+			/>
+		</picture>
 	</section>
 
 	<section class="learn">
@@ -147,12 +150,18 @@
 	.art {
 		display: block;
 		width: 100%;
-		height: auto;
 		aspect-ratio: 1;
-		object-fit: cover;
 		border: var(--border-width) solid var(--color-outline);
 		border-radius: var(--radius-lg);
 		box-shadow: var(--shadow-card);
+		overflow: hidden;
+	}
+
+	.art img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 
 	.learn {

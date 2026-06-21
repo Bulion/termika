@@ -8,7 +8,7 @@
 
 	const origin = $derived(SITE_URL || page.url.origin);
 	const canonical = $derived(origin + page.url.pathname);
-	const image = $derived(`${origin}${base}/termika-hero.png`);
+	const image = $derived(`${origin}${base}/termika-hero.jpg`);
 </script>
 
 <svelte:head>

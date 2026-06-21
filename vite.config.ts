@@ -43,7 +43,7 @@ export default defineConfig({
 				icons: [{ src: 'icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any maskable' }]
 			},
 			workbox: {
-				globPatterns: ['client/**/*.{js,css,html,svg,png,ico,webp,woff,woff2,json}']
+				globPatterns: ['client/**/*.{js,css,html,svg,png,jpg,jpeg,ico,webp,woff,woff2,json}']
 			},
 			devOptions: { enabled: false }
 		})
