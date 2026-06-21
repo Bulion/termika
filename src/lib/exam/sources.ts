@@ -44,15 +44,6 @@ export const EXAM_SOURCES: ExamSource[] = [
 		questionCount: 20,
 		timeLimitMin: 30,
 		passPct: 75
-	},
-	{
-		id: 'fifly',
-		label: { pl: 'fifly PPL(A)', en: 'fifly PPL(A)' },
-		external: true,
-		hasCategories: true,
-		questionCount: 20,
-		timeLimitMin: 30,
-		passPct: 75
 	}
 ];
 

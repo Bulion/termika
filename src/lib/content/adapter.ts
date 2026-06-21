@@ -1,9 +1,9 @@
 import { deckSchema, type Deck } from './schema';
 
 /**
- * A source of study content. Each external source (local JSON, fifly/PPL-A, ULC PDFs, ...)
- * implements this interface and normalizes its data into validated {@link Deck}s, so the
- * study engine stays agnostic about where content comes from.
+ * A source of study content. Each source implements this interface and normalizes its data
+ * into validated {@link Deck}s, so the study engine stays agnostic about where content comes
+ * from. The bundled decks are loaded through {@link LocalJsonAdapter}.
  */
 export interface SourceAdapter {
 	readonly id: string;
