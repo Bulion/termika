@@ -136,6 +136,94 @@
 			"id": "mc-vc",
 			"a": { "pl": "VC" },
 			"b": { "pl": "w pobliżu lotniska", "en": "in the vicinity" }
+		},
+		{
+			"id": "mc-light",
+			"a": { "pl": "-RA" },
+			"b": { "pl": "słaby deszcz", "en": "light rain" },
+			"hint": {
+				"pl": "przedrostek „-” oznacza słabe natężenie zjawiska",
+				"en": "the \"-\" prefix marks light intensity"
+			}
+		},
+		{
+			"id": "mc-heavy",
+			"a": { "pl": "+TSRA" },
+			"b": { "pl": "silna burza z deszczem", "en": "heavy thunderstorm with rain" },
+			"hint": {
+				"pl": "przedrostek „+” oznacza silne natężenie zjawiska",
+				"en": "the \"+\" prefix marks heavy intensity"
+			}
+		},
+		{
+			"id": "mc-shra",
+			"a": { "pl": "SHRA" },
+			"b": { "pl": "przelotny deszcz", "en": "rain showers" }
+		},
+		{
+			"id": "mc-tsra",
+			"a": { "pl": "TSRA" },
+			"b": { "pl": "burza z deszczem", "en": "thunderstorm with rain" }
+		},
+		{
+			"id": "mc-gr",
+			"a": { "pl": "GR" },
+			"b": { "pl": "grad", "en": "hail" }
+		},
+		{
+			"id": "mc-fu",
+			"a": { "pl": "FU" },
+			"b": { "pl": "dym", "en": "smoke" }
+		},
+		{
+			"id": "mc-tcu",
+			"a": { "pl": "TCU" },
+			"b": { "pl": "chmury wypiętrzone (towering cumulus)", "en": "towering cumulus" },
+			"hint": {
+				"pl": "silnie rozbudowane Cu, zwiastun rozwoju burzowego",
+				"en": "strongly developed Cu, a sign of building convection"
+			}
+		},
+		{
+			"id": "mc-cb",
+			"a": { "pl": "CB" },
+			"b": { "pl": "cumulonimbus (chmura burzowa)", "en": "cumulonimbus" },
+			"hint": {
+				"pl": "chmura burzowa: turbulencja, oblodzenie, uskok wiatru",
+				"en": "thunderstorm cloud: turbulence, icing, wind shear"
+			}
+		},
+		{
+			"id": "mc-9999",
+			"a": { "pl": "9999" },
+			"b": { "pl": "widzialność 10 km lub więcej", "en": "visibility 10 km or more" }
+		},
+		{
+			"id": "mc-minus",
+			"a": { "pl": "M" },
+			"b": { "pl": "wartość ujemna temperatury", "en": "negative temperature" },
+			"hint": { "pl": "np. M05/M08 = -5°C / -8°C", "en": "e.g. M05/M08 = -5°C / -8°C" }
+		},
+		{
+			"id": "mc-qnh",
+			"a": { "pl": "Q" },
+			"b": { "pl": "ciśnienie QNH w hPa", "en": "QNH in hPa" },
+			"hint": { "pl": "np. Q1018 = QNH 1018 hPa", "en": "e.g. Q1018 = QNH 1018 hPa" }
+		},
+		{
+			"id": "mc-kt",
+			"a": { "pl": "KT" },
+			"b": { "pl": "węzły (prędkość wiatru)", "en": "knots (wind speed)" }
+		},
+		{
+			"id": "mc-zulu",
+			"a": { "pl": "Z" },
+			"b": { "pl": "czas UTC (Zulu)", "en": "UTC time (Zulu)" }
+		},
+		{
+			"id": "mc-auto",
+			"a": { "pl": "AUTO" },
+			"b": { "pl": "raport w pełni automatyczny", "en": "fully automated report" }
 		}
 	]
 }

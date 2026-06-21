@@ -57,7 +57,9 @@
 						types: ['flashcard'],
 						microSkills: mode === 'all' ? undefined : ([mode] as MicroSkill[])
 					});
-		const built = await buildStudyQueue(db, pool, new Date());
+		const built = await buildStudyQueue(db, pool, new Date(), {
+			shuffleSeed: Math.floor(Math.random() * 2 ** 32)
+		});
 		queue = built.all;
 		index = 0;
 		tally = { again: 0, hard: 0, good: 0, easy: 0 };

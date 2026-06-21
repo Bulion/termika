@@ -120,6 +120,7 @@
 	"glossary_desc": "Search aviation abbreviations and METAR codes.",
 	"glossary_card_desc": "A searchable dictionary of abbreviations and weather codes.",
 	"glossary_search": "Search term or meaning…",
+	"glossary_group_aero": "Aviation quantities",
 	"glossary_group_abbreviations": "Abbreviations",
 	"glossary_group_metar": "METAR codes",
 	"glossary_empty": "No results for that search."

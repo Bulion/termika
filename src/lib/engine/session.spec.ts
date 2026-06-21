@@ -62,6 +62,16 @@ describe('buildStudyQueue', () => {
 		expect(queue.fresh.map((i) => i.id)).toEqual(['a', 'b', 'c']);
 	});
 
+	it('keeps deck order for fresh items without a seed, shuffles with one', async () => {
+		const noSeed = await buildStudyQueue(db, items, NOW);
+		expect(noSeed.fresh.map((i) => i.id)).toEqual(['a', 'b', 'c']);
+
+		const seeded = await buildStudyQueue(db, items, NOW, { shuffleSeed: 3 });
+		expect([...seeded.fresh.map((i) => i.id)].sort()).toEqual(['a', 'b', 'c']);
+		const again = await buildStudyQueue(db, items, NOW, { shuffleSeed: 3 });
+		expect(seeded.fresh.map((i) => i.id)).toEqual(again.fresh.map((i) => i.id));
+	});
+
 	it('separates due cards (most overdue first) from fresh items', async () => {
 		await db.cardState.put({
 			itemId: 'b',

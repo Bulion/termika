@@ -1,0 +1,102 @@
+{
+	"pairs": [
+		{
+			"a": { "pl": "Cx" },
+			"b": { "pl": "współczynnik siły oporu", "en": "drag coefficient" },
+			"hint": {
+				"pl": "bezwymiarowa miara oporu aerodynamicznego profilu; rośnie z kątem natarcia",
+				"en": "dimensionless measure of a profile's aerodynamic drag; rises with angle of attack"
+			}
+		},
+		{
+			"a": { "pl": "Cz" },
+			"b": { "pl": "współczynnik siły nośnej", "en": "lift coefficient" },
+			"hint": {
+				"pl": "rośnie z kątem natarcia aż do kąta krytycznego, po którym maleje (przeciągnięcie)",
+				"en": "rises with angle of attack up to the critical angle, then drops (stall)"
+			}
+		},
+		{
+			"a": { "pl": "Cm" },
+			"b": { "pl": "współczynnik momentu", "en": "moment coefficient" },
+			"hint": {
+				"pl": "opisuje moment pochylający profilu względem punktu odniesienia",
+				"en": "describes the profile's pitching moment about a reference point"
+			}
+		},
+		{
+			"a": { "pl": "Cz/Cx" },
+			"b": { "pl": "doskonałość aerodynamiczna", "en": "lift-to-drag ratio" },
+			"hint": {
+				"pl": "stosunek nośności do oporu; maksimum wyznacza prędkość optymalną i najlepszy zasięg ślizgu",
+				"en": "ratio of lift to drag; its maximum sets the optimal speed and best glide range"
+			}
+		},
+		{
+			"a": { "pl": "n" },
+			"b": { "pl": "współczynnik obciążenia", "en": "load factor" },
+			"hint": {
+				"pl": "stosunek siły nośnej do ciężaru; w prawidłowym zakręcie n = 1/cos(przechylenia)",
+				"en": "ratio of lift to weight; in a balanced turn n = 1/cos(bank)"
+			}
+		},
+		{
+			"a": { "pl": "VS" },
+			"b": { "pl": "prędkość przeciągnięcia", "en": "stall speed" },
+			"hint": {
+				"pl": "najmniejsza prędkość pozwalająca utrzymać sterowny lot",
+				"en": "lowest speed at which controlled flight can be maintained"
+			}
+		},
+		{
+			"a": { "pl": "VS0" },
+			"b": {
+				"pl": "prędkość przeciągnięcia w konfiguracji do lądowania",
+				"en": "stall speed in the landing configuration"
+			}
+		},
+		{
+			"a": { "pl": "VS1" },
+			"b": {
+				"pl": "prędkość przeciągnięcia w danej konfiguracji",
+				"en": "stall speed in a given configuration"
+			}
+		},
+		{
+			"a": { "pl": "VA" },
+			"b": { "pl": "prędkość manewrowa", "en": "manoeuvring speed" },
+			"hint": {
+				"pl": "maksymalna prędkość pełnych wychyleń sterów bez przekroczenia obciążeń konstrukcyjnych",
+				"en": "max speed for full control deflection without exceeding structural load limits"
+			}
+		},
+		{
+			"a": { "pl": "VRA" },
+			"b": { "pl": "prędkość w powietrzu burzliwym", "en": "rough-air speed" },
+			"hint": {
+				"pl": "zalecana maksymalna prędkość lotu w turbulencji",
+				"en": "recommended maximum speed for flight in turbulence"
+			}
+		},
+		{
+			"a": { "pl": "VNO" },
+			"b": { "pl": "maksymalna prędkość użytkowania", "en": "max structural cruising speed" },
+			"hint": {
+				"pl": "górna granica normalnego zakresu eksploatacji (koniec zielonego łuku)",
+				"en": "top of the normal operating range (end of the green arc)"
+			}
+		},
+		{
+			"a": { "pl": "VNE" },
+			"b": { "pl": "prędkość nigdy nieprzekraczalna", "en": "never-exceed speed" },
+			"hint": {
+				"pl": "czerwona kreska na prędkościomierzu; przekroczenie grozi zniszczeniem konstrukcji",
+				"en": "the red line on the airspeed indicator; exceeding it risks structural failure"
+			}
+		},
+		{
+			"a": { "pl": "VFE" },
+			"b": { "pl": "maksymalna prędkość z wychylonymi klapami", "en": "max flaps-extended speed" }
+		}
+	]
+}

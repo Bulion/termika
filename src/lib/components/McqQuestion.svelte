@@ -30,7 +30,7 @@
 <fieldset class="question" disabled={reveal}>
 	<legend
 		><span class="num">{index}.</span>
-		<RichText text={resolveText(question.stem, locale)} /></legend
+		<RichText text={resolveText(question.stem, locale)} glossary={false} /></legend
 	>
 
 	{#each question.choices as choice (choice.id)}
@@ -38,7 +38,9 @@
 			class="choice choice--{choiceState(choice.id)}"
 			class:selected={!reveal && selected === choice.id}
 		>
-			<span class="choice-text"><RichText text={resolveText(choice.text, locale)} /></span>
+			<span class="choice-text"
+				><RichText text={resolveText(choice.text, locale)} glossary={false} /></span
+			>
 			<input type="radio" {name} value={choice.id} bind:group={selected} />
 		</label>
 	{/each}

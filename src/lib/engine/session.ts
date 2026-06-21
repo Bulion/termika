@@ -1,5 +1,6 @@
 import type { License, MicroSkill, StudyItem } from '../content/schema';
 import type { TermikaDb } from './db';
+import { seededShuffle } from './shuffle';
 
 export interface ItemCriteria {
 	license?: License;
@@ -24,6 +25,8 @@ export function selectItems(items: StudyItem[], criteria: ItemCriteria = {}): St
 
 export interface StudyQueueOptions {
 	newLimit?: number;
+	/** When set, fresh (never-seen) items are shuffled by this seed for a per-session order. */
+	shuffleSeed?: number;
 }
 
 export interface StudyQueue {
@@ -59,7 +62,10 @@ export async function buildStudyQueue(
 			return da - db2;
 		});
 
-	const fresh = items.filter((item) => stateByItem.get(item.id) === undefined).slice(0, newLimit);
+	const freshPool = items.filter((item) => stateByItem.get(item.id) === undefined);
+	const freshOrdered =
+		options.shuffleSeed === undefined ? freshPool : seededShuffle(freshPool, options.shuffleSeed);
+	const fresh = freshOrdered.slice(0, newLimit);
 
 	return { due, fresh, all: [...due, ...fresh] };
 }

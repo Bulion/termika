@@ -48,7 +48,7 @@
 		<div class="card" class:flipped aria-live="polite">
 			<div class="face face--front">
 				<span class="chip chip--q">{m.chip_question()}</span>
-				<p class="prompt"><RichText text={resolveText(item.front, locale)} /></p>
+				<p class="prompt"><RichText text={resolveText(item.front, locale)} glossary={false} /></p>
 			</div>
 			<div class="face face--back">
 				<span class="chip chip--a">{m.chip_answer()}</span>
