@@ -3,31 +3,10 @@
 	"id": "glider-calcs",
 	"title": { "pl": "Obliczenia szybowcowe", "en": "Glider calculations" },
 	"description": {
-		"pl": "Wydłużenie skrzydła, współczynnik obciążenia i prędkość przeciągnięcia w zakręcie.",
-		"en": "Wing aspect ratio, load factor and stall speed in a turn."
+		"pl": "Współczynnik obciążenia i prędkość przeciągnięcia w zakręcie.",
+		"en": "Load factor and stall speed in a turn."
 	},
 	"drills": [
-		{
-			"id": "aspect-ratio",
-			"microSkill": "general",
-			"prompt": {
-				"pl": "Rozpiętość {b} m, powierzchnia {s} m² → wydłużenie skrzydła?",
-				"en": "Span {b} m, wing area {s} m² → aspect ratio?"
-			},
-			"inputs": [
-				{ "name": "b", "min": 12, "max": 24, "step": 1 },
-				{ "name": "s", "min": 8, "max": 18, "step": 1 }
-			],
-			"op": { "kind": "formula", "expr": "b * b / s" },
-			"rule": {
-				"pl": "`\\mathrm{AR} = \\text{rozpiętość}^2 ÷ \\text{powierzchnia}`",
-				"en": "`\\mathrm{AR} = \\text{span}^2 ÷ \\text{area}`"
-			},
-			"toleranceAbs": 0.6,
-			"timeLimitSec": 25,
-			"round": 1,
-			"tags": ["airframe"]
-		},
 		{
 			"id": "load-factor-turn",
 			"microSkill": "general",
@@ -42,7 +21,7 @@
 				"en": "`n = 1 ÷ \\cos(\\text{bank})`"
 			},
 			"toleranceAbs": 0.1,
-			"timeLimitSec": 20,
+			"timeLimitSec": 60,
 			"round": 2,
 			"tags": ["load-factor"]
 		},
@@ -63,7 +42,7 @@
 				"en": "`V_{S(\\text{turn})} = V_S × \\sqrt{n} = V_S ÷ \\sqrt{\\cos(\\text{bank})}`"
 			},
 			"toleranceAbs": 3,
-			"timeLimitSec": 30,
+			"timeLimitSec": 60,
 			"round": 0,
 			"tags": ["stall"]
 		}

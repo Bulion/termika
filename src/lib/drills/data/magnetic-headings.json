@@ -22,7 +22,7 @@
 			"rule": { "pl": "wschód odejmij (magnetyczny mniejszy)", "en": "east is least" },
 			"toleranceAbs": 1,
 			"circular": true,
-			"timeLimitSec": 20,
+			"timeLimitSec": 60,
 			"tags": ["variation"]
 		},
 		{
@@ -40,7 +40,7 @@
 			"rule": { "pl": "zachód dodaj (magnetyczny większy)", "en": "west is best" },
 			"toleranceAbs": 1,
 			"circular": true,
-			"timeLimitSec": 20,
+			"timeLimitSec": 60,
 			"tags": ["variation"]
 		},
 		{
@@ -58,7 +58,7 @@
 			"rule": { "pl": "wschód odejmij", "en": "east is least" },
 			"toleranceAbs": 1,
 			"circular": true,
-			"timeLimitSec": 20,
+			"timeLimitSec": 60,
 			"tags": ["deviation"]
 		},
 		{
@@ -76,7 +76,7 @@
 			"rule": { "pl": "zachód dodaj", "en": "west is best" },
 			"toleranceAbs": 1,
 			"circular": true,
-			"timeLimitSec": 20,
+			"timeLimitSec": 60,
 			"tags": ["deviation"]
 		},
 		{
@@ -95,7 +95,7 @@
 			"rule": { "pl": "cały łańcuch: zachód dodaj", "en": "whole chain: add west" },
 			"toleranceAbs": 1,
 			"circular": true,
-			"timeLimitSec": 25,
+			"timeLimitSec": 60,
 			"tags": ["variation", "deviation"]
 		},
 		{
@@ -114,7 +114,7 @@
 			"rule": { "pl": "w drugą stronę: wschód dodaj", "en": "reverse chain: add east" },
 			"toleranceAbs": 1,
 			"circular": true,
-			"timeLimitSec": 25,
+			"timeLimitSec": 60,
 			"tags": ["variation", "deviation"]
 		}
 	]

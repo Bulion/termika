@@ -21,7 +21,7 @@
 				"en": "`\\mathrm{GS} ÷ 2 × 10` (i.e. `\\mathrm{GS} × 5`)"
 			},
 			"tolerancePct": 5,
-			"timeLimitSec": 10,
+			"timeLimitSec": 60,
 			"tags": ["descent"]
 		},
 		{
@@ -38,7 +38,7 @@
 				"en": "`\\text{thousands ft} × 3` (3:1 rule)"
 			},
 			"tolerancePct": 5,
-			"timeLimitSec": 10,
+			"timeLimitSec": 60,
 			"tags": ["descent"]
 		},
 		{
@@ -58,7 +58,7 @@
 				"en": "`\\text{distance} ÷ \\mathrm{GS} × 60`"
 			},
 			"tolerancePct": 5,
-			"timeLimitSec": 15,
+			"timeLimitSec": 60,
 			"tags": ["time"]
 		},
 		{
@@ -78,7 +78,7 @@
 				"en": "`\\text{offset} ÷ \\text{distance flown} × 60`"
 			},
 			"tolerancePct": 8,
-			"timeLimitSec": 15,
+			"timeLimitSec": 60,
 			"tags": ["track"]
 		},
 		{
@@ -95,7 +95,7 @@
 				"en": "`1\\,\\mathrm{cm} = 5\\,\\mathrm{km}` (1:500 000 scale)"
 			},
 			"toleranceAbs": 0.5,
-			"timeLimitSec": 12,
+			"timeLimitSec": 60,
 			"tags": ["charts"]
 		}
 	]

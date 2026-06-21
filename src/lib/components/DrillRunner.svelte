@@ -107,7 +107,7 @@
 	{/if}
 
 	<p class="prompt"><RichText text={problem.prompt} /></p>
-	{#if problem.rule}
+	{#if phase === 'feedback' && problem.rule}
 		<p class="rule"><RichText text={problem.rule} /></p>
 	{/if}
 
