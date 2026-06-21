@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
+	import { base, resolve } from '$app/paths';
 	import { m } from '$lib/paraglide/messages.js';
 
 	const features = [
@@ -23,38 +23,13 @@
 			</div>
 		</div>
 
-		<div class="art" aria-hidden="true">
-			<svg viewBox="0 0 200 200" width="100%" height="100%">
-				<defs>
-					<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-						<stop offset="0" stop-color="var(--color-sky)" />
-						<stop offset="1" stop-color="var(--color-surface)" />
-					</linearGradient>
-				</defs>
-				<rect x="2" y="2" width="196" height="196" rx="20" fill="url(#sky)" />
-				<g fill="var(--color-surface)" stroke="var(--color-outline)" stroke-width="3">
-					<ellipse cx="55" cy="150" rx="44" ry="22" />
-					<ellipse cx="135" cy="165" rx="38" ry="20" />
-				</g>
-				<circle
-					cx="158"
-					cy="44"
-					r="20"
-					fill="var(--color-sun)"
-					stroke="var(--color-outline)"
-					stroke-width="3"
-				/>
-				<g
-					fill="var(--color-surface)"
-					stroke="var(--color-outline)"
-					stroke-width="4"
-					stroke-linejoin="round"
-				>
-					<path d="M40 96 L150 78 L96 104 L70 104 Z" />
-					<path d="M88 100 L96 132 L80 132 Z" />
-				</g>
-			</svg>
-		</div>
+		<img
+			class="art"
+			src={`${base}/termika-hero.png`}
+			alt={m.hero_art_alt()}
+			width="1254"
+			height="1254"
+		/>
 	</section>
 
 	<section class="learn">
@@ -169,15 +144,14 @@
 	}
 
 	.art {
+		display: block;
+		width: 100%;
+		height: auto;
 		aspect-ratio: 1;
+		object-fit: cover;
 		border: var(--border-width) solid var(--color-outline);
 		border-radius: var(--radius-lg);
 		box-shadow: var(--shadow-card);
-		overflow: hidden;
-	}
-
-	.art svg {
-		display: block;
 	}
 
 	.learn {
