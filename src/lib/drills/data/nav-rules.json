@@ -16,7 +16,10 @@
 			},
 			"generate": { "min": 70, "max": 160, "step": 10 },
 			"op": { "kind": "linear", "factor": 5 },
-			"rule": { "pl": "GS ÷ 2 × 10 (czyli GS × 5)", "en": "GS ÷ 2 × 10 (i.e. GS × 5)" },
+			"rule": {
+				"pl": "`\\mathrm{GS} ÷ 2 × 10` (czyli `\\mathrm{GS} × 5`)",
+				"en": "`\\mathrm{GS} ÷ 2 × 10` (i.e. `\\mathrm{GS} × 5`)"
+			},
 			"tolerancePct": 5,
 			"timeLimitSec": 10,
 			"tags": ["descent"]
@@ -30,7 +33,10 @@
 			},
 			"generate": { "min": 2, "max": 12, "step": 1 },
 			"op": { "kind": "linear", "factor": 3 },
-			"rule": { "pl": "tys. ft × 3 (reguła 3:1)", "en": "thousands ft × 3 (3:1 rule)" },
+			"rule": {
+				"pl": "`\\text{tys. ft} × 3` (reguła 3:1)",
+				"en": "`\\text{thousands ft} × 3` (3:1 rule)"
+			},
 			"tolerancePct": 5,
 			"timeLimitSec": 10,
 			"tags": ["descent"]
@@ -47,7 +53,10 @@
 				{ "name": "speed", "min": 60, "max": 120, "step": 10 }
 			],
 			"op": { "kind": "formula", "expr": "distance / speed * 60" },
-			"rule": { "pl": "odległość ÷ GS × 60", "en": "distance ÷ GS × 60" },
+			"rule": {
+				"pl": "`\\text{odległość} ÷ \\mathrm{GS} × 60`",
+				"en": "`\\text{distance} ÷ \\mathrm{GS} × 60`"
+			},
 			"tolerancePct": 5,
 			"timeLimitSec": 15,
 			"tags": ["time"]
@@ -64,7 +73,10 @@
 				{ "name": "leg", "min": 30, "max": 120, "step": 10 }
 			],
 			"op": { "kind": "formula", "expr": "offset / leg * 60" },
-			"rule": { "pl": "odchyłka ÷ przebyta odległość × 60", "en": "offset ÷ distance flown × 60" },
+			"rule": {
+				"pl": "`\\text{odchyłka} ÷ \\text{przebyta odległość} × 60`",
+				"en": "`\\text{offset} ÷ \\text{distance flown} × 60`"
+			},
 			"tolerancePct": 8,
 			"timeLimitSec": 15,
 			"tags": ["track"]
@@ -78,7 +90,10 @@
 			},
 			"inputs": [{ "name": "cm", "min": 1, "max": 30, "step": 1 }],
 			"op": { "kind": "formula", "expr": "cm * 5" },
-			"rule": { "pl": "1 cm = 5 km (skala 1:500 000)", "en": "1 cm = 5 km (1:500 000 scale)" },
+			"rule": {
+				"pl": "`1\\,\\mathrm{cm} = 5\\,\\mathrm{km}` (skala 1:500 000)",
+				"en": "`1\\,\\mathrm{cm} = 5\\,\\mathrm{km}` (1:500 000 scale)"
+			},
 			"toleranceAbs": 0.5,
 			"timeLimitSec": 12,
 			"tags": ["charts"]

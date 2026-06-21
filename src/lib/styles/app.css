@@ -1,4 +1,5 @@
 @import url('./tokens.css');
+@import url('katex/dist/katex.min.css');
 @import url('@fontsource/plus-jakarta-sans/700.css');
 @import url('@fontsource/plus-jakarta-sans/800.css');
 @import url('@fontsource/atkinson-hyperlegible-next/400.css');

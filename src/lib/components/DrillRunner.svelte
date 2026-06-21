@@ -5,6 +5,7 @@
 	import type { Attempt } from '$lib/drills/fluency';
 	import type { Drill } from '$lib/drills/schema';
 	import { m } from '$lib/paraglide/messages.js';
+	import RichText from './RichText.svelte';
 
 	let {
 		drills,
@@ -105,9 +106,9 @@
 		</div>
 	{/if}
 
-	<p class="prompt">{problem.prompt}</p>
+	<p class="prompt"><RichText text={problem.prompt} /></p>
 	{#if problem.rule}
-		<p class="rule">{problem.rule}</p>
+		<p class="rule"><RichText text={problem.rule} /></p>
 	{/if}
 
 	<input
@@ -183,6 +184,7 @@
 
 	.prompt {
 		width: 100%;
+		min-width: 0;
 		font-family: var(--font-mono);
 		font-weight: 700;
 		font-size: clamp(1.5rem, 5vw, 2rem);
@@ -195,6 +197,8 @@
 	}
 
 	.rule {
+		width: 100%;
+		min-width: 0;
 		margin: 0;
 		font-family: var(--font-mono);
 		font-size: 0.85rem;

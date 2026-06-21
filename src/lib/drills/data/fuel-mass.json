@@ -13,7 +13,7 @@
 			"prompt": { "pl": "{value} L AVGAS → kg?", "en": "{value} L AVGAS → kg?" },
 			"generate": { "min": 20, "max": 200, "step": 10 },
 			"op": { "kind": "linear", "factor": 0.72 },
-			"rule": { "pl": "≈ × 0,72 (gęstość AVGAS)", "en": "≈ × 0.72 (AVGAS density)" },
+			"rule": { "pl": "`≈ × 0{,}72` (gęstość AVGAS)", "en": "`≈ × 0.72` (AVGAS density)" },
 			"tolerancePct": 5,
 			"timeLimitSec": 15,
 			"tags": ["fuel", "avgas"]
@@ -24,7 +24,7 @@
 			"prompt": { "pl": "{value} L Jet A-1 → kg?", "en": "{value} L Jet A-1 → kg?" },
 			"generate": { "min": 50, "max": 500, "step": 10 },
 			"op": { "kind": "linear", "factor": 0.8 },
-			"rule": { "pl": "≈ × 0,8 (gęstość Jet A-1)", "en": "≈ × 0.8 (Jet A-1 density)" },
+			"rule": { "pl": "`≈ × 0{,}8` (gęstość Jet A-1)", "en": "`≈ × 0.8` (Jet A-1 density)" },
 			"tolerancePct": 5,
 			"timeLimitSec": 15,
 			"tags": ["fuel", "jet"]
@@ -35,7 +35,7 @@
 			"prompt": { "pl": "{value} kg → lb?", "en": "{value} kg → lb?" },
 			"generate": { "min": 10, "max": 300, "step": 10 },
 			"op": { "kind": "linear", "factor": 2.205 },
-			"rule": { "pl": "≈ × 2,2", "en": "≈ × 2.2" },
+			"rule": { "pl": "`≈ × 2{,}2`", "en": "`≈ × 2.2`" },
 			"tolerancePct": 4,
 			"timeLimitSec": 12,
 			"tags": ["mass"]

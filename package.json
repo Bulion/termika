@@ -60,9 +60,11 @@
 		"@fontsource/fredoka": "^5.2.10",
 		"@fontsource/plus-jakarta-sans": "^5.2.8",
 		"@fontsource/space-mono": "^5.2.9",
+		"@types/katex": "^0.16.8",
 		"chart.js": "^4.5.1",
 		"convert-units": "^2.3.4",
 		"dexie": "^4.4.4",
+		"katex": "^0.17.0",
 		"ts-fsrs": "^5.4.1",
 		"zod": "^4.4.3"
 	}

@@ -19,7 +19,10 @@
 				{ "name": "s", "min": 8, "max": 18, "step": 1 }
 			],
 			"op": { "kind": "formula", "expr": "b * b / s" },
-			"rule": { "pl": "AR = rozpiętość² ÷ powierzchnia", "en": "AR = span² ÷ area" },
+			"rule": {
+				"pl": "`\\mathrm{AR} = \\text{rozpiętość}^2 ÷ \\text{powierzchnia}`",
+				"en": "`\\mathrm{AR} = \\text{span}^2 ÷ \\text{area}`"
+			},
 			"toleranceAbs": 0.6,
 			"timeLimitSec": 25,
 			"round": 1,
@@ -34,7 +37,10 @@
 			},
 			"inputs": [{ "name": "bank", "min": 0, "max": 70, "step": 5 }],
 			"op": { "kind": "formula", "expr": "1 / cos(bank)" },
-			"rule": { "pl": "n = 1 ÷ cos(przechylenie)", "en": "n = 1 ÷ cos(bank)" },
+			"rule": {
+				"pl": "`n = 1 ÷ \\cos(\\text{przechylenie})`",
+				"en": "`n = 1 ÷ \\cos(\\text{bank})`"
+			},
 			"toleranceAbs": 0.1,
 			"timeLimitSec": 20,
 			"round": 2,
@@ -53,8 +59,8 @@
 			],
 			"op": { "kind": "formula", "expr": "vs / sqrt(cos(bank))" },
 			"rule": {
-				"pl": "Vs(zakręt) = Vs × √n = Vs ÷ √cos(przechylenie)",
-				"en": "Vs(turn) = Vs × √n = Vs ÷ √cos(bank)"
+				"pl": "`V_{S(\\text{zakręt})} = V_S × \\sqrt{n} = V_S ÷ \\sqrt{\\cos(\\text{przechylenie})}`",
+				"en": "`V_{S(\\text{turn})} = V_S × \\sqrt{n} = V_S ÷ \\sqrt{\\cos(\\text{bank})}`"
 			},
 			"toleranceAbs": 3,
 			"timeLimitSec": 30,
