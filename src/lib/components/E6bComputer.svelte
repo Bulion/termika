@@ -219,28 +219,37 @@
 		color: var(--color-primary);
 	}
 
+	/* Printed on the instrument: dark E6B panel, fixed dark palette in both themes. */
 	.e6b-root :global(.e6b-step) {
 		padding: var(--space-3) var(--space-4);
 		margin-bottom: var(--space-3);
+		font-family: var(--font-mono);
 		font-size: 0.8rem;
 		line-height: 1.55;
-		color: var(--color-ink-soft);
-		background: var(--color-surface-2);
-		border: var(--border-width-sm) solid var(--color-outline);
+		color: #d8d6cc;
+		background: #16160f;
+		border: var(--border-width-sm) solid #efece2;
 		border-radius: var(--radius-md);
 	}
 
 	.e6b-root :global(.e6b-step b) {
-		color: var(--color-ink);
+		display: block;
+		margin-bottom: var(--space-2);
+		font-weight: 700;
+		letter-spacing: 0.04em;
+		color: #efece2;
 	}
 
 	.e6b-root :global(.e6b-step ol) {
-		margin: var(--space-2) 0 0;
+		margin: 0;
 		padding-left: var(--space-5);
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-1);
 	}
 
 	.e6b-root :global(.e6b-step li) {
-		margin-bottom: var(--space-1);
+		padding-left: var(--space-1);
 	}
 
 	.e6b-root :global(.e6b-auto) {

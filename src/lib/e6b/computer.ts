@@ -375,7 +375,7 @@ interface BackRefs {
 	tasCircle: SVGElement;
 }
 
-function buildBack(strings: typeof E6B_STRINGS.pl): BackRefs {
+function buildBack(): BackRefs {
 	const svg = el('svg', { viewBox: '0 0 520 760' });
 	svg.appendChild(
 		el('rect', {
@@ -389,24 +389,6 @@ function buildBack(strings: typeof E6B_STRINGS.pl): BackRefs {
 			'stroke-width': 2
 		})
 	);
-	svg.appendChild(
-		el('rect', {
-			x: 60,
-			y: 20,
-			width: 400,
-			height: 70,
-			rx: 5,
-			fill: 'none',
-			stroke: '#efece2',
-			'stroke-width': 1
-		})
-	);
-	svg.appendChild(
-		txt(260, 34, strings.forGsTh, { size: 11, fill: '#efece2', extra: { 'font-weight': 'bold' } })
-	);
-	strings.backSvgLines.forEach((line, i) => {
-		svg.appendChild(txt(72, 52 + i * 13, line, { size: 8.5, fill: '#d8d6cc', anchor: 'start' }));
-	});
 	svg.appendChild(
 		el('polygon', {
 			points: `${B_CX},${B_CY - B_R - 26} ${B_CX - 9},${B_CY - B_R - 40} ${B_CX + 9},${B_CY - B_R - 40}`,
@@ -668,7 +650,7 @@ export function createE6b(root: HTMLElement, options: { locale: E6bLocale }): E6
 	const stepsBox = q<HTMLElement>('.e6b-steps')!;
 
 	const F = buildFront(T);
-	const R = buildBack(T);
+	const R = buildBack();
 	faceFront.appendChild(F.svg);
 	faceBack.appendChild(R.svg);
 

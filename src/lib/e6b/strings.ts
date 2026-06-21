@@ -55,8 +55,6 @@ export interface E6bStrings {
 	howItWorks: string[];
 	timeResult: string;
 	fuelResult: string;
-	forGsTh: string;
-	backSvgLines: string[];
 }
 
 const pl: E6bStrings = {
@@ -131,13 +129,7 @@ const pl: E6bStrings = {
 		'Wartości są logarytmiczne: 12 może znaczyć 1,2 / 12 / 120.'
 	],
 	timeResult: 'Czas = {v} min (kursor pokazuje wynik na skali B)',
-	fuelResult: 'Paliwo = {v} gal',
-	forGsTh: 'FOR G.S. AND T.H.',
-	backSvgLines: [
-		'1  kierunek wiatru pod TRUE INDEX    2  kropka w górę od środka',
-		'3  kurs (TC) pod TRUE INDEX    4  przesuń siatkę, aż kropka na łuku TAS',
-		'5  GS pod środkiem    WCA = kąt kropki od linii środkowej'
-	]
+	fuelResult: 'Paliwo = {v} gal'
 };
 
 const en: E6bStrings = {
@@ -212,13 +204,7 @@ const en: E6bStrings = {
 		'Values are logarithmic: 12 can mean 1.2 / 12 / 120.'
 	],
 	timeResult: 'Time = {v} min (the cursor shows the result on scale B)',
-	fuelResult: 'Fuel = {v} gal',
-	forGsTh: 'FOR G.S. AND T.H.',
-	backSvgLines: [
-		'1  wind direction under TRUE INDEX    2  dot up from the centre',
-		'3  course (TC) under TRUE INDEX    4  slide the grid until the dot is on the TAS arc',
-		'5  GS under the centre    WCA = dot angle from the centre line'
-	]
+	fuelResult: 'Fuel = {v} gal'
 };
 
 export const E6B_STRINGS: Record<E6bLocale, E6bStrings> = { pl, en };
