@@ -30,7 +30,8 @@
 				"pl": "Prezes ULC",
 				"en": "President of ULC (Civil Aviation Authority)"
 			},
-			"acceptB": ["Prezes ULC", "ULC", "Urząd Lotnictwa Cywilnego", "President of ULC"]
+			"acceptB": ["Prezes ULC", "ULC", "Urząd Lotnictwa Cywilnego", "President of ULC"],
+			"keywordsB": [["ulc", "urzad lotnictwa cywilnego", "civil aviation"]]
 		},
 		{
 			"id": "ops-2",
@@ -42,7 +43,8 @@
 				"pl": "PKBWL",
 				"en": "PKBWL (State Commission for Aircraft Accident Investigation)"
 			},
-			"acceptB": ["PKBWL", "Państwowa Komisja Badania Wypadków Lotniczych"]
+			"acceptB": ["PKBWL", "Państwowa Komisja Badania Wypadków Lotniczych"],
+			"keywordsB": [["pkbwl", "panstwowa komisja badania wypadkow"]]
 		},
 		{
 			"id": "ops-3",
@@ -54,7 +56,8 @@
 				"pl": "Aneks 13",
 				"en": "Annex 13"
 			},
-			"acceptB": ["Aneks 13", "Annex 13", "13"]
+			"acceptB": ["Aneks 13", "Annex 13", "13"],
+			"keywordsB": [["13"]]
 		},
 		{
 			"id": "ops-4",
@@ -66,7 +69,8 @@
 				"pl": "SAR",
 				"en": "SAR"
 			},
-			"acceptB": ["SAR", "napis SAR"]
+			"acceptB": ["SAR", "napis SAR"],
+			"keywordsB": [["sar"]]
 		},
 		{
 			"id": "ops-5",
@@ -78,7 +82,8 @@
 				"pl": "Tak, bez względu na konsekwencje",
 				"en": "Yes, regardless of consequences"
 			},
-			"acceptB": ["Tak", "Yes", "tak bez względu na konsekwencje", "zawsze tak"]
+			"acceptB": ["Tak", "Yes", "tak bez względu na konsekwencje", "zawsze tak"],
+			"keywordsB": [["tak", "yes"]]
 		},
 		{
 			"id": "ops-6",
@@ -90,7 +95,18 @@
 				"pl": "Ratowanie życia załogi i pasażerów",
 				"en": "Saving the lives of crew and passengers"
 			},
-			"acceptB": ["ratowanie życia", "saving lives", "ewakuacja"]
+			"acceptB": ["ratowanie życia", "saving lives", "ewakuacja"],
+			"keywordsB": [
+				[
+					"ratowanie zyci",
+					"ratowanie ludz",
+					"saving liv",
+					"save liv",
+					"ewakuac",
+					"evacuat",
+					"uratowa"
+				]
+			]
 		},
 		{
 			"id": "ops-7",
@@ -102,7 +118,8 @@
 				"pl": "Tak",
 				"en": "Yes"
 			},
-			"acceptB": ["Tak", "Yes", "można"]
+			"acceptB": ["Tak", "Yes", "można"],
+			"keywordsB": [["tak", "yes", "mozna"]]
 		},
 		{
 			"id": "ops-8",
@@ -114,7 +131,8 @@
 				"pl": "Prawo lotnicze",
 				"en": "Aviation Law (Prawo lotnicze)"
 			},
-			"acceptB": ["Prawo lotnicze", "Aviation Law", "ustawa prawo lotnicze"]
+			"acceptB": ["Prawo lotnicze", "Aviation Law", "ustawa prawo lotnicze"],
+			"keywordsB": [["prawo lotnicze", "aviation law"]]
 		}
 	]
 }

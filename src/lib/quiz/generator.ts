@@ -9,6 +9,8 @@ export interface QuizQuestion {
 	answerLabel: string;
 	expected: string;
 	accept: string[];
+	/** Required concept groups; the answer must contain a variant from each group. */
+	keywordGroups: string[][];
 	hint?: string;
 }
 
@@ -26,11 +28,21 @@ export function normalizeAnswer(value: string): string {
 export function isQuizAnswerCorrect(
 	input: string,
 	expected: string,
-	accept: string[] = []
+	accept: string[] = [],
+	keywordGroups: string[][] = []
 ): boolean {
 	const normalized = normalizeAnswer(input);
 	if (normalized === '') return false;
-	return [expected, ...accept].some((candidate) => normalizeAnswer(candidate) === normalized);
+	if ([expected, ...accept].some((candidate) => normalizeAnswer(candidate) === normalized)) {
+		return true;
+	}
+	if (keywordGroups.length === 0) return false;
+	return keywordGroups.every((group) =>
+		group.some((keyword) => {
+			const needle = normalizeAnswer(keyword);
+			return needle !== '' && normalized.includes(needle);
+		})
+	);
 }
 
 export function buildQuestion(
@@ -52,6 +64,7 @@ export function buildQuestion(
 			answerLabel: labelB,
 			expected: bText,
 			accept: pair.acceptB,
+			keywordGroups: pair.keywordsB,
 			hint
 		};
 	}
@@ -62,6 +75,7 @@ export function buildQuestion(
 		answerLabel: labelA,
 		expected: aText,
 		accept: pair.acceptA,
+		keywordGroups: pair.keywordsA,
 		hint
 	};
 }

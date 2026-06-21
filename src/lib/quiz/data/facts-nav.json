@@ -30,7 +30,8 @@
 				"pl": "1852 m",
 				"en": "1852 m"
 			},
-			"acceptB": ["1852", "1852 m", "1852 metrów", "1852 meters"]
+			"acceptB": ["1852", "1852 m", "1852 metrów", "1852 meters"],
+			"keywordsB": [["1852"]]
 		},
 		{
 			"id": "nav-2",
@@ -42,7 +43,8 @@
 				"pl": "1 minuta",
 				"en": "1 minute"
 			},
-			"acceptB": ["1", "1 minuta", "1 minute", "1'"]
+			"acceptB": ["1", "1 minuta", "1 minute", "1'"],
+			"keywordsB": [["1"]]
 		},
 		{
 			"id": "nav-3",
@@ -54,7 +56,8 @@
 				"pl": "60 NM",
 				"en": "60 NM"
 			},
-			"acceptB": ["60", "60 NM"]
+			"acceptB": ["60", "60 NM"],
+			"keywordsB": [["60"]]
 		},
 		{
 			"id": "nav-4",
@@ -66,7 +69,8 @@
 				"pl": "2500 ft",
 				"en": "2500 ft"
 			},
-			"acceptB": ["2500", "2500 ft", "2500 stóp", "2500 feet"]
+			"acceptB": ["2500", "2500 ft", "2500 stóp", "2500 feet"],
+			"keywordsB": [["2500"]]
 		},
 		{
 			"id": "nav-5",
@@ -78,7 +82,8 @@
 				"pl": "QNH",
 				"en": "QNH"
 			},
-			"acceptB": ["QNH", "qnh"]
+			"acceptB": ["QNH", "qnh"],
+			"keywordsB": [["qnh"]]
 		},
 		{
 			"id": "nav-6",
@@ -90,7 +95,8 @@
 				"pl": "QFE",
 				"en": "QFE"
 			},
-			"acceptB": ["QFE", "qfe"]
+			"acceptB": ["QFE", "qfe"],
+			"keywordsB": [["qfe"]]
 		},
 		{
 			"id": "nav-7",
@@ -102,7 +108,8 @@
 				"pl": "045°",
 				"en": "045°"
 			},
-			"acceptB": ["45", "045", "45°", "045°"]
+			"acceptB": ["45", "045", "45°", "045°"],
+			"keywordsB": [["45"]]
 		},
 		{
 			"id": "nav-8",
@@ -114,7 +121,8 @@
 				"pl": "135°",
 				"en": "135°"
 			},
-			"acceptB": ["135", "135°"]
+			"acceptB": ["135", "135°"],
+			"keywordsB": [["135"]]
 		},
 		{
 			"id": "nav-9",
@@ -126,7 +134,8 @@
 				"pl": "225°",
 				"en": "225°"
 			},
-			"acceptB": ["225", "225°"]
+			"acceptB": ["225", "225°"],
+			"keywordsB": [["225"]]
 		},
 		{
 			"id": "nav-10",
@@ -138,7 +147,8 @@
 				"pl": "315°",
 				"en": "315°"
 			},
-			"acceptB": ["315", "315°"]
+			"acceptB": ["315", "315°"],
+			"keywordsB": [["315"]]
 		},
 		{
 			"id": "nav-11",
@@ -150,7 +160,8 @@
 				"pl": "+2 h",
 				"en": "+2 h"
 			},
-			"acceptB": ["2", "+2", "UTC+2", "2 godziny", "2 hours"]
+			"acceptB": ["2", "+2", "UTC+2", "2 godziny", "2 hours"],
+			"keywordsB": [["2"]]
 		},
 		{
 			"id": "nav-12",
@@ -162,7 +173,8 @@
 				"pl": "+1 h",
 				"en": "+1 h"
 			},
-			"acceptB": ["1", "+1", "UTC+1", "1 godzina", "1 hour"]
+			"acceptB": ["1", "+1", "UTC+1", "1 godzina", "1 hour"],
+			"keywordsB": [["1"]]
 		},
 		{
 			"id": "nav-13",
@@ -174,7 +186,8 @@
 				"pl": "90°",
 				"en": "90°"
 			},
-			"acceptB": ["90", "90°", "+90", "+90°"]
+			"acceptB": ["90", "90°", "+90", "+90°"],
+			"keywordsB": [["90"]]
 		},
 		{
 			"id": "nav-14",
@@ -186,7 +199,8 @@
 				"pl": "-90°",
 				"en": "-90°"
 			},
-			"acceptB": ["-90", "-90°"]
+			"acceptB": ["-90", "-90°"],
+			"keywordsB": [["-90"]]
 		},
 		{
 			"id": "nav-15",
@@ -198,7 +212,8 @@
 				"pl": "0,2 cm / km (1 cm = 5 km)",
 				"en": "0.2 cm / km (1 cm = 5 km)"
 			},
-			"acceptB": ["0.2", "0,2", "1:500000", "1 cm = 5 km", "5 km"]
+			"acceptB": ["0.2", "0,2", "1:500000", "1 cm = 5 km", "5 km"],
+			"keywordsB": [["0.2", "0,2", "1:500000", "5 km"]]
 		},
 		{
 			"id": "nav-16",
@@ -210,7 +225,8 @@
 				"pl": "izogona",
 				"en": "isogone"
 			},
-			"acceptB": ["izogona", "isogone", "izogony"]
+			"acceptB": ["izogona", "isogone", "izogony"],
+			"keywordsB": [["izogon", "isogon"]]
 		},
 		{
 			"id": "nav-17",
@@ -225,7 +241,8 @@
 			"acceptB": [
 				"kąt między północą geograficzną a magnetyczną",
 				"angle between geographic and magnetic north"
-			]
+			],
+			"keywordsB": [["geograf"], ["magnet"]]
 		},
 		{
 			"id": "nav-18",
@@ -237,7 +254,8 @@
 				"pl": "mniejszy",
 				"en": "smaller / less"
 			},
-			"acceptB": ["mniejszy", "smaller", "less", "mniejszy od rzeczywistego"]
+			"acceptB": ["mniejszy", "smaller", "less", "mniejszy od rzeczywistego"],
+			"keywordsB": [["mniejsz", "smaller", "less"]]
 		}
 	]
 }

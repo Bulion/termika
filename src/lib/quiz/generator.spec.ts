@@ -15,9 +15,19 @@ const set: QuizSet = {
 			a: { pl: 'TEM' },
 			b: { pl: 'Threat and Error Management' },
 			acceptA: [],
-			acceptB: ['TEM management']
+			acceptB: ['TEM management'],
+			keywordsA: [],
+			keywordsB: []
 		},
-		{ id: 'gs', a: { pl: 'GS' }, b: { pl: 'Ground Speed' }, acceptA: [], acceptB: [] }
+		{
+			id: 'gs',
+			a: { pl: 'GS' },
+			b: { pl: 'Ground Speed' },
+			acceptA: [],
+			acceptB: [],
+			keywordsA: [],
+			keywordsB: []
+		}
 	]
 };
 
@@ -44,6 +54,34 @@ describe('isQuizAnswerCorrect', () => {
 
 	it('rejects a wrong answer (negative case)', () => {
 		expect(isQuizAnswerCorrect('bravo', 'Alfa', ['Alpha'])).toBe(false);
+	});
+
+	const expected = 'Prędkość przyrządowa (IAS) - z ciśnienia dynamicznego';
+	const oneGroup = [['ias', 'przyrządow']];
+
+	it('accepts an answer that contains a keyword stem (catches inflections)', () => {
+		expect(isQuizAnswerCorrect('prędkość przyrządowa', expected, [], oneGroup)).toBe(true);
+		expect(isQuizAnswerCorrect('przyrządową', expected, [], oneGroup)).toBe(true);
+	});
+
+	it('accepts an answer that contains the abbreviation keyword', () => {
+		expect(
+			isQuizAnswerCorrect('ciśnienie statyczne i dynamiczne, IAS', expected, [], oneGroup)
+		).toBe(true);
+	});
+
+	it('requires a hit from every keyword group', () => {
+		const twoGroups = [['ias', 'przyrządow'], ['ciśnien']];
+		expect(isQuizAnswerCorrect('IAS', expected, [], twoGroups)).toBe(false);
+		expect(isQuizAnswerCorrect('IAS z ciśnienia', expected, [], twoGroups)).toBe(true);
+	});
+
+	it('rejects an answer with no keyword hit even when keywords are defined', () => {
+		expect(isQuizAnswerCorrect('ciśnienie statyczne', expected, [], oneGroup)).toBe(false);
+	});
+
+	it('still accepts an exact/accept match when keyword groups are defined', () => {
+		expect(isQuizAnswerCorrect(expected, expected, [], oneGroup)).toBe(true);
 	});
 });
 

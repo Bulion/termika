@@ -30,7 +30,8 @@
 				"pl": "600 m",
 				"en": "600 m"
 			},
-			"acceptB": ["600m", "600 metrów"]
+			"acceptB": ["600m", "600 metrów"],
+			"keywordsB": [["600"]]
 		},
 		{
 			"id": "airlaw-2",
@@ -42,7 +43,8 @@
 				"pl": "Strefa identyfikacji obrony powietrznej",
 				"en": "Air Defence Identification Zone"
 			},
-			"acceptB": ["strefa identyfikacji obrony powietrznej", "Air Defence Identification Zone"]
+			"acceptB": ["strefa identyfikacji obrony powietrznej", "Air Defence Identification Zone"],
+			"keywordsB": [["identyfikacj"], ["obrony powietrznej", "air defence", "air defense"]]
 		},
 		{
 			"id": "airlaw-3",
@@ -54,7 +56,8 @@
 				"pl": "Strefa ruchu lotniskowego",
 				"en": "Aerodrome Traffic Zone"
 			},
-			"acceptB": ["strefa ruchu lotniskowego", "Aerodrome Traffic Zone"]
+			"acceptB": ["strefa ruchu lotniskowego", "Aerodrome Traffic Zone"],
+			"keywordsB": [["ruchu lotniskowego", "aerodrome traffic", "traffic zone"]]
 		},
 		{
 			"id": "airlaw-4",
@@ -66,7 +69,8 @@
 				"pl": "Strefa kontrolowana lotniska",
 				"en": "Control Zone"
 			},
-			"acceptB": ["strefa kontrolowana lotniska", "Control Zone"]
+			"acceptB": ["strefa kontrolowana lotniska", "Control Zone"],
+			"keywordsB": [["strefa kontrolowana", "control zone"]]
 		},
 		{
 			"id": "airlaw-5",
@@ -78,7 +82,8 @@
 				"pl": "Obszar kontrolowany",
 				"en": "Control Area"
 			},
-			"acceptB": ["obszar kontrolowany", "Control Area"]
+			"acceptB": ["obszar kontrolowany", "Control Area"],
+			"keywordsB": [["obszar kontrolowany", "control area"]]
 		},
 		{
 			"id": "airlaw-6",
@@ -90,7 +95,8 @@
 				"pl": "Punkt odniesienia lotniska",
 				"en": "Aerodrome Reference Point"
 			},
-			"acceptB": ["punkt odniesienia lotniska", "Aerodrome Reference Point"]
+			"acceptB": ["punkt odniesienia lotniska", "Aerodrome Reference Point"],
+			"keywordsB": [["punkt odniesienia", "reference point"]]
 		},
 		{
 			"id": "airlaw-7",
@@ -102,7 +108,8 @@
 				"pl": "Ośrodek Zarządzania Przestrzenią Powietrzną",
 				"en": "Airspace Management Cell"
 			},
-			"acceptB": ["ośrodek zarządzania przestrzenią powietrzną", "Airspace Management Cell"]
+			"acceptB": ["ośrodek zarządzania przestrzenią powietrzną", "Airspace Management Cell"],
+			"keywordsB": [["zarzadzania przestrzenia", "airspace management"]]
 		},
 		{
 			"id": "airlaw-8",
@@ -114,7 +121,8 @@
 				"pl": "Zarządzanie ruchem lotniczym",
 				"en": "Air Traffic Management"
 			},
-			"acceptB": ["zarządzanie ruchem lotniczym", "Air Traffic Management"]
+			"acceptB": ["zarządzanie ruchem lotniczym", "Air Traffic Management"],
+			"keywordsB": [["zarzadzanie ruchem lotniczym", "air traffic management"]]
 		},
 		{
 			"id": "airlaw-9",
@@ -126,7 +134,8 @@
 				"pl": "Plan użytkowania przestrzeni powietrznej",
 				"en": "Airspace Use Plan"
 			},
-			"acceptB": ["plan użytkowania przestrzeni powietrznej", "Airspace Use Plan"]
+			"acceptB": ["plan użytkowania przestrzeni powietrznej", "Airspace Use Plan"],
+			"keywordsB": [["uzytkowania przestrzeni", "airspace use"]]
 		},
 		{
 			"id": "airlaw-10",
@@ -138,7 +147,8 @@
 				"pl": "72 godziny",
 				"en": "72 hours"
 			},
-			"acceptB": ["72h", "72 godziny", "72 godz"]
+			"acceptB": ["72h", "72 godziny", "72 godz"],
+			"keywordsB": [["72"]]
 		},
 		{
 			"id": "airlaw-11",
@@ -150,7 +160,8 @@
 				"pl": "Klasa C",
 				"en": "Class C"
 			},
-			"acceptB": ["C", "klasa C", "Class C"]
+			"acceptB": ["C", "klasa C", "Class C"],
+			"keywordsB": [["c"]]
 		},
 		{
 			"id": "airlaw-12",
@@ -162,7 +173,8 @@
 				"pl": "PKBWL",
 				"en": "PKBWL"
 			},
-			"acceptB": ["PKBWL", "Państwowa Komisja Badania Wypadków Lotniczych"]
+			"acceptB": ["PKBWL", "Państwowa Komisja Badania Wypadków Lotniczych"],
+			"keywordsB": [["pkbwl", "panstwowa komisja badania wypadkow"]]
 		},
 		{
 			"id": "airlaw-13",
@@ -174,7 +186,8 @@
 				"pl": "Aneks 13",
 				"en": "Annex 13"
 			},
-			"acceptB": ["13", "aneks 13", "Annex 13"]
+			"acceptB": ["13", "aneks 13", "Annex 13"],
+			"keywordsB": [["13"]]
 		}
 	]
 }

@@ -30,7 +30,8 @@
 				"pl": "1,225 kg/m³",
 				"en": "1.225 kg/m³"
 			},
-			"acceptB": ["1.225 kg/m3", "1,225 kg/m3", "1.225", "1,225"]
+			"acceptB": ["1.225 kg/m3", "1,225 kg/m3", "1.225", "1,225"],
+			"keywordsB": [["1.225", "1,225"]]
 		},
 		{
 			"id": "pof-2",
@@ -42,7 +43,8 @@
 				"pl": "15 °C",
 				"en": "15 °C"
 			},
-			"acceptB": ["15°C", "15 C", "15 stopni"]
+			"acceptB": ["15°C", "15 C", "15 stopni"],
+			"keywordsB": [["15"]]
 		},
 		{
 			"id": "pof-3",
@@ -54,7 +56,8 @@
 				"pl": "1013,25 hPa",
 				"en": "1013.25 hPa"
 			},
-			"acceptB": ["1013.25 hPa", "1013,25 hPa", "1013 hPa", "1013.25"]
+			"acceptB": ["1013.25 hPa", "1013,25 hPa", "1013 hPa", "1013.25"],
+			"keywordsB": [["1013"]]
 		},
 		{
 			"id": "pof-4",
@@ -66,7 +69,8 @@
 				"pl": "-6,5 °C / 1000 m",
 				"en": "-6.5 °C / 1000 m"
 			},
-			"acceptB": ["-6.5°C/1000m", "-6,5°C/1000m", "6.5 stopni na km", "-6.5"]
+			"acceptB": ["-6.5°C/1000m", "-6,5°C/1000m", "6.5 stopni na km", "-6.5"],
+			"keywordsB": [["6.5", "6,5"]]
 		},
 		{
 			"id": "pof-5",
@@ -78,7 +82,8 @@
 				"pl": "1 hPa",
 				"en": "1 hPa"
 			},
-			"acceptB": ["1hPa", "1 hektopaskal"]
+			"acceptB": ["1hPa", "1 hektopaskal"],
+			"keywordsB": [["1"]]
 		},
 		{
 			"id": "pof-6",
@@ -90,7 +95,11 @@
 				"pl": "Tendencja do powrotu do równowagi po wytrąceniu z niej",
 				"en": "Tendency to return to equilibrium after disturbance"
 			},
-			"acceptB": ["powrót do równowagi", "return to equilibrium", "tendencja powrotna"]
+			"acceptB": ["powrót do równowagi", "return to equilibrium", "tendencja powrotna"],
+			"keywordsB": [
+				["powrot", "powrac", "return"],
+				["rownowag", "equilibrium"]
+			]
 		},
 		{
 			"id": "pof-7",
@@ -105,7 +114,8 @@
 			"acceptB": [
 				"punkt działania wypadkowej sił aerodynamicznych",
 				"resultant aerodynamic force point"
-			]
+			],
+			"keywordsB": [["wypadkow", "resultant"]]
 		},
 		{
 			"id": "pof-8",
@@ -117,7 +127,11 @@
 				"pl": "Rozpiętość / średnia cięciwa geometryczna",
 				"en": "Span / mean geometric chord"
 			},
-			"acceptB": ["rozpiętość podzielona przez cięciwę", "b/c", "span over chord"]
+			"acceptB": ["rozpiętość podzielona przez cięciwę", "b/c", "span over chord"],
+			"keywordsB": [
+				["rozpietos", "span", "b/c"],
+				["cieciw", "chord", "b/c"]
+			]
 		},
 		{
 			"id": "pof-9",
@@ -133,7 +147,8 @@
 				"kąt nadkrytyczny",
 				"przeciągnięcie asymetryczne",
 				"critical angle of attack exceeded"
-			]
+			],
+			"keywordsB": [["nadkrytyczn", "krytyczn", "critical", "przeciagn", "stall"]]
 		},
 		{
 			"id": "pof-10",
@@ -145,7 +160,11 @@
 				"pl": "Brak wyważenia masowego lotek",
 				"en": "Lack of mass balance on ailerons"
 			},
-			"acceptB": ["brak wyważenia masowego", "no mass balance", "mass imbalance"]
+			"acceptB": ["brak wyważenia masowego", "no mass balance", "mass imbalance"],
+			"keywordsB": [
+				["wywaz", "balance", "imbalance"],
+				["masow", "mass"]
+			]
 		},
 		{
 			"id": "pof-11",
@@ -157,7 +176,11 @@
 				"pl": "Profile laminarne są bardziej wrażliwe na zabrudzenia",
 				"en": "Laminar profiles are more sensitive to surface contamination"
 			},
-			"acceptB": ["laminarne bardziej wrażliwe", "laminar more sensitive", "nie profile klasyczne"]
+			"acceptB": ["laminarne bardziej wrażliwe", "laminar more sensitive", "nie profile klasyczne"],
+			"keywordsB": [
+				["laminarn", "laminar"],
+				["wrazliw", "sensitive"]
+			]
 		},
 		{
 			"id": "pof-12",
@@ -169,7 +192,8 @@
 				"pl": "Rośnie czterokrotnie (ar = v²/R)",
 				"en": "Increases fourfold (ar = v²/R)"
 			},
-			"acceptB": ["4 razy", "czterokrotnie", "fourfold", "x4"]
+			"acceptB": ["4 razy", "czterokrotnie", "fourfold", "x4"],
+			"keywordsB": [["4", "czterokrotn", "fourfold"]]
 		},
 		{
 			"id": "pof-13",
@@ -181,7 +205,8 @@
 				"pl": "W stronę środka okręgu (dośrodkowe)",
 				"en": "Toward the center of the circle (centripetal)"
 			},
-			"acceptB": ["do środka", "dośrodkowe", "centripetal", "toward center"]
+			"acceptB": ["do środka", "dośrodkowe", "centripetal", "toward center"],
+			"keywordsB": [["srodka", "srodek", "dosrodkow", "centripetal", "center"]]
 		},
 		{
 			"id": "pof-14",
@@ -193,7 +218,11 @@
 				"pl": "Zwiększenie sztywności skrętnej skrzydła",
 				"en": "Increase wing torsional stiffness"
 			},
-			"acceptB": ["sztywność skrętna", "torsional stiffness", "zwiększyć sztywność skrętną"]
+			"acceptB": ["sztywność skrętna", "torsional stiffness", "zwiększyć sztywność skrętną"],
+			"keywordsB": [
+				["sztywnos", "stiffness"],
+				["skretn", "torsional"]
+			]
 		},
 		{
 			"id": "pof-15",
@@ -209,7 +238,8 @@
 				"niezaburzony opływ",
 				"undisturbed flow",
 				"bez turbulencji do punktu przejściowego"
-			]
+			],
+			"keywordsB": [["niezaburzon", "undisturbed", "bez turbulencji", "uporzadkowan", "warstwow"]]
 		},
 		{
 			"id": "pof-16",
@@ -221,7 +251,11 @@
 				"pl": "Warstwa powietrza, w której prędkość zmienia się od zera do prędkości opływu",
 				"en": "Air layer where velocity changes from zero to free-stream velocity"
 			},
-			"acceptB": ["od zera do prędkości opływu", "zero to freestream", "przy powierzchni płata"]
+			"acceptB": ["od zera do prędkości opływu", "zero to freestream", "przy powierzchni płata"],
+			"keywordsB": [
+				["predkos", "velocity", "speed"],
+				["zera", "zero"]
+			]
 		}
 	]
 }

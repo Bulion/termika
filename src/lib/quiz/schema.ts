@@ -14,6 +14,10 @@ const quizPairSchema = z.object({
 	acceptA: z.array(z.string()).default([]),
 	/** Extra spellings accepted when `b` is the expected answer. */
 	acceptB: z.array(z.string()).default([]),
+	/** Required keyword groups when `a` is the expected answer; one variant per group must appear. */
+	keywordsA: z.array(z.array(z.string())).default([]),
+	/** Required keyword groups when `b` is the expected answer; one variant per group must appear. */
+	keywordsB: z.array(z.array(z.string())).default([]),
 	/** Optional meaning/translation shown after answering. */
 	hint: localizedTextSchema.optional()
 });

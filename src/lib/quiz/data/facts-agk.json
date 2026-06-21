@@ -30,7 +30,8 @@
 				"pl": "Prędkość pionowa (wznoszenie/opadanie)",
 				"en": "Vertical speed (climb/sink rate)"
 			},
-			"acceptB": ["prędkość pionową", "vario", "climb rate", "sink rate", "wznoszenie i opadanie"]
+			"acceptB": ["prędkość pionową", "vario", "climb rate", "sink rate", "wznoszenie i opadanie"],
+			"keywordsB": [["pionow", "wznoszen", "opadan", "vertical", "climb", "sink"]]
 		},
 		{
 			"id": "agk-2",
@@ -42,7 +43,8 @@
 				"pl": "Puszka aneroidowa",
 				"en": "Aneroid capsule"
 			},
-			"acceptB": ["puszka aneroidowa", "aneroid capsule", "puszka próżniowa", "aneroid"]
+			"acceptB": ["puszka aneroidowa", "aneroid capsule", "puszka próżniowa", "aneroid"],
+			"keywordsB": [["aneroid", "prozniow"]]
 		},
 		{
 			"id": "agk-3",
@@ -59,6 +61,10 @@
 				"static and total",
 				"total and static",
 				"całkowite i statyczne"
+			],
+			"keywordsB": [
+				["statyczn", "static"],
+				["calkowit", "total", "dynamiczn", "pitot"]
 			]
 		},
 		{
@@ -71,7 +77,8 @@
 				"pl": "Statyczne",
 				"en": "Static"
 			},
-			"acceptB": ["statyczne", "static", "ciśnienie statyczne"]
+			"acceptB": ["statyczne", "static", "ciśnienie statyczne"],
+			"keywordsB": [["statyczn", "static"]]
 		},
 		{
 			"id": "agk-5",
@@ -83,7 +90,8 @@
 				"pl": "Prędkość przyrządowa (IAS) - na podstawie ciśnienia dynamicznego (różnicy ciśnienia całkowitego i statycznego)",
 				"en": "Indicated airspeed (IAS) - from dynamic pressure (total minus static)"
 			},
-			"acceptB": ["IAS", "prędkość wskazywana", "prędkość przyrządowa", "indicated airspeed"]
+			"acceptB": ["IAS", "prędkość wskazywana", "prędkość przyrządowa", "indicated airspeed"],
+			"keywordsB": [["ias", "przyrzadow", "wskazywan", "indicated airspeed"]]
 		},
 		{
 			"id": "agk-6",
@@ -99,6 +107,11 @@
 				"wręgi podłużnice pokrycie",
 				"frames stringers skin",
 				"wręgi, podłużnice, pokrycie"
+			],
+			"keywordsB": [
+				["wreg", "frame", "bulkhead"],
+				["podluznic", "stringer"],
+				["pokryci", "skin"]
 			]
 		},
 		{
@@ -111,7 +124,8 @@
 				"pl": "Pokrycie, wzmocnione wręgami",
 				"en": "Skin, reinforced by frames"
 			},
-			"acceptB": ["pokrycie", "skin", "laminat", "obciążone pokrycie"]
+			"acceptB": ["pokrycie", "skin", "laminat", "obciążone pokrycie"],
+			"keywordsB": [["pokryci", "skin", "laminat"]]
 		},
 		{
 			"id": "agk-8",
@@ -129,7 +143,8 @@
 				"zmniejszenie doskonałości",
 				"increase drag",
 				"increase sink"
-			]
+			],
+			"keywordsB": [["opor", "opadan", "doskonalosc", "drag", "sink", "glide"]]
 		},
 		{
 			"id": "agk-9",
@@ -141,7 +156,8 @@
 				"pl": "Sterowanie przechyleniami (obrót względem osi podłużnej)",
 				"en": "Roll control (rotation about longitudinal axis)"
 			},
-			"acceptB": ["przechylenia", "roll", "oś podłużna", "longitudinal axis"]
+			"acceptB": ["przechylenia", "roll", "oś podłużna", "longitudinal axis"],
+			"keywordsB": [["przechyl", "roll", "podluzn", "longitudinal"]]
 		},
 		{
 			"id": "agk-10",
@@ -159,7 +175,8 @@
 				"wyważenie",
 				"trim",
 				"aerodynamic trim"
-			]
+			],
+			"keywordsB": [["zmniejsz", "reduce", "wywaz", "trim"]]
 		},
 		{
 			"id": "agk-11",
@@ -175,7 +192,8 @@
 				"stateczność podłużna i kierunkowa",
 				"longitudinal and directional stability",
 				"sterowność podłużna"
-			]
+			],
+			"keywordsB": [["statecznosc", "sterownosc", "stability", "control"]]
 		},
 		{
 			"id": "agk-12",
@@ -187,7 +205,8 @@
 				"pl": "Dwie połówki ustawione pod znacznym wzniosem, pełnią rolę usterzenia poziomego i pionowego jednocześnie",
 				"en": "Two halves set at a large dihedral angle, acting as both horizontal and vertical stabiliser"
 			},
-			"acceptB": ["dwie połówki", "two halves", "motylkowe", "V-tail", "wznios"]
+			"acceptB": ["dwie połówki", "two halves", "motylkowe", "V-tail", "wznios"],
+			"keywordsB": [["polow", "halves", "wznios", "dihedral", "poziom", "pionow", "horizontal"]]
 		},
 		{
 			"id": "agk-13",
@@ -199,7 +218,8 @@
 				"pl": "Lotka wychylana do góry wychyla się o większy kąt niż lotka wychylana do dołu",
 				"en": "The up-going aileron deflects through a larger angle than the down-going aileron"
 			},
-			"acceptB": ["większy kąt do góry", "up more than down", "różnicowe", "differential"]
+			"acceptB": ["większy kąt do góry", "up more than down", "różnicowe", "differential"],
+			"keywordsB": [["wiekszy kat", "do gory", "up more", "roznicow", "differential"]]
 		},
 		{
 			"id": "agk-14",
@@ -216,7 +236,8 @@
 				"load-carrying",
 				"główny element nośny",
 				"main structural element"
-			]
+			],
+			"keywordsB": [["obciazen", "nosn", "load", "structural"]]
 		},
 		{
 			"id": "agk-15",
@@ -233,6 +254,10 @@
 				"ratio of ultimate to limit strength",
 				">1",
 				"większy od 1"
+			],
+			"keywordsB": [
+				["stosunek", "ratio"],
+				["niszczac", "doraznej", "dopuszczaln", "ultimate", "limit", ">1", "wiekszy od 1"]
 			]
 		}
 	]

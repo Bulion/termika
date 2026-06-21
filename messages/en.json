@@ -65,6 +65,7 @@
 	"quiz_reveal": "I don't know",
 	"quiz_progress": "{n} of {total}",
 	"quiz_done": "{correct}/{total} correct",
+	"quiz_model_answer": "Model answer",
 	"e6b_card_title": "E6B computer",
 	"e6b_card_desc": "Interactive navigation calculator: headings and the wind triangle.",
 	"e6b_title": "E6B computer",
