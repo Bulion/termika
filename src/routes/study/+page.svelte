@@ -37,6 +37,13 @@
 				</a>
 			</li>
 		{/each}
+		<li>
+			<a class="card lift" href={resolve('/study/glossary')}>
+				<span class="card-title">{m.glossary_title()}</span>
+				<span class="card-desc">{m.glossary_card_desc()}</span>
+				<span class="go" aria-hidden="true">→</span>
+			</a>
+		</li>
 	</ul>
 
 	<section class="external">

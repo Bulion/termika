@@ -5,6 +5,7 @@ const routes = [
 	'./study',
 	'./study/session?mode=all',
 	'./study/session?mode=scenario',
+	'./study/glossary',
 	'./drills',
 	'./drills/run?set=nav-rules',
 	'./drills/run?set=magnetic-headings',

@@ -115,5 +115,12 @@
 	"theme_system": "System",
 	"theme_light": "Light",
 	"theme_dark": "Dark",
-	"lang_label": "Language"
+	"lang_label": "Language",
+	"glossary_title": "Glossary",
+	"glossary_desc": "Search aviation abbreviations and METAR codes.",
+	"glossary_card_desc": "A searchable dictionary of abbreviations and weather codes.",
+	"glossary_search": "Search term or meaning…",
+	"glossary_group_abbreviations": "Abbreviations",
+	"glossary_group_metar": "METAR codes",
+	"glossary_empty": "No results for that search."
 }
