@@ -1,5 +1,26 @@
 import { describe, expect, it } from 'vitest';
+import abbreviations from '../quiz/data/abbreviations.json';
+import metarCodes from '../quiz/data/metar-codes.json';
+import aeroTerms from './aero-terms.json';
 import { buildGlossary, entryMatchesQuery, findGlossaryMatches, glossaryGroups } from './data';
+
+describe('glossary source data integrity', () => {
+	it('has no duplicate terms across the three source files', () => {
+		const tokens = [
+			...aeroTerms.pairs.map((p) => p.a.pl),
+			...abbreviations.pairs.map((p) => p.a.pl),
+			...metarCodes.pairs.map((p) => p.a.pl)
+		];
+		const duplicates = tokens.filter((token, i) => tokens.indexOf(token) !== i);
+		expect(duplicates).toEqual([]);
+	});
+
+	it('gives every abbreviation pair a hint for its tooltip', () => {
+		const pairs = abbreviations.pairs as { a: { pl: string }; hint?: unknown }[];
+		const missing = pairs.filter((p) => !p.hint).map((p) => p.a.pl);
+		expect(missing).toEqual([]);
+	});
+});
 
 describe('buildGlossary', () => {
 	it('maps an abbreviation to its plain-language explanation (hint)', () => {
