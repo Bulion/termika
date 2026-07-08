@@ -37,6 +37,15 @@ describe('McqPractice', () => {
 		await expect.element(screen.getByText('Skuteczność: 100%')).toBeVisible();
 	});
 
+	it('updates the session stats strip after a wrong answer', async () => {
+		const screen = render(McqPractice, { questions, locale: 'pl', pick: () => 0 });
+		await screen.getByRole('radio', { name: 'Zła q1' }).click();
+		await screen.getByRole('button', { name: 'Sprawdź' }).click();
+		await expect.element(screen.getByText('Dobre: 0')).toBeVisible();
+		await expect.element(screen.getByText('Złe: 1')).toBeVisible();
+		await expect.element(screen.getByText('Skuteczność: 0%')).toBeVisible();
+	});
+
 	it('reports the attempt with timings when advancing', async () => {
 		const attempts: { itemId: string; correct: boolean; answerMs: number; nextMs: number }[] = [];
 		let clock = 0;
