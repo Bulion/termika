@@ -42,6 +42,7 @@
 	let secondsLeft = $state(0);
 	let result = $state<ExamResult | null>(null);
 	let timer: ReturnType<typeof setInterval> | undefined;
+	let shuffleSeed = $state(0);
 
 	let sourceId = $state('ulc');
 	let loadingExternal = $state(false);
@@ -104,6 +105,7 @@
 		subjectId: string,
 		external: boolean
 	) {
+		shuffleSeed = Math.floor(Math.random() * 4294967296);
 		questions = qs;
 		answers = Object.fromEntries(qs.map((q) => [q.id, null]));
 		activeSubjectId = subjectId;
@@ -278,6 +280,7 @@
 					{question}
 					index={i + 1}
 					locale={locale()}
+					{shuffleSeed}
 					bind:selected={answers[question.id]}
 				/>
 			{/each}
@@ -293,6 +296,7 @@
 					{question}
 					index={i + 1}
 					locale={locale()}
+					{shuffleSeed}
 					selected={answers[question.id] ?? null}
 					reveal
 				/>

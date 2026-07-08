@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import type { Mcq, StudyItem } from '../content/schema';
 import type { Subject } from '../content/taxonomy';
 import {
+	choiceOrder,
 	dedupeExactMcqs,
 	loIdToSubject,
 	mcqItemsForSubject,
@@ -184,5 +185,54 @@ describe('dedupeExactMcqs', () => {
 		const a = build('q1', 'Pytanie pierwsze?', ['Pilot', 'Nikt']);
 		const b = build('q2', 'Pytanie drugie?', ['Pilot', 'Nikt']);
 		expect(dedupeExactMcqs([a, b])).toHaveLength(2);
+	});
+});
+
+describe('choiceOrder', () => {
+	const question: Mcq = {
+		...mcq('q-order', 'AIRLAW.1'),
+		choices: [
+			{ id: 'a', text: { pl: 'A' } },
+			{ id: 'b', text: { pl: 'B' } },
+			{ id: 'c', text: { pl: 'C' } },
+			{ id: 'd', text: { pl: 'D' } }
+		]
+	};
+
+	it('keeps every choice exactly once', () => {
+		const ids = choiceOrder(question, 7)
+			.map((c) => c.id)
+			.sort();
+		expect(ids).toEqual(['a', 'b', 'c', 'd']);
+	});
+
+	it('is stable for the same question and seed', () => {
+		expect(choiceOrder(question, 7)).toEqual(choiceOrder(question, 7));
+	});
+
+	it('produces a different order for at least one seed', () => {
+		const original = question.choices.map((c) => c.id).join('');
+		const seeds = Array.from({ length: 30 }, (_, i) => i);
+		const orders = seeds.map((seed) =>
+			choiceOrder(question, seed)
+				.map((c) => c.id)
+				.join('')
+		);
+		expect(orders.some((order) => order !== original)).toBe(true);
+	});
+
+	it('orders different questions differently under the same seed', () => {
+		const other: Mcq = { ...question, id: 'q-other' };
+		const seeds = Array.from({ length: 30 }, (_, i) => i);
+		const differs = seeds.some(
+			(seed) =>
+				choiceOrder(question, seed)
+					.map((c) => c.id)
+					.join('') !==
+				choiceOrder(other, seed)
+					.map((c) => c.id)
+					.join('')
+		);
+		expect(differs).toBe(true);
 	});
 });

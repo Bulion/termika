@@ -1,5 +1,6 @@
 import type { License, LocalizedText, Mcq, StudyItem } from '../content/schema';
 import type { Subject } from '../content/taxonomy';
+import { mulberry32 } from '../engine/shuffle';
 
 /** Maps every learning-objective id to the subject it belongs to. */
 export function loIdToSubject(subjects: Subject[]): Map<string, string> {
@@ -64,6 +65,19 @@ export function dedupeExactMcqs(questions: Mcq[]): Mcq[] {
 		seen.add(key);
 		return true;
 	});
+}
+
+function hashString(value: string): number {
+	let hash = 5381;
+	for (let i = 0; i < value.length; i += 1) {
+		hash = ((hash << 5) + hash + value.charCodeAt(i)) >>> 0;
+	}
+	return hash;
+}
+
+/** Per-question choice order, stable for one session seed so answering and review match. */
+export function choiceOrder(question: Mcq, seed: number): Mcq['choices'] {
+	return shuffle(question.choices, mulberry32(hashString(question.id) ^ seed));
 }
 
 export interface ExamResult {
