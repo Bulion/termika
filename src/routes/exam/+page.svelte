@@ -9,6 +9,7 @@
 	import { recordReview } from '$lib/engine/progress';
 	import { createScheduler } from '$lib/engine/scheduler';
 	import {
+		dedupeExactMcqs,
 		loIdToSubject,
 		mcqItemsForSubject,
 		pickQuestions,
@@ -139,7 +140,7 @@
 		sourceError = false;
 		loadingExternal = true;
 		try {
-			const pool = await loadExternalMcqs(sourceId, category?.id);
+			const pool = dedupeExactMcqs(await loadExternalMcqs(sourceId, category?.id));
 			activeExtLabel = category
 				? `${resolveText(activeSource.label, locale())} · ${category.name}`
 				: resolveText(activeSource.label, locale());

@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import type { Mcq, StudyItem } from '../content/schema';
 import type { Subject } from '../content/taxonomy';
 import {
+	dedupeExactMcqs,
 	loIdToSubject,
 	mcqItemsForSubject,
 	pickQuestions,
@@ -145,5 +146,43 @@ describe('scoreByCategory', () => {
 
 	it('ignores questions without a category tag', () => {
 		expect(scoreByCategory([mcq('x', 'lo')], new Map([['x', 'a']]))).toEqual([]);
+	});
+});
+
+describe('dedupeExactMcqs', () => {
+	const build = (id: string, stem: string, choiceTexts: string[], answer = 'a'): Mcq => ({
+		id,
+		type: 'mcq',
+		microSkill: 'regulation',
+		loIds: ['ulc'],
+		licenses: ['SPL'],
+		tags: [],
+		stem: { pl: stem },
+		choices: choiceTexts.map((text, i) => ({ id: 'abcd'[i], text: { pl: text } })),
+		answer
+	});
+
+	it('drops later byte-identical questions and keeps the first', () => {
+		const original = build('q1', 'Kto podlega badaniom?', ['Pilot', 'Nikt']);
+		const copy = build('q2', 'Kto podlega badaniom?', ['Pilot', 'Nikt'], 'b');
+		expect(dedupeExactMcqs([original, copy]).map((q) => q.id)).toEqual(['q1']);
+	});
+
+	it('keeps same-stem variants with different choice texts', () => {
+		const a = build('q1', 'Komu licencja?', ['Osobie A', 'Osobie B']);
+		const b = build('q2', 'Komu licencja?', ['Osobie C', 'Osobie D']);
+		expect(dedupeExactMcqs([a, b])).toHaveLength(2);
+	});
+
+	it('ignores whitespace, letter case and choice order', () => {
+		const a = build('q1', 'Kto  podlega\nbadaniom?', ['Pilot', 'Nikt']);
+		const b = build('q2', 'kto podlega badaniom?', ['nikt', 'PILOT']);
+		expect(dedupeExactMcqs([a, b])).toHaveLength(1);
+	});
+
+	it('treats questions with different stems as distinct', () => {
+		const a = build('q1', 'Pytanie pierwsze?', ['Pilot', 'Nikt']);
+		const b = build('q2', 'Pytanie drugie?', ['Pilot', 'Nikt']);
+		expect(dedupeExactMcqs([a, b])).toHaveLength(2);
 	});
 });

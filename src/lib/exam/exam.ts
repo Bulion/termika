@@ -1,4 +1,4 @@
-import type { License, Mcq, StudyItem } from '../content/schema';
+import type { License, LocalizedText, Mcq, StudyItem } from '../content/schema';
 import type { Subject } from '../content/taxonomy';
 
 /** Maps every learning-objective id to the subject it belongs to. */
@@ -43,6 +43,27 @@ export function shuffle<T>(values: readonly T[], rng: () => number = Math.random
 export function pickQuestions(pool: Mcq[], count: number, rng: () => number = Math.random): Mcq[] {
 	if (count < 0) throw new RangeError(`count must be >= 0, got ${count}`);
 	return shuffle(pool, rng).slice(0, count);
+}
+
+function normalizedTextKey(text: LocalizedText): string {
+	const normalize = (value: string | undefined) =>
+		(value ?? '').toLowerCase().replace(/\s+/g, ' ').trim();
+	return `${normalize(text.pl)}|${normalize(text.en)}`;
+}
+
+/**
+ * Drops byte-identical duplicate questions (same stem and same choice texts, ignoring
+ * case, whitespace and choice order). Same-stem variants with different choices stay.
+ */
+export function dedupeExactMcqs(questions: Mcq[]): Mcq[] {
+	const seen = new Set<string>();
+	return questions.filter((question) => {
+		const choiceKeys = question.choices.map((choice) => normalizedTextKey(choice.text)).sort();
+		const key = [normalizedTextKey(question.stem), ...choiceKeys].join('||');
+		if (seen.has(key)) return false;
+		seen.add(key);
+		return true;
+	});
 }
 
 export interface ExamResult {

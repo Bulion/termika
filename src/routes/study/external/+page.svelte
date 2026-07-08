@@ -8,6 +8,7 @@
 	import { db } from '$lib/engine/db';
 	import { recordReview } from '$lib/engine/progress';
 	import { createScheduler } from '$lib/engine/scheduler';
+	import { dedupeExactMcqs } from '$lib/exam/exam';
 	import {
 		EXAM_SOURCES,
 		loadExternalCategories,
@@ -50,7 +51,7 @@
 		loading = true;
 		error = false;
 		try {
-			questions = await loadExternalMcqs(source.id, category?.id);
+			questions = dedupeExactMcqs(await loadExternalMcqs(source.id, category?.id));
 			activeLabel = category
 				? `${resolveText(source.label, locale())} · ${category.name}`
 				: resolveText(source.label, locale());
