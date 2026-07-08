@@ -26,3 +26,17 @@ test('study session reveals an answer and accepts a grade', async ({ page }) => 
 			.or(page.getByText(/Sesja ukończona|Session complete/))
 	).toBeVisible();
 });
+
+test('ULC study runs endlessly with a stats strip', async ({ page }) => {
+	await page.goto('./study/external?source=ulc');
+	await page.getByRole('button', { name: /Wszystkie kategorie|All categories/ }).click();
+
+	await expect(page.getByText(/Dobre: 0|Correct: 0/)).toBeVisible();
+
+	await page.getByRole('radio').first().check();
+	await page.getByRole('button', { name: /Sprawdź|Check/ }).click();
+	await expect(page.getByText(/Dobre: 1|Złe: 1|Correct: 1|Wrong: 1/)).toBeVisible();
+
+	await page.getByRole('button', { name: /Następne|Next/ }).click();
+	await expect(page.getByRole('button', { name: /Sprawdź|Check/ })).toBeVisible();
+});

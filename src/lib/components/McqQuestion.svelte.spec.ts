@@ -1,6 +1,7 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 import { render } from 'vitest-browser-svelte';
 import type { Mcq } from '$lib/content/schema';
+import { choiceOrder } from '$lib/exam/exam';
 import { setLocale } from '$lib/paraglide/runtime';
 import McqQuestion from './McqQuestion.svelte';
 
@@ -47,5 +48,28 @@ describe('McqQuestion', () => {
 			reveal: true
 		});
 		await expect.element(screen.getByRole('radio', { name: 'Alfa' })).toBeDisabled();
+	});
+
+	it('renders choices in the seeded shuffled order', async () => {
+		const fourChoices: Mcq = {
+			...question,
+			choices: [
+				{ id: 'a', text: { pl: 'Alfa' } },
+				{ id: 'b', text: { pl: 'Beta' } },
+				{ id: 'c', text: { pl: 'Gamma' } },
+				{ id: 'd', text: { pl: 'Delta' } }
+			]
+		};
+		const expected = choiceOrder(fourChoices, 7).map((c) => c.text.pl);
+		const screen = render(McqQuestion, {
+			question: fourChoices,
+			index: 1,
+			locale: 'pl',
+			shuffleSeed: 7
+		});
+		const texts = [...screen.container.querySelectorAll('.choice-text')].map((el) =>
+			el.textContent?.trim()
+		);
+		expect(texts).toEqual(expected);
 	});
 });

@@ -1,108 +1,100 @@
 <script lang="ts">
+	import { untrack } from 'svelte';
 	import type { ContentLocale, Mcq } from '$lib/content/schema';
 	import { m } from '$lib/paraglide/messages.js';
+	import { COOLDOWN_SIZE, pickNext, type McqStat } from '$lib/study/adaptive';
 	import McqQuestion from './McqQuestion.svelte';
 
 	let {
 		questions,
 		locale = 'pl',
-		sessionSize = 20,
+		stats = new Map<string, McqStat>(),
 		pick = Math.random,
+		now = () => Date.now(),
 		onAttempt
 	}: {
 		questions: Mcq[];
 		locale?: ContentLocale;
-		sessionSize?: number;
+		stats?: Map<string, McqStat>;
 		pick?: () => number;
-		onAttempt?: (attempt: { itemId: string; correct: boolean }) => void;
+		now?: () => number;
+		onAttempt?: (attempt: {
+			itemId: string;
+			correct: boolean;
+			answerMs: number;
+			nextMs: number;
+		}) => void;
 	} = $props();
 
-	function shuffle<T>(items: T[]): T[] {
-		const result = [...items];
-		for (let i = result.length - 1; i > 0; i -= 1) {
-			const j = Math.floor(pick() * (i + 1));
-			[result[i], result[j]] = [result[j], result[i]];
-		}
-		return result;
-	}
-
-	let seed = $state(0);
-	let index = $state(0);
+	let recentIds: string[] = [];
+	let current = $state(untrack(() => pickNext(questions, stats, recentIds, pick)));
 	let selected = $state<string | null>(null);
 	let phase = $state<'answering' | 'feedback'>('answering');
-	let correctCount = $state(0);
+	let goodCount = $state(0);
+	let badCount = $state(0);
+	let shownAt = untrack(() => now());
+	let feedbackAt = 0;
+	let lastCorrect = false;
 
-	const deck = $derived.by((): Mcq[] => {
-		void seed;
-		return shuffle(questions).slice(0, sessionSize);
-	});
-	const current = $derived(deck[index]);
-	const finished = $derived(index >= deck.length);
+	const answeredCount = $derived(goodCount + badCount);
 	const accuracyPct = $derived(
-		deck.length === 0 ? 0 : Math.round((correctCount / deck.length) * 100)
+		answeredCount === 0 ? 0 : Math.round((goodCount / answeredCount) * 100)
 	);
 
 	function check() {
-		if (phase !== 'answering' || finished || selected === null) return;
-		const correct = selected === current.answer;
-		if (correct) correctCount += 1;
+		if (phase !== 'answering' || selected === null) return;
+		lastCorrect = selected === current.answer;
+		if (lastCorrect) goodCount += 1;
+		else badCount += 1;
+		feedbackAt = now();
 		phase = 'feedback';
-		onAttempt?.({ itemId: current.id, correct });
 	}
 
 	function advance() {
-		index += 1;
+		onAttempt?.({
+			itemId: current.id,
+			correct: lastCorrect,
+			answerMs: feedbackAt - shownAt,
+			nextMs: now() - feedbackAt
+		});
+		recentIds = [...recentIds, current.id].slice(-COOLDOWN_SIZE);
+		current = pickNext(questions, stats, recentIds, pick);
 		selected = null;
 		phase = 'answering';
-	}
-
-	function restart() {
-		seed += 1;
-		index = 0;
-		selected = null;
-		correctCount = 0;
-		phase = 'answering';
+		shownAt = now();
 	}
 </script>
 
-{#if finished}
-	<div class="summary">
-		<span class="award bobbing" aria-hidden="true">🪂</span>
-		<p class="result">{m.quiz_done({ correct: correctCount, total: deck.length })}</p>
-		<p class="result-pct">{m.drill_accuracy({ pct: accuracyPct })}</p>
-		<button type="button" class="action" onclick={restart}>{m.start_again()}</button>
+<form
+	class="practice"
+	onsubmit={(event) => {
+		event.preventDefault();
+		if (phase === 'answering') check();
+		else advance();
+	}}
+>
+	<div class="stats" role="status">
+		<span class="stat stat--good">{m.study_session_good({ n: goodCount })}</span>
+		<span class="stat stat--bad">{m.study_session_bad({ n: badCount })}</span>
+		<span class="stat">{m.drill_accuracy({ pct: accuracyPct })}</span>
 	</div>
-{:else if current}
-	<form
-		class="practice"
-		onsubmit={(event) => {
-			event.preventDefault();
-			if (phase === 'answering') check();
-			else advance();
-		}}
-	>
-		<div class="bar" aria-hidden="true">
-			<div class="bar-fill" style:width={`${(index / deck.length) * 100}%`}></div>
-		</div>
-		<p class="counter">{m.quiz_progress({ n: index + 1, total: deck.length })}</p>
 
-		{#key current.id}
-			<McqQuestion
-				question={current}
-				index={index + 1}
-				{locale}
-				bind:selected
-				reveal={phase === 'feedback'}
-			/>
-		{/key}
+	{#key current.id}
+		<McqQuestion
+			question={current}
+			index={goodCount + badCount + (phase === 'feedback' ? 0 : 1)}
+			{locale}
+			bind:selected
+			reveal={phase === 'feedback'}
+		/>
+	{/key}
 
-		{#if phase === 'feedback'}
-			<button type="submit" class="action">{m.drill_next()}</button>
-		{:else}
-			<button type="submit" class="action" disabled={selected === null}>{m.drill_check()}</button>
-		{/if}
-	</form>
-{/if}
+	{#if phase === 'feedback'}
+		<button type="submit" class="action">{m.drill_next()}</button>
+	{:else}
+		<button type="submit" class="action" disabled={selected === null}>{m.drill_check()}</button>
+	{/if}
+</form>
 
 <style>
 	.practice {
@@ -114,26 +106,29 @@
 		max-width: 40rem;
 	}
 
-	.bar {
-		width: 100%;
-		height: 0.6rem;
-		background: var(--color-track);
+	.stats {
+		display: flex;
+		gap: var(--space-4);
+		align-self: stretch;
+		justify-content: center;
+		padding: var(--space-3) var(--space-4);
+		font-family: var(--font-mono);
+		font-size: 0.9rem;
+		background: var(--color-surface);
 		border: var(--border-width-sm) solid var(--color-outline);
 		border-radius: var(--radius-pill);
-		overflow: hidden;
 	}
 
-	.bar-fill {
-		height: 100%;
-		background: var(--color-lift);
-		transition: width 0.3s ease;
-	}
-
-	.counter {
-		margin: 0;
-		font-family: var(--font-mono);
-		font-size: 0.8rem;
+	.stat {
 		color: var(--color-ink-soft);
+	}
+
+	.stat--good {
+		color: var(--color-lift);
+	}
+
+	.stat--bad {
+		color: var(--color-sink);
 	}
 
 	.action {
@@ -161,39 +156,5 @@
 	.action:not(:disabled):active {
 		transform: translate(4px, 4px);
 		box-shadow: none;
-	}
-
-	.summary {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: var(--space-4);
-		width: 100%;
-		max-width: 34rem;
-		padding: var(--space-8) var(--space-6);
-		text-align: center;
-		background: var(--color-surface);
-		border: var(--border-width) solid var(--color-outline);
-		border-radius: var(--radius-lg);
-		box-shadow: var(--shadow-card);
-	}
-
-	.award {
-		font-size: 3.5rem;
-		line-height: 1;
-	}
-
-	.result {
-		margin: 0;
-		font-family: var(--font-display);
-		font-weight: 800;
-		font-size: 1.5rem;
-		color: var(--color-ink);
-	}
-
-	.result-pct {
-		margin: 0;
-		font-family: var(--font-mono);
-		color: var(--color-ink-soft);
 	}
 </style>

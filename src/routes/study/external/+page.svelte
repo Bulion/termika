@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { SvelteMap } from 'svelte/reactivity';
 	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
 	import McqPractice from '$lib/components/McqPractice.svelte';
@@ -8,6 +9,7 @@
 	import { db } from '$lib/engine/db';
 	import { recordReview } from '$lib/engine/progress';
 	import { createScheduler } from '$lib/engine/scheduler';
+	import { dedupeExactMcqs } from '$lib/exam/exam';
 	import {
 		EXAM_SOURCES,
 		loadExternalCategories,
@@ -16,6 +18,7 @@
 	} from '$lib/exam/sources';
 	import { m } from '$lib/paraglide/messages.js';
 	import { getLocale } from '$lib/paraglide/runtime';
+	import { updateStat, type McqStat } from '$lib/study/adaptive';
 
 	const scheduler = createScheduler();
 	const locale = (): ContentLocale => (getLocale() === 'pl' ? 'pl' : 'en');
@@ -30,6 +33,7 @@
 	let error = $state(false);
 	let categories = $state<ExamCategory[]>([]);
 	let questions = $state<Mcq[]>([]);
+	const stats = new SvelteMap<string, McqStat>();
 	let activeLabel = $state('');
 
 	onMount(async () => {
@@ -50,7 +54,13 @@
 		loading = true;
 		error = false;
 		try {
-			questions = await loadExternalMcqs(source.id, category?.id);
+			const [pool, statRows] = await Promise.all([
+				loadExternalMcqs(source.id, category?.id),
+				db.mcqStats.toArray()
+			]);
+			questions = dedupeExactMcqs(pool);
+			stats.clear();
+			for (const row of statRows) stats.set(row.itemId, row);
 			activeLabel = category
 				? `${resolveText(source.label, locale())} · ${category.name}`
 				: resolveText(source.label, locale());
@@ -62,7 +72,17 @@
 		}
 	}
 
-	async function handleAttempt(attempt: { itemId: string; correct: boolean }) {
+	function backToCategories() {
+		phase = 'select';
+		questions = [];
+	}
+
+	async function handleAttempt(attempt: {
+		itemId: string;
+		correct: boolean;
+		answerMs: number;
+		nextMs: number;
+	}) {
 		await recordReview(
 			db,
 			scheduler,
@@ -70,6 +90,9 @@
 			attempt.correct ? 'good' : 'again',
 			new Date()
 		);
+		const next = updateStat(stats.get(attempt.itemId), attempt.itemId, attempt, new Date());
+		stats.set(attempt.itemId, next);
+		await db.mcqStats.put(next);
 	}
 </script>
 
@@ -79,7 +102,11 @@
 
 <main class="external fade-in">
 	<header>
-		<a class="back" href={resolve('/study')}>← {m.back()}</a>
+		{#if phase === 'practice'}
+			<button type="button" class="back" onclick={backToCategories}>← {m.back()}</button>
+		{:else}
+			<a class="back" href={resolve('/study')}>← {m.back()}</a>
+		{/if}
 		<h1>{phase === 'practice' ? activeLabel : resolveText(source.label, locale())}</h1>
 	</header>
 
@@ -89,7 +116,7 @@
 		{#if questions.length === 0}
 			<p class="status">{m.exam_no_questions()}</p>
 		{:else}
-			<McqPractice {questions} locale={locale()} onAttempt={handleAttempt} />
+			<McqPractice {questions} {stats} locale={locale()} onAttempt={handleAttempt} />
 		{/if}
 	{:else if loadingCats || loading}
 		<p class="status">{m.exam_loading()}</p>
@@ -145,6 +172,17 @@
 	}
 
 	.back:hover {
+		text-decoration: underline;
+	}
+
+	button.back {
+		padding: 0;
+		background: none;
+		border: none;
+		cursor: pointer;
+	}
+
+	button.back:hover {
 		text-decoration: underline;
 	}
 

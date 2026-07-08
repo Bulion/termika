@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { ContentLocale, Mcq } from '$lib/content/schema';
 	import { resolveText } from '$lib/content/schema';
+	import { choiceOrder } from '$lib/exam/exam';
 	import RichText from './RichText.svelte';
 
 	let {
@@ -8,16 +9,19 @@
 		index,
 		locale = 'pl',
 		selected = $bindable(null),
-		reveal = false
+		reveal = false,
+		shuffleSeed = Math.floor(Math.random() * 4294967296)
 	}: {
 		question: Mcq;
 		index: number;
 		locale?: ContentLocale;
 		selected?: string | null;
 		reveal?: boolean;
+		shuffleSeed?: number;
 	} = $props();
 
 	const name = $derived(`q-${question.id}`);
+	const orderedChoices = $derived(choiceOrder(question, shuffleSeed));
 
 	function choiceState(choiceId: string): '' | 'correct' | 'wrong' {
 		if (!reveal) return '';
@@ -33,7 +37,7 @@
 		<RichText text={resolveText(question.stem, locale)} glossary={false} /></legend
 	>
 
-	{#each question.choices as choice (choice.id)}
+	{#each orderedChoices as choice (choice.id)}
 		<label
 			class="choice choice--{choiceState(choice.id)}"
 			class:selected={!reveal && selected === choice.id}

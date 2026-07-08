@@ -2,6 +2,7 @@ import Dexie, { type Table } from 'dexie';
 import type { Card, ReviewLog } from 'ts-fsrs';
 import type { FluencyState } from '../drills/fluency';
 import type { Grade } from './scheduler';
+import type { McqStat } from '../study/adaptive';
 
 export interface CardStateRow {
 	itemId: string;
@@ -43,6 +44,7 @@ export class TermikaDb extends Dexie {
 	settings!: Table<SettingRow, string>;
 	drillFluency!: Table<DrillFluencyRow, string>;
 	mockResults!: Table<MockResultRow, number>;
+	mcqStats!: Table<McqStat, string>;
 
 	constructor(name = 'termika') {
 		super(name);
@@ -52,6 +54,9 @@ export class TermikaDb extends Dexie {
 			settings: 'key',
 			drillFluency: 'drillId, graduated',
 			mockResults: '++id, licenseId, finishedAt'
+		});
+		this.version(2).stores({
+			mcqStats: 'itemId'
 		});
 	}
 }
