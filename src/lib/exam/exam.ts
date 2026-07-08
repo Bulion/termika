@@ -1,6 +1,6 @@
 import type { License, LocalizedText, Mcq, StudyItem } from '../content/schema';
 import type { Subject } from '../content/taxonomy';
-import { mulberry32 } from '../engine/shuffle';
+import { seededShuffle } from '../engine/shuffle';
 
 /** Maps every learning-objective id to the subject it belongs to. */
 export function loIdToSubject(subjects: Subject[]): Map<string, string> {
@@ -77,7 +77,7 @@ function hashString(value: string): number {
 
 /** Per-question choice order, stable for one session seed so answering and review match. */
 export function choiceOrder(question: Mcq, seed: number): Mcq['choices'] {
-	return shuffle(question.choices, mulberry32(hashString(question.id) ^ seed));
+	return seededShuffle(question.choices, hashString(question.id) ^ seed);
 }
 
 export interface ExamResult {

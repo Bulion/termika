@@ -26,6 +26,7 @@ const WEIGHT_SPAN = 2.25;
 
 export const COOLDOWN_SIZE = 10;
 
+/** Grade of one attempt in [0, 1]: wrong is 0; correct scales down with slowness, plus a quick-next bonus. */
 export function gradeAttempt(signal: AttemptSignal): number {
 	if (!signal.correct) return 0;
 	const clamped = Math.min(Math.max(signal.answerMs, FAST_ANSWER_MS), SLOW_ANSWER_MS);
@@ -35,6 +36,7 @@ export function gradeAttempt(signal: AttemptSignal): number {
 	return Math.min(1, base + bonus);
 }
 
+/** Folds one attempt into the persisted stat: mastery is an EMA of grades, answer time a running mean. */
 export function updateStat(
 	prev: McqStat | undefined,
 	itemId: string,
@@ -55,11 +57,13 @@ export function updateStat(
 	};
 }
 
+/** Draw weight: unseen questions get a coverage boost; low mastery weighs up to 10x the floor. */
 export function weightFor(stat: McqStat | undefined): number {
 	if (!stat) return UNSEEN_WEIGHT;
 	return MIN_WEIGHT + WEIGHT_SPAN * (1 - stat.mastery);
 }
 
+/** Weighted random draw from the pool, excluding the last up-to-10 shown questions. */
 export function pickNext(
 	pool: Mcq[],
 	stats: Map<string, McqStat>,
