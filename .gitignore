@@ -33,3 +33,6 @@ content-generated
 static/external/*
 # ...except the official ULC SPL bank (public exam questions), which is committed
 !static/external/ulc-spl.json
+
+# Superpowers working files (task briefs/reports, progress ledger)
+.superpowers/

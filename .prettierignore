@@ -13,3 +13,6 @@ bun.lockb
 
 # Committed ULC question bank (large generated data file)
 /static/external/ulc-spl.json
+
+# Superpowers working files
+.superpowers/
