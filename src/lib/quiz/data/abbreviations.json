@@ -1,20 +1,33 @@
 {
 	"schemaVersion": 1,
 	"id": "abbreviations",
-	"title": { "pl": "Skróty lotnicze", "en": "Aviation abbreviations" },
+	"title": {
+		"pl": "Skróty lotnicze",
+		"en": "Aviation abbreviations"
+	},
 	"description": {
 		"pl": "Skróty w obie strony: ze skrótu rozwiń pełną nazwę i odwrotnie.",
 		"en": "Abbreviations both ways: expand the acronym and recall it from its meaning."
 	},
-	"labelA": { "pl": "Skrót", "en": "Abbreviation" },
-	"labelB": { "pl": "Rozwinięcie", "en": "Expansion" },
+	"labelA": {
+		"pl": "Skrót",
+		"en": "Abbreviation"
+	},
+	"labelB": {
+		"pl": "Rozwinięcie",
+		"en": "Expansion"
+	},
 	"directions": ["a-to-b", "b-to-a"],
 	"timeLimitSec": 20,
 	"pairs": [
 		{
 			"id": "abbr-metar",
-			"a": { "pl": "METAR" },
-			"b": { "pl": "Meteorological Aerodrome Report" },
+			"a": {
+				"pl": "METAR"
+			},
+			"b": {
+				"pl": "Meteorological Aerodrome Report"
+			},
 			"acceptB": ["Aviation Routine Weather Report"],
 			"hint": {
 				"pl": "rutynowa depesza pogodowa lotniska",
@@ -23,14 +36,25 @@
 		},
 		{
 			"id": "abbr-taf",
-			"a": { "pl": "TAF" },
-			"b": { "pl": "Terminal Aerodrome Forecast" },
-			"hint": { "pl": "prognoza pogody dla lotniska", "en": "aerodrome weather forecast" }
+			"a": {
+				"pl": "TAF"
+			},
+			"b": {
+				"pl": "Terminal Aerodrome Forecast"
+			},
+			"hint": {
+				"pl": "prognoza pogody dla lotniska",
+				"en": "aerodrome weather forecast"
+			}
 		},
 		{
 			"id": "abbr-atis",
-			"a": { "pl": "ATIS" },
-			"b": { "pl": "Automatic Terminal Information Service" },
+			"a": {
+				"pl": "ATIS"
+			},
+			"b": {
+				"pl": "Automatic Terminal Information Service"
+			},
 			"hint": {
 				"pl": "automatyczna informacja lotniskowa",
 				"en": "automatic aerodrome information broadcast"
@@ -38,14 +62,25 @@
 		},
 		{
 			"id": "abbr-vfr",
-			"a": { "pl": "VFR" },
-			"b": { "pl": "Visual Flight Rules" },
-			"hint": { "pl": "przepisy wykonywania lotów z widocznością", "en": "visual flight rules" }
+			"a": {
+				"pl": "VFR"
+			},
+			"b": {
+				"pl": "Visual Flight Rules"
+			},
+			"hint": {
+				"pl": "przepisy wykonywania lotów z widocznością",
+				"en": "visual flight rules"
+			}
 		},
 		{
 			"id": "abbr-ifr",
-			"a": { "pl": "IFR" },
-			"b": { "pl": "Instrument Flight Rules" },
+			"a": {
+				"pl": "IFR"
+			},
+			"b": {
+				"pl": "Instrument Flight Rules"
+			},
 			"hint": {
 				"pl": "przepisy wykonywania lotów według wskazań przyrządów",
 				"en": "instrument flight rules"
@@ -53,14 +88,25 @@
 		},
 		{
 			"id": "abbr-atc",
-			"a": { "pl": "ATC" },
-			"b": { "pl": "Air Traffic Control" },
-			"hint": { "pl": "kontrola ruchu lotniczego", "en": "air traffic control" }
+			"a": {
+				"pl": "ATC"
+			},
+			"b": {
+				"pl": "Air Traffic Control"
+			},
+			"hint": {
+				"pl": "kontrola ruchu lotniczego",
+				"en": "air traffic control"
+			}
 		},
 		{
 			"id": "abbr-notam",
-			"a": { "pl": "NOTAM" },
-			"b": { "pl": "Notice to Airmen" },
+			"a": {
+				"pl": "NOTAM"
+			},
+			"b": {
+				"pl": "Notice to Airmen"
+			},
 			"acceptB": ["Notice to Air Missions"],
 			"hint": {
 				"pl": "bieżąca informacja dla pilotów o stanie urządzeń i procedur",
@@ -69,95 +115,3007 @@
 		},
 		{
 			"id": "abbr-agl",
-			"a": { "pl": "AGL" },
-			"b": { "pl": "Above Ground Level" },
-			"hint": { "pl": "wysokość nad poziomem terenu", "en": "height above ground level" }
+			"a": {
+				"pl": "AGL"
+			},
+			"b": {
+				"pl": "Above Ground Level"
+			},
+			"hint": {
+				"pl": "wysokość nad poziomem terenu",
+				"en": "height above ground level"
+			}
 		},
 		{
 			"id": "abbr-amsl",
-			"a": { "pl": "AMSL" },
-			"b": { "pl": "Above Mean Sea Level" },
-			"hint": { "pl": "wysokość nad średnim poziomem morza", "en": "altitude above mean sea level" }
+			"a": {
+				"pl": "AMSL"
+			},
+			"b": {
+				"pl": "Above Mean Sea Level"
+			},
+			"hint": {
+				"pl": "wysokość nad średnim poziomem morza",
+				"en": "altitude above mean sea level"
+			}
 		},
 		{
 			"id": "abbr-tas",
-			"a": { "pl": "TAS" },
-			"b": { "pl": "True Airspeed" },
-			"hint": { "pl": "prędkość rzeczywista względem powietrza", "en": "true airspeed" }
+			"a": {
+				"pl": "TAS"
+			},
+			"b": {
+				"pl": "True Airspeed"
+			},
+			"hint": {
+				"pl": "prędkość rzeczywista względem powietrza",
+				"en": "true airspeed"
+			}
 		},
 		{
 			"id": "abbr-ias",
-			"a": { "pl": "IAS" },
-			"b": { "pl": "Indicated Airspeed" },
-			"hint": { "pl": "prędkość przyrządowa", "en": "indicated airspeed" }
+			"a": {
+				"pl": "IAS"
+			},
+			"b": {
+				"pl": "Indicated Airspeed"
+			},
+			"hint": {
+				"pl": "prędkość przyrządowa",
+				"en": "indicated airspeed"
+			}
 		},
 		{
 			"id": "abbr-gs",
-			"a": { "pl": "GS" },
-			"b": { "pl": "Ground Speed" },
-			"hint": { "pl": "prędkość względem ziemi", "en": "ground speed" }
+			"a": {
+				"pl": "GS"
+			},
+			"b": {
+				"pl": "Ground Speed"
+			},
+			"hint": {
+				"pl": "prędkość względem ziemi",
+				"en": "ground speed"
+			}
 		},
 		{
 			"id": "abbr-eta",
-			"a": { "pl": "ETA" },
-			"b": { "pl": "Estimated Time of Arrival" },
-			"hint": { "pl": "przewidywany czas przylotu", "en": "estimated time of arrival" }
+			"a": {
+				"pl": "ETA"
+			},
+			"b": {
+				"pl": "Estimated Time of Arrival"
+			},
+			"hint": {
+				"pl": "przewidywany czas przylotu",
+				"en": "estimated time of arrival"
+			}
 		},
 		{
 			"id": "abbr-etd",
-			"a": { "pl": "ETD" },
-			"b": { "pl": "Estimated Time of Departure" },
-			"hint": { "pl": "przewidywany czas odlotu", "en": "estimated time of departure" }
+			"a": {
+				"pl": "ETD"
+			},
+			"b": {
+				"pl": "Estimated Time of Departure"
+			},
+			"hint": {
+				"pl": "przewidywany czas odlotu",
+				"en": "estimated time of departure"
+			}
 		},
 		{
 			"id": "abbr-mtow",
-			"a": { "pl": "MTOW" },
-			"b": { "pl": "Maximum Take-Off Weight" },
+			"a": {
+				"pl": "MTOW"
+			},
+			"b": {
+				"pl": "Maximum Take-Off Weight"
+			},
 			"acceptB": ["Maximum Take-Off Mass"],
-			"hint": { "pl": "maksymalna masa startowa", "en": "maximum take-off mass" }
+			"hint": {
+				"pl": "maksymalna masa startowa",
+				"en": "maximum take-off mass"
+			}
 		},
 		{
 			"id": "abbr-cg",
-			"a": { "pl": "CG" },
-			"b": { "pl": "Centre of Gravity" },
+			"a": {
+				"pl": "CG"
+			},
+			"b": {
+				"pl": "Centre of Gravity"
+			},
 			"acceptB": ["Center of Gravity"],
-			"hint": { "pl": "środek ciężkości", "en": "centre of gravity" }
+			"hint": {
+				"pl": "środek ciężkości",
+				"en": "centre of gravity"
+			}
 		},
 		{
 			"id": "abbr-rvr",
-			"a": { "pl": "RVR" },
-			"b": { "pl": "Runway Visual Range" },
-			"hint": { "pl": "zasięg widzialności wzdłuż drogi startowej", "en": "runway visual range" }
+			"a": {
+				"pl": "RVR"
+			},
+			"b": {
+				"pl": "Runway Visual Range"
+			},
+			"hint": {
+				"pl": "zasięg widzialności wzdłuż drogi startowej",
+				"en": "runway visual range"
+			}
 		},
 		{
 			"id": "abbr-ils",
-			"a": { "pl": "ILS" },
-			"b": { "pl": "Instrument Landing System" },
-			"hint": { "pl": "system lądowania według przyrządów", "en": "instrument landing system" }
+			"a": {
+				"pl": "ILS"
+			},
+			"b": {
+				"pl": "Instrument Landing System"
+			},
+			"hint": {
+				"pl": "system lądowania według przyrządów",
+				"en": "instrument landing system"
+			}
 		},
 		{
 			"id": "abbr-vor",
-			"a": { "pl": "VOR" },
-			"b": { "pl": "VHF Omnidirectional Range" },
-			"hint": { "pl": "radiolatarnia ogólnokierunkowa VHF", "en": "VHF omnidirectional range" }
+			"a": {
+				"pl": "VOR"
+			},
+			"b": {
+				"pl": "VHF Omnidirectional Range"
+			},
+			"hint": {
+				"pl": "radiolatarnia ogólnokierunkowa VHF",
+				"en": "VHF omnidirectional range"
+			}
 		},
 		{
 			"id": "abbr-tem",
-			"a": { "pl": "TEM" },
-			"b": { "pl": "Threat and Error Management" },
-			"hint": { "pl": "zarządzanie zagrożeniami i błędami", "en": "threat and error management" }
+			"a": {
+				"pl": "TEM"
+			},
+			"b": {
+				"pl": "Threat and Error Management"
+			},
+			"hint": {
+				"pl": "zarządzanie zagrożeniami i błędami",
+				"en": "threat and error management"
+			}
 		},
 		{
 			"id": "abbr-roc",
-			"a": { "pl": "ROC" },
-			"b": { "pl": "Rate of Climb" },
-			"hint": { "pl": "prędkość wznoszenia", "en": "rate of climb" }
+			"a": {
+				"pl": "ROC"
+			},
+			"b": {
+				"pl": "Rate of Climb"
+			},
+			"hint": {
+				"pl": "prędkość wznoszenia",
+				"en": "rate of climb"
+			}
 		},
 		{
 			"id": "abbr-rod",
-			"a": { "pl": "ROD" },
-			"b": { "pl": "Rate of Descent" },
-			"hint": { "pl": "prędkość opadania", "en": "rate of descent" }
+			"a": {
+				"pl": "ROD"
+			},
+			"b": {
+				"pl": "Rate of Descent"
+			},
+			"hint": {
+				"pl": "prędkość opadania",
+				"en": "rate of descent"
+			}
+		},
+		{
+			"id": "abbr-acc",
+			"a": {
+				"pl": "ACC"
+			},
+			"b": {
+				"pl": "Area Control Centre"
+			},
+			"keywordsB": [["area"], ["control"], ["centre", "center"]],
+			"hint": {
+				"pl": "ośrodek kontroli obszaru",
+				"en": "area control centre"
+			}
+		},
+		{
+			"id": "abbr-ad",
+			"a": {
+				"pl": "AD"
+			},
+			"b": {
+				"pl": "Airworthiness Directive / Aerodromes"
+			},
+			"acceptB": ["Airworthiness Directive", "Aerodromes"],
+			"hint": {
+				"pl": "1) dyrektywa zdatności, prawnie obowiązkowa; 2) część lotniskowa AIP",
+				"en": "1) mandatory airworthiness directive; 2) the aerodromes part of the AIP"
+			}
+		},
+		{
+			"id": "abbr-adiz",
+			"a": {
+				"pl": "ADIZ"
+			},
+			"b": {
+				"pl": "Air Defence Identification Zone"
+			},
+			"keywordsB": [["air"], ["defence", "defense"], ["identification"], ["zone"]],
+			"hint": {
+				"pl": "strefa identyfikacji obrony powietrznej",
+				"en": "air defence identification zone"
+			}
+		},
+		{
+			"id": "abbr-affirm",
+			"a": {
+				"pl": "AFFIRM"
+			},
+			"b": {
+				"pl": "tak"
+			},
+			"hint": {
+				"pl": "potwierdzenie twierdzące w frazeologii",
+				"en": "yes in radiotelephony"
+			}
+		},
+		{
+			"id": "abbr-afis",
+			"a": {
+				"pl": "AFIS"
+			},
+			"b": {
+				"pl": "Aerodrome Flight Information Service"
+			},
+			"keywordsB": [["aerodrome"], ["flight"], ["information"], ["service"]],
+			"hint": {
+				"pl": "lotniskowa służba informacji powietrznej",
+				"en": "aerodrome flight information service"
+			}
+		},
+		{
+			"id": "abbr-afm",
+			"a": {
+				"pl": "AFM"
+			},
+			"b": {
+				"pl": "Aircraft Flight Manual"
+			},
+			"keywordsB": [["aircraft"], ["flight"], ["manual"]],
+			"hint": {
+				"pl": "instrukcja użytkowania w locie",
+				"en": "aircraft flight manual"
+			}
+		},
+		{
+			"id": "abbr-aftn",
+			"a": {
+				"pl": "AFTN"
+			},
+			"b": {
+				"pl": "Aeronautical Fixed Telecommunication Network"
+			},
+			"keywordsB": [["aeronautical"], ["fixed"], ["telecommunication"], ["network"]],
+			"hint": {
+				"pl": "stała lotnicza sieć telekomunikacyjna (depesze, plany lotu)",
+				"en": "aeronautical fixed telecommunication network"
+			}
+		},
+		{
+			"id": "abbr-agard",
+			"a": {
+				"pl": "AGARD"
+			},
+			"b": {
+				"pl": "Advisory Group for Aerospace Research and Development"
+			},
+			"keywordsB": [["advisory"], ["group"], ["aerospace"], ["research"], ["development"]],
+			"hint": {
+				"pl": "grupa badawcza NATO ds. lotnictwa i kosmonautyki",
+				"en": "NATO aerospace research group"
+			}
+		},
+		{
+			"id": "abbr-agsm",
+			"a": {
+				"pl": "AGSM"
+			},
+			"b": {
+				"pl": "Anti-G Straining Manoeuvre"
+			},
+			"keywordsB": [["anti-g"], ["straining"], ["manoeuvre", "maneuver"]],
+			"hint": {
+				"pl": "manewr napięciowy zwiększający tolerancję przeciążeń",
+				"en": "anti-g straining manoeuvre"
+			}
+		},
+		{
+			"id": "abbr-aip",
+			"a": {
+				"pl": "AIP"
+			},
+			"b": {
+				"pl": "Aeronautical Information Publication"
+			},
+			"keywordsB": [["aeronautical"], ["information"], ["publication"]],
+			"hint": {
+				"pl": "Zbiór Informacji Lotniczych państwa",
+				"en": "aeronautical information publication"
+			}
+		},
+		{
+			"id": "abbr-airmet",
+			"a": {
+				"pl": "AIRMET"
+			},
+			"b": {
+				"pl": "Airmen's Meteorological Information"
+			},
+			"keywordsB": [["airmen's"], ["meteorological"], ["information"]],
+			"hint": {
+				"pl": "ostrzeżenie o zjawiskach istotnych dla lotów na małych wysokościach",
+				"en": "weather advisory for low-level flights"
+			}
+		},
+		{
+			"id": "abbr-ais",
+			"a": {
+				"pl": "AIS"
+			},
+			"b": {
+				"pl": "Aeronautical Information Service"
+			},
+			"keywordsB": [["aeronautical"], ["information"], ["service"]],
+			"hint": {
+				"pl": "służba informacji lotniczej; publikuje AIP i NOTAM",
+				"en": "aeronautical information service"
+			}
+		},
+		{
+			"id": "abbr-alerfa",
+			"a": {
+				"pl": "ALERFA"
+			},
+			"b": {
+				"pl": "faza alarmowa"
+			},
+			"hint": {
+				"pl": "druga faza: obawa o bezpieczeństwo statku powietrznego",
+				"en": "alert phase"
+			}
+		},
+		{
+			"id": "abbr-am",
+			"a": {
+				"pl": "AM"
+			},
+			"b": {
+				"pl": "Amplitude Modulation"
+			},
+			"hint": {
+				"pl": "modulacja amplitudy, stosowana w lotniczej łączności VHF",
+				"en": "amplitude modulation used in aviation VHF"
+			}
+		},
+		{
+			"id": "abbr-amc",
+			"a": {
+				"pl": "AMC"
+			},
+			"b": {
+				"pl": "Acceptable Means of Compliance / Airspace Management Cell"
+			},
+			"acceptB": ["Acceptable Means of Compliance", "Airspace Management Cell"],
+			"hint": {
+				"pl": "1) akceptowalne sposoby spełnienia przepisów EASA; 2) komórka zarządzania przestrzenią powietrzną (publikuje AUP)",
+				"en": "1) EASA acceptable means of compliance; 2) airspace management cell"
+			}
+		},
+		{
+			"id": "abbr-ame",
+			"a": {
+				"pl": "AME"
+			},
+			"b": {
+				"pl": "Aero-Medical Examiner"
+			},
+			"hint": {
+				"pl": "lekarz orzecznik medycyny lotniczej",
+				"en": "aviation medical examiner"
+			}
+		},
+		{
+			"id": "abbr-ands",
+			"a": {
+				"pl": "ANDS"
+			},
+			"b": {
+				"pl": "Accelerate North Dive South"
+			},
+			"keywordsB": [["accelerate"], ["north"], ["dive"], ["south"]],
+			"hint": {
+				"pl": "mnemonik błędu akceleracyjnego kompasu na kursach E/W",
+				"en": "compass acceleration error mnemonic"
+			}
+		},
+		{
+			"id": "abbr-aoc",
+			"a": {
+				"pl": "AOC"
+			},
+			"b": {
+				"pl": "Air Operator Certificate"
+			},
+			"keywordsB": [["air"], ["operator"], ["certificate"]],
+			"hint": {
+				"pl": "certyfikat przewoźnika lotniczego",
+				"en": "air operator certificate"
+			}
+		},
+		{
+			"id": "abbr-aopa",
+			"a": {
+				"pl": "AOPA"
+			},
+			"b": {
+				"pl": "Aircraft Owners and Pilots Association"
+			},
+			"keywordsB": [["aircraft"], ["owners"], ["pilots"], ["association"]],
+			"hint": {
+				"pl": "stowarzyszenie właścicieli i pilotów statków powietrznych",
+				"en": "aircraft owners and pilots association"
+			}
+		},
+		{
+			"id": "abbr-app",
+			"a": {
+				"pl": "APP"
+			},
+			"b": {
+				"pl": "Approach Control"
+			},
+			"hint": {
+				"pl": "organ kontroli zbliżania",
+				"en": "approach control unit"
+			}
+		},
+		{
+			"id": "abbr-ar",
+			"a": {
+				"pl": "AR"
+			},
+			"b": {
+				"pl": "Aspect Ratio"
+			},
+			"hint": {
+				"pl": "wydłużenie skrzydła: b²/S",
+				"en": "wing aspect ratio"
+			}
+		},
+		{
+			"id": "abbr-arc",
+			"a": {
+				"pl": "ARC"
+			},
+			"b": {
+				"pl": "Airworthiness Review Certificate"
+			},
+			"keywordsB": [["airworthiness"], ["review"], ["certificate"]],
+			"hint": {
+				"pl": "poświadczenie przeglądu zdatności do lotu; potwierdza ważność świadectwa zdatności",
+				"en": "airworthiness review certificate validating the certificate of airworthiness"
+			}
+		},
+		{
+			"id": "abbr-arp",
+			"a": {
+				"pl": "ARP"
+			},
+			"b": {
+				"pl": "Aerodrome Reference Point"
+			},
+			"keywordsB": [["aerodrome"], ["reference"], ["point"]],
+			"hint": {
+				"pl": "punkt odniesienia lotniska; jego nominalne położenie geograficzne",
+				"en": "aerodrome reference point"
+			}
+		},
+		{
+			"id": "abbr-asi",
+			"a": {
+				"pl": "ASI"
+			},
+			"b": {
+				"pl": "Airspeed Indicator"
+			},
+			"hint": {
+				"pl": "prędkościomierz",
+				"en": "airspeed indicator"
+			}
+		},
+		{
+			"id": "abbr-asm",
+			"a": {
+				"pl": "ASM"
+			},
+			"b": {
+				"pl": "Airspace Management"
+			},
+			"hint": {
+				"pl": "zarządzanie przestrzenią powietrzną",
+				"en": "airspace management"
+			}
+		},
+		{
+			"id": "abbr-atls",
+			"a": {
+				"pl": "ATLS"
+			},
+			"b": {
+				"pl": "Advanced Trauma Life Support"
+			},
+			"keywordsB": [["advanced"], ["trauma"], ["life"], ["support"]],
+			"hint": {
+				"pl": "zaawansowane postępowanie ratunkowe w urazach",
+				"en": "advanced trauma life support"
+			}
+		},
+		{
+			"id": "abbr-atm",
+			"a": {
+				"pl": "ATM"
+			},
+			"b": {
+				"pl": "Air Traffic Management"
+			},
+			"keywordsB": [["air"], ["traffic"], ["management"]],
+			"hint": {
+				"pl": "zarządzanie ruchem lotniczym: ATC, ASM i przepływ ruchu",
+				"en": "air traffic management"
+			}
+		},
+		{
+			"id": "abbr-ato",
+			"a": {
+				"pl": "ATO"
+			},
+			"b": {
+				"pl": "Approved Training Organisation"
+			},
+			"acceptB": ["Approved Training Organization"],
+			"keywordsB": [["approved"], ["training"], ["organisation", "organization"]],
+			"hint": {
+				"pl": "zatwierdzony ośrodek szkolenia lotniczego",
+				"en": "approved training organisation"
+			}
+		},
+		{
+			"id": "abbr-atpl",
+			"a": {
+				"pl": "ATPL"
+			},
+			"b": {
+				"pl": "Airline Transport Pilot Licence"
+			},
+			"keywordsB": [["airline"], ["transport"], ["pilot"], ["licence", "license"]],
+			"hint": {
+				"pl": "licencja pilota liniowego",
+				"en": "airline transport pilot licence"
+			}
+		},
+		{
+			"id": "abbr-ats",
+			"a": {
+				"pl": "ATS"
+			},
+			"b": {
+				"pl": "Air Traffic Services"
+			},
+			"keywordsB": [["air"], ["traffic"], ["services"]],
+			"hint": {
+				"pl": "służby ruchu lotniczego: kontrola, informacja powietrzna, służba alarmowa",
+				"en": "air traffic services"
+			}
+		},
+		{
+			"id": "abbr-atz",
+			"a": {
+				"pl": "ATZ"
+			},
+			"b": {
+				"pl": "Aerodrome Traffic Zone"
+			},
+			"keywordsB": [["aerodrome"], ["traffic"], ["zone"]],
+			"hint": {
+				"pl": "strefa ruchu lotniskowego wokół lotniska niekontrolowanego",
+				"en": "aerodrome traffic zone"
+			}
+		},
+		{
+			"id": "abbr-aup",
+			"a": {
+				"pl": "AUP"
+			},
+			"b": {
+				"pl": "Airspace Use Plan"
+			},
+			"keywordsB": [["airspace"], ["use"], ["plan"]],
+			"hint": {
+				"pl": "dobowy plan użytkowania przestrzeni powietrznej publikowany przez AMC",
+				"en": "daily airspace use plan"
+			}
+		},
+		{
+			"id": "abbr-avgas",
+			"a": {
+				"pl": "AVGAS"
+			},
+			"b": {
+				"pl": "Aviation Gasoline"
+			},
+			"hint": {
+				"pl": "benzyna lotnicza; AVGAS 100LL jest barwiona na niebiesko",
+				"en": "aviation gasoline"
+			}
+		},
+		{
+			"id": "abbr-bfu",
+			"a": {
+				"pl": "BFU"
+			},
+			"b": {
+				"pl": "Bundesstelle für Flugunfalluntersuchung"
+			},
+			"hint": {
+				"pl": "niemiecka komisja badania wypadków lotniczych",
+				"en": "German aircraft accident investigation board"
+			}
+		},
+		{
+			"id": "abbr-blind",
+			"a": {
+				"pl": "BLIND"
+			},
+			"b": {
+				"pl": "transmisja w ciemno"
+			},
+			"hint": {
+				"pl": "nadawanie bez potwierdzenia odbioru przy braku łączności zwrotnej",
+				"en": "blind transmission without acknowledgement"
+			}
+		},
+		{
+			"id": "abbr-bls",
+			"a": {
+				"pl": "BLS"
+			},
+			"b": {
+				"pl": "Basic Life Support"
+			},
+			"keywordsB": [["basic"], ["life"], ["support"]],
+			"hint": {
+				"pl": "podstawowe zabiegi resuscytacyjne",
+				"en": "basic life support"
+			}
+		},
+		{
+			"id": "abbr-bpl",
+			"a": {
+				"pl": "BPL"
+			},
+			"b": {
+				"pl": "Balloon Pilot Licence"
+			},
+			"keywordsB": [["balloon"], ["pilot"], ["licence", "license"]],
+			"hint": {
+				"pl": "licencja pilota balonowego",
+				"en": "balloon pilot licence"
+			}
+		},
+		{
+			"id": "abbr-break",
+			"a": {
+				"pl": "BREAK"
+			},
+			"b": {
+				"pl": "przerwa"
+			},
+			"hint": {
+				"pl": "oddziela części depeszy lub depesze do różnych adresatów",
+				"en": "separator between message portions"
+			}
+		},
+		{
+			"id": "abbr-bvlos",
+			"a": {
+				"pl": "BVLOS"
+			},
+			"b": {
+				"pl": "Beyond Visual Line Of Sight"
+			},
+			"keywordsB": [["beyond"], ["visual"], ["line"], ["sight"]],
+			"hint": {
+				"pl": "operacje bezzałogowców poza zasięgiem widoczności wzrokowej",
+				"en": "drone operations beyond visual line of sight"
+			}
+		},
+		{
+			"id": "abbr-cat",
+			"a": {
+				"pl": "CAT"
+			},
+			"b": {
+				"pl": "Clear Air Turbulence"
+			},
+			"keywordsB": [["clear"], ["air"], ["turbulence"]],
+			"hint": {
+				"pl": "turbulencja w czystym powietrzu, bez chmur, np. przy prądzie strumieniowym",
+				"en": "clear air turbulence"
+			}
+		},
+		{
+			"id": "abbr-cba",
+			"a": {
+				"pl": "CBA"
+			},
+			"b": {
+				"pl": "Cross-Border Area"
+			},
+			"hint": {
+				"pl": "strefa transgraniczna po obu stronach granicy państwa",
+				"en": "cross-border segregated area"
+			}
+		},
+		{
+			"id": "abbr-ccl",
+			"a": {
+				"pl": "CCL"
+			},
+			"b": {
+				"pl": "Convective Condensation Level"
+			},
+			"keywordsB": [["convective"], ["condensation"], ["level"]],
+			"hint": {
+				"pl": "poziom kondensacji konwekcyjnej; podstawa chmur konwekcyjnych",
+				"en": "convective condensation level"
+			}
+		},
+		{
+			"id": "abbr-cd",
+			"a": {
+				"pl": "CD"
+			},
+			"b": {
+				"pl": "Drag Coefficient"
+			},
+			"hint": {
+				"pl": "współczynnik siły oporu (odpowiednik Cx)",
+				"en": "drag coefficient"
+			}
+		},
+		{
+			"id": "abbr-cest",
+			"a": {
+				"pl": "CEST"
+			},
+			"b": {
+				"pl": "Central European Summer Time"
+			},
+			"keywordsB": [["central"], ["european"], ["summer"], ["time"]],
+			"hint": {
+				"pl": "czas środkowoeuropejski letni (UTC+2)",
+				"en": "central European summer time, UTC+2"
+			}
+		},
+		{
+			"id": "abbr-cet",
+			"a": {
+				"pl": "CET"
+			},
+			"b": {
+				"pl": "Central European Time"
+			},
+			"keywordsB": [["central"], ["european"], ["time"]],
+			"hint": {
+				"pl": "czas środkowoeuropejski (UTC+1); Polska zimą",
+				"en": "central European time, UTC+1"
+			}
+		},
+		{
+			"id": "abbr-ch",
+			"a": {
+				"pl": "CH"
+			},
+			"b": {
+				"pl": "Compass Heading"
+			},
+			"hint": {
+				"pl": "kurs busoli",
+				"en": "compass heading"
+			}
+		},
+		{
+			"id": "abbr-cl",
+			"a": {
+				"pl": "CL"
+			},
+			"b": {
+				"pl": "Lift Coefficient"
+			},
+			"hint": {
+				"pl": "współczynnik siły nośnej (odpowiednik Cz)",
+				"en": "lift coefficient"
+			}
+		},
+		{
+			"id": "abbr-cns",
+			"a": {
+				"pl": "CNS"
+			},
+			"b": {
+				"pl": "Communication Navigation Surveillance"
+			},
+			"keywordsB": [["communication"], ["navigation"], ["surveillance"]],
+			"hint": {
+				"pl": "służby łączności, nawigacji i dozorowania",
+				"en": "communication, navigation and surveillance services"
+			}
+		},
+		{
+			"id": "abbr-co",
+			"a": {
+				"pl": "CO"
+			},
+			"b": {
+				"pl": "tlenek węgla"
+			},
+			"hint": {
+				"pl": "czad: bezwonny gaz; ryzyko zatrucia przy nieszczelnym ogrzewaniu kabiny",
+				"en": "carbon monoxide"
+			}
+		},
+		{
+			"id": "abbr-co2",
+			"a": {
+				"pl": "CO2"
+			},
+			"b": {
+				"pl": "dwutlenek węgla"
+			},
+			"hint": {
+				"pl": "produkt oddychania; hiperwentylacja nadmiernie wypłukuje CO2",
+				"en": "carbon dioxide"
+			}
+		},
+		{
+			"id": "abbr-cpl",
+			"a": {
+				"pl": "CPL"
+			},
+			"b": {
+				"pl": "Commercial Pilot Licence"
+			},
+			"keywordsB": [["commercial"], ["pilot"], ["licence", "license"]],
+			"hint": {
+				"pl": "licencja pilota zawodowego",
+				"en": "commercial pilot licence"
+			}
+		},
+		{
+			"id": "abbr-crm",
+			"a": {
+				"pl": "CRM"
+			},
+			"b": {
+				"pl": "Crew Resource Management"
+			},
+			"keywordsB": [["crew"], ["resource"], ["management"]],
+			"hint": {
+				"pl": "zarządzanie zasobami załogi: komunikacja, decyzje, współpraca",
+				"en": "crew resource management"
+			}
+		},
+		{
+			"id": "abbr-cs",
+			"a": {
+				"pl": "CS"
+			},
+			"b": {
+				"pl": "Certification Specifications"
+			},
+			"hint": {
+				"pl": "specyfikacje certyfikacyjne EASA; szybowce to CS-22",
+				"en": "EASA certification specifications, CS-22 for sailplanes"
+			}
+		},
+		{
+			"id": "abbr-cta",
+			"a": {
+				"pl": "CTA"
+			},
+			"b": {
+				"pl": "Control Area"
+			},
+			"hint": {
+				"pl": "obszar kontrolowany",
+				"en": "control area"
+			}
+		},
+		{
+			"id": "abbr-ctr",
+			"a": {
+				"pl": "CTR"
+			},
+			"b": {
+				"pl": "Control Zone"
+			},
+			"hint": {
+				"pl": "strefa kontrolowana lotniska, od ziemi do określonej granicy pionowej",
+				"en": "aerodrome control zone"
+			}
+		},
+		{
+			"id": "abbr-dalr",
+			"a": {
+				"pl": "DALR"
+			},
+			"b": {
+				"pl": "Dry Adiabatic Lapse Rate"
+			},
+			"keywordsB": [["dry"], ["adiabatic"], ["lapse"], ["rate"]],
+			"hint": {
+				"pl": "gradient suchoadiabatyczny, około 1°C/100 m",
+				"en": "dry adiabatic lapse rate, about 3°C per 1000 ft"
+			}
+		},
+		{
+			"id": "abbr-dcs",
+			"a": {
+				"pl": "DCS"
+			},
+			"b": {
+				"pl": "Decompression Sickness"
+			},
+			"hint": {
+				"pl": "choroba dekompresyjna: pęcherzyki azotu przy spadku ciśnienia",
+				"en": "decompression sickness"
+			}
+		},
+		{
+			"id": "abbr-decide",
+			"a": {
+				"pl": "DECIDE"
+			},
+			"b": {
+				"pl": "Detect Estimate Choose Identify Do Evaluate"
+			},
+			"keywordsB": [["detect"], ["estimate"], ["choose"], ["identify"], ["evaluate"]],
+			"hint": {
+				"pl": "model podejmowania decyzji lotniczych",
+				"en": "aeronautical decision-making mnemonic"
+			}
+		},
+		{
+			"id": "abbr-detresfa",
+			"a": {
+				"pl": "DETRESFA"
+			},
+			"b": {
+				"pl": "faza niebezpieczeństwa"
+			},
+			"hint": {
+				"pl": "trzecia faza: uzasadniona pewność zagrożenia; uruchamia SAR",
+				"en": "distress phase"
+			}
+		},
+		{
+			"id": "abbr-dev",
+			"a": {
+				"pl": "DEV"
+			},
+			"b": {
+				"pl": "Deviation"
+			},
+			"hint": {
+				"pl": "dewiacja: błąd kompasu od pól magnetycznych statku",
+				"en": "compass deviation"
+			}
+		},
+		{
+			"id": "abbr-dme",
+			"a": {
+				"pl": "DME"
+			},
+			"b": {
+				"pl": "Distance Measuring Equipment"
+			},
+			"keywordsB": [["distance"], ["measuring"], ["equipment"]],
+			"hint": {
+				"pl": "radioodległościomierz: pomiar odległości skośnej od stacji",
+				"en": "distance measuring equipment"
+			}
+		},
+		{
+			"id": "abbr-dsb",
+			"a": {
+				"pl": "DSB"
+			},
+			"b": {
+				"pl": "Double SideBand"
+			},
+			"hint": {
+				"pl": "modulacja dwuwstęgowa (DSB-AM, oznaczenie A3E)",
+				"en": "double sideband modulation (DSB-AM)"
+			}
+		},
+		{
+			"id": "abbr-dtk",
+			"a": {
+				"pl": "DTK"
+			},
+			"b": {
+				"pl": "Desired Track"
+			},
+			"hint": {
+				"pl": "droga zadana: zaplanowany kierunek linii drogi",
+				"en": "desired track"
+			}
+		},
+		{
+			"id": "abbr-easa",
+			"a": {
+				"pl": "EASA"
+			},
+			"b": {
+				"pl": "European Union Aviation Safety Agency"
+			},
+			"keywordsB": [["european"], ["union"], ["aviation"], ["safety"], ["agency"]],
+			"hint": {
+				"pl": "Agencja UE ds. Bezpieczeństwa Lotniczego; wydaje Part-FCL, CS itd.",
+				"en": "EU aviation safety agency issuing Part-FCL and CS rules"
+			}
+		},
+		{
+			"id": "abbr-ecac",
+			"a": {
+				"pl": "ECAC"
+			},
+			"b": {
+				"pl": "European Civil Aviation Conference"
+			},
+			"keywordsB": [["european"], ["civil"], ["aviation"], ["conference"]],
+			"hint": {
+				"pl": "Europejska Konferencja Lotnictwa Cywilnego",
+				"en": "intergovernmental European civil aviation body"
+			}
+		},
+		{
+			"id": "abbr-eir",
+			"a": {
+				"pl": "EIR"
+			},
+			"b": {
+				"pl": "En-route Instrument Rating"
+			},
+			"keywordsB": [["en-route"], ["instrument"], ["rating"]],
+			"hint": {
+				"pl": "uprawnienie do lotu IFR po trasie, bez podejść instrumentalnych",
+				"en": "en-route instrument rating"
+			}
+		},
+		{
+			"id": "abbr-enr",
+			"a": {
+				"pl": "ENR"
+			},
+			"b": {
+				"pl": "En-Route"
+			},
+			"hint": {
+				"pl": "część trasowa AIP: przestrzeń, strefy, trasy",
+				"en": "the en-route part of the AIP"
+			}
+		},
+		{
+			"id": "abbr-epwa",
+			"a": {
+				"pl": "EPWA"
+			},
+			"b": {
+				"pl": "kod ICAO lotniska Chopina w Warszawie"
+			},
+			"keywordsB": [["kod"], ["icao"], ["lotniska"], ["chopina"], ["warszawie"]],
+			"hint": {
+				"pl": "czteroliterowy wskaźnik lokalizacji ICAO; EP oznacza Polskę",
+				"en": "ICAO location indicator of Warsaw Chopin Airport"
+			}
+		},
+		{
+			"id": "abbr-epww",
+			"a": {
+				"pl": "EPWW"
+			},
+			"b": {
+				"pl": "kod ICAO FIR Warszawa"
+			},
+			"keywordsB": [["kod"], ["icao"], ["fir"], ["warszawa"]],
+			"hint": {
+				"pl": "wskaźnik lokalizacji polskiego rejonu informacji powietrznej",
+				"en": "ICAO location indicator of the Warsaw FIR"
+			}
+		},
+		{
+			"id": "abbr-erc",
+			"a": {
+				"pl": "ERC"
+			},
+			"b": {
+				"pl": "European Resuscitation Council"
+			},
+			"keywordsB": [["european"], ["resuscitation"], ["council"]],
+			"hint": {
+				"pl": "Europejska Rada Resuscytacji; wytyczne pierwszej pomocy i RKO",
+				"en": "European Resuscitation Council issuing CPR guidelines"
+			}
+		},
+		{
+			"id": "abbr-ete",
+			"a": {
+				"pl": "ETE"
+			},
+			"b": {
+				"pl": "Estimated Time Enroute"
+			},
+			"keywordsB": [["estimated"], ["time"], ["enroute"]],
+			"hint": {
+				"pl": "przewidywany czas przelotu odcinka lub trasy",
+				"en": "estimated time en route"
+			}
+		},
+		{
+			"id": "abbr-fcl",
+			"a": {
+				"pl": "FCL"
+			},
+			"b": {
+				"pl": "Flight Crew Licensing"
+			},
+			"keywordsB": [["flight"], ["crew"], ["licensing"]],
+			"hint": {
+				"pl": "Part-FCL: unijne przepisy licencjonowania załóg lotniczych",
+				"en": "EU flight crew licensing rules (Part-FCL)"
+			}
+		},
+		{
+			"id": "abbr-fi",
+			"a": {
+				"pl": "FI"
+			},
+			"b": {
+				"pl": "Flight Instructor"
+			},
+			"hint": {
+				"pl": "instruktor lotniczy; szybowcowy to FI(S)",
+				"en": "flight instructor, FI(S) for sailplanes"
+			}
+		},
+		{
+			"id": "abbr-fir",
+			"a": {
+				"pl": "FIR"
+			},
+			"b": {
+				"pl": "Flight Information Region"
+			},
+			"keywordsB": [["flight"], ["information"], ["region"]],
+			"hint": {
+				"pl": "rejon informacji powietrznej; polski to FIR Warszawa (EPWW)",
+				"en": "flight information region"
+			}
+		},
+		{
+			"id": "abbr-fis",
+			"a": {
+				"pl": "FIS"
+			},
+			"b": {
+				"pl": "Flight Information Service"
+			},
+			"keywordsB": [["flight"], ["information"], ["service"]],
+			"hint": {
+				"pl": "służba informacji powietrznej",
+				"en": "flight information service"
+			}
+		},
+		{
+			"id": "abbr-fl",
+			"a": {
+				"pl": "FL"
+			},
+			"b": {
+				"pl": "Flight Level"
+			},
+			"hint": {
+				"pl": "poziom lotu: wysokość ciśnieniowa przy 1013,25 hPa w setkach stóp",
+				"en": "flight level in hundreds of feet at standard setting"
+			}
+		},
+		{
+			"id": "abbr-fm",
+			"a": {
+				"pl": "FM"
+			},
+			"b": {
+				"pl": "Flight Manual"
+			},
+			"hint": {
+				"pl": "instrukcja lotu (krótsza forma AFM)",
+				"en": "flight manual"
+			}
+		},
+		{
+			"id": "abbr-fpl",
+			"a": {
+				"pl": "FPL"
+			},
+			"b": {
+				"pl": "Flight Plan"
+			},
+			"hint": {
+				"pl": "plan lotu (formularz ICAO)",
+				"en": "ICAO flight plan form"
+			}
+		},
+		{
+			"id": "abbr-fstd",
+			"a": {
+				"pl": "FSTD"
+			},
+			"b": {
+				"pl": "Flight Simulation Training Device"
+			},
+			"keywordsB": [["flight"], ["simulation"], ["training"], ["device"]],
+			"hint": {
+				"pl": "szkoleniowe urządzenie symulacji lotu",
+				"en": "flight simulation training device"
+			}
+		},
+		{
+			"id": "abbr-fua",
+			"a": {
+				"pl": "FUA"
+			},
+			"b": {
+				"pl": "Flexible Use of Airspace"
+			},
+			"keywordsB": [["flexible"], ["use"], ["airspace"]],
+			"hint": {
+				"pl": "koncepcja elastycznego użytkowania przestrzeni powietrznej",
+				"en": "flexible use of airspace concept"
+			}
+		},
+		{
+			"id": "abbr-gafor",
+			"a": {
+				"pl": "GAFOR"
+			},
+			"b": {
+				"pl": "General Aviation Forecast"
+			},
+			"keywordsB": [["general"], ["aviation"], ["forecast"]],
+			"hint": {
+				"pl": "prognoza obszarowa dla lotnictwa ogólnego z kodami warunków VFR",
+				"en": "general aviation area forecast"
+			}
+		},
+		{
+			"id": "abbr-gen",
+			"a": {
+				"pl": "GEN"
+			},
+			"b": {
+				"pl": "General"
+			},
+			"hint": {
+				"pl": "część ogólna AIP (np. tabele wschodów słońca w GEN 2.7)",
+				"en": "the general part of the AIP"
+			}
+		},
+		{
+			"id": "abbr-gloc",
+			"a": {
+				"pl": "GLOC"
+			},
+			"b": {
+				"pl": "G-induced Loss Of Consciousness"
+			},
+			"keywordsB": [["g-induced"], ["loss"], ["consciousness"]],
+			"hint": {
+				"pl": "utrata przytomności wywołana przeciążeniem +Gz",
+				"en": "g-induced loss of consciousness"
+			}
+		},
+		{
+			"id": "abbr-gmp",
+			"a": {
+				"pl": "GMP"
+			},
+			"b": {
+				"pl": "General Medical Practitioner"
+			},
+			"keywordsB": [["general"], ["medical"], ["practitioner"]],
+			"hint": {
+				"pl": "lekarz ogólny; w niektórych państwach może wydać orzeczenie LAPL",
+				"en": "general practitioner, may issue LAPL medicals in some states"
+			}
+		},
+		{
+			"id": "abbr-gnd",
+			"a": {
+				"pl": "GND"
+			},
+			"b": {
+				"pl": "Ground"
+			},
+			"hint": {
+				"pl": "kontrola ruchu naziemnego; na mapach: poziom ziemi",
+				"en": "ground control; ground level on charts"
+			}
+		},
+		{
+			"id": "abbr-gps",
+			"a": {
+				"pl": "GPS"
+			},
+			"b": {
+				"pl": "Global Positioning System"
+			},
+			"keywordsB": [["global"], ["positioning"], ["system"]],
+			"hint": {
+				"pl": "satelitarny system wyznaczania pozycji",
+				"en": "global positioning system"
+			}
+		},
+		{
+			"id": "abbr-hdg",
+			"a": {
+				"pl": "HDG"
+			},
+			"b": {
+				"pl": "Heading"
+			},
+			"hint": {
+				"pl": "kurs: kierunek osi podłużnej statku powietrznego",
+				"en": "heading"
+			}
+		},
+		{
+			"id": "abbr-iaip",
+			"a": {
+				"pl": "IAIP"
+			},
+			"b": {
+				"pl": "Integrated Aeronautical Information Package"
+			},
+			"keywordsB": [["integrated"], ["aeronautical"], ["information"], ["package"]],
+			"hint": {
+				"pl": "Zintegrowany Pakiet Informacji Lotniczych: AIP, suplementy, NOTAM, AIC",
+				"en": "integrated aeronautical information package"
+			}
+		},
+		{
+			"id": "abbr-icao",
+			"a": {
+				"pl": "ICAO"
+			},
+			"b": {
+				"pl": "International Civil Aviation Organization"
+			},
+			"keywordsB": [["international"], ["civil"], ["aviation"], ["organization", "organisation"]],
+			"hint": {
+				"pl": "Organizacja Międzynarodowego Lotnictwa Cywilnego, agenda ONZ ustanawiająca normy (konwencja chicagowska)",
+				"en": "UN agency setting worldwide civil aviation standards"
+			}
+		},
+		{
+			"id": "abbr-ident",
+			"a": {
+				"pl": "IDENT"
+			},
+			"b": {
+				"pl": "Identification"
+			},
+			"hint": {
+				"pl": "funkcja transpondera wysyłająca SPI na żądanie SQUAWK IDENT",
+				"en": "transponder ident function"
+			}
+		},
+		{
+			"id": "abbr-imc",
+			"a": {
+				"pl": "IMC"
+			},
+			"b": {
+				"pl": "Instrument Meteorological Conditions"
+			},
+			"keywordsB": [["instrument"], ["meteorological"], ["conditions"]],
+			"hint": {
+				"pl": "warunki wymagające lotu według przyrządów",
+				"en": "instrument meteorological conditions"
+			}
+		},
+		{
+			"id": "abbr-imgw",
+			"a": {
+				"pl": "IMGW"
+			},
+			"b": {
+				"pl": "Instytut Meteorologii i Gospodarki Wodnej"
+			},
+			"keywordsB": [["instytut"], ["meteorologii"], ["gospodarki"], ["wodnej"]],
+			"hint": {
+				"pl": "polska państwowa służba meteorologiczna",
+				"en": "Polish national meteorological service"
+			}
+		},
+		{
+			"id": "abbr-imsafe",
+			"a": {
+				"pl": "IMSAFE"
+			},
+			"b": {
+				"pl": "Illness Medication Stress Alcohol Fatigue Emotion"
+			},
+			"keywordsB": [["illness"], ["medication"], ["stress"], ["alcohol"], ["fatigue"], ["emotion"]],
+			"hint": {
+				"pl": "lista kontrolna samooceny gotowości pilota do lotu",
+				"en": "pilot fitness self-check mnemonic"
+			}
+		},
+		{
+			"id": "abbr-incerfa",
+			"a": {
+				"pl": "INCERFA"
+			},
+			"b": {
+				"pl": "faza niepewności"
+			},
+			"hint": {
+				"pl": "pierwsza faza alarmowa: niepewność co do bezpieczeństwa statku",
+				"en": "uncertainty phase"
+			}
+		},
+		{
+			"id": "abbr-ir",
+			"a": {
+				"pl": "IR"
+			},
+			"b": {
+				"pl": "Instrument Rating"
+			},
+			"hint": {
+				"pl": "uprawnienie do lotów według wskazań przyrządów",
+				"en": "instrument rating"
+			}
+		},
+		{
+			"id": "abbr-isa",
+			"a": {
+				"pl": "ISA"
+			},
+			"b": {
+				"pl": "International Standard Atmosphere"
+			},
+			"keywordsB": [["international"], ["standard"], ["atmosphere"]],
+			"hint": {
+				"pl": "atmosfera wzorcowa: 15°C i 1013,25 hPa na poziomie morza, gradient 0,65°C/100 m",
+				"en": "international standard atmosphere"
+			}
+		},
+		{
+			"id": "abbr-itu",
+			"a": {
+				"pl": "ITU"
+			},
+			"b": {
+				"pl": "International Telecommunication Union"
+			},
+			"keywordsB": [["international"], ["telecommunication"], ["union"]],
+			"hint": {
+				"pl": "Międzynarodowy Związek Telekomunikacyjny; przydziela pasma częstotliwości",
+				"en": "UN agency allocating radio frequency bands"
+			}
+		},
+		{
+			"id": "abbr-iul",
+			"a": {
+				"pl": "IUL"
+			},
+			"b": {
+				"pl": "Instrukcja Użytkowania w Locie"
+			},
+			"keywordsB": [["instrukcja"], ["użytkowania"], ["locie"]],
+			"hint": {
+				"pl": "polska nazwa instrukcji AFM",
+				"en": "Polish term for the aircraft flight manual"
+			}
+		},
+		{
+			"id": "abbr-jar",
+			"a": {
+				"pl": "JAR"
+			},
+			"b": {
+				"pl": "Joint Aviation Requirements"
+			},
+			"keywordsB": [["joint"], ["aviation"], ["requirements"]],
+			"hint": {
+				"pl": "dawne wspólne europejskie przepisy lotnicze (JAA), poprzednik przepisów EASA",
+				"en": "former joint European aviation requirements preceding EASA"
+			}
+		},
+		{
+			"id": "abbr-kb",
+			"a": {
+				"pl": "KB"
+			},
+			"b": {
+				"pl": "kurs busoli"
+			},
+			"hint": {
+				"pl": "kurs odczytany z busoli, przed poprawkami",
+				"en": "compass heading in Polish navigation notation"
+			}
+		},
+		{
+			"id": "abbr-kdm",
+			"a": {
+				"pl": "KDM"
+			},
+			"b": {
+				"pl": "kąt drogi magnetycznej"
+			},
+			"keywordsB": [["kąt"], ["drogi"], ["magnetycznej"]],
+			"hint": {
+				"pl": "kierunek linii drogi względem północy magnetycznej",
+				"en": "magnetic track angle in Polish notation"
+			}
+		},
+		{
+			"id": "abbr-kdr",
+			"a": {
+				"pl": "KDR"
+			},
+			"b": {
+				"pl": "kąt drogi rzeczywistej"
+			},
+			"keywordsB": [["kąt"], ["drogi"], ["rzeczywistej"]],
+			"hint": {
+				"pl": "kierunek linii drogi względem północy geograficznej",
+				"en": "true track angle in Polish notation"
+			}
+		},
+		{
+			"id": "abbr-km",
+			"a": {
+				"pl": "KM"
+			},
+			"b": {
+				"pl": "kurs magnetyczny"
+			},
+			"hint": {
+				"pl": "kurs busoli z uwzględnioną dewiacją",
+				"en": "magnetic heading in Polish navigation notation"
+			}
+		},
+		{
+			"id": "abbr-knc",
+			"a": {
+				"pl": "KNC"
+			},
+			"b": {
+				"pl": "kabina niskich ciśnień"
+			},
+			"keywordsB": [["kabina"], ["niskich"], ["ciśnień"]],
+			"hint": {
+				"pl": "komora do badania odporności na niedotlenienie wysokościowe",
+				"en": "hypobaric (low-pressure) chamber"
+			}
+		},
+		{
+			"id": "abbr-kr",
+			"a": {
+				"pl": "KR"
+			},
+			"b": {
+				"pl": "kurs rzeczywisty"
+			},
+			"hint": {
+				"pl": "kurs magnetyczny z uwzględnioną deklinacją",
+				"en": "true heading in Polish navigation notation"
+			}
+		},
+		{
+			"id": "abbr-lapl",
+			"a": {
+				"pl": "LAPL"
+			},
+			"b": {
+				"pl": "Light Aircraft Pilot Licence"
+			},
+			"keywordsB": [["light"], ["aircraft"], ["pilot"], ["licence", "license"]],
+			"hint": {
+				"pl": "licencja pilota lekkich statków powietrznych; także uproszczone orzeczenie \"LAPL medical\"",
+				"en": "light aircraft pilot licence and the simplified LAPL medical"
+			}
+		},
+		{
+			"id": "abbr-lmt",
+			"a": {
+				"pl": "LMT"
+			},
+			"b": {
+				"pl": "Local Mean Time"
+			},
+			"keywordsB": [["local"], ["mean"], ["time"]],
+			"hint": {
+				"pl": "lokalny średni czas słoneczny",
+				"en": "local mean time"
+			}
+		},
+		{
+			"id": "abbr-loc",
+			"a": {
+				"pl": "LOC"
+			},
+			"b": {
+				"pl": "Loss Of Consciousness"
+			},
+			"hint": {
+				"pl": "utrata przytomności; sekwencja: greyout, blackout, LOC",
+				"en": "loss of consciousness"
+			}
+		},
+		{
+			"id": "abbr-mac",
+			"a": {
+				"pl": "MAC"
+			},
+			"b": {
+				"pl": "Mean Aerodynamic Chord"
+			},
+			"keywordsB": [["mean"], ["aerodynamic"], ["chord"]],
+			"hint": {
+				"pl": "średnia cięciwa aerodynamiczna; położenie środka ciężkości podaje się w %MAC",
+				"en": "mean aerodynamic chord"
+			}
+		},
+		{
+			"id": "abbr-matz",
+			"a": {
+				"pl": "MATZ"
+			},
+			"b": {
+				"pl": "Military Aerodrome Traffic Zone"
+			},
+			"keywordsB": [["military"], ["aerodrome"], ["traffic"], ["zone"]],
+			"hint": {
+				"pl": "strefa ruchu lotniskowego lotniska wojskowego",
+				"en": "military aerodrome traffic zone"
+			}
+		},
+		{
+			"id": "abbr-mayday",
+			"a": {
+				"pl": "MAYDAY"
+			},
+			"b": {
+				"pl": "wezwanie w niebezpieczeństwie"
+			},
+			"hint": {
+				"pl": "sygnał zagrożenia, nadawany trzykrotnie; bezwzględne pierwszeństwo",
+				"en": "distress call, spoken three times"
+			}
+		},
+		{
+			"id": "abbr-mctr",
+			"a": {
+				"pl": "MCTR"
+			},
+			"b": {
+				"pl": "Military Control Zone"
+			},
+			"keywordsB": [["military"], ["control"], ["zone"]],
+			"hint": {
+				"pl": "wojskowa strefa kontrolowana lotniska",
+				"en": "military control zone"
+			}
+		},
+		{
+			"id": "abbr-med",
+			"a": {
+				"pl": "MED"
+			},
+			"b": {
+				"pl": "Part-MED"
+			},
+			"hint": {
+				"pl": "unijne wymagania medyczne: orzeczenia lotniczo-lekarskie dla załóg",
+				"en": "EU aircrew medical requirements (Part-MED)"
+			}
+		},
+		{
+			"id": "abbr-mef",
+			"a": {
+				"pl": "MEF"
+			},
+			"b": {
+				"pl": "Maximum Elevation Figure"
+			},
+			"keywordsB": [["maximum"], ["elevation"], ["figure"]],
+			"hint": {
+				"pl": "najwyższy punkt terenu lub przeszkody w polu mapy VFR, w setkach stóp AMSL",
+				"en": "maximum elevation figure on VFR charts"
+			}
+		},
+		{
+			"id": "abbr-mf",
+			"a": {
+				"pl": "MF"
+			},
+			"b": {
+				"pl": "Medium Frequency"
+			},
+			"hint": {
+				"pl": "fale średnie 300-3000 kHz",
+				"en": "medium frequency band"
+			}
+		},
+		{
+			"id": "abbr-mgc",
+			"a": {
+				"pl": "MGC"
+			},
+			"b": {
+				"pl": "Mean Geometric Chord"
+			},
+			"keywordsB": [["mean"], ["geometric"], ["chord"]],
+			"hint": {
+				"pl": "średnia cięciwa geometryczna: S/b",
+				"en": "mean geometric chord"
+			}
+		},
+		{
+			"id": "abbr-mh",
+			"a": {
+				"pl": "MH"
+			},
+			"b": {
+				"pl": "Magnetic Heading"
+			},
+			"hint": {
+				"pl": "kurs magnetyczny",
+				"en": "magnetic heading"
+			}
+		},
+		{
+			"id": "abbr-mogas",
+			"a": {
+				"pl": "MOGAS"
+			},
+			"b": {
+				"pl": "Motor Gasoline"
+			},
+			"hint": {
+				"pl": "benzyna samochodowa dopuszczona dla niektórych silników lotniczych",
+				"en": "automotive gasoline approved for some aero engines"
+			}
+		},
+		{
+			"id": "abbr-mrt",
+			"a": {
+				"pl": "MRT"
+			},
+			"b": {
+				"pl": "Military Route"
+			},
+			"hint": {
+				"pl": "trasa lotnictwa wojskowego (element FUA)",
+				"en": "military training route"
+			}
+		},
+		{
+			"id": "abbr-msa",
+			"a": {
+				"pl": "MSA"
+			},
+			"b": {
+				"pl": "Minimum Safe Altitude"
+			},
+			"keywordsB": [["minimum"], ["safe"], ["altitude"]],
+			"hint": {
+				"pl": "minimalna bezpieczna wysokość bezwzględna",
+				"en": "minimum safe altitude"
+			}
+		},
+		{
+			"id": "abbr-msl",
+			"a": {
+				"pl": "MSL"
+			},
+			"b": {
+				"pl": "Mean Sea Level"
+			},
+			"keywordsB": [["mean"], ["sea"], ["level"]],
+			"hint": {
+				"pl": "średni poziom morza",
+				"en": "mean sea level"
+			}
+		},
+		{
+			"id": "abbr-mt",
+			"a": {
+				"pl": "MT"
+			},
+			"b": {
+				"pl": "Magnetic Track"
+			},
+			"hint": {
+				"pl": "droga magnetyczna od północy magnetycznej",
+				"en": "magnetic track"
+			}
+		},
+		{
+			"id": "abbr-mtom",
+			"a": {
+				"pl": "MTOM"
+			},
+			"b": {
+				"pl": "Maximum Take-Off Mass"
+			},
+			"keywordsB": [["maximum"], ["take-off"], ["mass"]],
+			"hint": {
+				"pl": "maksymalna masa startowa",
+				"en": "maximum take-off mass"
+			}
+		},
+		{
+			"id": "abbr-naca",
+			"a": {
+				"pl": "NACA"
+			},
+			"b": {
+				"pl": "National Advisory Committee for Aeronautics"
+			},
+			"keywordsB": [["national"], ["advisory"], ["committee"], ["aeronautics"]],
+			"hint": {
+				"pl": "poprzednik NASA; stąd oznaczenia profili lotniczych (np. NACA 4412)",
+				"en": "US body known for airfoil designations, predecessor of NASA"
+			}
+		},
+		{
+			"id": "abbr-nkdg",
+			"a": {
+				"pl": "NKDG"
+			},
+			"b": {
+				"pl": "nakazany kąt drogi geograficznej"
+			},
+			"keywordsB": [["nakazany"], ["kąt"], ["drogi"], ["geograficznej"]],
+			"hint": {
+				"pl": "zaplanowany kąt drogi względem północy geograficznej",
+				"en": "required true track in Polish notation"
+			}
+		},
+		{
+			"id": "abbr-nkdm",
+			"a": {
+				"pl": "NKDM"
+			},
+			"b": {
+				"pl": "nakazany kąt drogi magnetycznej"
+			},
+			"keywordsB": [["nakazany"], ["kąt"], ["drogi"], ["magnetycznej"]],
+			"hint": {
+				"pl": "zaplanowany kąt drogi względem północy magnetycznej",
+				"en": "required magnetic track in Polish notation"
+			}
+		},
+		{
+			"id": "abbr-nm",
+			"a": {
+				"pl": "NM"
+			},
+			"b": {
+				"pl": "Nautical Mile"
+			},
+			"hint": {
+				"pl": "mila morska: 1852 m, jedna minuta łuku południka",
+				"en": "nautical mile, 1852 m"
+			}
+		},
+		{
+			"id": "abbr-oc",
+			"a": {
+				"pl": "OC"
+			},
+			"b": {
+				"pl": "ubezpieczenie odpowiedzialności cywilnej"
+			},
+			"keywordsB": [["ubezpieczenie"], ["odpowiedzialności"], ["cywilnej"]],
+			"hint": {
+				"pl": "obowiązkowa polisa OC statku powietrznego",
+				"en": "third-party liability insurance"
+			}
+		},
+		{
+			"id": "abbr-ora",
+			"a": {
+				"pl": "ORA"
+			},
+			"b": {
+				"pl": "Organisation Requirements for Aircrew"
+			},
+			"keywordsB": [["organisation", "organization"], ["requirements"], ["aircrew"]],
+			"hint": {
+				"pl": "Part-ORA: wymagania dla organizacji lotniczych (m.in. ATO)",
+				"en": "EU organisation requirements for aircrew (Part-ORA)"
+			}
+		},
+		{
+			"id": "abbr-pan-pan",
+			"a": {
+				"pl": "PAN PAN"
+			},
+			"b": {
+				"pl": "wezwanie pilności"
+			},
+			"hint": {
+				"pl": "sytuacja pilna bez bezpośredniego zagrożenia życia",
+				"en": "urgency call"
+			}
+		},
+		{
+			"id": "abbr-pans",
+			"a": {
+				"pl": "PANS"
+			},
+			"b": {
+				"pl": "Procedures for Air Navigation Services"
+			},
+			"keywordsB": [["procedures"], ["air"], ["navigation"], ["services"]],
+			"hint": {
+				"pl": "procedury ICAO dla służb żeglugi powietrznej",
+				"en": "ICAO procedures for air navigation services"
+			}
+		},
+		{
+			"id": "abbr-pansa",
+			"a": {
+				"pl": "PANSA"
+			},
+			"b": {
+				"pl": "Polska Agencja Żeglugi Powietrznej"
+			},
+			"keywordsB": [["polska"], ["agencja"], ["żeglugi"], ["powietrznej"]],
+			"hint": {
+				"pl": "angielski akronim PAŻP; zapewnia służby żeglugi powietrznej w FIR Warszawa",
+				"en": "Polish Air Navigation Services Agency"
+			}
+		},
+		{
+			"id": "abbr-pazp-pl",
+			"a": {
+				"pl": "PAŻP"
+			},
+			"b": {
+				"pl": "Polska Agencja Żeglugi Powietrznej"
+			},
+			"keywordsB": [["polska"], ["agencja"], ["żeglugi"], ["powietrznej"]],
+			"hint": {
+				"pl": "zapewnia służby żeglugi powietrznej w FIR Warszawa (ang. PANSA)",
+				"en": "Polish Air Navigation Services Agency (Polish acronym)"
+			}
+		},
+		{
+			"id": "abbr-pic",
+			"a": {
+				"pl": "PIC"
+			},
+			"b": {
+				"pl": "Pilot In Command"
+			},
+			"hint": {
+				"pl": "pilot dowódca statku powietrznego",
+				"en": "pilot in command"
+			}
+		},
+		{
+			"id": "abbr-pkbwl",
+			"a": {
+				"pl": "PKBWL"
+			},
+			"b": {
+				"pl": "Państwowa Komisja Badania Wypadków Lotniczych"
+			},
+			"keywordsB": [["państwowa"], ["komisja"], ["badania"], ["wypadków"], ["lotniczych"]],
+			"hint": {
+				"pl": "polska komisja badająca wypadki i incydenty lotnicze",
+				"en": "Polish aircraft accident investigation commission"
+			}
+		},
+		{
+			"id": "abbr-poh",
+			"a": {
+				"pl": "POH"
+			},
+			"b": {
+				"pl": "Pilot's Operating Handbook"
+			},
+			"keywordsB": [["pilot's"], ["operating"], ["handbook"]],
+			"hint": {
+				"pl": "podręcznik operacyjny pilota, odpowiednik AFM",
+				"en": "pilot's operating handbook"
+			}
+		},
+		{
+			"id": "abbr-ppl",
+			"a": {
+				"pl": "PPL"
+			},
+			"b": {
+				"pl": "Private Pilot Licence"
+			},
+			"acceptB": ["Private Pilot License"],
+			"keywordsB": [["private"], ["pilot"], ["licence", "license"]],
+			"hint": {
+				"pl": "licencja pilota turystycznego",
+				"en": "private pilot licence"
+			}
+		},
+		{
+			"id": "abbr-ptsd",
+			"a": {
+				"pl": "PTSD"
+			},
+			"b": {
+				"pl": "Post-Traumatic Stress Disorder"
+			},
+			"keywordsB": [["post-traumatic"], ["stress"], ["disorder"]],
+			"hint": {
+				"pl": "zespół stresu pourazowego",
+				"en": "post-traumatic stress disorder"
+			}
+		},
+		{
+			"id": "abbr-ptt",
+			"a": {
+				"pl": "PTT"
+			},
+			"b": {
+				"pl": "Push To Talk"
+			},
+			"hint": {
+				"pl": "przycisk nadawania radiostacji; łączność simpleksowa",
+				"en": "push-to-talk transmit switch"
+			}
+		},
+		{
+			"id": "abbr-qdm",
+			"a": {
+				"pl": "QDM"
+			},
+			"b": {
+				"pl": "namiar magnetyczny do stacji"
+			},
+			"keywordsB": [["namiar"], ["magnetyczny"], ["stacji"]],
+			"hint": {
+				"pl": "kierunek magnetyczny od statku powietrznego do stacji",
+				"en": "magnetic bearing to the station"
+			}
+		},
+		{
+			"id": "abbr-qdr",
+			"a": {
+				"pl": "QDR"
+			},
+			"b": {
+				"pl": "namiar magnetyczny od stacji"
+			},
+			"keywordsB": [["namiar"], ["magnetyczny"], ["stacji"]],
+			"hint": {
+				"pl": "kierunek magnetyczny od stacji do statku; przeciwny do QDM",
+				"en": "magnetic bearing from the station"
+			}
+		},
+		{
+			"id": "abbr-qfe",
+			"a": {
+				"pl": "QFE"
+			},
+			"b": {
+				"pl": "ciśnienie na poziomie lotniska"
+			},
+			"keywordsB": [["ciśnienie"], ["poziomie"], ["lotniska"]],
+			"hint": {
+				"pl": "nastawa wskazująca wysokość względną nad lotniskiem",
+				"en": "altimeter setting giving height above the aerodrome"
+			}
+		},
+		{
+			"id": "abbr-qff",
+			"a": {
+				"pl": "QFF"
+			},
+			"b": {
+				"pl": "ciśnienie zredukowane meteorologicznie"
+			},
+			"keywordsB": [["ciśnienie"], ["zredukowane"], ["meteorologicznie"]],
+			"hint": {
+				"pl": "ciśnienie sprowadzone do poziomu morza według temperatury rzeczywistej; mapy synoptyczne",
+				"en": "MSL pressure reduced with actual temperature for synoptic charts"
+			}
+		},
+		{
+			"id": "abbr-qne",
+			"a": {
+				"pl": "QNE"
+			},
+			"b": {
+				"pl": "ciśnienie standardowe"
+			},
+			"hint": {
+				"pl": "nastawa 1013,25 hPa; wysokościomierz wskazuje poziom lotu",
+				"en": "standard setting 1013.25 hPa for flight levels"
+			}
+		},
+		{
+			"id": "abbr-qnh",
+			"a": {
+				"pl": "QNH"
+			},
+			"b": {
+				"pl": "ciśnienie zredukowane do poziomu morza"
+			},
+			"keywordsB": [["ciśnienie"], ["zredukowane"], ["poziomu"], ["morza"]],
+			"hint": {
+				"pl": "nastawa wysokościomierza wskazująca wysokość nad poziomem morza",
+				"en": "altimeter setting giving altitude above mean sea level"
+			}
+		},
+		{
+			"id": "abbr-read-back",
+			"a": {
+				"pl": "READ BACK"
+			},
+			"b": {
+				"pl": "powtórz treść"
+			},
+			"hint": {
+				"pl": "polecenie powtórzenia otrzymanej treści w celu potwierdzenia",
+				"en": "repeat the message back for confirmation"
+			}
+		},
+		{
+			"id": "abbr-rko",
+			"a": {
+				"pl": "RKO"
+			},
+			"b": {
+				"pl": "resuscytacja krążeniowo-oddechowa"
+			},
+			"acceptB": ["CPR"],
+			"hint": {
+				"pl": "podstawowe zabiegi ratujące życie: uciśnięcia klatki i oddechy ratownicze",
+				"en": "cardiopulmonary resuscitation (CPR)"
+			}
+		},
+		{
+			"id": "abbr-rmz",
+			"a": {
+				"pl": "RMZ"
+			},
+			"b": {
+				"pl": "Radio Mandatory Zone"
+			},
+			"keywordsB": [["radio"], ["mandatory"], ["zone"]],
+			"hint": {
+				"pl": "strefa obowiązkowej łączności radiowej",
+				"en": "radio mandatory zone"
+			}
+		},
+		{
+			"id": "abbr-roger",
+			"a": {
+				"pl": "ROGER"
+			},
+			"b": {
+				"pl": "odebrałem"
+			},
+			"hint": {
+				"pl": "potwierdzenie odbioru całej transmisji; nie oznacza zgody",
+				"en": "I have received all of your last transmission"
+			}
+		},
+		{
+			"id": "abbr-rwy",
+			"a": {
+				"pl": "RWY"
+			},
+			"b": {
+				"pl": "Runway"
+			},
+			"hint": {
+				"pl": "droga startowa",
+				"en": "runway"
+			}
+		},
+		{
+			"id": "abbr-salr",
+			"a": {
+				"pl": "SALR"
+			},
+			"b": {
+				"pl": "Saturated Adiabatic Lapse Rate"
+			},
+			"keywordsB": [["saturated"], ["adiabatic"], ["lapse"], ["rate"]],
+			"hint": {
+				"pl": "gradient wilgotnoadiabatyczny, około 0,6°C/100 m",
+				"en": "saturated adiabatic lapse rate"
+			}
+		},
+		{
+			"id": "abbr-sar",
+			"a": {
+				"pl": "SAR"
+			},
+			"b": {
+				"pl": "Search and Rescue"
+			},
+			"hint": {
+				"pl": "służba poszukiwania i ratownictwa lotniczego",
+				"en": "search and rescue"
+			}
+		},
+		{
+			"id": "abbr-say-again",
+			"a": {
+				"pl": "SAY AGAIN"
+			},
+			"b": {
+				"pl": "powtórz"
+			},
+			"hint": {
+				"pl": "prośba o powtórzenie transmisji lub jej części",
+				"en": "request to repeat the transmission"
+			}
+		},
+		{
+			"id": "abbr-sb",
+			"a": {
+				"pl": "SB"
+			},
+			"b": {
+				"pl": "Service Bulletin"
+			},
+			"hint": {
+				"pl": "biuletyn serwisowy producenta; zwykle zalecenie, obowiązkowy gdy nakazany przez AD",
+				"en": "manufacturer's service bulletin"
+			}
+		},
+		{
+			"id": "abbr-sc",
+			"a": {
+				"pl": "SC"
+			},
+			"b": {
+				"pl": "środek ciężkości"
+			},
+			"hint": {
+				"pl": "punkt przyłożenia wypadkowej siły ciężkości; położenie w %MAC lub od punktu DATUM",
+				"en": "centre of gravity (Polish abbreviation)"
+			}
+		},
+		{
+			"id": "abbr-sd",
+			"a": {
+				"pl": "SD"
+			},
+			"b": {
+				"pl": "Spatial Disorientation"
+			},
+			"hint": {
+				"pl": "dezorientacja przestrzenna",
+				"en": "spatial disorientation"
+			}
+		},
+		{
+			"id": "abbr-sera",
+			"a": {
+				"pl": "SERA"
+			},
+			"b": {
+				"pl": "Standardised European Rules of the Air"
+			},
+			"keywordsB": [["standardised"], ["european"], ["rules"], ["air"]],
+			"hint": {
+				"pl": "ujednolicone europejskie przepisy ruchu lotniczego",
+				"en": "standardised European rules of the air"
+			}
+		},
+		{
+			"id": "abbr-ses",
+			"a": {
+				"pl": "SES"
+			},
+			"b": {
+				"pl": "Single European Sky"
+			},
+			"keywordsB": [["single"], ["european"], ["sky"]],
+			"hint": {
+				"pl": "Jednolita Europejska Przestrzeń Powietrzna, program UE",
+				"en": "EU single European sky programme"
+			}
+		},
+		{
+			"id": "abbr-shel",
+			"a": {
+				"pl": "SHEL"
+			},
+			"b": {
+				"pl": "Software Hardware Environment Liveware"
+			},
+			"keywordsB": [["software"], ["hardware"], ["environment"], ["liveware"]],
+			"hint": {
+				"pl": "model interfejsów człowiek-system w lotnictwie",
+				"en": "human-factors interface model"
+			}
+		},
+		{
+			"id": "abbr-sigmet",
+			"a": {
+				"pl": "SIGMET"
+			},
+			"b": {
+				"pl": "Significant Meteorological Information"
+			},
+			"keywordsB": [["significant"], ["meteorological"], ["information"]],
+			"hint": {
+				"pl": "ostrzeżenie przed groźnymi zjawiskami pogody",
+				"en": "significant weather warning"
+			}
+		},
+		{
+			"id": "abbr-sos",
+			"a": {
+				"pl": "SOS"
+			},
+			"b": {
+				"pl": "sygnał niebezpieczeństwa"
+			},
+			"hint": {
+				"pl": "międzynarodowy telegraficzny sygnał alarmowy (Morse)",
+				"en": "international Morse distress signal"
+			}
+		},
+		{
+			"id": "abbr-sp",
+			"a": {
+				"pl": "SP"
+			},
+			"b": {
+				"pl": "znaki rejestracyjne Polski"
+			},
+			"keywordsB": [["znaki"], ["rejestracyjne"], ["polski"]],
+			"hint": {
+				"pl": "prefiks znaków rozpoznawczych polskich statków powietrznych (SP-)",
+				"en": "Polish aircraft registration prefix"
+			}
+		},
+		{
+			"id": "abbr-speci",
+			"a": {
+				"pl": "SPECI"
+			},
+			"b": {
+				"pl": "Special Report"
+			},
+			"hint": {
+				"pl": "specjalna depesza obserwacyjna wydawana przy istotnej zmianie pogody",
+				"en": "special weather report issued on significant change"
+			}
+		},
+		{
+			"id": "abbr-spi",
+			"a": {
+				"pl": "SPI"
+			},
+			"b": {
+				"pl": "Special Position Identification"
+			},
+			"keywordsB": [["special"], ["position"], ["identification"]],
+			"hint": {
+				"pl": "impuls specjalnej identyfikacji nadawany funkcją IDENT",
+				"en": "special position identification pulse"
+			}
+		},
+		{
+			"id": "abbr-spl",
+			"a": {
+				"pl": "SPL"
+			},
+			"b": {
+				"pl": "Sailplane Pilot Licence"
+			},
+			"acceptB": ["Sailplane Pilot License"],
+			"keywordsB": [["sailplane"], ["pilot"], ["licence", "license"]],
+			"hint": {
+				"pl": "licencja pilota szybowcowego",
+				"en": "sailplane (glider) pilot licence"
+			}
+		},
+		{
+			"id": "abbr-sq",
+			"a": {
+				"pl": "SQ"
+			},
+			"b": {
+				"pl": "Squelch"
+			},
+			"hint": {
+				"pl": "blokada szumów odbiornika",
+				"en": "receiver squelch"
+			}
+		},
+		{
+			"id": "abbr-squawk",
+			"a": {
+				"pl": "SQUAWK"
+			},
+			"b": {
+				"pl": "kod transpondera"
+			},
+			"hint": {
+				"pl": "polecenie ustawienia kodu transpondera, np. squawk 7000",
+				"en": "transponder code setting instruction"
+			}
+		},
+		{
+			"id": "abbr-ssr",
+			"a": {
+				"pl": "SSR"
+			},
+			"b": {
+				"pl": "Secondary Surveillance Radar"
+			},
+			"keywordsB": [["secondary"], ["surveillance"], ["radar"]],
+			"hint": {
+				"pl": "radar wtórny; odpytuje transponder (kody squawk)",
+				"en": "secondary surveillance radar"
+			}
+		},
+		{
+			"id": "abbr-stand-by",
+			"a": {
+				"pl": "STAND BY"
+			},
+			"b": {
+				"pl": "czekaj"
+			},
+			"hint": {
+				"pl": "poczekaj, wywołam ponownie",
+				"en": "wait and I will call you"
+			}
+		},
+		{
+			"id": "abbr-stby",
+			"a": {
+				"pl": "STBY"
+			},
+			"b": {
+				"pl": "Standby"
+			},
+			"hint": {
+				"pl": "tryb czuwania transpondera: zasilony, nie odpowiada",
+				"en": "transponder standby mode"
+			}
+		},
+		{
+			"id": "abbr-svfr",
+			"a": {
+				"pl": "SVFR"
+			},
+			"b": {
+				"pl": "Special VFR"
+			},
+			"hint": {
+				"pl": "lot specjalny VFR w CTR poniżej VMC, za zezwoleniem ATC",
+				"en": "special VFR flight in a control zone below VMC"
+			}
+		},
+		{
+			"id": "abbr-swc",
+			"a": {
+				"pl": "SWC"
+			},
+			"b": {
+				"pl": "Significant Weather Chart"
+			},
+			"keywordsB": [["significant"], ["weather"], ["chart"]],
+			"hint": {
+				"pl": "mapa istotnych zjawisk pogody",
+				"en": "significant weather chart"
+			}
+		},
+		{
+			"id": "abbr-synop",
+			"a": {
+				"pl": "SYNOP"
+			},
+			"b": {
+				"pl": "depesza synoptyczna"
+			},
+			"hint": {
+				"pl": "kod obserwacji naziemnych stacji synoptycznych WMO",
+				"en": "WMO surface synoptic observation code"
+			}
+		},
+		{
+			"id": "abbr-tc",
+			"a": {
+				"pl": "TC"
+			},
+			"b": {
+				"pl": "True Course"
+			},
+			"hint": {
+				"pl": "kąt drogi rzeczywistej (planowany kurs względem północy geograficznej)",
+				"en": "true course"
+			}
+		},
+		{
+			"id": "abbr-te",
+			"a": {
+				"pl": "TE"
+			},
+			"b": {
+				"pl": "Total Energy"
+			},
+			"hint": {
+				"pl": "kompensacja energii całkowitej wariometru",
+				"en": "total energy variometer compensation"
+			}
+		},
+		{
+			"id": "abbr-th",
+			"a": {
+				"pl": "TH"
+			},
+			"b": {
+				"pl": "True Heading"
+			},
+			"hint": {
+				"pl": "kurs rzeczywisty, od północy geograficznej",
+				"en": "true heading"
+			}
+		},
+		{
+			"id": "abbr-tma",
+			"a": {
+				"pl": "TMA"
+			},
+			"b": {
+				"pl": "Terminal Manoeuvring Area"
+			},
+			"keywordsB": [["terminal"], ["manoeuvring", "maneuvering"], ["area"]],
+			"hint": {
+				"pl": "rejon kontrolowany lotniska lub węzła lotnisk",
+				"en": "terminal manoeuvring area"
+			}
+		},
+		{
+			"id": "abbr-tmg",
+			"a": {
+				"pl": "TMG"
+			},
+			"b": {
+				"pl": "Touring Motor Glider"
+			},
+			"keywordsB": [["touring"], ["motor"], ["glider"]],
+			"hint": {
+				"pl": "motoszybowiec turystyczny",
+				"en": "touring motor glider"
+			}
+		},
+		{
+			"id": "abbr-tra",
+			"a": {
+				"pl": "TRA"
+			},
+			"b": {
+				"pl": "Temporary Reserved Area"
+			},
+			"keywordsB": [["temporary"], ["reserved"], ["area"]],
+			"hint": {
+				"pl": "strefa czasowo rezerwowana; wlot możliwy za zgodą organu",
+				"en": "temporary reserved area"
+			}
+		},
+		{
+			"id": "abbr-trend",
+			"a": {
+				"pl": "TREND"
+			},
+			"b": {
+				"pl": "prognoza TREND"
+			},
+			"hint": {
+				"pl": "dwugodzinna prognoza zmian dołączana do METAR (BECMG, TEMPO, NOSIG)",
+				"en": "two-hour landing forecast appended to a METAR"
+			}
+		},
+		{
+			"id": "abbr-trk",
+			"a": {
+				"pl": "TRK"
+			},
+			"b": {
+				"pl": "Track"
+			},
+			"hint": {
+				"pl": "ścieżka: rzeczywisty kierunek drogi nad ziemią",
+				"en": "track over the ground"
+			}
+		},
+		{
+			"id": "abbr-tsa",
+			"a": {
+				"pl": "TSA"
+			},
+			"b": {
+				"pl": "Temporary Segregated Area"
+			},
+			"keywordsB": [["temporary"], ["segregated"], ["area"]],
+			"hint": {
+				"pl": "strefa czasowo wydzielona; wlot w czasie aktywności zabroniony",
+				"en": "temporary segregated area"
+			}
+		},
+		{
+			"id": "abbr-tso",
+			"a": {
+				"pl": "TSO"
+			},
+			"b": {
+				"pl": "Technical Standard Order"
+			},
+			"keywordsB": [["technical"], ["standard"], ["order"]],
+			"hint": {
+				"pl": "norma techniczna wyposażenia lotniczego",
+				"en": "technical standard order for aviation equipment"
+			}
+		},
+		{
+			"id": "abbr-tt",
+			"a": {
+				"pl": "TT"
+			},
+			"b": {
+				"pl": "True Track"
+			},
+			"hint": {
+				"pl": "droga rzeczywista od północy geograficznej",
+				"en": "true track"
+			}
+		},
+		{
+			"id": "abbr-tuc",
+			"a": {
+				"pl": "TUC"
+			},
+			"b": {
+				"pl": "Time of Useful Consciousness"
+			},
+			"keywordsB": [["time"], ["useful"], ["consciousness"]],
+			"hint": {
+				"pl": "czas użytecznej świadomości po utracie dopływu tlenu",
+				"en": "time of useful consciousness"
+			}
+		},
+		{
+			"id": "abbr-tvmdc",
+			"a": {
+				"pl": "TVMDC"
+			},
+			"b": {
+				"pl": "True Variation Magnetic Deviation Compass"
+			},
+			"keywordsB": [["true"], ["variation"], ["magnetic"], ["deviation"], ["compass"]],
+			"hint": {
+				"pl": "mnemonik kolejności przeliczania kursów",
+				"en": "heading conversion order mnemonic"
+			}
+		},
+		{
+			"id": "abbr-twr",
+			"a": {
+				"pl": "TWR"
+			},
+			"b": {
+				"pl": "Tower"
+			},
+			"hint": {
+				"pl": "organ kontroli lotniska (wieża)",
+				"en": "aerodrome control tower"
+			}
+		},
+		{
+			"id": "abbr-uhf",
+			"a": {
+				"pl": "UHF"
+			},
+			"b": {
+				"pl": "Ultra High Frequency"
+			},
+			"keywordsB": [["ultra"], ["high"], ["frequency"]],
+			"hint": {
+				"pl": "fale decymetrowe 300-3000 MHz, głównie łączność wojskowa",
+				"en": "ultra high frequency band"
+			}
+		},
+		{
+			"id": "abbr-uke",
+			"a": {
+				"pl": "UKE"
+			},
+			"b": {
+				"pl": "Urząd Komunikacji Elektronicznej"
+			},
+			"keywordsB": [["urząd"], ["komunikacji"], ["elektronicznej"]],
+			"hint": {
+				"pl": "polski urząd wydający świadectwa radiooperatora",
+				"en": "Polish telecom authority issuing radio operator certificates"
+			}
+		},
+		{
+			"id": "abbr-ukf",
+			"a": {
+				"pl": "UKF"
+			},
+			"b": {
+				"pl": "fale ultrakrótkie"
+			},
+			"hint": {
+				"pl": "polska nazwa pasma VHF",
+				"en": "Polish term for the VHF band"
+			}
+		},
+		{
+			"id": "abbr-ulc",
+			"a": {
+				"pl": "ULC"
+			},
+			"b": {
+				"pl": "Urząd Lotnictwa Cywilnego"
+			},
+			"keywordsB": [["urząd"], ["lotnictwa"], ["cywilnego"]],
+			"hint": {
+				"pl": "polski nadzór lotniczy: licencje, rejestry, nadzór nad bezpieczeństwem",
+				"en": "Polish Civil Aviation Authority"
+			}
+		},
+		{
+			"id": "abbr-unable",
+			"a": {
+				"pl": "UNABLE"
+			},
+			"b": {
+				"pl": "nie mogę wykonać"
+			},
+			"keywordsB": [["nie"], ["mogę"], ["wykonać"]],
+			"hint": {
+				"pl": "odmowa wykonania polecenia",
+				"en": "cannot comply with the instruction"
+			}
+		},
+		{
+			"id": "abbr-unos",
+			"a": {
+				"pl": "UNOS"
+			},
+			"b": {
+				"pl": "Undershoot North Overshoot South"
+			},
+			"keywordsB": [["undershoot"], ["north"], ["overshoot"], ["south"]],
+			"hint": {
+				"pl": "mnemonik błędu zakrętowego kompasu",
+				"en": "compass turning error mnemonic"
+			}
+		},
+		{
+			"id": "abbr-utc",
+			"a": {
+				"pl": "UTC"
+			},
+			"b": {
+				"pl": "Coordinated Universal Time"
+			},
+			"keywordsB": [["coordinated"], ["universal"], ["time"]],
+			"hint": {
+				"pl": "uniwersalny czas skoordynowany, odniesienie czasowe w lotnictwie",
+				"en": "coordinated universal time"
+			}
+		},
+		{
+			"id": "abbr-uup",
+			"a": {
+				"pl": "UUP"
+			},
+			"b": {
+				"pl": "Updated Airspace Use Plan"
+			},
+			"keywordsB": [["updated"], ["airspace"], ["use"], ["plan"]],
+			"hint": {
+				"pl": "śróddobowa aktualizacja planu AUP",
+				"en": "updated airspace use plan"
+			}
+		},
+		{
+			"id": "abbr-var",
+			"a": {
+				"pl": "VAR"
+			},
+			"b": {
+				"pl": "Variation"
+			},
+			"hint": {
+				"pl": "deklinacja magnetyczna: kąt między północą geograficzną a magnetyczną",
+				"en": "magnetic variation"
+			}
+		},
+		{
+			"id": "abbr-vb",
+			"a": {
+				"pl": "VB"
+			},
+			"b": {
+				"pl": "prędkość w silnej turbulencji"
+			},
+			"keywordsB": [["prędkość"], ["silnej"], ["turbulencji"]],
+			"hint": {
+				"pl": "prędkość obliczeniowa przy maksymalnym podmuchu",
+				"en": "design gust (rough air) speed"
+			}
+		},
+		{
+			"id": "abbr-vhf",
+			"a": {
+				"pl": "VHF"
+			},
+			"b": {
+				"pl": "Very High Frequency"
+			},
+			"keywordsB": [["very"], ["high"], ["frequency"]],
+			"hint": {
+				"pl": "fale metrowe 30-300 MHz; łączność lotnicza 118-136,975 MHz",
+				"en": "very high frequency band used for air-ground voice"
+			}
+		},
+		{
+			"id": "abbr-vlos",
+			"a": {
+				"pl": "VLOS"
+			},
+			"b": {
+				"pl": "Visual Line Of Sight"
+			},
+			"keywordsB": [["visual"], ["line"], ["sight"]],
+			"hint": {
+				"pl": "operacje bezzałogowców w zasięgu widoczności wzrokowej",
+				"en": "drone operations within visual line of sight"
+			}
+		},
+		{
+			"id": "abbr-vmc",
+			"a": {
+				"pl": "VMC"
+			},
+			"b": {
+				"pl": "Visual Meteorological Conditions"
+			},
+			"keywordsB": [["visual"], ["meteorological"], ["conditions"]],
+			"hint": {
+				"pl": "warunki meteorologiczne dla lotów z widocznością",
+				"en": "visual meteorological conditions"
+			}
+		},
+		{
+			"id": "abbr-vt",
+			"a": {
+				"pl": "VT"
+			},
+			"b": {
+				"pl": "prędkość maksymalna za holem"
+			},
+			"keywordsB": [["prędkość"], ["maksymalna"], ["holem"]],
+			"hint": {
+				"pl": "ograniczenie prędkości przy starcie za samolotem holującym",
+				"en": "maximum aerotow speed"
+			}
+		},
+		{
+			"id": "abbr-vw",
+			"a": {
+				"pl": "VW"
+			},
+			"b": {
+				"pl": "prędkość maksymalna za wyciągarką"
+			},
+			"keywordsB": [["prędkość"], ["maksymalna"], ["wyciągarką"]],
+			"hint": {
+				"pl": "ograniczenie prędkości przy starcie z wyciągarki",
+				"en": "maximum winch-launch speed"
+			}
+		},
+		{
+			"id": "abbr-wca",
+			"a": {
+				"pl": "WCA"
+			},
+			"b": {
+				"pl": "Wind Correction Angle"
+			},
+			"keywordsB": [["wind"], ["correction"], ["angle"]],
+			"hint": {
+				"pl": "poprawka na wiatr: kąt między kursem a linią drogi",
+				"en": "wind correction angle"
+			}
+		},
+		{
+			"id": "abbr-wilco",
+			"a": {
+				"pl": "WILCO"
+			},
+			"b": {
+				"pl": "wykonam"
+			},
+			"hint": {
+				"pl": "zrozumiałem i wykonam polecenie (will comply)",
+				"en": "I understand and will comply"
+			}
+		},
+		{
+			"id": "abbr-wmo",
+			"a": {
+				"pl": "WMO"
+			},
+			"b": {
+				"pl": "World Meteorological Organization"
+			},
+			"keywordsB": [["world"], ["meteorological"], ["organization", "organisation"]],
+			"hint": {
+				"pl": "Światowa Organizacja Meteorologiczna, agenda ONZ",
+				"en": "UN agency for meteorology"
+			}
+		},
+		{
+			"id": "abbr-words-twice",
+			"a": {
+				"pl": "WORDS TWICE"
+			},
+			"b": {
+				"pl": "słowa dwukrotnie"
+			},
+			"hint": {
+				"pl": "przy trudnej łączności każde słowo nadawane jest dwa razy",
+				"en": "each word sent twice due to difficult communications"
+			}
 		}
 	]
 }
