@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { untrack } from 'svelte';
 	import type { ContentLocale, Mcq } from '$lib/content/schema';
 	import { m } from '$lib/paraglide/messages.js';
 	import { COOLDOWN_SIZE, pickNext, type McqStat } from '$lib/study/adaptive';
@@ -26,12 +27,12 @@
 	} = $props();
 
 	let recentIds: string[] = [];
-	let current = $state(pickNext(questions, stats, recentIds, pick));
+	let current = $state(untrack(() => pickNext(questions, stats, recentIds, pick)));
 	let selected = $state<string | null>(null);
 	let phase = $state<'answering' | 'feedback'>('answering');
 	let goodCount = $state(0);
 	let badCount = $state(0);
-	let shownAt = now();
+	let shownAt = untrack(() => now());
 	let feedbackAt = 0;
 	let lastCorrect = false;
 
